@@ -4,15 +4,17 @@ title: Sightings Trend by Species Reports
 ---
 
 <h1>Sightings Trend by Species Reports</h1>
+
 <table class="data-table">
   <thead>
     <tr>
       <th>Country</th>
       <th>Location</th>
+      <th>Category</th>
     </tr>
   </thead>
   <tbody>
-    {%- assign entries = "" | split: "" -%}
+    {%- assign rows = "" | split: "" -%}
     {%- for f in site.static_files -%}
       {%- assign fname = f.name -%}
       {%- assign ext = fname | slice: -4, 4 -%}
@@ -20,19 +22,21 @@ title: Sightings Trend by Species Reports
         {%- assign parts = f.path | split:'/' -%}
         {%- assign country  = parts[3] -%}
         {%- assign location = parts[5] -%}
-        {%- capture rec -%}{{ country }}|{{ location }}{%- endcapture -%}
-        {%- assign entries = entries | push: rec -%}
+        {%- assign category = parts[6] -%}
+        {%- capture rec -%}{{ country }}|{{ location }}|{{ category }}{%- endcapture -%}
+        {%- assign rows = rows | push: rec -%}
       {%- endif -%}
     {%- endfor -%}
 
-    {%- assign uniq = entries | uniq | sort -%}
-    {%- for e in uniq -%}
-      {%- assign p = e | split:'|' -%}
+    {%- assign rows = rows | uniq | sort -%}
+    {%- for r in rows -%}
+      {%- assign p = r | split:'|' -%}
       <tr>
         <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
         <td>
-          <a href="{{ '/wildlife/trend/location.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}">
-            {{ p[1] }}
+          <a href="{{ '/wildlife/trend/species-list.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}/{{ p[2] | uri_escape }}">
+            {{ p[2] }}
           </a>
         </td>
       </tr>
