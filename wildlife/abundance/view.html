@@ -1,0 +1,24 @@
+---
+layout: default
+title: Abundance viewer
+---
+
+<div class="breadcrumb">
+  <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a> ›
+  <a href="{{ '/wildlife/abundance/' | relative_url }}">Abundance</a>
+</div>
+
+<h1 id="heading">Abundance</h1>
+<p class="muted" id="meta"></p>
+
+<div id="img-wrap">
+  <img id="abundance-img" class="responsive" alt="Abundance chart"/>
+</div>
+
+<p>
+  <a id="xlsx-link" href="#" download>Download XLSX data</a>
+</p>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/abundance-viewer.js' | relative_url }}"></script>
+

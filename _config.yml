@@ -1,0 +1,13 @@
+# --- Jekyll config ---
+baseurl: ""
+url: "https://davewalker5.github.io"
+
+title: Sightings Reports
+description: Wildlife and Aircraft Sightings Reports
+# To use the Minimal theme via GitHub Pages, replace the next two lines with:
+# remote_theme: pages-themes/minimal@v0.2.0
+# plugins:
+#   - jekyll-remote-theme
+theme: jekyll-theme-minimal
+plugins: []
+exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]

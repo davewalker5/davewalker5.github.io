@@ -59,3 +59,6 @@ done <<< "$files"
 
 # Restore the current working directory
 cd "$CURDIR"
+
+# Now build the Jekyll site
+bundle exec jekyll build

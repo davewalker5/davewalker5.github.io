@@ -1,0 +1,48 @@
+---
+layout: default
+title: Annual Richness by Country Reports
+---
+
+<h1>Annual Richness by Country Reports</h1>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign pages = site.static_files | where: "name", "richness.html" -%}
+    {%- assign rows = "" | split: "" -%}
+    {%- for f in pages -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/richness/' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- assign year     = parts[5] -%}
+        {%- capture rec -%}{{ country }}|{{ year }}{%- endcapture -%}
+        {%- assign rows = rows | push: rec -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign rows = rows | uniq | sort -%}
+    {%- for r in rows -%}
+      {%- assign p = r | split:'|' -%}
+      {%- assign country = p[0] -%}
+      {%- assign year = p[1] -%}
+      <tr>
+        <td>{{ country }}</td>
+        <td>
+          <a href="{{ site.baseurl }}/wildlife/reports/{{ country | uri_escape }}/richness/{{ year }}/richness.html">
+            {{ year }}
+          </a>
+        </td>
+        <td>
+          <a href="{{ site.baseurl }}/wildlife/reports/{{ country | uri_escape }}/richness/{{ year }}/richness.xlsx" download>
+            Download XLSX
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

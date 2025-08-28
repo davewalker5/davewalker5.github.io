@@ -1,0 +1,68 @@
+/* Basic layout niceties */
+:root { --maxw: 980px; --border: #e5e7eb; --stripe: #f9fafb; --hover: #f3f4f6; }
+main { overflow-x: auto; } /* allow horizontal scroll on small screens */
+
+/* Data tables */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+table.data-table th,
+table.data-table td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  white-space: nowrap;
+}
+table.data-table th:nth-child(1),
+table.data-table td:nth-child(1) { width: 22%; }
+table.data-table th:nth-child(2),
+table.data-table td:nth-child(2) { width: 22%; }
+table.data-table th:nth-child(3),
+table.data-table td:nth-child(3) { width: 28%; }
+table.data-table th:nth-child(4),
+table.data-table td:nth-child(4) { width: 28%; }
+
+table.data-table tbody tr:nth-child(odd) td { background: var(--stripe); }
+table.data-table tbody tr:hover td { background: var(--hover); }
+
+/* Links */
+a { color: inherit; }
+a:hover { text-decoration: underline; }
+.muted { color: #666; font-size: .95rem; }
+
+/* Dark mode support */
+@media (prefers-color-scheme: dark) {
+  :root { --border: #374151; --stripe: #1f2937; --hover: #374151; }
+
+  body {
+    background-color: #111827;  /* slate-900 */
+    color: #e5e7eb;             /* gray-200 */
+  }
+
+  header, main, footer {
+    background-color: #111827;
+  }
+
+  a {
+    color: #60a5fa; /* sky-400 */
+  }
+  a:hover {
+    color: #93c5fd; /* sky-300 */
+    text-decoration: underline;
+  }
+
+  table.data-table th,
+  table.data-table td {
+    border-bottom: 1px solid var(--border);
+  }
+
+  table.data-table tbody tr:nth-child(even) td {
+    background-color: #111827;
+  }
+
+  .muted { color: #9ca3af; } /* gray-400 */
+  hr { border-color: var(--border); }
+}

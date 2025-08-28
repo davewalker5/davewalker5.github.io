@@ -1,0 +1,41 @@
+---
+layout: default
+title: Sightings Trend by Species Reports
+---
+
+<h1>Sightings Trend by Species Reports</h1>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign entries = "" | split: "" -%}
+    {%- for f in site.static_files -%}
+      {%- assign fname = f.name -%}
+      {%- assign ext = fname | slice: -4, 4 -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/trend/' and ext == '.png' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- assign location = parts[5] -%}
+        {%- capture rec -%}{{ country }}|{{ location }}{%- endcapture -%}
+        {%- assign entries = entries | push: rec -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign uniq = entries | uniq | sort -%}
+    {%- for e in uniq -%}
+      {%- assign p = e | split:'|' -%}
+      <tr>
+        <td>{{ p[0] }}</td>
+        <td>
+          <a href="{{ '/wildlife/trend/location.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}">
+            {{ p[1] }}
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
