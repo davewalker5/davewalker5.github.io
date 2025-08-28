@@ -5,13 +5,29 @@ export PROJECT_ROOT=$( cd "$( dirname "$0" )" && pwd )
 
 # If an (optional) site has been specified, make sure it exists
 SITE_FOLDER=""
-if [[ $# -eq 1 ]]; then
+COUNTRY=$2
+LOCATION=$3
+CATEGORY=$4
+YEAR=$5
+
+# Site to build for
+if [ ! -z $1 ]; then
     SITE_FOLDER="$PROJECT_ROOT/notebooks/$1"
     if [ ! -d "$SITE_FOLDER" ]; then
         echo "Site folder '$1' not found"
         exit 1
     fi
 fi
+
+echo
+echo "Build Parameters:"
+echo
+echo "Site     : $SITE_FOLDER"
+echo "Country  : $COUNTRY"
+echo "Location : $LOCATION"
+echo "Category : $CATEGORY"
+echo "Year     : $YEAR"
+echo
 
 # Activate the virtual environment
 . $PROJECT_ROOT/venv/bin/activate
@@ -53,7 +69,11 @@ while IFS= read -r file; do
     # If this notebook isn't in the exclusions list, run it
     if [[ found -eq 0 ]]; then
         cd "$folder"
-        papermill "$filename" /dev/null
+        papermill "$filename" /dev/null \
+            -p country "$COUNTRY" \
+            -p location "$LOCATION" \
+            -p category "$CATEGORY" \
+            -p year "$YEAR"
     fi
 done <<< "$files"
 
