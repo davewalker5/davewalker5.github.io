@@ -1,29 +1,46 @@
 Report,Location,Country,Category,From,To
+Richness,,United Kingdom,,2020,2025
 Heatmap,Abingdon,United Kingdom,Birds,2020,2025
 Heatmap,Abingdon,United Kingdom,Butterflies,2020,2025
 Heatmap,Abingdon,United Kingdom,Flora,2020,2025
 Heatmap,Oxford,United Kingdom,Birds,2020,2025
 Heatmap,Thrupp Lake,United Kingdom,Birds,2020,2025
 Heatmap,Thrupp Lake,United Kingdom,Flora,2020,2025
-Richness,,United Kingdom,,2020,2025
+Heatmap,Kennington,United Kingdom,Amphibians,1994,2002
+Heatmap,Kennington,United Kingdom,Bats,1994,2002
+Heatmap,Kennington,United Kingdom,Birds,1994,2002
+Heatmap,Kennington,United Kingdom,Butterflies,1994,2002
+Heatmap,Kennington,United Kingdom,Mammals,1994,2002
+Heatmap,Kennington,United Kingdom,Rodents,1994,2002
 Trend,Abingdon,United Kingdom,Birds,2020,2025
 Trend,Abingdon,United Kingdom,Butterflies,2020,2025
 Trend,Abingdon,United Kingdom,Flora,2020,2025
 Trend,Oxford,United Kingdom,Birds,2020,2025
 Trend,Thrupp Lake,United Kingdom,Birds,2020,2025
 Trend,Thrupp Lake,United Kingdom,Flora,2020,2025
+Trend,Kennington,United Kingdom,Amphibians,1994,2002
+Trend,Kennington,United Kingdom,Bats,1994,2002
+Trend,Kennington,United Kingdom,Birds,1994,2002
+Trend,Kennington,United Kingdom,Butterflies,1994,2002
+Trend,Kennington,United Kingdom,Mammals,1994,2002
+Trend,Kennington,United Kingdom,Rodents,1994,2002
 Composition,Abingdon,United Kingdom,Birds,0,0
 Composition,Abingdon,United Kingdom,Butterflies,0,0
 Composition,Abingdon,United Kingdom,Flora,0,0
 Composition,Oxford,United Kingdom,Birds,0,0
 Composition,Thrupp Lake,United Kingdom,Birds,0,0
 Composition,Thrupp Lake,United Kingdom,Flora,0,0
+Composition,Kennington,United Kingdom,Birds,1994,2002
+Composition,Kennington,United Kingdom,Butterflies,1994,2002
+Composition,Kennington,United Kingdom,Rodents,1994,2002
 Abundance,Abingdon,United Kingdom,Birds,0,0
 Abundance,Abingdon,United Kingdom,Butterflies,0,0
 Abundance,Abingdon,United Kingdom,Flora,0,0
 Abundance,Oxford,United Kingdom,Birds,0,0
 Abundance,Thrupp Lake,United Kingdom,Birds,0,0
 Abundance,Thrupp Lake,United Kingdom,Flora,0,0
+Abundance,Kennington,United Kingdom,Birds,0,0
+Abundance,Kennington,United Kingdom,Butterflies,0,0
 Composition,Grand Gaube,Mauritius,Birds,2024,2024
 Composition,Grand Gaube,Mauritius,Beetles,2024,2024
 Composition,Grand Gaube,Mauritius,Arachnids,2024,2024
