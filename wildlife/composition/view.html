@@ -4,8 +4,8 @@ title: Composition viewer
 ---
 
 <div class="breadcrumb">
-  <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a> ›
-  <a href="{{ '/wildlife/composition/' | relative_url }}">Category Composition</a> ›
+  <a href="{ '{' } '/wildlife/' | relative_url { '}' }">Wildlife</a> ›
+  <a href="{ '{' } '/wildlife/composition/' | relative_url { '}' }">Category Composition</a> ›
   <a id="crumb-country" href="#"></a>
 </div>
 
@@ -20,5 +20,6 @@ title: Composition viewer
   <a id="xlsx-link" href="#" download>Download XLSX data</a>
 </p>
 
-<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
-<script src="{{ '/assets/js/composition-viewer.js' | relative_url }}"></script>
+<script>window.SITE_BASEURL = { '{' } site.baseurl | jsonify { '}' };</script>
+<!-- Add version query to avoid cached JS on GitHub Pages/CDN -->
+<script src="{ '{' } '/assets/js/composition-viewer.js?v=1756384682' | relative_url { '}' }"></script>
