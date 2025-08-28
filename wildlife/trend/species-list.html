@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Sightings Trend — Categories at Location
+title: Sightings Trend — Species (by Category)
 ---
 
 <div class="breadcrumb">
@@ -8,15 +8,15 @@ title: Sightings Trend — Categories at Location
   <a href="{{ '/wildlife/trend/' | relative_url }}">Sightings Trend</a>
 </div>
 
-<h1 id="heading">Sightings Trend — Categories</h1>
+<h1 id="heading">Species Trend</h1>
 <p class="muted" id="meta"></p>
 
-<table id="category-table" class="data-table">
+<table id="species-table" class="data-table">
   <thead>
     <tr>
-      <th>Country</th>
-      <th>Location</th>
+      <th>Species</th>
       <th>Category</th>
+      <th>Show chart</th>
     </tr>
   </thead>
   <tbody></tbody>
@@ -39,4 +39,4 @@ title: Sightings Trend — Categories at Location
 <script id="trend-data" type="application/json">{{ items | jsonify }}</script>
 
 <script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
-<script src="{{ '/assets/js/trend-location.js' | relative_url }}"></script>
+<script src="{{ '/assets/js/trend-species-list.js' | relative_url }}"></script>
