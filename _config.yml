@@ -3,6 +3,7 @@ baseurl: ""
 url: ""
 
 title: Sightings Hub
+footer: Sightings Hub (c) 2025 David Walker
 description: Wildlife and Aircraft Sightings Reports
 # To use the Minimal theme via GitHub Pages, replace the next two lines with:
 # remote_theme: pages-themes/minimal@v0.2.0
