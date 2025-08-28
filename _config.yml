@@ -11,3 +11,8 @@ description: Wildlife and Aircraft Sightings Reports
 theme: jekyll-theme-minimal
 plugins: []
 exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]
+
+hero:
+  enabled: true
+  nav_overlay: false
+  image: /assets/images/banner.jpg
