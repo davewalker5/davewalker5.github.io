@@ -1,43 +1,45 @@
 ---
 layout: default
-title: Category Composition Reports
+title: Category Composition reports
 ---
 
-<h1>Category Composition Reports</h1>
+<h1>Category Composition reports</h1>
+<p class="muted">
+  Choose a country to view its locations and categories.
+  Data is discovered from
+  <code>wildlife/reports/&lt;country&gt;/composition/&lt;location&gt;/&lt;category&gt;/composition.png</code>.
+</p>
+
 <table class="data-table">
   <thead>
     <tr>
       <th>Country</th>
-      <th>Location</th>
-      <th>Category</th>
+      <th>Open</th>
     </tr>
   </thead>
   <tbody>
-    {% assign entries = "" | split: "" %}
-    {% assign files = site.static_files | where: "name", "composition.png" %}
-    {% for f in files %}
-      {% if f.path contains '/wildlife/reports/' and f.path contains '/composition/' %}
-        {% assign parts = f.path | split:'/' %}
-        {% assign country  = parts[3] %}
-        {% assign location = parts[5] %}
-        {% assign category = parts[6] %}
-        {% capture rec %}{{ country }}|{{ location }}|{{ category }}{% endcapture %}
-        {% assign entries = entries | push: rec %}
-      {% endif %}
-    {% endfor %}
+    {%- assign files = site.static_files | where: "name", "composition.png" -%}
+    {%- assign countries = "" | split: "" -%}
+    {%- for f in files -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/composition/' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- unless countries contains country -%}
+          {%- assign countries = countries | push: country -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign countries = countries | sort -%}
 
-    {% assign uniq = entries | uniq | sort %}
-    {% for e in uniq %}
-      {% assign p = e | split:'|' %}
+    {%- for c in countries -%}
       <tr>
-        <td>{{ p[0] }}</td>
-        <td>{{ p[1] }}</td>
+        <td>{{ c }}</td>
         <td>
-          <a href="{{ '/wildlife/composition/view.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}/{{ p[2] | uri_escape }}">
-            {{ p[2] }}
+          <a href="{{ '/wildlife/composition/country.html' | relative_url }}#/{{ c | uri_escape }}">
+            View {{ c }}
           </a>
         </td>
       </tr>
-    {% endfor %}
+    {%- endfor -%}
   </tbody>
 </table>

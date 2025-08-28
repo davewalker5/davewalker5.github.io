@@ -1,0 +1,44 @@
+---
+layout: default
+title: Category Composition — by Country
+---
+
+<div class="breadcrumb">
+  <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a> ›
+  <a href="{{ '/wildlife/composition/' | relative_url }}">Category Composition</a>
+</div>
+
+<h1 id="heading">Category Composition</h1>
+<p class="muted" id="meta"></p>
+
+<table id="comp-table" class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Location</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+{%- comment -%}
+Embed all composition PNG paths as a compact JSON array of "country|location|category".
+The JS will filter to the chosen country from the URL hash.
+{%- endcomment -%}
+{%- assign rows = '' | split:'' -%}
+{%- assign files = site.static_files | where: "name", "composition.png" -%}
+{%- for f in files -%}
+  {%- if f.path contains '/wildlife/reports/' and f.path contains '/composition/' -%}
+    {%- assign parts = f.path | split:'/' -%}
+    {%- assign country  = parts[3] -%}
+    {%- assign location = parts[5] -%}
+    {%- assign category = parts[6] -%}
+    {%- capture rec -%}{{ country }}|{{ location }}|{{ category }}{%- endcapture -%}
+    {%- assign rows = rows | push: rec -%}
+  {%- endif -%}
+{%- endfor -%}
+<script id="comp-data" type="application/json">{{ rows | uniq | sort | jsonify }}</script>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/composition-country.js' | relative_url }}"></script>
