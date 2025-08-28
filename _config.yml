@@ -2,8 +2,8 @@
 baseurl: ""
 url: ""
 
-title: Sightings Reports
-description: Wildlife Sightings and Aircraft Reports
+title: Sightings Hub
+description: Wildlife and Aircraft Sightings Reports
 # To use the Minimal theme via GitHub Pages, replace the next two lines with:
 # remote_theme: pages-themes/minimal@v0.2.0
 # plugins:
