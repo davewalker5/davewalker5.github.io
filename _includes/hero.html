@@ -1,0 +1,10 @@
+{% assign hero_enabled = page.hero | default: site.hero.enabled | default: true %}
+{% if hero_enabled %}
+  {% assign img = page.hero_image | default: site.hero.image | default: '/assets/images/banner.jpg' %}
+  <div class="hero" style="--hero-img: url('{{ img | relative_url }}')">
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title">{{ page.hero_title | default: site.title }}</h1>
+    </div>
+  </div>
+{% endif %}

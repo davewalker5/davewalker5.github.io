@@ -4,26 +4,29 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} | {{ site.title }}</title>
-  <link rel="stylesheet" href="{{ '/assets/css/site.css' | relative_url }}">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css?v=1.2' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/hero.css?v=2.0' | relative_url }}">
   <style>
-    :root { --maxw: 980px; }
+    :root { --maxw: 1200px; }
     * { box-sizing: border-box; }
     body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    header, main, footer { max-width: var(--maxw); margin: 0 auto; padding: 1rem; }
-    .breadcrumb { margin: .5rem 0 1rem; font-size: .95rem; color: #666; }
+    header, main, footer { max-width: var(--maxw); margin: 0 auto; padding: 0; }
+    .breadcrumb { margin: .5rem 0 1rem; font-size: .95rem; color: #666; padding: 0 1rem; }
     img.responsive { max-width: 100%; height: auto; }
   </style>
 </head>
 <body>
   <header>
+    {% include hero.html %}
     {% include nav.html %}
   </header>
   <main>
     {{ content }}
   </main>
-  <footer class="muted">
+  <footer class="muted" style="padding: 1rem;">
     <hr />
-    <div>{{ site.title }} (c) 2025 David Walker</div>
+    <div>{{ site.footer | default: site.title | default: "Built with Jekyll" }}</div>
   </footer>
 </body>
 </html>
