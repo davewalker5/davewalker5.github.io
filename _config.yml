@@ -16,4 +16,7 @@ exclude: ["README.md", "node_modules", "package.json", "package-lock.json"]
 hero:
   enabled: true
   nav_overlay: false
-  image: /assets/images/banner.jpg
+  image_sm: /assets/images/banner-768.jpg
+  image_md: /assets/images/banner-1280.jpg
+  image_lg: /assets/images/banner-1920.jpg
+  alt: "Sightings Hub"
