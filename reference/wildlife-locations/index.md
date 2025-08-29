@@ -11,10 +11,6 @@ title: Wildlife Location Details
 
 # Wildlife Location Details
 
-<p class="muted">
-  This table is built automatically from <code>_data/locations.csv</code>.
-</p>
-
 <table class="data-table">
   <thead>
     <tr>
