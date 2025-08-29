@@ -1,7 +1,7 @@
 #!/bin/bash -f
 
 # Get the project root folder
-export PROJECT_ROOT=$( cd "$( dirname "$0" )" && pwd )
+export PROJECT_ROOT=$( cd "$( dirname "$0" )/.." && pwd )
 
 # If an (optional) site has been specified, make sure it exists
 SITE_FOLDER=""
@@ -23,10 +23,14 @@ echo
 echo "Build Parameters:"
 echo
 echo "Site     : $SITE_FOLDER"
-echo "Country  : $COUNTRY"
-echo "Location : $LOCATION"
-echo "Category : $CATEGORY"
-echo "Year     : $YEAR"
+
+if [[ "$1" == "wildlife" ]]; then
+    echo "Country  : $COUNTRY"
+    echo "Location : $LOCATION"
+    echo "Category : $CATEGORY"
+    echo "Year     : $YEAR"
+fi
+
 echo
 
 # Activate the virtual environment
@@ -53,7 +57,7 @@ if [ -n "$SITE_FOLDER" ]; then
 fi
 
 # Get a list of Jupyter Notebooks and iterate over them
-files=$(find `pwd` -name '*.ipynb')
+files=$(find . -name '*.ipynb')
 while IFS= read -r file; do
     # Get the notebook file name and extension without the path
     folder=$(dirname "$file")
@@ -69,11 +73,15 @@ while IFS= read -r file; do
     # If this notebook isn't in the exclusions list, run it
     if [[ found -eq 0 ]]; then
         cd "$folder"
-        papermill "$filename" /dev/null \
-            -p country "$COUNTRY" \
-            -p location "$LOCATION" \
-            -p category "$CATEGORY" \
-            -p year "$YEAR"
+        if [[ "$folder" == "wildlife" ]]; then
+            papermill "$filename" /dev/null \
+                -p country "$COUNTRY" \
+                -p location "$LOCATION" \
+                -p category "$CATEGORY" \
+                -p year "$YEAR"
+        else
+            papermill "$filename" /dev/null
+        fi
     fi
 done <<< "$files"
 
