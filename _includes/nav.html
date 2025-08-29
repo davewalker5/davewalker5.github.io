@@ -1,4 +1,9 @@
-<nav>
-  <a href="{{ '/' | relative_url }}">Home</a>
-  <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a>
+<nav class="site-nav">
+  <div class="nav-left">
+    <a href="{{ '/' | relative_url }}" class="nav-home">Home</a>
+  </div>
+  <div class="nav-right">
+    <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a>
+    <a href="{{ '/aircraft/' | relative_url }}">Aircraft</a>
+  </div>
 </nav>

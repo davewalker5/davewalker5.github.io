@@ -1,0 +1,76 @@
+---
+layout: default
+title: Manufacturer Reports
+---
+
+<div class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> ›
+  <a href="{{ '/aircraft/' | relative_url }}">Aircraft</a> ›
+  Manufacturer Reports
+</div>
+
+<h1>Manufacturer Reports</h1>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Manufacturer</th>
+      <th>Report name</th>
+      <th>View report</th>
+      <th>Download XLSX</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign rows = "" | split: "" -%}
+    {%- for f in site.static_files -%}
+      {%- assign name = f.name -%}
+      {%- assign ext = name | slice: -4, 4 | downcase -%}
+      {%- if f.path contains '/aircraft/reports/manufacturer/' and ext == '.png' -%}
+        {%- assign parts = f.path | split: '/aircraft/reports/manufacturer/' -%}
+        {%- assign sub = parts | last -%}
+        {%- assign segs = sub | split:'/' -%}
+        {%- if segs.size >= 2 -%}
+          {%- assign manufacturer = segs[0] -%}
+          {%- assign base = name | replace: '.png','' -%}
+          {%- capture rec -%}{{ manufacturer }}|{{ base }}{%- endcapture -%}
+          {%- assign rows = rows | push: rec -%}
+        {%- endif -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign rows = rows | uniq | sort -%}
+
+    {%- for rec in rows -%}
+      {%- assign p = rec | split:'|' -%}
+      {%- assign manufacturer = p[0] -%}
+      {%- assign base = p[1] -%}
+
+      {%- assign title_base = base | replace: '-', ' ' | replace: '_', ' ' -%}
+      {%- assign words = title_base | split: ' ' -%}
+      {%- capture title -%}{%- for w in words -%}{%- assign ww = w | strip -%}{%- if ww != '' -%}{% if forloop.first %}{{ ww | capitalize }}{% else %} {{ ww | capitalize }}{% endif %}{%- endif -%}{%- endfor -%}{%- endcapture -%}
+
+      {%- assign png_path = '/aircraft/reports/manufacturer/' | append: manufacturer | append: '/' | append: base | append: '.png' -%}
+      {%- assign xlsx_path = '/aircraft/reports/manufacturer/' | append: manufacturer | append: '/' | append: base | append: '.xlsx' -%}
+
+      {%- assign has_xlsx = false -%}
+      {%- for sf in site.static_files -%}
+        {%- if sf.path == xlsx_path -%}{%- assign has_xlsx = true -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+
+      <tr>
+        <td>{{ manufacturer }}</td>
+        <td>{{ title | strip }}</td>
+        <td><a href="{{ png_path | relative_url }}" target="_blank" rel="noopener">View report</a></td>
+        <td>
+          {%- if has_xlsx -%}
+            <a href="{{ xlsx_path | relative_url }}" download>Download data</a>
+          {%- else -%}
+            <span class="muted">No data file</span>
+          {%- endif -%}
+        </td>
+      </tr>
+    {%- endfor -%}
+
+    {%- if rows == empty -%}
+      <tr><td colspan="4" class="muted">No manufacturer reports found.</td></tr>
+    {%- endif -%}
+  </tbody>
+</table>
