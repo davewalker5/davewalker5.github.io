@@ -1,15 +1,23 @@
-/* Hero banner styles (with navbar overlay support) */
-:root { --nav-h: 56px; } /* approximate navbar height; tweak if your nav is taller */
+:root { --nav-h: 56px; }
 
 .hero {
   position: relative;
-  background-image: var(--hero-img);
-  background-size: cover;
-  background-position: center;
   min-height: clamp(240px, 28vw, 420px);
   border-radius: 0;
   overflow: hidden;
   margin: 0;
+}
+
+.hero-media, .hero-media img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.hero-media img {
+  object-fit: cover;
+  object-position: center;
 }
 
 .hero-overlay {
@@ -24,12 +32,11 @@
 
 .hero-inner {
   position: relative;
+  z-index: 1;
   height: 100%;
   display: flex;
-  align-items: flex-end;        /* move title to the bottom to avoid the top nav */
-  justify-content: flex-end;    /* right-align title */
-  /* add extra padding at the top so if the title ever wraps upward on small screens,
-     it won't collide with the overlaid navbar */
+  align-items: flex-end;
+  justify-content: flex-end;
   padding: calc(1.5rem + var(--nav-h)) 1.5rem 1.5rem;
 }
 
@@ -42,7 +49,6 @@
   font-size: clamp(1.8rem, 3vw + 1rem, 3rem);
 }
 
-/* Navbar overlay styles */
 header { position: relative; }
 header nav {
   position: absolute;
@@ -59,14 +65,13 @@ header nav {
   justify-content: space-between;
   align-items: center;
 }
+
 header + main { margin-top: 0.5rem; }
 
-/* If the navbar wraps on narrow screens, give the hero a bit more top buffer */
 @media (max-width: 540px) {
   :root { --nav-h: 84px; }
 }
 
-/* Dark mode adjustments */
 @media (prefers-color-scheme: dark) {
   .hero-overlay {
     background: linear-gradient(90deg,
