@@ -56,4 +56,3 @@ title: Reference Data
   {% endif %}
   </tbody>
 </table>
-</div>
