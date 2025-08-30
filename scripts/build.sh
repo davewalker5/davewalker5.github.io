@@ -4,17 +4,46 @@
 export PROJECT_ROOT=$( cd "$( dirname "$0" )/.." && pwd )
 
 # If an (optional) site has been specified, make sure it exists
-SITE_FOLDER=""
-COUNTRY=$2
-LOCATION=$3
-CATEGORY=$4
-YEAR=$5
+SITE_NAME=""
+COUNTRY=""
+LOCATION=""
+CATEGORY=""
+YEAR=""
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --site)
+            SITE_NAME=$2
+            shift 2
+            ;;
+        --country)
+            COUNTRY=$2
+            shift 2
+            ;;
+        --location)
+            LOCATION=$2
+            shift 2
+            ;;
+        --category)
+            CATEGORY=$2
+            shift 2
+            ;;
+        --year)
+            YEAR=$2
+            shift 2
+            ;;
+        *)
+            echo "Unknown option: $1"
+            exit 1
+            ;;
+    esac
+done
 
 # Site to build for
-if [ ! -z $1 ]; then
-    SITE_FOLDER="$PROJECT_ROOT/notebooks/$1"
+if [ ! -z "$SITE_NAME" ]; then
+    SITE_FOLDER="$PROJECT_ROOT/notebooks/$SITE_NAME"
     if [ ! -d "$SITE_FOLDER" ]; then
-        echo "Site folder '$1' not found"
+        echo "Site folder '$SITE_FOLDER' not found"
         exit 1
     fi
 fi
@@ -22,15 +51,11 @@ fi
 echo
 echo "Build Parameters:"
 echo
-echo "Site     : $SITE_FOLDER"
-
-if [[ "$1" == "wildlife" ]]; then
-    echo "Country  : $COUNTRY"
-    echo "Location : $LOCATION"
-    echo "Category : $CATEGORY"
-    echo "Year     : $YEAR"
-fi
-
+echo "Site     : $SITE_NAME"
+echo "Country  : $COUNTRY"
+echo "Location : $LOCATION"
+echo "Category : $CATEGORY"
+echo "Year     : $YEAR"
 echo
 
 # Activate the virtual environment
@@ -54,6 +79,15 @@ CURDIR=`pwd`
 # If specified, change to the folder containing the reports to run
 if [ -n "$SITE_FOLDER" ]; then
     cd "$SITE_FOLDER"
+fi
+
+# Copy the database files into place
+if [[ -z "$1" || "$1" == "aircraft" ]]; then
+    cp "$FLIGHT_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
+fi
+
+if [[ -z "$1" || "$1" == "wildlife" ]]; then
+    cp "$NATURE_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
 fi
 
 # Get a list of Jupyter Notebooks and iterate over them

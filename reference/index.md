@@ -9,9 +9,6 @@ title: Reference Data
 
 # Reference Data
 
-This section lists all available reference datasets. Use the table below to browse.
-You can add or reorder entries by editing <code>_data/reference_links.yml</code>.
-
 <table class="data-table">
   <thead>
     <tr>
@@ -20,18 +17,42 @@ You can add or reorder entries by editing <code>_data/reference_links.yml</code>
     </tr>
   </thead>
   <tbody>
-  {%- assign rows = site.data.reference_links | default: empty -%}
-  {%- if rows and rows.size > 0 -%}
-    {%- for r in rows -%}
+  {% assign rows = site.data.reference_links | default: empty %}
+  {% if rows and rows.size > 0 %}
+    {% for r in rows %}
+      {% assign href = r.url %}
+      {% if href %}
+        {% assign href_is_abs = href | slice: 0 | append: '' %}
+        {% comment %} Normalize to a site-relative URL if it starts with '/' {% endcomment %}
+        {% if href contains '://' %}
+          {% assign url_out = href %}
+        {% else %}
+          {% assign url_out = href | relative_url %}
+        {% endif %}
+        {% assign ext = href | downcase | split: '.' | last %}
+        {% assign is_download = r.download | default: false %}
+        {% if href contains '/_data/' or ext == 'csv' or ext == 'txt' or ext == 'json' or ext == 'xlsx' or ext == 'zip' or ext == 'pdf' %}
+          {% assign is_download = true %}
+        {% endif %}
+      {% endif %}
+
       <tr>
         <td>{{ r.area }}</td>
-        <td><a href="{{ r.url | relative_url }}">{{ r.title }}</a></td>
+        <td>
+          {% if url_out %}
+            <a href="{{ url_out }}"{% if is_download %} download{% endif %}>
+              {{ r.title | default: 'View' }}
+            </a>
+          {% else %}
+            <span class="muted">No link</span>
+          {% endif %}
+        </td>
       </tr>
-    {%- endfor -%}
-  {%- else -%}
+    {% endfor %}
+  {% else %}
       <tr>
         <td colspan="2" class="muted">No reference data entries yet. Add some in <code>_data/reference_links.yml</code>.</td>
       </tr>
-  {%- endif -%}
+  {% endif %}
   </tbody>
 </table>
