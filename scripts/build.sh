@@ -56,6 +56,15 @@ if [ -n "$SITE_FOLDER" ]; then
     cd "$SITE_FOLDER"
 fi
 
+# Copy the database files into place
+if [[ -z "$1" || "$1" == "aircraft" ]]; then
+    cp "$FLIGHT_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
+fi
+
+if [[ -z "$1" || "$1" == "wildlife" ]]; then
+    cp "$NATURE_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
+fi
+
 # Get a list of Jupyter Notebooks and iterate over them
 files=$(find . -name '*.ipynb')
 while IFS= read -r file; do
