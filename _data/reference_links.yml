@@ -1,6 +1,9 @@
-- area: Wildlife
-  title: Wildlife Location Details
-  url: /reference/wildlife-locations/
+- area: Aircraft
+  title: Airport Details
+  url: /reference/airports/
 - area: Wildlife
   title: Species Details
   url: /reference/species/
+- area: Wildlife
+  title: Wildlife Location Details
+  url: /reference/wildlife-locations/
