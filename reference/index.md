@@ -9,9 +9,6 @@ title: Reference Data
 
 # Reference Data
 
-This section lists all available reference datasets. Use the table below to browse.
-You can add or reorder entries by editing <code>_data/reference_links.yml</code>.
-
 <table class="data-table">
   <thead>
     <tr>
