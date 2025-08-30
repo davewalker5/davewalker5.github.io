@@ -56,9 +56,4 @@ title: Reference Data
   {% endif %}
   </tbody>
 </table>
-
-<div class="muted" style="margin-top:.75rem">
-  <small>
-    Tip: To publish files stored under <code>_data/</code>, either (a) move them to a public folder like <code>assets/downloads/</code>, or (b) list them in <code>_config.yml</code> under <code>include:</code> (see README).
-  </small>
 </div>
