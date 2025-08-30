@@ -2,6 +2,7 @@
 
 # Get the project root folder
 export PROJECT_ROOT=$( cd "$( dirname "$0" )/.." && pwd )
+export PUBLISH_ROOT="${PROJECT_ROOT%/*/*}/GitHub/davewalker5.github.io"
 
 # If an (optional) site has been specified, make sure it exists
 SITE_NAME=""
@@ -118,6 +119,44 @@ while IFS= read -r file; do
         fi
     fi
 done <<< "$files"
+
+# If this isn't the publication folder, copy the aircraft and wildlife reports output and the
+# downloadable assets to that folder and commit the changes
+shopt -s nocasematch
+
+if [[ "$PROJECT_ROOT" =~ "github" ]]; then
+    # Define the list of folders to copy
+    folders=(
+        "_data/"
+        "_includes/"
+        "_layouts/"
+        "aircraft/"
+        "assets/"
+        "notebooks/"
+        "reference/"
+        "scripts/"
+        "wildlife/"
+        "_config.yml"
+        ".gitignore"
+        "Gemfile"
+        "Gemfile.lock"
+        "index.md"
+    )
+
+    # Copy them
+    for folder in "${folders[@]}"; do
+        rsync -av --delete "$PROJECT_ROOT/$folder" "$PUBLISH_ROOT/$folder"
+    done
+
+    # Commit the changes
+    cd "$PUBLISH_ROOT"
+    timestamp=$(date +"%d-%b-%Y %H:%M:%S")
+    git stage .
+    git status
+    git commit -m "Report update @ $timestamp"
+fi
+
+shopt -u nocasematch
 
 # Restore the current working directory
 cd "$CURDIR"
