@@ -10,9 +10,14 @@ COUNTRY=""
 LOCATION=""
 CATEGORY=""
 YEAR=""
+PUSH=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --push)
+            PUSH="true"
+            shift 1
+            ;;
         --site)
             SITE_NAME=$2
             shift 2
@@ -154,6 +159,11 @@ if [[ "$PROJECT_ROOT" =~ "github" ]]; then
     git stage .
     git status
     git commit -m "Report update @ $timestamp"
+
+    # If requested, push the changes
+    if [ "$PUSH" == "true" ]; then
+        git push
+    fi
 fi
 
 shopt -u nocasematch
