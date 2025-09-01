@@ -1,6 +1,6 @@
 /* Navbar GitHub icon — inline SVG inherits currentColor */
 .site-nav .nav-left .nav-icon {
-  color: #fff; /* visible on dark nav */
+  color: #000;
   display: inline-flex;
   align-items: center;
 }
