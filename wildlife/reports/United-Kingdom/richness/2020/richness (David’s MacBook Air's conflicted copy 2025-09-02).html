@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_369853487c1c7ea436c29d5d984f6bd6 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_369853487c1c7ea436c29d5d984f6bd6" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_369853487c1c7ea436c29d5d984f6bd6 = L.map(
+                "map_369853487c1c7ea436c29d5d984f6bd6",
+                {
+                    center: [52.36174136842106, -1.6852272105263157],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_0588e4117cd6838f1d2a59b8a91b7a58 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_0588e4117cd6838f1d2a59b8a91b7a58.addTo(map_369853487c1c7ea436c29d5d984f6bd6);
+        
+    
+            var marker_cluster_f75d0b11fa21a0122a5faf61961ffec4 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_dbb8180ecf6b83adf320d4be92353b44 = L.circleMarker(
+                [51.67167, -1.27833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_623fa3d4d113a69acd9614ce739c393e = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_fc881e15b4b8992d709f95d88f195e8c = $(`<div id="html_fc881e15b4b8992d709f95d88f195e8c" style="width: 100.0%; height: 100.0%;"><b>Abingdon</b><br>Richness: 163</div>`)[0];
+                popup_623fa3d4d113a69acd9614ce739c393e.setContent(html_fc881e15b4b8992d709f95d88f195e8c);
+            
+        
+
+        circle_marker_dbb8180ecf6b83adf320d4be92353b44.bindPopup(popup_623fa3d4d113a69acd9614ce739c393e)
+        ;
+
+        
+    
+    
+            var circle_marker_dc9f7cc288639886922081b3f804a58b = L.circleMarker(
+                [54.43261, -2.96167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.7975460122699385, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_6e15454adc060fa2d4c97ee2f63f94bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_696300956cbf4286cff9b8eb26677965 = $(`<div id="html_696300956cbf4286cff9b8eb26677965" style="width: 100.0%; height: 100.0%;"><b>Ambleside</b><br>Richness: 13</div>`)[0];
+                popup_6e15454adc060fa2d4c97ee2f63f94bb.setContent(html_696300956cbf4286cff9b8eb26677965);
+            
+        
+
+        circle_marker_dc9f7cc288639886922081b3f804a58b.bindPopup(popup_6e15454adc060fa2d4c97ee2f63f94bb)
+        ;
+
+        
+    
+    
+            var circle_marker_69f3fabb1af92b69be6aebf9ab093048 = L.circleMarker(
+                [54.3641, -2.9222],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.96319018404908, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_5d41085711a77f0304fbc9436696f0bb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f425760742e4aa60f55565b18eff8fb = $(`<div id="html_7f425760742e4aa60f55565b18eff8fb" style="width: 100.0%; height: 100.0%;"><b>Bowness</b><br>Richness: 32</div>`)[0];
+                popup_5d41085711a77f0304fbc9436696f0bb.setContent(html_7f425760742e4aa60f55565b18eff8fb);
+            
+        
+
+        circle_marker_69f3fabb1af92b69be6aebf9ab093048.bindPopup(popup_5d41085711a77f0304fbc9436696f0bb)
+        ;
+
+        
+    
+    
+            var circle_marker_8ccdce60b2d01064901940d4131c73fa = L.circleMarker(
+                [51.70604, -1.48267],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.595092024539877, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_bd60b00e45bb0698b39d8f325497cd3b = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8de556fe7d6e5d78a069fc2ee4520ee = $(`<div id="html_a8de556fe7d6e5d78a069fc2ee4520ee" style="width: 100.0%; height: 100.0%;"><b>Chimney Meadows</b><br>Richness: 26</div>`)[0];
+                popup_bd60b00e45bb0698b39d8f325497cd3b.setContent(html_a8de556fe7d6e5d78a069fc2ee4520ee);
+            
+        
+
+        circle_marker_8ccdce60b2d01064901940d4131c73fa.bindPopup(popup_bd60b00e45bb0698b39d8f325497cd3b)
+        ;
+
+        
+    
+    
+            var circle_marker_38e62347d1077d2d85dd1d5b4083a7b1 = L.circleMarker(
+                [51.75134, -1.25167],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.779141104294478, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_40a480ad944591301ef104f955768dbf = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_8760f2727494ac7ee12664db7a6d6e77 = $(`<div id="html_8760f2727494ac7ee12664db7a6d6e77" style="width: 100.0%; height: 100.0%;"><b>Christchurch Meadows</b><br>Richness: 29</div>`)[0];
+                popup_40a480ad944591301ef104f955768dbf.setContent(html_8760f2727494ac7ee12664db7a6d6e77);
+            
+        
+
+        circle_marker_38e62347d1077d2d85dd1d5b4083a7b1.bindPopup(popup_40a480ad944591301ef104f955768dbf)
+        ;
+
+        
+    
+    
+            var circle_marker_8ad525e41f1f8ca333ba7fd08fedf569 = L.circleMarker(
+                [51.69317, -1.32972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.9815950920245395, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_57ef16aabc6e6feb8de66be87f7b23bc = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_e8bb688df160ed7e5b0ae52c1f90d1da = $(`<div id="html_e8bb688df160ed7e5b0ae52c1f90d1da" style="width: 100.0%; height: 100.0%;"><b>Church Lane</b><br>Richness: 16</div>`)[0];
+                popup_57ef16aabc6e6feb8de66be87f7b23bc.setContent(html_e8bb688df160ed7e5b0ae52c1f90d1da);
+            
+        
+
+        circle_marker_8ad525e41f1f8ca333ba7fd08fedf569.bindPopup(popup_57ef16aabc6e6feb8de66be87f7b23bc)
+        ;
+
+        
+    
+    
+            var circle_marker_babbee1eb9253b6a26ddd0d86e0da3be = L.circleMarker(
+                [51.69317, -1.32972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.024539877300613, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_01e285bbed151ab398f0d6cb2d63527c = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_9ff49446a5efaa19a04b5241d04a88c2 = $(`<div id="html_9ff49446a5efaa19a04b5241d04a88c2" style="width: 100.0%; height: 100.0%;"><b>Cothill Fen</b><br>Richness: 33</div>`)[0];
+                popup_01e285bbed151ab398f0d6cb2d63527c.setContent(html_9ff49446a5efaa19a04b5241d04a88c2);
+            
+        
+
+        circle_marker_babbee1eb9253b6a26ddd0d86e0da3be.bindPopup(popup_01e285bbed151ab398f0d6cb2d63527c)
+        ;
+
+        
+    
+    
+            var circle_marker_687d2506dbc729a8b9946c104ab9c4ff = L.circleMarker(
+                [51.69317, -1.32972],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.717791411042945, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_6b7d99e626413b337fc8d2c9cef43fca = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_17cc7984d33c4c2586c4c48b560add07 = $(`<div id="html_17cc7984d33c4c2586c4c48b560add07" style="width: 100.0%; height: 100.0%;"><b>Dry Sandford Pit</b><br>Richness: 28</div>`)[0];
+                popup_6b7d99e626413b337fc8d2c9cef43fca.setContent(html_17cc7984d33c4c2586c4c48b560add07);
+            
+        
+
+        circle_marker_687d2506dbc729a8b9946c104ab9c4ff.bindPopup(popup_6b7d99e626413b337fc8d2c9cef43fca)
+        ;
+
+        
+    
+    
+            var circle_marker_d155fd5668c618bda374e763e5844fc9 = L.circleMarker(
+                [51.758, -1.34752],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.92638036809816, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_99f13c1ecff3937272538cf6ce942694 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_1ebb6c12c10f7b1c7890bbd4df490ea3 = $(`<div id="html_1ebb6c12c10f7b1c7890bbd4df490ea3" style="width: 100.0%; height: 100.0%;"><b>Farmoor Reservoir</b><br>Richness: 64</div>`)[0];
+                popup_99f13c1ecff3937272538cf6ce942694.setContent(html_1ebb6c12c10f7b1c7890bbd4df490ea3);
+            
+        
+
+        circle_marker_d155fd5668c618bda374e763e5844fc9.bindPopup(popup_99f13c1ecff3937272538cf6ce942694)
+        ;
+
+        
+    
+    
+            var circle_marker_9bd5092fd51a4a4c711a7cbb29b3c113 = L.circleMarker(
+                [54.448834, -3.020897],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.552147239263804, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_5e5a4465f126e2888a66a2f263cb6ee4 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_3d3bafc27de1dad3cbf4217faaf8d3f6 = $(`<div id="html_3d3bafc27de1dad3cbf4217faaf8d3f6" style="width: 100.0%; height: 100.0%;"><b>Grasmere</b><br>Richness: 9</div>`)[0];
+                popup_5e5a4465f126e2888a66a2f263cb6ee4.setContent(html_3d3bafc27de1dad3cbf4217faaf8d3f6);
+            
+        
+
+        circle_marker_9bd5092fd51a4a4c711a7cbb29b3c113.bindPopup(popup_5e5a4465f126e2888a66a2f263cb6ee4)
+        ;
+
+        
+    
+    
+            var circle_marker_2e61a990c8ad72770610bd3325872a51 = L.circleMarker(
+                [51.706694, -1.32412],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.533742331288344, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_0e0832f40619ed51cf3dc71e06f52a11 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_c887566af6054cfe32a12c8213544fb8 = $(`<div id="html_c887566af6054cfe32a12c8213544fb8" style="width: 100.0%; height: 100.0%;"><b>Lashford Lane Fen</b><br>Richness: 25</div>`)[0];
+                popup_0e0832f40619ed51cf3dc71e06f52a11.setContent(html_c887566af6054cfe32a12c8213544fb8);
+            
+        
+
+        circle_marker_2e61a990c8ad72770610bd3325872a51.bindPopup(popup_0e0832f40619ed51cf3dc71e06f52a11)
+        ;
+
+        
+    
+    
+            var circle_marker_b0c1797638913befdf0757a52651ae9f = L.circleMarker(
+                [51.63405, -1.1867],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.60122699386503, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_cdcc2065552ad6e6c1c5d133be0de9d6 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bda5a4d4bf7c5583bae35e8558792823 = $(`<div id="html_bda5a4d4bf7c5583bae35e8558792823" style="width: 100.0%; height: 100.0%;"><b>Little Wittenham</b><br>Richness: 75</div>`)[0];
+                popup_cdcc2065552ad6e6c1c5d133be0de9d6.setContent(html_bda5a4d4bf7c5583bae35e8558792823);
+            
+        
+
+        circle_marker_b0c1797638913befdf0757a52651ae9f.bindPopup(popup_cdcc2065552ad6e6c1c5d133be0de9d6)
+        ;
+
+        
+    
+    
+            var circle_marker_e4206cff1f5de2c9e4d0b5de2cd77c2b = L.circleMarker(
+                [51.669448, -1.250431],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.165644171779141, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_8a093d512be2e46c5fbbe89bc6abaa2d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_eb55f946d4256cb0eb71039212f50b68 = $(`<div id="html_eb55f946d4256cb0eb71039212f50b68" style="width: 100.0%; height: 100.0%;"><b>Orchard Lake</b><br>Richness: 19</div>`)[0];
+                popup_8a093d512be2e46c5fbbe89bc6abaa2d.setContent(html_eb55f946d4256cb0eb71039212f50b68);
+            
+        
+
+        circle_marker_e4206cff1f5de2c9e4d0b5de2cd77c2b.bindPopup(popup_8a093d512be2e46c5fbbe89bc6abaa2d)
+        ;
+
+        
+    
+    
+            var circle_marker_5b217f0850e2a6deba56ca1660dbf8b7 = L.circleMarker(
+                [51.757407, -1.270389],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.7975460122699385, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_30b2a275fc6bd781a57db18e4a4d92b9 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_79e98e3e3d3d894ca28261839b881d93 = $(`<div id="html_79e98e3e3d3d894ca28261839b881d93" style="width: 100.0%; height: 100.0%;"><b>Oxford Canal</b><br>Richness: 13</div>`)[0];
+                popup_30b2a275fc6bd781a57db18e4a4d92b9.setContent(html_79e98e3e3d3d894ca28261839b881d93);
+            
+        
+
+        circle_marker_5b217f0850e2a6deba56ca1660dbf8b7.bindPopup(popup_30b2a275fc6bd781a57db18e4a4d92b9)
+        ;
+
+        
+    
+    
+            var circle_marker_35065d34f3b29f6cb87eafa49db58fe9 = L.circleMarker(
+                [53.55, -2.3277],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.306748466257669, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_9c97d8312984a796e928d169e54f7cce = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bb31a2e11219fb3c12174af26a2bdd3d = $(`<div id="html_bb31a2e11219fb3c12174af26a2bdd3d" style="width: 100.0%; height: 100.0%;"><b>Radcliffe</b><br>Richness: 5</div>`)[0];
+                popup_9c97d8312984a796e928d169e54f7cce.setContent(html_bb31a2e11219fb3c12174af26a2bdd3d);
+            
+        
+
+        circle_marker_35065d34f3b29f6cb87eafa49db58fe9.bindPopup(popup_9c97d8312984a796e928d169e54f7cce)
+        ;
+
+        
+    
+    
+            var circle_marker_450523c9e6e773fe2b30397d8962b523 = L.circleMarker(
+                [51.7011, -1.2846],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.656441717791411, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_c801f68ac85b931c3ede62ceba096d96 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a8dc69c6d3737f393fbc5e0115cc075b = $(`<div id="html_a8dc69c6d3737f393fbc5e0115cc075b" style="width: 100.0%; height: 100.0%;"><b>Sunningwell</b><br>Richness: 27</div>`)[0];
+                popup_c801f68ac85b931c3ede62ceba096d96.setContent(html_a8dc69c6d3737f393fbc5e0115cc075b);
+            
+        
+
+        circle_marker_450523c9e6e773fe2b30397d8962b523.bindPopup(popup_c801f68ac85b931c3ede62ceba096d96)
+        ;
+
+        
+    
+    
+            var circle_marker_6960dd75d88b145bfbd41f3d3e1e57ba = L.circleMarker(
+                [51.673813, -1.24953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.030674846625766, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_4c32f2aec24cea17433ad5a7db9c009d = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7f2a488dff4fd986170388f3855e512f = $(`<div id="html_7f2a488dff4fd986170388f3855e512f" style="width: 100.0%; height: 100.0%;"><b>Thrupp Lake</b><br>Richness: 82</div>`)[0];
+                popup_4c32f2aec24cea17433ad5a7db9c009d.setContent(html_7f2a488dff4fd986170388f3855e512f);
+            
+        
+
+        circle_marker_6960dd75d88b145bfbd41f3d3e1e57ba.bindPopup(popup_4c32f2aec24cea17433ad5a7db9c009d)
+        ;
+
+        
+    
+    
+            var circle_marker_40b7bcd4c7c5115b46d07baf7e6327a4 = L.circleMarker(
+                [54.3939, -2.9201],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.3926380368098155, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_8bcc2d33a9e95b217522ee9b5bde6edb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_db19c68942bfa9eb1b40cff9119644ce = $(`<div id="html_db19c68942bfa9eb1b40cff9119644ce" style="width: 100.0%; height: 100.0%;"><b>Troutbeck</b><br>Richness: 39</div>`)[0];
+                popup_8bcc2d33a9e95b217522ee9b5bde6edb.setContent(html_db19c68942bfa9eb1b40cff9119644ce);
+            
+        
+
+        circle_marker_40b7bcd4c7c5115b46d07baf7e6327a4.bindPopup(popup_8bcc2d33a9e95b217522ee9b5bde6edb)
+        ;
+
+        
+    
+    
+            var circle_marker_9fd23d7c58d6477d03268a82d8814655 = L.circleMarker(
+                [51.57457, -0.95163],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 7.208588957055214, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_f75d0b11fa21a0122a5faf61961ffec4);
+        
+    
+        var popup_ae19ee1ce64faaa2ebe39bed4d762d88 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_a6f3a6196fffe173ab0e5be4b40f5c7c = $(`<div id="html_a6f3a6196fffe173ab0e5be4b40f5c7c" style="width: 100.0%; height: 100.0%;"><b>Warburg Reserve</b><br>Richness: 36</div>`)[0];
+                popup_ae19ee1ce64faaa2ebe39bed4d762d88.setContent(html_a6f3a6196fffe173ab0e5be4b40f5c7c);
+            
+        
+
+        circle_marker_9fd23d7c58d6477d03268a82d8814655.bindPopup(popup_ae19ee1ce64faaa2ebe39bed4d762d88)
+        ;
+
+        
+    
+    
+            marker_cluster_f75d0b11fa21a0122a5faf61961ffec4.addTo(map_369853487c1c7ea436c29d5d984f6bd6);
+        
+</script>
+</html>

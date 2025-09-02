@@ -2,6 +2,7 @@
 
 # Get the project root folder
 export PROJECT_ROOT=$( cd "$( dirname "$0" )/.." && pwd )
+cd "$PROJECT_ROOT"
 
 # If CLANG is installed via MacPorts, use it and the gfortran compiler as
 # pre-requisites for building SciPy
@@ -16,18 +17,18 @@ fi
 # Deactivate and remove the old virtual environment, if present
 echo "Removing existing Virtual Environment, if present ..."
 deactivate 2> /dev/null || true
-rm -fr "$PROJECT_ROOT/venv"
+rm -fr venv
 
 # Create a new environment and activate it
 echo "Creating new Virtual Environment ..."
-python -m venv "$PROJECT_ROOT/venv"
-. "$PROJECT_ROOT/venv/bin/activate"
+python -m venv venv
+. venv/bin/activate
 
 # Make sure pip is up to date
 pip install --upgrade pip
 
 # Install the requirements
-pip install -r "$PROJECT_ROOT/scripts/requirements.txt"
+pip install -r scripts/requirements.txt
 
 # Remove the existing gems and re-install them
 echo "Removing existing gems ..."

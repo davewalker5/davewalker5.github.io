@@ -57,23 +57,26 @@ while [[ $# -gt 0 ]]; do
     esac
 done
 
-# Site to build for
+# Locate the folder containing the notebooks
 if [ ! -z "$SITE_NAME" ]; then
-    SITE_FOLDER="$PROJECT_ROOT/notebooks/$SITE_NAME"
-    if [ ! -d "$SITE_FOLDER" ]; then
-        echo "Site folder '$SITE_FOLDER' not found"
+    NOTEBOOKS_FOLDER="$PROJECT_ROOT/notebooks/$SITE_NAME"
+    if [ ! -d "$NOTEBOOKS_FOLDER" ]; then
+        echo "Notebooks folder '$NOTEBOOKS_FOLDER' not found"
         exit 1
     fi
+else
+    NOTEBOOKS_FOLDER="$PROJECT_ROOT/notebooks"
 fi
 
 echo
 echo "Build Parameters:"
 echo
-echo "Site     : $SITE_NAME"
-echo "Country  : $COUNTRY"
-echo "Location : $LOCATION"
-echo "Category : $CATEGORY"
-echo "Year     : $YEAR"
+echo "Site             : $SITE_NAME"
+echo "Notebooks Folder : $NOTEBOOKS_FOLDER"
+echo "Country          : $COUNTRY"
+echo "Location         : $LOCATION"
+echo "Category         : $CATEGORY"
+echo "Year             : $YEAR"
 echo
 
 # See if the virtual environment needs a rebuild
@@ -81,11 +84,11 @@ echo
 rebuild_required=$?
 
 if [[ $rebuild_required -eq 1 ]]; then
-    . "$PROJECT_ROOT/scripts/build-environment.sh"
+    "$PROJECT_ROOT/scripts/build-environment.sh"
 fi
 
 # Activate the virtual environment
-. $PROJECT_ROOT/venv/bin/activate
+. "$PROJECT_ROOT/venv/bin/activate"
 
 # Suppress warnings about the output file extension
 export PYTHONWARNINGS="ignore"
@@ -99,27 +102,17 @@ declare -a exclusions=(
     "utils.ipynb"
 )
 
-# Store the current working directory so we can restore it
-STARTING_DIR=`pwd`
-
-# If specified, change to the folder containing the reports to run
-if [ -n "$SITE_FOLDER" ]; then
-    cd "$SITE_FOLDER"
-else
-    cd "$PROJECT_ROOT"
-fi
-
 # Copy the database files into place
-if [[ -z "$1" || "$1" == "aircraft" ]]; then
+if [[ -z "$SITE_NAME" || "$SITE_NAME" == "aircraft" ]]; then
     cp "$FLIGHT_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
 fi
 
-if [[ -z "$1" || "$1" == "wildlife" ]]; then
+if [[ -z "$SITE_NAME" || "$SITE_NAME" == "wildlife" ]]; then
     cp "$NATURE_RECORDER_DB" "$PROJECT_ROOT/assets/downloads"
 fi
 
 # Get a list of Jupyter Notebooks and iterate over them
-files=$(find . -name '*.ipynb')
+files=$(find "$NOTEBOOKS_FOLDER" -name '*.ipynb')
 while IFS= read -r file; do
     # Get the notebook file name and extension without the path
     sitename=$(basename "$(dirname "$file")")
@@ -135,7 +128,6 @@ while IFS= read -r file; do
     # If this notebook isn't in the exclusions list, run it
     if [[ found -eq 0 ]]; then
         # Make sure we're in the right folder to run it
-        CURRENT_DIR=`pwd`
         cd "$PROJECT_ROOT/notebooks/$sitename"
 
         # The wildlife site notebooks require parameters while the aircraft site notebooks don't, so run papermill
@@ -149,9 +141,6 @@ while IFS= read -r file; do
         else
             papermill "$filename" /dev/null
         fi
-
-        # Restore the working folder
-        cd "$CURRENT_DIR"
     fi
 done <<< "$files"
 
@@ -171,7 +160,6 @@ if [[ "$COPY" == "true" && "$PROJECT_ROOT" =~ "github" ]]; then
         "_config.yml"
         ".gitignore"
         "Gemfile"
-        "Gemfile.lock"
         "index.md"
     )
 
@@ -180,9 +168,6 @@ if [[ "$COPY" == "true" && "$PROJECT_ROOT" =~ "github" ]]; then
     done
 fi
 shopt -u nocasematch
-
-# Commit changes, if requested
-if [ "$COMMIT" == "true" ]; then
 
 # Commit the changes
 if [ "$COMMIT" == "true" ]; then
@@ -204,8 +189,6 @@ if [ "$PUSH" == "true" ]; then
     git push
 fi
 
-# Restore the current working directory
-cd "$STARTING_DIR"
-
 # Now build the Jekyll site
+cd "$PROJECT_ROOT"
 bundle exec jekyll build
