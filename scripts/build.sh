@@ -183,8 +183,16 @@ shopt -u nocasematch
 
 # Commit changes, if requested
 if [ "$COMMIT" == "true" ]; then
-    cd "$PUBLISH_ROOT"
+
+# Commit the changes
+if [ "$COMMIT" == "true" ]; then
     timestamp=$(date +"%d-%b-%Y %H:%M:%S")
+    cd "$PROJECT_ROOT"
+    git stage .
+    git status
+    git commit -m "Report update @ $timestamp"
+
+    cd "$PUBLISH_ROOT"
     git stage .
     git status
     git commit -m "Report update @ $timestamp"
