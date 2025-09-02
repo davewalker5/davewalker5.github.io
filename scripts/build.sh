@@ -10,11 +10,23 @@ COUNTRY=""
 LOCATION=""
 CATEGORY=""
 YEAR=""
+COMMIT=""
 PUSH=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
+        --copy)
+            COPY="true"
+            shift 1
+            ;;
+        --commit)
+            COPY="true"
+            COMMIT="true"
+            shift 1
+            ;;
         --push)
+            COPY="true"
+            COMMIT="true"
             PUSH="true"
             shift 1
             ;;
@@ -64,6 +76,14 @@ echo "Category : $CATEGORY"
 echo "Year     : $YEAR"
 echo
 
+# See if the virtual environment needs a rebuild
+"$PROJECT_ROOT/scripts/check-venv-os.sh"
+rebuild_required=$?
+
+if [[ $rebuild_required -eq 1 ]]; then
+    . "$PROJECT_ROOT/scripts/build-environment.sh"
+fi
+
 # Activate the virtual environment
 . $PROJECT_ROOT/venv/bin/activate
 
@@ -80,11 +100,13 @@ declare -a exclusions=(
 )
 
 # Store the current working directory so we can restore it
-CURDIR=`pwd`
+STARTING_DIR=`pwd`
 
 # If specified, change to the folder containing the reports to run
 if [ -n "$SITE_FOLDER" ]; then
     cd "$SITE_FOLDER"
+else
+    cd "$PROJECT_ROOT"
 fi
 
 # Copy the database files into place
@@ -100,7 +122,7 @@ fi
 files=$(find . -name '*.ipynb')
 while IFS= read -r file; do
     # Get the notebook file name and extension without the path
-    folder=$(dirname "$file")
+    sitename=$(basename "$(dirname "$file")")
     filename=$(basename -- "$file")
 
     # See if the notebook is in the exclusions list
@@ -112,8 +134,13 @@ while IFS= read -r file; do
 
     # If this notebook isn't in the exclusions list, run it
     if [[ found -eq 0 ]]; then
-        cd "$folder"
-        if [[ "$folder" == "wildlife" ]]; then
+        # Make sure we're in the right folder to run it
+        CURRENT_DIR=`pwd`
+        cd "$PROJECT_ROOT/notebooks/$sitename"
+
+        # The wildlife site notebooks require parameters while the aircraft site notebooks don't, so run papermill
+        # with appropriate parameters
+        if [[ "$sitename" == "wildlife" ]]; then
             papermill "$filename" /dev/null \
                 -p country "$COUNTRY" \
                 -p location "$LOCATION" \
@@ -122,15 +149,15 @@ while IFS= read -r file; do
         else
             papermill "$filename" /dev/null
         fi
+
+        # Restore the working folder
+        cd "$CURRENT_DIR"
     fi
 done <<< "$files"
 
-# If this isn't the publication folder, copy the aircraft and wildlife reports output and the
-# downloadable assets to that folder and commit the changes
+# If this isn't the GitHub working copy, copy the potentially amended files and folders to that working copy
 shopt -s nocasematch
-
-if [[ "$PROJECT_ROOT" =~ "github" ]]; then
-    # Define the list of folders to copy
+if [[ "$COPY" == "true" && "$PROJECT_ROOT" =~ "github" ]]; then
     folders=(
         "_data/"
         "_includes/"
@@ -148,28 +175,29 @@ if [[ "$PROJECT_ROOT" =~ "github" ]]; then
         "index.md"
     )
 
-    # Copy them
     for folder in "${folders[@]}"; do
         rsync -av --delete "$PROJECT_ROOT/$folder" "$PUBLISH_ROOT/$folder"
     done
+fi
+shopt -u nocasematch
 
-    # Commit the changes
+# Commit changes, if requested
+if [ "$COMMIT" == "true" ]; then
     cd "$PUBLISH_ROOT"
     timestamp=$(date +"%d-%b-%Y %H:%M:%S")
     git stage .
     git status
     git commit -m "Report update @ $timestamp"
-
-    # If requested, push the changes
-    if [ "$PUSH" == "true" ]; then
-        git push
-    fi
 fi
 
-shopt -u nocasematch
+# Push changes, if requested
+if [ "$PUSH" == "true" ]; then
+    cd "$PUBLISH_ROOT"
+    git push
+fi
 
 # Restore the current working directory
-cd "$CURDIR"
+cd "$STARTING_DIR"
 
 # Now build the Jekyll site
 bundle exec jekyll build

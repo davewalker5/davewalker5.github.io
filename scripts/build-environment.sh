@@ -28,3 +28,11 @@ pip install --upgrade pip
 
 # Install the requirements
 pip install -r "$PROJECT_ROOT/scripts/requirements.txt"
+
+# Remove the existing gems and re-install them
+echo "Removing existing gems ..."
+rm -rf vendor/bundle
+rm -rf Gemfile.lock
+
+echo "Reinstalling gems ..." 
+bundle install
