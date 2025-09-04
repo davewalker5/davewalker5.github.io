@@ -14,10 +14,13 @@ theme: jekyll-theme-minimal
 plugins: []
 
 exclude:
+  - .bundle
+  - .gitignore
+  - scripts
   - vendor
+  - venv
   - Gemfile
   - Gemfile.lock
-  - node_modules
 
 hero:
   enabled: true
