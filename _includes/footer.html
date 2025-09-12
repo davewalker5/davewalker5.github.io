@@ -1,0 +1,15 @@
+<footer class="site-footer">
+    <hr />
+    <p>
+        {% assign start_year = "2025" %}
+        {% assign current_year = site.time | date: "%Y" %}
+        Copyright &copy; 
+        {% if current_year == start_year %}
+            {{ start_year }}
+        {% else %}
+            {{ start_year }}–{{ current_year }}
+        {% endif %}
+        David Walker.
+        Latest build: {{ site.time | date: "%d %b %Y %H:%M:%S" }}
+    </p>
+</footer>
