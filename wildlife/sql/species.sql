@@ -1,0 +1,7 @@
+SELECT DISTINCT sp.Name AS 'Species'
+FROM SIGHTINGS s
+INNER JOIN SPECIES sp ON sp.Id = s.SpeciesId
+INNER JOIN CATEGORIES c ON c.Id = sp.CategoryId
+INNER JOIN LOCATIONS l ON l.Id = s.LocationId
+WHERE l.Name = '$LOCATION'
+AND c.Name = "$CATEGORY";
