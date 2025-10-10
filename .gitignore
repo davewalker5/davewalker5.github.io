@@ -1,0 +1,11 @@
+.DS_Store
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.bundle
+_site
+schedule
+vendor
+venv
+Location-Date-Analysis.xlsx
+*.log
