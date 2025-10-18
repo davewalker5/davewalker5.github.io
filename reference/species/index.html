@@ -1,0 +1,37 @@
+---
+layout: default
+title: Species Details
+---
+<div class="breadcrumb">
+  <a href="{{ '/' | relative_url }}">Home</a> ›
+  <a href="{{ '/reference/' | relative_url }}">Reference Data</a> ›
+  Species Details
+</div>
+
+<h1>Species Details</h1>
+
+<!-- Use pure HTML page to avoid Markdown interfering with <option> rendering -->
+<label for="cat-select"><strong>Filter by category:</strong></label>
+<select id="cat-select">
+  <option value="">— Choose a category —</option>
+  {% assign cats = site.data.species | map: 'Category' | uniq | sort %}
+  {% for c in cats %}
+    {% if c %}<option value="{{ c | escape }}">{{ c }}</option>{% endif %}
+  {% endfor %}
+</select>
+
+<table id="species-table" class="data-table" style="margin-top: 1rem;">
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Scientific Name</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3" class="muted">Pick a category to load species…</td></tr>
+  </tbody>
+</table>
+
+<script id="species-data" type="application/json">{{ site.data.species | jsonify }}</script>
+<script src="{{ '/assets/js/species-table.js?v=1756476225' | relative_url }}"></script>
