@@ -1,0 +1,23 @@
+---
+layout: default
+title: Heatmap viewer
+---
+
+<div class="breadcrumb">
+  <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a> ›
+  <a href="{{ '/wildlife/heatmap/' | relative_url }}">Annual Category Heatmap</a>
+</div>
+
+<h1 id="heading">Heatmap</h1>
+<p class="muted" id="meta"></p>
+
+<div id="img-wrap">
+  <img id="report-img" class="responsive" alt="Annual category heatmap"/>
+</div>
+
+<p>
+  <a id="xlsx-link" href="#" download>Download XLSX data</a>
+</p>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/heatmap-viewer.js' | relative_url }}"></script>
