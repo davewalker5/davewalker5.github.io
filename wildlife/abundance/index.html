@@ -1,0 +1,43 @@
+---
+layout: default
+title: Abundance by Location  Reports
+---
+
+<h1>Abundance by Location Reports</h1>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Location</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign entries = "" | split: "" %}
+    {% assign files = site.static_files | where: "name", "abundance.png" %}
+    {% for f in files %}
+      {% if f.path contains '/wildlife/reports/' and f.path contains '/abundance/' %}
+        {% assign parts = f.path | split:'/' %}
+        {% assign country  = parts[3] %}
+        {% assign location = parts[5] %}
+        {% assign category = parts[6] %}
+        {% capture rec %}{{ country }}|{{ location }}|{{ category }}{% endcapture %}
+        {% assign entries = entries | push: rec %}
+      {% endif %}
+    {% endfor %}
+
+    {% assign uniq = entries | uniq | sort %}
+    {% for e in uniq %}
+      {% assign p = e | split:'|' %}
+      <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
+        <td>
+          <a href="{{ '/wildlife/abundance/view.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}/{{ p[2] | uri_escape }}">
+            {{ p[2] }}
+          </a>
+        </td>
+      </tr>
+    {% endfor %}
+  </tbody>
+</table>
