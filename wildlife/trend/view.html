@@ -1,0 +1,24 @@
+---
+layout: default
+title: Trend viewer
+---
+
+<div class="breadcrumb">
+  <a href="{ '{' } '/wildlife/' | relative_url { '}' }">Wildlife</a> ›
+  <a href="{ '{' } '/wildlife/trend/' | relative_url { '}' }">Trend</a>
+</div>
+
+<h1 id="heading">Trend</h1>
+<p class="muted" id="meta"></p>
+
+<div id="img-wrap">
+  <img id="report-img" class="responsive" alt="Trend chart"/>
+</div>
+
+<p>
+  <a id="xlsx-link" href="#" download>Download XLSX data</a>
+</p>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/trend-viewer.js' | relative_url }}"></script>
+
