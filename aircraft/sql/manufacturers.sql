@@ -1,0 +1,3 @@
+SELECT m.Name AS "Manufacturer"
+FROM MANUFACTURER m
+ORDER BY m.Name ASC;

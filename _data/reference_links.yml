@@ -1,0 +1,18 @@
+- area: Aircraft
+  title: Airport Details
+  url: /reference/airports/
+- area: Aircraft
+  title: Flight Recorder SQLite database
+  url: /assets/downloads/flightrecorder.db
+- area: Weather
+  title: RPi-Weather Station SQLite database
+  url: /assets/downloads/weather.db
+- area: Wildlife
+  title: Species Details
+  url: /reference/species/
+- area: Wildlife
+  title: Wildlife Location Details
+  url: /reference/wildlife-locations/
+- area: Wildlife
+  title: Nature Recorder SQLite database
+  url: /assets/downloads/naturerecorder.db
