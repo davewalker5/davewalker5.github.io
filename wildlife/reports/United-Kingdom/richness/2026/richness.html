@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_31d8a3f01650187e2a65354f3f71067c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_31d8a3f01650187e2a65354f3f71067c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_31d8a3f01650187e2a65354f3f71067c = L.map(
+                "map_31d8a3f01650187e2a65354f3f71067c",
+                {
+                    center: [51.6727415, -1.26393],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_9fc34b20a186442c36f449bfff1c4968 = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_9fc34b20a186442c36f449bfff1c4968.addTo(map_31d8a3f01650187e2a65354f3f71067c);
+        
+    
+            var marker_cluster_fbd1b5827c65217efa207e77d29dec62 = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_e0e6e7152c1713a90484794bc2c7590a = L.circleMarker(
+                [51.67167, -1.27833],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_fbd1b5827c65217efa207e77d29dec62);
+        
+    
+        var popup_cd3bac3ca2860085f0c86435ad2afecb = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_4085620e026d44af977420ac8cf3769f = $(`<div id="html_4085620e026d44af977420ac8cf3769f" style="width: 100.0%; height: 100.0%;"><b>Abingdon</b><br>Richness: 43</div>`)[0];
+                popup_cd3bac3ca2860085f0c86435ad2afecb.setContent(html_4085620e026d44af977420ac8cf3769f);
+            
+        
+
+        circle_marker_e0e6e7152c1713a90484794bc2c7590a.bindPopup(popup_cd3bac3ca2860085f0c86435ad2afecb)
+        ;
+
+        
+    
+    
+            var circle_marker_c8d95cce2ed411fbd8503c6bcddb9871 = L.circleMarker(
+                [51.673813, -1.24953],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 8.255813953488373, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_fbd1b5827c65217efa207e77d29dec62);
+        
+    
+        var popup_05f3c62d1163d9d6ba91c25db482be84 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_303230b439f28ec35a33461e7cdc4276 = $(`<div id="html_303230b439f28ec35a33461e7cdc4276" style="width: 100.0%; height: 100.0%;"><b>Thrupp Lake</b><br>Richness: 14</div>`)[0];
+                popup_05f3c62d1163d9d6ba91c25db482be84.setContent(html_303230b439f28ec35a33461e7cdc4276);
+            
+        
+
+        circle_marker_c8d95cce2ed411fbd8503c6bcddb9871.bindPopup(popup_05f3c62d1163d9d6ba91c25db482be84)
+        ;
+
+        
+    
+    
+            marker_cluster_fbd1b5827c65217efa207e77d29dec62.addTo(map_31d8a3f01650187e2a65354f3f71067c);
+        
+</script>
+</html>
