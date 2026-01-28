@@ -1,0 +1,92 @@
+/* === Dark theme across the entire site === */
+:root {
+  /* Surfaces */
+  --bg: #0b0f14;          /* page background */
+  --surface: #0f1620;     /* cards/panels/tables */
+  --surface-2: #121c28;   /* subtle alternate surface */
+  --nav-bg: rgba(15, 22, 32, 0.65);
+
+  /* Text */
+  --text: #e6edf3;
+  --muted: #9aa4b2;
+
+  /* UI */
+  --border: rgba(255, 255, 255, 0.10);
+  --shadow: 0 1px 10px rgba(0, 0, 0, 0.35);
+
+  /* Links */
+  --link: #6cb6ff;
+  --link-hover: #9ad1ff;
+
+  /* Table row states */
+  --stripe: rgba(255, 255, 255, 0.03);
+  --hover: rgba(255, 255, 255, 0.06);
+
+  /* Optional focus ring */
+  --focus: rgba(108, 182, 255, 0.35);
+}
+
+html, body {
+  background-color: var(--bg);
+  color: var(--text);
+  color-scheme: dark; /* Tell the UA this page is dark-themed */
+}
+
+/* Base text + links */
+body { color: var(--text); }
+a { color: var(--link); }
+a:hover { color: var(--link-hover); }
+
+/* Keep "panel/card/content" wrappers dark */
+.data-table, .card, .panel, .content, main {
+  background: transparent;
+}
+
+/* Navbar: translucent dark glass */
+.site-nav {
+  background-color: var(--nav-bg);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-shadow: var(--shadow);
+  border-bottom: 1px solid var(--border);
+}
+
+/* Navbar link/icon color */
+.site-nav a,
+.site-nav svg {
+  color: var(--text) !important;
+}
+
+/* Better keyboard focus visibility */
+a:focus-visible, button:focus-visible, [tabindex]:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Light theme fallback when user prefers light
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #ffffff;
+    --surface: #ffffff;
+    --surface-2: #f6f8fa;
+    --nav-bg: rgba(255, 255, 255, 0.70);
+
+    --text: #111111;
+    --muted: #666666;
+
+    --border: rgba(0, 0, 0, 0.10);
+    --shadow: 0 1px 10px rgba(0, 0, 0, 0.10);
+
+    --link: #0366d6;
+    --link-hover: #024ea3;
+
+    --stripe: #f9fafb;
+    --hover: #f3f4f6;
+    --focus: rgba(3, 102, 214, 0.25);
+  }
+
+  html, body { color-scheme: light; }
+}
+*/
