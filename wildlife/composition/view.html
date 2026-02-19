@@ -1,0 +1,19 @@
+---
+layout: default
+title: Composition Chart
+breadcrumb: Composition Chart
+---
+
+<h1 id="heading">Composition</h1>
+<p class="muted" id="meta"></p>
+
+<div id="img-wrap">
+  <img id="report-img" class="responsive" alt="Composition chart"/>
+</div>
+
+<p>
+  <a id="xlsx-link" href="#" download>Download XLSX data</a>
+</p>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/composition-viewer.js' | relative_url }}"></script>
