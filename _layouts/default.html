@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ page.title }} | {{ site.title }}</title>
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ '/assets/css/site.css?v=1.2' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/hero.css?v=2.0' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/github-icon.css?v=1.0' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-colors.css?v=1.0' | relative_url }}">
+  <style>
+    :root { --maxw: 1200px; }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+    header, main, footer { max-width: var(--maxw); margin: 0 auto; padding: 0; }
+    .breadcrumb { margin: .5rem 0 1rem; font-size: .95rem; color: #666; padding: 0 1rem; }
+    img.responsive { max-width: 100%; height: auto; }
+  </style>
+</head>
+<body>
+  <header>
+    {% include hero.html %}
+    {% include nav.html %}
+  </header>
+  <main>
+    {% include breadcrumbs-jsonld.html %}
+    {% include breadcrumbs.html %}
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>

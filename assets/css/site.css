@@ -1,0 +1,81 @@
+/* Basic layout niceties */
+:root { --maxw: 980px; --border: #e5e7eb; --stripe: #f9fafb; --hover: #f3f4f6; }
+main { overflow-x: auto; } /* allow horizontal scroll on small screens */
+
+/* Data tables */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+}
+table.data-table th,
+table.data-table td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  white-space: nowrap;
+}
+table.data-table th:nth-child(1),
+table.data-table td:nth-child(1) { width: 22%; }
+table.data-table th:nth-child(2),
+table.data-table td:nth-child(2) { width: 22%; }
+table.data-table th:nth-child(3),
+table.data-table td:nth-child(3) { width: 28%; }
+table.data-table th:nth-child(4),
+table.data-table td:nth-child(4) { width: 28%; }
+
+table.data-table tbody tr:nth-child(odd) td { background: var(--stripe); }
+table.data-table tbody tr:hover td { background: var(--hover); }
+
+/* Links */
+a { color: inherit; }
+a:hover { text-decoration: underline; }
+.muted { color: #666; font-size: .95rem; }
+
+.breadcrumbs {
+  font-size: 0.9rem;
+  margin: 0.75em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs li + li::before {
+  content: " > ";
+  color: #888;
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: #0366d6;
+}
+
+.breadcrumbs span {
+  color: #555;
+}
+
+@media (max-width: 700px) {
+  .breadcrumbs {
+    white-space: normal;
+  }
+}
+
+.breadcrumbs li:not(:last-child) a {
+  opacity: 0.8;
+}
+
+.breadcrumbs {
+  color: #666;
+}

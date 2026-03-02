@@ -1,0 +1,14 @@
+.site-nav .nav-left .nav-icon {
+  color: #000;
+  display: inline-flex;
+  align-items: center;
+}
+
+.site-nav .nav-left .github-mark {
+  width: 24px;
+  height: 24px;
+  margin-right: 12px;
+  transition: opacity .2s ease-in-out;
+}
+
+.site-nav .nav-left .nav-icon:hover .github-mark { opacity:.75; }

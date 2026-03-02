@@ -1,0 +1,123 @@
+Report,Location,Country,Category,From,To,YearSpecific
+Richness,,United Kingdom,,2020,2026,No
+Heatmap,Abingdon,United Kingdom,Birds,2020,2026,Yes
+Heatmap,Abingdon,United Kingdom,Butterflies,2020,2026,Yes
+Heatmap,Abingdon,United Kingdom,Flora,2020,2026,Yes
+Heatmap,Oxford,United Kingdom,Birds,2020,2026,Yes
+Heatmap,Thrupp Lake,United Kingdom,Birds,2020,2026,Yes
+Heatmap,Thrupp Lake,United Kingdom,Flora,2020,2026,Yes
+Heatmap,Kennington,United Kingdom,Amphibians,1994,2002,Yes
+Heatmap,Kennington,United Kingdom,Bats,1994,2002,Yes
+Heatmap,Kennington,United Kingdom,Birds,1994,2002,Yes
+Heatmap,Kennington,United Kingdom,Butterflies,1994,2002,Yes
+Heatmap,Kennington,United Kingdom,Mammals,1994,2002,Yes
+Heatmap,Kennington,United Kingdom,Rodents,1994,2002,Yes
+Trend,Abingdon,United Kingdom,Birds,2020,2026,No
+Trend,Abingdon,United Kingdom,Butterflies,2020,2026,No
+Trend,Abingdon,United Kingdom,Flora,2020,2026,No
+Trend,Oxford,United Kingdom,Birds,2020,2026,No
+Trend,Thrupp Lake,United Kingdom,Birds,2020,2026,No
+Trend,Thrupp Lake,United Kingdom,Flora,2020,2026,No
+Trend,Kennington,United Kingdom,Amphibians,1994,2002,No
+Trend,Kennington,United Kingdom,Bats,1994,2002,No
+Trend,Kennington,United Kingdom,Birds,1994,2002,No
+Trend,Kennington,United Kingdom,Butterflies,1994,2002,No
+Trend,Kennington,United Kingdom,Mammals,1994,2002,No
+Trend,Kennington,United Kingdom,Rodents,1994,2002,No
+Composition,Abingdon,United Kingdom,Birds,0,0,No
+Composition,Abingdon,United Kingdom,Butterflies,0,0,No
+Composition,Abingdon,United Kingdom,Flora,0,0,No
+Composition,Oxford,United Kingdom,Birds,0,0,No
+Composition,Thrupp Lake,United Kingdom,Birds,0,0,No
+Composition,Thrupp Lake,United Kingdom,Flora,0,0,No
+Composition,Kennington,United Kingdom,Birds,1994,2002,No
+Composition,Kennington,United Kingdom,Butterflies,1994,2002,No
+Composition,Kennington,United Kingdom,Rodents,1994,2002,No
+Abundance,Abingdon,United Kingdom,Birds,0,0,No
+Abundance,Abingdon,United Kingdom,Butterflies,0,0,No
+Abundance,Abingdon,United Kingdom,Flora,0,0,No
+Abundance,Oxford,United Kingdom,Birds,0,0,No
+Abundance,Thrupp Lake,United Kingdom,Birds,0,0,No
+Abundance,Thrupp Lake,United Kingdom,Flora,0,0,No
+Abundance,Kennington,United Kingdom,Birds,0,0,No
+Abundance,Kennington,United Kingdom,Butterflies,0,0,No
+Composition,Grand Gaube,Mauritius,Birds,2024,2024,No
+Composition,Grand Gaube,Mauritius,Beetles,2024,2024,No
+Composition,Grand Gaube,Mauritius,Arachnids,2024,2024,No
+Composition,Grand Gaube,Mauritius,Reptiles,2024,2024,No
+Composition,Grand Gaube,Mauritius,Bats,2024,2024,No
+Composition,Grand Gaube,Mauritius,Butterflies,2024,2024,No
+Composition,Grand Gaube,Mauritius,Marine Invertebrates,2024,2024,No
+Composition,Grand Gaube,Mauritius,Wasps,2024,2024,No
+Composition,Grand Gaube,Mauritius,Dragonflies,2024,2024,No
+Composition,Grand Gaube,Mauritius,Fish,2024,2024,No
+Composition,Grand Gaube,Mauritius,Ants,2024,2024,No
+Richness,,Tanzania,,2022,2022,No
+Composition,Arusha,Tanzania,Birds,2022,2022,No
+Composition,Arusha National Park,Tanzania,Ungulates,2022,2022,No
+Composition,Arusha National Park,Tanzania,Birds,2022,2022,No
+Composition,Arusha National Park,Tanzania,Primates,2022,2022,No
+Composition,Arusha National Park,Tanzania,Mammals,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Ants,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Ungulates,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Mammals,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Cats,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Birds,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Primates,2022,2022,No
+Composition,Tarangire National Park,Tanzania,Dog Family,2022,2022,No
+Composition,Ngorongoro Crater,Tanzania,Cats,2022,2022,No
+Composition,Ngorongoro Crater,Tanzania,Dog Family,2022,2022,No
+Composition,Ngorongoro Crater,Tanzania,Ungulates,2022,2022,No
+Composition,Ngorongoro Crater,Tanzania,Birds,2022,2022,No
+Composition,Ngorongoro Crater,Tanzania,Mammals,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Mammals,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Ungulates,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Birds,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Dog Family,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Cats,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Primates,2022,2022,No
+Composition,Serengeti National Park (Central),Tanzania,Trees,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Mammals,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Ungulates,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Birds,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Primates,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Trees,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Mammals,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Dog Family,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Ungulates,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Birds,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Cats,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Primates,2022,2022,No
+Composition,Serengeti National Park (Western Corridor),Tanzania,Reptiles,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Dog Family,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Reptiles,2022,2022,No
+Composition,Serengeti National Park,Tanzania,Cats,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Rodents,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Primates,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Trees,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Birds,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Mammals,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Ungulates,2022,2022,No
+Composition,Lake Manyara National Park,Tanzania,Cats,2022,2022,No
+Composition,Zanzibar,Tanzania,Birds,2022,2022,No
+Richness,,Seychelles,,2025,2025,No
+Composition,Port Launay,Seychelles,Bats,2025,2025,No
+Composition,Port Launay,Seychelles,Birds,2025,2025,No
+Composition,Port Launay,Seychelles,Flora,2025,2025,No
+Composition,Port Launay,Seychelles,Wasps,2025,2025,No
+Composition,Port Launay,Seychelles,Marine Invertebrates,2025,2025,No
+Composition,Port Launay,Seychelles,Reptiles,2025,2025,No
+Composition,Port Launay,Seychelles,Arachnids,2025,2025,No
+Composition,Port Launay,Seychelles,Insects,2025,2025,No
+Composition,Port Launay,Seychelles,Trees,2025,2025,No
+Composition,Port Launay,Seychelles,Butterflies,2025,2025,No
+Composition,Port Launay,Seychelles,Molluscs,2025,2025,No
+Composition,Port Launay,Seychelles,Mammals,2025,2025,No
+Composition,Praslin,Seychelles,Birds,2025,2025,No
+Composition,Praslin,Seychelles,Trees,2025,2025,No
+Composition,Praslin,Seychelles,Molluscs,2025,2025,No
+Composition,Praslin,Seychelles,Reptiles,2025,2025,No
+Composition,Praslin,Seychelles,Arachnids,2025,2025,No
+Composition,La Digue,Seychelles,Birds,2025,2025,No
+Composition,La Digue,Seychelles,Wasps,2025,2025,No
+Composition,La Digue,Seychelles,Reptiles,2025,2025,No

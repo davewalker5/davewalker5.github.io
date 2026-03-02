@@ -1,0 +1,30 @@
+{% assign hero_enabled = page.hero | default: site.hero.enabled | default: true %}
+{% if hero_enabled %}
+  {% assign sm  = page.hero_image_sm  | default: site.hero.image_sm  | default: '/assets/images/banner-768.jpg' %}
+  {% assign md  = page.hero_image_md  | default: site.hero.image_md  | default: '/assets/images/banner-1280.jpg' %}
+  {% assign lg  = page.hero_image_lg  | default: site.hero.image_lg  | default: '/assets/images/banner-1920.jpg' %}
+  {% assign smd = page.hero_image_sm_dark | default: site.hero.image_sm_dark %}
+  {% assign mdd = page.hero_image_md_dark | default: site.hero.image_md_dark %}
+  {% assign lgd = page.hero_image_lg_dark | default: site.hero.image_lg_dark %}
+  {% assign alt = page.hero_alt | default: site.hero.alt | default: site.title %}
+
+  <div class="hero">
+    <picture class="hero-media">
+      {% if lgd %}<source media="(prefers-color-scheme: dark) and (min-width: 1280px)" srcset="{{ lgd | relative_url }}">{% endif %}
+      {% if mdd %}<source media="(prefers-color-scheme: dark) and (min-width: 768px)"  srcset="{{ mdd | relative_url }}">{% endif %}
+      {% if smd %}<source media="(prefers-color-scheme: dark)" srcset="{{ smd | relative_url }}">{% endif %}
+
+      <source media="(min-width: 1280px)" srcset="{{ lg | relative_url }}">
+      <source media="(min-width: 768px)"  srcset="{{ md | relative_url }}">
+      <img src="{{ md | relative_url }}"
+           alt="{{ alt | escape }}"
+           width="1920" height="480"
+           loading="eager" decoding="async">
+    </picture>
+
+    <div class="hero-overlay"></div>
+    <div class="hero-inner">
+      <h1 class="hero-title">{{ page.hero_title | default: site.title }}</h1>
+    </div>
+  </div>
+{% endif %}

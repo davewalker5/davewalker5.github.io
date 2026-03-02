@@ -1,0 +1,39 @@
+---
+layout: default
+title: Airport Details
+---
+
+<h1>Airport Details</h1>
+
+<!-- Alphabet filter -->
+<nav id="alpha-filter" class="alpha" aria-label="Filter by first letter of IATA code">
+  <a href="#" data-letter="ALL" class="active">All</a>
+  {% assign letters = "A,B,C,D,E,F,G,H,I,J,K,L,M,N,O,P,Q,R,S,T,U,V,W,X,Y,Z" | split: "," %}
+  {% for L in letters %}
+    <a href="#/{{ L }}" data-letter="{{ L }}">{{ L }}</a>
+  {% endfor %}
+</nav>
+
+<table id="airports-table" class="data-table" style="margin-top: .75rem;">
+  <thead>
+    <tr>
+      <th style="width:10ch">IATA</th>
+      <th>Name</th>
+      <th style="width:28ch">Country</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td colspan="3" class="muted">Loading…</td></tr>
+  </tbody>
+</table>
+
+<!-- Embed dataset as JSON for fast client-side filtering -->
+<script id="airports-data" type="application/json">{{ site.data.airports | jsonify }}</script>
+<script src="{{ '/assets/js/airports-table.js?v=1756520547' | relative_url }}"></script>
+
+<style>
+  .alpha { display:flex; flex-wrap:wrap; gap:.25rem .5rem; font-weight:600; }
+  .alpha a { text-decoration:none; opacity:.8; }
+  .alpha a.active { text-decoration:underline; opacity:1; }
+  .alpha a:focus { outline: 2px solid currentColor; outline-offset: 2px; }
+</style>

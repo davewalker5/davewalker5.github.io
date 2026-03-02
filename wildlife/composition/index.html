@@ -1,0 +1,39 @@
+---
+layout: default
+title: Category Composition Reports
+---
+
+<h1>Category Composition Reports</h1>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Open</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign files = site.static_files | where: "name", "composition.png" -%}
+    {%- assign countries = "" | split: "" -%}
+    {%- for f in files -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/composition/' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- unless countries contains country -%}
+          {%- assign countries = countries | push: country -%}
+        {%- endunless -%}
+      {%- endif -%}
+    {%- endfor -%}
+    {%- assign countries = countries | sort -%}
+
+    {%- for c in countries -%}
+      <tr>
+        <td>{{ c }}</td>
+        <td>
+          <a href="{{ '/wildlife/composition/country.html' | relative_url }}#/{{ c | uri_escape }}">
+            View {{ c }}
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>

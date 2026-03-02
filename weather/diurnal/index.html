@@ -1,0 +1,116 @@
+---
+layout: default
+title: Diurnal Pattern Reports
+permalink: /weather/diurnal/
+---
+
+<h1>{{ page.title }}</h1>
+
+{% assign report_root = "/weather/reports/diurnal/" %}
+
+{%- comment -%}
+Collect XLSX bases (ignore /_site/)
+{%- endcomment -%}
+{% assign xlsx_bases = "" | split: "" %}
+{% for f in site.static_files %}
+  {% if f.path contains report_root %}
+    {% unless f.path contains "/_site/" %}
+      {% assign filename = f.path | split: "/" | last %}
+      {% assign ext = filename | split: "." | last | downcase %}
+      {% if ext == "xlsx" %}
+        {% assign base = filename | split: "." | first %}
+        {% unless xlsx_bases contains base %}
+          {% assign xlsx_bases = xlsx_bases | push: base %}
+        {% endunless %}
+      {% endif %}
+    {% endunless %}
+  {% endif %}
+{% endfor %}
+
+{% assign row_count = 0 %}
+{% assign seen_paths = "" | split: "" %}
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Measurement</th>
+      <th>Report Type</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for f in site.static_files %}
+      {% if f.path contains report_root %}
+        {% unless f.path contains "/_site/" %}
+
+          {% unless seen_paths contains f.path %}
+            {% assign seen_paths = seen_paths | push: f.path %}
+
+            {% assign filename = f.path | split: "/" | last %}
+            {% assign ext = filename | split: "." | last | downcase %}
+
+            {% if ext == "png" %}
+              {% assign base = filename | split: "." | first %}
+              {% assign parts = base | split: "_" %}
+
+              {% if parts.size >= 3 %}
+                {% assign sensor = parts[0] %}
+                {% assign measurement = parts[1] %}
+
+                {% capture metric %}
+                  {% for p in parts offset:2 %}
+                    {{ p }}{% unless forloop.last %}_{% endunless %}
+                  {% endfor %}
+                {% endcapture %}
+
+                {%- comment -%} Title-case measurement (preserve spaces) {%- endcomment -%}
+                {% capture measurement_tc %}
+                  {% assign words = measurement | replace: "_", " " | split: " " %}
+                  {% for w in words %}
+                    {{ w | capitalize }}{% unless forloop.last %}{{ " " }}{% endunless %}
+                  {% endfor %}
+                {% endcapture %}
+
+                {%- comment -%} Title-case metric + underscores -> spaces (preserve spaces) {%- endcomment -%}
+                {% capture metric_tc %}
+                  {% assign words = metric | replace: "_", " " | split: " " %}
+                  {% for w in words %}
+                    {{ w | capitalize }}{% unless forloop.last %}{{ " " }}{% endunless %}
+                  {% endfor %}
+                {% endcapture %}
+
+                {% assign row_count = row_count | plus: 1 %}
+
+                <tr>
+                  <td>{{ sensor | upcase }}</td>
+                  <td>{{ measurement_tc | strip }}</td>
+                  <td>
+                    <a href="{{ f.path | relative_url }}" target="_blank" rel="noopener noreferrer">
+                      {{ metric_tc | strip }}
+                    </a>
+                  </td>
+                  <td>
+                    {% if xlsx_bases contains base %}
+                      <a href="{{ report_root | append: base | append: '.xlsx' | relative_url }}">Download</a>
+                    {% endif %}
+                  </td>
+                </tr>
+
+              {% endif %}
+            {% endif %}
+
+          {% endunless %}
+        {% endunless %}
+      {% endif %}
+    {% endfor %}
+
+    {% if row_count == 0 %}
+      <tr>
+        <td colspan="4"><em>No diurnal pattern reports found.</em></td>
+      </tr>
+    {% endif %}
+
+  </tbody>
+</table>

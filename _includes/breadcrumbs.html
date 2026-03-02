@@ -1,0 +1,27 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    <li>
+      <a href="{{ '/' | relative_url }}">Home</a>
+    </li>
+
+    {% assign parts = page.url | split: '/' %}
+    {% assign path = "" %}
+
+    {% for part in parts %}
+      {% if part != "" and part != "index.html" %}
+        {% assign path = path | append: '/' | append: part %}
+        <li>
+          {% if forloop.last %}
+            <span aria-current="page">
+              {{ page.breadcrumb | default: part | replace:'-',' ' | capitalize }}
+            </span>
+          {% else %}
+            <a href="{{ path | relative_url }}">
+              {{ part | replace:'-',' ' | capitalize }}
+            </a>
+          {% endif %}
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ol>
+</nav>
