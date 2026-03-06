@@ -1,0 +1,38 @@
+---
+layout: default
+title: Sightings Trend — Species
+breadcrumb: Species List
+---
+
+<h1 id="heading">Species Trend</h1>
+<p class="muted" id="meta"></p>
+
+<table id="species-table" class="data-table">
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Category</th>
+      <th>Show chart</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+{%- assign items = '' | split:'' -%}
+{%- for f in site.static_files -%}
+  {%- assign fname = f.name -%}
+  {%- assign ext = fname | slice: -4, 4 -%}
+  {%- if f.path contains '/wildlife/reports/' and f.path contains '/trend/' and ext == '.png' -%}
+    {%- assign parts = f.path | split:'/' -%}
+    {%- assign country  = parts[3] -%}
+    {%- assign location = parts[5] -%}
+    {%- assign category = parts[6] -%}
+    {%- assign species  = fname | replace: '.png','' -%}
+    {%- capture rec -%}{{ country }}|{{ location }}|{{ category }}|{{ species }}{%- endcapture -%}
+    {%- assign items = items | push: rec -%}
+  {%- endif -%}
+{%- endfor -%}
+<script id="trend-data" type="application/json">{{ items | jsonify }}</script>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/trend-species-list.js' | relative_url }}"></script>

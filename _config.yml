@@ -1,0 +1,31 @@
+# --- Jekyll config ---
+baseurl: ""
+url: "https://davewalker5.github.io"
+
+title: Sightings Hub
+description: Wildlife and Aircraft Sightings Reports
+
+# To use the Minimal theme via GitHub Pages, replace the next two lines with:
+# remote_theme: pages-themes/minimal@v0.2.0
+# plugins:
+#   - jekyll-remote-theme
+theme: jekyll-theme-minimal
+plugins: []
+
+exclude:
+  - .bundle
+  - .gitignore
+  - scripts
+  - vendor
+  - venv
+  - Gemfile
+  - Gemfile.lock
+  - _site
+
+hero:
+  enabled: true
+  nav_overlay: false
+  image_sm: /assets/images/banner-768.jpg
+  image_md: /assets/images/banner-1280.jpg
+  image_lg: /assets/images/banner-1920.jpg
+  alt: "Sightings Hub"

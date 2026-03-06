@@ -1,0 +1,104 @@
+/* Basic layout niceties */
+:root {
+  --maxw: 980px;
+  /* These are now driven by the theme tokens in site-colors.css */
+  --border: var(--border);
+  --stripe: var(--stripe);
+  --hover: var(--hover);
+}
+
+main { overflow-x: auto; } /* allow horizontal scroll on small screens */
+
+/* Data tables */
+table.data-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.95rem;
+
+  /* Give tables a subtle surface so stripes/hover read nicely */
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  overflow: hidden; /* enables rounded corners with collapsed borders */
+}
+
+table.data-table th,
+table.data-table td {
+  text-align: left;
+  padding: 0.6rem 0.8rem;
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+  white-space: nowrap;
+}
+
+table.data-table th {
+  font-weight: 600;
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+table.data-table td {
+  color: var(--text);
+}
+
+table.data-table th:nth-child(1),
+table.data-table td:nth-child(1) { width: 22%; }
+table.data-table th:nth-child(2),
+table.data-table td:nth-child(2) { width: 22%; }
+table.data-table th:nth-child(3),
+table.data-table td:nth-child(3) { width: 28%; }
+table.data-table th:nth-child(4),
+table.data-table td:nth-child(4) { width: 28%; }
+
+table.data-table tbody tr:nth-child(odd) td { background: var(--stripe); }
+table.data-table tbody tr:hover td { background: var(--hover); }
+
+/* Links */
+a { color: var(--link); }
+a:hover { color: var(--link-hover); text-decoration: underline; }
+
+.muted { color: var(--muted); font-size: .95rem; }
+
+/* Breadcrumbs */
+.breadcrumbs {
+  font-size: 0.9rem;
+  margin: 0.75em 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--muted);
+}
+
+.breadcrumbs ol {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: inline;
+}
+
+.breadcrumbs li { display: inline; }
+
+.breadcrumbs li + li::before {
+  content: " > ";
+  color: rgba(255, 255, 255, 0.25);
+}
+
+.breadcrumbs a {
+  text-decoration: none;
+  color: var(--link);
+}
+
+.breadcrumbs a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+.breadcrumbs span {
+  color: rgba(230, 237, 243, 0.75);
+}
+
+@media (max-width: 700px) {
+  .breadcrumbs { white-space: normal; }
+}
+
+.breadcrumbs li:not(:last-child) a { opacity: 0.9; }
