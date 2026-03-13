@@ -1,0 +1,94 @@
+---
+layout: default
+title: Photomicrographic Plates
+breadcrumb: Photomicrographic Plates
+---
+
+<h1>Photomicrographic Plates</h1>
+
+<style>
+  .plate-row {
+    display: none;
+  }
+
+  #plates-table {
+    display: none;
+  }
+</style>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+  {% assign series_list = site.data.leitz_plates | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    <option value="{{ series | strip | escape }}">{{ series | strip }}</option>
+  {% endfor %}
+</select>
+
+<table id="plates-table" class="data-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Series</th>
+      <th>Subject</th>
+      <th>Specimen</th>
+      <th>Plate</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for row in site.data.leitz_plates %}
+    <tr class="plate-row" data-series="{{ row.Series | strip | escape }}">
+      <td>{{ row.Date }}</td>
+      <td>{{ row.Series }}</td>
+      <td>
+        {% if row.Common and row.Scientific %}
+          {{ row.Common }} ({{ row.Scientific }})
+        {% elsif row.Common %}
+          {{ row.Common }}
+        {% elsif row.Scientific %}
+          {{ row.Scientific }}
+        {% endif %}
+      </td>
+      <td>{{ row.Specimen }}</td>
+      <td>
+        <a href="{{ '/assets/images/leitz/' | relative_url }}{{ row.Plate }}" target="_blank" rel="noopener">
+          {{ row.Plate }}
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const table = document.getElementById("plates-table");
+  const rows = document.querySelectorAll(".plate-row");
+
+  function applyFilter() {
+    const selected = filter.value;
+    let visibleCount = 0;
+
+    rows.forEach(function(row) {
+      const rowSeries = row.getAttribute("data-series");
+
+      if (selected !== "" && rowSeries === selected) {
+        row.style.display = "table-row";
+        visibleCount++;
+      } else {
+        row.style.display = "none";
+      }
+    });
+
+    if (visibleCount > 0) {
+      table.style.display = "table";
+    } else {
+      table.style.display = "none";
+    }
+  }
+
+  applyFilter();
+  filter.addEventListener("change", applyFilter);
+});
+</script>
