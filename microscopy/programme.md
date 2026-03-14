@@ -6,6 +6,8 @@ breadcrumb: Programme of Microscopic Investigations
 
 # Programme of Microscopic Investigations
 
+The following programme outlines a sequence of observational investigations designed to develop skill with the microscope while exploring the structure and diversity of microscopic life.
+
 ## Series 0 — Basic Discipline with the Instrument
 
 | No. | Investigation                         | Example Specimens                     | Typical Source                    | Aim                                                     |
