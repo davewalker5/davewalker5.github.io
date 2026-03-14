@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Abbe Condenser Focussing
+title: Abbe Condenser Focusing Method for Microscopes Without Iris Diaphragm
 breadcrumb: Abbe Condenser Focussing
+description: Abbe Condenser Focusing Method for Microscopes Without Iris Diaphragm
 ---
 
-# The Classical Abbe Condenser Focusing Method
+# Abbe Condenser Focusing Method for Microscopes Without Iris Diaphragm
 
 ## Numerical Aperture
 

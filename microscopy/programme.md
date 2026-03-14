@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Programme of Microscopic Investigations
-breadcrumb: Programme of Microscopic Investigations
+title: Classical Microscopy Programme of Investigations
+breadcrumb: Programme of Investigations
+description: A structured programme of classical microscopy investigations conducted using a 1912 Ernst Leitz microscope.
 ---
 
-# Programme of Microscopic Investigations
+# Classical Microscopy Programme of Investigations
 
 The following programme outlines a sequence of observational investigations designed to develop skill with the microscope while exploring the structure and diversity of microscopic life.
 

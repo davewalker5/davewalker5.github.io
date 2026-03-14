@@ -10,7 +10,9 @@ description: Aircraft • Wildlife • Microscopy • Weather
 # plugins:
 #   - jekyll-remote-theme
 theme: jekyll-theme-minimal
-plugins: []
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
 
 exclude:
   - .bundle

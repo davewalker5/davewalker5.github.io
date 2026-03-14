@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Seasonal Microscopy Calendar
-breadcrumb: Seasonal Microscopy Calendar
+title: Seasonal Calendar for Microscopy Specimens
+breadcrumb: Seasonal Calendar for Microscopy Specimens
+description: Seasonal availability of specimens for microscopic investigation.
 ---
 
-# Seasonal Microscopy Calendar
+# Seasonal Calendar for Microscopy Specimens
 
 The calendar indicates periods when specimens are most readily obtained in the British Isles. Many investigations remain possible outside these periods depending on local conditions.
 

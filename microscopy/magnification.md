@@ -1,10 +1,11 @@
 ---
 layout: default
-title: Magnification Tables
+title: Microscope Magnification Tables for Ernst Leitz Objectives
 breadcrumb: Magnification Tables
+description: Microscope Magnification Tables for Ernst Leitz Objectives.
 ---
 
-# Magnification Tables
+# Microscope Magnification Tables for Ernst Leitz Objectives
 
 ## Eyepieces
 
