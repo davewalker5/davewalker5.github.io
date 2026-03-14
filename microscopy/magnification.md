@@ -53,3 +53,23 @@ _Total Magnification = Objective Power x Eyepiece Power_
 It was reported in “diameters”, the period term for magnification. So, for example, using objective No. 6 and eyepiece IV, the magnification would have been reported as follows:
 
 > _Observed with Leitz Objective No. 6 and Eyepiece IV (approx. 480 diameters)._
+
+## Estimating Effective Camera Power
+
+The eyepiece cameras do not specify a magnification but their effective power can be estimated using the following method:
+
+1. Secure a stage micrometer on the stage
+2. Select an objective and eyepiece, in this instance No. 3 and IV, respectively
+3. Selecting a micrometer scale that will span the full field
+4. Adjust the illumination and bring the micrometer scale into focus
+5. Measure the diameter of the field, W<sub>o</sub>
+6. Replace the eyepiece with the camera of interest
+7. Adjust the illumination as needed and bring the micrometer scale into focus
+8. Measure the diameter of the field, W<sub>c</sub>
+9. Calculate the effective power of the eyepiece camera as follows:
+
+$$
+P_c = \frac{P_o \times W_o}{W_c}
+$$
+
+The camera effective power for the MD35 and EC5R cameras was determined in this way but as eyepiece IV has magnifying power in the range ~12-15x, a range is obtained for each, as shown in the tables above.
