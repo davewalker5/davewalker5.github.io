@@ -72,4 +72,6 @@ $$
 P_c = \frac{P_o \times W_o}{W_c}
 $$
 
+Where P<sub>o</sub> is the eyepiece power.
+
 The camera effective power for the MD35 and EC5R cameras was determined in this way but as eyepiece IV has magnifying power in the range ~12-15x, a range is obtained for each, as shown in the tables above.
