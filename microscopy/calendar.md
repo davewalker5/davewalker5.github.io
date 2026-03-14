@@ -6,7 +6,7 @@ breadcrumb: Seasonal Microscopy Calendar
 
 # Seasonal Microscopy Calendar
 
-Specimens suitable for microscopic investigation vary throughout the year. The following calendar indicates periods when particular investigations are most readily undertaken.
+The calendar indicates periods when specimens are most readily obtained in the British Isles. Many investigations remain possible outside these periods depending on local conditions.
 
 ## Overview of UK Availability
 

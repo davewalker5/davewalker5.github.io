@@ -82,7 +82,7 @@ The following programme outlines a sequence of observational investigations desi
 
 ## Seasonal Calendar
 
-Specimens suitable for microscopic investigation vary throughout the year. The following calendar indicates periods when specimens for each of the investigations, above, are most readily available.
+The following calendar indicates periods when specimens for each of the above investigations are most readily obtained in the British Isles. Many investigations remain possible outside these periods depending on local conditions.
 
 | Investigation                               | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
 | ------------------------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
