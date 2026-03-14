@@ -60,7 +60,7 @@ The eyepiece cameras do not specify a magnification but their effective power ca
 
 1. Secure a stage micrometer on the stage
 2. Select an objective and eyepiece, in this instance No. 3 and IV, respectively
-3. Selecting a micrometer scale that will span the full field
+3. Select a micrometer scale that will span the full field
 4. Adjust the illumination and bring the micrometer scale into focus
 5. Measure the diameter of the field, W<sub>o</sub>
 6. Replace the eyepiece with the camera of interest
