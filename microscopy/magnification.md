@@ -28,21 +28,21 @@ breadcrumb: Magnification Tables
 
 ### Objective No. 3
 
-| Eyepiece | Objective | Total Magnification |
-| -------- | --------- | ------------------- |
-| II       | No. 3     | ~70×                |
-| IV       | No. 3     | ~120–150×           |
-| EC5R     | No. 3     | ~260-390×           |
-| MD35     | No. 3     | ~490-620x           |
+| Eyepiece                     | Objective | Total Magnification |
+| ---------------------------- | --------- | ------------------- |
+| II                           | No. 3     | ~70×                |
+| IV                           | No. 3     | ~120–150×           |
+| Swift EC5R eyepiece camera   | No. 3     | ~260-390×           |
+| AmScope MD35 eyepiece camera | No. 3     | ~490-620x           |
 
 ### Objective No. 6
 
-| Eyepiece | Objective | Total Magnification |
-| -------- | --------- | ------------------- |
-| II       | No. 6     | ~280×               |
-| IV       | No. 6     | ~450–600×           |
-| EC5R     | No. 6     | ~1040-1560×         |
-| MD35     | No. 6     | ~1960-2480x         |
+| Eyepiece                     | Objective | Total Magnification |
+| ---------------------------- | --------- | ------------------- |
+| II                           | No. 6     | ~280×               |
+| IV                           | No. 6     | ~450–600×           |
+| Swift EC5R eyepiece camera   | No. 6     | ~1040-1560×         |
+| AmScope MD35 eyepiece camera | No. 6     | ~1960-2480x         |
 
 ## Reporting Magnification
 
