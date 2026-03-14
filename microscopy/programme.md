@@ -79,3 +79,47 @@ The following programme outlines a sequence of observational investigations desi
 | VI.3 | Observation of Fungal Spore Structures | Mould growing on citrus peel        | Kitchen fruit spoilage      | Study spore formation.                     |
 | VI.4 | Examination of Microbial Films         | Slimy layer on standing water       | Garden pond or water butt   | Observe microbial communities.             |
 | VI.5 | Observation of Soil Micro-Organisms    | Garden soil suspended in water      | Garden soil                 | Study organisms involved in decomposition. |
+
+## Seasonal Calendar
+
+Specimens suitable for microscopic investigation vary throughout the year. The following calendar indicates periods when specimens for each of the investigations, above, are most readily available.
+
+| Investigation                               | Jan | Feb | Mar | Apr | May | Jun | Jul | Aug | Sep | Oct | Nov | Dec |
+| ------------------------------------------- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| Orientation of the Microscopic Field        | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Regulation of Illumination                  | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Comparison of Magnifying Powers             | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Calibration of the Eyepiece Graticule       | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Observation of Limits of Resolution         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Recording Observations                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Examination of the Epidermis of a Leaf      |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Stomata                      |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Examination of Plant Hairs (Trichomes)      |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Examination of the Wing of an Insect        |     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
+| Observation of the Insect Cuticle           |     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |
+| Examination of the Surface of Pollen Grains |     |     | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     |     |
+| Examination of Pollen from Flowering Plants |     |     | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     |     |
+| Comparison of Pollen from Different Species |     |     | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     |     |
+| Observation of Fern Spores                  |     |     |     |     |     | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Moss Capsules                | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     | ✔   | ✔   |
+| Examination of Fungal Spores                | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Cross-Section of an Herbaceous Stem         |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Cross-Section of a Woody Stem               | ✔   | ✔   | ✔   | ✔   |     |     |     |     | ✔   | ✔   | ✔   | ✔   |
+| Examination of Leaf Venation                |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Plant Fibres                 | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Examination of Root Structure               | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Survey of Pond Water                        |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Examination of Freshwater Algae             |     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Diatoms                      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Observation of Protozoa                     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Rotifers                     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Pond Micro-Ecosystem         |     |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Examination of Bud Scales                   | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     |     | ✔   | ✔   |
+| Section of a Dormant Bud                    | ✔   | ✔   | ✔   | ✔   |     |     |     |     |     |     | ✔   | ✔   |
+| Examination of a Developing Leaf            |     |     | ✔   | ✔   | ✔   |     |     |     |     |     |     |     |
+| Observation of the Shoot Apex               |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |     |
+| Observation of Mould Growth                 | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Examination of Decaying Leaf Tissue         |     |     |     |     |     |     |     |     | ✔   | ✔   | ✔   | ✔   |
+| Observation of Fungal Spore Structures      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+| Examination of Microbial Films              |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
+| Observation of Soil Micro-Organisms         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
