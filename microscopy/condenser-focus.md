@@ -24,7 +24,7 @@ This ensures the specimen is illuminated from all angles the objective can use b
 
 Microscopists therefore reduce the cone of illumination slightly to produce stronger contrast and more visible structure and a classic rule taught in teaching labs was that the illumination cone should fill approximately 70-80% of the objective aperture.
 
-## Focussing Method
+## Focusing Method
 
 The goal is to focus the condenser so the illumination cone properly fills the objective aperture and with a fixed iris condenser such as the type on this instrument the height of the condenser becomes the main control. The procedure is as follows:
 
