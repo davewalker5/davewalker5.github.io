@@ -46,7 +46,7 @@ breadcrumb: Magnification Tables
 
 ## Reporting Magnification
 
-Magnification was calculated as:
+Magnification is calculated as:
 
 _Total Magnification = Objective Power x Eyepiece Power_
 
