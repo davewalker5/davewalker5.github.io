@@ -8,7 +8,7 @@ breadcrumb: Programme of Microscopic Investigations
 
 The following programme outlines a sequence of observational investigations designed to develop skill with the microscope while exploring the structure and diversity of microscopic life.
 
-## Series 0 — Basic Discipline with the Instrument
+## Series 0 - Basic Discipline with the Instrument
 
 | No. | Investigation                         | Example Specimens                     | Typical Source                    | Aim                                                     |
 | --- | ------------------------------------- | ------------------------------------- | --------------------------------- | ------------------------------------------------------- |
@@ -19,7 +19,7 @@ The following programme outlines a sequence of observational investigations desi
 | 0.5 | Observation of Limits of Resolution   | Diatom test slide, fine fabric fibres | Prepared slide or household cloth | Observe smallest visible detail under high power.       |
 | 0.6 | Recording Observations                | Any specimen previously examined      | Any earlier specimen              | Practice diagrammatic recording and labelling.          |
 
-## Series I — Surface & Exchange
+## Series I - Surface & Exchange
 
 | No. | Investigation                               | Example Specimens                                    | Typical Source              | Aim                                            |
 | --- | ------------------------------------------- | ---------------------------------------------------- | --------------------------- | ---------------------------------------------- |
@@ -30,7 +30,7 @@ The following programme outlines a sequence of observational investigations desi
 | I.5 | Observation of the Insect Cuticle           | Beetle leg, ant, small fly                           | Garden or indoors           | Study segmentation and protective exoskeleton. |
 | I.6 | Examination of the Surface of Pollen Grains | Lily, daisy, dandelion                               | Garden flower or meadow     | Observe sculptured pollen surfaces.            |
 
-## Series II — Reproductive Elements
+## Series II - Reproductive Elements
 
 | No.  | Investigation                               | Example Specimens                            | Typical Source           | Aim                                 |
 | ---- | ------------------------------------------- | -------------------------------------------- | ------------------------ | ----------------------------------- |
@@ -40,7 +40,7 @@ The following programme outlines a sequence of observational investigations desi
 | II.4 | Observation of Moss Capsules                | Common moss (Bryum, Funaria)                 | Damp wall or lawn        | Study capsule and spore production. |
 | II.5 | Examination of Fungal Spores                | Bread mould (Rhizopus), penicillium on fruit | Kitchen food spoilage    | Observe fungal reproduction.        |
 
-## Series III — Support & Conduction
+## Series III - Support & Conduction
 
 | No.   | Investigation                       | Example Specimens                     | Typical Source             | Aim                              |
 | ----- | ----------------------------------- | ------------------------------------- | -------------------------- | -------------------------------- |
@@ -50,7 +50,7 @@ The following programme outlines a sequence of observational investigations desi
 | III.4 | Observation of Plant Fibres         | Celery stalk, flax fibre              | Kitchen vegetable          | Examine elongated support cells. |
 | III.5 | Examination of Root Structure       | Onion root, young seedling roots      | Kitchen onion or seedlings | Observe root tissues.            |
 
-## Series IV — Aquatic Microscopic Life
+## Series IV - Aquatic Microscopic Life
 
 | No.  | Investigation                       | Example Specimens                     | Typical Source             | Aim                                   |
 | ---- | ----------------------------------- | ------------------------------------- | -------------------------- | ------------------------------------- |
@@ -61,7 +61,7 @@ The following programme outlines a sequence of observational investigations desi
 | IV.5 | Observation of Rotifers             | Pond water with plant debris          | Pond vegetation sample     | Examine complex microscopic animals.  |
 | IV.6 | Observation of Pond Micro-Ecosystem | Mature pond sample after several days | Jar culture of pond sample | Observe interactions among organisms. |
 
-## Series V — Bud Structure
+## Series V - Bud Structure
 
 | No. | Investigation                    | Example Specimens                    | Typical Source           | Aim                                 |
 | --- | -------------------------------- | ------------------------------------ | ------------------------ | ----------------------------------- |
@@ -70,7 +70,7 @@ The following programme outlines a sequence of observational investigations desi
 | V.3 | Examination of a Developing Leaf | Opening bud of sycamore or rose      | Garden plant or tree     | Study leaf differentiation.         |
 | V.4 | Observation of the Shoot Apex    | Young shoot tip of ivy or bean plant | Garden plant or seedling | Observe meristematic growth tissue. |
 
-## Series VI — Decay & Biological Recycling
+## Series VI - Decay & Biological Recycling
 
 | No.  | Investigation                          | Example Specimens                   | Typical Source              | Aim                                        |
 | ---- | -------------------------------------- | ----------------------------------- | --------------------------- | ------------------------------------------ |
@@ -123,3 +123,17 @@ The following calendar indicates periods when specimens for each of the above in
 | VI.3  | Observation of Fungal Spore Structures      | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
 | VI.4  | Examination of Microbial Films              |     |     | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |     |     |     |
 | VI.5  | Observation of Soil Micro-Organisms         | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   | ✔   |
+
+## Progress Through the Programme
+
+The following investigations have been completed to date:
+
+| Series | Title                                | Investigations Completed To Date |
+| ------ | ------------------------------------ | -------------------------------- |
+| 0      | Basic Discipline with the Instrument | 6/6                              |
+| I      | Surface & Exchange                   | 2/6                              |
+| II     | Reproductive Elements                | 1/5                              |
+| III    | Support & Conduction                 | 1/5                              |
+| IV     | Aquatic Microscopic Life             | 0/6                              |
+| V      | Bud Structure                        | 1/3                              |
+| VI     | Decay & Biological Recycling         | 0/5                              |
