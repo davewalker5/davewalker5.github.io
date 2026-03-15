@@ -1,0 +1,393 @@
+/*
+  Field Notes site styles — dark variant
+  ======================================
+
+  Dark theme adaptation of the main site stylesheet.
+  This file keeps the same component structure as site-dark.css but swaps the
+  colour system and a handful of base surfaces for dark-mode testing.
+*/
+
+/* =========================================================
+   1. Design tokens
+   ========================================================= */
+
+:root {
+  --content-max-width: 980px;
+
+  /* Dark palette */
+  --color-page-bg: #0b1220;
+  --color-page-bg-soft: #111827;
+  --color-border: #243042;
+  --color-border-strong: #334155;
+  --color-surface: #111827;
+  --color-surface-elevated: #162032;
+  --color-row-stripe: #0f172a;
+  --color-row-hover: #172235;
+  --color-text: #e5e7eb;
+  --color-text-muted: #9ca3af;
+  --color-text-muted-strong: #cbd5e1;
+  --color-text-subtle: #94a3b8;
+  --color-separator: #64748b;
+  --color-link: #7cc4ff;
+  --color-link-hover: #a5d8ff;
+  --color-button: #2563eb;
+  --color-button-hover: #1d4ed8;
+  --color-white: #f8fafc;
+
+  --line-height-body: 1.6;
+  --font-size-small: 0.9rem;
+  --font-size-meta: 0.95rem;
+
+  --space-1: 0.4rem;
+  --space-2: 0.6rem;
+  --space-3: 0.8rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+
+  --radius-soft: 6px;
+  --radius-card: 8px;
+}
+
+/* =========================================================
+   2. Base layout and typography
+   ========================================================= */
+
+html,
+body {
+  background: var(--color-page-bg);
+  color: var(--color-text);
+  color-scheme: dark;
+}
+
+main {
+  overflow-x: auto;
+}
+
+body {
+  line-height: var(--line-height-body);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   3. Link treatment and helper text
+   ========================================================= */
+
+a {
+  color: var(--color-link);
+}
+
+a:hover {
+  color: var(--color-link-hover);
+  text-decoration: underline;
+}
+
+.muted {
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
+}
+
+/* =========================================================
+   4. Shared table system
+   ========================================================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: var(--font-size-meta);
+  background: transparent;
+}
+
+table th,
+table td {
+  padding: var(--space-2) var(--space-3);
+  text-align: left;
+  vertical-align: top;
+  border-bottom: 1px solid var(--color-border);
+}
+
+table thead th {
+  color: var(--color-text-muted-strong);
+}
+
+table tbody tr:hover td {
+  background: var(--color-row-hover);
+}
+
+table.data-table {
+  table-layout: auto;
+}
+
+table.data-table th,
+table.data-table td {
+  white-space: nowrap;
+}
+
+table.data-table tbody tr:nth-child(odd) td {
+  background: var(--color-row-stripe);
+}
+
+table.data-table.cols-4 th:nth-child(1),
+table.data-table.cols-4 td:nth-child(1) {
+  width: 22%;
+}
+
+table.data-table.cols-4 th:nth-child(2),
+table.data-table.cols-4 td:nth-child(2) {
+  width: 22%;
+}
+
+table.data-table.cols-4 th:nth-child(3),
+table.data-table.cols-4 td:nth-child(3) {
+  width: 28%;
+}
+
+table.data-table.cols-4 th:nth-child(4),
+table.data-table.cols-4 td:nth-child(4) {
+  width: 28%;
+}
+
+/* =========================================================
+   5. Breadcrumb navigation
+   ========================================================= */
+
+.breadcrumbs {
+  margin: 0.75em 0;
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.breadcrumbs ol {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.breadcrumbs li {
+  display: inline;
+}
+
+.breadcrumbs li + li::before {
+  content: " > ";
+  color: var(--color-separator);
+}
+
+.breadcrumbs a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+.breadcrumbs li:not(:last-child) a {
+  opacity: 0.9;
+}
+
+.breadcrumbs span {
+  color: var(--color-text-muted-strong);
+}
+
+/* =========================================================
+   6. Microscopy-specific components
+   ========================================================= */
+
+.plate-row,
+#plates-table {
+  display: none;
+}
+
+#series-filter {
+  margin-bottom: var(--space-4);
+  background: var(--color-surface-elevated);
+  color: var(--color-text);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-soft);
+  padding: 0.45rem 0.55rem;
+}
+
+.image-mosaic {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+  margin: var(--space-6) 0;
+}
+
+.image-mosaic a {
+  display: block;
+  overflow: hidden;
+  border-radius: var(--radius-card);
+  border: 1px solid var(--color-border);
+  background: var(--color-surface-elevated);
+}
+
+.image-mosaic img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image1 {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.image2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.image3,
+.image4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* =========================================================
+   7. Shared figure / report viewer components
+   ========================================================= */
+
+.report-figure {
+  max-width: var(--content-max-width);
+  margin: var(--space-7) auto;
+  padding: var(--space-5) var(--space-5) var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-card);
+  background: linear-gradient(
+    180deg,
+    rgba(22, 32, 50, 0.96) 0%,
+    rgba(17, 24, 39, 0.98) 100%
+  );
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.28);
+}
+
+.report-image-wrap {
+  text-align: center;
+}
+
+.report-image-wrap img {
+  display: block;
+  margin: 0 auto;
+}
+
+.report-caption {
+  margin-top: 0.9rem;
+  text-align: center;
+  font-size: 0.95em;
+  color: var(--color-text-muted);
+}
+
+.download-block {
+  margin-top: var(--space-5);
+  text-align: center;
+}
+
+.download-btn {
+  display: inline-block;
+  padding: 10px 18px;
+  border: 1px solid var(--color-button);
+  border-radius: var(--radius-soft);
+  background: var(--color-button);
+  color: var(--color-white);
+  font-weight: 600;
+  text-decoration: none;
+  box-shadow: 0 6px 18px rgba(37, 99, 235, 0.22);
+}
+
+.download-btn:hover,
+.download-btn:focus {
+  border-color: var(--color-button-hover);
+  background: var(--color-button-hover);
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+.download-note {
+  margin-top: var(--space-2);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+/* =========================================================
+   8. Footer
+   ========================================================= */
+
+.site-footer {
+  margin-top: var(--space-7);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
+}
+
+.site-footer hr {
+  border: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.footer-row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-left {
+  text-align: left;
+}
+
+.footer-right {
+  color: var(--color-text-muted);
+  text-align: right;
+}
+
+.footer-meta {
+  color: var(--color-text-subtle);
+}
+
+.footer-sep {
+  margin: 0 0.4em;
+  color: var(--color-separator);
+}
+
+/* =========================================================
+   9. Responsive adjustments
+   ========================================================= */
+
+@media (max-width: 700px) {
+  .breadcrumbs {
+    white-space: normal;
+  }
+
+  .image-mosaic {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
+
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-1);
+  }
+
+  .footer-right {
+    text-align: left;
+  }
+
+  table.data-table th,
+  table.data-table td {
+    white-space: normal;
+  }
+}
