@@ -1,0 +1,26 @@
+{% if page.dataset %}
+  {% assign dataset_version = site.time | date: "%Y.%m.%d" %}
+  <div class="dataset-citation">
+    <h3>Cite this dataset</h3>
+    <p>
+      Walker, David.
+      <em>{{ page.title }}</em>.
+      Field Notes.
+      Version {{ dataset_version }}.
+      <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>
+    </p>
+    <details>
+      <summary>BibTeX</summary>
+      <pre class="dataset-bibtex">
+        @dataset{walker_{{ page.title | slugify }},
+          author = {Walker, David},
+          title = {{ page.title }},
+          year = {{ site.time | date: "%Y" }},
+          publisher = {Field Notes},
+          version = {{ dataset_version }},
+          url = { {{ page.url | absolute_url }} }
+        }
+      </pre>
+    </details>
+  </div>
+{% endif %}

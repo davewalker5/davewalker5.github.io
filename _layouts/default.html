@@ -109,6 +109,51 @@
     "description": "{{ site.description | default: 'Personal observational reports and datasets covering wildlife, aircraft, microscopy, weather, and reference data.' | jsonify | remove_first: '"' | remove: '"' }}"
   }
   </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://davidwalker.uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Aircraft Sighting Reports",
+        "item": "https://davidwalker.uk/aircraft/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Microscopy Investigations",
+        "item": "https://davidwalker.uk/microscopy/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Weather Reports",
+        "item": "https://davidwalker.uk/weather/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Wildlife Reports",
+        "item": "https://davidwalker.uk/wildlife/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Reference Data",
+        "item": "https://davidwalker.uk/reference/"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -126,6 +171,7 @@
     {% include breadcrumbs-jsonld.html %}
     {% include breadcrumbs.html %}
     {{ content }}
+    {% include dataset-citation.html %}
   </main>
 
   {% include footer.html %}

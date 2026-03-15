@@ -12,7 +12,7 @@ The site brings together several small observation projects that document differ
 You’ll find reports and summaries covering:
 
 - **Wildlife sightings** and natural history records
-- **Aircraft observations** derived from ADS-B data
+- **Aircraft observations**
 - **Microscopy investigations** and photomicrographic plates
 - **Weather station data** recorded by a local environmental monitoring system
 
@@ -28,7 +28,7 @@ The data behind these reports is collected using a small set of applications dev
   Used to log wildlife sightings and build long-term natural history records.
 
 - [**Flight Recorder**](https://github.com/davewalker5/FlightRecorder)  
-  Used to capture and analyse aircraft observations derived from ADS-B data.
+  Used to capture and analyse aircraft observations.
 
 - [**Raspberry Pi Weather Station**](https://github.com/davewalker5/RPi-WeatherStation)  
   A small environmental monitoring system that records local weather conditions.

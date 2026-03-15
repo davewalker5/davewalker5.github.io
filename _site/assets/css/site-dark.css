@@ -435,3 +435,25 @@ table.data-table thead {
     white-space: normal;
   }
 }
+
+/* =========================================================
+   10. Dataset citations
+   ========================================================= */
+
+.dataset-citation {
+  margin-top: 2rem;
+  padding: 1rem 1.2rem;
+  border-left: 4px solid rgba(255,255,255,0.2);
+  background: rgba(255,255,255,0.05);
+  font-size: 0.75em;
+}
+
+.dataset-citation h3 {
+  margin-top: 0;
+}
+
+.dataset-bibtex {
+  background: rgba(0,0,0,0.04);
+  padding: 0.8rem;
+  overflow-x: auto;
+}
