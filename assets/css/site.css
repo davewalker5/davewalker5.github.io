@@ -1,57 +1,103 @@
 /*
   Field Notes site styles
-  -----------------------
-  This stylesheet is organised by function so the site remains easy to
-  maintain as new report sections are added.
+  =======================
 
-  Sections:
-  1. Theme variables and global layout
-  2. Global typography and links
-  3. Shared table styling
-  4. Breadcrumbs
-  5. Microscopy plates and filters
-  6. Image mosaic layout
-  7. Report / chart viewer figure layout
+  Second-pass stylesheet organised as a small design system.
+  The aim is to keep the site visually consistent across microscopy,
+  wildlife, aircraft, weather, and reference pages while avoiding
+  one-off rules where possible.
+
+  Structure
+  ---------
+  1. Design tokens
+  2. Base layout and typography
+  3. Link treatment and helper text
+  4. Shared table system
+  5. Breadcrumb navigation
+  6. Microscopy-specific components
+  7. Shared figure / report viewer components
   8. Footer
   9. Responsive adjustments
 */
 
 /* =========================================================
-   1. Theme variables and global layout
+   1. Design tokens
+   ---------------------------------------------------------
+   Centralised values make the site easier to tune later.
+   Spacing and colour choices are deliberately restrained.
    ========================================================= */
 
 :root {
-  /* Shared sizing and colours used across report pages */
-  --maxw: 980px;
-  --border: #e5e7eb;
-  --stripe: #f9fafb;
-  --hover: #f3f4f6;
-  --muted: #666;
-  --muted-strong: #555;
-  --muted-light: #777;
-  --separator: #888;
-  --link: #0366d6;
-  --btn: #2f6fab;
-  --btn-hover: #1f4e7c;
-  --figure-border: #ddd;
-  --figure-bg: #fafafa;
+  /* Widths */
+  --content-max-width: 980px;
+
+  /* Colour palette */
+  --color-border: #e5e7eb;
+  --color-border-strong: #ddd;
+  --color-surface: #fafafa;
+  --color-row-stripe: #f9fafb;
+  --color-row-hover: #f3f4f6;
+  --color-text-muted: #666;
+  --color-text-muted-strong: #555;
+  --color-text-subtle: #777;
+  --color-separator: #888;
+  --color-link: #0366d6;
+  --color-button: #2f6fab;
+  --color-button-hover: #1f4e7c;
+  --color-white: #fff;
+
+  /* Typography */
+  --line-height-body: 1.6;
+  --font-size-small: 0.9rem;
+  --font-size-meta: 0.95rem;
+
+  /* Spacing */
+  --space-1: 0.4rem;
+  --space-2: 0.6rem;
+  --space-3: 0.8rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 2rem;
+
+  /* Radius */
+  --radius-soft: 6px;
+  --radius-card: 8px;
 }
 
-/* Allow wide tables and figures to scroll horizontally on narrow screens. */
+/* =========================================================
+   2. Base layout and typography
+   ========================================================= */
+
+/*
+  Allow oversized tables and figures to scroll horizontally on narrower
+  layouts instead of breaking page width.
+*/
 main {
   overflow-x: auto;
 }
 
-/* =========================================================
-   2. Global typography and links
-   ========================================================= */
-
 body {
-  /* Slightly more generous line height improves report readability. */
-  line-height: 1.6;
+  line-height: var(--line-height-body);
 }
 
-/* Keep links understated by default so tables and reports do not feel noisy. */
+/*
+  Images should behave predictably by default. This helps both static
+  content pages and generated report views.
+*/
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================================================
+   3. Link treatment and helper text
+   ========================================================= */
+
+/*
+  Keep links visually quiet by default so report pages and tables do not
+  become over-styled. Specific components such as buttons override this.
+*/
 a {
   color: inherit;
 }
@@ -60,96 +106,109 @@ a:hover {
   text-decoration: underline;
 }
 
-/* Muted helper text used for metadata and secondary explanatory copy. */
+/*
+  Shared muted text utility used for metadata, explanatory copy,
+  and lightweight secondary information.
+*/
 .muted {
-  color: var(--muted);
-  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-meta);
 }
 
 /* =========================================================
-   3. Shared table styling
+   4. Shared table system
+   ---------------------------------------------------------
+   The site uses tables heavily, so the goal is to provide one clean,
+   consistent base and then add only a small number of table variants.
    ========================================================= */
 
-/*
-  Base table styling used across the site.
-  This supports report catalogues, reference tables, and intermediate index pages.
-*/
+/* Base table styling used site-wide. */
 table {
   width: 100%;
   border-collapse: collapse;
-  font-size: 0.95rem;
+  font-size: var(--font-size-meta);
 }
 
 table th,
 table td {
+  padding: var(--space-2) var(--space-3);
   text-align: left;
-  padding: 0.6rem 0.8rem;
-  border-bottom: 1px solid var(--border);
   vertical-align: top;
-}
-
-/* Subtle row hover improves scanability on catalogue and data tables. */
-table tbody tr:hover td {
-  background: var(--hover);
+  border-bottom: 1px solid var(--color-border);
 }
 
 /*
-  Data tables are the main report index tables.
-  They keep columns stable and prevent wrapping in dense report listings.
+  Subtle hover improves scanability on report indices and reference tables
+  without feeling too app-like.
 */
+table tbody tr:hover td {
+  background: var(--color-row-hover);
+}
+
+/*
+  The main report-index tables are denser and usually contain predictable,
+  short values such as country, location, category, and report links.
+*/
+table.data-table {
+  table-layout: auto;
+}
+
 table.data-table th,
 table.data-table td {
   white-space: nowrap;
 }
 
-/* Default four-column balance used by the report-index pages. */
-table.data-table th:nth-child(1),
-table.data-table td:nth-child(1) {
-  width: 22%;
-}
-
-table.data-table th:nth-child(2),
-table.data-table td:nth-child(2) {
-  width: 22%;
-}
-
-table.data-table th:nth-child(3),
-table.data-table td:nth-child(3) {
-  width: 28%;
-}
-
-table.data-table th:nth-child(4),
-table.data-table td:nth-child(4) {
-  width: 28%;
-}
-
-/* Gentle striping helps long report lists remain readable. */
+/* Gentle striping helps long generated indexes remain readable. */
 table.data-table tbody tr:nth-child(odd) td {
-  background: var(--stripe);
+  background: var(--color-row-stripe);
+}
+
+/*
+  Optional four-column balance used by many generated report catalogues.
+  Keeping it scoped avoids affecting simpler two- or three-column tables.
+*/
+table.data-table.cols-4 th:nth-child(1),
+table.data-table.cols-4 td:nth-child(1) {
+  width: 22%;
+}
+
+table.data-table.cols-4 th:nth-child(2),
+table.data-table.cols-4 td:nth-child(2) {
+  width: 22%;
+}
+
+table.data-table.cols-4 th:nth-child(3),
+table.data-table.cols-4 td:nth-child(3) {
+  width: 28%;
+}
+
+table.data-table.cols-4 th:nth-child(4),
+table.data-table.cols-4 td:nth-child(4) {
+  width: 28%;
 }
 
 /* =========================================================
-   4. Breadcrumbs
+   5. Breadcrumb navigation
    ========================================================= */
 
 /*
-  Breadcrumbs are intentionally compact and quiet so they aid navigation
-  without competing with the page title.
+  Breadcrumbs should support orientation without competing with the page
+  title or the primary report content.
 */
 .breadcrumbs {
-  font-size: 0.9rem;
   margin: 0.75em 0;
-  color: var(--muted);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
 .breadcrumbs ol {
-  list-style: none;
-  padding: 0;
-  margin: 0;
   display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
 }
 
 .breadcrumbs li {
@@ -158,67 +217,65 @@ table.data-table tbody tr:nth-child(odd) td {
 
 .breadcrumbs li + li::before {
   content: " > ";
-  color: var(--separator);
+  color: var(--color-separator);
 }
 
 .breadcrumbs a {
+  color: var(--color-link);
   text-decoration: none;
-  color: var(--link);
 }
 
-/* Dim earlier breadcrumb links slightly so the current context feels dominant. */
+/* Earlier crumbs are slightly dimmed so the current context feels stronger. */
 .breadcrumbs li:not(:last-child) a {
   opacity: 0.8;
 }
 
 .breadcrumbs span {
-  color: var(--muted-strong);
+  color: var(--color-text-muted-strong);
 }
 
 /* =========================================================
-   5. Microscopy plates and filters
+   6. Microscopy-specific components
    ========================================================= */
 
-/* Hidden rows are revealed client-side when a plate series is selected. */
+/*
+  Microscopy plate rows are revealed client-side once a series has been
+  selected, so they stay hidden by default.
+*/
 .plate-row,
 #plates-table {
   display: none;
 }
 
-/* Simple spacing under the microscopy series dropdown. */
+/* Small breathing room under the microscopy series dropdown. */
 #series-filter {
-  margin-bottom: 1rem;
+  margin-bottom: var(--space-4);
 }
 
-/* =========================================================
-   6. Image mosaic layout
-   ========================================================= */
-
 /*
-  Mosaic used for image-led overview pages.
-  The named classes allow a slightly editorial arrangement without custom HTML.
+  Mosaic layout used for image-led overview pages. The named cells create
+  a slightly editorial arrangement on wider screens.
 */
 .image-mosaic {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 12px;
-  margin: 1.5rem 0;
+  margin: var(--space-6) 0;
 }
 
 .image-mosaic a {
   display: block;
   overflow: hidden;
-  border-radius: 8px;
+  border-radius: var(--radius-card);
 }
 
 .image-mosaic img {
+  display: block;
   width: 100%;
   height: 100%;
-  display: block;
   object-fit: cover;
 }
 
-/* Desktop mosaic emphasis pattern. */
 .image1 {
   grid-column: span 2;
   grid-row: span 2;
@@ -236,20 +293,19 @@ table.data-table tbody tr:nth-child(odd) td {
 }
 
 /* =========================================================
-   7. Report / chart viewer figure layout
+   7. Shared figure / report viewer components
+   ---------------------------------------------------------
+   These styles are used wherever a generated chart or report image is
+   presented as a prepared figure with caption and download action.
    ========================================================= */
 
-/*
-  Used on the wildlife report viewers and any similar chart pages.
-  The aim is to make charts feel like prepared figures rather than loose images.
-*/
 .report-figure {
-  max-width: var(--maxw);
-  margin: 2rem auto;
-  padding: 1.25rem 1.25rem 1.5rem;
-  border: 1px solid var(--figure-border);
-  border-radius: 8px;
-  background: var(--figure-bg);
+  max-width: var(--content-max-width);
+  margin: var(--space-7) auto;
+  padding: var(--space-5) var(--space-5) var(--space-6);
+  border: 1px solid var(--color-border-strong);
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
 }
 
 .report-image-wrap {
@@ -258,8 +314,6 @@ table.data-table tbody tr:nth-child(odd) td {
 
 .report-image-wrap img {
   display: block;
-  max-width: 100%;
-  height: auto;
   margin: 0 auto;
 }
 
@@ -267,38 +321,38 @@ table.data-table tbody tr:nth-child(odd) td {
   margin-top: 0.9rem;
   text-align: center;
   font-size: 0.95em;
-  color: var(--muted);
+  color: var(--color-text-muted);
 }
 
-/* Download call-to-action placed beneath the chart figure. */
+/* Download action placed beneath a chart figure. */
 .download-block {
+  margin-top: var(--space-5);
   text-align: center;
-  margin-top: 1.25rem;
 }
 
 .download-btn {
   display: inline-block;
   padding: 10px 18px;
-  border-radius: 6px;
-  text-decoration: none;
+  border: 1px solid var(--color-button);
+  border-radius: var(--radius-soft);
+  background: var(--color-button);
+  color: var(--color-white);
   font-weight: 600;
-  border: 1px solid var(--btn);
-  background: var(--btn);
-  color: #fff;
+  text-decoration: none;
 }
 
 .download-btn:hover,
 .download-btn:focus {
-  background: var(--btn-hover);
-  border-color: var(--btn-hover);
-  color: #fff;
+  border-color: var(--color-button-hover);
+  background: var(--color-button-hover);
+  color: var(--color-white);
   text-decoration: none;
 }
 
 .download-note {
-  margin-top: 0.6rem;
-  font-size: 0.9em;
-  color: var(--muted);
+  margin-top: var(--space-2);
+  font-size: var(--font-size-small);
+  color: var(--color-text-muted);
 }
 
 /* =========================================================
@@ -306,19 +360,19 @@ table.data-table tbody tr:nth-child(odd) td {
    ========================================================= */
 
 /*
-  The footer is split into publication metadata on the left and a light-touch
-  feedback invitation on the right.
+  Footer layout is split between publication metadata and a light-touch
+  feedback invitation.
 */
 .site-footer {
-  margin-top: 2rem;
-  font-size: 0.9em;
+  margin-top: var(--space-7);
+  font-size: var(--font-size-small);
 }
 
 .footer-row {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
 }
 
 .footer-left {
@@ -326,17 +380,17 @@ table.data-table tbody tr:nth-child(odd) td {
 }
 
 .footer-right {
+  color: var(--color-text-muted);
   text-align: right;
-  color: var(--muted);
 }
 
 .footer-meta {
-  color: var(--muted-light);
+  color: var(--color-text-subtle);
 }
 
 .footer-sep {
   margin: 0 0.4em;
-  color: var(--separator);
+  color: var(--color-separator);
 }
 
 /* =========================================================
@@ -349,7 +403,7 @@ table.data-table tbody tr:nth-child(odd) td {
     white-space: normal;
   }
 
-  /* Simplify the image mosaic into an even two-column grid. */
+  /* Simplify the editorial mosaic into a clean two-column grid. */
   .image-mosaic {
     grid-template-columns: 1fr 1fr;
   }
@@ -362,14 +416,20 @@ table.data-table tbody tr:nth-child(odd) td {
     grid-row: span 1;
   }
 
-  /* Stack footer metadata and feedback cleanly on smaller screens. */
+  /* Stack footer metadata and feedback more naturally on narrow screens. */
   .footer-row {
     flex-direction: column;
     align-items: flex-start;
-    gap: 0.4em;
+    gap: var(--space-1);
   }
 
   .footer-right {
     text-align: left;
+  }
+
+  /* Allow dense report tables to wrap when horizontal space is limited. */
+  table.data-table th,
+  table.data-table td {
+    white-space: normal;
   }
 }
