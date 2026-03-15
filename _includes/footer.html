@@ -1,15 +1,24 @@
 <footer class="site-footer">
     <hr />
-    <p>
-        {% assign start_year = "2025" %}
-        {% assign current_year = site.time | date: "%Y" %}
-        Copyright &copy; 
-        {% if current_year == start_year %}
-            {{ start_year }}
-        {% else %}
-            {{ start_year }}–{{ current_year }}
-        {% endif %}
-        David Walker.
-        Latest build: {{ site.time | date: "%d %b %Y %H:%M:%S" }}
-    </p>
+    <div class="footer-row">
+
+        <span class="footer-left">
+            {% assign start_year = "2025" %}
+            {% assign current_year = site.time | date: "%Y" %}
+            Copyright &copy;
+            {% if current_year == start_year %}
+                {{ start_year }}
+            {% else %}
+                {{ start_year }}–{{ current_year }}
+            {% endif %}
+            David Walker.
+            Latest build: {{ site.time | date: "%d %b %Y %H:%M:%S" }}.
+        </span>
+
+        <span class="footer-right">
+            Suggestions and feedback are welcome via
+            <a href="https://github.com/davewalker5/davewalker5.github.io/issues">GitHub</a>.
+        </span>
+
+    </div>
 </footer>

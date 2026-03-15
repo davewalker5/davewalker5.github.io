@@ -203,3 +203,19 @@ table tbody tr:hover td { background: var(--hover); }
   font-size: 0.9em;
   color: #666;
 }
+
+.site-footer .footer-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+}
+
+.footer-left {
+    text-align: left;
+}
+
+.footer-right {
+    text-align: right;
+}
