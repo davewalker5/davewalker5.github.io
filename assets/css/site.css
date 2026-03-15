@@ -209,6 +209,11 @@ table.data-table tbody tr:nth-child(even) {
 }
 
 table.data-table thead th {
+  position: sticky;
+  top: 0;
+  background: inherit;
+  z-index: 2;
+  box-shadow: 0 2px 0 rgba(0,0,0,0.08);
   border-bottom: 2px solid rgba(0,0,0,0.08);
 }
 

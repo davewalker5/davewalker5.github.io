@@ -1,9 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!--
+    Core document metadata
+    ----------------------
+    Keep the head section as the single source of truth for page identity.
+    jekyll-seo-tag will emit standard SEO tags such as title, description,
+    canonical URL, Open Graph basics, and structured data where available.
+  -->
   <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Home | Field Notes</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" /><!-- Begin Jekyll SEO tag v2.8.0 -->
 <title>Home | Field Notes</title>
 <meta name="generator" content="Jekyll v3.10.0" />
 <meta property="og:title" content="Home" />
@@ -19,36 +25,63 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"WebSite","description":"Aircraft • Wildlife • Microscopy • Weather","headline":"Home","name":"Field Notes","url":"http://localhost:4000/"}</script>
 <!-- End Jekyll SEO tag -->
-<link rel="stylesheet" href="/assets/css/site-dark.css?v=1.2">
+<meta property="og:image" content="http://localhost:4000/assets/images/field-notes-banner.jpg">
+  <meta name="twitter:image" content="http://localhost:4000/assets/images/field-notes-banner.jpg"><link rel="stylesheet" href="/assets/css/site-dark.css?v=1.2">
   <link rel="stylesheet" href="/assets/css/hero-dark.css?v=2.0">
   <link rel="stylesheet" href="/assets/css/github-icon.css?v=1.0">
   <link rel="stylesheet" href="/assets/css/site-colors-dark.css?v=1.0">
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <style>
+    /*
+      Layout fallbacks
+      ----------------
+      Small baseline rules kept here so the site remains usable even if one of
+      the main stylesheets fails to load. Most visual styling lives in site.css.
+    */
     :root { --maxw: 1200px; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    header, main, footer { max-width: var(--maxw); margin: 0 auto; padding: 0; }
-    .breadcrumb { margin: .5rem 0 1rem; font-size: .95rem; color: #666; padding: 0 1rem; }
-    img.responsive { max-width: 100%; height: auto; }
-  </style>
-  <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Home | Field Notes</title>
-<meta name="generator" content="Jekyll v3.10.0" />
-<meta property="og:title" content="Home" />
-<meta property="og:locale" content="en_US" />
-<meta name="description" content="Aircraft • Wildlife • Microscopy • Weather" />
-<meta property="og:description" content="Aircraft • Wildlife • Microscopy • Weather" />
-<link rel="canonical" href="http://localhost:4000/" />
-<meta property="og:url" content="http://localhost:4000/" />
-<meta property="og:site_name" content="Field Notes" />
-<meta property="og:type" content="website" />
-<meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Home" />
-<script type="application/ld+json">
-{"@context":"https://schema.org","@type":"WebSite","description":"Aircraft • Wildlife • Microscopy • Weather","headline":"Home","name":"Field Notes","url":"http://localhost:4000/"}</script>
-<!-- End Jekyll SEO tag -->
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    header,
+    main,
+    footer {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0;
+    }
+    .breadcrumb {
+      margin: .5rem 0 1rem;
+      font-size: .95rem;
+      color: #666;
+      padding: 0 1rem;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
+  </style><script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script><script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David Walker",
+    "url": "http://localhost:4000",
+    "sameAs": [
+      "https://github.com/davewalker5"
+    ]
+  }
+  </script>
 
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Field Notes",
+    "url": "http://localhost:4000",
+    "description": "Aircraft • Wildlife • Microscopy • Weather"
+  }
+  </script>
 </head>
 <body>
   <header>
@@ -103,8 +136,8 @@
 </nav>
 
   </header>
-  <main>
-    <script type="application/ld+json">
+
+  <main><script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "BreadcrumbList",
@@ -197,6 +230,7 @@ A small environmental monitoring system that records local weather conditions.</
 <p>All of the applications used to generate these records are <strong>open source</strong>. If you’re interested in keeping track of your own observations, you’re very welcome to explore the code and adapt the tools for your own projects.</p>
 
   </main>
+
   <footer class="site-footer">
     <hr />
 
@@ -215,7 +249,7 @@ A small environmental monitoring system that records local weather conditions.</
             <span class="footer-sep">·</span>
 
             <span class="footer-meta">
-                Latest build · 15 Mar 2026 13:41
+                Latest build · 15 Mar 2026 14:06
             </span>
         </span>
 

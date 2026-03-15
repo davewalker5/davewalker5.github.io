@@ -1,35 +1,133 @@
 <!doctype html>
 <html lang="en">
 <head>
+  <!--
+    Core document metadata
+    ----------------------
+    Keep the head section as the single source of truth for page identity.
+    jekyll-seo-tag will emit standard SEO tags such as title, description,
+    canonical URL, Open Graph basics, and structured data where available.
+  -->
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>{{ page.title }} | {{ site.title }}</title>
+
+  {%- comment -%}
+    Primary SEO block
+    -----------------
+    This should appear only once. It outputs title, description, canonical,
+    Open Graph, Twitter Card tags, and more when configured in _config.yml
+    and page front matter.
+  {%- endcomment -%}
   {%- seo -%}
+
+  {%- comment -%}
+    Explicit social preview image fallback
+    --------------------------------------
+    jekyll-seo-tag can emit og/twitter tags, but it will only include an image
+    if one is defined. These explicit image tags ensure a consistent preview
+    image across the site unless you later choose to override per page.
+  {%- endcomment -%}
+  <meta property="og:image" content="{{ '/assets/images/field-notes-banner.jpg' | absolute_url }}">
+  <meta name="twitter:image" content="{{ '/assets/images/field-notes-banner.jpg' | absolute_url }}">
+
+  {%- comment -%}
+    Site stylesheets
+    ----------------
+    Dark theme is currently active in this layout. If you switch back to the
+    light theme later, replace these references with the light variants.
+  {%- endcomment -%}
   <link rel="stylesheet" href="{{ '/assets/css/site-dark.css?v=1.2' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/hero-dark.css?v=2.0' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/github-icon.css?v=1.0' | relative_url }}">
   <link rel="stylesheet" href="{{ '/assets/css/site-colors-dark.css?v=1.0' | relative_url }}">
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
   <style>
+    /*
+      Layout fallbacks
+      ----------------
+      Small baseline rules kept here so the site remains usable even if one of
+      the main stylesheets fails to load. Most visual styling lives in site.css.
+    */
     :root { --maxw: 1200px; }
     * { box-sizing: border-box; }
-    body { margin: 0; font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
-    header, main, footer { max-width: var(--maxw); margin: 0 auto; padding: 0; }
-    .breadcrumb { margin: .5rem 0 1rem; font-size: .95rem; color: #666; padding: 0 1rem; }
-    img.responsive { max-width: 100%; height: auto; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    header,
+    main,
+    footer {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0;
+    }
+    .breadcrumb {
+      margin: .5rem 0 1rem;
+      font-size: .95rem;
+      color: #666;
+      padding: 0 1rem;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
   </style>
-  {% seo %}
+
+  {%- comment -%}
+    MathJax
+    -------
+    Loaded site-wide so pages containing mathematical notation render without
+    needing a per-page include. If you later want to optimise performance, this
+    can be made conditional via front matter.
+  {%- endcomment -%}
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  {%- comment -%}
+    Structured data
+    ---------------
+    Basic author/site identity. Kept intentionally simple and emitted once.
+    The duplicated Person block from the previous version has been removed.
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David Walker",
+    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "sameAs": [
+      "https://github.com/davewalker5"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title | default: 'Field Notes' }}",
+    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "description": "{{ site.description | default: 'Personal observational reports and datasets covering wildlife, aircraft, microscopy, weather, and reference data.' | jsonify | remove_first: '"' | remove: '"' }}"
+  }
+  </script>
 </head>
 <body>
   <header>
     {% include hero.html %}
     {% include nav.html %}
   </header>
+
   <main>
+    {%- comment -%}
+      Breadcrumbs
+      -----------
+      The JSON-LD include helps search engines understand page hierarchy,
+      while the HTML breadcrumb trail helps visitors navigate the site.
+    {%- endcomment -%}
     {% include breadcrumbs-jsonld.html %}
     {% include breadcrumbs.html %}
     {{ content }}
   </main>
+
   {% include footer.html %}
 </body>
 </html>
