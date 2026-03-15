@@ -63,6 +63,12 @@ body {
 
 main {
   overflow-x: auto;
+  line-height: 1.65;
+  max-width: 70ch;
+}
+
+main p {
+  margin-bottom: 1.1rem;
 }
 
 body {
@@ -72,6 +78,15 @@ body {
 img {
   max-width: 100%;
   height: auto;
+}
+
+main {
+  line-height: 1.65;
+  max-width: 70ch;
+}
+
+main p {
+  margin-bottom: 1.1rem;
 }
 
 /* =========================================================
@@ -150,6 +165,22 @@ table.data-table.cols-4 td:nth-child(3) {
 table.data-table.cols-4 th:nth-child(4),
 table.data-table.cols-4 td:nth-child(4) {
   width: 28%;
+}
+
+table.data-table tbody tr:nth-child(even) {
+  background: rgba(255,255,255,0.04);
+}
+
+table.data-table thead th {
+  border-bottom: 2px solid rgba(255,255,255,0.12);
+}
+
+table.data-table tbody tr:hover {
+  background: rgba(255,255,255,0.08);
+}
+
+table.data-table thead {
+  background: rgba(255,255,255,0.05);
 }
 
 /* =========================================================
