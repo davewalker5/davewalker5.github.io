@@ -1,41 +1,145 @@
-/* Basic layout niceties */
-:root { --maxw: 980px; --border: #e5e7eb; --stripe: #f9fafb; --hover: #f3f4f6; }
-main { overflow-x: auto; } /* allow horizontal scroll on small screens */
+/*
+  Field Notes site styles
+  -----------------------
+  This stylesheet is organised by function so the site remains easy to
+  maintain as new report sections are added.
 
-/* Data tables */
-table.data-table {
+  Sections:
+  1. Theme variables and global layout
+  2. Global typography and links
+  3. Shared table styling
+  4. Breadcrumbs
+  5. Microscopy plates and filters
+  6. Image mosaic layout
+  7. Report / chart viewer figure layout
+  8. Footer
+  9. Responsive adjustments
+*/
+
+/* =========================================================
+   1. Theme variables and global layout
+   ========================================================= */
+
+:root {
+  /* Shared sizing and colours used across report pages */
+  --maxw: 980px;
+  --border: #e5e7eb;
+  --stripe: #f9fafb;
+  --hover: #f3f4f6;
+  --muted: #666;
+  --muted-strong: #555;
+  --muted-light: #777;
+  --separator: #888;
+  --link: #0366d6;
+  --btn: #2f6fab;
+  --btn-hover: #1f4e7c;
+  --figure-border: #ddd;
+  --figure-bg: #fafafa;
+}
+
+/* Allow wide tables and figures to scroll horizontally on narrow screens. */
+main {
+  overflow-x: auto;
+}
+
+/* =========================================================
+   2. Global typography and links
+   ========================================================= */
+
+body {
+  /* Slightly more generous line height improves report readability. */
+  line-height: 1.6;
+}
+
+/* Keep links understated by default so tables and reports do not feel noisy. */
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Muted helper text used for metadata and secondary explanatory copy. */
+.muted {
+  color: var(--muted);
+  font-size: 0.95rem;
+}
+
+/* =========================================================
+   3. Shared table styling
+   ========================================================= */
+
+/*
+  Base table styling used across the site.
+  This supports report catalogues, reference tables, and intermediate index pages.
+*/
+table {
   width: 100%;
   border-collapse: collapse;
   font-size: 0.95rem;
 }
-table.data-table th,
-table.data-table td {
+
+table th,
+table td {
   text-align: left;
   padding: 0.6rem 0.8rem;
   border-bottom: 1px solid var(--border);
   vertical-align: top;
+}
+
+/* Subtle row hover improves scanability on catalogue and data tables. */
+table tbody tr:hover td {
+  background: var(--hover);
+}
+
+/*
+  Data tables are the main report index tables.
+  They keep columns stable and prevent wrapping in dense report listings.
+*/
+table.data-table th,
+table.data-table td {
   white-space: nowrap;
 }
+
+/* Default four-column balance used by the report-index pages. */
 table.data-table th:nth-child(1),
-table.data-table td:nth-child(1) { width: 22%; }
+table.data-table td:nth-child(1) {
+  width: 22%;
+}
+
 table.data-table th:nth-child(2),
-table.data-table td:nth-child(2) { width: 22%; }
+table.data-table td:nth-child(2) {
+  width: 22%;
+}
+
 table.data-table th:nth-child(3),
-table.data-table td:nth-child(3) { width: 28%; }
+table.data-table td:nth-child(3) {
+  width: 28%;
+}
+
 table.data-table th:nth-child(4),
-table.data-table td:nth-child(4) { width: 28%; }
+table.data-table td:nth-child(4) {
+  width: 28%;
+}
 
-table.data-table tbody tr:nth-child(odd) td { background: var(--stripe); }
-table.data-table tbody tr:hover td { background: var(--hover); }
+/* Gentle striping helps long report lists remain readable. */
+table.data-table tbody tr:nth-child(odd) td {
+  background: var(--stripe);
+}
 
-/* Links */
-a { color: inherit; }
-a:hover { text-decoration: underline; }
-.muted { color: #666; font-size: .95rem; }
+/* =========================================================
+   4. Breadcrumbs
+   ========================================================= */
 
+/*
+  Breadcrumbs are intentionally compact and quiet so they aid navigation
+  without competing with the page title.
+*/
 .breadcrumbs {
   font-size: 0.9rem;
   margin: 0.75em 0;
+  color: var(--muted);
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -54,62 +158,46 @@ a:hover { text-decoration: underline; }
 
 .breadcrumbs li + li::before {
   content: " > ";
-  color: #888;
+  color: var(--separator);
 }
 
 .breadcrumbs a {
   text-decoration: none;
-  color: #0366d6;
+  color: var(--link);
 }
 
-.breadcrumbs span {
-  color: #555;
-}
-
-@media (max-width: 700px) {
-  .breadcrumbs {
-    white-space: normal;
-  }
-}
-
+/* Dim earlier breadcrumb links slightly so the current context feels dominant. */
 .breadcrumbs li:not(:last-child) a {
   opacity: 0.8;
 }
 
-.breadcrumbs {
-  color: #666;
+.breadcrumbs span {
+  color: var(--muted-strong);
 }
 
-.plate-row {
-  display: none;
-}
+/* =========================================================
+   5. Microscopy plates and filters
+   ========================================================= */
 
+/* Hidden rows are revealed client-side when a plate series is selected. */
+.plate-row,
 #plates-table {
   display: none;
 }
 
+/* Simple spacing under the microscopy series dropdown. */
 #series-filter {
   margin-bottom: 1rem;
 }
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  font-size: 0.95rem;
-}
+/* =========================================================
+   6. Image mosaic layout
+   ========================================================= */
 
-table th,
-table td {
-  text-align: left;
-  padding: 0.6rem 0.8rem;
-  border-bottom: 1px solid var(--border);
-  vertical-align: top;
-  /* white-space: nowrap; */
-}
-
-table tbody tr:hover td { background: var(--hover); }
-
-/* Image Mosaic */
+/*
+  Mosaic used for image-led overview pages.
+  The named classes allow a slightly editorial arrangement without custom HTML.
+*/
 .image-mosaic {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -130,30 +218,38 @@ table tbody tr:hover td { background: var(--hover); }
   object-fit: cover;
 }
 
-/* Example layout */
-.image1 { grid-column: span 2; grid-row: span 2; }
-.image2 { grid-column: span 2; grid-row: span 1; }
-.image3 { grid-column: span 1; grid-row: span 1; }
-.image4 { grid-column: span 1; grid-row: span 1; }
-
-@media (max-width: 700px) {
-  .image-mosaic {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .image1, .image2, .image3, .image4 {
-    grid-column: span 1;
-    grid-row: span 1;
-  }
+/* Desktop mosaic emphasis pattern. */
+.image1 {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
+.image2 {
+  grid-column: span 2;
+  grid-row: span 1;
+}
+
+.image3,
+.image4 {
+  grid-column: span 1;
+  grid-row: span 1;
+}
+
+/* =========================================================
+   7. Report / chart viewer figure layout
+   ========================================================= */
+
+/*
+  Used on the wildlife report viewers and any similar chart pages.
+  The aim is to make charts feel like prepared figures rather than loose images.
+*/
 .report-figure {
-  max-width: 980px;
+  max-width: var(--maxw);
   margin: 2rem auto;
   padding: 1.25rem 1.25rem 1.5rem;
-  border: 1px solid #ddd;
+  border: 1px solid var(--figure-border);
   border-radius: 8px;
-  background: #fafafa;
+  background: var(--figure-bg);
 }
 
 .report-image-wrap {
@@ -171,9 +267,10 @@ table tbody tr:hover td { background: var(--hover); }
   margin-top: 0.9rem;
   text-align: center;
   font-size: 0.95em;
-  color: #666;
+  color: var(--muted);
 }
 
+/* Download call-to-action placed beneath the chart figure. */
 .download-block {
   text-align: center;
   margin-top: 1.25rem;
@@ -185,15 +282,15 @@ table tbody tr:hover td { background: var(--hover); }
   border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  border: 1px solid #2f6fab;
-  background: #2f6fab;
+  border: 1px solid var(--btn);
+  background: var(--btn);
   color: #fff;
 }
 
 .download-btn:hover,
 .download-btn:focus {
-  background: #1f4e7c;
-  border-color: #1f4e7c;
+  background: var(--btn-hover);
+  border-color: var(--btn-hover);
   color: #fff;
   text-decoration: none;
 }
@@ -201,64 +298,78 @@ table tbody tr:hover td { background: var(--hover); }
 .download-note {
   margin-top: 0.6rem;
   font-size: 0.9em;
-  color: #666;
+  color: var(--muted);
 }
 
+/* =========================================================
+   8. Footer
+   ========================================================= */
+
+/*
+  The footer is split into publication metadata on the left and a light-touch
+  feedback invitation on the right.
+*/
 .site-footer {
-    margin-top: 2rem;
-    font-size: 0.9em;
+  margin-top: 2rem;
+  font-size: 0.9em;
 }
 
 .footer-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .footer-left {
-    text-align: left;
+  text-align: left;
 }
 
 .footer-right {
-    text-align: right;
-    color: #666;
+  text-align: right;
+  color: var(--muted);
 }
 
 .footer-meta {
-    color: #777;
+  color: var(--muted-light);
 }
 
 .footer-sep {
-    margin: 0 0.4em;
-    color: #888;
+  margin: 0 0.4em;
+  color: var(--separator);
 }
 
-/* Mobile behaviour */
+/* =========================================================
+   9. Responsive adjustments
+   ========================================================= */
+
 @media (max-width: 700px) {
-    .footer-row {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 0.4em;
-    }
+  /* Let breadcrumbs wrap naturally on smaller screens. */
+  .breadcrumbs {
+    white-space: normal;
+  }
 
-    .footer-right {
-        text-align: left;
-    }
-}
+  /* Simplify the image mosaic into an even two-column grid. */
+  .image-mosaic {
+    grid-template-columns: 1fr 1fr;
+  }
 
-body {
-    line-height: 1.6;
-}
+  .image1,
+  .image2,
+  .image3,
+  .image4 {
+    grid-column: span 1;
+    grid-row: span 1;
+  }
 
-table {
-    border-collapse: collapse;
-}
+  /* Stack footer metadata and feedback cleanly on smaller screens. */
+  .footer-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.4em;
+  }
 
-th, td {
-    padding: 0.35em 0.6em;
-}
-
-th {
+  .footer-right {
     text-align: left;
+  }
 }
