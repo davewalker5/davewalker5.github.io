@@ -431,6 +431,14 @@ table.data-table thead {
   color: var(--color-separator);
 }
 
+.footer-attribution {
+  margin-top: 0.6em;
+  font-size: 0.85em;
+  color: #8f98a3;
+  text-align: center;
+  line-height: 1.4;
+}
+
 /* =========================================================
    9. Responsive adjustments
    ========================================================= */
@@ -476,20 +484,60 @@ table.data-table thead {
    10. Dataset citations
    ========================================================= */
 
+
 .dataset-citation {
   margin-top: 2rem;
-  padding: 1rem 1.2rem;
+  padding: 0.8rem 1rem;
   border-left: 4px solid rgba(0,0,0,0.15);
   background: rgba(0,0,0,0.03);
-  font-size: 0.75em;
+  font-size: 0.88em;
 }
 
 .dataset-citation h3 {
-  margin-top: 0;
+  margin: 0 0 0.4rem 0;
+  font-size: 0.9em;
+  font-weight: 600;
+  color: rgba(255,255,255,0.75);
+}
+
+.dataset-citation-main {
+  font-size: 0.88em;
+}
+
+.dataset-meta {
+  display: flex;
+  gap: 1.2rem;
+  flex-wrap: wrap;
+  font-size: 0.85em;
+  opacity: 0.85;
+}
+
+.dataset-meta span {
+  white-space: nowrap;
 }
 
 .dataset-bibtex {
+  margin-top: 0.5rem;
   background: rgba(0,0,0,0.04);
-  padding: 0.8rem;
+  padding: 0.6rem 0.7rem;
+  border-radius: 4px;
+  font-size: 0.9em;
   overflow-x: auto;
+}
+
+.dataset-citation summary {
+  cursor: pointer;
+  margin-top: 0.3rem;
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
+.dataset-credit {
+  margin: 0.8em 0 1em 0;
+  padding: 0.6em 0.9em;
+  font-size: 0.95em;
+  color: #444;
+  background: #f6f8fa;
+  border-left: 4px solid #6a8fbf;
+  border-radius: 3px;
 }

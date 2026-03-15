@@ -1,26 +1,70 @@
 {% if page.dataset %}
-  {% assign dataset_version = site.time | date: "%Y.%m.%d" %}
-  <div class="dataset-citation">
-    <h3>Cite this dataset</h3>
-    <p>
-      Walker, David.
-      <em>{{ page.title }}</em>.
-      Field Notes.
-      Version {{ dataset_version }}.
-      <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>
-    </p>
-    <details>
-      <summary>BibTeX</summary>
-      <pre class="dataset-bibtex">
-        @dataset{walker_{{ page.title | slugify }},
-          author = {Walker, David},
-          title = {{ page.title }},
-          year = {{ site.time | date: "%Y" }},
-          publisher = {Field Notes},
-          version = {{ dataset_version }},
-          url = { {{ page.url | absolute_url }} }
-        }
-      </pre>
-    </details>
+
+{% assign dataset_version = site.time | date: "%Y.%m.%d" %}
+
+{% assign path_parts = page.url | split: "/" %}
+{% assign section = path_parts[1] %}
+{% assign subsection = path_parts[2] | replace: ".html", "" %}
+
+{% case section %}
+  {% when "wildlife" %}
+    {% assign section_code = "WL" %}
+  {% when "aircraft" %}
+    {% assign section_code = "AC" %}
+  {% when "microscopy" %}
+    {% assign section_code = "MICRO" %}
+  {% else %}
+    {% assign section_code = "FN" %}
+{% endcase %}
+
+{% assign subsection_code = subsection | upcase %}
+
+{% assign dataset_id = "FN-" | append: section_code %}
+
+{% if subsection_code and subsection_code != "" %}
+  {% assign dataset_id = dataset_id | append: "-" | append: subsection_code %}
+{% endif %}
+
+<div class="dataset-citation">
+  <h3>Cite this dataset</h3>
+
+  <p class="dataset-citation-credit">
+    You are welcome to reuse or reproduce this material but please cite the dataset using the reference below.
+  </p>
+
+  <p class="dataset-citation-main">
+    Walker, David.
+    <em>{{ page.title }}</em>.
+    Field Notes.
+    ID {{ dataset_id }}.
+    Version {{ dataset_version }}.
+    <a href="{{ page.url | absolute_url }}">{{ page.url | absolute_url }}</a>
+  </p>
+
+  <div class="dataset-meta">
+    <span><strong>Dataset</strong> {{ dataset_id }}</span>
+    <span><strong>Author</strong> David Walker</span>
+    <span><strong>Publisher</strong> Field Notes</span>
+    <span><strong>Version</strong> {{ dataset_version }}</span>
   </div>
+  <br/>
+
+  <details>
+    <summary>BibTeX</summary>
+
+<pre class="dataset-bibtex">
+@dataset{ {{- dataset_id | downcase | replace: "-", "_" -}} ,
+  author = {Walker, David},
+  title = { {{- page.title -}} },
+  year = { {{- site.time | date: "%Y" -}} },
+  publisher = {Field Notes},
+  version = { {{- dataset_version -}} },
+  url = { {{- page.url | absolute_url -}} }
+}
+</pre>
+
+  </details>
+
+</div>
+
 {% endif %}

@@ -28,4 +28,12 @@
         </span>
 
     </div>
+
+    {% unless page.dataset %}
+    <div class="footer-attribution">
+        Unless otherwise noted, observations, images and datasets on this site are by David Walker.
+        Reuse is welcome with attribution. A suggested citation is provided with each dataset.
+    </div>
+    {% endunless %}
+
 </footer>
