@@ -1,19 +1,34 @@
 ---
 layout: default
-title: Species Trend Chart
-breadcrumb: Species Trend Chart
+title: Wildlife Species Trend Chart
+breadcrumb: Wildlife Reports
+description: Wildlife species trend chart based on personal field records, with downloadable data.
 ---
 
-<h1 id="heading">Species Trend</h1>
+<h1 id="heading">Wildlife Species Trend</h1>
+
+<p id="intro">
+This chart shows wildlife sightings trends by species based on personal field records.
+</p>
+
 <p class="muted" id="meta"></p>
 
-<div id="img-wrap">
-  <img id="report-img" class="responsive" alt="Species trend chart"/>
-</div>
+<figure class="report-figure">
+  <div id="img-wrap" class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Wildlife species trend chart"/>
+  </div>
 
-<p>
-  <a id="xlsx-link" href="#" download>Download XLSX data</a>
-</p>
+  <figcaption class="report-caption">
+    Species trend chart generated from personal field records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="xlsx-link" class="download-btn" href="#" download>
+      ⬇ Download Wildlife Species Trend Data (XLSX)
+    </a>
+    <p class="download-note">Raw data used to generate this chart.</p>
+  </div>
+</figure>
 
 <script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
 <script src="{{ '/assets/js/trend-species.js' | relative_url }}"></script>

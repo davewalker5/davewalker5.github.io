@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Sensor Health Reports
-permalink: /weather/health/
+title: Weather Sensor Health Reports
+description: Weather sensor health reports generated from personal weather station data, with chart views and downloadable data.
+breadcrumb: Sensor Health Reports
 ---
 
 <h1>{{ page.title }}</h1>
-
+<p>
+This page lists sensor health reports generated from personal weather station data. Each entry includes a chart view and, where available, a downloadable data file.
+</p>
+<h2>Available Reports</h2>
 {% assign report_root = "/weather/reports/health/" %}
 
 {%- comment -%}
@@ -114,3 +118,6 @@ Collect XLSX bases (ignore /_site/)
 
   </tbody>
 </table>
+<br/>
+<hr>
+<i>These reports are generated from the author’s own weather station records over time.</i>

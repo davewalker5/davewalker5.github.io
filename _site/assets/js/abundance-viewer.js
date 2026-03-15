@@ -24,9 +24,10 @@
   const png = `${basePath}/abundance.png`;
   const xlsx = `${basePath}/abundance.xlsx`;
 
-  document.title = `Abundance: ${category} @ ${location}, ${country}`;
-  heading.textContent = `Abundance: ${category}`;
-  meta.textContent = `${location}, ${country}`;
+  document.title = `Abundance chart for ${category} at ${location}, ${country}`;
+  heading.textContent = `Abundance chart for ${category} at ${location}, ${country}`;
+  intro.textContent = `This chart shows recorded abundance of ${category} at ${location}, ${country}, based on personal wildlife field records.`;
+  meta.textContent = '';
   img.src = png;
   img.alt = `Abundance chart for ${category} at ${location}, ${country}`;
   link.href = xlsx;

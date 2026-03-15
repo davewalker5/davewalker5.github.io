@@ -1,19 +1,34 @@
 ---
 layout: default
-title: Heatmap Chart
-breadcrumb: Heatmap Chart
+title: Annual Wildlife Heatmap Chart
+breadcrumb: Wildlife Reports
+description: Annual wildlife heatmap chart based on personal field records, with downloadable data.
 ---
 
-<h1 id="heading">Heatmap</h1>
+<h1 id="heading">Annual Wildlife Heatmap</h1>
+
+<p id="intro">
+This chart shows an annual wildlife heatmap based on personal field records.
+</p>
+
 <p class="muted" id="meta"></p>
 
-<div id="img-wrap">
-  <img id="report-img" class="responsive" alt="Annual category heatmap"/>
-</div>
+<figure class="report-figure">
+  <div id="img-wrap" class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Annual wildlife heatmap"/>
+  </div>
 
-<p>
-  <a id="xlsx-link" href="#" download>Download XLSX data</a>
-</p>
+  <figcaption class="report-caption">
+    Annual heatmap generated from personal field records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="xlsx-link" class="download-btn" href="#" download>
+      ⬇ Download Annual Heatmap Data (XLSX)
+    </a>
+    <p class="download-note">Raw data used to generate this chart.</p>
+  </div>
+</figure>
 
 <script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
 <script src="{{ '/assets/js/heatmap-viewer.js' | relative_url }}"></script>

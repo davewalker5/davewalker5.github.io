@@ -5,33 +5,52 @@
   const parts = decodeURIComponent(raw.replace(/^#\/?/, "")).split("/").filter(Boolean);
 
   const heading = document.getElementById("heading");
+  const intro = document.getElementById("intro");
   const meta = document.getElementById("meta");
   const tbody = document.querySelector("#comp-table tbody");
 
+  if (!heading || !meta || !tbody) return;
+
   if (parts.length < 1) {
-    heading.textContent = "Category Composition";
-    meta.textContent = "No country specified.";
+    document.title = "Wildlife Category Composition by Country";
+    heading.textContent = "Wildlife Category Composition";
+    if (intro) {
+      intro.textContent =
+        "This page lists wildlife category composition reports by country, based on personal field records.";
+    }
+    meta.textContent = ``;
     return;
   }
 
   const [country] = parts;
-  heading.textContent = `Category Composition — ${country}`;
-  meta.textContent = "Choose a location and category.";
+
+  document.title = `Wildlife Category Composition in ${country}`;
+  heading.textContent = `Wildlife Category Composition in ${country}`;
+
+  if (intro) {
+    intro.textContent =
+      `This page lists wildlife category composition reports for locations in ${country}, based on personal field records. Select a category to view the chart and download the associated data.`;
+  }
+
+  meta.textContent = ``;
 
   // Parse dataset
   const dataTag = document.getElementById("comp-data");
   let all = [];
-  try { all = JSON.parse(dataTag.textContent || "[]"); } catch (e) {}
+  try {
+    all = JSON.parse(dataTag.textContent || "[]");
+  } catch (e) {}
 
   const rows = all
     .map(s => {
-      const [c,l,k] = s.split("|");
+      const [c, l, k] = s.split("|");
       return { country: c, location: l, category: k };
     })
     .filter(x => x.country === country)
-    .sort((a,b) => (a.location + "|" + a.category).localeCompare(b.location + "|" + b.category));
+    .sort((a, b) => (a.location + "|" + a.category).localeCompare(b.location + "|" + b.category));
 
   tbody.innerHTML = "";
+
   rows.forEach(x => {
     const tr = document.createElement("tr");
 
@@ -57,7 +76,7 @@
     const tr = document.createElement("tr");
     const td = document.createElement("td");
     td.colSpan = 3;
-    td.textContent = "No composition reports found for this country.";
+    td.textContent = `No category composition reports found for ${country}.`;
     tr.appendChild(td);
     tbody.appendChild(tr);
   }

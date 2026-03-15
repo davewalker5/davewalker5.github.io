@@ -1,11 +1,15 @@
 ---
 layout: default
-title: Management Reports
-permalink: /weather/management/
+title: Weather Station Database Management Reports
+description: Weather station management reports generated from personal weather station data, with chart views and downloadable data.
+breadcrumb: Weather Station Database Management Reports
 ---
 
 <h1>{{ page.title }}</h1>
-
+<p>
+This page lists weather station database management reports. Each entry includes a chart view and a downloadable data file.
+</p>
+<h2>Available Reports</h2>
 {% assign report_root = "/weather/reports/management/" %}
 
 {%- comment -%}
@@ -95,3 +99,6 @@ Collect XLSX bases (ignore /_site/)
 
   </tbody>
 </table>
+<br/>
+<hr>
+<i>These reports are generated from the author’s own weather station records over time.</i>
