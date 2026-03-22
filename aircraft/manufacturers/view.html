@@ -1,0 +1,44 @@
+---
+layout: default
+title: Aircraft Manufacturer Report Viewer
+breadcrumb: Report Viewer
+description: View an aircraft manufacturer report image and download its related XLSX data file.
+
+breadcrumb_items:
+  - name: Home
+    url: /
+  - name: Aircraft
+    url: /aircraft/
+  - name: Aircraft Manufacturer Reports
+    url: /aircraft/manufacturers/index.html
+  - name: Report Viewer
+    url: /aircraft/manufacturers/view.html
+---
+
+<h1 id="heading">Aircraft Manufacturer Report</h1>
+
+<p id="intro">
+This page displays an aircraft manufacturer report from the Field Notes archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Aircraft manufacturer report image" />
+  </div>
+
+  <figcaption class="report-caption">
+    Aircraft manufacturer report generated from personal observation records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#">
+      ⬇ Download XLSX data
+    </a>
+    <p id="download-note" class="download-note"></p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/aircraft-manufacturer-viewer.js' | relative_url }}"></script>

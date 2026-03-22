@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <!--
+    Core document metadata
+    ----------------------
+    Keep the head section as the single source of truth for page identity.
+    jekyll-seo-tag will emit standard SEO tags such as title, description,
+    canonical URL, Open Graph basics, and structured data where available.
+  -->
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  {%- comment -%}
+    Primary SEO block
+    -----------------
+    This should appear only once. It outputs title, description, canonical,
+    Open Graph, Twitter Card tags, and more when configured in _config.yml
+    and page front matter.
+  {%- endcomment -%}
+  {%- seo -%}
+
+  {%- comment -%}
+    Explicit social preview image fallback
+    --------------------------------------
+    jekyll-seo-tag can emit og/twitter tags, but it will only include an image
+    if one is defined. These explicit image tags ensure a consistent preview
+    image across the site unless you later choose to override per page.
+  {%- endcomment -%}
+  <meta property="og:image" content="{{ '/assets/images/field-notes-banner.jpg' | absolute_url }}">
+  <meta name="twitter:image" content="{{ '/assets/images/field-notes-banner.jpg' | absolute_url }}">
+
+  {%- comment -%}
+    Site stylesheets
+    ----------------
+    Dark theme is currently active in this layout. If you switch back to the
+    light theme later, replace these references with the light variants.
+  {%- endcomment -%}
+  <link rel="stylesheet" href="{{ '/assets/css/site-dark.css?v=1.2' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/hero-dark.css?v=2.0' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/github-icon.css?v=1.0' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/site-colors-dark.css?v=1.0' | relative_url }}">
+
+  <style>
+    /*
+      Layout fallbacks
+      ----------------
+      Small baseline rules kept here so the site remains usable even if one of
+      the main stylesheets fails to load. Most visual styling lives in site.css.
+    */
+    :root { --maxw: 1200px; }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    }
+    header,
+    main,
+    footer {
+      max-width: var(--maxw);
+      margin: 0 auto;
+      padding: 0;
+    }
+    .breadcrumb {
+      margin: .5rem 0 1rem;
+      font-size: .95rem;
+      color: #666;
+      padding: 0 1rem;
+    }
+    img.responsive {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+
+  {%- comment -%}
+    MathJax
+    -------
+    Loaded site-wide so pages containing mathematical notation render without
+    needing a per-page include. If you later want to optimise performance, this
+    can be made conditional via front matter.
+  {%- endcomment -%}
+  <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+  {%- comment -%}
+    Structured data
+    ---------------
+    Basic author/site identity. Kept intentionally simple and emitted once.
+    The duplicated Person block from the previous version has been removed.
+  {%- endcomment -%}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "David Walker",
+    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "sameAs": [
+      "https://github.com/davewalker5"
+    ]
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "{{ site.title | default: 'Field Notes' }}",
+    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "description": "{{ site.description | default: 'Personal observational reports and datasets covering wildlife, aircraft, microscopy, weather, and reference data.' | jsonify | remove_first: '"' | remove: '"' }}"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://davidwalker.uk/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Aircraft Sighting Reports",
+        "item": "https://davidwalker.uk/aircraft/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Microscopy Investigations",
+        "item": "https://davidwalker.uk/microscopy/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "name": "Weather Reports",
+        "item": "https://davidwalker.uk/weather/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 5,
+        "name": "Wildlife Reports",
+        "item": "https://davidwalker.uk/wildlife/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 6,
+        "name": "Reference Data",
+        "item": "https://davidwalker.uk/reference/"
+      }
+    ]
+  }
+  </script>
+</head>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+
+    function setCopiedState(button) {
+      const original = button.dataset.originalText || button.textContent;
+
+      // store original label once
+      if (!button.dataset.originalText) {
+        button.dataset.originalText = original;
+      }
+
+      button.textContent = "Copied ✓";
+      button.classList.add("copied");
+
+      setTimeout(() => {
+        button.textContent = original;
+        button.classList.remove("copied");
+      }, 1500);
+    }
+
+    function copyText(text, button) {
+      if (!navigator.clipboard) {
+        // fallback (older browsers)
+        const textarea = document.createElement("textarea");
+        textarea.value = text;
+        document.body.appendChild(textarea);
+        textarea.select();
+        try {
+          document.execCommand("copy");
+          setCopiedState(button);
+        } catch (err) {
+          console.warn("Copy failed", err);
+        }
+        document.body.removeChild(textarea);
+        return;
+      }
+
+      navigator.clipboard.writeText(text)
+        .then(() => setCopiedState(button))
+        .catch(err => console.warn("Clipboard error", err));
+    }
+
+    document.querySelectorAll(".copy-btn").forEach(button => {
+
+      button.addEventListener("click", function () {
+
+        // 1Direct citation copy
+        if (button.dataset.copy) {
+          copyText(button.dataset.copy, button);
+          return;
+        }
+
+        // BibTeX copy (single + multi include compatible)
+        if (button.dataset.copyTarget === "bibtex") {
+
+          // try closest <details> first (your structure)
+          let pre = button.closest("details")?.querySelector("pre");
+
+          // fallback safety (in case structure changes later)
+          if (!pre) {
+            pre = button.parentElement?.previousElementSibling;
+          }
+
+          if (pre) {
+            copyText(pre.innerText.trim(), button);
+          }
+        }
+
+      });
+
+    });
+
+  });
+</script>
+<body>
+  <header>
+    {% include hero.html %}
+    {% include nav.html %}
+  </header>
+
+  <main>
+    {%- comment -%}
+      Breadcrumbs
+      -----------
+      The JSON-LD include helps search engines understand page hierarchy,
+      while the HTML breadcrumb trail helps visitors navigate the site.
+    {%- endcomment -%}
+    {% include breadcrumbs-jsonld.html %}
+    {% include breadcrumbs.html %}
+    {{ content }}
+    {% include dataset-single-citation.html %}
+  </main>
+
+  {% include footer.html %}
+</body>
+</html>

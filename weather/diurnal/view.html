@@ -1,0 +1,44 @@
+---
+layout: default
+title: Diurnal Pattern Report Viewer
+breadcrumb: Report Viewer
+description: View a diurnal weather pattern report image and download its related XLSX data file.
+
+breadcrumb_items:
+  - name: Home
+    url: /
+  - name: Weather
+    url: /weather/
+  - name: Diurnal Pattern Reports
+    url: /weather/diurnal/
+  - name: Report Viewer
+    url: /weather/diurnal/view.html
+---
+
+<h1 id="heading">Diurnal Pattern Report</h1>
+
+<p id="intro">
+This page displays a diurnal weather pattern report from the Field Notes archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Diurnal pattern report image" />
+  </div>
+
+  <figcaption class="report-caption">
+    Diurnal weather pattern report generated from personal weather station records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#">
+      ⬇ Download XLSX data
+    </a>
+    <p id="download-note" class="download-note"></p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/weather-diurnal-viewer.js' | relative_url }}"></script>

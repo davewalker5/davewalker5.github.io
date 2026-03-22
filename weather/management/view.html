@@ -1,0 +1,44 @@
+---
+layout: default
+title: Weather Database Management Report Viewer
+breadcrumb: Report Viewer
+description: View a weather database management report image and download its related XLSX data file.
+
+breadcrumb_items:
+  - name: Home
+    url: /
+  - name: Weather
+    url: /weather/
+  - name: Weather Station Database Management Reports
+    url: /weather/management/
+  - name: Report Viewer
+    url: /weather/management/view.html
+---
+
+<h1 id="heading">Weather Database Management Report</h1>
+
+<p id="intro">
+This page displays a weather database management report from the Field Notes archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Weather database management report image" />
+  </div>
+
+  <figcaption class="report-caption">
+    Weather database management report generated from personal weather station records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#">
+      ⬇ Download XLSX data
+    </a>
+    <p id="download-note" class="download-note"></p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/weather-management-viewer.js' | relative_url }}"></script>

@@ -1,0 +1,28 @@
+
+<h1 id="heading">Photomicrograph</h1>
+
+<p id="intro">
+This page displays a photomicrographic plate from the Field Notes archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div id="img-wrap" class="report-image-wrap">
+    <img id="plate-img" class="responsive" alt="Photomicrographic plate"/>
+  </div>
+
+  <figcaption class="report-caption">
+    Photomicrograph from the Field Notes observational archive.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#" download>
+      ⬇ Download plate image
+    </a>
+    <p class="download-note">Downloads the original image file where the browser allows it.</p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/plate-viewer.js' | relative_url }}"></script>

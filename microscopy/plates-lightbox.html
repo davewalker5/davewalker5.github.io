@@ -1,0 +1,116 @@
+---
+layout: default
+title: Photomicrographic Plates — Lightbox
+breadcrumb: Photomicrographic Plates — Lightbox
+description: A visual library of photomicrographic plates captured using a historical Ernst Leitz microscope.
+dataset: true
+---
+
+<h1>Photomicrographic Plates — Lightbox View</h1>
+
+<p class="plate-note">
+  <em>Unless otherwise stated, all plates are derived from observations in a single focal plane. Plates produced from combined focal planes are expressly indicated.</em>
+</p>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+  {% assign series_list = site.data.leitz_plates | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    <option value="{{ series | strip | escape }}">{{ series | strip }}</option>
+  {% endfor %}
+</select>
+
+<div id="plates-grid">
+  <div class="plates-grid-inner">
+    {% for row in site.data.leitz_plates %}
+      {% capture plate_subject %}
+        {% if row.Common and row.Scientific %}
+          {{ row.Common }} ({{ row.Scientific }})
+        {% elsif row.Common %}
+          {{ row.Common }}
+        {% elsif row.Scientific %}
+          {{ row.Scientific }}
+        {% endif %}
+      {% endcapture %}
+
+      <div class="plate-card" data-series="{{ row.Series | strip | escape }}">
+        <a href="{{ '/microscopy/view-plate-lightbox.html' | relative_url }}#/{{ row.Plate | uri_escape }}/{{ row.Series | strip | uri_escape }}/{{ plate_subject | strip | uri_escape }}/{{ row.Specimen | default: '' | strip | uri_escape }}">
+          <img
+            src="{{ '/assets/plates/lightbox/' | relative_url }}{{ row.Plate | uri_escape }}"
+            alt="{{ row.Plate }}{% if row.Specimen %} – {{ row.Specimen }}{% endif %}"
+            loading="lazy"
+          />
+          <div class="plate-card-name">{{ row.Plate }}</div>
+          <div class="plate-card-specimen">
+            {% if row.Specimen and row.Specimen != blank %}
+                {{ row.Specimen }}
+            {% else %}
+                <em>No specimen label</em>
+            {% endif %}
+          </div>
+          {% if plate_subject and plate_subject != blank %}
+            <div class="plate-card-subject">{{ plate_subject | strip }}</div>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<p id="plate-method-note" class="plate-note" style="display: none;">
+  <span class="note-label">Note.</span>
+  Unless otherwise stated, all plates are derived from observations in a single focal plane.
+  Plates produced from combined focal planes are expressly indicated.
+</p>
+
+<br/>
+<hr/>
+<i>The photomicrographs presented here form part of the Field Notes observational archive and were captured by the author using a historical Ernst Leitz microscope.</i>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const grid = document.getElementById("plates-grid");
+  const note = document.getElementById("plate-method-note");
+  const cards = document.querySelectorAll(".plate-card");
+  const realOptions = Array.from(filter.options).filter(option => option.value !== "");
+
+  function applyFilter() {
+    const selected = filter.value;
+    let visibleCount = 0;
+
+    cards.forEach(function(card) {
+      const cardSeries = card.getAttribute("data-series");
+
+      if (selected !== "" && cardSeries === selected) {
+        card.style.display = "block";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    if (visibleCount > 0) {
+      grid.style.display = "block";
+      if (note) note.style.display = "block";
+    } else {
+      grid.style.display = "none";
+      if (note) note.style.display = "none";
+    }
+  }
+
+  if (realOptions.length === 1) {
+    filter.value = realOptions[0].value;
+    filter.style.display = "none";
+
+    const label = document.querySelector('label[for="series-filter"]');
+    if (label) {
+      label.style.display = "none";
+    }
+  }
+
+  applyFilter();
+  filter.addEventListener("change", applyFilter);
+});
+</script>
