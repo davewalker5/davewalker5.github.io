@@ -1,0 +1,28 @@
+- title: Nature Recorder
+  category: "tools"
+  description: Used to log wildlife sightings and build long-term natural history records
+  link: https://github.com/davewalker5/NatureRecorderPy
+- title: Flight Recorder
+  category: "tools"
+  description: Used to capture and analyse aircraft observations
+  link: https://github.com/davewalker5/FlightRecorder
+- title: Raspberry Pi Weather Station
+  category: "tools"
+  description: A small environmental monitoring system that records local weather conditions
+  link: https://github.com/davewalker5/RPi-WeatherStation
+- title: Plate Library
+  category: "tools"
+  description: Used to maintain a catalogue of photomicrographic plates and investigations
+  link: https://github.com/davewalker5/PlateLibrary
+- title: Spectrogram Viewer
+  category: "tools"
+  description: Command-line tool for analysing bat recordings, with noise reduction, viewers, and pulse-level call analysis
+  link: https://github.com/davewalker5/SpectrogramViewer
+- title: ADS-B BaseStation Reader
+  category: "tools"
+  description: ADS-B tracking tool for live aircraft monitoring
+  link: https://github.com/davewalker5/ADS-B-BaseStationReader
+- title: ODE Solver
+  category: "tools"
+  description: Tool for exploring ODE models and visualising their behaviour over time
+  link: https://github.com/davewalker5/OdeSolver

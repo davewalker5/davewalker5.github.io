@@ -1,0 +1,324 @@
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm 16mm;
+
+  @top-left {
+    content: "Field Notes Journal";
+    font-size: 9pt;
+  }
+
+  @top-right {
+    content: string(current-post-title);
+    font-size: 9pt;
+  }
+
+  @bottom-center {
+    content: counter(page);
+    font-size: 9pt;
+  }
+}
+
+@page :first {
+  @top-left { content: ""; }
+  @top-right { content: ""; }
+  @bottom-center { content: ""; }
+}
+
+body.booklet {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10.5pt;
+  line-height: 1.45;
+  color: #111;
+  margin: 0;
+}
+
+.book-cover,
+.book-toc,
+.book-post {
+  break-before: page;
+}
+
+.book-cover {
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.book-cover-inner {
+  max-width: 28rem;
+}
+
+.book-imprint {
+  font-size: 11pt;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+.book-cover h1 {
+  font-size: 26pt;
+  line-height: 1.15;
+  margin: 0 0 1rem 0;
+}
+
+.book-subtitle {
+  font-size: 12pt;
+  margin: 0;
+}
+
+.book-toc h1,
+.book-post-title {
+  string-set: current-post-title content(text);
+}
+
+.book-toc h1 {
+  font-size: 20pt;
+  margin: 0 0 1.5rem 0;
+}
+
+.toc-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.toc-list li {
+  margin: 0 0 0.75rem 0;
+  padding: 0;
+}
+
+.toc-list a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+}
+
+.toc-list a::after {
+  content: leader(".") " " target-counter(attr(href), page);
+}
+
+.toc-title {
+  font-style: italic;
+}
+
+.toc-date {
+  margin-left: 0.5rem;
+  font-size: 9pt;
+}
+
+.book-post {
+  break-before: page;
+}
+
+.book-post-header {
+  margin-bottom: 1.5rem;
+}
+
+.book-post-title {
+  font-size: 22pt;
+  line-height: 1.15;
+  margin: 0 0 0.5rem 0;
+}
+
+.book-post-meta {
+  font-size: 9pt;
+}
+
+.book-post-body article,
+.book-post-body main,
+.book-post-body .post,
+.book-post-body .page-content,
+.book-post-body .content {
+  max-width: none !important;
+}
+
+.book-post-body h1,
+.book-post-body h2,
+.book-post-body h3,
+.book-post-body h4 {
+  break-after: avoid-page;
+}
+
+.book-post-body p,
+.book-post-body li,
+.book-post-body blockquote {
+  orphans: 3;
+  widows: 3;
+}
+
+.book-post-body img,
+.book-post-body figure,
+.book-post-body table,
+.book-post-body pre,
+.book-post-body blockquote {
+  break-inside: avoid;
+  max-width: 100%;
+}
+
+.book-post-body img {
+  height: auto;
+}
+
+.book-post-body table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.book-post-body thead {
+  display: table-header-group;
+}
+
+.book-post-body a {
+  color: inherit;
+  text-decoration: none;
+}
+
+
+/*
+  This puts TEXT (http://url) i.e. adds the link after the text
+
+ .book-post-body a[href^="http"]::after {
+  content: " (" attr(href) ")";
+  font-size: 85%;
+  word-break: break-all;
+} */
+
+/* Prevent nested page title duplication from the source article */
+.book-post-body > article > header:first-child h1:first-child,
+.book-post-body > article > h1:first-child {
+  display: none;
+}
+
+.book-cover-logo {
+  display: block;
+  margin: 0 auto 1.25rem auto;
+  width: 500px;
+  max-width: 100%;
+  height: auto;
+}
+
+.signature {
+    margin-top: 4em;
+    padding-top: 1.2em;
+    border-top: 1px solid #ddd;
+}
+
+.signature .name {
+    font-family: "Segoe Script", "Lucida Handwriting", cursive;
+    font-size: 1.2em;
+    display: block;
+    margin-top: 1.1em;
+}
+
+.signature .date {
+    display: block;
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 0.2em;
+}
+
+.signature {
+    text-align: right;
+}
+
+/* Inline gallery: print/booklet as static grid */
+
+.book-post-body .inline-gallery {
+  margin: 1rem 0 1.25rem 0;
+  break-inside: avoid;
+}
+
+.book-post-body .inline-gallery__viewer {
+  display: none !important;
+}
+
+.book-post-body .inline-gallery__thumbs {
+  display: grid !important;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.35cm;
+  margin-top: 0;
+}
+
+.book-post-body .inline-gallery__thumb {
+  display: block !important;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  break-inside: avoid;
+}
+
+.book-post-body .inline-gallery__thumb img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+  border: 0;
+}
+
+.book-post-body .inline-gallery__thumb.is-active {
+  border: 0;
+  box-shadow: none;
+}
+
+/* Image grid: booklet/print layout */
+
+.book-post-body .blog-image-grid {
+  display: grid;
+  gap: 0.35cm;
+  margin: 1rem 0 1.25rem 0;
+  break-inside: avoid;
+}
+
+.book-post-body .blog-image-grid--1-col {
+  grid-template-columns: 1fr;
+}
+
+.book-post-body .blog-image-grid--2-col {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.book-post-body .blog-image-grid--3-col {
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.book-post-body .blog-image-grid figure {
+  margin: 0;
+  break-inside: avoid;
+  page-break-inside: avoid;
+}
+
+.book-post-body .blog-image-grid img {
+  display: block;
+  width: 100%;
+  max-width: none !important;   /* overrides inline max-width:350px */
+  height: auto;
+  border: 0.5pt solid #999;
+  padding: 2pt;
+  background: #fff;             /* better for print than dark plate styling */
+  box-sizing: border-box;
+}
+
+.book-post-body .blog-image-grid figcaption {
+  margin-top: 0.18cm;
+  font-size: 8.5pt;
+  line-height: 1.25;
+  color: #444;
+}
+
+.book-post-body .blog-image-grid .caption {
+  display: block;
+  font-style: italic;
+}
+
+.book-post-body .blog-image-grid .credit,
+.book-post-body .blog-image-grid .credit-meta {
+  display: block;
+  font-size: 7.5pt;
+  line-height: 1.2;
+  color: #666;
+  margin-top: 0.08cm;
+}

@@ -1,0 +1,43 @@
+<div class="fullwidth-image">
+  <figure>
+    <img src="{{ include.assets | append: include.img.name | relative_url }}"
+         alt="{{ include.img.alt | escape }}"
+         loading="lazy"
+         decoding="async">
+
+    {% if include.img.caption or include.img.credit %}
+    <figcaption>
+      {% if include.img.caption %}
+        <span class="caption">{{ include.img.caption }}</span>
+      {% endif %}
+
+      {% if include.img.credit %}
+        <span class="credit">
+          {{ include.img.credit }}
+          {% if include.img.license %}
+            (
+            {% if include.img.license_link %}
+              <a href="{{ include.img.license_link }}" rel="license noopener" target="_blank">
+                {{ include.img.license }}
+              </a>
+            {% else %}
+              {{ include.img.license }}
+            {% endif %}
+            )
+          {% endif %}
+        </span>
+
+        <span class="credit-meta">
+          {% if include.img.source and include.img.source != "" %}
+            <a href="{{ include.img.source }}" target="_blank" rel="noopener">Source</a> -
+          {% endif %}
+          {% assign credit_lc = include.img.credit | downcase %}
+          {% unless credit_lc contains "field notes journal" %}
+            No changes made
+          {% endunless %}
+        </span>
+      {% endif %}
+    </figcaption>
+    {% endif %}
+  </figure>
+</div>

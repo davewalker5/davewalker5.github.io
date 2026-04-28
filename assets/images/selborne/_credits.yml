@@ -1,0 +1,26 @@
+fern.jpg:
+  name: fern.jpg
+  path: /assets/images/selborne/fern.jpg
+  alt: Southern Bracken (Pteridium aquilinum)
+  caption: Southern Bracken (Pteridium aquilinum)
+  credit: Matthew Fainman, Wikimedia Commons
+  license: CC BY 4.0
+  license_link: https://creativecommons.org/licenses/by/4.0
+  source: https://commons.wikimedia.org/wiki/File:Pteridium_aquilinum_ssp._capense.jpg
+  used_by:
+  - slug: fern
+    title: Fern
+    path: /wildlife/selborne/fern/
+ling.jpg:
+  name: ling.jpg
+  path: /assets/images/selborne/ling.jpg
+  alt: Flowering ling on heathland
+  caption: Ling (Calluna vulgaris)
+  credit: Aiwok, Wikimedia Commons
+  license: CC BY-SA 3.0
+  license_link: https://creativecommons.org/licenses/by-sa/3.0
+  source: https://commons.wikimedia.org/wiki/File:Calluna_vulgaris.JPG
+  used_by:
+  - slug: ling
+    title: Ling
+    path: /wildlife/selborne/ling/

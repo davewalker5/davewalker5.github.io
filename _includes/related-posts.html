@@ -1,0 +1,68 @@
+{% if page.tags and page.tags.size > 0 %}
+
+  {% assign related_posts_output = "" %}
+  {% assign related_count = 0 %}
+  {% assign max_related = 10 %}
+  {% assign max_score = 0 %}
+
+  {% for tag in page.tags %}
+    {% assign weight = page.tags.size | minus: forloop.index0 %}
+    {% assign max_score = max_score | plus: weight %}
+  {% endfor %}
+
+  {% for score in (1..max_score) reversed %}
+    {% for candidate in site.posts %}
+      {% if candidate.url != page.url and related_count < max_related %}
+        {% assign shared_tags = "" %}
+        {% assign weighted_score = 0 %}
+
+        {% for tag in page.tags %}
+          {% assign weight = page.tags.size | minus: forloop.index0 %}
+          {% if candidate.tags contains tag %}
+            {% assign weighted_score = weighted_score | plus: weight %}
+            {% if shared_tags == "" %}
+              {% assign shared_tags = tag %}
+            {% else %}
+              {% assign shared_tags = shared_tags | append: ", " | append: tag %}
+            {% endif %}
+          {% endif %}
+        {% endfor %}
+
+        {% if weighted_score == score %}
+          {% capture related_posts_output %}
+{{ related_posts_output }}
+<li class="related-entry-item">
+  <a class="related-entry-link" href="{{ candidate.url | relative_url }}">{{ candidate.title }}</a>
+  <span class="related-entry-meta">
+    · {{ candidate.date | date: "%-d %b %Y" }}
+    {% if candidate.categories and candidate.categories.size > 0 %}
+      · {{ candidate.categories[0] }}
+    {% endif %}
+  </span>
+  <div class="related-entry-tags">
+    Shared tag{% assign shared_tag_count = shared_tags | split: ", " | size %}{% if shared_tag_count > 1 %}s{% endif %}: {{ shared_tags }}
+    <span class="related-score">(score {{ weighted_score }})</span>
+  </div>
+</li>
+          {% endcapture %}
+          {% assign related_count = related_count | plus: 1 %}
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  {% endfor %}
+
+  {% if related_count > 0 %}
+    <details class="related-entries">
+      <summary class="related-summary">
+        Related Posts ({{ related_count }})
+      </summary>
+
+      <div class="related-entries-inner">
+        <ul class="related-entry-list">
+          {{ related_posts_output }}
+        </ul>
+      </div>
+    </details>
+  {% endif %}
+
+{% endif %}

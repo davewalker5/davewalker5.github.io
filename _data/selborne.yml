@@ -1,0 +1,680 @@
+terms:
+- title: Royal Forest
+  slug: royal-forest
+  category: concept
+  tags:
+  - landscape
+  - law
+  scientific_name: ''
+  white_term: forest
+  modern_equivalent: Royal hunting territory
+  summary: A legally defined area reserved for hunting, not necessarily wooded.
+  related_terms:
+  - woolmer-forest
+  - yeoman-prickers
+  - red-deer
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: royal-forest.md
+  permalink: /wildlife/selborne/royal-forest/
+  path: /wildlife/selborne/royal-forest/
+- title: Heathland
+  slug: heathland
+  category: ecology
+  tags:
+  - habitat
+  - lowland heath
+  scientific_name: ''
+  white_term: heath
+  modern_equivalent: Lowland heathland
+  summary: An open habitat on acidic, sandy soils dominated by heather, gorse, and
+    grasses.
+  related_terms:
+  - ling
+  - goss-furze
+  - grig
+  - fern
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: heathland.md
+  permalink: /wildlife/selborne/heathland/
+  path: /wildlife/selborne/heathland/
+- title: Mire
+  slug: mire
+  category: ecology
+  tags:
+  - heathland
+  - wetland
+  scientific_name: ''
+  white_term: bog, mire
+  modern_equivalent: Heathland wetland
+  summary: Wet, often peaty areas within heathland supporting distinct plant communities.
+  related_terms:
+  - peat
+  - heathland
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: mire.md
+  permalink: /wildlife/selborne/mire/
+  path: /wildlife/selborne/mire/
+- title: Heath Cock
+  slug: heath-cock
+  category: fauna
+  tags:
+  - birds
+  - extirpated
+  scientific_name: Lyrurus tetrix
+  white_term: heath cock
+  modern_equivalent: Black Grouse (male)
+  summary: A heathland grouse once present in southern England, now locally extinct.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: heath-cock.md
+  permalink: /wildlife/selborne/heath-cock/
+  path: /wildlife/selborne/heath-cock/
+- title: Red Deer
+  slug: red-deer
+  category: fauna
+  tags:
+  - forest
+  - mammals
+  scientific_name: Cervus elaphus
+  white_term: red deer
+  modern_equivalent: Red deer
+  summary: Large deer species central to the management and operations of the royal
+    forest.
+  related_terms:
+  - yeoman-prickers
+  - stop-dogs
+  - giving-law
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: red-deer.md
+  permalink: /wildlife/selborne/red-deer/
+  path: /wildlife/selborne/red-deer/
+- title: Fern
+  slug: fern
+  category: flora
+  tags:
+  - heathland
+  scientific_name: Pteridium aquilinum
+  white_term: fern
+  modern_equivalent: Bracken
+  summary: A widespread fern forming dense stands on heathland and open ground.
+  related_terms: []
+  images:
+  - name: fern.jpg
+    path: /assets/images/selborne/fern.jpg
+    alt: Southern Bracken (Pteridium aquilinum)
+    caption: Southern Bracken (Pteridium aquilinum)
+    credit: Matthew Fainman, Wikimedia Commons
+    license: CC BY 4.0
+    license_link: https://creativecommons.org/licenses/by/4.0
+    source: https://commons.wikimedia.org/wiki/File:Pteridium_aquilinum_ssp._capense.jpg
+  - name: fern.jpg
+    path: /assets/images/selborne/fern.jpg
+    alt: Southern Bracken (Pteridium aquilinum)
+    caption: Southern Bracken (Pteridium aquilinum)
+    credit: Matthew Fainman, Wikimedia Commons
+    license: CC BY 4.0
+    license_link: https://creativecommons.org/licenses/by/4.0
+    source: https://commons.wikimedia.org/wiki/File:Pteridium_aquilinum_ssp._capense.jpg
+  has_images: true
+  order: 9999
+  status: published
+  source_file: fern.md
+  permalink: /wildlife/selborne/fern/
+  path: /wildlife/selborne/fern/
+- title: Goss (Furze)
+  slug: goss-furze
+  category: flora
+  tags:
+  - fuel
+  - heathland
+  - plants
+  scientific_name: Ulex europaeus
+  white_term: goss, furze
+  modern_equivalent: Gorse
+  summary: A spiny, evergreen shrub with bright yellow flowers, historically used
+    as fuel.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: goss.md
+  permalink: /wildlife/selborne/goss-furze/
+  path: /wildlife/selborne/goss-furze/
+- title: Grig
+  slug: grig
+  category: flora
+  tags:
+  - grassland
+  - heathland
+  scientific_name: ''
+  white_term: grig
+  modern_equivalent: Coarse heath grasses
+  summary: A dialect term for the rough grasses forming the ground layer of heathland.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: grig.md
+  permalink: /wildlife/selborne/grig/
+  path: /wildlife/selborne/grig/
+- title: Ling
+  slug: ling
+  category: flora
+  tags:
+  - heathland
+  - plants
+  - selborne
+  scientific_name: Calluna vulgaris
+  white_term: ling
+  modern_equivalent: Common heather
+  summary: The dominant shrub of lowland heathland, forming extensive purple carpets
+    in late summer.
+  related_terms: []
+  images:
+  - name: ling.jpg
+    path: /assets/images/selborne/ling.jpg
+    alt: Flowering ling on heathland
+    caption: Ling (Calluna vulgaris)
+    credit: Aiwok, Wikimedia Commons
+    license: CC BY-SA 3.0
+    license_link: https://creativecommons.org/licenses/by-sa/3.0
+    source: https://commons.wikimedia.org/wiki/File:Calluna_vulgaris.JPG
+  has_images: true
+  order: 9999
+  status: published
+  source_file: ling.md
+  permalink: /wildlife/selborne/ling/
+  path: /wildlife/selborne/ling/
+- title: Malm
+  slug: malm
+  category: geology
+  tags:
+  - agriculture
+  - chalk
+  - soil
+  scientific_name: ''
+  white_term: malm
+  modern_equivalent: Marly chalk / chalky clay
+  summary: A soft, chalky earth derived from weathered chalk or Greensand.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: malm.md
+  permalink: /wildlife/selborne/malm/
+  path: /wildlife/selborne/malm/
+- title: Rag
+  slug: rag
+  category: geology
+  tags:
+  - greensand
+  - stone
+  scientific_name: ''
+  white_term: rag
+  modern_equivalent: Hard calcareous sandstone / limestone
+  summary: A rough, durable stone used locally for building.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: rag.md
+  permalink: /wildlife/selborne/rag/
+  path: /wildlife/selborne/rag/
+- title: The Hanger
+  slug: the-hanger
+  category: landscape
+  tags:
+  - selborne
+  - woodland
+  scientific_name: ''
+  white_term: hanger
+  modern_equivalent: Steep wooded slope
+  summary: A steep, wooded hillside characteristic of the Selborne landscape.
+  related_terms:
+  - malm
+  - rag
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: hanger.md
+  permalink: /wildlife/selborne/the-hanger/
+  path: /wildlife/selborne/the-hanger/
+- title: Woolmer Forest
+  slug: woolmer-forest
+  category: landscape
+  tags:
+  - heathland
+  - royal forest
+  scientific_name: ''
+  white_term: Wolmer Forest
+  modern_equivalent: Woolmer Forest, Hampshire
+  summary: An extensive tract of lowland heath, historically a royal forest and central
+    to White’s observations.
+  related_terms:
+  - heathland
+  - heath-cock
+  - yeoman-prickers
+  - bower
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: forest-of-wolmer.md
+  permalink: /wildlife/selborne/woolmer-forest/
+  path: /wildlife/selborne/woolmer-forest/
+- title: Hund.
+  slug: hund
+  category: measurement
+  tags:
+  - records
+  - weather
+  scientific_name: ''
+  white_term: Hund.
+  modern_equivalent: Hundredths of an inch
+  summary: A unit used by White to record rainfall in decimal fractions of an inch.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: hund.md
+  permalink: /wildlife/selborne/hund/
+  path: /wildlife/selborne/hund/
+- title: Brimstone Lodge
+  slug: brimstone-lodge
+  category: place
+  tags:
+  - topography
+  - woolmer
+  scientific_name: ''
+  white_term: Brimstone Lodge
+  modern_equivalent: Historic site in Woolmer Forest
+  summary: A second elevated site associated with the annual bower tradition.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: brimstone-lodge.md
+  permalink: /wildlife/selborne/brimstone-lodge/
+  path: /wildlife/selborne/brimstone-lodge/
+- title: Waldon Lodge
+  slug: waldon-lodge
+  category: place
+  tags:
+  - topography
+  - woolmer
+  scientific_name: ''
+  white_term: Waldon Lodge
+  modern_equivalent: Historic site in Woolmer Forest
+  summary: One of the elevated sites where annual bowers were constructed.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: waldon-lodge.md
+  permalink: /wildlife/selborne/waldon-lodge/
+  path: /wildlife/selborne/waldon-lodge/
+- title: Bower
+  slug: bower
+  category: practice
+  tags:
+  - custom
+  - forest
+  scientific_name: ''
+  white_term: bower
+  modern_equivalent: Temporary shelter
+  summary: A structure made from branches, rebuilt annually as part of forest custom.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: bower.md
+  permalink: /wildlife/selborne/bower/
+  path: /wildlife/selborne/bower/
+- title: Burning Lime
+  slug: burning-lime
+  category: practice
+  tags:
+  - agriculture
+  - industry
+  scientific_name: ''
+  white_term: burning lime
+  modern_equivalent: Lime production
+  summary: The process of heating limestone to produce quicklime for agriculture and
+    building.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: burning-lime.md
+  permalink: /wildlife/selborne/burning-lime/
+  path: /wildlife/selborne/burning-lime/
+- title: Commoning
+  slug: commoning
+  category: practice
+  tags:
+  - agriculture
+  - land use
+  scientific_name: ''
+  white_term: ''
+  modern_equivalent: Common grazing rights
+  summary: The system by which local people held rights to use common land for grazing
+    and resources.
+  related_terms:
+  - heathland
+  - woolmer-forest
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: commoning.md
+  permalink: /wildlife/selborne/commoning/
+  path: /wildlife/selborne/commoning/
+- title: Controlled Burning
+  slug: controlled-burning
+  category: practice
+  tags:
+  - heathland
+  - management
+  scientific_name: ''
+  white_term: burning
+  modern_equivalent: Managed burning
+  summary: The seasonal burning of vegetation to manage heathland.
+  related_terms:
+  - grig
+  - ling
+  - goss-furze
+  - fern
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: controlled-burning.md
+  permalink: /wildlife/selborne/controlled-burning/
+  path: /wildlife/selborne/controlled-burning/
+- title: Furze Cutting
+  slug: furze-cutting
+  category: practice
+  tags:
+  - fuel
+  - management
+  scientific_name: ''
+  white_term: ''
+  modern_equivalent: Harvesting gorse
+  summary: The cutting of gorse for use as fuel and other purposes.
+  related_terms:
+  - goss-furze
+  - burning-lime
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: furze-cutting.md
+  permalink: /wildlife/selborne/furze-cutting/
+  path: /wildlife/selborne/furze-cutting/
+- title: Giving Law
+  slug: giving-law
+  category: practice
+  tags:
+  - deer
+  - hunting
+  scientific_name: ''
+  white_term: giving law
+  modern_equivalent: Allowing a head start
+  summary: The practice of allowing a deer a measured head start before pursuit or
+    control.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: giving-law.md
+  permalink: /wildlife/selborne/giving-law/
+  path: /wildlife/selborne/giving-law/
+- title: Lime Kiln
+  slug: lime-kiln
+  category: practice
+  tags:
+  - geology
+  - industry
+  scientific_name: ''
+  white_term: lime kiln
+  modern_equivalent: Lime-burning kiln
+  summary: A structure used to heat limestone to produce quicklime.
+  related_terms:
+  - burning-lime
+  - turf
+  - peat
+  - goss-furze
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: lime-kiln.md
+  permalink: /wildlife/selborne/lime-kiln/
+  path: /wildlife/selborne/lime-kiln/
+- title: Peat
+  slug: peat
+  category: practice
+  tags:
+  - fuel
+  - wetland
+  scientific_name: ''
+  white_term: peat
+  modern_equivalent: Partially decomposed plant matter
+  summary: Organic material cut from boggy ground and used as fuel.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: peat.md
+  permalink: /wildlife/selborne/peat/
+  path: /wildlife/selborne/peat/
+- title: Stop-Dogs
+  slug: stop-dogs
+  category: practice
+  tags:
+  - deer
+  - dogs
+  scientific_name: ''
+  white_term: stop-dogs
+  modern_equivalent: Control / herding dogs
+  summary: Dogs trained to block, turn, and contain deer during drives.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: stop-dogs.md
+  permalink: /wildlife/selborne/stop-dogs/
+  path: /wildlife/selborne/stop-dogs/
+- title: Turf
+  slug: turf
+  category: practice
+  tags:
+  - fuel
+  - heathland
+  scientific_name: ''
+  white_term: turf
+  modern_equivalent: Cut surface vegetation
+  summary: Sections of surface vegetation cut and dried for use as fuel.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: turf.md
+  permalink: /wildlife/selborne/turf/
+  path: /wildlife/selborne/turf/
+- title: Yeoman Prickers
+  slug: yeoman-prickers
+  category: practice
+  tags:
+  - deer
+  - forest law
+  scientific_name: ''
+  white_term: yeoman prickers
+  modern_equivalent: Mounted deer drivers
+  summary: Mounted assistants responsible for driving and controlling deer in forest
+    operations.
+  related_terms: []
+  images: []
+  has_images: false
+  order: 9999
+  status: published
+  source_file: yeaoman-prickers.md
+  permalink: /wildlife/selborne/yeoman-prickers/
+  path: /wildlife/selborne/yeoman-prickers/
+by_category:
+  concept:
+  - royal-forest
+  ecology:
+  - heathland
+  - mire
+  fauna:
+  - heath-cock
+  - red-deer
+  flora:
+  - fern
+  - goss-furze
+  - grig
+  - ling
+  geology:
+  - malm
+  - rag
+  landscape:
+  - the-hanger
+  - woolmer-forest
+  measurement:
+  - hund
+  place:
+  - brimstone-lodge
+  - waldon-lodge
+  practice:
+  - bower
+  - burning-lime
+  - commoning
+  - controlled-burning
+  - furze-cutting
+  - giving-law
+  - lime-kiln
+  - peat
+  - stop-dogs
+  - turf
+  - yeoman-prickers
+by_tag:
+  agriculture:
+  - malm
+  - burning-lime
+  - commoning
+  birds:
+  - heath-cock
+  chalk:
+  - malm
+  custom:
+  - bower
+  deer:
+  - giving-law
+  - stop-dogs
+  - yeoman-prickers
+  dogs:
+  - stop-dogs
+  extirpated:
+  - heath-cock
+  forest:
+  - red-deer
+  - bower
+  forest law:
+  - yeoman-prickers
+  fuel:
+  - goss-furze
+  - furze-cutting
+  - peat
+  - turf
+  geology:
+  - lime-kiln
+  grassland:
+  - grig
+  greensand:
+  - rag
+  habitat:
+  - heathland
+  heathland:
+  - mire
+  - fern
+  - goss-furze
+  - grig
+  - ling
+  - woolmer-forest
+  - controlled-burning
+  - turf
+  hunting:
+  - giving-law
+  industry:
+  - burning-lime
+  - lime-kiln
+  land use:
+  - commoning
+  landscape:
+  - royal-forest
+  law:
+  - royal-forest
+  lowland heath:
+  - heathland
+  mammals:
+  - red-deer
+  management:
+  - controlled-burning
+  - furze-cutting
+  plants:
+  - goss-furze
+  - ling
+  records:
+  - hund
+  royal forest:
+  - woolmer-forest
+  selborne:
+  - ling
+  - the-hanger
+  soil:
+  - malm
+  stone:
+  - rag
+  topography:
+  - brimstone-lodge
+  - waldon-lodge
+  weather:
+  - hund
+  wetland:
+  - mire
+  - peat
+  woodland:
+  - the-hanger
+  woolmer:
+  - brimstone-lodge
+  - waldon-lodge

@@ -1,0 +1,11 @@
+{
+  "version": "0.2",
+  "language": "en-GB",
+  "import": [
+    "./cspell/cspell-patterns.json",
+    "./cspell/cspell-dictionaries.json"
+  ],
+  "enabledFileTypes": {
+    "markdown": true
+  }
+}

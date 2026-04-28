@@ -1,0 +1,8 @@
+- title: "Seasonal Presence Model"
+  category: "models"
+  description: "A model of species that appear within a defined part of the year, rising into a seasonal peak and declining outside it"
+  link: /wildlife/modelling/seasonal.html
+- title: "Resident Detectability Model"
+  category: "models"
+  description: "A  model of species that are present year-round, with seasonal variation in how readily they are observed"
+  link: /wildlife/modelling/resident.html

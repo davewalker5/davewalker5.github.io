@@ -1,0 +1,209 @@
+/* assets/css/pdf.css */
+
+/* ---------- Page setup ---------- */
+@page {
+  size: A4;
+  margin: 18mm 16mm 20mm 16mm;
+}
+
+/* Uncomment for wider inner margin on booklet-style output later */
+/*
+@page {
+  size: A4;
+  margin-top: 18mm;
+  margin-right: 14mm;
+  margin-bottom: 20mm;
+  margin-left: 22mm;
+}
+*/
+
+/* ---------- Print / PDF refinements ---------- */
+@media print {
+  html,
+  body {
+    background: #fff !important;
+  }
+
+  body {
+    font-size: 10.5pt;
+    line-height: 1.45;
+  }
+
+  /* Keep the main printable area restrained and readable */
+  .page-content,
+  .post,
+  .post-content,
+  .content,
+  article,
+  main {
+    max-width: none !important;
+  }
+
+  /* ---------- Headings ---------- */
+  h1, h2, h3, h4 {
+    break-after: avoid-page;
+    page-break-after: avoid;
+  }
+
+  h1 {
+    margin-top: 0;
+    margin-bottom: 0.6em;
+  }
+
+  h2, h3, h4 {
+    margin-top: 1.3em;
+    margin-bottom: 0.45em;
+  }
+
+  /* ---------- Paragraph flow ---------- */
+  p,
+  li,
+  blockquote {
+    orphans: 3;
+    widows: 3;
+  }
+
+  p,
+  ul,
+  ol,
+  dl,
+  table,
+  figure,
+  blockquote,
+  pre {
+    margin-top: 0;
+    margin-bottom: 0.9em;
+  }
+
+  /* ---------- Avoid awkward splits ---------- */
+  img,
+  figure,
+  table,
+  blockquote,
+  pre,
+  code,
+  .results-table,
+  .data-table,
+  .callout,
+  .note,
+  .card {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  figcaption {
+    break-before: avoid;
+    page-break-before: avoid;
+    font-size: 9pt;
+  }
+
+  /* ---------- Images ---------- */
+  img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+
+  figure img {
+    display: block;
+  }
+
+  /* ---------- Tables ---------- */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 9.5pt;
+  }
+
+  thead {
+    display: table-header-group;
+  }
+
+  tfoot {
+    display: table-footer-group;
+  }
+
+  th,
+  td {
+    vertical-align: top;
+    text-align: left;
+    padding: 0.25rem 0.35rem;
+  }
+
+  /* ---------- Code / pre ---------- */
+  pre,
+  code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  pre {
+    padding: 0.6em;
+    border: 1px solid #ccc;
+  }
+
+  /* ---------- Utility classes ---------- */
+  .screen-only,
+  .site-nav,
+  .site-header nav,
+  .site-footer nav,
+  .pagination,
+  .share-links,
+  .related-posts,
+  .button,
+  .buttons,
+  .search,
+  .filters,
+  .toc-toggle {
+    display: none !important;
+  }
+
+  .print-only {
+    display: block !important;
+  }
+
+  .page-break {
+    break-before: page;
+    page-break-before: always;
+  }
+
+  .avoid-break {
+    break-inside: avoid;
+    page-break-inside: avoid;
+  }
+
+  /* ---------- Links ---------- */
+  a,
+  a:visited {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  /* Optional: show URLs after links in body copy */
+  article a[href^="http"]::after,
+  .post-content a[href^="http"]::after,
+  .content a[href^="http"]::after {
+    content: " (" attr(href) ")";
+    font-size: 85%;
+    word-break: break-all;
+  }
+
+  /* Don’t do this for image links / buttons / footnote backrefs if you use them */
+  a.no-link-url::after,
+  .footnote-backref::after,
+  figure a::after {
+    content: "";
+  }
+
+  /* ---------- Metadata block ---------- */
+  .print-meta {
+    margin: 0 0 1.2em 0;
+    padding: 0.7em 0.9em;
+    border: 1px solid #ccc;
+    font-size: 9.5pt;
+  }
+
+  .print-meta p:last-child {
+    margin-bottom: 0;
+  }
+}

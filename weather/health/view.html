@@ -1,0 +1,44 @@
+---
+layout: default
+title: Sensor Health Report Viewer
+breadcrumb: Report Viewer
+description: View a sensor health report image and download its related XLSX data file.
+
+breadcrumb_items:
+  - name: Home
+    url: /
+  - name: Weather
+    url: /weather/
+  - name: Sensor Health Reports
+    url: /weather/health/
+  - name: Report Viewer
+    url: /weather/health/view.html
+---
+
+<h1 id="heading">Sensor Health Report</h1>
+
+<p id="intro">
+This page displays a sensor health report from the Field Notes Journal archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Sensor health report image" />
+  </div>
+
+  <figcaption class="report-caption">
+    Sensor health report generated from personal weather station records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#">
+      ⬇ Download XLSX data
+    </a>
+    <p id="download-note" class="download-note"></p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/weather-health-viewer.js' | relative_url }}"></script>

@@ -1,0 +1,65 @@
+<footer class="site-footer">
+    <div class="footer-inner">
+
+        <div class="footer-row">
+
+            <div class="footer-left">
+
+                <div class="footer-stamp-wrap" aria-hidden="true">
+                    <img src="/assets/images/footer-image.svg" alt="" />
+                </div>
+
+                <div class="footer-main">
+                    <div class="footer-line footer-line-primary">
+                        {% assign start_year = "2025" %}
+                        {% assign current_year = site.time | date: "%Y" %}
+
+                        <span class="footer-owner">
+                            Copyright &copy;
+                            {% if current_year == start_year %}
+                                {{ start_year }}
+                            {% else %}
+                                {{ start_year }}–{{ current_year }}
+                            {% endif %}
+                            David Walker
+                        </span>
+
+                        <span class="footer-sep">•</span>
+
+                        <span class="footer-meta">
+                            Latest build · {{ site.time | date: "%d %b %Y %H:%M" }}
+                        </span>
+                    </div>
+
+                    <div class="footer-line footer-line-secondary">
+                        Field Notes Journal · A personal natural history of place
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="footer-right">
+                <span class="footer-feedback-label">
+                    Feedback and suggestions welcome via
+                </span>
+                <span class="footer-links">
+                    <a href="https://github.com/davewalker5/davewalker5.github.io/issues">GitHub</a>
+                    <span class="footer-sep">•</span>
+                    <span id="footer-email"></span>
+                    <span class="footer-sep">•</span>
+                    <a href="https://pixelfed.social/davewalker5">Pixelfed</a>
+                    <span class="footer-sep">•</span>
+                    <a href="https://www.tripadvisor.co.uk/Profile/DaveWalker5">Tripadvisor</a>
+                </span>
+            </div>
+
+        </div>
+
+<div class="footer-attribution">
+    Unless otherwise noted, observations, images and datasets on this site are by David Walker and are shared under the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0</a> licence.
+    Reuse is welcome provided appropriate attribution is given, a link to the licence is included, and any changes are indicated.
+    A suggested citation is provided with each dataset. Some images are not licensed for reuse and are marked accordingly.
+    <a href="/licensing/" class="footer-licence-link">Further details on licensing and use</a>.
+</div>
+    </div>
+</footer>

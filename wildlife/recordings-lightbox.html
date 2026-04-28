@@ -1,0 +1,122 @@
+---
+layout: default
+title: Wildlife Recordings — Lightbox
+breadcrumb: Wildlife Recordings — Lightbox
+description: A visual library of wildlife audio and video recordings from the Field Notes Journal archive.
+dataset: true
+---
+
+<h1>Wildlife Recordings — Lightbox View</h1>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+  {% assign series_list = site.data.recording_index | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    <option value="{{ series | strip | escape }}">{{ series | strip }}</option>
+  {% endfor %}
+</select>
+
+<div id="recordings-grid">
+  <div class="plates-grid-inner">
+    {% for row in site.data.recording_index %}
+      {% capture species %}
+        {% if row.Common and row.Scientific %}
+          {{ row.Common }} ({{ row.Scientific }})
+        {% elsif row.Common %}
+          {{ row.Common }}
+        {% elsif row.Scientific %}
+          {{ row.Scientific }}
+        {% endif %}
+      {% endcapture %}
+
+      {% assign media_base = row.Media | split: '.' | first %}
+      {% assign media_type = row.Format | downcase | strip %}
+
+      {% if media_type == "audio" %}
+        {% assign card_image = '/assets/images/headphones.png' %}
+      {% else %}
+        {% assign card_image = '/assets/recordings/lightbox/' | append: media_base | append: '.png' %}
+      {% endif %}
+
+      <div class="plate-card" data-series="{{ row.Series | strip | escape }}">
+        <a href="{{ '/wildlife/view-recording.html' | relative_url }}#/{{ row.Media | uri_escape }}/{{ row.Format | default: '' | strip | uri_escape }}/{{ row.Series | strip | uri_escape }}/{{ species | strip | uri_escape }}/{{ row.Subject | default: '' | strip | uri_escape }}">
+          <img
+            src="{{ card_image | relative_url }}"
+            alt="{{ row.Media }}{% if row.Activity %} – {{ row.Activity }}{% endif %}"
+            loading="eager"
+          />
+          <div class="plate-card-name">{{ row.Media }}</div>
+
+          {% if row.Location and row.Location != blank %}
+            <div class="plate-card-date">{{ row.Location }}</div>
+          {% endif %}
+
+          {% if row.Date and row.Date != blank %}
+            <div class="plate-card-date">{{ row.Date }}</div>
+          {% endif %}
+
+          <div class="plate-card-specimen">
+            {% if row.Activity and row.Activity != blank %}
+              {{ row.Activity }}
+            {% else %}
+              <em>No subject label</em>
+            {% endif %}
+          </div>
+
+          {% if species and species != blank %}
+            <div class="plate-card-subject">{{ species | strip }}</div>
+          {% endif %}
+        </a>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<br/>
+<hr/>
+<i>The recordings presented here form part of the Field Notes Journal observational archive and were captured by the author using a bird camera system.</i>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const grid = document.getElementById("recordings-grid");
+  const cards = document.querySelectorAll(".plate-card");
+  const realOptions = Array.from(filter.options).filter(option => option.value !== "");
+
+  function applyFilter() {
+    const selected = filter.value;
+    let visibleCount = 0;
+
+    cards.forEach(function(card) {
+      const cardSeries = card.getAttribute("data-series");
+
+      if (selected !== "" && cardSeries === selected) {
+        card.style.display = "block";
+        visibleCount++;
+      } else {
+        card.style.display = "none";
+      }
+    });
+
+    if (visibleCount > 0) {
+      grid.style.display = "block";
+    } else {
+      grid.style.display = "none";
+    }
+  }
+
+  if (realOptions.length === 1) {
+    filter.value = realOptions[0].value;
+    filter.style.display = "none";
+
+    const label = document.querySelector('label[for="series-filter"]');
+    if (label) {
+      label.style.display = "none";
+    }
+  }
+
+  applyFilter();
+  filter.addEventListener("change", applyFilter);
+});
+</script>

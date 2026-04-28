@@ -1,0 +1,141 @@
+# ==========================================================
+# Field Notes Journal — Jekyll configuration
+# ==========================================================
+# This file controls how Jekyll builds the site and also
+# supplies metadata used by plugins such as jekyll-seo-tag.
+#
+# It is read when the site is built by GitHub Pages.
+# ==========================================================
+
+
+# ----------------------------------------------------------
+# Site URL configuration
+# ----------------------------------------------------------
+# baseurl is used if the site is hosted under a subdirectory.
+# Because the site is served from the domain root, this is blank.
+
+baseurl: ""
+
+# Canonical site URL.
+# This must match the domain used in Google Search Console,
+# the sitemap, and canonical links.
+
+url: "https://davidwalker.uk"
+
+
+# ----------------------------------------------------------
+# Site identity
+# ----------------------------------------------------------
+# These values are used by the SEO plugin and by templates.
+
+title: "Field Notes Journal"
+description: "A personal natural history of place"
+
+# Language of the site (used in metadata and accessibility)
+
+lang: "en-GB"
+
+
+# ----------------------------------------------------------
+# Author information
+# ----------------------------------------------------------
+# Used by SEO metadata and structured data.
+
+author:
+  name: "David Walker"
+
+# Optional social / identity links used by jekyll-seo-tag
+
+social:
+  name: David Walker
+  links:
+    - https://github.com/davewalker5
+
+
+# ----------------------------------------------------------
+# Theme configuration
+# ----------------------------------------------------------
+# Using the GitHub Pages Minimal theme.
+
+theme: jekyll-theme-minimal
+
+
+# ----------------------------------------------------------
+# Plugins
+# ----------------------------------------------------------
+# These are supported by GitHub Pages without custom builds.
+
+plugins:
+  - jekyll-seo-tag    # Generates SEO metadata automatically
+  - jekyll-sitemap    # Automatically generates sitemap.xml
+  - jekyll-feed
+
+
+# ----------------------------------------------------------
+# Default preview image
+# ----------------------------------------------------------
+# Used for social previews (Open Graph / Twitter cards)
+# when individual pages do not specify their own image.
+
+logo: "/assets/images/banner-1280.png"
+
+
+# ----------------------------------------------------------
+# Files to exclude from the site build
+# ----------------------------------------------------------
+# These directories exist in the repo but should not appear
+# in the generated website.
+
+exclude:
+  - .bundle
+  - .gitignore
+  - .styles
+  - cspell
+  - cspell.json
+  - node_modules
+  - scripts
+  - .vale.ini
+  - vendor
+  - venv
+  - Gemfile
+  - Gemfile.lock
+  - _site
+  - exports
+  - modelling
+
+
+# ----------------------------------------------------------
+# Hero banner configuration
+# ----------------------------------------------------------
+# These values are used by the hero layout component.
+
+hero:
+  enabled: true
+
+  # If true, the navigation bar overlays the hero image.
+  # Currently disabled so the nav sits just below.
+
+  nav_overlay: false
+
+  # Responsive banner images.
+  # These allow the browser to choose the most suitable size.
+
+  image_sm: /assets/images/banner-768.png
+  image_md: /assets/images/banner-1280.png
+  image_lg: /assets/images/banner-1920.png
+
+  # Alt text used for accessibility.
+
+  alt: "Field Notes Journal"
+
+# ----------------------------------------------------------
+# Social
+# ----------------------------------------------------------
+github:
+  username: davewalker5
+
+social:
+  name: Dave Walker
+  links:
+    - https://github.com/davewalker5
+    - https://pixelfed.social/davewalker5

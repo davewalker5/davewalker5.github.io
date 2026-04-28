@@ -1,0 +1,23 @@
+<nav class="selborne-browse">
+
+  <span class="browse-label">Browse</span>
+  
+  <a href="{{ '/wildlife/selborne/' | relative_url }}"
+     class="browse-link{% if include.active == 'overview' %} is-active{% endif %}">
+    Overview
+  </a>
+
+  <span class="browse-sep">·</span>
+
+  <a href="{{ '/wildlife/selborne/by-letter' | relative_url }}"
+     class="browse-link{% if include.active == 'by-letter' %} is-active{% endif %}">
+    A-Z
+  </a>
+
+  <span class="browse-sep">·</span>
+
+  <a href="{{ '/wildlife/selborne/by-category/' | relative_url }}"
+     class="browse-link{% if include.active == 'by-category' %} is-active{% endif %}">
+    Categories
+  </a>
+</nav>

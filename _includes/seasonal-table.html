@@ -1,0 +1,139 @@
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Group</th>
+      <th>Location</th>
+      <th>Classification</th>
+      <th>Presence</th>
+      <th>Totals</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_species = include.species | sort: "name" %}
+    {% for item in sorted_species %}
+      {% if include.type == "classification" %}
+        {% if item.classify_seasonality == 1 %}
+          <tr>
+            <td>
+              {% if item.link and item.link != "" %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+              {% else %}
+                {{ item.name }}
+              {% endif %}
+            </td>
+            <td>{{ item.group }}</td>
+            <td>{{ item.location }}</td>
+            <td>{{ item.seasonal_classification }}</td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/presence/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/totals/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/reports/Year-In-The-Life/species_classifications_' | append: item.location_slug | append: '.xlsx' | relative_url }}" download>
+                Download XLSX
+              </a>
+            </td>
+          </tr>
+        {% endif %}
+      {% elsif include.type == "breeding" %}
+        {% if item.classify_breeding == 1 %}
+          <tr>
+            <td>
+              {% if item.link and item.link != "" %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+              {% else %}
+                {{ item.name }}
+              {% endif %}
+            </td>
+            <td>{{ item.group }}</td>
+            <td>{{ item.location }}</td>
+            <td>{{ item.breeding_classification }}</td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/presence/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/totals/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/reports/Year-In-The-Life/species_breeding_classifications_' | append: item.location_slug | append: '.xlsx' | relative_url }}" download>
+                Download XLSX
+              </a>
+            </td>
+          </tr>
+        {% endif %}
+      {% elsif include.type == "butterflies" %}
+        {% if item.classify_flight_period == 1 %}
+          <tr>
+            <td>
+              {% if item.link and item.link != "" %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+              {% else %}
+                {{ item.name }}
+              {% endif %}
+            </td>
+            <td>{{ item.group }}</td>
+            <td>{{ item.location }}</td>
+            <td>{{ item.flight_period_classification }}</td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/presence/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/totals/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/reports/Year-In-The-Life/species_flight_period_classifications_' | append: item.location_slug | append: '.xlsx' | relative_url }}" download>
+                Download XLSX
+              </a>
+            </td>
+          </tr>
+        {% endif %}
+      {% elsif include.type == "flowering" %}
+        {% if item.classify_flowering == 1 %}
+          <tr>
+            <td>
+              {% if item.link and item.link != "" %}
+                <a href="{{ item.link }}">{{ item.name }}</a>
+              {% else %}
+                {{ item.name }}
+              {% endif %}
+            </td>
+            <td>{{ item.group }}</td>
+            <td>{{ item.location }}</td>
+            <td>{{ item.flowering_classification }}</td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/presence/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/seasonal/view.html' | relative_url }}#/totals/{{ item.name | uri_escape }}/{{ item.location_slug | uri_escape }}/{{ include.type | uri_escape }}">
+                View
+              </a>
+            </td>
+            <td>
+              <a href="{{ '/wildlife/reports/Year-In-The-Life/species_flowering_classifications_' | append: item.location_slug | append: '.xlsx' | relative_url }}" download>
+                Download XLSX
+              </a>
+            </td>
+          </tr>
+        {% endif %}
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
