@@ -1,0 +1,33 @@
+---
+layout: default
+---
+
+<article class="methods-entry">
+  <header class="methods-entry-header">
+
+    <div class="print-imprint print-only no-booklet">
+      <span class="print-journal">Field Notes Journal</span>
+      <span class="print-tagline">a personal natural history of place</span>
+    </div>
+
+    <h1>{{ page.title }}</h1>
+
+    <button class="print-btn no-print" type="button" onclick="window.print()">
+      Print
+    </button>
+
+    {% if page.description and page.description != page.title %}
+      <p class="methods-entry-description">
+        {{ page.description }}
+      </p>
+    {% endif %}
+  </header>
+
+  <div class="methods-entry-body">
+    {{ content }}
+  </div>
+
+  <footer class="methods-entry-footer">
+    {% include safety-note.html %}
+  </footer>
+</article>

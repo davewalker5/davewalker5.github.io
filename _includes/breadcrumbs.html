@@ -1,0 +1,133 @@
+<nav class="breadcrumbs" aria-label="Breadcrumb">
+  <ol>
+    {% if page.breadcrumb_items %}
+      {% for bc in page.breadcrumb_items %}
+        <li>
+          {% if forloop.last %}
+            <span aria-current="page">{{ bc.name }}</span>
+          {% else %}
+            <a href="{{ bc.url | relative_url }}">{{ bc.name }}</a>
+          {% endif %}
+        </li>
+      {% endfor %}
+
+    {% elsif page.use_referrer_breadcrumb and page.url contains '/microscopy/' %}
+      <li>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      <li>
+        <a href="{{ '/microscopy/' | relative_url }}">Microscopy</a>
+      </li>
+      <li class="dynamic-referrer-crumb" hidden></li>
+      <li>
+        <span aria-current="page">{{ page.breadcrumb | default: page.title }}</span>
+      </li>
+
+    {% elsif page.use_referrer_breadcrumb and page.url contains '/wildlife/' %}
+      <li>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      <li>
+        <a href="{{ '/wildlife/' | relative_url }}">Wildlife</a>
+      </li>
+      <li class="dynamic-referrer-crumb" hidden></li>
+      <li>
+        <span aria-current="page">{{ page.breadcrumb | default: page.title }}</span>
+      </li>
+
+    {% elsif page.layout == "post" %}
+      <li>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+      <li>
+        <a href="{{ '/blog/' | relative_url }}">Blog</a>
+      </li>
+      <li>
+        <span aria-current="page">{{ page.title }}</span>
+      </li>
+
+    {% else %}
+      <li>
+        <a href="{{ '/' | relative_url }}">Home</a>
+      </li>
+
+      {% assign parts = page.url | split: '/' %}
+      {% assign path = "" %}
+
+      {% for part in parts %}
+        {% if part != "" and part != "index.html" %}
+          {% assign path = path | append: '/' | append: part %}
+          <li>
+            {% if forloop.last %}
+              <span aria-current="page">
+                {{ page.breadcrumb | default: part | replace:'-',' ' | capitalize }}
+              </span>
+            {% else %}
+              <a href="{{ path | relative_url }}">
+                {{ part | replace:'-',' ' | capitalize }}
+              </a>
+            {% endif %}
+          </li>
+        {% endif %}
+      {% endfor %}
+    {% endif %}
+  </ol>
+</nav>
+
+{% if page.use_referrer_breadcrumb and page.url contains '/microscopy/' 
+   or page.use_referrer_breadcrumb and page.url contains '/wildlife/' %}
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const placeholder = document.querySelector(".breadcrumbs .dynamic-referrer-crumb");
+  if (!placeholder) return;
+
+  const ref = document.referrer;
+  if (!ref) return;
+
+  let refUrl;
+  try {
+    refUrl = new URL(ref);
+  } catch (e) {
+    return;
+  }
+
+  if (refUrl.origin !== window.location.origin) return;
+
+  const currentPath = window.location.pathname + window.location.search + window.location.hash;
+  const refPath = refUrl.pathname + refUrl.search + refUrl.hash;
+
+  if (refPath === currentPath) return;
+
+  // Only insert for same-site microscopy or wildlife pages
+  if (!refUrl.pathname.startsWith("{{ '/microscopy/' | relative_url }}".replace(/\/$/, '')) &&
+      !refUrl.pathname.startsWith("{{ '/wildlife/' | relative_url }}".replace(/\/$/, ''))) {
+    return;
+  }
+
+  let label = "Back";
+
+  if (refUrl.pathname.indexOf("/microscopy/plates-lightbox") !== -1) {
+    label = "Photomicrographic Plate Lightbox";
+  } else if (refUrl.pathname.indexOf("/microscopy/plates") !== -1) {
+    label = "Photomicrographic Plate Catalogue";
+  } else if (refUrl.pathname.indexOf("/microscopy/investigations/") !== -1) {
+    label = "Investigation";
+  } else if (refUrl.pathname.indexOf("/wildlife/") !== -1) {
+    label = "Recordings";
+  } else {
+    const slug = refUrl.pathname.split("/").filter(Boolean).pop() || "Previous Page";
+    label = slug
+      .replace(/\.html$/, "")
+      .replace(/-/g, " ")
+      .replace(/\b\w/g, function (m) { return m.toUpperCase(); });
+  }
+
+  const link = document.createElement("a");
+  link.href = refPath;
+  link.textContent = label;
+
+  placeholder.appendChild(link);
+  placeholder.hidden = false;
+});
+</script>
+{% endif %}

@@ -1,0 +1,31 @@
+<nav class="blog-browse">
+
+  <span class="browse-label">Browse</span>
+
+  <a href="{{ '/blog/' | relative_url }}"
+     class="browse-link{% if include.active == 'archive' %} is-active{% endif %}">
+    Archive
+  </a>
+
+  <span class="browse-sep">·</span>
+
+  <a href="{{ '/blog/calendar/' | relative_url }}"
+     class="browse-link{% if include.active == 'calendar' %} is-active{% endif %}">
+    Calendar
+  </a>
+
+  <span class="browse-sep">·</span>
+
+  <a href="{{ '/blog/categories/' | relative_url }}"
+     class="browse-link{% if include.active == 'categories' %} is-active{% endif %}">
+    Categories
+  </a>
+
+  <span class="browse-sep">·</span>
+
+  <a href="{{ '/blog/tags/' | relative_url }}"
+     class="browse-link{% if include.active == 'tags' %} is-active{% endif %}">
+    Tags
+  </a>
+
+</nav>

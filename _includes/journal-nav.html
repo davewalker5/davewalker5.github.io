@@ -1,0 +1,49 @@
+{% if page.series %}
+  {% assign series_data = site.data[page.series] %}
+  {% assign current_index = page.chapter | minus: 1 %}
+  {% assign last_index = series_data.chapters.size | minus: 1 %}
+
+  {% if current_index > 0 %}
+    {% assign previous_index = current_index | minus: 1 %}
+    {% assign previous_chapter = series_data.chapters[previous_index] %}
+  {% endif %}
+
+  {% if current_index < last_index %}
+    {% assign next_index = current_index | plus: 1 %}
+    {% assign next_chapter = series_data.chapters[next_index] %}
+  {% endif %}
+
+  <nav class="entry-nav" aria-label="Post navigation">
+    <section class="series-nav">
+      <div class="series-nav-header">
+        <span class="series-nav-label">Series</span>
+        <span class="series-nav-title">{{ series_data.series_name }}</span>
+        <span class="series-nav-position">
+          Part {{ current_index | plus: 1 }} of {{ series_data.chapters.size }}
+        </span>
+      </div>
+
+      <div class="series-nav-links">
+        <div class="series-nav-item series-nav-item-prev">
+          {% if previous_chapter %}
+            <span class="series-nav-direction">&larr; Previous</span>
+            <a href="{{ previous_chapter.url | relative_url }}">{{ previous_chapter.title }}</a>
+          {% else %}
+            <span class="series-nav-direction series-nav-direction-muted">&larr; Previous</span>
+            <span class="series-nav-empty">Start of series</span>
+          {% endif %}
+        </div>
+
+        <div class="series-nav-item series-nav-item-next">
+          {% if next_chapter %}
+            <span class="series-nav-direction">Next &rarr;</span>
+            <a href="{{ next_chapter.url | relative_url }}">{{ next_chapter.title }}</a>
+          {% else %}
+            <span class="series-nav-direction series-nav-direction-muted">Next &rarr;</span>
+            <span class="series-nav-empty">End of series</span>
+          {% endif %}
+        </div>
+      </div>
+    </section>
+  </nav>
+{% endif %}

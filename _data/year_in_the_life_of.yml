@@ -1,0 +1,349 @@
+title: "A Year In The Life Of ..."
+start: 2020-01-01 00:00:00
+location: Abingdon
+species:
+  # --------------------------------------------------------------------------------
+  # Seasonality and breeding season analysis for birds
+  # --------------------------------------------------------------------------------
+  - name: Blackbird
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/blackbird.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Blue Tit
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/blue_tit.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Chiffchaff
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Summer Visitor"
+    link: "/wildlife/seasonal/abingdon/chiffchaff.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Common Starling
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Aggregation-driven resident"
+    breeding_classification: "Moderate breeding window"
+    link: "/wildlife/seasonal/abingdon/common_starling.html"
+    classify_seasonality: 1
+    classify_breeding: 1
+    classify_flight_period: 0
+  - name: Dunnock
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/dunnock.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Goldfinch
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/goldfinch.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Great Tit
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    breeding_classification: "Moderate breeding window"
+    link: "/wildlife/seasonal/abingdon/great_tit.html"
+    classify_seasonality: 1
+    classify_breeding: 1
+    classify_flight_period: 0
+  - name: House Sparrow
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/house_sparrow.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Jay
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/jay.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Magpie
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Resident"
+    link: "/wildlife/seasonal/abingdon/magpie.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Mallard
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    breeding_classification: "No breeding signal"
+    link: "/wildlife/seasonal/abingdon/mallard.html"
+    classify_seasonality: 0
+    classify_breeding: 1
+    classify_flight_period: 0
+  - name: Mute Swan
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    breeding_classification: "Diffuse / ambiguous breeding signal"
+    link: "/wildlife/seasonal/abingdon/mute_swan.html"
+    classify_seasonality: 1
+    classify_breeding: 1
+    classify_flight_period: 0
+  - name: Redwing
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Winter Visitor"
+    link: "/wildlife/seasonal/abingdon/redwing.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Robin
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    breeding_classification: "Diffuse / ambiguous breeding signal"
+    link: "/wildlife/seasonal/abingdon/robin.html"
+    classify_seasonality: 1
+    classify_breeding: 1
+    classify_flight_period: 0
+  - name: Skylark
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/skylark.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Song Thrush
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/song_thrush.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Swallow
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Summer Visitor"
+    link: "/wildlife/seasonal/abingdon/swallow.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Swift
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Summer Visitor"
+    link: "/wildlife/seasonal/abingdon/swift.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Woodpigeon
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Aggregation-driven resident"
+    link: "/wildlife/seasonal/abingdon/woodpigeon.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+  - name: Wren
+    group: "Bird"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    seasonal_classification: "Detectability-driven resident"
+    link: "/wildlife/seasonal/abingdon/wren.html"
+    classify_seasonality: 1
+    classify_breeding: 0
+    classify_flight_period: 0
+
+  # --------------------------------------------------------------------------------
+  # Flight period analysis for butterflies
+  # --------------------------------------------------------------------------------
+  - name: Brimstone Butterfly
+    group: "Butterflies"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flight_period_classification: "Single brood (extended)"
+    link: "/wildlife/seasonal/abingdon/brimstone_butterfly.html"
+    classify_seasonality: 0
+    classify_breeding: 0
+    classify_flight_period: 1
+  - name: Orange-Tip Butterfly
+    group: "Butterflies"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flight_period_classification: "Single brood (spring)"
+    link: "/wildlife/seasonal/abingdon/orange_tip_butterfly.html"
+    classify_seasonality: 0
+    classify_breeding: 0
+    classify_flight_period: 1
+  - name: Peacock Butterfly
+    group: "Butterflies"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flight_period_classification: "Bimodal (overwintering adult)"
+    link: "/wildlife/seasonal/abingdon/peacock_butterfly.html"
+    classify_seasonality: 0
+    classify_breeding: 0
+    classify_flight_period: 1
+  - name: Red Admiral Butterfly
+    group: "Butterflies"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flight_period_classification: "Single brood (extended)"
+    link: "/wildlife/seasonal/abingdon/red_admiral_butterfly.html"
+    classify_seasonality: 0
+    classify_breeding: 0
+    classify_flight_period: 1
+  - name: Speckled Wood Butterfly
+    group: "Butterflies"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flight_period_classification: "Bimodal (separated broods)"
+    link: "/wildlife/seasonal/abingdon/speckled_wood_butterfly.html"
+    classify_seasonality: 0
+    classify_breeding: 0
+    classify_flight_period: 1
+  
+  # --------------------------------------------------------------------------------
+  # Flowering season analysis for wildflowers
+  # --------------------------------------------------------------------------------
+  - name: Daisy
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Near-continuous flowering (spring peak)"
+    link: "/wildlife/seasonal/abingdon/daisy.html"
+    classify_flowering: 1
+  - name: Dandelion
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Near-continuous flowering (spring peak)"
+    link: "/wildlife/seasonal/abingdon/dandelion.html"
+    classify_flowering: 1
+  - name: Buttercup
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended spring-summer flowering"
+    link: "/wildlife/seasonal/abingdon/buttercup.html"
+    classify_flowering: 1
+  - name: Red Dead-Nettle
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Near-continuous flowering (spring peak)"
+    link: "/wildlife/seasonal/abingdon/red_dead_nettle.html"
+    classify_flowering: 1
+  - name: Common Cleavers
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended spring-summer flowering"
+    link: "/wildlife/seasonal/abingdon/common_cleavers.html"
+    classify_flowering: 1
+  - name: Garlic Mustard
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Spring pulse"
+    link: "/wildlife/seasonal/abingdon/garlic_mustard.html"
+    classify_flowering: 1
+  - name: Red Campion
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended spring-summer flowering"
+    link: "/wildlife/seasonal/abingdon/red_campion.html"
+    classify_flowering: 1
+  - name: Cow Parsley
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended spring-summer flowering"
+    link: "/wildlife/seasonal/abingdon/cow_parsley.html"
+    classify_flowering: 1
+  - name: Cowslip
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Spring pulse"
+    link: "/wildlife/seasonal/abingdon/cowslip.html"
+    classify_flowering: 1
+  - name: Rosebay Willowherb
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Summer peak"
+    link: "/wildlife/seasonal/abingdon/rosebay_willowherb.html"
+    classify_flowering: 1
+  - name: Cuckoo Pint
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Summer peak"
+    link: "/wildlife/seasonal/abingdon/cuckoo_pint.html"
+    classify_flowering: 1
+  - name: Shepherd's Purse
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended, bimodal flowering (spring & autumn peaks)"
+    link: "/wildlife/seasonal/abingdon/shepherds_purse.html"
+    classify_flowering: 1
+  - name: Snowdrop
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Early spring ephemeral"
+    link: "/wildlife/seasonal/abingdon/snowdrop.html"
+    classify_flowering: 1
+  - name: Bluebell
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Spring pulse"
+    link: "/wildlife/seasonal/abingdon/bluebell.html"
+    classify_flowering: 1
+  - name: Common Poppy
+    group: "Flora"
+    location: "Abingdon"
+    location_slug: "abingdon"
+    flowering_classification: "Extended spring–summer flowering"
+    link: "/wildlife/seasonal/abingdon/common_poppy.html"
+    classify_flowering: 1

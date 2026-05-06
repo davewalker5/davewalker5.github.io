@@ -1,0 +1,19 @@
+<div class="print-only">
+  {% if include.plates and include.plates.size > 0 %}
+    {% if include.section and include.section != "" %}
+      <h2>{{ include.section }}</h2>
+    {% endif %}
+
+    {% if include.subsection and include.subsection != "" %}
+      <h3>{{ include.subsection }}</h3>
+    {% endif %}
+
+    <div class="plates-grid-outer">
+      <div class="plates-grid-inner">
+        {% for row in include.plates %}
+          {% include plate-card.html row=row print_mode=true %}
+        {% endfor %}
+      </div>
+    </div>
+  {% endif %}
+</div>

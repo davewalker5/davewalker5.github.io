@@ -1,0 +1,55 @@
+---
+layout: default
+title: Wildlife Sightings Trends by Species
+description: Wildlife sightings trend reports by species, location, and category based on personal field records, with chart views and downloadable data.
+breadcrumb: Wildlife Sightings Trends by Species
+dataset: true
+---
+
+<h1>Wildlife Sightings Trends by Species</h1>
+<p>
+  This page provides access to wildlife sightings trend reports organised by country, location, and category. Each entry leads to a list of species for which trend charts and downloadable data are available.
+</p>
+<h2>Available Reports</h2>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Location</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign rows = "" | split: "" -%}
+    {%- for f in site.static_files -%}
+      {%- assign fname = f.name -%}
+      {%- assign ext = fname | slice: -4, 4 -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/trend/' and ext == '.png' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- assign location = parts[5] -%}
+        {%- assign category = parts[6] -%}
+        {%- capture rec -%}{{ country }}|{{ location }}|{{ category }}{%- endcapture -%}
+        {%- assign rows = rows | push: rec -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign rows = rows | uniq | sort -%}
+    {%- for r in rows -%}
+      {%- assign p = r | split:'|' -%}
+      <tr>
+        <td>{{ p[0] }}</td>
+        <td>{{ p[1] }}</td>
+        <td>
+          <a href="{{ '/wildlife/trend/species-list.html' | relative_url }}#/{{ p[0] | uri_escape }}/{{ p[1] | uri_escape }}/{{ p[2] | uri_escape }}">
+            {{ p[2] }}
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+
+<br/>
+<hr>
+<i>These reports are generated from the author's own wildlife records and summarise long-term observations of species occurrences over time.</i>

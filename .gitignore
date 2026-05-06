@@ -1,0 +1,14 @@
+.DS_Store
+.sass-cache
+.jekyll-cache
+.jekyll-metadata
+.bundle
+.styles
+vendor
+venv
+node_modules
+Location-Date-Analysis.xlsx
+*.log
+_site
+exports/**/*.pdf
+exports/**/*.html

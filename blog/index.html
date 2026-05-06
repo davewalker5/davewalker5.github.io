@@ -1,0 +1,68 @@
+---
+layout: default
+title: Field Notes Journal Blog
+permalink: /blog/
+description: A chronological record of notes, site updates, observations, and working entries.
+---
+
+<h1>Field Notes Journal Blog</h1>
+
+{% include blog-navigation.html active="archive" %}
+
+<p>
+  A chronological record of notes, site updates, observations, and working entries.
+</p>
+
+{% assign current_year = "" %}
+{% assign current_month = "" %}
+
+{% for post in site.posts %}
+  {% assign post_year = post.date | date: "%Y" %}
+  {% assign post_month = post.date | date: "%B" %}
+
+  {% if post_year != current_year %}
+    {% assign current_year = post_year %}
+    {% assign current_month = "" %}
+
+    <section class="archive-year">
+      <h2>{{ current_year }}</h2>
+  {% endif %}
+
+  {% if post_month != current_month %}
+    {% assign current_month = post_month %}
+
+    <div class="archive-month">
+      <h3>{{ current_month }}</h3>
+      <ul class="archive-entries">
+  {% endif %}
+
+  <li class="archive-entry">
+    <span class="archive-date">{{ post.date | date: "%-d %b" }}</span>
+    <span class="archive-separator">·</span>
+    <a class="archive-link" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+    {% if post.categories and post.categories.size > 0 %}
+      <span class="archive-category">[{{ post.categories[0] }}]</span>
+    {% endif %}
+    {% if post.excerpt %}
+      <div class="archive-excerpt">{{ post.excerpt | strip_html }}</div>
+    {% endif %}
+  </li>
+
+  {% assign next_post = site.posts[forloop.index] %}
+  {% assign next_year = "" %}
+  {% assign next_month = "" %}
+
+  {% if next_post %}
+    {% assign next_year = next_post.date | date: "%Y" %}
+    {% assign next_month = next_post.date | date: "%B" %}
+  {% endif %}
+
+  {% if next_post == nil or next_month != current_month or next_year != current_year %}
+      </ul>
+    </div>
+  {% endif %}
+
+  {% if next_post == nil or next_year != current_year %}
+    </section>
+  {% endif %}
+{% endfor %}

@@ -1,0 +1,56 @@
+- area: Aircraft
+  title: Airport Details
+  url: /reference/airports/
+  category: Reference Tables
+- area: Aircraft
+  title: Flight Recorder SQLite database
+  url: /assets/downloads/flightrecorder.db.gz
+  reference: FN-AC-DATA
+  category: Databases
+- area: Microscopy
+  title: Plate library database
+  url: /assets/downloads/plate_library.db.gz
+  reference: FN-MICRO-DATA
+  category: Databases
+- area: Microscopy
+  title: Microscopy Programme
+  url: /assets/downloads/microscopy-programme.pdf
+  category: Booklets
+- area: Weather
+  title: RPi-Weather Station SQLite database
+  url: /assets/downloads/weather.db.gz
+  reference: FN-WE-DATA
+  category: Databases
+- area: Wildlife
+  title: A Year In the Life of Abingdon
+  url: /assets/downloads/year-in-life-abingdon.pdf
+  category: Booklets
+- area: Wildlife
+  title: Species Details
+  url: /reference/species/
+  category: Reference Tables
+- area: Wildlife
+  title: Wildlife Location Details
+  url: /reference/wildlife-locations/
+  category: Reference Tables
+- area: Wildlife
+  title: Nature Recorder SQLite database
+  url: /assets/downloads/naturerecorder.db.gz
+  reference: FN-NR-DATA
+  category: Databases
+- area: Wildlife
+  title: UK Bat Emergence Times and Call Frequency Reference
+  url: /reference/bats/
+  category: Reference Tables
+- area: Wildlife
+  title: UK Bat Emergence Times and Call Frequency Reference
+  url: /assets/downloads/uk-bats-reference.pdf
+  category: Booklets
+- area: Wildlife
+  title: UK Bat Emergence Times Calculator
+  url: /reference/bats/emergence/
+  category: Reference Tables
+- area: Travel
+  title: Tanzania, 2022 - Field Notes from a Long-Awaited Journey
+  url: /assets/downloads/tanzania-2022.pdf
+  category: Booklets

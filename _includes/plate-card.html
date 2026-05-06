@@ -1,0 +1,94 @@
+{% assign row = include.row %}
+
+{% capture plate_subject %}
+  {% if row.Common and row.Scientific %}
+    {{ row.Common }} ({{ row.Scientific }})
+  {% elsif row.Common %}
+    {{ row.Common }}
+  {% elsif row.Scientific %}
+    {{ row.Scientific }}
+  {% endif %}
+{% endcapture %}
+
+{% assign plate_name = row.Plate | strip %}
+{% assign plate_ext = plate_name | split: '.' | last | downcase %}
+{% assign investigation_id = row.Investigation | default: '' | strip %}
+
+{% if plate_ext == "mp4" %}
+  {% assign plate_preview = plate_name | replace: '.mp4', '.png' | replace: '.MP4', '.png' %}
+{% else %}
+  {% assign plate_preview = plate_name %}
+{% endif %}
+
+{% if include.print_mode and plate_ext == "mp4" %}
+  {% assign suppress_card = true %}
+{% else %}
+  {% assign suppress_card = false %}
+{% endif %}
+
+{% assign image_loading = include.image_loading | default: "lazy" %}
+{% assign image_src_type = include.image_src_type | default: "lightbox" %}
+
+{% assign lightbox_src = '/assets/plates/lightbox/' | append: plate_preview | uri_escape %}
+{% assign preview_src = '/assets/plates/preview/' | append: plate_preview | uri_escape %}
+
+{% if image_src_type == "lightbox" %}
+  {% assign screen_src = lightbox_src %}
+{% else %}
+  {% assign screen_src = preview_src %}
+{% endif %}
+
+{% unless suppress_card %}
+  <div class="plate-card screen-version" data-series="{{ row.Series | strip | escape }}">
+    <a href="{{ '/microscopy/view-plate.html' | relative_url }}#/{{ row.Plate | uri_escape }}/{{ row.Series | strip | uri_escape }}/{{ plate_subject | strip | uri_escape }}/{{ row.Specimen | default: '' | strip | uri_escape }}">
+      <img
+        class="plate-img"
+        src="{{ screen_src | relative_url }}"
+        alt="{{ row.Plate }}{% if row.Specimen %} – {{ row.Specimen }}{% endif %}"
+        loading="{{ image_loading }}"
+        decoding="async"
+      />
+      <div class="plate-card-name">{{ row.Plate }}</div>
+      <div class="plate-card-specimen">
+        {% if row.Specimen and row.Specimen != blank %}
+          {{ row.Specimen }}
+        {% else %}
+          <em>No specimen label</em>
+        {% endif %}
+      </div>
+      {% if plate_subject and plate_subject != blank %}
+        <div class="plate-card-subject">{{ plate_subject | strip }}</div>
+      {% endif %}
+    </a>
+
+    {% if investigation_id != blank %}
+      {% assign investigation_path = '/microscopy/investigations/' | append: investigation_id | append: '.html' %}
+
+      {% assign investigation_exists = false %}
+      {% for p in site.pages %}
+        {% if p.url == investigation_path %}
+          {% assign investigation_exists = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      <div class="plate-card-investigation">
+        {% if investigation_exists %}
+          <a href="{{ investigation_path | relative_url }}">
+            {{ investigation_id }}
+          </a>
+        {% else %}
+          {{ investigation_id }}
+        {% endif %}
+      </div>
+    {% endif %}
+  </div>
+
+  <div class="print-version">
+    <img
+      class="plate-img print-version"
+      src="{{ preview_src | relative_url }}"
+      alt="{{ row.Plate }}{% if row.Specimen %} – {{ row.Specimen }}{% endif %}"
+    />
+  </div>
+{% endunless %}

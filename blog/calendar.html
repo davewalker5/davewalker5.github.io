@@ -1,0 +1,234 @@
+---
+layout: default
+title: Calendar
+permalink: /blog/calendar/
+description: Browse Field Notes Journal posts by date.
+---
+
+<h1>Calendar</h1>
+
+{% include blog-navigation.html active="calendar" %}
+
+<p>
+  Browse posts by date.
+</p>
+
+{% assign posts_by_year = site.posts | group_by_exp: "post", "post.date | date: '%Y'" %}
+
+{% for year in posts_by_year %}
+  <section class="calendar-year">
+    <h2>{{ year.name }}</h2>
+
+    <div class="calendar-grid">
+
+      {% for month_number in (1..12) %}
+        {% assign month_padded = month_number | prepend: "0" | slice: -2, 2 %}
+
+        {% case month_number %}
+          {% when 1 %}{% assign month_name = "January" %}
+          {% when 2 %}{% assign month_name = "February" %}
+          {% when 3 %}{% assign month_name = "March" %}
+          {% when 4 %}{% assign month_name = "April" %}
+          {% when 5 %}{% assign month_name = "May" %}
+          {% when 6 %}{% assign month_name = "June" %}
+          {% when 7 %}{% assign month_name = "July" %}
+          {% when 8 %}{% assign month_name = "August" %}
+          {% when 9 %}{% assign month_name = "September" %}
+          {% when 10 %}{% assign month_name = "October" %}
+          {% when 11 %}{% assign month_name = "November" %}
+          {% when 12 %}{% assign month_name = "December" %}
+        {% endcase %}
+
+        {% assign month_posts = "" | split: "" %}
+        {% for post in year.items %}
+          {% assign post_month = post.date | date: "%m" %}
+          {% if post_month == month_padded %}
+            {% assign month_posts = month_posts | push: post %}
+          {% endif %}
+        {% endfor %}
+
+        {% if month_posts.size > 0 %}
+          {% assign days_in_month = 31 %}
+          {% if month_number == 4 or month_number == 6 or month_number == 9 or month_number == 11 %}
+            {% assign days_in_month = 30 %}
+          {% elsif month_number == 2 %}
+            {% assign year_num = year.name | plus: 0 %}
+            {% assign leap_remainder_4 = year_num | modulo: 4 %}
+            {% assign leap_remainder_100 = year_num | modulo: 100 %}
+            {% assign leap_remainder_400 = year_num | modulo: 400 %}
+
+            {% assign is_leap = false %}
+            {% if leap_remainder_4 == 0 %}
+              {% assign is_leap = true %}
+            {% endif %}
+            {% if leap_remainder_100 == 0 and leap_remainder_400 != 0 %}
+              {% assign is_leap = false %}
+            {% endif %}
+
+            {% if is_leap %}
+              {% assign days_in_month = 29 %}
+            {% else %}
+              {% assign days_in_month = 28 %}
+            {% endif %}
+          {% endif %}
+
+          {% assign first_day_string = year.name | append: "-" | append: month_padded | append: "-01" %}
+          {% assign first_day_weekday = first_day_string | date: "%u" %}
+
+          <section class="calendar-month">
+            <h3>{{ month_name }}</h3>
+
+            <div class="calendar-weekdays">
+              <span>Mon</span>
+              <span>Tue</span>
+              <span>Wed</span>
+              <span>Thu</span>
+              <span>Fri</span>
+              <span>Sat</span>
+              <span>Sun</span>
+            </div>
+
+            <div class="calendar-days">
+              {% assign leading_blanks = first_day_weekday | minus: 1 %}
+              {% if leading_blanks > 0 %}
+                {% for blank in (1..leading_blanks) %}
+                  <span class="calendar-day calendar-day-empty"></span>
+                {% endfor %}
+              {% endif %}
+
+              {% for day in (1..days_in_month) %}
+                {% assign day_padded = day | prepend: "0" | slice: -2, 2 %}
+
+                {% assign day_posts = "" | split: "" %}
+                {% for post in month_posts %}
+                  {% assign post_day = post.date | date: "%d" %}
+                  {% if post_day == day_padded %}
+                    {% assign day_posts = day_posts | push: post %}
+                  {% endif %}
+                {% endfor %}
+
+                {% assign post_count = day_posts | size %}
+
+                {% if post_count > 0 %}
+                  {% assign first_post = day_posts[0] %}
+
+                  {% if post_count == 1 %}
+                    <a
+                      class="calendar-day calendar-day-has-post"
+                      href="{{ first_post.url | relative_url }}"
+                      title="{{ first_post.title }}"
+                    >
+                      <span class="calendar-day-number">{{ day }}</span>
+                    </a>
+                  {% else %}
+                    {% assign day_anchor = year.name | append: "-" | append: month_padded | append: "-" | append: day_padded %}
+                    <a
+                      class="calendar-day calendar-day-has-post calendar-day-multiple"
+                      href="#{{ day_anchor }}"
+                      title="{{ post_count }} posts on {{ day }} {{ month_name }} {{ year.name }}"
+                    >
+                      <span class="calendar-day-number">{{ day }}</span>
+                      <span class="calendar-day-count">{{ post_count }}</span>
+                    </a>
+                  {% endif %}
+                {% else %}
+                  <span class="calendar-day">
+                    <span class="calendar-day-number">{{ day }}</span>
+                  </span>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </section>
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    <div class="calendar-post-lists">
+      {% for month_number in (1..12) %}
+        {% assign month_padded = month_number | prepend: "0" | slice: -2, 2 %}
+
+        {% case month_number %}
+          {% when 1 %}{% assign month_name = "January" %}
+          {% when 2 %}{% assign month_name = "February" %}
+          {% when 3 %}{% assign month_name = "March" %}
+          {% when 4 %}{% assign month_name = "April" %}
+          {% when 5 %}{% assign month_name = "May" %}
+          {% when 6 %}{% assign month_name = "June" %}
+          {% when 7 %}{% assign month_name = "July" %}
+          {% when 8 %}{% assign month_name = "August" %}
+          {% when 9 %}{% assign month_name = "September" %}
+          {% when 10 %}{% assign month_name = "October" %}
+          {% when 11 %}{% assign month_name = "November" %}
+          {% when 12 %}{% assign month_name = "December" %}
+        {% endcase %}
+
+        {% assign month_posts = "" | split: "" %}
+        {% for post in year.items %}
+          {% assign post_month = post.date | date: "%m" %}
+          {% if post_month == month_padded %}
+            {% assign month_posts = month_posts | push: post %}
+          {% endif %}
+        {% endfor %}
+
+        {% if month_posts.size > 0 %}
+          <section class="calendar-post-month">
+            <h3>{{ month_name }}</h3>
+
+            {% assign days_in_month = 31 %}
+            {% if month_number == 4 or month_number == 6 or month_number == 9 or month_number == 11 %}
+              {% assign days_in_month = 30 %}
+            {% elsif month_number == 2 %}
+              {% assign year_num = year.name | plus: 0 %}
+              {% assign leap_remainder_4 = year_num | modulo: 4 %}
+              {% assign leap_remainder_100 = year_num | modulo: 100 %}
+              {% assign leap_remainder_400 = year_num | modulo: 400 %}
+
+              {% assign is_leap = false %}
+              {% if leap_remainder_4 == 0 %}
+                {% assign is_leap = true %}
+              {% endif %}
+              {% if leap_remainder_100 == 0 and leap_remainder_400 != 0 %}
+                {% assign is_leap = false %}
+              {% endif %}
+
+              {% if is_leap %}
+                {% assign days_in_month = 29 %}
+              {% else %}
+                {% assign days_in_month = 28 %}
+              {% endif %}
+            {% endif %}
+
+            {% for day in (1..days_in_month) %}
+              {% assign day_padded = day | prepend: "0" | slice: -2, 2 %}
+
+              {% assign day_posts = "" | split: "" %}
+              {% for post in month_posts %}
+                {% assign post_day = post.date | date: "%d" %}
+                {% if post_day == day_padded %}
+                  {% assign day_posts = day_posts | push: post %}
+                {% endif %}
+              {% endfor %}
+
+              {% if day_posts.size > 0 %}
+                {% assign day_anchor = year.name | append: "-" | append: month_padded | append: "-" | append: day_padded %}
+                <div class="calendar-post-day" id="{{ day_anchor }}">
+                  <h4>{{ day }} {{ month_name }} {{ year.name }}</h4>
+                  <ul class="calendar-post-list">
+                    {% for post in day_posts %}
+                      <li>
+                        <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+                        {% if post.categories and post.categories.size > 0 %}
+                          <span class="calendar-post-meta">· {{ post.categories[0] }}</span>
+                        {% endif %}
+                      </li>
+                    {% endfor %}
+                  </ul>
+                </div>
+              {% endif %}
+            {% endfor %}
+          </section>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </section>
+{% endfor %}

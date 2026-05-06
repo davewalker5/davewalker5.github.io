@@ -1,0 +1,23 @@
+---
+layout: default
+---
+
+<article class="notebook-entry">
+  <header class="notebook-entry-header">
+    <p class="notebook-kicker">Year In The Life</p>
+    <h1>{{ page.title }}</h1>
+
+    <div class="notebook-taxonomy">
+      <span class="taxonomy-label">Role:</span>
+      {{ page.role }}
+    </p>
+  </header>
+
+  <div class="notebook-entry-body">
+    {% if page.images %}
+      {% include image-block.html images=page.images assets="/assets/images/year-in-life/" %}
+    {% endif %}
+
+    {{ content }}
+  </div>
+</article>

@@ -1,0 +1,12 @@
+- title: "Seasonal Presence Model"
+  category: "models"
+  description: "When a species appears within the year"
+  link: /wildlife/modelling/seasonal.html
+- title: "Resident Detectability Model"
+  category: "models"
+  description: "How a resident species varies in visibility through the year"
+  link: /wildlife/modelling/resident.html
+- title: "Winter Visitor Model"
+  category: "models"
+  description: "When a species appears across the year boundary"
+  link: /wildlife/modelling/winter.html
