@@ -15,9 +15,15 @@ breadcrumb_items:
 
 # Seasonal Presence Model
 
-Some species occupy only part of the year. They appear, persist for a time, and then disappear again — not because they are absent from the wider world, but because they are no longer visible in this place.
+Some species are only visible for a short part of the year. They emerge, flower, migrate, breed, or pass through — then disappear again, often surprisingly quickly.
 
-This model describes that pattern: a seasonal presence that rises within a defined window and declines outside it.
+This model describes those seasonal appearances: the rise into activity, the peak of the season, and the eventual collapse back toward absence.
+
+It is intended for species whose observable presence is strongly constrained in time, such as:
+
+- Spring flowers
+- Migratory birds
+- Butterflies with a single annual flight period
 
 ## Concept
 
@@ -29,82 +35,67 @@ It answers the question:
 
 Unlike the resident model, presence is not continuous. Instead, activity is confined to a defined seasonal window.
 
-The model combines three simple elements:
+The model combines four simple elements:
 
-- A **seasonal driver**, representing environmental change through the year  
-- A **seasonal window**, constraining when presence is possible  
-- A **decay term**, allowing activity to fall away outside the active period  
+- A **seasonal driver**, representing environmental change through the year
+- A **seasonal window**, constraining when presence is biologically possible
+- A **baseline decay process**, limiting persistence over time
+- A **post-season suppression phase**, accelerating decline once the active season has passed
 
-Together, these produce a single seasonal pulse — a rise into the season, a peak, and a decline.
+Together, these produce a dominant seasonal pulse with realistic asymmetry — allowing activity to rise gradually, peak, and then decline more abruptly after the season ends.
+
+Together, these produce a single dominant seasonal pulse — a rise into the season, a peak, and a decline.
 
 ## Model Parameters
 
 A small number of parameters control the behaviour of the model:
 
-| Parameter    | Purpose                                                                       |
-| ------------ | ----------------------------------------------------------------------------- |
-| GROWTH       | Controls how strongly seasonal conditions drive the appearance of the species |
-| DECAY        | Controls how quickly activity declines during the active period               |
-| OOS_DECAY    | Increases the rate of decline outside the seasonal window                     |
-| SEASON_START | Sets the onset of the active period                                           |
-| SEASON_END   | Sets the end of the active period                                             |
-| SHARPNESS    | Controls how abruptly the season begins and ends                              |
-| FORCING_PEAK | Sets the timing of the seasonal driver peak                                   |
+| Parameter           | Purpose                                                                       |
+| ------------------- | ----------------------------------------------------------------------------- |
+| GROWTH              | Controls how strongly seasonal conditions drive the appearance of the species |
+| DECAY               | Controls how quickly activity declines during the active period               |
+| OOS_DECAY           | Increases the rate of decline outside the seasonal window                     |
+| POST_PEAK_DECAY     | Controls how strongly activity is suppressed after the season                 |
+| POST_PEAK_SHARPNESS | Controls how abruptly post-season suppression activates                       |
+| SEASON_START        | Sets the onset of the active period                                           |
+| SEASON_END          | Sets the end of the active period                                             |
+| SHARPNESS           | Controls how abruptly the season begins and ends                              |
+| FORCING_PEAK        | Sets the timing of the seasonal driver peak                                   |
 
 Together, these parameters define:
 
-- **When** the species appears (SEASON_START / END)  
-- **How sharply** it appears and disappears (SHARPNESS, OOS_DECAY)  
-- **How strongly** it responds to seasonal conditions (GROWTH, FORCING_PEAK)  
-- **How long it persists** once present (DECAY)  
+- **When** the species appears (SEASON_START / END)
+- **How sharply** it appears and disappears (SHARPNESS, OOS_DECAY)
+- **How strongly** it responds to seasonal conditions (GROWTH, FORCING_PEAK)
+- **How long it persists** once present (DECAY)
 
 The start and end parameters are expressed in months on a continuous scale, allowing the season to be positioned precisely within the year.
 
 ## Mathematical form
 
-The model is expressed as a first-order ordinary differential equation:
+The governing equation combines:
 
-> dy/dt = GROWTH * S(t) * W(t) - decay(t) * y
+- Seasonal growth
+- Seasonal availability
+- Time-dependent decline
 
-Where:
+The effective decay rate increases:
 
-- y(t) is a relative, dimensionless measure of observable activity
-- S(t) is a smooth seasonal forcing function
-- W(t) is a seasonal window, constraining when presence is possible
-- decay(t) controls how rapidly activity declines, particularly outside the active period
+- Outside the seasonal window
+- After the active season has passed
 
-The seasonal forcing - S(t) - is represented as a smooth annual cycle, scaled between 0 and 1:
-
-> S(t) = (1 + cos(2π(t - peak)/12)) / 2
-
-The seasonal window W(t) is constructed from two logistic functions, representing the onset and end of the active period:
-
-> W(t) = rise(t) × fall(t)
-
-with:
-
-> rise(t) = 1 / (1 + exp(-k(t - start)))<br/>
-> fall(t) = 1 / (1 + exp(k(t - end)))
-
-Outside the seasonal window, the decay term increases, causing activity to fall more rapidly:
-
-> decay(t) = DECAY + OOS_DECAY × (1 - W(t))
+This allows the model to reproduce species that decline rapidly after peak activity, reducing unrealistically persistent late-season tails.
 
 ## Model behaviour
 
-When applied over a full year, the model produces a single seasonal pulse:
+When applied over a full year, the model produces a characteristic seasonal pulse:
 
-- Activity begins gradually as conditions become favourable
-- Reaches a peak within the active period
-- Then declines, often more rapidly, once the season ends
+- Activity begins as environmental conditions become favourable
+- Presence increases within the active window
+- Activity reaches a peak during the core season
+- Once seasonal conditions deteriorate, activity collapses more rapidly toward absence
 
-The timing and shape of this pulse depend on a small number of parameters:
-
-- The **position and strength of the seasonal driver**
-- The **start and end of the seasonal window**
-- The **rate at which activity decays outside that window**
-
-By adjusting these, the model can represent a range of seasonal behaviours, from brief and sharply bounded appearances to more extended periods of activity.
+The resulting curves are often asymmetric, with relatively sharp post-peak decline. This better reflects many biological systems, where activity does not merely fade gradually, but undergoes active seasonal shutdown through senescence, migration, mortality, or behavioural change.
 
 ## Fitting to Observations
 
@@ -112,32 +103,32 @@ The model can be fitted to observed monthly data.
 
 A parameter fitting process:
 
-- Infers a plausible seasonal window from the data  
-- Generates candidate parameter sets within that range  
-- Runs the model  
-- Compares the simulated curve to observations  
-- Scores the match  
-- Repeats to identify good solutions  
+- Infers a plausible seasonal window from the data
+- Generates candidate parameter sets within that range
+- Runs the model
+- Compares the simulated curve to observations
+- Scores the match
+- Repeats to identify good solutions
 
 This produces a set of parameters that describe the species’ seasonal behaviour.
 
 These parameters are broadly interpretable:
 
-- **SEASON_START / END** → timing of arrival and departure  
-- **FORCING_PEAK** → timing of peak activity  
-- **SHARPNESS** → how abruptly the season begins and ends  
-- **OOS_DECAY** → how quickly activity falls away outside the season  
+- **SEASON_START / END** → timing of arrival and departure
+- **FORCING_PEAK** → timing of peak activity
+- **SHARPNESS** → how abruptly the season begins and ends
+- **OOS_DECAY** → how quickly activity falls away outside the season
 
 As with all simple models:
 
-- Parameters should be treated as estimates rather than exact dates  
-- Different combinations may produce similar curves  
-- Interpretation is most reliable when considered alongside the fitted curve itself  
+- Parameters should be treated as estimates rather than exact dates
+- Different combinations may produce similar curves
+- Interpretation is most reliable when considered alongside the fitted curve itself
 
 In practice, each species can be described by both:
 
-- Its fitted parameters  
-- The shape of its simulated seasonal curve  
+- Its fitted parameters
+- The shape of its simulated seasonal curve
 
 Together, these form a compact description of seasonal presence.
 
@@ -173,27 +164,29 @@ The ODE Solver can export CSV, JSON and XML format files and all three formats a
 
 Observed data show:
 
-- A narrow window of occurrence in spring  
-- A rapid rise into flowering  
-- A short peak followed by a swift decline  
+- A narrow window of occurrence in spring
+- A rapid rise into flowering
+- A short peak followed by a swift decline
 
 The fitted model describes this pattern using:
 
-- An early-season start and well-defined end point  
-- A relatively high sharpness, producing a rapid onset and decline  
-- Strong out-of-season decay, preventing activity from persisting beyond the flowering period  
+- An early-season start and well-defined end point
+- A relatively high sharpness, producing a rapid onset and decline
+- Strong out-of-season decay, preventing activity from persisting beyond the flowering period
 
 The resulting curve captures:
 
-- A brief, tightly bounded seasonal pulse  
-- A rapid transition from absence to peak activity and back again  
+- A brief, tightly bounded seasonal pulse
+- A rapid transition from absence to peak activity and back again
 
 **Seasonal signature (modelled):**
 
-- Presence: April–May  
+- Presence: April–May
 - Peak: mid-late April 
-- Width: very narrow  
-- Decline / absence: rapid, with near-zero activity outside the flowering period  
+- Width: very narrow
+- Decline / absence: rapid, with near-zero activity outside the flowering period
+
+The post-season suppression component prevents activity from lingering unrealistically beyond the observed seasonal period.
 
 ### Swift
 
@@ -205,27 +198,29 @@ The resulting curve captures:
 
 Observed data show:
 
-- A rapid arrival in late spring  
-- A concentrated period of activity through summer  
-- A swift departure  
+- A rapid arrival in late spring
+- A concentrated period of activity through summer
+- A swift departure
 
 The fitted model describes this pattern using:
 
-- A narrow seasonal window aligned with the summer months  
-- A forcing peak centred within the period of highest activity  
-- Strong out-of-season decay, ensuring a rapid disappearance once the season ends  
+- A narrow seasonal window aligned with the summer months
+- A forcing peak centred within the period of highest activity
+- Strong out-of-season decay, ensuring a rapid disappearance once the season ends
 
 The resulting curve captures:
 
-- A short, well-defined seasonal pulse  
-- A rapid transition from absence to presence and back again  
+- A short, well-defined seasonal pulse
+- A rapid transition from absence to presence and back again
 
 **Seasonal signature (modelled):**
 
-- Presence: May–August  
-- Peak: June–July  
-- Width: narrow  
-- Decline / absence: rapid, with near-zero activity outside the season  
+- Presence: May–August
+- Peak: June–July
+- Width: narrow
+- Decline / absence: rapid, with near-zero activity outside the season
+
+The post-season suppression component prevents activity from lingering unrealistically beyond the observed seasonal period.
 
 ## Interpretation
 
@@ -239,7 +234,7 @@ It provides a minimal explanation for patterns seen in the Seasonal Analyses, sh
 - Migration-driven appearances
 - Other forms of seasonal presence
 
-The model does not attempt to describe the underlying biological mechanisms in detail. Instead, it offers a way of understanding how the observed patterns might arise from the interaction of seasonal forcing, limited availability, and decline.
+The model does not attempt to describe the underlying biological mechanisms in detail. Instead, it offers a way of understanding how the observed patterns might arise from the interaction of seasonal forcing, constrained availability, persistence, and active seasonal suppression.
 
 ## In Context
 
