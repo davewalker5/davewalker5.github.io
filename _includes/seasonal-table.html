@@ -1,0 +1,27 @@
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Group</th>
+      <th>Location</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_species = include.species | sort: "name" %}
+    {% for item in sorted_species %}
+      {% if include.type == item.group %}
+        <tr>
+          <td>
+            {% if item.link and item.link != "" %}
+              <a href="{{ item.link }}">{{ item.name }}</a>
+            {% else %}
+              {{ item.name }}
+            {% endif %}
+          </td>
+          <td>{{ item.group }}</td>
+          <td>{{ item.location }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>

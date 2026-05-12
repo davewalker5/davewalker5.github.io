@@ -1,0 +1,44 @@
+- title: "Seasonal Analyses"
+  category: "studies"
+  description: "Reports examining how species vary through the year, using monthly sightings and encounter frequency to reveal seasonal patterns"
+  link: /wildlife/seasonal/
+- title: "Seasonal Modelling"
+  category: "studies"
+  description: "Explorations of simple models that reproduce seasonal patterns, illustrating how presence and detectability can give rise to the observed variation"
+  link: /wildlife/modelling/
+- title: "Abundance by Location"
+  category: "reports"
+  description: "Reports showing recorded abundance by country, location, and category, with chart views and downloadable data"
+  link: "/wildlife/abundance/"
+- title: "Category Composition"
+  category: "reports"
+  description: "Reports showing the composition of records across major wildlife categories for individual locations"
+  link: "/wildlife/composition/"
+- title: "Sightings Trend by Species"
+  category: "reports"
+  description: "Reports showing changes in sightings over time for individual species, based on personal field records"
+  link: "/wildlife/trend/"
+- title: "Annual Location/Category Heatmap"
+  category: "reports"
+  description: "Annual heatmap reports showing the distribution of records across locations and wildlife categories"
+  link: "/wildlife/heatmap/"
+- title: "Annual Richness by Country"
+  category: "reports"
+  description: "Reports showing annual species richness by country, derived from long-term field observations"
+  link: "/wildlife/richness/"
+- title: "Wildlife Recordings Catalogue"
+  category: "recordings"
+  description: "A catalogue of wildlife audio and video recordings, presented as a structured archive"
+  link: "/wildlife/recordings.html"
+- title: "Wildlife Recordings Lightbox"
+  category: "recordings"
+  description: "A visual library of wildlife audio and video recordings"
+  link: "/wildlife/recordings-lightbox.html"
+
+
+
+
+
+
+
+
