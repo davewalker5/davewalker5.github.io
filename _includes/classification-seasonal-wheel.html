@@ -1,0 +1,62 @@
+{% assign item = include.item %}
+{% assign monthly = item.derived_metrics.monthly_target %}
+{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+{% assign peak_month = item.derived_metrics.target_peak_month | default: item.derived_metrics.forcing_peak_month | default: item.derived_metrics.winter_peak_month %}
+{% assign peak_label = item.derived_metrics.target_peak_label | default: item.derived_metrics.forcing_peak_label | default: item.derived_metrics.winter_peak_label %}
+
+<section class="classification-wheel-block">
+  <h2>Seasonal wheel</h2>
+
+  <div class="seasonal-wheel-wrap">
+    <svg class="seasonal-wheel" viewBox="0 0 240 240" role="img" aria-labelledby="seasonal-wheel-title">
+      <title id="seasonal-wheel-title">Seasonal wheel for {{ item.species }}</title>
+
+      <circle cx="120" cy="120" r="82" class="seasonal-wheel__base" />
+
+      {% comment %}
+      This uses 12 simple wedge-like line segments rather than complex arcs.
+      It is intentionally robust Liquid/SVG rather than pixel-perfect geometry.
+      CSS controls the visual weight for month states.
+      {% endcomment %}
+
+      {% for month in months %}
+        {% assign month_number = forloop.index %}
+        {% assign value = monthly[month] %}
+        {% assign state = "inactive" %}
+
+        {% if monthly %}
+          {% if value >= 0.75 %}
+            {% assign state = "very-high" %}
+          {% elsif value >= 0.4 %}
+            {% assign state = "high" %}
+          {% elsif value >= 0.1 %}
+            {% assign state = "low" %}
+          {% else %}
+            {% assign state = "inactive" %}
+          {% endif %}
+        {% else %}
+          {% assign start_month = item.derived_metrics.season_start_month | round %}
+          {% assign end_month = item.derived_metrics.season_end_month | round %}
+          {% if month_number >= start_month and month_number <= end_month %}
+            {% assign state = "high" %}
+          {% endif %}
+        {% endif %}
+
+        {% assign rotation = month_number | minus: 1 | times: 30 %}
+        <line x1="120" y1="34" x2="120" y2="58"
+              class="seasonal-wheel__tick seasonal-wheel__tick--{{ state }}"
+              transform="rotate({{ rotation }} 120 120)" />
+      {% endfor %}
+
+      {% if peak_month %}
+        {% assign peak_rotation = peak_month | minus: 1 | times: 30 %}
+        <circle cx="120" cy="42" r="5" class="seasonal-wheel__peak" transform="rotate({{ peak_rotation }} 120 120)" />
+      {% endif %}
+
+      <text x="120" y="112" text-anchor="middle" class="seasonal-wheel__centre-label">{{ item.species }}</text>
+      {% if peak_label %}
+        <text x="120" y="132" text-anchor="middle" class="seasonal-wheel__centre-subtitle">Peak: {{ peak_label }}</text>
+      {% endif %}
+    </svg>
+  </div>
+</section>

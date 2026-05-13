@@ -1,0 +1,28 @@
+<table class="specimen-summary">
+  <tr><td><strong>Date</strong></td><td>{{ page.date }}</td></tr>
+
+  {% if page.collection_note && page.collection_note != "" %}
+    <tr><td><strong>Collection Note</strong></td><td>{{ page.collection_note }}</td></tr>
+  {% endif %}
+
+  <tr><td><strong>Species</strong></td><td>{{ page.species }}</td></tr>
+  <tr><td><strong>Common Name</strong></td><td>{{ page.common_name }}</td></tr>
+
+  {% if page.habit && page.habit != "" %}
+    <tr><td><strong>Habit</strong></td><td>{{ page.habit }}</td></tr>
+  {% endif %}
+
+  {% if page.structure && page.structure != "" %}
+    <tr><td><strong>Structure</strong></td><td>{{ page.structure }}</td></tr>
+  {% endif %}
+
+  {% if page.role && page.role != "" %}
+    <tr><td><strong>Biological Role</strong></td><td>{{ page.role }}</td></tr>
+  {% endif %}
+
+  <tr><td><strong>Material</strong></td><td>{{ page.material }}</td></tr>
+  <tr><td><strong>Location</strong></td><td>{{ page.location }}</td></tr>
+  <tr><td><strong>Preparation</strong></td><td>{{ page.preparation }}</td></tr>
+  <tr><td><strong>Stain</strong></td><td>{{ page.stain }}</td></tr>
+  <tr><td><strong>Series</strong></td><td>{{ page.programme_series }}</td></tr>
+</table>

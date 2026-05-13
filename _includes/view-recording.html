@@ -1,0 +1,37 @@
+<h1 id="heading">Recording</h1>
+
+<p id="intro">
+This page displays a wildlife audio or video recording from the Field Notes Journal archive.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div id="video-wrap" class="report-image-wrap">
+    <video id="recording-video" class="responsive" controls preload="metadata">
+      <source id="recording-source" src="" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <audio id="recording-audio" controls preload="metadata" style="display:none; width:100%;">
+      <source id="audio-source" src="" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p id="audio-status" class="muted" style="display:none; margin-top:0.5rem;"></p>
+  </div>
+
+  <figcaption class="report-caption">
+    Wildlife recording from the Field Notes Journal observational archive.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="download-link" class="download-btn" href="#" download>
+      ⬇ Download recording
+    </a>
+    <p class="download-note">Downloads the original file where the browser allows it.</p>
+  </div>
+</figure>
+
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/recording-viewer.js' | relative_url }}"></script>
