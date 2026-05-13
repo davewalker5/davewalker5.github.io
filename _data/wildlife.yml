@@ -1,11 +1,12 @@
-- title: "Seasonal Analyses"
-  category: "studies"
-  description: "Reports examining how species vary through the year, using monthly sightings and encounter frequency to reveal seasonal patterns"
-  link: /wildlife/seasonal/
+
 - title: "Seasonal Modelling"
   category: "studies"
-  description: "Explorations of simple models that reproduce seasonal patterns, illustrating how presence and detectability can give rise to the observed variation"
+  description: "Explorations of interpretable seasonal models and the ecological structures emerging from them"
   link: /wildlife/modelling/
+- title: "Seasonal Analyses"
+  category: "studies"
+  description: "Reports using monthly sightings, encounter frequency and modelling output to reveal seasonal patterns"
+  link: /wildlife/seasonal/
 - title: "Abundance by Location"
   category: "reports"
   description: "Reports showing recorded abundance by country, location, and category, with chart views and downloadable data"

@@ -16,9 +16,12 @@ The Dandelion (Taraxacum officinale) is equally familiar, widespread, and presen
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Dandelion_Abingdon_totals.png" alt="Monthly sightings of Dandelion">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Dandelion_Abingdon_totals.png" alt="Dandelion Monthly Sightings, Abingdon">
+    <figcaption>Dandelion Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The overall pattern retains a recognisable seasonal structure, but with a broader shape:
 
@@ -33,9 +36,12 @@ Compared with Daisy, the most striking feature is the extended tail: rather than
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Dandelion_Abingdon_presence.png" alt="Presence of Dandelion by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Dandelion_Abingdon_presence.png" alt="Dandelion Seasonal Presence, Abingdon">
+    <figcaption>Dandelion Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 As with Daisy, the pattern of encounter frequency closely mirrors the total sightings.
 
@@ -107,5 +113,5 @@ Set alongside the Daisy and the birds, it helps to illustrate how differences in
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Dandelion_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Dandelion_Abingdon.xlsx" download>Download Dataset</a>
 </div>

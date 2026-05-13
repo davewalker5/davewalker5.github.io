@@ -16,9 +16,12 @@ The Chiffchaff (Phylloscopus collybita) is a familiar spring migrant in the UK, 
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Chiffchaff_Abingdon_totals.png" alt="Monthly sightings of Chiffchaff">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Chiffchaff_Abingdon_totals.png" alt="Chiffchaff Monthly Sightings, Abingdon">
+    <figcaption>Chiffchaff Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The pattern here is immediately striking:
 
@@ -32,9 +35,12 @@ Unlike the resident species, there is no suggestion of year-round presence — t
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Chiffchaff_Abingdon_presence.png" alt="Presence of Chiffchaff by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Chiffchaff_Abingdon_presence.png" alt="Chiffchaff Seasonal Presence, Abingdon">
+    <figcaption>Chiffchaff Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 Looking at encounter frequency reinforces the same pattern.
 
@@ -87,5 +93,5 @@ Taken together, these examples suggest that even simple, long-term records can b
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Chiffchaff_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Chiffchaff_Abingdon.xlsx" download>Download Dataset</a>
 </div>

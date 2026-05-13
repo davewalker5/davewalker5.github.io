@@ -28,9 +28,12 @@ In particular, I expected:
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Woodpigeon_Abingdon_totals.png" alt="Monthly sightings of Wren">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Wren_Abingdon_totals.png" alt="Wren Monthly Sightings, Abingdon">
+    <figcaption>Wren Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The result is striking.
 
@@ -40,9 +43,12 @@ This is a much stronger effect than anticipated.
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Wren_Abingdon_presence.png" alt="Presence of Wren by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Wren_Abingdon_presence.png" alt="Wren Seasonal Presence, Abingdon">
+    <figcaption>Wren Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 The presence data shows the same pattern.
 
@@ -100,5 +106,5 @@ As with the other species in this series, a simple monthly aggregation is enough
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Wren_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Wren_Abingdon.xlsx" download>Download Dataset</a>
 </div>

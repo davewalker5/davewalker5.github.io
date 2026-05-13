@@ -149,11 +149,11 @@ The model can be fitted to observed monthly data.
 
 A parameter fitting process:
 
-- generates candidate parameter sets
-- runs the model
-- compares the simulated curve to observations
-- scores the match
-- repeats to identify good solutions
+- Generates candidate parameter sets
+- Runs the model
+- Compares the simulated curve to observations
+- Scores the match
+- Repeats to identify good solutions
 
 Rather than producing a single exact answer, this yields a set of plausible parameter values that reproduce the observed pattern.
 

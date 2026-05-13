@@ -16,9 +16,12 @@ The Swallow (Hirundo rustica) is a familiar summer visitor, closely associated w
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Swallow_Abingdon_totals.png" alt="Monthly sightings of Swallow">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Swallow_Abingdon_totals.png" alt="Swallow Monthly Sightings, Abingdon">
+    <figcaption>Swallow Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The overall pattern is strikingly well defined:
 
@@ -33,9 +36,12 @@ Compared with the earlier species, this is a notably clean seasonal window.
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Swallow_Abingdon_presence.png" alt="Presence of Swallow by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Swallow_Abingdon_presence.png" alt="Swallow Seasonal Presence, Abingdon">
+    <figcaption>Swallow Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 The pattern of encounter frequency closely mirrors the total sightings.
 
@@ -86,5 +92,5 @@ As with the other examples, a simple monthly summary is enough to bring these ph
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Swallow_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Swallow_Abingdon.xlsx" download>Download Dataset</a>
 </div>

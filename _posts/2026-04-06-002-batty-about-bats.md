@@ -26,6 +26,7 @@ Bats fly using a modified hand and arm, as the following schematic of an outstre
 <div class="blog-image-grid blog-image-grid--1-col">
     <figure>
         <img src="/assets/images/blog/bat_wing_anatomy.png" alt="Bat Wing Anatomy">
+        <figcaption>Bat Wing Anatomy</figcaption>
     </figure>
 </div>
 
@@ -40,6 +41,7 @@ Sound waves travel out from the source of a sound in all directions as a series 
 <div class="blog-image-grid blog-image-grid--1-col">
     <figure>
         <img src="/assets/images/blog/waveform.png" alt="Waveform">
+        <figcaption>Waveform</figcaption>
     </figure>
 </div>
 
@@ -100,6 +102,7 @@ It is possible to relate a spectrogram to what a bat is doing at the time. The s
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
         <img src="/assets/images/blog/feeding_sequence.png" alt="Feeding Sequence Spectrogram">
+        <figcaption>Feeding Sequence Spectrogram</figcaption>
     </figure>
 </div>
 
@@ -129,7 +132,8 @@ The following schematic shows how a heterodyne bat detector works:
 
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
-        <img src="/assets/images/blog/heterodyne.png" alt="Heterodyne Bat Detector">
+        <img src="/assets/images/blog/heterodyne.png" alt="Heterodyne Bat Detector Schematic">
+        <figcaption>Heterodyne Bat Detector Schematic</figcaption>
     </figure>
 </div>
 
@@ -146,6 +150,7 @@ A typical heterodyne bat detector, the Magenta Bat Mk II, is shown below. The mi
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
         <img src="/assets/images/blog/magenta_bat_mk_ii.png" alt="Magenta Bat Mk II">
+        <figcaption>Magenta Bat Mk II</figcaption>
     </figure>
 </div>
 
@@ -164,7 +169,8 @@ One additional useful method that can be used to complement the information gain
 
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
-        <img src="/assets/images/blog/time_expansion.png" alt="Time Expansion Bat Detector">
+        <img src="/assets/images/blog/time_expansion.png" alt="Time Expansion Bat Detector Schematic">
+        <figcaption>Time Expansion Bat Detector Schematic</figcaption>
     </figure>
 </div>
 
@@ -185,6 +191,7 @@ The disadvantage with time expansion detectors is that they are very expensive a
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
         <img src="/assets/images/blog/pettersson_d_140.png" alt="Pettersson D-140 Dual Mode Detector">
+        <figcaption>Pettersson D-140 Dual Mode Detector</figcaption>
     </figure>
 </div>
 
@@ -207,6 +214,7 @@ It clearly shows the three phases as the bat detects, homes in on and captures a
 <div class="blog-image-grid blog-image-grid--2-col">
     <figure>
         <img src="/assets/images/blog/te_spectrogram.png" alt="Time Expansion Spectrogram">
+        <figcaption>Time Expansion Spectrogram</figcaption>
     </figure>
 </div>
 

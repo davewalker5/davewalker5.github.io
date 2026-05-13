@@ -16,9 +16,12 @@ The Blackcap (Sylvia atricapilla) is also a familiar summer visitor in the UK, a
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Blackcap_Abingdon_totals.png" alt="Monthly sightings of Blackcap">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Blackcap_Abingdon_totals.png" alt="Blackcap Monthly Sightings, Abingdon">
+    <figcaption>Blackcap Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The overall shape is recognisably seasonal:
 
@@ -32,9 +35,12 @@ This closely mirrors the pattern seen in Chiffchaff, suggesting a similar underl
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Blackcap_Abingdon_presence.png" alt="Presence of Blackcap by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Blackcap_Abingdon_presence.png" alt="Blackcap Seasonal Presence, Abingdon">
+    <figcaption>Blackcap Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 Looking at encounter frequency reinforces the same general structure.
 
@@ -99,5 +105,5 @@ As with the other examples, a simple monthly summary is enough to bring out this
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Blackcap_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Blackcap_Abingdon.xlsx" download>Download Dataset</a>
 </div>

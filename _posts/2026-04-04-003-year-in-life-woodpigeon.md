@@ -16,9 +16,12 @@ The Woodpigeon (Columba palumbus) is a widespread and abundant resident, present
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Woodpigeon_Abingdon_totals.png" alt="Monthly sightings of Woodpigeon">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Woodpigeon_Abingdon_totals.png" alt="Woodpigeon Monthly Sightings, Abingdon">
+    <figcaption>Woodpigeon Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 At first glance, the pattern appears less dramatic than some of the migratory species. However, a clear structure emerges:
 
@@ -31,9 +34,12 @@ Unlike the Swallow or Chiffchaff, there is no sharp boundary to the curve. Inste
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Woodpigeon_Abingdon_presence.png" alt="Presence of Woodpigeon by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Woodpigeon_Abingdon_presence.png" alt="Woodpigeon Seasonal Presence, Abingdon">
+    <figcaption>Woodpigeon Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 The presence data tells a different story.
 
@@ -89,5 +95,5 @@ As with the other examples, a simple monthly summary is enough to bring this int
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Woodpigeon_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Woodpigeon_Abingdon.xlsx" download>Download Dataset</a>
 </div>

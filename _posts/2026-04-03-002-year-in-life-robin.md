@@ -16,9 +16,12 @@ The Robin (Erithacus rubecula) makes a good comparison: common, well-recorded, a
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Robin_Abingdon_totals.png" alt="Monthly sightings of Robin">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Robin_Abingdon_totals.png" alt="Robin Monthly Sightings, Abingdon">
+    <figcaption>Robin Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 As with Blackbird, the overall shape is immediately recognisable:
 
@@ -31,9 +34,12 @@ But there is a subtle difference. The downturn begins earlier, and the low point
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Robin_Abingdon_presence.png" alt="Presence of Robin by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Robin_Abingdon_presence.png" alt="Robin Seasonal Presence, Abingdon">
+    <figcaption>Robin Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 Looking at encounter frequency — the number of days on which a Robin was seen — brings this into clearer focus.
 
@@ -79,5 +85,5 @@ Even among very familiar birds, small differences in seasonal behaviour begin to
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Robin_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Robin_Abingdon.xlsx" download>Download Dataset</a>
 </div>

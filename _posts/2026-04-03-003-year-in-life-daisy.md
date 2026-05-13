@@ -16,9 +16,12 @@ The Daisy (Bellis perennis) provides a useful contrast: common, widespread, and 
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Daisy_Abingdon_totals.png" alt="Monthly sightings of Daisy">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Daisy_Abingdon_totals.png" alt="Daisy Monthly Sightings, Abingdon">
+    <figcaption>Daisy Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The overall pattern is again clear, but differs in character:
 
@@ -31,9 +34,12 @@ The overall pattern is again clear, but differs in character:
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Daisy_Abingdon_presence.png" alt="Presence of Daisy by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Daisy_Abingdon_presence.png" alt="Daisy Seasonal Presence, Abingdon">
+    <figcaption>Daisy Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 Looking at encounter frequency — the number of days on which Daisy was recorded — reinforces the same shape.
 
@@ -78,5 +84,5 @@ Using the same simple approach across different kinds of species begins to revea
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Daisy_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Daisy_Abingdon.xlsx" download>Download Dataset</a>
 </div>

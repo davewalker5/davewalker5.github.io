@@ -18,9 +18,12 @@ This is a first small attempt at that, using one of the most familiar birds loca
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Blackbird_Abingdon_totals.png" alt="Monthly sightings of Blackbirds">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Blackbird_Abingdon_totals.png" alt="Blackbird Monthly Sightings, Abingdon">
+    <figcaption>Blackbird Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 This chart shows the total number of Blackbird sightings by month, aggregated across all years in the dataset.
 
@@ -35,9 +38,12 @@ On its own, that already suggests a seasonal pattern — but total counts can be
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Blackbird_Abingdon_presence.png" alt="Step 1">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Blackbird_Abingdon_presence.png" alt="Blackbird Seasonal Presence, Abingdon">
+    <figcaption>Blackbird Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 This second chart takes a slightly different approach. Instead of counting how many birds were seen, it simply asks:
 
@@ -85,5 +91,5 @@ It’s a small example, but it suggests there’s more to be found in the datase
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Blackbird_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Blackbird_Abingdon.xlsx" download>Download Dataset</a>
 </div>

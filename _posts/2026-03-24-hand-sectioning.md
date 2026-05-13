@@ -19,11 +19,12 @@ As before, sections were taken by drawing the blade smoothly across the specimen
 
 ## Observations
 
-<figure class="report-figure">
-  <div id="img-wrap" class="report-image-wrap">
-    <img id="plate-img" class="responsive" alt="Photomicrographic plate SI-II-027.png" src="/assets/plates/preview/SI-II-027.png">
-  </div>
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img id="plate-img" class="responsive" alt="Photomicrographic Plate SI-II-027" src="/assets/plates/preview/SI-II-027.png">
+    <figcaption>Photomicrographic Plate SI-II-027, Galium aparine stem, T.S.</figcaption>
+  </figure>
+</div>
 
 With the spacer in place, the blades act more like a controlled slicing system, resulting in much more uniform sections.
 

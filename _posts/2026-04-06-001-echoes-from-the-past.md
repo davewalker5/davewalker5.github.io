@@ -68,9 +68,12 @@ The cleaned WAV file is then passed into a small Python tool, built with librosa
     - The waveform (timing)
     - And the spectrogram (frequency over time)
 
-<figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
     <img src="/assets/images/blog/echoes_of_the_past_001.png" alt="Pipistrelle Search and Feeding Buzz">
-</figure>
+    <figcaption>Pipistrelle Search and Feeding Buzz</figcaption>
+  </figure>
+</div>
 
 ### Inspect and interpret
 

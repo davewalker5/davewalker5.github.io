@@ -31,11 +31,12 @@ As noted in the article, I found that the best sections often collected between 
 
 ## Observations
 
-<figure class="report-figure">
-  <div id="img-wrap" class="report-image-wrap">
-    <img id="plate-img" class="responsive" alt="Photomicrographic plate SI-II-012.png" src="/assets/plates/preview/SI-II-012.png">
-  </div>
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img id="plate-img" class="responsive" alt="Photomicrographic Plate SI-II-012" src="/assets/plates/preview/SI-II-012.png">
+    <figcaption>Photomicrographic Plate SI-II-012, Hedera helix stem, T.S.</figcaption>
+  </figure>
+</div>
 
 The improvement over the earlier freehand method was very marked, with sections being:
 

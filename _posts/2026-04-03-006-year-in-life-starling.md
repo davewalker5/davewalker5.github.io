@@ -16,9 +16,12 @@ The Starling (Sturnus vulgaris) is a familiar and widespread bird locally, often
 
 ### Monthly Sightings
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Common_Starling_Abingdon_totals.png" alt="Monthly sightings of Starling">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Common_Starling_Abingdon_totals.png" alt="Common Starling Monthly Sightings, Abingdon">
+    <figcaption>Common Starling Monthly Sightings, Abingdon</figcaption>
+  </figure>
+</div>
 
 The overall pattern differs noticeably from the other birds considered so far:
 
@@ -32,9 +35,12 @@ Unlike the Chiffchaff, the species is present throughout the year, but the numbe
 
 ### Presence — How Often Are They Seen?
 
-<figure>
-    <img src="/assets/images/blog/year_in_the_life_Common_Starling_Abingdon_presence.png" alt="Presence of Starling by month">
-</figure>
+<div class="blog-image-grid blog-image-grid--1-col">
+  <figure>
+    <img src="/assets/images/blog/year_in_the_life_Common_Starling_Abingdon_presence.png" alt="Common Starling Seasonal Presence, Abingdon">
+    <figcaption>Common Starling Seasonal Presence, Abingdon</figcaption>
+  </figure>
+</div>
 
 Looking at encounter frequency reveals a more even pattern.
 
@@ -90,5 +96,5 @@ This adds another layer to the interpretation of these simple monthly summaries,
 <div class="no-print">
 Data for this chart is available to download here:
 
-[Download dataset](/assets/downloads/analysis/year_in_the_life_Common_Starling_Abingdon.xlsx)
+<a href="/assets/downloads/analysis/year_in_the_life_Common_Starling_Abingdon.xlsx" download>Download Dataset</a>
 </div>
