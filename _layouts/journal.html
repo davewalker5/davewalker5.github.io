@@ -1,0 +1,79 @@
+---
+layout: default
+---
+
+<div class="print-title-block print-only">
+  <div class="print-imprint">
+    <span class="print-journal">Field Notes Journal</span>
+    <span class="print-tagline">a personal natural history of place</span>
+  </div>
+
+  <h1 class="print-title">{{ page.title }}</h1>
+
+  <div class="print-meta">
+    {{ page.date | date: "%-d %B %Y" }}
+    {% if page.categories and page.categories.size > 0 %}
+      · {{ page.categories | join: ", " }}
+    {% endif %}
+  </div>
+</div>
+
+<article class="notebook-entry">
+  <header class="notebook-entry-header">
+    <p class="notebook-kicker">Field Notes Journal Entry</p>
+    <div class="post-tools no-print">
+      <button class="print-btn" type="button" onclick="window.print()">
+        Print
+      </button>
+    </div>
+    <h1>{{ page.title }}</h1>
+
+    <div class="notebook-meta">
+      <span class="notebook-meta-item">
+        Entry dated {{ page.date | date: "%-d %B %Y" }}
+      </span>
+
+      {% if page.author or site.author %}
+        <span class="notebook-meta-separator">·</span>
+        <span class="notebook-meta-item">
+          Author: {{ page.author | default: site.author.name | default: site.author }}
+        </span>
+      {% endif %}
+    </div>
+
+    {% if page.excerpt %}
+      <p class="notebook-entry-summary">{{ page.excerpt | strip_html }}</p>
+    {% endif %}
+
+    {% if page.categories and page.categories.size > 0 %}
+      <div class="notebook-taxonomy">
+        <span class="taxonomy-label">Category:</span>
+        {% for category in page.categories %}
+          {% assign category_anchor = category | slugify %}
+          <a class="taxonomy-link" href="{{ '/blog/categories/' | relative_url }}#{{ category_anchor }}">{{ category }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+
+    {% if page.tags and page.tags.size > 0 %}
+      <div class="notebook-taxonomy">
+        <span class="taxonomy-label">Tags:</span>
+        {% for tag in page.tags %}
+          {% assign tag_anchor = tag | slugify %}
+          <a class="taxonomy-link" href="{{ '/blog/tags/' | relative_url }}#{{ tag_anchor }}">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}
+        {% endfor %}
+      </div>
+    {% endif %}
+  </header>
+
+  <div class="notebook-entry-body">
+    {% include image-block.html images=page.images assets=page.assets %}
+    {{ content }}
+    {% include journal-notes.html notes=page.notes %}
+  </div>
+
+  <footer class="notebook-entry-footer">
+    {% include journal-nav.html %}
+  </footer>
+
+</article>

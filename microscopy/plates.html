@@ -1,0 +1,129 @@
+---
+layout: default
+title: Photomicrographic Plates
+breadcrumb: Photomicrographic Plates
+description: A library of photomicrographic plates captured using a 1912 Ernst Leitz microscope.
+dataset: true
+---
+
+<h1>Photomicrographic Plates</h1>
+
+<p class="plate-scheme-note">
+  <span class="note-label">Plate Numbering Note</span>
+  Early plates are labelled under the original <em>Scheme of Structural Investigations</em> (SI).
+  Current work follows the expanded <em>Programme of Microscopic Investigations</em> (PMI), and
+  numbering will transition fully to PMI at the end of 2026.
+  <a href="{{ '/microscopy/numbering.html' | relative_url }}">Read more</a>.
+</p>
+
+<style>
+  .plate-row {
+    display: none;
+  }
+
+  #plates-table {
+    display: none;
+  }
+
+  #plate-method-note {
+    display: none;
+  }
+</style>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+  {% assign series_list = site.data.leitz_plates | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    <option value="{{ series | strip | escape }}">{{ series | strip }}</option>
+  {% endfor %}
+</select>
+
+<table id="plates-table" class="data-table">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Subject</th>
+      <th>Specimen</th>
+      <th>Plate</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_plates = site.data.leitz_plates | sort: "Plate" %}
+    {% for row in sorted_plates %}
+    <tr class="plate-row" data-series="{{ row.Series | strip | escape }}">
+      <td>{{ row.Date }}</td>
+      <td>
+        {% if row.Common and row.Scientific %}
+          {{ row.Common }} ({{ row.Scientific }})
+        {% elsif row.Common %}
+          {{ row.Common }}
+        {% elsif row.Scientific %}
+          {{ row.Scientific }}
+        {% endif %}
+      </td>
+      <td>{{ row.Specimen }}</td>
+      <td>
+        <a href="{{ '/microscopy/view-plate.html' | relative_url }}#/{{ row.Plate | uri_escape }}/{{ row.Series | strip | uri_escape }}/{% capture plate_subject %}{% if row.Common and row.Scientific %}{{ row.Common }} ({{ row.Scientific }}){% elsif row.Common %}{{ row.Common }}{% elsif row.Scientific %}{{ row.Scientific }}{% endif %}{% endcapture %}{{ plate_subject | strip | uri_escape }}/{{ row.Specimen | default: '' | strip | uri_escape }}">
+          {{ row.Plate }}
+        </a>
+      </td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+<p id="plate-method-note" class="plate-note" style="display: none;">
+  <span class="note-label">Note.</span>
+  Unless otherwise stated, all plates are derived from observations in a single focal plane.
+  Plates produced from combined focal planes are expressly indicated.
+</p>
+<br/>
+<hr/>
+<i>The photomicrographs presented here form part of the Field Notes Journal observational archive and were captured by the author using a historical Ernst Leitz microscope.</i>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const table = document.getElementById("plates-table");
+  const note = document.getElementById("plate-method-note");
+  const rows = document.querySelectorAll(".plate-row");
+  const realOptions = Array.from(filter.options).filter(option => option.value !== "");
+
+  function applyFilter() {
+    const selected = filter.value;
+    let visibleCount = 0;
+
+    rows.forEach(function(row) {
+      const rowSeries = row.getAttribute("data-series");
+
+      if (selected !== "" && rowSeries === selected) {
+        row.style.display = "table-row";
+        visibleCount++;
+      } else {
+        row.style.display = "none";
+      }
+    });
+
+    if (visibleCount > 0) {
+      table.style.display = "table";
+      if (note) note.style.display = "block";
+    } else {
+      table.style.display = "none";
+      if (note) note.style.display = "none";
+    }
+  }
+
+  if (realOptions.length === 1) {
+    filter.value = realOptions[0].value;
+    filter.style.display = "none";
+
+    const label = document.querySelector('label[for="series-filter"]');
+    if (label) {
+      label.style.display = "none";
+    }
+  }
+
+  applyFilter();
+  filter.addEventListener("change", applyFilter);
+});
+</script>

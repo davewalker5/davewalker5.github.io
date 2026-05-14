@@ -1,0 +1,222 @@
+---
+layout: default
+title: Photomicrographic Plates — Lightbox
+breadcrumb: Photomicrographic Plates — Lightbox
+description: A visual library of photomicrographic plates captured using a historical Ernst Leitz microscope.
+dataset: true
+---
+
+<h1>Photomicrographic Plates — Lightbox View</h1>
+
+<p class="plate-scheme-note">
+  <span class="note-label">Plate Numbering Note</span>
+  Early plates are labelled under the original <em>Scheme of Structural Investigations</em> (SI).
+  Current work follows the expanded <em>Programme of Microscopic Investigations</em> (PMI), and
+  numbering will transition fully to PMI at the end of 2026.
+  <a href="{{ '/microscopy/numbering.html' | relative_url }}">Read more</a>.
+</p>
+
+<p class="plate-note">
+  <em>Unless otherwise stated, all plates are derived from observations in a single focal plane. Plates produced from combined focal planes are expressly indicated.</em>
+</p>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+  {% assign series_list = site.data.leitz_plates | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    {% assign clean_series = series | strip %}
+    <option value="{{ clean_series | escape }}">{{ clean_series }}</option>
+  {% endfor %}
+</select>
+
+<div id="lightbox-status" class="plate-note" style="margin-top: 1rem;">
+  Select a series to load its plates.
+</div>
+
+<div id="plate-grid-root"></div>
+
+<p id="plate-method-note" class="plate-note" style="display: none;">
+  <span class="note-label">Note.</span>
+  Unless otherwise stated, all plates are derived from observations in a single focal plane.
+  Plates produced from combined focal planes are expressly indicated.
+</p>
+
+<script id="plates-data" type="application/json">
+{
+  {% assign sorted_plates = site.data.leitz_plates | sort: "Plate" %}
+  {% assign series_list = site.data.leitz_plates | map: "Series" | uniq | sort %}
+  {% for series in series_list %}
+    {% assign clean_series = series | strip %}
+    {% assign rows = sorted_plates | where: "Series", clean_series %}
+    {{ clean_series | jsonify }}: [
+      {% for row in rows %}
+      {
+        "plate": {{ row.Plate | strip | jsonify }},
+        "series": {{ row.Series | strip | jsonify }},
+        "specimen": {{ row.Specimen | default: "" | strip | jsonify }},
+        "common": {{ row.Common | default: "" | strip | jsonify }},
+        "scientific": {{ row.Scientific | default: "" | strip | jsonify }},
+        "investigation": {{ row.Investigation | default: "" | strip | jsonify }},
+        "investigation_url": {{ '/microscopy/investigations/' | append: row.Investigation | append: '.html' | relative_url | jsonify }}
+      }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ]{% unless forloop.last %},{% endunless %}
+  {% endfor %}
+}
+</script>
+
+<br/>
+<hr/>
+<i>The photomicrographs presented here form part of the Field Notes Journal observational archive and were captured by the author using a historical Ernst Leitz microscope.</i>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const root = document.getElementById("plate-grid-root");
+  const status = document.getElementById("lightbox-status");
+  const methodNote = document.getElementById("plate-method-note");
+  const dataEl = document.getElementById("plates-data");
+
+  let platesBySeries = {};
+
+  try {
+    platesBySeries = JSON.parse(dataEl.textContent);
+  } catch (err) {
+    console.error("Failed to parse plate data JSON", err);
+    status.textContent = "Plate data could not be loaded.";
+    return;
+  }
+
+  function escapeHtml(value) {
+    return String(value || "")
+      .replace(/&/g, "&amp;")
+      .replace(/</g, "&lt;")
+      .replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;")
+      .replace(/'/g, "&#39;");
+  }
+
+  function buildPlateSubject(row) {
+    const common = (row.common || "").trim();
+    const scientific = (row.scientific || "").trim();
+
+    if (common && scientific) return `${common} (${scientific})`;
+    if (common) return common;
+    if (scientific) return scientific;
+    return "";
+  }
+
+  function getPreviewPlateName(plateName) {
+    if (!plateName) return "";
+    if (plateName.toLowerCase().endsWith(".mp4")) {
+      return plateName.replace(/\.mp4$/i, ".png");
+    }
+    return plateName;
+  }
+
+  function buildViewerHref(row) {
+    const plate = row.plate || "";
+    const series = row.series || "";
+    const specimen = row.specimen || "";
+    const subject = buildPlateSubject(row);
+
+    const parts = [
+      plate,
+      series,
+      subject,
+      specimen
+    ].map(function (value) {
+      return encodeURIComponent((value || "").trim());
+    });
+
+    return "{{ '/microscopy/view-plate.html' | relative_url }}#/" + parts.join("/");
+  }
+
+  function buildLightboxImageSrc(row) {
+    const platePreview = getPreviewPlateName(row.plate || "");
+    return "{{ '/assets/plates/lightbox/' | relative_url }}" + encodeURIComponent(platePreview);
+  }
+
+  function buildInvestigationMarkup(row) {
+    const investigationId = (row.investigation || "").trim();
+    if (!investigationId) return "";
+
+    return `
+      <div class="plate-card-investigation">
+        <a href="${escapeHtml(row.investigation_url)}">${escapeHtml(investigationId)}</a>
+      </div>
+    `;
+  }
+
+  function buildCard(row) {
+    const subject = buildPlateSubject(row);
+    const specimen = (row.specimen || "").trim();
+    const specimenMarkup = specimen
+      ? escapeHtml(specimen)
+      : "<em>No specimen label</em>";
+
+    const subjectMarkup = subject
+      ? `<div class="plate-card-subject">${escapeHtml(subject)}</div>`
+      : "";
+
+    const plate = row.plate || "";
+
+    return `
+      <div class="plate-card screen-version" data-series="${escapeHtml((row.series || "").trim())}">
+        <a href="${buildViewerHref(row)}">
+          <img
+            class="plate-img"
+            src="${buildLightboxImageSrc(row)}"
+            alt="${escapeHtml(plate)}${specimen ? " – " + escapeHtml(specimen) : ""}"
+            loading="lazy"
+            decoding="async"
+          />
+          <div class="plate-card-name">${escapeHtml(plate)}</div>
+          <div class="plate-card-specimen">${specimenMarkup}</div>
+          ${subjectMarkup}
+        </a>
+        ${buildInvestigationMarkup(row)}
+      </div>
+    `;
+  }
+
+  function renderSeries(seriesName) {
+    root.innerHTML = "";
+
+    const rows = platesBySeries[seriesName] || [];
+
+    if (!seriesName) {
+      status.textContent = "Select a series to load its plates.";
+      methodNote.style.display = "none";
+      return;
+    }
+
+    if (!rows.length) {
+      status.textContent = "No plates found for this series.";
+      methodNote.style.display = "none";
+      return;
+    }
+
+    const outer = document.createElement("div");
+    outer.className = "plates-grid-outer no-print";
+    outer.setAttribute("data-series", seriesName);
+
+    const inner = document.createElement("div");
+    inner.className = "plates-grid-inner";
+    inner.innerHTML = rows.map(buildCard).join("");
+
+    outer.appendChild(inner);
+    root.appendChild(outer);
+
+    status.textContent = `${rows.length} plate${rows.length === 1 ? "" : "s"} loaded for ${seriesName}.`;
+    methodNote.style.display = "";
+  }
+
+  filter.addEventListener("change", function () {
+    renderSeries(filter.value.trim());
+  });
+
+  renderSeries(filter.value.trim());
+});
+</script>
