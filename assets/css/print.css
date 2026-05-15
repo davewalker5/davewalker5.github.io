@@ -472,4 +472,71 @@
     outline: 0 !important;
     border: 0 !important;
   }
+
+  /* ---------- Code / pre ---------- */
+  pre,
+  code {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    overflow-wrap: anywhere;
+  }
+
+  pre {
+    padding: 0.6em;
+    border: 1px solid #ccc;
+  }
+
+  pre.highlight,
+  .highlight pre,
+  pre {
+    background: #f7f4ed !important;
+    color: #111111 !important;
+    border: 0.75pt solid #cfc7b8 !important;
+    border-left: 3pt solid #b6934f !important;
+    border-radius: 4pt;
+    padding: 0.55em 0.7em;
+    margin: 0.45cm 0;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 8.8pt;
+    line-height: 1.38;
+
+    white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-wrap: break-word;
+
+    break-inside: avoid-page;
+    page-break-inside: avoid;
+  }
+
+  pre.highlight code,
+  .highlight pre code,
+  pre code {
+    background: transparent !important;
+    color: inherit !important;
+    border: 0 !important;
+    padding: 0 !important;
+    font-family: inherit;
+    font-size: inherit;
+    white-space: inherit;
+  }
+
+  code {
+    background: #f3efe6 !important;
+    color: #111111 !important;
+    border: 0.5pt solid #d8d0c2 !important;
+    border-radius: 3pt;
+    padding: 0.05em 0.25em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: 0.9em;
+  }
+
+  /* Avoid double-styling inline code inside code blocks */
+  pre code {
+    background: transparent !important;
+    border: 0 !important;
+    padding: 0 !important;
+  }
 }

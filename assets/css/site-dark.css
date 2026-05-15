@@ -1923,3 +1923,41 @@ body a[href^="https://creativecommons.org"]::after {
 .fullwidth-image a {
   color: #bbb;
 }
+
+/* =========================================================
+   23. Code Blocks
+   ========================================================= */
+
+pre.highlight,
+.highlight pre,
+pre {
+  background: #1f2421;
+  border: 1px solid #3a423d;
+  border-radius: 6px;
+  padding: 1rem;
+  overflow-x: auto;
+  margin: 1.5rem 0;
+  color: #e8e3d6;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  line-height: 1.45;
+}
+
+pre.highlight code,
+.highlight pre code,
+pre code {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 0.95rem;
+  white-space: pre;
+}
+
+code {
+  background: #2b312d;
+  color: #f1eadc;
+  border: 1px solid #3a423d;
+  border-radius: 4px;
+  padding: 0.1rem 0.3rem;
+}

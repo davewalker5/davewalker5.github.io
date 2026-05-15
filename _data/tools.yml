@@ -26,3 +26,7 @@
   category: "tools"
   description: Tool for exploring ODE models and visualising their behaviour over time
   link: https://github.com/davewalker5/OdeSolver
+- title: TI-84 Python Applications
+  category: "tools"
+  description: Scientific computing, modelling, and numerical experiments on the TI-84 Plus CE-T Python Calculator
+  link: https://github.com/davewalker5/ti-84-python
