@@ -59,7 +59,7 @@
         "This is the one true URL for this page."
 
     It should ALWAYS resolve to:
-        https://www.davidwalker.uk/...
+        https://www.fieldnotesjournal.uk/...
   
   {%- endcomment -%}
   <link rel="canonical" href="{{ page.url | absolute_url }}">
@@ -130,7 +130,7 @@
     "@context": "https://schema.org",
     "@type": "Person",
     "name": "David Walker",
-    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "url": "{{ site.url | default: 'https://www.fieldnotesjournal.uk' }}",
     "sameAs": [
       "https://github.com/davewalker5"
     ]
@@ -142,7 +142,7 @@
     "@context": "https://schema.org",
     "@type": "WebSite",
     "name": "{{ site.title | default: 'Field Notes Journal' }}",
-    "url": "{{ site.url | default: 'https://www.davidwalker.uk' }}",
+    "url": "{{ site.url | default: 'https://www.fieldnotesjournal.uk' }}",
     "description": "{{ site.description | default: 'Personal observational reports and datasets covering wildlife, aircraft, microscopy, weather, and reference data.' | jsonify | remove_first: '"' | remove: '"' }}"
   }
   </script>
@@ -156,37 +156,43 @@
         "@type": "ListItem",
         "position": 1,
         "name": "Home",
-        "item": "https://davidwalker.uk/"
+        "item": "https://fieldnotesjournal.uk/"
       },
       {
         "@type": "ListItem",
         "position": 2,
-        "name": "Aircraft Sighting Reports",
-        "item": "https://davidwalker.uk/aircraft/"
+        "name": "Wildlife Reports and Projecst",
+        "item": "https://fieldnotesjournal.uk/wildlife/"
       },
       {
         "@type": "ListItem",
         "position": 3,
-        "name": "Microscopy Investigations",
-        "item": "https://davidwalker.uk/microscopy/"
+        "name": "Travel Journal",
+        "item": "https://fieldnotesjournal.uk/travel/"
       },
       {
         "@type": "ListItem",
         "position": 4,
-        "name": "Weather Reports",
-        "item": "https://davidwalker.uk/weather/"
+        "name": "Microscopy Investigations",
+        "item": "https://fieldnotesjournal.uk/microscopy/"
       },
       {
         "@type": "ListItem",
         "position": 5,
-        "name": "Wildlife Reports",
-        "item": "https://davidwalker.uk/wildlife/"
+        "name": "Aircraft Sighting Reports",
+        "item": "https://fieldnotesjournal.uk/aircraft/"
       },
       {
         "@type": "ListItem",
         "position": 6,
+        "name": "Weather Reports",
+        "item": "https://fieldnotesjournal.uk/weather/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 7,
         "name": "Reference Data",
-        "item": "https://davidwalker.uk/reference/"
+        "item": "https://fieldnotesjournal.uk/reference/"
       }
     ]
   }

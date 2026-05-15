@@ -1,4 +1,4 @@
-[![Website](https://img.shields.io/badge/site-live-2ea44f)](https://davidwalker.uk)
+[![Website](https://img.shields.io/badge/site-live-2ea44f)](https://fieldnotesjournal.uk)
 [![MIT License](https://img.shields.io/badge/code-MIT-blue.svg)](LICENSE)
 [![CC BY 4.0](https://img.shields.io/badge/content-CC%20BY%204.0-lightgrey.svg)](LICENSE-CONTENT.md)
 ![Type](https://img.shields.io/badge/type-data--publishing_project-informational)
@@ -17,7 +17,7 @@ This repository contains:
 
 The site is published via GitHub Pages at:
 
-**https://davidwalker.uk**
+**https://fieldnotesjournal.uk**
 
 ---
 
