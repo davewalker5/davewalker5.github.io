@@ -1,0 +1,32 @@
+<nav class="site-nav">
+  <div class="nav-left">
+    <a href="{{ '/' | relative_url }}" class="nav-home{% if page.url == '/' %} active{% endif %}">
+      <svg class="nav-home-icon" viewBox="0 0 24 24" aria-hidden="true">
+        <path d="M3 10.5L12 3l9 7.5" fill="none" stroke="currentColor" stroke-width="1.6"/>
+        <path d="M5 10v9h14v-9" fill="none" stroke="currentColor" stroke-width="1.6"/>
+      </svg>
+      <span>Home</span>
+    </a>
+  </div>
+
+  <div class="nav-right">
+    <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' or page.layout == 'post' %} class="active"{% endif %}>Blog</a>
+    <a href="{{ '/wildlife/' | relative_url }}"{% if page.url contains '/wildlife/' and page.layout != 'post' %} class="active"{% endif %}>Wildlife</a>
+    <a href="{{ '/travel/' | relative_url }}"{% if page.url contains '/travel/' and page.layout != 'post' %} class="active"{% endif %}>Travel</a>
+
+    <span class="nav-sep">&middot;</span>
+
+    <a href="https://pixelfed.social/davewalker5" rel="me">Photography</a>
+    <a href="{{ '/microscopy/' | relative_url }}"{% if page.url contains '/microscopy/' and page.layout != 'post' %} class="active"{% endif %}>Microscopy</a>
+
+    <span class="nav-sep">&middot;</span>
+
+    <a href="{{ '/aircraft/' | relative_url }}"{% if page.url contains '/aircraft/' and page.layout != 'post' %} class="active"{% endif %}>Aircraft</a>
+    <a href="{{ '/weather/' | relative_url }}"{% if page.url contains '/weather/' and page.layout != 'post' %} class="active"{% endif %}>Weather</a>
+
+    <span class="nav-sep">&middot;</span>
+
+    <a href="{{ '/reference/' | relative_url }}"{% if page.url contains '/reference/' and page.layout != 'post' %} class="active"{% endif %}>Reference</a>
+    <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' and page.layout != 'post' %} class="active"{% endif %}>About</a>
+  </div>
+</nav>

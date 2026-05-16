@@ -1,0 +1,61 @@
+---
+layout: default
+title: Annual Wildlife Species Richness by Country
+description: Annual wildlife species richness reports by country, based on personal field records, with report links and downloadable data.
+breadcrumb: Annual Species Richness
+dataset: true
+---
+
+<h1>Annual Wildlife Species Richness by Country</h1>
+<p>
+This page provides access to annual species richness reports by country, based on personal field records. Each entry links to a generated report for the selected year together with the associated downloadable data.
+</p>
+<h2>Available Reports</h2>
+<p class="muted">
+These reports summarise annual species richness from the author's wildlife records across the countries represented in the dataset.
+</p>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- assign pages = site.static_files | where: "name", "richness.html" -%}
+    {%- assign rows = "" | split: "" -%}
+    {%- for f in pages -%}
+      {%- if f.path contains '/wildlife/reports/' and f.path contains '/richness/' -%}
+        {%- assign parts = f.path | split:'/' -%}
+        {%- assign country  = parts[3] -%}
+        {%- assign year     = parts[5] -%}
+        {%- capture rec -%}{{ country }}|{{ year }}{%- endcapture -%}
+        {%- assign rows = rows | push: rec -%}
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- assign rows = rows | uniq | sort -%}
+    {%- for r in rows -%}
+      {%- assign p = r | split:'|' -%}
+      {%- assign country = p[0] -%}
+      {%- assign year = p[1] -%}
+      <tr>
+        <td>{{ country }}</td>
+        <td>
+          <a href="{{ site.baseurl }}/wildlife/reports/{{ country | uri_escape }}/richness/{{ year }}/richness.html">
+            {{ year }}
+          </a>
+        </td>
+        <td>
+          <a href="{{ site.baseurl }}/wildlife/reports/{{ country | uri_escape }}/richness/{{ year }}/richness.xlsx" download>
+            Download XLSX
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author's own wildlife records and summarise long-term observations of species occurrences over time.</i>

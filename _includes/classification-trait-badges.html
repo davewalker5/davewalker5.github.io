@@ -1,0 +1,16 @@
+{% assign item = include.item %}
+{% assign traits = item.classification.traits %}
+
+<section class="classification-traits">
+  <h2>Traits</h2>
+
+  {% if traits and traits.size > 0 %}
+    <ul class="trait-badge-list" aria-label="Classification traits">
+      {% for trait in traits %}
+        <li class="trait-badge">{{ trait | replace: '_', ' ' }}</li>
+      {% endfor %}
+    </ul>
+  {% else %}
+    <p>No traits recorded.</p>
+  {% endif %}
+</section>

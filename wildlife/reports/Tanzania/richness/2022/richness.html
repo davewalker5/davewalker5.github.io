@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2640e018446df6ebc03a175d089cb734 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2640e018446df6ebc03a175d089cb734" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_2640e018446df6ebc03a175d089cb734 = L.map(
+                "map_2640e018446df6ebc03a175d089cb734",
+                {
+                    center: [-3.3628675555555554, 36.015738666666664],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 6,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_30e6ba2a771d99be194bc1ac1b2d29ab = L.tileLayer(
+                "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 20,
+  "maxNativeZoom": 20,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors \u0026copy; \u003ca href=\"https://carto.com/attributions\"\u003eCARTO\u003c/a\u003e",
+  "subdomains": "abcd",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_30e6ba2a771d99be194bc1ac1b2d29ab.addTo(map_2640e018446df6ebc03a175d089cb734);
+        
+    
+            var marker_cluster_8b3a222524f47c00d4ec3ba963abb5be = L.markerClusterGroup(
+                {
+}
+            );
+        
+    
+            var circle_marker_0b6acd0e79f63f1c92602d7d60adf464 = L.circleMarker(
+                [-3.389746, 36.684422],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 6.463414634146341, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_a34a0e1a004cfac7680c8c7f090ebfa8 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_bfc360c587965c431c158d5060102846 = $(`<div id="html_bfc360c587965c431c158d5060102846" style="width: 100.0%; height: 100.0%;"><b>Arusha</b><br>Richness: 6</div>`)[0];
+                popup_a34a0e1a004cfac7680c8c7f090ebfa8.setContent(html_bfc360c587965c431c158d5060102846);
+            
+        
+
+        circle_marker_0b6acd0e79f63f1c92602d7d60adf464.bindPopup(popup_a34a0e1a004cfac7680c8c7f090ebfa8)
+        ;
+
+        
+    
+    
+            var circle_marker_c279baa7ba0a320045a2dddb52569bb5 = L.circleMarker(
+                [-3.249893, 36.750032],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 9.146341463414634, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_7de6a030eb2f5d319bbbd22c6d915256 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_7a9ac2d79538524e09cc166b84a811ed = $(`<div id="html_7a9ac2d79538524e09cc166b84a811ed" style="width: 100.0%; height: 100.0%;"><b>Arusha National Park</b><br>Richness: 17</div>`)[0];
+                popup_7de6a030eb2f5d319bbbd22c6d915256.setContent(html_7a9ac2d79538524e09cc166b84a811ed);
+            
+        
+
+        circle_marker_c279baa7ba0a320045a2dddb52569bb5.bindPopup(popup_7de6a030eb2f5d319bbbd22c6d915256)
+        ;
+
+        
+    
+    
+            var circle_marker_9998c3e0a1878a81950cf2c54ffb21f7 = L.circleMarker(
+                [-3.606476, 35.808737],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.78048780487805, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_95c8a67eab7a2b47d08d8254f8cd671a = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_5c53dd21a5f2c4bf26181c35215f1917 = $(`<div id="html_5c53dd21a5f2c4bf26181c35215f1917" style="width: 100.0%; height: 100.0%;"><b>Lake Manyara National Park</b><br>Richness: 36</div>`)[0];
+                popup_95c8a67eab7a2b47d08d8254f8cd671a.setContent(html_5c53dd21a5f2c4bf26181c35215f1917);
+            
+        
+
+        circle_marker_9998c3e0a1878a81950cf2c54ffb21f7.bindPopup(popup_95c8a67eab7a2b47d08d8254f8cd671a)
+        ;
+
+        
+    
+    
+            var circle_marker_bd771156c0a12da821392ab52fe6afdf = L.circleMarker(
+                [-3.15582, 35.588331],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.097560975609756, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_216ba7fe4476eaa582c15f15d9b099f5 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_464e49cc79044774328d0703e38fe852 = $(`<div id="html_464e49cc79044774328d0703e38fe852" style="width: 100.0%; height: 100.0%;"><b>Ngorongoro Crater</b><br>Richness: 25</div>`)[0];
+                popup_216ba7fe4476eaa582c15f15d9b099f5.setContent(html_464e49cc79044774328d0703e38fe852);
+            
+        
+
+        circle_marker_bd771156c0a12da821392ab52fe6afdf.bindPopup(popup_216ba7fe4476eaa582c15f15d9b099f5)
+        ;
+
+        
+    
+    
+            var circle_marker_c0999df4ae7866f2909828b3d910db34 = L.circleMarker(
+                [-2.333687, 34.83328],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_668b5495419755ceb3d15f7aabe129b7 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_68aeaf1e7c1b23ff4636a562287473d8 = $(`<div id="html_68aeaf1e7c1b23ff4636a562287473d8" style="width: 100.0%; height: 100.0%;"><b>Serengeti National Park</b><br>Richness: 41</div>`)[0];
+                popup_668b5495419755ceb3d15f7aabe129b7.setContent(html_68aeaf1e7c1b23ff4636a562287473d8);
+            
+        
+
+        circle_marker_c0999df4ae7866f2909828b3d910db34.bindPopup(popup_668b5495419755ceb3d15f7aabe129b7)
+        ;
+
+        
+    
+    
+            var circle_marker_bf4fcc95c93d7d598f7bf6bb529a6e56 = L.circleMarker(
+                [-1.987747, 34.774225],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.0, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_13e96a154474f5d2982172666653f569 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_85ff28a5b6d0461931b5b6ce988af257 = $(`<div id="html_85ff28a5b6d0461931b5b6ce988af257" style="width: 100.0%; height: 100.0%;"><b>Serengeti National Park (Central)</b><br>Richness: 41</div>`)[0];
+                popup_13e96a154474f5d2982172666653f569.setContent(html_85ff28a5b6d0461931b5b6ce988af257);
+            
+        
+
+        circle_marker_bf4fcc95c93d7d598f7bf6bb529a6e56.bindPopup(popup_13e96a154474f5d2982172666653f569)
+        ;
+
+        
+    
+    
+            var circle_marker_f65bfaee6fffcc4ea8b6e85e313c1a8b = L.circleMarker(
+                [-2.412276, 34.369786],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.26829268292683, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_23edb31a2c62807ef2b01c69a0df82ff = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_44a88e34ce7c3138ee138e40b4d3dac9 = $(`<div id="html_44a88e34ce7c3138ee138e40b4d3dac9" style="width: 100.0%; height: 100.0%;"><b>Serengeti National Park (Western Corridor)</b><br>Richness: 38</div>`)[0];
+                popup_23edb31a2c62807ef2b01c69a0df82ff.setContent(html_44a88e34ce7c3138ee138e40b4d3dac9);
+            
+        
+
+        circle_marker_f65bfaee6fffcc4ea8b6e85e313c1a8b.bindPopup(popup_23edb31a2c62807ef2b01c69a0df82ff)
+        ;
+
+        
+    
+    
+            var circle_marker_803476f1d8d783898f9d592157083f0c = L.circleMarker(
+                [-3.999721, 35.979958],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.048780487804878, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_1bd79927314a7e29a7a1a0006a31a779 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_f90770a6b76dc5ad4d39bdde61d80e47 = $(`<div id="html_f90770a6b76dc5ad4d39bdde61d80e47" style="width: 100.0%; height: 100.0%;"><b>Tarangire National Park</b><br>Richness: 33</div>`)[0];
+                popup_1bd79927314a7e29a7a1a0006a31a779.setContent(html_f90770a6b76dc5ad4d39bdde61d80e47);
+            
+        
+
+        circle_marker_803476f1d8d783898f9d592157083f0c.bindPopup(popup_1bd79927314a7e29a7a1a0006a31a779)
+        ;
+
+        
+    
+    
+            var circle_marker_5aec28e1bb0a12a0e09174a1107f1a52 = L.circleMarker(
+                [-6.130442, 39.352877],
+                {"bubblingMouseEvents": true, "color": "blue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "green", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5.487804878048781, "stroke": true, "weight": 3}
+            ).addTo(marker_cluster_8b3a222524f47c00d4ec3ba963abb5be);
+        
+    
+        var popup_0b8410649e75c15617472e4251c8b307 = L.popup({
+  "maxWidth": "100%",
+});
+
+        
+            
+                var html_d923a87ba1ebda7339298106b5e9cb5d = $(`<div id="html_d923a87ba1ebda7339298106b5e9cb5d" style="width: 100.0%; height: 100.0%;"><b>Zanzibar</b><br>Richness: 2</div>`)[0];
+                popup_0b8410649e75c15617472e4251c8b307.setContent(html_d923a87ba1ebda7339298106b5e9cb5d);
+            
+        
+
+        circle_marker_5aec28e1bb0a12a0e09174a1107f1a52.bindPopup(popup_0b8410649e75c15617472e4251c8b307)
+        ;
+
+        
+    
+    
+            marker_cluster_8b3a222524f47c00d4ec3ba963abb5be.addTo(map_2640e018446df6ebc03a175d089cb734);
+        
+</script>
+</html>

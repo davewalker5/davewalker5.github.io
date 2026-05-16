@@ -1,0 +1,48 @@
+/* === Force light theme across the entire site ===
+   - Always render on a white background
+   - Prevent dark-mode auto-adjustment in browsers
+   - Keep text legible on white
+*/
+html, body {
+  background-color: #fff !important;
+  color-scheme: light; /* Tell the UA this page is light-themed */
+}
+
+/* Ensure base text and links remain readable on white */
+body {
+  color: #111; /* adjust if your theme uses another base color */
+}
+a { color: #0366d6; }
+a:hover { color: #024ea3; }
+
+/* If you previously added dark-mode rules, neutralize them here */
+@media (prefers-color-scheme: dark) {
+  html, body {
+    background-color: #fff !important;
+    color: #111 !important;
+  }
+  /* Optional: keep tables/cards white too */
+  .data-table, .card, .panel, .content, main {
+    background: #fff;
+  }
+}
+
+/* Optional: if any components were styled dark explicitly */
+/* .navbar, .site-nav, header, footer {
+  background: inherit;
+} */
+
+/* Make the navbar background slightly transparent */
+.site-nav {
+  background-color: rgba(255, 255, 255, 0.30);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Keep text and icons fully opaque */
+.site-nav a,
+.site-nav svg {
+  color: #fff !important;
+}
+
