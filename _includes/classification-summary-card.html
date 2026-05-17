@@ -1,0 +1,52 @@
+{% assign item = include.item %}
+{% assign c = item.classification %}
+
+<section class="classification-card">
+  <p class="classification-card__label">Summary</p>
+
+  <h2>{{ item.species }}</h2>
+
+  {% if c.primary_class %}
+    <p class="classification-card__primary">
+      {{ c.primary_class | replace: '_', ' ' | capitalize }}
+    </p>
+  {% endif %}
+
+  {% if item.summary %}
+    <p class="classification-card__summary">{{ item.summary }}</p>
+  {% endif %}
+
+  <dl class="classification-card__facts">
+    {% if c.confidence %}
+      <dt>Confidence</dt>
+      <dd>{{ c.confidence | capitalize }}</dd>
+    {% endif %}
+
+    {% if item.fit.score %}
+      <dt>Fit score</dt>
+      <dd>{{ item.fit.score }}</dd>
+    {% endif %}
+
+    {% if item.derived_metrics.forcing_peak_label %}
+      <dt>Peak</dt>
+      <dd>{{ item.derived_metrics.forcing_peak_label }}</dd>
+    {% elsif item.derived_metrics.winter_peak_label %}
+      <dt>Winter peak</dt>
+      <dd>{{ item.derived_metrics.winter_peak_label }}</dd>
+    {% elsif item.derived_metrics.target_peak_label %}
+      <dt>Peak detectability</dt>
+      <dd>{{ item.derived_metrics.target_peak_label }}</dd>
+    {% endif %}
+
+    {% if item.derived_metrics.season_start_label and item.derived_metrics.season_end_label %}
+      <dt>Season</dt>
+      <dd>{{ item.derived_metrics.season_start_label }}–{{ item.derived_metrics.season_end_label }}</dd>
+    {% elsif item.derived_metrics.target_trough_label %}
+      <dt>Lowest detectability</dt>
+      <dd>{{ item.derived_metrics.target_trough_label }}</dd>
+    {% elsif item.derived_metrics.summer_low_label %}
+      <dt>Summer low</dt>
+      <dd>{{ item.derived_metrics.summer_low_label }}</dd>
+    {% endif %}
+  </dl>
+</section>

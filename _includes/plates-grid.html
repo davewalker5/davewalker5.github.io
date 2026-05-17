@@ -1,0 +1,31 @@
+{% if include.plates and include.plates.size > 0 %}
+  {% if include.section and include.section != "" %}
+<h2>{{ include.section }}</h2>
+  {% endif %}
+
+  {% if include.subsection and include.subsection != "" %}
+<h3>{{ include.subsection }}</h3>
+  {% endif %}
+
+  {% assign grid_id = include.grid_id | default: "" %}
+  {% assign grid_series = include.series | default: "" %}
+  {% assign image_loading = include.image_loading | default: "lazy" %}
+  {% assign image_src_type = include.image_src_type | default: "lightbox" %}
+  {% assign hidden = include.hidden | default: false %}
+
+  <div
+    class="plates-grid-outer no-print{% if hidden %} is-hidden{% endif %}"
+    {% if grid_id != "" %}id="{{ grid_id }}"{% endif %}
+    {% if grid_series != "" %}data-series="{{ grid_series | strip | escape }}"{% endif %}
+  >
+    <div class="plates-grid-inner">
+      {% for row in include.plates %}
+        {% include plate-card.html
+          row=row
+          print_mode=false
+          image_loading=image_loading
+          image_src_type=image_src_type %}
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}

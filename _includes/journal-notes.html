@@ -1,0 +1,10 @@
+{% assign count = include.notes | size %}
+{% if count > 0 %}
+<hr/>
+<h2>Field Notes</h2>
+<ul>
+{% for note in include.notes %}
+    <li>{{ note.title }} - {{ note.text }}</li>
+{% endfor %}
+</ul>
+{% endif %}

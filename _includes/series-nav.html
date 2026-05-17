@@ -1,0 +1,63 @@
+{% if page.series %}
+  {% assign series_posts = site.posts | where: "series", page.series | sort: "series_order" %}
+  {% assign current_index = nil %}
+
+  {% for post in series_posts %}
+    {% if post.url == page.url %}
+      {% assign current_index = forloop.index0 %}
+    {% endif %}
+  {% endfor %}
+
+  {% if current_index != nil %}
+    {% assign prev_index = current_index | minus: 1 %}
+    {% assign next_index = current_index | plus: 1 %}
+
+    {% if prev_index >= 0 %}
+      {% assign prev_post = series_posts[prev_index] %}
+    {% endif %}
+
+    {% if next_index < series_posts.size %}
+      {% assign next_post = series_posts[next_index] %}
+    {% endif %}
+  {% endif %}
+{% endif %}
+
+<nav class="entry-nav" aria-label="Post navigation">
+
+  {% if page.series %}
+  <section class="series-nav">
+    <div class="series-nav-header">
+      <span class="series-nav-label">Series</span>
+      <span class="series-nav-title">{{ page.series }}</span>
+      <span class="series-nav-position">Part {{ current_index | plus: 1 }} of {{ series_posts.size }}</span>
+    </div>
+
+    <div class="series-nav-links">
+      <div class="series-nav-item series-nav-item-prev">
+        {% if prev_post %}
+          <span class="series-nav-direction">← Previous</span>
+          <a href="{{ prev_post.url | relative_url }}">{{ prev_post.title }}</a>
+        {% else %}
+          <span class="series-nav-direction series-nav-direction-muted">← Previous</span>
+          <span class="series-nav-empty">Start of series</span>
+        {% endif %}
+      </div>
+
+      <div class="series-nav-item series-nav-item-next">
+        {% if next_post %}
+          <span class="series-nav-direction">Next &rarr;</span>
+          <a href="{{ next_post.url | relative_url }}">{{ next_post.title }}</a>
+        {% else %}
+          <span class="series-nav-direction series-nav-direction-muted">Next &rarr;</span>
+          <span class="series-nav-empty">End of series</span>
+        {% endif %}
+      </div>
+    </div>
+  </section>
+  {% endif %}
+
+  <div class="entry-nav-back">
+    <a href="{{ '/blog/' | relative_url }}">← Return to blog home page</a>
+  </div>
+
+</nav>

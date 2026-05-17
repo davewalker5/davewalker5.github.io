@@ -1,0 +1,263 @@
+- common_name: "Brandt's"
+  slug: "brandts-bat"
+  scientific_name: "Myotis brandtii"
+  emergence:
+    min: 20
+    max: 60
+  frequency:
+    min: 45
+    max: 50
+  detection:
+    min: 45
+    max: 48
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["woodland", "edge", "garden"]
+  notes: "Very similar to whiskered; clutter forager"
+
+- common_name: "Brown Long-Eared"
+  slug: "brown-long-eared-bat"
+  scientific_name: "Plecotus auritus"
+  emergence:
+    min: 30
+    max: 90
+  frequency:
+    min: 25
+    max: 50
+  detection:
+    min: 25
+    max: 50
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["woodland", "garden", "buildings"]
+  notes: "Often very quiet; may hear wing rustle more than calls"
+
+- common_name: "Daubenton's"
+  slug: "daubentons-bat"
+  scientific_name: "Myotis daubentonii"
+  emergence:
+    min: 10
+    max: 40
+  frequency:
+    min: 35
+    max: 85
+  detection:
+    min: 45
+    max: 50
+  hibernation:
+    start:
+      min: Nov
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["water", "rivers", "lakes"]
+  notes: "Strong over water; buzzing near surface"
+
+- common_name: "Greater Horseshoe"
+  slug: "greater-horseshoe-bat"
+  scientific_name: "Rhinolophus ferrumequinum"
+  emergence:
+    min: 20
+    max: 60
+  frequency:
+    min: 80
+    max: 85
+  detection:
+    min: 80
+    max: 83
+  hibernation:
+    start:
+      min: Oct
+      max: Oct
+    end:
+      min: Apr
+      max: May
+  habitat: ["woodland", "pasture", "buildings"]
+  notes: "Constant frequency; very stable tone"
+
+- common_name: "Lesser Horseshoe"
+  slug: "lesser-horseshoe-bat"
+  scientific_name: "Rhinolophus hipposideros"
+  emergence:
+    min: 10
+    max: 40
+  frequency:
+    min: 108
+    max: 115
+  detection:
+    min: 105
+    max: 110
+  hibernation:
+    start:
+      min: Oct
+      max: Oct
+    end:
+      min: Apr
+      max: May
+  habitat: ["woodland", "buildings", "sheltered valleys"]
+  notes: "High, pure tone; often first detected as steady whistle"
+
+- common_name: "Natterer's"
+  slug: "natterers-bat"
+  scientific_name: "Myotis nattereri"
+  emergence:
+    min: 20
+    max: 60
+  frequency:
+    min: 45
+    max: 50
+  detection:
+    min: 45
+    max: 48
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["woodland", "edge", "garden"]
+  notes: "Quiet, clutter specialist; often hard to detect"
+
+- common_name: "Noctule"
+  slug: "noctule-bat"
+  scientific_name: "Nyctalus noctula"
+  emergence:
+    min: -10
+    max: 10
+  frequency:
+    min: 20
+    max: 45
+  detection:
+    min: 22
+    max: 28
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["open", "parkland", "above canopy"]
+  notes: "Often before sunset; loud, fast commuting"
+
+- common_name: "Common Pipistrelle"
+  slug: "common-pipistrelle"
+  scientific_name: "Pipistrellus pipistrellus"
+  emergence:
+    min: 5
+    max: 30
+  frequency:
+    min: 20
+    max: 30
+  detection:
+    min: 20
+    max: 30
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["urban", "garden", "edge"]
+  notes: "Social / commuting"
+
+- common_name: "Common Pipistrelle"
+  slug: "common-pipistrelle-hunting"
+  scientific_name: "Pipistrellus pipistrellus"
+  emergence:
+    min: 10
+    max: 40
+  frequency:
+    min: 40
+    max: 55
+  detection:
+    min: 40
+    max: 50
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["edge", "woodland", "garden"]
+  notes: "Hunting; feeding buzz with lower sweep audible"
+
+- common_name: "Soprano Pipistrelle"
+  slug: "soprano-pipistrelle"
+  scientific_name: "Pipistrellus pygmaeus"
+  emergence:
+    min: 0
+    max: 30
+  frequency:
+    min: 50
+    max: 65
+  detection:
+    min: 50
+    max: 60
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["water", "rivers", "wetland"]
+  notes: "Strong around water"
+
+- common_name: "Soprano Pipistrelle"
+  slug: "soprano-pipistrelle-hunting"
+  scientific_name: "Pipistrellus pygmaeus"
+  emergence:
+    min: 10
+    max: 40
+  frequency:
+    min: 55
+    max: 80
+  detection:
+    min: 55
+    max: 80
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["water", "wetland", "edge"]
+  notes: "Hunting; higher, sharper than common pip"
+
+- common_name: "Whiskered"
+  slug: "whiskered-bat"
+  scientific_name: "Myotis mystacinus"
+  emergence:
+    min: 20
+    max: 60
+  frequency:
+    min: 45
+    max: 50
+  detection:
+    min: 45
+    max: 48
+  hibernation:
+    start:
+      min: Oct
+      max: Nov
+    end:
+      min: Mar
+      max: Apr
+  habitat: ["woodland", "edge", "garden"]
+  notes: "Indistinguishable from Brandt’s on heterodyne"

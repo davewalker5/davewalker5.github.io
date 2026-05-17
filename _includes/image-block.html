@@ -1,0 +1,154 @@
+{% assign count = include.images | size %}
+
+{% if count == 1 %}
+  <div class="blog-image-grid blog-image-grid--1-col">
+    {% for img in include.images %}
+      <figure>
+        <img src="{{ include.assets | append: img.name | relative_url }}"
+             alt="{{ img.alt | escape }}"
+             style="max-width: 350px;"
+             loading="lazy"
+             decoding="async">
+
+        {% if img.caption or img.credit %}
+        <figcaption>
+          {% if img.caption %}
+            <span class="caption">{{ img.caption }}</span>
+          {% endif %}
+
+          {% if img.credit %}
+            <span class="credit">
+              {{ img.credit }}
+              {% if img.license %}
+                (
+                {% if img.license_link %}
+                  <a href="{{ img.license_link }}" rel="license noopener" target="_blank">
+                    {{ img.license }}
+                  </a>
+                {% else %}
+                  {{ img.license }}
+                {% endif %}
+                )
+              {% endif %}
+            </span>
+
+            <span class="credit-meta">
+              {% if img.source and img.source != "" %}
+                <a href="{{ img.source }}" target="_blank" rel="noopener">Source</a> -
+              {% endif %}
+              {% assign credit_lc = img.credit | downcase %}
+              {% unless credit_lc contains "field notes journal" %}
+                No changes made
+              {% endunless %}
+            </span>
+          {% endif %}
+        </figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+
+{% elsif count == 2 %}
+  <div class="blog-image-grid blog-image-grid--2-col">
+    {% for img in include.images %}
+      <figure>
+        <img src="{{ include.assets | append: img.name | relative_url }}"
+             alt="{{ img.alt | escape }}"
+             style="max-width: 350px;"
+             loading="lazy"
+             decoding="async">
+
+        {% if img.caption or img.credit %}
+        <figcaption>
+          {% if img.caption %}
+            <span class="caption">{{ img.caption }}</span>
+          {% endif %}
+
+          {% if img.credit %}
+            <span class="credit">
+              {{ img.credit }}
+              {% if img.license %}
+                (
+                {% if img.license_link %}
+                  <a href="{{ img.license_link }}" rel="license noopener" target="_blank">
+                    {{ img.license }}
+                  </a>
+                {% else %}
+                  {{ img.license }}
+                {% endif %}
+                )
+              {% endif %}
+            </span>
+
+            <span class="credit-meta">
+              {% if img.source and img.source != "" %}
+                <a href="{{ img.source }}" target="_blank" rel="noopener">Source</a> -
+              {% endif %}
+              {% assign credit_lc = img.credit | downcase %}
+              {% unless credit_lc contains "field notes journal" %}
+                No changes made
+              {% endunless %}
+            </span>
+          {% endif %}
+        </figcaption>
+        {% endif %}
+      </figure>
+    {% endfor %}
+  </div>
+
+{% else %}
+  {% for img in include.images %}
+    {% assign mod = forloop.index0 | modulo: 3 %}
+    {% if mod == 0 %}
+      <div class="blog-image-grid blog-image-grid--3-col">
+    {% endif %}
+
+    <figure>
+      <img src="{{ include.assets | append: img.name | relative_url }}"
+           alt="{{ img.alt | escape }}"
+           style="max-width: 350px;"
+           loading="lazy"
+           decoding="async">
+
+      {% if img.caption or img.credit %}
+      <figcaption>
+        {% if img.caption %}
+          <span class="caption">{{ img.caption }}</span>
+        {% endif %}
+
+        {% if img.credit %}
+          <span class="credit">
+            {{ img.credit }}
+            {% if img.license %}
+              (
+              {% if img.license_link %}
+                <a href="{{ img.license_link }}" rel="license noopener" target="_blank">
+                  {{ img.license }}
+                </a>
+              {% else %}
+                {{ img.license }}
+              {% endif %}
+              )
+            {% endif %}
+          </span>
+
+          <span class="credit-meta">
+            {% if img.source and img.source != "" %}
+              <a href="{{ img.source }}" target="_blank" rel="noopener">Source</a> -
+            {% endif %}
+            {% assign credit_lc = img.credit | downcase %}
+            {% unless credit_lc contains "field notes journal" %}
+              No changes made
+            {% endunless %}
+          </span>
+        {% endif %}
+      </figcaption>
+      {% endif %}
+    </figure>
+
+    {% assign close_mod = forloop.index | modulo: 3 %}
+    {% if close_mod == 0 or forloop.last %}
+      </div>
+    {% endif %}
+  {% endfor %}
+{% endif %}
