@@ -1,0 +1,56 @@
+<table class="data-table">
+<thead>
+    <tr>
+    <th>Area</th>
+    <th>Data</th>
+    <th>Reference</th>
+    </tr>
+</thead>
+<tbody>
+{% assign rows = site.data.reference_links | where: "category", include.category | sort: "title" | default: empty %}
+{% if rows and rows.size > 0 %}
+    {% for r in rows %}
+    {% assign href = r.url %}
+    {% assign url_out = nil %}
+    {% assign is_download = r.download | default: false %}
+
+    {% if href %}
+        {% if href contains '://' %}
+        {% assign url_out = href %}
+        {% else %}
+        {% assign url_out = href | relative_url %}
+        {% endif %}
+
+        {% assign ext = href | downcase | split: '.' | last %}
+        {% if href contains '/_data/' or ext == 'csv' or ext == 'txt' or ext == 'json' or ext == 'xlsx' or ext == 'zip' or ext == 'pdf' or ext == 'db' or ext == 'py' %}
+        {% assign is_download = true %}
+        {% endif %}
+    {% endif %}
+
+    <tr>
+        <td>{{ r.area }}</td>
+        <td>
+        {% if url_out %}
+            <a href="{{ url_out }}"{% if is_download %} download{% endif %}>
+            {{ r.title | default: 'View' }}
+            </a>
+        {% else %}
+            <span class="muted">No link</span>
+        {% endif %}
+        </td>
+        <td>
+        {% if r.reference %}
+            <code>{{ r.reference }}</code>
+        {% else %}
+            <span class="muted">&mdash;</span>
+        {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+{% else %}
+    <tr>
+        <td colspan="3" class="muted">No reference data entries yet. Add some in <code>_data/reference_links.yml</code>.</td>
+    </tr>
+{% endif %}
+</tbody>
+</table>

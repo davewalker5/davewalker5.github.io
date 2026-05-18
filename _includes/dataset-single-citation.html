@@ -1,0 +1,98 @@
+{% if page.dataset %}
+
+{% assign dataset_version = site.time | date: "%Y.%m.%d" %}
+
+{% assign path_parts = page.url | split: "/" %}
+{% assign section = path_parts[1] %}
+{% assign subsection = path_parts[2] | replace: ".html", "" %}
+
+{% case section %}
+  {% when "wildlife" %}
+    {% assign section_code = "WL" %}
+  {% when "aircraft" %}
+    {% assign section_code = "AC" %}
+  {% when "microscopy" %}
+    {% assign section_code = "MICRO" %}
+  {% when "weather" %}
+    {% assign section_code = "WE" %}
+  {% else %}
+    {% assign section_code = "FN" %}
+{% endcase %}
+
+{% assign subsection_code = subsection | upcase %}
+
+{% assign dataset_id = "FN-" | append: section_code %}
+
+{% if subsection_code and subsection_code != "" %}
+  {% assign dataset_id = dataset_id | append: "-" | append: subsection_code %}
+{% endif %}
+
+{% assign dataset_url = page.url | absolute_url %}
+
+{% capture citation_text %}
+Walker, David. {{ page.title }}. Field Notes Journal. ID {{ dataset_id }}. Version {{ dataset_version }}. {{ dataset_url }}
+{% endcapture %}
+
+<div class="dataset-citation">
+  <h3>Cite this dataset</h3>
+
+  <p class="dataset-citation-credit">
+    You are welcome to reuse or reproduce this material under the terms of the <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons CC BY 4.0</a> licence but please cite it using the reference below, include a link to the licence, and indicate if any changes were made.
+  </p>
+
+  <p class="dataset-citation-main">
+    Walker, David.
+    <em>{{ page.title }}</em>.
+    Field Notes Journal.
+    ID {{ dataset_id }}.
+    Version {{ dataset_version }}.
+    <a href="{{ dataset_url }}">{{ dataset_url }}</a>
+  </p>
+
+  <div class="dataset-actions no-print">
+    <button class="copy-btn" data-copy="{{ citation_text | strip | escape }}">
+      Copy citation
+    </button>
+  </div>
+
+  <div class="dataset-meta">
+    <span><strong>Dataset</strong> {{ dataset_id }}</span>
+    <span><strong>Author</strong> David Walker</span>
+    <span><strong>Publisher</strong> Field Notes Journal</span>
+    <span><strong>Version</strong> {{ dataset_version }}</span>
+  </div>
+
+  <div class="print-only dataset-print-reference">
+    <strong>Reference:</strong>
+    Walker, David. <em>{{ page.title }}</em>. Field Notes Journal. ID {{ dataset_id }}. Version {{ dataset_version }}.
+  </div>
+
+  <div class="no-print">
+    <br/>
+
+    <details>
+      <summary>BibTeX</summary>
+
+<pre class="dataset-bibtex">
+@dataset{ {{- dataset_id | downcase | replace: "-", "_" -}} ,
+  author = {Walker, David},
+  title = { {{- page.title -}} },
+  year = { {{- site.time | date: "%Y" -}} },
+  publisher = {Field Notes Journal},
+  version = { {{- dataset_version -}} },
+  url = { {{- dataset_url -}} }
+}
+</pre>
+
+      <div class="dataset-actions">
+        <button class="copy-btn" data-copy-target="bibtex">
+          Copy BibTeX
+        </button>
+      </div>
+
+    </details>
+  </div>
+
+</div>
+
+{% endif %}
