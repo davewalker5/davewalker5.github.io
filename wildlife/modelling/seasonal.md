@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Resident Detectability Model
-description: A simple model describing species that are present throughout the year, with seasonal variation in detectability arising from behaviour and activity
+title: Seasonal Presence Model
+description: A model representing species whose presence is seasonally constrained, rising into activity, reaching a seasonal peak, and then collapsing back toward absence
 series: modelling
 chapter: 2
 breadcrumb_items:

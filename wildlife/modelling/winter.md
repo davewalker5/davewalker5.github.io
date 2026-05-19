@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Resident Detectability Model
-description: A simple model describing species that are present throughout the year, with seasonal variation in detectability arising from behaviour and activity
+title: Winter Visitor Model
+description: A model representing species that are present only during the winter, with a winter peak, activity spanning the year boundary, and near-absence through spring and summer
 series: modelling
 chapter: 3
 breadcrumb_items:

@@ -1,4 +1,3 @@
-
 - title: "Seasonal Modelling"
   category: "projects"
   description: "Explorations of interpretable seasonal models and the ecological structures emerging from them"
@@ -11,6 +10,10 @@
   category: "projects"
   description: "Explorations of bat echolocation through spectrogram analysis, pulse timing, and behavioural structure"
   link: /wildlife/batcalls/
+- title: "Pocket Ecology"
+  category: "projects"
+  description: "Portable ecological modelling, bat acoustics analysis, and constrained computational natural history tools"
+  link: /wildlife/pocket/
 - title: "Abundance by Location"
   category: "reports"
   description: "Reports showing recorded abundance by country, location, and category, with chart views and downloadable data"
@@ -39,11 +42,3 @@
   category: "recordings"
   description: "A visual library of wildlife audio and video recordings"
   link: "/wildlife/recordings-lightbox.html"
-
-
-
-
-
-
-
-
