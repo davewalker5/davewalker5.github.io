@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Winter Visitor Model
-description: A simple model describing species that are present through the winter months, with activity spanning the year boundary and peaking in mid-winter
+title: Resident Detectability Model
+description: A simple model describing species that are present throughout the year, with seasonal variation in detectability arising from behaviour and activity
 breadcrumb_items:
   - name: Home
     url: /
@@ -17,7 +17,7 @@ breadcrumb_items:
 
 This model represents species that are **present only during the winter period**, with a winter peak, activity spanning the year boundary, and near-absence through spring and summer.
 
-It provides a minimal explanation for patterns seen in the seasonal analysis observations, showing that a small number of simple processes can produce:
+It provides a minimal explanation for patterns seen in the seasonal analysis of observations, showing that a small number of simple processes can produce:
 
 - Winter-centred presence  
 - Distinct arrival phases  
@@ -110,37 +110,6 @@ The shape depends on:
 
 Unlike the seasonal presence model, the season is not bounded within a single part of the calendar year. Instead, it wraps across the year boundary.
 
-## Fitting to Observations
-
-The model can be fitted to observed monthly data.
-
-A parameter fitting process:
-
-- Infers a plausible seasonal structure from the data  
-- Generates candidate parameter sets  
-- Runs the model  
-- Compares simulated and observed curves  
-- Scores the match  
-- Repeats to identify good solutions  
-
-This produces a set of parameters that describe the species’ seasonal behaviour.
-
-These parameters are broadly interpretable:
-
-- **WINTER_PEAK** &rarr; timing of peak presence  
-- **AUTUMN_PEAK** &rarr; timing of arrival  
-- **WINTER_WIDTH** &rarr; concentration of winter activity  
-- **AUTUMN_WIDTH** &rarr; spread of the arrival phase  
-- **SUMMER_DIP / SUMMER_LOW** &rarr; strength and timing of absence  
-
-Together, they provide a compact description of a species’ winter pattern.
-
-As with the other models:
-
-- Parameters are estimates rather than exact values  
-- Different combinations may produce similar curves  
-- Interpretation is most reliable when considered alongside the fitted curve  
-
 ## Normalisation
 
 Model outputs are expressed as a relative measure of activity.
@@ -153,39 +122,27 @@ To allow comparison across species, results are normalised so that:
 
 This focuses attention on the timing and shape of seasonal variation.
 
-## Example
+## Parameter Interpretation
 
-### Redwing
+After parameter fitting, the parameters are broadly interpretable as follows:
 
-<div class="blog-image-grid blog-image-grid--1-col">
-    <figure>
-        <img src="/assets/images/modelling/winter-redwing.png" alt="Modelled Redwing Winter Presence">
-    </figure>
-</div>
+- **WINTER_PEAK** &rarr; timing of peak presence  
+- **AUTUMN_PEAK** &rarr; timing of arrival  
+- **WINTER_WIDTH** &rarr; concentration of winter activity  
+- **AUTUMN_WIDTH** &rarr; spread of the arrival phase  
+- **SUMMER_DIP / SUMMER_LOW** &rarr; strength and timing of absence  
 
-Observed data show:
+As with all simple models:
 
-- Arrival in autumn  
-- A peak through mid-winter  
-- Departure in spring  
-- Absence through summer  
+- Parameters should be treated as estimates rather than exact dates
+- Different combinations may produce similar curves
+- Interpretation is most reliable when considered alongside the fitted curve itself
 
-The fitted model describes this pattern using:
+In practice, each species can be described by both:
 
-- A winter peak centred early in the year  
-- A weaker autumn component representing arrival  
-- Strong summer suppression, reducing activity to near zero  
+- Its fitted parameters
+- The shape of its simulated seasonal curve
 
-The resulting curve captures:
-
-- A seasonal cycle that wraps across the year boundary  
-- A concentrated winter presence with extended absence  
-
-**Seasonal signature (modelled):**
-
-- Presence: November/December–March  
-- Peak: December–January  
-- Width: moderate  
-- Decline / absence: strong summer absence, with little residual activity  
+Together, these form a compact description of seasonal presence.
 
 {% include ode-solver-invitation.html %}

@@ -17,7 +17,7 @@ breadcrumb_items:
 
 This model represents species that are **always present but variably detectable**, describing a continuous presence in which detectability rises and falls through the year without ever reaching zero.
 
-It provides a minimal explanation for patterns seen in the seasonal analysis of species sightings, showing that variation in observation does not necessarily imply absence, but can arise from:
+It provides a minimal explanation for patterns seen in the seasonal analysis of observations, showing that variation in observation does not necessarily imply absence, but can arise from:
 
 - Behavioural change
 - Seasonal activity patterns
@@ -84,12 +84,12 @@ Some species require additional seasonal persistence behaviour.
 
 Optional parameters allow the model to represent:
 
-|Behaviour|Purpose|
-|---|---|
-|Spring carry-over|Retains elevated detectability into spring and early summer|
-|Delayed summer decline|Prevents summer suppression from beginning too early|
-|Summer decay boost|Allows sharper late-summer reduction|
-|Reduced pre-summer decay|Slows spring decline before the summer low|
+| Behaviour                | Purpose                                                     |
+| ------------------------ | ----------------------------------------------------------- |
+| Spring carry-over        | Retains elevated detectability into spring and early summer |
+| Delayed summer decline   | Prevents summer suppression from beginning too early        |
+| Summer decay boost       | Allows sharper late-summer reduction                        |
+| Reduced pre-summer decay | Slows spring decline before the summer low                  |
 
 These mechanisms are mainly important for species with broad spring plateaus or delayed seasonal decline.
 
@@ -149,29 +149,6 @@ This allows the same general framework to describe both:
 
 without introducing seasonal absence.
 
-## Fitting to Observations
-
-The model can be fitted to observed monthly data.
-
-A parameter fitting process:
-
-- Generates candidate parameter sets
-- Runs the model
-- Compares the simulated curve to observations
-- Scores the match
-- Repeats to identify good solutions
-
-Rather than producing a single exact answer, this yields a set of plausible parameter values that reproduce the observed pattern.
-
-These parameters are broadly interpretable:
-
-- **WINTER_PEAK** &rarr; timing of highest detectability
-- **SUMMER_LOW** &rarr; timing of lowest detectability
-- **WIDTH parameters** &rarr; how concentrated or diffuse seasonal features are
-- **WEIGHTS** &rarr; relative strength of seasonal effects
-
-Together, they describe the _shape_ of the species’ seasonal behaviour.
-
 ## Normalisation
 
 Model outputs are expressed as a relative measure of activity.
@@ -184,39 +161,28 @@ To allow comparison across species, results are normalised so that:
 
 This focuses attention on the timing and shape of seasonal variation rather than absolute magnitude.
 
-## Example
+## Parameter Interpretation
 
-### Robin
+After parameter fitting, the parameters are broadly interpretable as follows:
 
-<div class="blog-image-grid blog-image-grid--1-col">
-    <figure>
-        <img src="/assets/images/modelling/resident-robin.png" alt="Modelled Robin Resident Detectability">
-    </figure>
-</div>
+- **WINTER_PEAK** &rarr; timing of highest detectability
+- **SUMMER_LOW** &rarr; timing of lowest detectability
+- **WIDTH parameters** &rarr; how concentrated or diffuse seasonal features are
+- **WEIGHTS** &rarr; relative strength of seasonal effects
 
-Observed data show:
+Together, they describe the _shape_ of the species’ seasonal behaviour.
 
-- High visibility in winter and early spring
-- A reduction through summer
-- A gradual recovery towards the end of the year
+As with all simple models:
 
-The fitted model describes this pattern using:
+- Parameters should be treated as estimates rather than exact dates
+- Different combinations may produce similar curves
+- Interpretation is most reliable when considered alongside the fitted curve itself
 
-- A persistent baseline, representing continuous presence
-- A winter peak in detectability
-- A summer dip, reducing visibility rather than removing presence
-- A gradual autumn recovery
+In practice, each species can be described by both:
 
-The resulting curve captures:
+- Its fitted parameters
+- The shape of its simulated seasonal curve
 
-- Continuous presence throughout the year
-- A smooth seasonal cycle in detectability
-
-**Seasonal signature (modelled):**
-
-- Presence: year-round
-- Peak: winter / early spring
-- Width: broad
-- Decline / absence: reduced detectability in summer, but no true absence
+Together, these form a compact description of seasonal presence.
 
 {% include ode-solver-invitation.html %}

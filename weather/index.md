@@ -15,7 +15,7 @@ The reports explore that record through summaries, trends, diurnal patterns, and
 
 ---
 
-{% include landing-section.html title_column_name="Title" items=site.data.weather category="weather" %}
+{% include landing-section.html title_column_name="Title" items=site.data.weather category="weather" sort=true %}
 
 ---
 

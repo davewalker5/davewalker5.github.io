@@ -7,9 +7,11 @@ breadcrumb: Wildlife Seasonal Modelling
 
 # Wildlife Seasonal Modelling
 
-The Seasonal Analyses describe the year through observation — repeated encounters with species, recorded over time and examined for pattern.
+The models described in this booklet explore what simple processes might give rise to the patterns seen in seasonal observations. The observed curves used throughout are derived from long-term monthly aggregation of wildlife observation records collected within the study area.
 
-The models take a different approach. Rather than describing what is seen, they explore what simple processes might give rise to those patterns. Each model begins with a small set of assumptions — about presence, detectability, and seasonal change — and asks whether these are sufficient to reproduce the curves observed in the data.
+Each model begins with a small set of assumptions — about presence, detectability, and seasonal change — and asks whether these are sufficient to reproduce the curves observed in the data.
+
+Detectability here refers to the likelihood of observing or recording a species, rather than its absolute abundance.
 
 Across species, three distinct ways of occupying the year emerge.
 
@@ -21,148 +23,36 @@ These differences suggest three complementary models:
 - **Resident detectability**, where presence is continuous but visibility varies  
 - **Winter presence**, where activity wraps around the year boundary with a winter peak  
 
-Each model is deliberately simple. They do not attempt to capture ecological processes in detail, nor are they intended to predict future observations. Instead, they act as a way of testing whether the broad patterns seen in the analyses can arise from straightforward mechanisms.
+Each model is deliberately simple. They do not attempt to capture ecological processes in detail, nor are they intended to predict future observations. Instead, they act as a way of testing whether the broad patterns seen in the observed data can arise from straightforward mechanisms.
 
-These models have been fitted to observed data:
+The modelling workflow is illustrated below:
 
 <div class="blog-image-grid blog-image-grid--1-col">
   <figure>
-    <img src="/assets/images/modelling/parameter-fitting.png" alt="Wildlife Seasonal Model Parameter Fitting Workflow">
-    <figcaption>Wildlife Seasonal Model Parameter Fitting Workflow</figcaption>
+    <img src="/assets/images/modelling/parameter-fitting.png" alt="Wildlife Seasonal Modelling Workflow">
+    <figcaption>Wildlife Seasonal Modelling Workflow</figcaption>
   </figure>
 </div>
 
-This allows each species to be described not only by its pattern, but by a small set of parameters — timing, duration, and shape — that together form a simple seasonal “signature”.
+A parameter fitting process identifies a search space, defined in terms of the model parameters, and then repeatedly runs the model with parameters selected randomly from within that search space, scoring each run in terms of closeness to the observed data.
 
-In this way, the models sit alongside the observations. The analyses describe how species occupy the year; the models ask how those patterns might come to be, and provide a consistent way of comparing them.
+On completion, a consensus parameter set is derived from the individual sets that produced the closest matches and this is used to generate a synthesised seasonal curve, one that follows the shape of the simulated output but is scaled onto the observed data scale to allow easy comparison.
 
-## Available Models
+This allows each species to be described not only by its pattern, but by a small set of parameters — the consensus set — that together form a simple seasonal “signature”.
 
-{% include landing-section.html title_column_name="Title" items=site.data.wildlife_models category="models" %}
-
-## From Species to Seasonal Structure
-
-Once species have been fitted, the resulting parameter sets and observed seasonal characteristics can be converted into a common ecological feature space.
-
-These features describe aspects of seasonal behaviour such as:
+The features in that signature describe aspects of seasonal behaviour such as:
 
 - Peak timing  
 - Seasonal width  
 - Detectability persistence  
 - Seasonal symmetry and asymmetry  
 - Occupancy characteristics  
-- Derived ecological traits  
+- Derived ecological traits
 
-This allows species from different model families to be compared using a shared representation of seasonal ecological structure.
+In this way, the models sit alongside the observations. The observations describe how species occupy the year; the models ask how those patterns might come to be, and provide a consistent way of comparing them.
 
-Rather than focusing solely on individual species, the modelling workflow increasingly becomes a way of exploring how the wider ecological community occupies the year.
+# Contents
 
-## Ecological Similarity
-
-<div class="blog-image-grid blog-image-grid--1-col">
-  <figure>
-    <img src="/assets/images/modelling/similarity-analysis.png" alt="Feature Extraction, Species Similarity and Clustering Workflow">
-    <figcaption>Feature Extraction, Species Similarity and Clustering Workflow</figcaption>
-  </figure>
-</div>
-
-Using the extracted features, species can be compared using weighted ecological similarity metrics.
-
-The aim is not to identify taxonomic similarity, but similarity of seasonal ecological signal:
-
-- Shared timing structure  
-- Similar persistence behaviour  
-- Overlapping flowering or migration periods  
-- Comparable detectability dynamics  
-- Broad phenological synchrony  
-
-This allows relationships to emerge not only within groups, but also across the ecosystem as a whole. Butterfly flight periods, flowering seasons, migratory arrival windows, and resident detectability patterns may all align within the same seasonal structure.
-
-In this sense, the system becomes less a species comparison tool and more an exploration of the seasonal organisation of ecological activity.
-
-## Ecological Neighbourhoods
-
-Once pairwise similarities have been calculated, the resulting structures can be explored using clustering,
-dendrograms, and similarity heatmaps.
-
-Rather than grouping species taxonomically, these approaches group species according to similarity of
-seasonal ecological structure. Species occupying nearby regions of seasonal ecological space form what may
-be thought of as ecological neighbourhoods — groups sharing broadly similar timing, persistence,
-detectability dynamics, or seasonal occupancy patterns.
-
-The workflow therefore doesn't ask:
-
-> Which species are biologically related?
-
-but, rather:
-
-> Which species occupy similar positions within the ecological year?
-
-This allows relationships to emerge across very different groups of organisms. Flowering plants, migratory
-birds, butterflies, and resident species may all cluster together if their seasonal ecological behaviour follows
-similar temporal structure.
-
-The resulting similarity matrix can be visualised as a heatmap:
-
-<div class="blog-image-grid blog-image-grid--1-col">
-  <figure>
-    <img src="/assets/images/modelling/species-similarity-heatmap.png" alt="Species Similarity Heatmap">
-    <figcaption>Species Similarity Heatmap</figcaption>
-  </figure>
-</div>
-
-The same similarity structure can also be represented as a dendrogram:
-
-<div class="blog-image-grid blog-image-grid--1-col">
-  <figure>
-    <img src="/assets/images/modelling/cluster-dendrogram.png" alt="Species Clustering Dendrogram">
-    <figcaption>Species Clustering Dendrogram</figcaption>
-  </figure>
-</div>
-
-The dendrogram exposes nested neighbourhood structure within the seasonal ecological system. Species joined by short branch distances share more similar seasonal behaviour, while larger branch separations indicate increasingly distinct ecological timing and structure.
-
-The neighbourhoods are not intended to represent rigid biological categories. Instead, they reveal broader seasonal assemblages and transitional structures, including:
-
-- Resident bird neighbourhoods  
-- Spring flowering communities  
-- Butterfly emergence groupings  
-- Winter visitor structures  
-- Transitional seasonal assemblages  
-
-Importantly, the structure is hierarchical rather than absolute. Some neighbourhoods remain tightly coherent, while others overlap, bridge, or dissolve gradually into neighbouring seasonal structures.
-
-The resulting hierarchy increasingly resembles a seasonal ecological landscape rather than a fixed classification system.
-
-## Seasonal Ecological Calendars
-
-The neighbourhood structures can also be aggregated temporally to produce seasonal ecological calendars.
-
-<div class="blog-image-grid blog-image-grid--1-col">
-  <figure>
-    <img src="/assets/images/modelling/cluster-activity-heatmap.png" alt="Cluster Seasonal Activity Heatmap">
-    <figcaption>Cluster Seasonal Activity Heatmap</figcaption>
-  </figure>
-</div>
-
-These calendars summarise the mean normalised activity of ecological neighbourhoods through the year, allowing broader community-scale seasonal structure to be visualised directly.
-
-Rather than focusing on individual taxa, the calendars attempt to expose larger seasonal ecological modes, including:
-
-- Winter visitor activity  
-- Spring flowering and emergence periods  
-- Resident detectability dynamics  
-- Extended summer assemblages  
-- Autumn transitional structure  
-
-The resulting heatmaps provide a view of how different regions of seasonal ecological space become active, overlap, and decline through the ecological year.
-
-## Interpretation
-
-These models are deliberately simple and abstract — closer to minimal representations than detailed ecological mechanisms — and are intended to explore whether the observed patterns can arise from a small number of underlying processes, not to predict observations.
-
-The broader analytical workflow follows the same philosophy. The emphasis throughout remains on interpretability, transparency, and ecological meaning rather than highly optimised black-box modelling approaches.
-
-The aim is not simply to generate predictions, but to build an interpretable computational natural history framework capable of exploring the seasonal structure of ecological communities.
+{% include landing-section.html title_column_name="Title" items=site.data.modelling category="modelling" %}
 
 {% include ode-solver-invitation.html %}

@@ -15,17 +15,17 @@ The approach is simple: go out, look carefully, and keep a record.
 
 ---
 
-## Studies
+## Projects
 
-{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="studies" %}
+{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="projects" %}
 
 ## Reports
 
-{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="reports" %}
+{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="reports" sort=true %}
 
 ## Recordings
 
-{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="recordings" %}
+{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="recordings" sort=true %}
 
 ---
 

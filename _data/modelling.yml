@@ -1,0 +1,32 @@
+- title: "Resident Detectability Model"
+  category: "modelling"
+  description: "How a resident species varies in visibility through the year"
+  link: /wildlife/modelling/resident.html
+- title: "Seasonal Presence Model"
+  category: "modelling"
+  description: "When a species appears within the year"
+  link: /wildlife/modelling/seasonal.html
+- title: "Winter Visitor Model"
+  category: "modelling"
+  description: "When a species appears across the year boundary"
+  link: /wildlife/modelling/winter.html
+- title: "Worked Example - the Bluebell"
+  category: "modelling"
+  description: "Step-by-step example showing how seasonal structure emerges from a fitted model"
+  link: /wildlife/modelling/example.html
+- title: "Species Similarity and Clustering"
+  category: "modelling"
+  description: "Comparisons of seasonal behaviour across species, revealing patterns of similarity"
+  link: /wildlife/modelling/similarity.html
+- title: "Ecological Neighbourhoods"
+  category: "modelling"
+  description: "Clusters of species that occupy similar regions of seasonal ecological space"
+  link: /wildlife/modelling/neighbourhoods.html
+- title: "Seasonal Ecological Calendars"
+  category: "modelling"
+  description: "Calendar-style views of seasonal activity"
+  link: /wildlife/modelling/calendars.html
+- title: "Glossary"
+  category: "modelling"
+  description: "Definitions and explanations of modelling terms, parameters, and ecological concepts"
+  link: /wildlife/modelling/glossary.html

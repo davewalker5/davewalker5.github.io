@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Seasonal Presence Model
-description: A simple model describing species that appear and disappear through the year, using seasonal forcing, constrained presence, and decline to reproduce observed patterns
+title: Resident Detectability Model
+description: A simple model describing species that are present throughout the year, with seasonal variation in detectability arising from behaviour and activity
 breadcrumb_items:
   - name: Home
     url: /
@@ -13,6 +13,7 @@ breadcrumb_items:
     url: /wildlife/modelling/seasonal.html
 ---
 
+
 # Seasonal Presence Model
 
 This model is intended to represent species whose presence is **seasonally constrained** — those that are only observable during a particular phase of their life cycle or migration - and describes their rise into activity, the peak of the season, and the eventual collapse back toward absence.
@@ -21,11 +22,11 @@ It is therefore intended for species whose observable presence is strongly const
 
 - Spring flowers
 - Migratory birds
-- Butterflies with a constrained annual flight periods
+- Butterflies with constrained annual flight periods
 
 The model is deliberately simple in structure - closer to a minimal representation than a description of detailed ecological mechanisms — and is intended to explore whether the observed patterns can arise from a small number of underlying processes, not to predict observations.
 
-It provides a minimal explanation for patterns seen in the Seasonal Analyses, showing that a small number of simple processes are sufficient to produce:
+It provides a minimal explanation for patterns seen in the seasonal analysis of observations, showing that a small number of simple processes are sufficient to produce:
 
 - Sharply bounded flowering periods
 - Migration-driven appearances
@@ -51,8 +52,6 @@ The model combines four simple elements:
 - A **post-season suppression phase**, accelerating decline once the active season has passed
 
 Together, these produce a dominant seasonal pulse with realistic asymmetry — allowing activity to rise gradually, peak, and then decline more abruptly after the season ends.
-
-Together, these produce a single dominant seasonal pulse — a rise into the season, a peak, and a decline.
 
 ## Model Parameters
 
@@ -105,43 +104,10 @@ When applied over a full year, the model produces a characteristic seasonal puls
 
 The resulting curves are often asymmetric, with relatively sharp post-peak decline. This better reflects many biological systems, where activity does not merely fade gradually, but undergoes active seasonal shutdown through senescence, migration, mortality, or behavioural change.
 
-## Fitting to Observations
-
-The model can be fitted to observed monthly data.
-
-A parameter fitting process:
-
-- Infers a plausible seasonal window from the data
-- Generates candidate parameter sets within that range
-- Runs the model
-- Compares the simulated curve to observations
-- Scores the match
-- Repeats to identify good solutions
-
-This produces a set of parameters that describe the species’ seasonal behaviour.
-
-These parameters are broadly interpretable:
-
-- **SEASON_START / END** &rarr; approximate timing of arrival and disappearance
-- **FORCING_PEAK** &rarr; timing of strongest seasonal forcing
-- **SHARPNESS** &rarr; abruptness of seasonal onset and termination
-- **GROWTH / DECAY** &rarr; persistence and responsiveness during the active season
-- **OOS_DECAY** &rarr; suppression strength outside the seasonal window
-- **POST_PEAK_DECAY** &rarr; strength of late-season collapse
-- **POST_PEAK_SHARPNESS** &rarr; abruptness of post-season shutdown
-
-As with all simple models:
-
-- Parameters should be treated as estimates rather than exact dates
-- Different combinations may produce similar curves
-- Interpretation is most reliable when considered alongside the fitted curve itself
-
-In practice, each species can be described by both:
-
-- Its fitted parameters
-- The shape of its simulated seasonal curve
-
-Together, these form a compact description of seasonal presence.
+- **SEASON_START / END** → timing of arrival and departure
+- **FORCING_PEAK** → timing of peak activity
+- **SHARPNESS** → how abruptly the season begins and ends
+- **OOS_DECAY** → how quickly activity falls away outside the season
 
 ## Normalisation
 
@@ -157,80 +123,31 @@ This produces a simple index:
 
 Normalisation is applied after simulation, and does not affect the underlying model behaviour. It allows comparison of the *shape* and timing of seasonal patterns, rather than absolute magnitude.
 
-The normalisation script is available as a download from the reference section and should be run as follows on the output exported from the ODE Solver application:
+## Parameter Interpretation
 
-> python normalise_output.py --input input.csv --output output.csv
+After parameter fitting, the parameters are broadly interpretable as follows:
 
-The ODE Solver can export CSV, JSON and XML format files and all three formats are accepted as input and output to the normaliser. The input and output file can be the same, if the input is to be overwritten with the normalised output.
+- **SEASON_START / END** &rarr; approximate timing of arrival and disappearance
+- **FORCING_PEAK** &rarr; timing of strongest seasonal forcing
+- **SHARPNESS** &rarr; abruptness of seasonal onset and termination
+- **GROWTH / DECAY** &rarr; persistence and responsiveness during the active season
+- **OOS_DECAY** &rarr; suppression strength outside the seasonal window
+- **POST_PEAK_DECAY** &rarr; strength of late-season collapse
+- **POST_PEAK_SHARPNESS** &rarr; abruptness of post-season shutdown
 
-## Examples
+Together, they describe the _shape_ of the species’ seasonal behaviour.
 
-### Bluebell
+As with all simple models:
 
-<div class="blog-image-grid blog-image-grid--1-col">
-    <figure>
-        <img src="/assets/images/modelling/seasonal-bluebell.png" alt="Modelled Bluebell Seasonal Presence">
-    </figure>
-</div>
+- Parameters should be treated as estimates rather than exact dates
+- Different combinations may produce similar curves
+- Interpretation is most reliable when considered alongside the fitted curve itself
 
-Observed data show:
+In practice, each species can be described by both:
 
-- A narrow window of occurrence in spring
-- A rapid rise into flowering
-- A short peak followed by a swift decline
+- Its fitted parameters
+- The shape of its simulated seasonal curve
 
-The fitted model describes this pattern using:
-
-- An early-season start and well-defined end point
-- A relatively high sharpness, producing a rapid onset and decline
-- Strong out-of-season decay, preventing activity from persisting beyond the flowering period
-
-The resulting curve captures:
-
-- A brief, tightly bounded seasonal pulse
-- A rapid transition from absence to peak activity and back again
-
-**Seasonal signature (modelled):**
-
-- Presence: April–May
-- Peak: mid-late April 
-- Width: very narrow
-- Decline / absence: rapid, with near-zero activity outside the flowering period
-
-The post-season suppression component prevents activity from lingering unrealistically beyond the observed seasonal period.
-
-### Swift
-
-<div class="blog-image-grid blog-image-grid--1-col">
-    <figure>
-        <img src="/assets/images/modelling/seasonal-swift.png" alt="Modelled Swift Seasonal Presence">
-    </figure>
-</div>
-
-Observed data show:
-
-- A rapid arrival in late spring
-- A concentrated period of activity through summer
-- A swift departure
-
-The fitted model describes this pattern using:
-
-- A narrow seasonal window aligned with the summer months
-- A forcing peak centred within the period of highest activity
-- Strong out-of-season decay, ensuring a rapid disappearance once the season ends
-
-The resulting curve captures:
-
-- A short, well-defined seasonal pulse
-- A rapid transition from absence to presence and back again
-
-**Seasonal signature (modelled):**
-
-- Presence: May–August
-- Peak: June–July
-- Width: narrow
-- Decline / absence: rapid, with near-zero activity outside the season
-
-The post-season suppression component prevents activity from lingering unrealistically beyond the observed seasonal period.
+Together, these form a compact description of seasonal presence.
 
 {% include ode-solver-invitation.html %}

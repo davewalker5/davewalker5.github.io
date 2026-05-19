@@ -19,7 +19,7 @@ Compiled reports presented as booklet-style publications, bringing together obse
 
 The tools used to collect, organise, and present these records are available as open source, and can be adapted for your own purposes.
 
-{% include landing-section.html title_column_name="Tool" items=site.data.tools category="tools" %}
+{% include landing-section.html title_column_name="Tool" items=site.data.tools category="tools" sort=true %}
 
 ## Reference Data
 

@@ -16,7 +16,7 @@ Alongside traditional methods, modern tools are used where helpful: digital imag
 
 ## Safety
 
-{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="safety" %}
+{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="safety" sort=true %}
 
 ## The Instrument
 
@@ -24,16 +24,16 @@ Alongside traditional methods, modern tools are used where helpful: digital imag
 
 ## Methods
 
-{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="methods" %}
+{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="methods" sort=true %}
 
 
 ## Programme of Investigations
 
-{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="programme" %}
+{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="programme" sort=true %}
 
 ## Results
 
-{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="results" %}
+{% include landing-section.html title_column_name="Title" items=site.data.microscopy category="results" sort=true %}
 
 ---
 

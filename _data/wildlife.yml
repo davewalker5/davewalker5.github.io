@@ -1,10 +1,10 @@
 
 - title: "Seasonal Modelling"
-  category: "studies"
+  category: "projects"
   description: "Explorations of interpretable seasonal models and the ecological structures emerging from them"
   link: /wildlife/modelling/
 - title: "Seasonal Analyses"
-  category: "studies"
+  category: "projects"
   description: "Reports using monthly sightings, encounter frequency and modelling output to reveal seasonal patterns"
   link: /wildlife/seasonal/
 - title: "Abundance by Location"
