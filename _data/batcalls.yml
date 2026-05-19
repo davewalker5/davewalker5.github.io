@@ -1,0 +1,20 @@
+series_name: "Bat Call Analysis"
+chapters:
+  - title: "Audio Processing Pipeline"
+    description: "Overview of the processing stages used to prepare bat recordings for spectrogram inspection and pulse-level analysis"
+    url: /wildlife/batcalls/pipeline.html
+  - title: "Noise Detection"
+    description: "Identifying likely background-noise regions automatically using amplitude and spectral-energy characteristics"
+    url: /wildlife/batcalls/noisedetection.html
+  - title: "Noise Reduction"
+    description: "Reducing steady broadband noise through spectral subtraction while preserving pulse structure and timing"
+    url: /wildlife/batcalls/noisereduction.html
+  - title: "High-Pass Filtering"
+    description: "Suppressing low-frequency rumble and handling noise to emphasise the frequency range occupied by bat calls"
+    url: /wildlife/batcalls/highpassfilter.html
+  - title: "Audio Normalisation"
+    description: "Scaling recordings to a consistent peak level while preserving the relative dynamics of pulse sequences"
+    url: /wildlife/batcalls/normalisation.html
+  - title: "Call Analysis"
+    description: "Examining pulse timing, behavioural phases, and feeding-buzz structure within bat echolocation recordings"
+    url: /wildlife/batcalls/callanalysis.html

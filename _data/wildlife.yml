@@ -7,6 +7,10 @@
   category: "projects"
   description: "Reports using monthly sightings, encounter frequency and modelling output to reveal seasonal patterns"
   link: /wildlife/seasonal/
+- title: "Bat Call Analysis"
+  category: "projects"
+  description: "Explorations of bat echolocation through spectrogram analysis, pulse timing, and behavioural structure"
+  link: /wildlife/batcalls/
 - title: "Abundance by Location"
   category: "reports"
   description: "Reports showing recorded abundance by country, location, and category, with chart views and downloadable data"
