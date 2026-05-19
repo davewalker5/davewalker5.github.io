@@ -67,12 +67,6 @@ species:
     location_slug: "abingdon"
     link: "/wildlife/seasonal/abingdon/magpie.html"
     classify_seasonality: 1
-  - name: Mallard
-    group: "Birds"
-    location: "Abingdon"
-    location_slug: "abingdon"
-    link: "/wildlife/seasonal/abingdon/mallard.html"
-    classify_breeding: 1
   - name: Mute Swan
     group: "Birds"
     location: "Abingdon"
