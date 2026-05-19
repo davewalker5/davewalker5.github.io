@@ -59,7 +59,7 @@ Species such as redwing or fieldfare do not occupy a simple March-to-August styl
 
 This creates awkward behaviour in many simple seasonal systems because:
 
-- The active period crosses January
+- The active period crosses year-end
 - Seasonal peaks may occur near mid-winter
 - Arrival/departure dynamics become discontinuous if treated as ordinary bounded windows
 
@@ -139,7 +139,7 @@ The example below shows the Winter Visitor Model configured for redwing observat
 
 Redwings provide a particularly useful example for the winter visitor model because their seasonal appearance naturally wraps across the calendar year boundary.
 
-In many long-term observation records, redwings begin appearing during autumn, remain present throughout winter, and then decline rapidly through spring before becoming effectively absent during summer.
+In many long-term observation records, redwings begin appearing during late autumn and early winter, remain present throughout winter, and then decline rapidly through spring before becoming effectively absent during summer.
 
 The model attempts to reproduce this structure using:
 

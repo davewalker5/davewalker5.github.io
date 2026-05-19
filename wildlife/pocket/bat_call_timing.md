@@ -98,7 +98,6 @@ One of the more interesting aspects of the project is that substantial structura
 This proved particularly useful when working with:
 
 - Heterodyne recordings
-- Simplified exports
 - Highly constrained computational environments
 
 ## Example : Pipistrelle Time-Expansion Recording

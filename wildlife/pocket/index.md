@@ -28,7 +28,7 @@ The section sits somewhere between:
 - Educational computing
 - Embedded scientific programming
 - Acoustic field analysis
-- Portable natural history tooling.
+- Portable natural history tooling
 
 Some projects began as experiments motivated largely by curiosity. Others emerged from practical questions about whether ecological timing analysis, seasonal modelling, and behavioural interpretation could survive substantial hardware constraints while remaining scientifically meaningful.
 

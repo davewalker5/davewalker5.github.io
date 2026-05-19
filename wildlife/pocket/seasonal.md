@@ -43,7 +43,7 @@ The resulting system produces behaviours such as:
 At its core, the model combines:
 
 - A smooth seasonal activity window
-- Periodic seasonal forcing,
+- Periodic seasonal forcing
 - Dynamic decay behaviour
 
 The interaction between these components generates seasonal curves resembling many real-world annual observation patterns.
@@ -112,7 +112,7 @@ The example below shows the Seasonal Presence Model configured for bluebell obse
 <div class="blog-image-grid blog-image-grid--1-col">
   <figure>
     <img src="/assets/images/modelling/ti84-seasonal.png" alt="Seasonal Presence Model for Bluebell (Hyacinthoides non-scripta)">
-    <figcaption>Seasonal Presence Model for Bluebell (_Hyacinthoides non-scripta_)</figcaption>
+    <figcaption>Seasonal Presence Model for Bluebell (Hyacinthoides non-scripta)</figcaption>
   </figure>
 </div>
 
@@ -136,26 +136,6 @@ Several characteristic features are visible in the resulting curve:
 One of the more useful aspects of the seasonal model is its ability to represent asymmetric seasonal behaviour. In the bluebell example, emergence occurs comparatively gradually, while the post-peak decline is substantially sharper. This mirrors the observed seasonal structure of many spring woodland species whose visible phase disappears quickly following peak flowering.
 
 Despite running on highly constrained hardware, the TI-84 implementation preserves much of the broader seasonal shape of the desktop model while carrying out all numerical integration and rendering directly on-device.
-
-## Constrained Computing
-
-The TI-84 implementation forms part of the broader Pocket Ecology exploration into constrained scientific computing.
-
-The calculator environment imposes severe limitations compared to desktop Python systems:
-
-- Limited memory
-- Slow interpretation
-- Restricted allocation behaviour
-- Very small practical program sizes
-
-Despite these restrictions, the handheld implementation remains capable of:
-
-- Numerical ODE integration
-- Smooth seasonal forcing
-- Dynamic decay calculations
-- On-device graphical rendering
-
-Much of the work therefore became an exercise not only in ecological modelling, but also in simplifying numerical systems to survive within extremely small computational environments.
 
 ## Pocket Ecology
 

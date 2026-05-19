@@ -37,11 +37,11 @@ The model treats observed detectability as a state variable which gradually rela
 
 Rather than switching a species “on” and “off” seasonally, the system assumes that the species remains continuously present while detectability moves through:
 
-- winter support,
-- spring persistence,
-- summer suppression,
-- autumn recovery,
-- and year-end reinforcement.
+- Winter support
+- Spring persistence
+- Summer suppression
+- Autumn recovery
+- Year-end reinforcement
 
 The resulting curves often resemble the observed annual structure of resident species surprisingly well while remaining biologically interpretable.
 
@@ -55,21 +55,21 @@ The target detectability curve is constructed from several overlapping seasonal 
 
 Represents elevated winter detectability associated with factors such as:
 
-- reduced foliage,
-- increased vocalisation,
-- territorial activity,
-- flocking,
-- or improved visibility.
+- Reduced foliage
+- Increased vocalisation
+- Territorial activity
+- Flocking
+- Improved visibility
 
 ### Summer Suppression
 
 Represents reduced detectability during summer periods such as:
 
-- moult,
-- dense vegetation,
-- reduced territorial behaviour,
-- quieter vocal activity,
-- or behavioural shifts.
+- Moult
+- Dense vegetation
+- Reduced territorial behaviour
+- Quieter vocal activity
+- Behavioural shifts
 
 ### Autumn Recovery
 
@@ -93,10 +93,10 @@ A central feature of the model is the use of asymmetric seasonal components.
 
 Each annual seasonal bump can have independent rise and fall widths, allowing the system to represent:
 
-- slow build-up with rapid collapse,
-- sharp arrival with gradual decline,
-- asymmetric seasonal persistence,
-- and delayed seasonal suppression.
+- Slow build-up with rapid collapse
+- Sharp arrival with gradual decline
+- Asymmetric seasonal persistence
+- Delayed seasonal suppression
 
 This proved particularly important for modelling resident species whose seasonal behaviour is strongly unbalanced across the year.
 
