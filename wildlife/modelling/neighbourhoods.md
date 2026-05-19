@@ -2,6 +2,8 @@
 layout: default
 title: Ecological Neighbourhoods
 description: Clusters of species that occupy similar regions of seasonal ecological space through the year
+series: modelling
+chapter: 6
 breadcrumb_items:
   - name: Home
     url: /
@@ -12,7 +14,6 @@ breadcrumb_items:
   - name: Ecological Neighbourhoods
     url: /wildlife/modelling/neighbourhoods.html
 ---
-
 
 # Ecological Neighbourhoods
 
@@ -59,3 +60,9 @@ The same similarity structure can also be represented as a dendrogram:
 The dendrogram exposes nested neighbourhood structure within the seasonal ecological system. Species joined by short branch distances share more similar seasonal behaviour, while larger branch separations indicate increasingly distinct ecological timing and structure.
 
 These neighbourhoods should be interpreted as exploratory seasonal assemblages rather than strict ecological or taxonomic categories. They provide a way of examining how seasonal activity is organised across the ecological year, exposing recurring timing structures, overlapping seasonal regimes, and broader phenological organisation within the observed system.
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>
+
+{% include ode-solver-invitation.html %}

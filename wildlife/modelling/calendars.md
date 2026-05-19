@@ -2,6 +2,8 @@
 layout: default
 title: Seasonal Ecological Calendars
 description: Calendar-style views of seasonal activity, showing how species patterns combine across the annual cycle
+series: modelling
+chapter: 7
 breadcrumb_items:
   - name: Home
     url: /
@@ -12,7 +14,6 @@ breadcrumb_items:
   - name: Seasonal Ecological Calendars
     url: /wildlife/modelling/calendars.html
 ---
-
 
 # Seasonal Ecological Calendars
 
@@ -47,5 +48,9 @@ The resulting heatmaps provide a view of how different regions of seasonal ecolo
 ## Toward a Seasonal Ecology of Place
 
 These models do not attempt to explain ecosystems in full. Instead, they provide a way of describing seasonal ecological structure using a common mathematical language. In doing so, they allow long-term observational records to be explored not only as individual species histories, but as components of a larger seasonal ecological system.
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>
 
 {% include ode-solver-invitation.html %}

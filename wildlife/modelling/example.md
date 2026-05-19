@@ -2,6 +2,8 @@
 layout: default
 title: Worked Example
 description: A step-by-step example showing how seasonal structure emerges from a fitted model of bluebell appearance and decline
+series: modelling
+chapter: 4
 breadcrumb_items:
   - name: Home
     url: /
@@ -150,5 +152,9 @@ This example illustrates the broader aim of the modelling workflow.
 The system does not attempt to reconstruct detailed ecological mechanisms directly. Instead, it asks whether relatively simple seasonal processes are sufficient to reproduce the large-scale structures seen in long-term observational data.
 
 In doing so, the workflow allows species to be described not only individually, but also as components of a larger seasonal ecological landscape.
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>
 
 {% include ode-solver-invitation.html %}

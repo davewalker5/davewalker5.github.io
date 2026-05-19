@@ -2,6 +2,8 @@
 layout: default
 title: Glossary
 description: Definitions and explanations of modelling terms, parameters, and ecological concepts as they are used throughout this section
+series: modelling
+chapter: 8
 breadcrumb_items:
   - name: Home
     url: /
@@ -50,3 +52,7 @@ The following table provides definitions and explanations of modelling terms, pa
 | Synthesised Curve            | A reconstructed seasonal curve generated from the fitted model and scaled to match the observed data range for visual comparison.                               |
 | Weighted Ecological Distance | A similarity measure in which some seasonal ecological characteristics contribute more strongly than others when comparing species.                             |
 | Winter Visitor               | A species whose primary period of activity or presence occurs during the winter months, typically spanning the year boundary.                                   |
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>

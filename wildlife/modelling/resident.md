@@ -2,6 +2,8 @@
 layout: default
 title: Resident Detectability Model
 description: A simple model describing species that are present throughout the year, with seasonal variation in detectability arising from behaviour and activity
+series: modelling
+chapter: 1
 breadcrumb_items:
   - name: Home
     url: /
@@ -184,5 +186,9 @@ In practice, each species can be described by both:
 - The shape of its simulated seasonal curve
 
 Together, these form a compact description of seasonal presence.
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>
 
 {% include ode-solver-invitation.html %}

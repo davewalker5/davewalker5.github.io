@@ -53,6 +53,21 @@ In this way, the models sit alongside the observations. The observations describ
 
 # Contents
 
-{% include landing-section.html title_column_name="Title" items=site.data.modelling category="modelling" %}
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for chapter in site.data.modelling.chapters %}
+            <tr>
+                <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
+                <td>{{ chapter.description }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
 
 {% include ode-solver-invitation.html %}

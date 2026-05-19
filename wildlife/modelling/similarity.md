@@ -2,6 +2,8 @@
 layout: default
 title: Species Similarity and Clustering
 description: Comparisons of seasonal behaviour across species, revealing patterns of similarity and ecological grouping
+series: modelling
+chapter: 5
 breadcrumb_items:
   - name: Home
     url: /
@@ -39,5 +41,9 @@ The aim is not to identify taxonomic similarity, but similarity of seasonal ecol
 This allows relationships to emerge not only within groups, but also across the ecosystem as a whole. Butterfly flight periods, flowering seasons, migratory arrival windows, and resident detectability patterns may all align within the same seasonal structure.
 
 In this sense, the system becomes less a species comparison tool and more an exploration of the seasonal organisation of ecological activity.
+
+<footer class="notebook-entry-footer">
+  {% include journal-nav.html %}
+</footer>
 
 {% include ode-solver-invitation.html %}
