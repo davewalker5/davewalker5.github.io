@@ -45,3 +45,16 @@ pip install --upgrade pip
 
 # Install the requirements
 pip install -r cdn-scripts/requirements.txt
+
+# Reinstall gems
+section "Re-installing Ruby Gems"
+
+# Remove the existing gems and re-install them
+echo "Removing existing gems ..."
+rm -rf vendor/bundle
+rm -rf Gemfile.lock
+
+echo "Reinstalling gems ..." 
+bundle config set --local path vendor/bundle
+bundle config set --local cache_path vendor/cache
+bundle install
