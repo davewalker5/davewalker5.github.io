@@ -1,0 +1,16 @@
+{
+  "patterns": [
+    {
+      "name": "liquid-include",
+      "pattern": "/{%.*?%}/g"
+    },
+    {
+      "name": "front-matter",
+      "pattern": "/^---\\s*\\n[\\s\\S]*?\\n---\\s*/gm"
+    }
+  ],
+  "ignoreRegExpList": [
+    "liquid-include",
+    "front-matter"
+  ]
+}

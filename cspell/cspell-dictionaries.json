@@ -1,0 +1,32 @@
+{
+  "dictionaryDefinitions": [
+    {
+      "name": "field-notes-species",
+      "path": "./dicts/species-dictionary.txt",
+      "description": "Custom Field Notes Species Dictionary",
+      "addWords": true
+    },
+    {
+      "name": "field-notes-travel",
+      "path": "./dicts/travel-dictionary.txt",
+      "description": "Custom Field Notes Travel Dictionary",
+      "addWords": true
+    },
+    {
+      "name": "field-notes",
+      "path": "./dicts/field-notes-dictionary.txt",
+      "description": "Custom Field Notes Dictionary",
+      "addWords": true
+    }
+  ],
+  "dictionaries": [
+    "field-notes-species",
+    "field-notes-travel",
+    "field-notes"
+  ],
+  "ignorePaths": [
+    "./dicts/species-dictionary.txt",
+    "./dicts/travel-dictionary.txt",
+    "./dicts/field-notes-dictionary.txt"
+  ]
+}

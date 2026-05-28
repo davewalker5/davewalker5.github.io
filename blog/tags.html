@@ -1,0 +1,71 @@
+---
+layout: default
+title: Tags
+permalink: /blog/tags/
+description: Browse Field Notes Journal posts by tag.
+---
+
+<h1>Tags</h1>
+
+{% include blog-navigation.html active="tags" %}
+
+<p>
+  Browse posts by subject, place, organism, method, or theme.
+</p>
+
+{% assign sorted_tags = site.tags | sort %}
+
+{% if sorted_tags.size > 0 %}
+  <div class="tag-cloud">
+    {% for tag in sorted_tags %}
+      {% assign tag_name = tag[0] %}
+      {% assign tag_posts = tag[1] %}
+      {% assign tag_count = tag_posts | size %}
+
+      {% if tag_count >= 10 %}
+        {% assign size_class = "tag-xl" %}
+      {% elsif tag_count >= 6 %}
+        {% assign size_class = "tag-lg" %}
+      {% elsif tag_count >= 3 %}
+        {% assign size_class = "tag-md" %}
+      {% else %}
+        {% assign size_class = "tag-sm" %}
+      {% endif %}
+
+      <a
+        class="tag-cloud-item {{ size_class }}"
+        href="#{{ tag_name | slugify }}"
+      >
+        {{ tag_name }} <span class="tag-count">({{ tag_count }})</span>
+      </a>
+    {% endfor %}
+  </div>
+
+  <hr>
+
+  {% for tag in sorted_tags %}
+    {% assign tag_name = tag[0] %}
+    {% assign tag_posts = tag[1] %}
+
+    <section class="taxonomy-section">
+      <h2 id="{{ tag_name | slugify }}">{{ tag_name }}</h2>
+      <ul class="taxonomy-post-list">
+        {% for post in tag_posts %}
+          <li class="taxonomy-post-item">
+            <span class="taxonomy-post-date">{{ post.date | date: "%-d %b %Y" }}</span>
+            <span class="taxonomy-post-separator">·</span>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+
+            {% if post.categories and post.categories.size > 0 %}
+              <span class="taxonomy-post-category">
+                [{{ post.categories[0] }}]
+              </span>
+            {% endif %}
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endfor %}
+{% else %}
+  <p>No tags found.</p>
+{% endif %}

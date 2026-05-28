@@ -1,0 +1,95 @@
+# --------------------------------------------------------------------------------
+# Reference Tables
+# --------------------------------------------------------------------------------
+- area: Aircraft
+  title: Airport Details
+  url: /reference/airports/
+  category: Reference Tables
+- area: Wildlife
+  title: Species Details
+  url: /reference/species/
+  category: Reference Tables
+- area: Wildlife
+  title: Wildlife Location Details
+  url: /reference/wildlife-locations/
+  category: Reference Tables
+- area: Wildlife
+  title: UK Bat Emergence Times and Call Frequency Reference
+  url: /reference/bats/
+  category: Reference Tables
+- area: Wildlife
+  title: UK Bat Emergence Times Calculator
+  url: /reference/bats/emergence/
+  category: Reference Tables
+
+# --------------------------------------------------------------------------------
+# Additional Reports
+# --------------------------------------------------------------------------------
+- area: Aircraft
+  title: Aircraft sightings reports
+  url: /aircraft/
+  category: Additional Reports
+- area: Weather
+  title: Weather reports
+  url: /weather/
+  category: Additional Reports
+
+# --------------------------------------------------------------------------------
+# Booklets
+# --------------------------------------------------------------------------------
+- area: Microscopy
+  title: Microscopy Programme
+  url: /assets/downloads/booklets/microscopy-programme.pdf
+  category: Booklets
+- area: Travel
+  title: Tanzania, 2022 - Field Notes from a Long-Awaited Journey
+  url: /assets/downloads/booklets/tanzania-2022.pdf
+  category: Booklets
+- area: Wildlife
+  title: A Year In the Life of Abingdon
+  url: /assets/downloads/booklets/year-in-life-abingdon.pdf
+  category: Booklets
+- area: Wildlife
+  title: UK Bat Emergence Times and Call Frequency Reference
+  url: /assets/downloads/booklets/uk-bats-reference.pdf
+  category: Booklets
+- area: Wildlife
+  title: Wildlife Seasonal Modelling
+  url: /assets/downloads/booklets/wildlife-seasonal-modelling.pdf
+  category: Booklets
+- area: Wildlife
+  title: Abingdon - Seasonal Ecology and Species Assemblages
+  url: /assets/downloads/booklets/abingdon-seasonal-ecology.pdf
+  category: Booklets
+- area: Wildlife
+  title: Abingdon - Seasonal Ecology Atlas
+  url: /assets/downloads/booklets/abingdon-seasonal-ecology-atlas.pdf
+  category: Booklets
+- area: Wildlife
+  title: Thrupp Lake - Seasonal Ecology and Species Assemblages
+  url: /assets/downloads/booklets/thrupp-lake-seasonal-ecology.pdf
+  category: Booklets
+
+# --------------------------------------------------------------------------------
+# Raw databases
+# --------------------------------------------------------------------------------
+- area: Aircraft
+  title: Flight Recorder SQLite database
+  url: /assets/downloads/databases/flightrecorder.db.gz
+  reference: FN-AC-DATA
+  category: Databases
+- area: Microscopy
+  title: Plate library database
+  url: /assets/downloads/databases/plate_library.db.gz
+  reference: FN-MICRO-DATA
+  category: Databases
+- area: Weather
+  title: RPi-Weather Station SQLite database
+  url: /assets/downloads/databases/weather.db.gz
+  reference: FN-WE-DATA
+  category: Databases
+- area: Wildlife
+  title: Nature Recorder SQLite database
+  url: /assets/downloads/databases/naturerecorder.db.gz
+  reference: FN-NR-DATA
+  category: Databases

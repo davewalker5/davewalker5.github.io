@@ -1,0 +1,70 @@
+---
+layout: default
+title: Aircraft Sightings Reports
+description: Aircraft sightings reports, with chart views and downloadable data.
+breadcrumb: Aircraft Sightings Reports
+dataset: true
+---
+
+<h1>Aircraft Sightings Reports</h1>
+
+<p>
+This section presents aircraft sightings recorded over time to explore patterns of movement, routes, and frequency.
+</p>
+<p>
+Each report includes a visualisation and a downloadable dataset, with manufacturer-level summaries collected separately.
+</p>
+
+<h2>Available Reports</h2>
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Report</th>
+      <th>View</th>
+      <th>Download XLSX</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- Static "dummy" row at the top -->
+    <tr>
+      <td>Aircraft Manufacturer Reports</td>
+      <td><a href="{{ '/aircraft/manufacturers/' | relative_url }}">View Reports</a></td>
+      <td><span class="muted">—</span></td>
+    </tr>
+    {%- assign reports = site.data.aircraft_reports | sort: "base" -%}
+
+    {%- for report in reports -%}
+      {%- assign base = report.base -%}
+      {%- assign title = report.title -%}
+      {%- assign png_path = report.png_path -%}
+      {%- assign xlsx_path = report.xlsx_path -%}
+
+      {%- assign png_path = site.assets_url | append: '/aircraft/reports/' | append: base | append: '.png' -%}
+      {%- assign xlsx_path = site.assets_url | append: '/aircraft/reports/' | append: base | append: '.xlsx' -%}
+
+      {%- assign has_xlsx = false -%}
+      {%- for sf in site.static_files -%}
+        {%- if sf.path == xlsx_path -%}{%- assign has_xlsx = true -%}{%- break -%}{%- endif -%}
+      {%- endfor -%}
+
+      <tr>
+        <td>{{ title | strip }}</td>
+        <td>
+          <a href="{{ '/aircraft/view.html' | relative_url }}#/{{ base | uri_escape }}/{{ title | strip | uri_escape }}">
+            View report
+          </a>
+        </td>
+        <td>
+          {%- if has_xlsx -%}
+            <a href="{{ xlsx_path | relative_url }}" download>Download data</a>
+          {%- else -%}
+            <span class="muted">No data file</span>
+          {%- endif -%}
+        </td>
+      </tr>
+    {%- endfor -%}
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author's own aircraft sightings records over time.</i>

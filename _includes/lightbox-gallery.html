@@ -1,0 +1,42 @@
+{% assign gallery_items = include.images %}
+{% assign first_parts = gallery_items[0] | split: "|" %}
+{% assign first_src = first_parts[0] %}
+{% assign first_alt = first_parts[1] %}
+{% assign first_caption = first_parts[2] %}
+
+<div class="inline-gallery js-inline-gallery" data-gallery="{{ include.gallery_id }}">
+  <div class="inline-gallery__viewer">
+    <button class="inline-gallery__nav inline-gallery__nav--prev" type="button" aria-label="Previous image">‹</button>
+
+    <figure class="inline-gallery__figure">
+      <img
+        class="inline-gallery__image"
+        src="{{ first_src }}"
+        alt="{{ first_alt | escape }}"
+      >
+      <figcaption class="inline-gallery__caption">{{ first_caption }}</figcaption>
+    </figure>
+
+    <button class="inline-gallery__nav inline-gallery__nav--next" type="button" aria-label="Next image">›</button>
+  </div>
+
+  <div class="inline-gallery__thumbs">
+    {% for item in gallery_items %}
+      {% assign parts = item | split: "|" %}
+      {% assign src = parts[0] %}
+      {% assign alt = parts[1] %}
+      {% assign caption = parts[2] %}
+      <button
+        class="inline-gallery__thumb{% if forloop.first %} is-active{% endif %}"
+        type="button"
+        data-src="{{ src }}"
+        data-alt="{{ alt | escape }}"
+        data-caption="{{ caption | escape }}"
+        data-index="{{ forloop.index0 }}"
+        aria-label="Show image {{ forloop.index }}"
+      >
+        <img src="{{ src }}" alt="{{ alt | escape }}">
+      </button>
+    {% endfor %}
+  </div>
+</div>

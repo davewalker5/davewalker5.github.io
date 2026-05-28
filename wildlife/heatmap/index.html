@@ -1,0 +1,52 @@
+---
+layout: default
+title: Annual Wildlife Heatmaps by Location and Category
+description: Annual wildlife heatmap reports by country, year, location, and category, based on personal field records, with chart views and downloadable data.
+breadcrumb: Annual Heatmaps
+dataset: true
+---
+
+<h1>Annual Wildlife Heatmaps by Location and Category</h1>
+<p>
+  This page provides access to annual wildlife heatmap reports organised by country, year, location, and category. Each entry opens an individual heatmap chart together with a downloadable data file.
+</p>
+<h2>Available Reports</h2>
+<p class="muted">
+  These reports summarise the annual distribution of records across locations and wildlife categories using personal field records.
+</p>
+
+{%- assign reports = site.data.wildlife_reports | where: "report_type", "heatmap" | sort: "country" -%}
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Location</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for report in reports -%}
+      <tr>
+        <td>{{ report.country_title | default: report.country }}</td>
+        <td>{{ report.year }}</td>
+        <td>{{ report.location_title | default: report.location }}</td>
+        <td>
+          <a href="{{ '/wildlife/heatmap/view.html' | relative_url }}#/{{ report.country | uri_escape }}/{{ report.year | uri_escape }}/{{ report.location | uri_escape }}/{{ report.category | uri_escape }}">
+            {{ report.category_title | default: report.category }}
+          </a>
+        </td>
+      </tr>
+    {%- endfor -%}
+
+    {%- if reports == empty -%}
+      <tr>
+        <td colspan="4"><em>No heatmap reports found.</em></td>
+      </tr>
+    {%- endif -%}
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author's own wildlife records and summarise long-term observations of species occurrences over time.</i>

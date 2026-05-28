@@ -1,0 +1,57 @@
+{% assign item = include.item %}
+{% assign months = "January,February,March,April,May,June,July,August,September,October,November,December" | split: "," %}
+{% assign monthly = item.derived_metrics.monthly_target %}
+{% assign active_months = item.derived_metrics.active_months_ge_0_10 %}
+{% assign peak_month = item.derived_metrics.target_peak_month | default: item.derived_metrics.forcing_peak_month | default: item.derived_metrics.winter_peak_month %}
+{% assign trough_month = item.derived_metrics.target_trough_month %}
+
+<section class="classification-calendar-strip-block">
+  <h2>Calendar strip</h2>
+
+  <div class="calendar-strip" role="list" aria-label="Monthly classification strip">
+    {% for month in months %}
+      {% assign month_number = forloop.index %}
+      {% assign value = monthly[month] %}
+      {% assign state = "inactive" %}
+
+      {% if monthly %}
+        {% if value >= 0.75 %}
+          {% assign state = "very-high" %}
+        {% elsif value >= 0.4 %}
+          {% assign state = "high" %}
+        {% elsif value >= 0.1 %}
+          {% assign state = "low" %}
+        {% else %}
+          {% assign state = "inactive" %}
+        {% endif %}
+      {% elsif active_months contains month_number %}
+        {% assign state = "active" %}
+      {% elsif item.derived_metrics.season_start_month and item.derived_metrics.season_end_month %}
+        {% assign start_month = item.derived_metrics.season_start_month | round %}
+        {% assign end_month = item.derived_metrics.season_end_month | round %}
+        {% if month_number >= start_month and month_number <= end_month %}
+          {% assign state = "active" %}
+        {% endif %}
+      {% endif %}
+
+      {% assign rounded_peak = peak_month | round %}
+      {% assign rounded_trough = trough_month | round %}
+      {% if month_number == rounded_peak %}
+        {% assign marker = "peak" %}
+      {% elsif month_number == rounded_trough %}
+        {% assign marker = "trough" %}
+      {% else %}
+        {% assign marker = "" %}
+      {% endif %}
+
+      <div class="calendar-month calendar-month--{{ state }} {% if marker %}calendar-month--{{ marker }}{% endif %}" role="listitem">
+        <span class="calendar-month__label">{{ month | slice: 0, 3 }}</span>
+        {% if value %}
+          <span class="calendar-month__value">{{ value | round: 2 }}</span>
+        {% endif %}
+      </div>
+    {% endfor %}
+  </div>
+
+  <p class="classification-legend">Highlighted months indicate stronger modelled presence or detectability. A ring marks the fitted peak; a hollow mark indicates the trough where available.</p>
+</section>

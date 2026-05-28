@@ -1,0 +1,81 @@
+---
+layout: default
+---
+
+<h1>Seasonal Species Directory for {{ page.location }}</h1>
+
+{% if content != "" %}
+  {{ content }}
+{% else %}
+  <p>This directory brings together seasonal analyses for species recorded in {{ page.location }} where there is enough observational data to describe a meaningful pattern through the year.</p>
+
+  <p>Each species account uses long-term field records to explore its seasonal character: when it is most often encountered, how sharply its activity or visibility changes through the year, and whether its pattern suggests residency, migration, a flowering period, or an adult butterfly flight period.</p>
+
+  <p>The directory is intended as a reference companion to the more selective *Year in the Life* analyses. Rather than presenting a curated seasonal narrative, it provides a broader set of species accounts across birds, butterflies and flowering plants.</p>
+
+  <p>The classifications are interpretive rather than absolute. They describe the seasonal shape of the observations in this landscape, supported by fitted curves and model-derived summaries. Species with too little data are not included.</p>
+{% endif %}
+
+<h2>Browse by group</h2>
+
+{% assign classification_data = site.data[page.classification_data] %}
+{% assign groups = classification_data.species | map: "group" | uniq | sort %}
+
+<select id="species-group">
+  <option value="">Select a species group ...</option>
+  {% for group in groups %}
+    <option value="{{ group }}">{{ group }}</option>
+  {% endfor %}
+</select>
+
+<div id="species-directory">
+  {% assign groups = "Birds,Butterflies,Flora" | split: "," %}
+
+  {% for group in groups %}
+    <section class="species-group" data-group="{{ group }}" style="display: none;">
+      <h2>{{ group }}</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Species</th>
+            <th>Group</th>
+            <th>Location</th>
+          </tr>
+        </thead>
+        <tbody>
+            {% assign species_list = classification_data.species | where: "group", group | sort: "name" %}
+
+            {% for species in species_list %}
+            <tr>
+                <td><a href="{{ species.link }}">{{ species.name }}</a></td>
+                <td>{{ species.group }}</td>
+                <td>{{ species.location }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+      </table>
+    </section>
+  {% endfor %}
+</div>
+
+<br/>
+<hr>
+
+<p>
+    <i>
+        These species accounts are generated from the author's own long-term wildlife records and are intended as interpretive summaries of seasonal pattern rather than formal survey outputs.
+    </i>
+</p>
+
+<script>
+  const selector = document.getElementById("species-group");
+  const sections = document.querySelectorAll(".species-group");
+
+  selector.addEventListener("change", function () {
+    sections.forEach(section => {
+      section.style.display =
+        section.dataset.group === selector.value ? "block" : "none";
+    });
+  });
+</script>

@@ -1,0 +1,122 @@
+title: "Thrupp Lake Species Directory"
+start: 2020-01-01 00:00:00
+location: Thrupp Lake
+output_path: "wildlife/reports/Seasonal/Thrupp-Lake"
+species:
+  # --------------------------------------------------------------------------------
+  # Seasonality analysis for birds
+  # --------------------------------------------------------------------------------
+  - name: Black-Headed Gull
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/black_headed_gull.html"
+    classify_seasonality: 1
+  - name: Canada Goose
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/canada_goose.html"
+    classify_seasonality: 1
+  - name: Coot
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/coot.html"
+    classify_seasonality: 1
+  - name: Cormorant
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/cormorant.html"
+    classify_seasonality: 1
+  - name: Egret
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/egret.html"
+    classify_seasonality: 1
+  - name: Egyptian Goose
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/egyptian_goose.html"
+    classify_seasonality: 1
+  - name: Gadwall
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/gadwall.html"
+    classify_seasonality: 1
+  - name: Great Crested Grebe
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/great_crested_grebe.html"
+    classify_seasonality: 1
+  - name: Greylag Goose
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/greylag_goose.html"
+    classify_seasonality: 1
+  - name: Grey Heron
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/grey_heron.html"
+    classify_seasonality: 1
+  - name: Herring Gull
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/herring_gull.html"
+    classify_seasonality: 1
+  - name: Mallard
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/mallard.html"
+    classify_seasonality: 1
+  - name: Moorhen
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/moorhen.html"
+    classify_seasonality: 1
+  - name: Mute Swan
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/mute_swan.html"
+    classify_seasonality: 1
+  - name: Oystercatcher
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/oystercatcher.html"
+    classify_seasonality: 1
+  - name: Pochard
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/pochard.html"
+    classify_seasonality: 1
+  - name: Robin
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/robin.html"
+    classify_seasonality: 1
+  - name: Shoveler
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/shoveler.html"
+    classify_seasonality: 1
+  - name: Tufted Duck
+    group: "Birds"
+    location: "Thrupp Lake"
+    location_slug: "thrupp"
+    link: "/wildlife/seasonal/thrupp_lake/tufted_duck.html"
+    classify_seasonality: 1

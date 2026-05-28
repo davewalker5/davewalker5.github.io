@@ -1,0 +1,87 @@
+---
+layout: default
+title: Weather Analysis Reports
+description: Weather analysis reports generated from personal weather station data, with chart views and downloadable data.
+breadcrumb: Analysis Reports
+dataset: true
+---
+
+<h1>{{ page.title }}</h1>
+<p>
+This page lists weather analysis reports generated from personal weather station data. Each entry includes a chart view and a downloadable data file.
+</p>
+<h2>Available Reports</h2>
+
+{%- assign reports = site.data.weather_reports | where: "category", "analysis" | sort: "base" -%}
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Sensor</th>
+      <th>Measurement</th>
+      <th>Report Type</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {%- for report in reports -%}
+      {%- assign base = report.base -%}
+      {%- assign parts = base | split: "_" -%}
+
+      {%- if parts.size >= 3 -%}
+        {%- assign sensor = parts[0] -%}
+        {%- assign measurement = parts[1] -%}
+
+        {%- capture metric -%}
+          {%- for p in parts offset:2 -%}
+            {{ p }}{%- unless forloop.last -%}_{%- endunless -%}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- comment -%} Title-case measurement (preserve spaces) {%- endcomment -%}
+        {%- capture measurement_tc -%}
+          {%- assign words = measurement | replace: "_", " " | split: " " -%}
+          {%- for w in words -%}
+            {{ w | capitalize }}{%- unless forloop.last -%}{{ " " }}{%- endunless -%}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        {%- comment -%} Title-case metric + underscores -> spaces (preserve spaces) {%- endcomment -%}
+        {%- capture metric_tc -%}
+          {%- assign words = metric | replace: "_", " " | split: " " -%}
+          {%- for w in words -%}
+            {{ w | capitalize }}{%- unless forloop.last -%}{{ " " }}{%- endunless -%}
+          {%- endfor -%}
+        {%- endcapture -%}
+
+        <tr>
+          <td>{{ sensor | upcase }}</td>
+          <td>{{ measurement_tc | strip }}</td>
+          <td>
+            <a href="{{ '/weather/analysis/view.html' | relative_url }}#/{{ base | uri_escape }}/{{ sensor | uri_escape }}/{{ measurement | uri_escape }}/{{ metric | strip | uri_escape }}">
+              {{ metric_tc | strip }}
+            </a>
+          </td>
+          <td>
+            {%- if report.xlsx_path != "" -%}
+              <a href="{{ report.xlsx_path | relative_url }}">Download</a>
+            {%- else -%}
+              <span class="muted">-</span>
+            {%- endif -%}
+          </td>
+        </tr>
+      {%- endif -%}
+    {%- endfor -%}
+
+    {%- if reports == empty -%}
+      <tr>
+        <td colspan="4"><em>No analysis reports found.</em></td>
+      </tr>
+    {%- endif -%}
+
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author’s own weather station records over time.</i>

@@ -1,0 +1,65 @@
+---
+layout: default
+title: Wildlife Sightings Trends by Species
+description: Wildlife sightings trend reports by species, location, and category based on personal field records, with chart views and downloadable data.
+breadcrumb: Wildlife Sightings Trends by Species
+dataset: true
+---
+
+<h1>Wildlife Sightings Trends by Species</h1>
+<p>
+  This page provides access to wildlife sightings trend reports organised by country, location, and category. Each entry leads to a list of species for which trend charts and downloadable data are available.
+</p>
+
+<h2>Available Reports</h2>
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Location</th>
+      <th>Category</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {%- assign reports = site.data.wildlife_reports
+      | where: "report_type", "trend"
+      | sort: "country"
+    -%}
+
+    {%- assign rows = "" | split: "" -%}
+
+    {%- for report in reports -%}
+      {%- capture rec -%}
+        {{ report.country }}|{{ report.location }}|{{ report.category }}
+      {%- endcapture -%}
+      {%- assign rows = rows | push: rec | uniq -%}
+    {%- endfor -%}
+
+    {%- assign rows = rows | sort -%}
+
+    {%- for r in rows -%}
+      {%- assign p = r | split:'|' -%}
+
+      <tr>
+        <td>{{ p[0] | strip }}</td>
+        <td>{{ p[1] | strip }}</td>
+        <td>
+          <a href="{{ '/wildlife/trend/species-list.html' | relative_url }}#/{{ p[0] | strip | uri_escape }}/{{ p[1] | strip | uri_escape }}/{{ p[2] | strip | uri_escape }}">
+            {{ p[2] | strip }}
+          </a>
+        </td>
+      </tr>
+
+    {%- endfor -%}
+
+  </tbody>
+</table>
+
+<br/>
+<hr>
+
+<i>
+These reports are generated from the author's own wildlife records and summarise long-term observations of species occurrences over time.
+</i>

@@ -1,0 +1,27 @@
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>{{ include.title_column_name }}</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign selected_items = include.items |  where: "category", include.category %}
+    {% if include.sort %}
+      {% assign sorted_items = selected_items | sort: "title" %}
+    {% else %}
+      {% assign sorted_items = selected_items %}
+    {% endif %}
+    {% for item in sorted_items %}
+        <tr>
+        <td>
+            {% if item.title_prefix && item.title_prefix != "" %}
+              <span>{{ item.title_prefix }}</span>
+            {% endif %}
+            <a href="{{ item.link | relative_url }}">{{ item.title }}</a>
+        </td>
+        <td>{{ item.description }}</td>
+        </tr>
+    {% endfor %}
+  </tbody>
+</table>

@@ -1,0 +1,39 @@
+---
+layout: default
+title: Wildlife Sightings Trends by Species
+breadcrumb: Wildlife Reports
+description: Wildlife sightings trend reports by species, location, and category, based on personal field records.
+---
+
+<h1 id="heading">Wildlife Sightings Trends by Species</h1>
+
+<p id="intro">
+This page lists species trend reports by location and category, based on personal field records.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<table id="species-table" class="data-table">
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Category</th>
+      <th>View Chart</th>
+    </tr>
+  </thead>
+  <tbody></tbody>
+</table>
+
+{%- assign reports = site.data.wildlife_reports | where: "report_type", "trend" -%}
+{%- assign items = '' | split:'' -%}
+
+{%- for report in reports -%}
+  {%- capture rec -%}
+    {{ report.country }}|{{ report.location }}|{{ report.category }}|{{ report.species }}
+  {%- endcapture -%}
+  {%- assign items = items | push: rec -%}
+{%- endfor -%}
+
+<script id="trend-data" type="application/json">{{ items | jsonify }}</script>
+<script>window.SITE_BASEURL = {{ site.baseurl | jsonify }};</script>
+<script src="{{ '/assets/js/trend-species-list.js' | relative_url }}"></script>

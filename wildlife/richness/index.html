@@ -1,0 +1,64 @@
+---
+layout: default
+title: Annual Wildlife Species Richness by Country
+description: Annual wildlife species richness reports by country, based on personal field records, with report links and downloadable data.
+breadcrumb: Annual Species Richness
+dataset: true
+---
+
+<h1>Annual Wildlife Species Richness by Country</h1>
+<p>
+This page provides access to annual species richness reports by country, based on personal field records. Each entry links to a generated report for the selected year together with the associated downloadable data.
+</p>
+<h2>Available Reports</h2>
+<p class="muted">
+These reports summarise annual species richness from the author's wildlife records across the countries represented in the dataset.
+</p>
+
+{%- assign reports = site.data.wildlife_reports | where: "report_type", "richness" | sort: "year" -%}
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Country</th>
+      <th>Year</th>
+      <th>Data</th>
+    </tr>
+  </thead>
+  <tbody>
+    {%- for report in reports -%}
+      <tr>
+        <td>{{ report.country_title | default: report.country }}</td>
+        <td>
+          {%- if report.html_path != "" -%}
+            {%- assign html_path = site.assets_url | append: report.html_path -%}
+            <a href="{{ html_path | relative_url }}">
+              {{ report.year }}
+            </a>
+          {%- else -%}
+            {{ report.year }}
+          {%- endif -%}
+        </td>
+        <td>
+          {%- if report.xlsx_path != "" -%}
+            {%- assign xlsx_path = site.assets_url | append: report.xlsx_path -%}
+            <a href="{{ xlsx_path | relative_url }}" download>
+              Download XLSX
+            </a>
+          {%- else -%}
+            <span class="muted">-</span>
+          {%- endif -%}
+        </td>
+      </tr>
+    {%- endfor -%}
+
+    {%- if reports == empty -%}
+      <tr>
+        <td colspan="3"><em>No richness reports found.</em></td>
+      </tr>
+    {%- endif -%}
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author's own wildlife records and summarise long-term observations of species occurrences over time.</i>

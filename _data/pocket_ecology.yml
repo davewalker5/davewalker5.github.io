@@ -1,0 +1,20 @@
+- title: "Resident Detectability Model"
+  category: "projects"
+  description: "How a resident species varies in visibility through the year"
+  link: /wildlife/pocket/resident.html
+- title: "Seasonal Presence Model"
+  category: "projects"
+  description: "When a species appears within the year"
+  link: /wildlife/pocket/seasonal.html
+- title: "Winter Visitor Model"
+  category: "projects"
+  description: "When a species appears across the year boundary"
+  link: /wildlife/pocket/winter.html
+- title: "Bat Call Timing Analysis"
+  category: "projects"
+  description: "Portable analysis of bat pulse timing structure using PRI, IPI, and sequence timing metrics"
+  link: /wildlife/pocket/bat_call_timing.html
+- title: "Bat Behavioural Phase Analysis"
+  category: "projects"
+  description: "Portable analysis of bat echolocation behaviour through pulse timing and behavioural phase inference"
+  link: /wildlife/pocket/bat_phase_analysis.html

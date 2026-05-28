@@ -1,0 +1,135 @@
+---
+layout: default
+---
+
+{% assign classification_key = page.classification | default: page.classification_file %}
+{% assign location_key = page.location %}
+{% assign item = site.data.classifications[location_key][classification_key] %}
+
+<article class="species-classification-page">
+
+  {% if item %}
+    <header class="species-classification-header">
+      <p class="eyebrow">Seasonal Analysis and Species Classification</p>
+      <h1>{{ item.species | default: page.title }}</h1>
+      {% if item.model_family %}
+        <p class="model-family">Model Family : {{ item.model_family | replace: '_', ' ' | capitalize }}</p>
+      {% endif %}
+    </header>
+
+    {% if page.images %}
+      {%- assign assets_path = site.assets_url | append: "/images/wildlife/" -%}
+      {% include image-block.html images=page.images assets=assets_path %}
+    {% endif %}
+
+    <section class="classification-grid">
+      <div class="classification-main">
+        {% include classification-summary-card.html item=item %}
+      </div>
+
+      <aside class="classification-side">
+        {% include classification-trait-badges.html item=item %}
+      </aside>
+    </section>
+
+    {% include classification-seasonal-wheel.html item=item %}
+    {% include classification-calendar-strip.html item=item %}
+
+    <section class="classification-notes">
+      <h2>Classification evidence</h2>
+
+      {% if item.derived_metrics %}
+        <dl class="classification-evidence-list">
+          {% for metric in item.derived_metrics %}
+            {% unless metric[0] == 'monthly_target' or metric[0] contains 'active_months' %}
+              <dt>{{ metric[0] | replace: '_', ' ' | capitalize }}</dt>
+              <dd>
+                {% assign value = metric[1] %}
+                {% assign numeric_value = value | plus: 0 %}
+
+                {% if value == numeric_value %}
+                  {{ value | round: 3 }}
+                {% else %}
+                  {{ value }}
+                {% endif %}
+              </dd>
+            {% endunless %}
+          {% endfor %}
+        </dl>
+      {% endif %}
+
+      {% if item.warnings and item.warnings.size > 0 %}
+        <h3>Warnings</h3>
+        <ul>
+          {% for warning in item.warnings %}
+            <li>{{ warning }}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    </section>
+
+    {{ content }}
+
+  {% else %}
+    <header>
+      <h1>{{ page.title }}</h1>
+    </header>
+    <p><strong>Classification data not found.</strong></p>
+    <p>Expected to find <code>{{ classification_key }}</code> in <code>site.data.classifications</code>.</p>
+    {{ content }}
+  {% endif %}
+
+  {% if page.charts %}
+    <section class="classification-chart-section">
+      <div class="classification-chart-section__header">
+        <h2>Observed and Simulated Seasonal Patterns</h2>
+      </div>
+
+      <div class="classification-chart-grid">
+        {% for chart in page.charts %}
+          <figure class="classification-chart-card">
+            {%- assign chart_url = site.assets_url | append: chart.src -%}
+            <img src="{{ chart_url | relative_url }}" alt="{{ chart.alt | default: chart.title | default: page.title }}">
+
+            {% if chart.title or chart.caption %}
+              <figcaption>
+                {% if chart.title %}
+                  <strong>{{ chart.title }}</strong>
+                {% endif %}
+                {% if chart.caption %}
+                  <span>{{ chart.caption }}</span>
+                {% endif %}
+              </figcaption>
+            {% endif %}
+          </figure>
+        {% endfor %}
+      </div>
+    </section>
+  {% endif %}
+
+  {% if page.downloads and page.downloads.size > 0 %}
+    <section class="classification-downloads">
+      <div class="classification-downloads__header">
+        <p class="eyebrow">Downloads</p>
+        <h2>Associated files</h2>
+      </div>
+
+      <ul class="classification-download-list">
+        {% for file in page.downloads %}
+          {%- assign file_url = site.assets_url | append: file.link -%}
+          <li class="classification-download-item">
+            <a href="{{ file_url | relative_url }}" class="classification-download-link">
+              <span class="classification-download-link__name">
+                {{ file.name }}
+              </span>
+              <span class="classification-download-link__action">
+                Download
+              </span>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+    </section>
+  {% endif %}
+
+</article>

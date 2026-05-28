@@ -1,0 +1,58 @@
+---
+layout: default
+title: Weather Station Database Management Reports
+description: Weather station management reports generated from personal weather station data, with chart views and downloadable data.
+breadcrumb: Weather Station Database Management Reports
+---
+
+<h1>{{ page.title }}</h1>
+<p>
+This page lists weather station database management reports. Each entry includes a chart view and a downloadable data file.
+</p>
+<h2>Available Reports</h2>
+
+{% assign reports = site.data.weather_reports | where: "category", "management" | sort: "title" %}
+
+<table class="data-table">
+  <thead>
+    <tr>
+      <th>Report Name</th>
+      <th>Download</th>
+    </tr>
+  </thead>
+  <tbody>
+
+    {% for report in reports %}
+      {% assign base = report.base %}
+      {% assign title = report.title %}
+
+      <tr>
+        <td>
+          <a href="{{ '/weather/management/view.html' | relative_url }}#/{{ base | uri_escape }}/{{ title | uri_escape }}">
+            {{ title }}
+          </a>
+        </td>
+        <td>
+          {% if report.xlsx_path != "" %}
+            <a href="{{ report.xlsx_path | relative_url }}"
+               target="_blank" rel="noopener noreferrer">
+              Download
+            </a>
+          {% else %}
+            <span class="muted">-</span>
+          {% endif %}
+        </td>
+      </tr>
+    {% endfor %}
+
+    {% if reports == empty %}
+      <tr>
+        <td colspan="2"><em>No management reports found.</em></td>
+      </tr>
+    {% endif %}
+
+  </tbody>
+</table>
+<br/>
+<hr>
+<i>These reports are generated from the author’s own weather station records over time.</i>

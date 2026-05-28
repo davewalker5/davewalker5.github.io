@@ -1,0 +1,417 @@
+/* =========================================================
+   FIELD NOTES JOURNAL — SPECIES CLASSIFICATION DARK THEME
+
+   Dark-theme adaptation of the species classification panel.
+   Layout is intentionally unchanged; only colour, contrast,
+   borders, shadows, and chart/month states are adjusted.
+   ========================================================= */
+
+:root {
+  --classification-bg: #111315;
+  --classification-surface: #181b1e;
+  --classification-surface-raised: #202428;
+  --classification-surface-soft: #252a2f;
+
+  --classification-border: #343a40;
+  --classification-border-soft: #2a2f34;
+
+  --classification-text: #e8e1d5;
+  --classification-muted: #b8afa2;
+  --classification-faint: #8f877b;
+
+  --classification-accent: #c9a96a;
+  --classification-accent-strong: #e1c27f;
+  --classification-accent-soft: rgba(201, 169, 106, 0.18);
+  --classification-accent-mid: rgba(201, 169, 106, 0.32);
+  --classification-accent-high: rgba(201, 169, 106, 0.52);
+
+  --classification-shadow: rgba(0, 0, 0, 0.35);
+  --classification-shadow-soft: rgba(0, 0, 0, 0.22);
+}
+
+.species-classification-page {
+  margin: 0 auto;
+  color: var(--classification-text);
+}
+
+.species-classification-header {
+  margin-bottom: 2rem;
+  border-bottom: 1px solid #ccc;
+}
+
+.eyebrow,
+.model-family,
+.classification-card__label,
+.classification-legend {
+  color: var(--classification-faint);
+  font-size: 0.9rem;
+  letter-spacing: 0.03em;
+}
+
+.classification-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(220px, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+
+.classification-card,
+.classification-traits,
+.classification-wheel-block,
+.classification-calendar-strip-block,
+.classification-chart-section,
+.classification-notes {
+  border: 1px solid var(--classification-border);
+  background:
+    linear-gradient(
+      180deg,
+      var(--classification-surface-raised),
+      var(--classification-surface)
+    );
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+  box-shadow:
+    0 0.8rem 1.8rem var(--classification-shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.classification-card__primary {
+  color: var(--classification-accent-strong);
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.classification-card__summary {
+  color: var(--classification-muted);
+  line-height: 1.6;
+}
+
+.classification-card__facts,
+.classification-evidence-list {
+  display: grid;
+  grid-template-columns: max-content minmax(0, 1fr);
+  gap: 0.4rem 1rem;
+}
+
+.classification-card__facts dt,
+.classification-evidence-list dt {
+  color: var(--classification-faint);
+}
+
+.classification-card__facts dd,
+.classification-evidence-list dd {
+  color: var(--classification-muted);
+}
+
+.trait-badge-list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+}
+
+.trait-badge {
+  border: 1px solid var(--classification-border);
+  border-radius: 999px;
+  padding: 0.25rem 0.6rem;
+  background: var(--classification-surface-soft);
+  color: var(--classification-muted);
+  font-size: 0.85rem;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.03);
+}
+
+.trait-badge:hover {
+  border-color: rgba(201, 169, 106, 0.45);
+  color: var(--classification-text);
+  background: #2b3036;
+}
+
+.calendar-strip {
+  display: grid;
+  grid-template-columns: repeat(12, minmax(0, 1fr));
+  gap: 0.25rem;
+}
+
+.calendar-month {
+  min-height: 4.2rem;
+  border: 1px solid var(--classification-border-soft);
+  border-radius: 0.4rem;
+  padding: 0.35rem 0.25rem;
+  text-align: center;
+  position: relative;
+  background: var(--classification-surface-raised);
+  color: var(--classification-faint);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.calendar-month--inactive {
+  background: #151719;
+  border-color: #24282c;
+  color: #625d56;
+  opacity: 0.6;
+}
+
+.calendar-month--low {
+  background: #1d211f;
+  border-color: #334037;
+  color: #aeb8a8;
+}
+
+.calendar-month--active,
+.calendar-month--high {
+  background: var(--classification-accent-mid);
+  border-color: rgba(201, 169, 106, 0.45);
+  color: #ecd9aa;
+}
+
+.calendar-month--very-high {
+  background: var(--classification-accent-high);
+  border-color: rgba(225, 194, 127, 0.62);
+  color: #fff0c9;
+  box-shadow:
+    0 0.35rem 1rem var(--classification-shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.05);
+}
+
+.calendar-month--peak::after {
+  content: "";
+  position: absolute;
+  top: 0.3rem;
+  right: 0.3rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  background: currentColor;
+}
+
+.calendar-month--trough::before {
+  content: "";
+  position: absolute;
+  bottom: 0.3rem;
+  right: 0.3rem;
+  width: 0.55rem;
+  height: 0.55rem;
+  border-radius: 50%;
+  border: 1px solid currentColor;
+}
+
+.calendar-month__label,
+.calendar-month__value {
+  display: block;
+}
+
+.calendar-month__value {
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+  color: var(--classification-muted);
+}
+
+.calendar-month--inactive .calendar-month__value {
+  color: #625d56;
+}
+
+.seasonal-wheel-wrap {
+  display: flex;
+  justify-content: center;
+}
+
+.seasonal-wheel {
+  max-width: 320px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0.9rem 1.4rem var(--classification-shadow));
+}
+
+.seasonal-wheel__base {
+  fill: none;
+  stroke: var(--classification-border-soft);
+  stroke-width: 18;
+}
+
+.seasonal-wheel__tick {
+  stroke-linecap: round;
+  stroke-width: 10;
+}
+
+.seasonal-wheel__tick--inactive { stroke: #2a2f34; }
+.seasonal-wheel__tick--low { stroke: #627260; }
+.seasonal-wheel__tick--high,
+.seasonal-wheel__tick--active { stroke: var(--classification-accent); }
+.seasonal-wheel__tick--very-high { stroke: var(--classification-accent-strong); }
+
+.seasonal-wheel__peak {
+  fill: currentColor;
+}
+
+.seasonal-wheel__centre-label {
+  fill: var(--classification-text);
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.seasonal-wheel__centre-subtitle {
+  fill: var(--classification-faint);
+  font-size: 10px;
+}
+
+@media (max-width: 760px) {
+  .classification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-strip {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+}
+
+/* .classification-card,
+.classification-traits,
+.classification-wheel-block,
+.classification-calendar-strip-block,
+.classification-chart-section,
+.classification-notes {
+  border: 1px solid #ddd7cc;
+  background: #fffdf8;
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-bottom: 1.25rem;
+} */
+
+.classification-chart-section__header {
+  margin-bottom: 1rem;
+}
+
+.classification-chart-section__header h2 {
+  margin-top: 0.15rem;
+}
+
+.classification-chart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.classification-chart-card {
+  margin: 0;
+  border: 1px solid #ddd7cc;
+  border-radius: 0.65rem;
+  background: #f7f4ed;
+  overflow: hidden;
+}
+
+.classification-chart-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  background: #fffdf8;
+}
+
+.classification-chart-card figcaption {
+  padding: 0.8rem 0.9rem 0.9rem;
+  color: #666;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.classification-chart-card figcaption strong,
+.classification-chart-card figcaption span {
+  display: block;
+}
+
+.classification-chart-card figcaption strong {
+  color: inherit;
+  margin-bottom: 0.15rem;
+}
+
+@media (max-width: 760px) {
+  .classification-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .calendar-strip {
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+  }
+
+  .classification-chart-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.classification-downloads {
+  border: 1px solid var(--classification-border);
+  background:
+    linear-gradient(
+      180deg,
+      var(--classification-surface-raised),
+      var(--classification-surface)
+    );
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.25rem;
+  box-shadow:
+    0 0.8rem 1.8rem var(--classification-shadow-soft),
+    inset 0 1px 0 rgba(255, 255, 255, 0.035);
+}
+
+.classification-downloads__header {
+  margin-bottom: 1rem;
+}
+
+.classification-downloads__header h2 {
+  margin: 0.15rem 0 0;
+}
+
+.classification-download-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 0.65rem;
+}
+
+.classification-download-item {
+  margin: 0;
+}
+
+.classification-download-link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.8rem 0.9rem;
+  border: 1px solid var(--classification-border-soft);
+  border-radius: 0.55rem;
+  background: var(--classification-surface-soft);
+  color: var(--classification-muted);
+  text-decoration: none;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.025);
+}
+
+.classification-download-link:hover {
+  border-color: rgba(201, 169, 106, 0.45);
+  background: #2b3036;
+  color: var(--classification-text);
+}
+
+.classification-download-link__name {
+  font-weight: 500;
+}
+
+.classification-download-link__action {
+  color: var(--classification-accent-strong);
+  font-size: 0.85rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+@media (max-width: 560px) {
+  .classification-download-link {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.35rem;
+  }
+}

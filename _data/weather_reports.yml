@@ -1,0 +1,250 @@
+- category: analysis
+  base: all_all_correlation_pair_grid_24_hour
+  title: All All Correlation Pair Grid 24 Hour
+  png_path: /weather/reports/analysis/all_all_correlation_pair_grid_24_hour.png
+  xlsx_path: ''
+- category: analysis
+  base: all_all_pearson_correlation_heatmap_24_hour
+  title: All All Pearson Correlation Heatmap 24 Hour
+  png_path: /weather/reports/analysis/all_all_pearson_correlation_heatmap_24_hour.png
+  xlsx_path: ''
+- category: analysis
+  base: all_all_pearson_correlation_heatmap_7_day
+  title: All All Pearson Correlation Heatmap 7 Day
+  png_path: /weather/reports/analysis/all_all_pearson_correlation_heatmap_7_day.png
+  xlsx_path: ''
+- category: analysis
+  base: all_all_spearman_correlation_heatmap_24_hour
+  title: All All Spearman Correlation Heatmap 24 Hour
+  png_path: /weather/reports/analysis/all_all_spearman_correlation_heatmap_24_hour.png
+  xlsx_path: ''
+- category: analysis
+  base: all_all_spearman_correlation_heatmap_7_day
+  title: All All Spearman Correlation Heatmap 7 Day
+  png_path: /weather/reports/analysis/all_all_spearman_correlation_heatmap_7_day.png
+  xlsx_path: ''
+- category: analysis
+  base: bme280_all_diurnal_comfort_score_variation
+  title: Bme280 All Diurnal Comfort Score Variation
+  png_path: /weather/reports/analysis/bme280_all_diurnal_comfort_score_variation.png
+  xlsx_path: ''
+- category: analysis
+  base: bme280_all_diurnal_dew_point_variation
+  title: Bme280 All Diurnal Dew Point Variation
+  png_path: /weather/reports/analysis/bme280_all_diurnal_dew_point_variation.png
+  xlsx_path: ''
+- category: analysis
+  base: bme280_all_mean_dew_point_comfort_score
+  title: Bme280 All Mean Dew Point Comfort Score
+  png_path: /weather/reports/analysis/bme280_all_mean_dew_point_comfort_score.png
+  xlsx_path: ''
+- category: analysis
+  base: bme280_pressure_pressure_event
+  title: Bme280 Pressure Pressure Event
+  png_path: /weather/reports/analysis/bme280_pressure_pressure_event.png
+  xlsx_path: ''
+- category: analysis
+  base: sgp40_vocindex_voc_rating_distribution
+  title: Sgp40 Vocindex Voc Rating Distribution
+  png_path: /weather/reports/analysis/sgp40_vocindex_voc_rating_distribution.png
+  xlsx_path: ''
+- category: daily
+  base: bme280_humidity_daily_summary
+  title: Bme280 Humidity Daily Summary
+  png_path: /weather/reports/daily/bme280_humidity_daily_summary.png
+  xlsx_path: ''
+- category: daily
+  base: bme280_pressure_daily_summary
+  title: Bme280 Pressure Daily Summary
+  png_path: /weather/reports/daily/bme280_pressure_daily_summary.png
+  xlsx_path: ''
+- category: daily
+  base: bme280_temperature_daily_summary
+  title: Bme280 Temperature Daily Summary
+  png_path: /weather/reports/daily/bme280_temperature_daily_summary.png
+  xlsx_path: ''
+- category: daily
+  base: sgp40_vocindex_daily_summary
+  title: Sgp40 Vocindex Daily Summary
+  png_path: /weather/reports/daily/sgp40_vocindex_daily_summary.png
+  xlsx_path: ''
+- category: daily
+  base: veml7700_illuminance_daily_summary
+  title: Veml7700 Illuminance Daily Summary
+  png_path: /weather/reports/daily/veml7700_illuminance_daily_summary.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_humidity_diurnal_heatmap
+  title: Bme280 Humidity Diurnal Heatmap
+  png_path: /weather/reports/diurnal/bme280_humidity_diurnal_heatmap.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_humidity_diurnal_variation
+  title: Bme280 Humidity Diurnal Variation
+  png_path: /weather/reports/diurnal/bme280_humidity_diurnal_variation.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_humidity_weekend_vs_weekday_comparison
+  title: Bme280 Humidity Weekend Vs Weekday Comparison
+  png_path: /weather/reports/diurnal/bme280_humidity_weekend_vs_weekday_comparison.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_pressure_diurnal_heatmap
+  title: Bme280 Pressure Diurnal Heatmap
+  png_path: /weather/reports/diurnal/bme280_pressure_diurnal_heatmap.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_pressure_diurnal_variation
+  title: Bme280 Pressure Diurnal Variation
+  png_path: /weather/reports/diurnal/bme280_pressure_diurnal_variation.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_pressure_weekend_vs_weekday_comparison
+  title: Bme280 Pressure Weekend Vs Weekday Comparison
+  png_path: /weather/reports/diurnal/bme280_pressure_weekend_vs_weekday_comparison.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_temperature_diurnal_heatmap
+  title: Bme280 Temperature Diurnal Heatmap
+  png_path: /weather/reports/diurnal/bme280_temperature_diurnal_heatmap.png
+  xlsx_path: ''
+- category: diurnal
+  base: bme280_temperature_weekend_vs_weekday_comparison
+  title: Bme280 Temperature Weekend Vs Weekday Comparison
+  png_path: /weather/reports/diurnal/bme280_temperature_weekend_vs_weekday_comparison.png
+  xlsx_path: ''
+- category: diurnal
+  base: diurnal_temperature_diurnal_variation
+  title: Diurnal Temperature Diurnal Variation
+  png_path: /weather/reports/diurnal/diurnal_temperature_diurnal_variation.png
+  xlsx_path: ''
+- category: diurnal
+  base: sgp40_vocindex_diurnal_heatmap
+  title: Sgp40 Vocindex Diurnal Heatmap
+  png_path: /weather/reports/diurnal/sgp40_vocindex_diurnal_heatmap.png
+  xlsx_path: ''
+- category: diurnal
+  base: sgp40_vocindex_diurnal_variation
+  title: Sgp40 Vocindex Diurnal Variation
+  png_path: /weather/reports/diurnal/sgp40_vocindex_diurnal_variation.png
+  xlsx_path: ''
+- category: diurnal
+  base: sgp40_vocindex_weekend_vs_weekday_comparison
+  title: Sgp40 Vocindex Weekend Vs Weekday Comparison
+  png_path: /weather/reports/diurnal/sgp40_vocindex_weekend_vs_weekday_comparison.png
+  xlsx_path: ''
+- category: diurnal
+  base: veml7700_illuminance_diurnal_heatmap
+  title: Veml7700 Illuminance Diurnal Heatmap
+  png_path: /weather/reports/diurnal/veml7700_illuminance_diurnal_heatmap.png
+  xlsx_path: ''
+- category: diurnal
+  base: veml7700_illuminance_diurnal_variation
+  title: Veml7700 Illuminance Diurnal Variation
+  png_path: /weather/reports/diurnal/veml7700_illuminance_diurnal_variation.png
+  xlsx_path: ''
+- category: diurnal
+  base: veml7700_illuminance_weekend_vs_weekday_comparison
+  title: Veml7700 Illuminance Weekend Vs Weekday Comparison
+  png_path: /weather/reports/diurnal/veml7700_illuminance_weekend_vs_weekday_comparison.png
+  xlsx_path: ''
+- category: health
+  base: bme280_all_missing_data
+  title: Bme280 All Missing Data
+  png_path: /weather/reports/health/bme280_all_missing_data.png
+  xlsx_path: ''
+- category: health
+  base: bme280_humidity_gaps
+  title: Bme280 Humidity Gaps
+  png_path: /weather/reports/health/bme280_humidity_gaps.png
+  xlsx_path: ''
+- category: health
+  base: bme280_humidity_noise
+  title: Bme280 Humidity Noise
+  png_path: /weather/reports/health/bme280_humidity_noise.png
+  xlsx_path: ''
+- category: health
+  base: bme280_humidity_out_of_range
+  title: Bme280 Humidity Out Of Range
+  png_path: /weather/reports/health/bme280_humidity_out_of_range.png
+  xlsx_path: ''
+- category: health
+  base: bme280_pressure_gaps
+  title: Bme280 Pressure Gaps
+  png_path: /weather/reports/health/bme280_pressure_gaps.png
+  xlsx_path: ''
+- category: health
+  base: bme280_pressure_noise
+  title: Bme280 Pressure Noise
+  png_path: /weather/reports/health/bme280_pressure_noise.png
+  xlsx_path: ''
+- category: health
+  base: bme280_pressure_out_of_range
+  title: Bme280 Pressure Out Of Range
+  png_path: /weather/reports/health/bme280_pressure_out_of_range.png
+  xlsx_path: ''
+- category: health
+  base: bme280_temperature_gaps
+  title: Bme280 Temperature Gaps
+  png_path: /weather/reports/health/bme280_temperature_gaps.png
+  xlsx_path: ''
+- category: health
+  base: bme280_temperature_noise
+  title: Bme280 Temperature Noise
+  png_path: /weather/reports/health/bme280_temperature_noise.png
+  xlsx_path: ''
+- category: health
+  base: bme280_temperature_out_of_range
+  title: Bme280 Temperature Out Of Range
+  png_path: /weather/reports/health/bme280_temperature_out_of_range.png
+  xlsx_path: ''
+- category: health
+  base: sgp40_vocindex_gaps
+  title: Sgp40 Vocindex Gaps
+  png_path: /weather/reports/health/sgp40_vocindex_gaps.png
+  xlsx_path: ''
+- category: health
+  base: sgp40_vocindex_noise
+  title: Sgp40 Vocindex Noise
+  png_path: /weather/reports/health/sgp40_vocindex_noise.png
+  xlsx_path: ''
+- category: health
+  base: sgp40_vocindex_out_of_range
+  title: Sgp40 Vocindex Out Of Range
+  png_path: /weather/reports/health/sgp40_vocindex_out_of_range.png
+  xlsx_path: ''
+- category: health
+  base: veml7700_illuminance_gaps
+  title: Veml7700 Illuminance Gaps
+  png_path: /weather/reports/health/veml7700_illuminance_gaps.png
+  xlsx_path: ''
+- category: health
+  base: veml7700_illuminance_noise
+  title: Veml7700 Illuminance Noise
+  png_path: /weather/reports/health/veml7700_illuminance_noise.png
+  xlsx_path: ''
+- category: health
+  base: veml7700_illuminance_out_of_range
+  title: Veml7700 Illuminance Out Of Range
+  png_path: /weather/reports/health/veml7700_illuminance_out_of_range.png
+  xlsx_path: ''
+- category: health
+  base: veml7700_illuminance_saturation
+  title: Veml7700 Illuminance Saturation
+  png_path: /weather/reports/health/veml7700_illuminance_saturation.png
+  xlsx_path: ''
+- category: management
+  base: database_size
+  title: Database Size
+  png_path: /weather/reports/management/database_size.png
+  xlsx_path: ''
+- category: management
+  base: table_growth
+  title: Table Growth
+  png_path: /weather/reports/management/table_growth.png
+  xlsx_path: ''
+- category: management
+  base: table_size
+  title: Table Size
+  png_path: /weather/reports/management/table_size.png
+  xlsx_path: ''

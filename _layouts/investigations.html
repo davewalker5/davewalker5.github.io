@@ -1,0 +1,29 @@
+---
+layout: default
+---
+
+<article class="investigation-page">
+  <header class="investigation-header">
+
+    <div class="print-imprint print-only no-booklet">
+      <span class="print-journal">Field Notes Journal</span>
+      <span class="print-tagline">a personal natural history of place</span>
+    </div>
+
+    <h1>{{ page.investigation_id }} - {{ page.title }}</h1>
+
+    <button class="print-btn no-print" type="button" onclick="window.print()">
+      Print
+    </button>
+  </header>
+
+  <div class="investigation-body">
+    <h2>Specimen & Context</h2>
+    {% include specimen_summary.html %}
+    {{ content }}
+  </div>
+
+  <footer class="no-print">
+    <a href="/microscopy/investigations/">&larr; Back to Investigations</a>
+  </footer>
+</article>

@@ -1,0 +1,148 @@
+---
+layout: default
+title: Investigations
+breadcrumb: Investigations
+description: An index of microscopy investigations.
+---
+
+<h1>Investigations</h1>
+
+<p style="font-style: italic; margin-top: -0.5em;">
+  An index of ongoing and completed microscopic enquiries
+</p>
+
+<p>
+The investigations recorded here form the working record of enquiry conducted with the Leitz microscope. Each entry corresponds to a defined investigation, often extending across several sessions, specimens, and preparations.
+</p>
+
+<p>
+This index is derived from the investigations catalogue and may be filtered by scheme series.
+</p>
+
+<label for="series-filter"><strong>Select series:</strong></label>
+<select id="series-filter">
+  <option value="">-- Choose a series --</option>
+</select>
+
+<table id="investigations-table" class="data-table" style="display:none;">
+  <thead>
+    <tr>
+      <th>Date</th>
+      <th>Reference</th>
+      <th>Title</th>
+      <th>Subject</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% assign sorted_rows = site.data.microscopy_investigations | sort: "Date" | reverse %}
+
+    {% for row in sorted_rows %}
+      {% assign series_key = row.Scheme_Code | append: " " | append: row.Series %}
+      {% assign investigation_path = '/microscopy/investigations/' | append: row.Reference | append: '.html' %}
+      {% assign investigation_exists = false %}
+
+      {% for p in site.pages %}
+        {% if p.url == investigation_path %}
+          {% assign investigation_exists = true %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+
+      {% if investigation_exists %}
+        <tr class="investigation-row" data-series="{{ series_key | strip | escape }}">
+          <td>{{ row.Date | date: "%Y-%m-%d" }}</td>
+          <td>
+            <a href="{{ '/microscopy/investigations/' | append: row.Reference | append: '.html' | relative_url }}">
+              {{ row.Reference }}
+            </a>
+          </td>
+          <td>{{ row.Title }}</td>
+          <td>{{ row.Subject }}</td>
+        </tr>
+      {% endif %}
+    {% endfor %}
+  </tbody>
+</table>
+
+<p id="no-results-message" style="display:none; font-style: italic;">
+  No investigations found for the selected series.
+</p>
+
+<br/>
+<hr/>
+<i>The investigations listed here are derived from the investigations catalogue.</i>
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+  const filter = document.getElementById("series-filter");
+  const table = document.getElementById("investigations-table");
+  const rows = Array.from(document.querySelectorAll(".investigation-row"));
+  const noResultsMessage = document.getElementById("no-results-message");
+  const label = document.querySelector('label[for="series-filter"]');
+
+  const seriesSet = new Set();
+
+  rows.forEach(function (row) {
+    const rowSeries = (row.getAttribute("data-series") || "").trim();
+    if (rowSeries !== "") {
+      seriesSet.add(rowSeries);
+    }
+  });
+
+  const sortedSeries = Array.from(seriesSet).sort(function (a, b) {
+    return a.localeCompare(b);
+  });
+
+  sortedSeries.forEach(function (series) {
+    const option = document.createElement("option");
+    option.value = series;
+    option.textContent = series;
+    filter.appendChild(option);
+  });
+
+  function applyFilter() {
+    const selected = filter.value;
+    let visibleCount = 0;
+
+    if (!selected) {
+      rows.forEach(function (row) {
+        row.style.display = "none";
+      });
+      table.style.display = "none";
+      noResultsMessage.style.display = "none";
+      return;
+    }
+
+    rows.forEach(function (row) {
+      const rowSeries = (row.getAttribute("data-series") || "").trim();
+
+      if (rowSeries === selected) {
+        row.style.display = "table-row";
+        visibleCount++;
+      } else {
+        row.style.display = "none";
+      }
+    });
+
+    table.style.display = visibleCount > 0 ? "table" : "none";
+    noResultsMessage.style.display = visibleCount === 0 ? "block" : "none";
+  }
+
+  if (sortedSeries.length === 0) {
+    filter.style.display = "none";
+    if (label) label.style.display = "none";
+    table.style.display = "none";
+    noResultsMessage.style.display = "none";
+    return;
+  }
+
+  if (sortedSeries.length === 1) {
+    filter.value = sortedSeries[0];
+    filter.style.display = "none";
+    if (label) label.style.display = "none";
+  }
+
+  applyFilter();
+  filter.addEventListener("change", applyFilter);
+});
+</script>
