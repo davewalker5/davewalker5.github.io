@@ -39,35 +39,35 @@
 # --------------------------------------------------------------------------------
 - area: Microscopy
   title: Microscopy Programme
-  url: /assets/downloads/booklets/microscopy-programme.pdf
+  url: /downloads/booklets/microscopy-programme.pdf
   category: Booklets
 - area: Travel
   title: Tanzania, 2022 - Field Notes from a Long-Awaited Journey
-  url: /assets/downloads/booklets/tanzania-2022.pdf
+  url: /downloads/booklets/tanzania-2022.pdf
   category: Booklets
 - area: Wildlife
   title: A Year In the Life of Abingdon
-  url: /assets/downloads/booklets/year-in-life-abingdon.pdf
+  url: /downloads/booklets/year-in-life-abingdon.pdf
   category: Booklets
 - area: Wildlife
   title: UK Bat Emergence Times and Call Frequency Reference
-  url: /assets/downloads/booklets/uk-bats-reference.pdf
+  url: /downloads/booklets/uk-bats-reference.pdf
   category: Booklets
 - area: Wildlife
   title: Wildlife Seasonal Modelling
-  url: /assets/downloads/booklets/wildlife-seasonal-modelling.pdf
+  url: /downloads/booklets/wildlife-seasonal-modelling.pdf
   category: Booklets
 - area: Wildlife
   title: Abingdon - Seasonal Ecology and Species Assemblages
-  url: /assets/downloads/booklets/abingdon-seasonal-ecology.pdf
+  url: /downloads/booklets/abingdon-seasonal-ecology.pdf
   category: Booklets
 - area: Wildlife
   title: Abingdon - Seasonal Ecology Atlas
-  url: /assets/downloads/booklets/abingdon-seasonal-ecology-atlas.pdf
+  url: /downloads/booklets/abingdon-seasonal-ecology-atlas.pdf
   category: Booklets
 - area: Wildlife
   title: Thrupp Lake - Seasonal Ecology and Species Assemblages
-  url: /assets/downloads/booklets/thrupp-lake-seasonal-ecology.pdf
+  url: /downloads/booklets/thrupp-lake-seasonal-ecology.pdf
   category: Booklets
 
 # --------------------------------------------------------------------------------
@@ -75,21 +75,21 @@
 # --------------------------------------------------------------------------------
 - area: Aircraft
   title: Flight Recorder SQLite database
-  url: /assets/downloads/databases/flightrecorder.db.gz
+  url: /downloads/databases/flightrecorder.db.gz
   reference: FN-AC-DATA
   category: Databases
 - area: Microscopy
   title: Plate library database
-  url: /assets/downloads/databases/plate_library.db.gz
+  url: /downloads/databases/plate_library.db.gz
   reference: FN-MICRO-DATA
   category: Databases
 - area: Weather
   title: RPi-Weather Station SQLite database
-  url: /assets/downloads/databases/weather.db.gz
+  url: /downloads/databases/weather.db.gz
   reference: FN-WE-DATA
   category: Databases
 - area: Wildlife
   title: Nature Recorder SQLite database
-  url: /assets/downloads/databases/naturerecorder.db.gz
+  url: /downloads/databases/naturerecorder.db.gz
   reference: FN-NR-DATA
   category: Databases
