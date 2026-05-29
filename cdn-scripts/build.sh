@@ -51,6 +51,8 @@ WEATHER_BUILD_REQUIRED=$?
 MICROSCOPY_BUILD_REQUIRED=0
 source_plate_index="$MICROSCOPY_PLATE_LIBRARY/plate_library.db"
 target_plate_index="$PROJECT_ROOT/_data/leitz_plates.csv"
+source_plate_index_modified=`stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" "$source_plate_index"`
+target_plate_index_modified=`stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" "$target_plate_index"`
 if [[ "$FORCE" == "true" || ! -f "$target_plate_index" || "$source_plate_index" -nt "$target_plate_index" ]]; then
     MICROSCOPY_BUILD_REQUIRED=1
 fi
@@ -59,6 +61,8 @@ fi
 RECORDINGS_BUILD_REQUIRED=0
 source_media_index="$WILDLIFE_RECORDINGS_LIBRARY/Index.xlsx"
 target_media_index="$PROJECT_ROOT/_data/recording_index.csv"
+source_media_index_modified=`stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" "$source_plate_index"`
+target_media_index_modified=`stat -f "%Sm" -t "%Y-%m-%d %H:%M:%S" "$target_plate_index"`
 if [[ "$FORCE" == "true" || ! -f "$target_media_index" || "$source_media_index" -nt "$target_media_index" ]]; then
     RECORDINGS_BUILD_REQUIRED=1
 fi
@@ -76,8 +80,8 @@ echo "No updates         : $NO_UPDATE"
 echo "Aircraft rebuild   : $AIRCRAFT_BUILD_REQUIRED"
 echo "Wildlife rebuild   : $WILDLIFE_BUILD_REQUIRED"
 echo "Weather rebuild    : $WEATHER_BUILD_REQUIRED"
-echo "Microscopy rebuild : $MICROSCOPY_BUILD_REQUIRED"
-echo "Recordings rebuild : $RECORDINGS_BUILD_REQUIRED"
+echo "Microscopy rebuild : $MICROSCOPY_BUILD_REQUIRED ($source_plate_index_modified vs $target_plate_index_modified)"
+echo "Recordings rebuild : $RECORDINGS_BUILD_REQUIRED ($source_media_index_modified vs $target_media_index_modified)"
 echo "Force build        : $FORCE"
 
 # If a build isn't required, exit
