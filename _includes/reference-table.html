@@ -18,9 +18,8 @@
         {% if href contains '://' %}
             {% assign url_out = href %}
 
-        {% elsif href contains '/assets/' %}
-            {% assign asset_path = href | remove_first: '/assets' %}
-            {% assign url_out = site.assets_url | append: asset_path %}
+        {% elsif href contains '/downloads/' %}
+            {% assign url_out = site.assets_url | append: href %}
 
         {% else %}
             {% assign url_out = href | relative_url %}
