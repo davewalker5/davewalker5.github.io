@@ -1,336 +1,336 @@
 - manufacturer: Aeroprakt
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Aeroprakt/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Aeroprakt/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Aeropro
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Aeropro/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Aeropro/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Air-Cration
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Air-Cration/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Air-Cration/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Airbus
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Airbus/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Airbus/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Airbus-Helicopters
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Airbus-Helicopters/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Airbus-Helicopters/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Alpi-Aviation
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Alpi-Aviation/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Alpi-Aviation/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: American
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/American/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/American/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Antonov
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Antonov/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Antonov/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: ATR
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/ATR/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/ATR/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Auster
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Auster/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Auster/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Avro
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Avro/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Avro/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: BAe
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/BAe/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/BAe/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Beech
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Beech/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Beech/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Beechcraft
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Beechcraft/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Beechcraft/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Bell
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Bell/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Bell/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Boeing
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Boeing/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Boeing/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Boeing-Vertol
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Boeing-Vertol/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Boeing-Vertol/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Bombardier
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Bombardier/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Bombardier/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Bombardier-Leerjet
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Bombardier-Leerjet/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Bombardier-Leerjet/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: British-Aerospace
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/British-Aerospace/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/British-Aerospace/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: BRM-Aero
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/BRM-Aero/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/BRM-Aero/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: CASA
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/CASA/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/CASA/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Cessna
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Cessna/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Cessna/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: CFM
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/CFM/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/CFM/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Cirrus
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Cirrus/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Cirrus/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Daher
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Daher/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Daher/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Dassault
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Dassault/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Dassault/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: De-Havilland
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/De-Havilland/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/De-Havilland/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Diamond-Aircraft-Industries
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Diamond-Aircraft-Industries/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Diamond-Aircraft-Industries/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Dornier
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Dornier/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Dornier/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Douglas
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Douglas/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Douglas/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: DynAro
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/DynAro/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/DynAro/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Eclipse-Aviation
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Eclipse-Aviation/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Eclipse-Aviation/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Embraer
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Embraer/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Embraer/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Eurofighter-GmbH
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Eurofighter-GmbH/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Eurofighter-GmbH/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Evektor
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Evektor/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Evektor/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Extra
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Extra/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Extra/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Fairey
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Fairey/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Fairey/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Flight-Design
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Flight-Design/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Flight-Design/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Fokker
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Fokker/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Fokker/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Fuji
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Fuji/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Fuji/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Grob
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Grob/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Grob/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Grumman
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Grumman/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Grumman/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Gulfstream
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Gulfstream/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Gulfstream/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Hawker-Siddeley-Aircraft
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Hawker-Siddeley-Aircraft/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Hawker-Siddeley-Aircraft/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Honda
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Honda/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Honda/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: HpH-Ltd
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/HpH-Ltd/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/HpH-Ltd/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Ikarus
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Ikarus/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Ikarus/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Illyushin
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Illyushin/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Illyushin/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Jodel
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Jodel/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Jodel/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Learjet
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Learjet/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Learjet/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Leonardo
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Leonardo/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Leonardo/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Lockheed
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Lockheed/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Lockheed/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: McDonnel-Douglas
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/McDonnel-Douglas/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/McDonnel-Douglas/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: MD-Helicopters
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/MD-Helicopters/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/MD-Helicopters/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Miles
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Miles/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Miles/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Mitsubishi
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Mitsubishi/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Mitsubishi/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Mooney
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Mooney/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Mooney/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: North-American
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/North-American/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/North-American/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Piaggio
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Piaggio/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Piaggio/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Pilatus
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Pilatus/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Pilatus/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Piper
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Piper/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Piper/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Pipistrel
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Pipistrel/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Pipistrel/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Quest-Aircraft-Company
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Quest-Aircraft-Company/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Quest-Aircraft-Company/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: ReimsCessna
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/ReimsCessna/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/ReimsCessna/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Robin
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Robin/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Robin/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Robinson
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Robinson/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Robinson/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Saab
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Saab/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Saab/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: SchemppHirth
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/SchemppHirth/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/SchemppHirth/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Short
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Short/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Short/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: SkyRanger
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/SkyRanger/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/SkyRanger/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Slingsby
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Slingsby/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Slingsby/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Socata
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Socata/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Socata/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Supermarine-Aviation-Works
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Supermarine-Aviation-Works/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Supermarine-Aviation-Works/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Swearingen-Aircraft
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Swearingen-Aircraft/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Swearingen-Aircraft/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Tecnam
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Tecnam/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Tecnam/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Travel-Air-Manufacturing-Company
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Travel-Air-Manufacturing-Company/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Travel-Air-Manufacturing-Company/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Vans
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Vans/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Vans/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Vickers
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Vickers/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Vickers/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Viking
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Viking/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Viking/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Vulcanair
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Vulcanair/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Vulcanair/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Wassmer
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Wassmer/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Wassmer/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Westland
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Westland/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Westland/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''
 - manufacturer: Zenair
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Zenair/aircraft-type-pie-chart.png
-  xlsx_path: /aircraft/reports/manufacturer/Zenair/aircraft-type-pie-chart.xlsx
+  xlsx_path: ''

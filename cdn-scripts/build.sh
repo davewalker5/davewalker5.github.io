@@ -118,7 +118,7 @@ fi
 "$SCRIPT_DIR/run-notebooks.sh" $AIRCRAFT_BUILD_REQUIRED $WILDLIFE_BUILD_REQUIRED $WEATHER_BUILD_REQUIRED
 
 # Perform the transfer to the CDN - this will also generate the CDN manifest
-"$SCRIPT_DIR/upload-to-cdn.sh" --source $CDN_ROOT --bucket $CDN_BUCKET --target /
+# "$SCRIPT_DIR/upload-to-cdn.sh" --source $CDN_ROOT --bucket $CDN_BUCKET --target /
 
 # Build the site data files
 declare -a DATA_FILE_TYPES=(

@@ -1,60 +1,60 @@
 - base: aircraft-type-trends-monthly
   title: Aircraft Type Trends Monthly
   png_path: /aircraft/reports/aircraft-type-trends-monthly.png
-  xlsx_path: /aircraft/reports/aircraft-type-trends-monthly.xlsx
+  xlsx_path: ''
 - base: aircraft-type-trends-yearly
   title: Aircraft Type Trends Yearly
   png_path: /aircraft/reports/aircraft-type-trends-yearly.png
-  xlsx_path: /aircraft/reports/aircraft-type-trends-yearly.xlsx
+  xlsx_path: ''
 - base: airline-aircraft-type-heatmap
   title: Airline Aircraft Type Heatmap
   png_path: /aircraft/reports/airline-aircraft-type-heatmap.png
-  xlsx_path: /aircraft/reports/airline-aircraft-type-heatmap.xlsx
+  xlsx_path: ''
 - base: manufacturer-aircraft-heatmap
   title: Manufacturer Aircraft Heatmap
   png_path: /aircraft/reports/manufacturer-aircraft-heatmap.png
-  xlsx_path: /aircraft/reports/manufacturer-aircraft-heatmap.xlsx
+  xlsx_path: ''
 - base: manufacturer-popularity-counts
   title: Manufacturer Popularity Counts
   png_path: /aircraft/reports/manufacturer-popularity-counts.png
-  xlsx_path: /aircraft/reports/manufacturer-popularity-counts.xlsx
+  xlsx_path: ''
 - base: manufacturer-popularity-share
   title: Manufacturer Popularity Share
   png_path: /aircraft/reports/manufacturer-popularity-share.png
-  xlsx_path: /aircraft/reports/manufacturer-popularity-share.xlsx
+  xlsx_path: ''
 - base: sightings-over-time-daily
   title: Sightings Over Time Daily
   png_path: /aircraft/reports/sightings-over-time-daily.png
-  xlsx_path: /aircraft/reports/sightings-over-time-daily.xlsx
+  xlsx_path: ''
 - base: sightings-over-time-monthly
   title: Sightings Over Time Monthly
   png_path: /aircraft/reports/sightings-over-time-monthly.png
-  xlsx_path: /aircraft/reports/sightings-over-time-monthly.xlsx
+  xlsx_path: ''
 - base: sightings-over-time-yearly
   title: Sightings Over Time Yearly
   png_path: /aircraft/reports/sightings-over-time-yearly.png
-  xlsx_path: /aircraft/reports/sightings-over-time-yearly.xlsx
+  xlsx_path: ''
 - base: top-aircraft-models-over-time
   title: Top Aircraft Models Over Time
   png_path: /aircraft/reports/top-aircraft-models-over-time.png
-  xlsx_path: /aircraft/reports/top-aircraft-models-over-time.xlsx
+  xlsx_path: ''
 - base: top-airlines-over-time-monthly
   title: Top Airlines Over Time Monthly
   png_path: /aircraft/reports/top-airlines-over-time-monthly.png
-  xlsx_path: /aircraft/reports/top-airlines-over-time-monthly.xlsx
+  xlsx_path: ''
 - base: top-airlines-over-time-yearly
   title: Top Airlines Over Time Yearly
   png_path: /aircraft/reports/top-airlines-over-time-yearly.png
-  xlsx_path: /aircraft/reports/top-airlines-over-time-yearly.xlsx
+  xlsx_path: ''
 - base: top-manufacturers-over-time
   title: Top Manufacturers Over Time
   png_path: /aircraft/reports/top-manufacturers-over-time.png
-  xlsx_path: /aircraft/reports/top-manufacturers-over-time.xlsx
+  xlsx_path: ''
 - base: top-routes-bidirectional
   title: Top Routes Bidirectional
   png_path: /aircraft/reports/top-routes-bidirectional.png
-  xlsx_path: /aircraft/reports/top-routes-bidirectional.xlsx
+  xlsx_path: ''
 - base: top-routes-unidirectional
   title: Top Routes Unidirectional
   png_path: /aircraft/reports/top-routes-unidirectional.png
-  xlsx_path: /aircraft/reports/top-routes-unidirectional.xlsx
+  xlsx_path: ''
