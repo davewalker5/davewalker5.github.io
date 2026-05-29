@@ -45,7 +45,7 @@ repository: davewalker5/davewalker5.github.io
 # ----------------------------------------------------------
 # CDN configuration
 # ----------------------------------------------------------
-assets_url: "https://pub-894299b2ed974ef6b2fe2d59485b40e3.r2.dev"
+assets_url: "https://assets.fieldnotesjournal.uk"
 
 # ----------------------------------------------------------
 # Author information
