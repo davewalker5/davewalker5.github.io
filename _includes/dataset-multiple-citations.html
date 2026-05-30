@@ -16,6 +16,8 @@
     {% assign citation_url = d.url %}
     {% if citation_url contains '://' %}
       {% assign absolute_citation_url = citation_url %}
+    {% elsif citation_url contains '/downloads/' %}
+      {% assign absolute_citation_url = site.assets_url | append: citation_url %}
     {% else %}
       {% assign absolute_citation_url = citation_url | absolute_url %}
     {% endif %}

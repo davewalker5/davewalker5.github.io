@@ -5,4 +5,5 @@ cd "$PROJECT_ROOT"
 
 "$PROJECT_ROOT/cdn-scripts/build-environment.sh"
 
+bundle exec jekyll clean
 bundle exec jekyll build --config _config.yml,_config.local.yml
