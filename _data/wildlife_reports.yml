@@ -5931,6 +5931,20 @@
   location_title: Oxford
   category: Birds
   category_title: Birds
+  species: Goldfinch
+  species_title: Goldfinch
+  base: Goldfinch
+  title: Goldfinch
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Goldfinch.xlsx
+  png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Goldfinch.png
+- report_type: trend
+  report_type_title: Trend
+  country: United-Kingdom
+  country_title: United Kingdom
+  location: Oxford
+  location_title: Oxford
+  category: Birds
+  category_title: Birds
   species: Great-Tit
   species_title: Great Tit
   base: Great-Tit
