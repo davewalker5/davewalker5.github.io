@@ -44,7 +44,7 @@ python -m venv venv
 pip install --upgrade pip
 
 # Install the requirements
-pip install -r cdn-scripts/requirements.txt
+pip install -e .
 
 # Reinstall gems
 section "Re-installing Ruby Gems"

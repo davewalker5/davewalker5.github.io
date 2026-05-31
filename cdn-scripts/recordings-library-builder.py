@@ -31,7 +31,7 @@ DEFAULT_START_DATE = "01/01/1900"
 DEFAULT_END_DATE = date.today().strftime("%d/%m/%Y")
 
 
-def filter_recordings_index(inputpath, outputpath, start_date, end_date):
+def filter_recordings_index(inputpath, outputpath, start_date, end_date, dry_run):
     """
     Create a CSV format copy of a recordings index, filtering by date and series and applying
     column renaming
@@ -77,7 +77,8 @@ def filter_recordings_index(inputpath, outputpath, start_date, end_date):
     filtered_df = filtered_df.rename(columns=COLUMN_RENAMES, errors="ignore")
 
     # Save CSV
-    filtered_df.to_csv(outputpath, index=False)
+    if not dry_run:
+        filtered_df.to_csv(outputpath, index=False)
 
     print(f"Original index rows: {len(df)}")
     print(f"Filtered index rows: {len(filtered_df)}")
@@ -136,7 +137,7 @@ def find_input_file(filename, input_root):
     return matches[0]
 
 
-def copy_media_files(media_files, input_dir, output_dir):
+def copy_media_files(media_files, input_dir, output_dir, dry_run):
     """
     Process media files from anywhere under input_dir and place outputs under output_dir.
 
@@ -186,6 +187,10 @@ def copy_media_files(media_files, input_dir, output_dir):
                 print(f"Audio exists, skipping: {target_audio}")
                 continue
 
+            if dry_run:
+                print(f"Would copy audio: {source_path} -> {target_audio}")
+                continue
+
             print(f"Copying audio: {source_path} -> {target_audio}")
             shutil.copy2(source_path, target_audio)
             continue
@@ -199,6 +204,10 @@ def copy_media_files(media_files, input_dir, output_dir):
 
             if target_video.exists():
                 print(f"Video exists, skipping: {target_video}")
+                continue
+
+            if dry_run:
+                print(f"Would copy video: {source_path} -> {target_video}")
                 continue
 
             with tempfile.NamedTemporaryFile(suffix=".mp4", delete=False) as tmp:
@@ -251,6 +260,7 @@ def copy_media_files(media_files, input_dir, output_dir):
                     "-frames:v", "1",
                     "-vf", "scale=800:-1",
                     "-q:v", "2",
+                    "-update", "1",
                     str(target_image),
                 ])
 
@@ -284,11 +294,12 @@ def main():
     parser.add_argument("-ed", "--end-date", default=DEFAULT_END_DATE, help="Only include media upp to this date")
     parser.add_argument("-mid", "--media-input-dir", default=plate_library_folder, help="Root folder to search for media files")
     parser.add_argument("-mod", "--media-output-dir", help="Media output folder")
+    parser.add_argument("-dr", "--dry-run", action="store_true", help="Dry run that does not update any files")
 
     args = parser.parse_args()
     
     # Filter the index
-    filtered_df = filter_recordings_index(args.input, args.output, args.start_date, args.end_date)
+    filtered_df = filter_recordings_index(args.input, args.output, args.start_date, args.end_date, args.dry_run)
     media_input_dir = Path(args.media_input_dir)
     media_output_dir = Path(args.media_output_dir)
 
@@ -300,7 +311,7 @@ def main():
         raise NotADirectoryError(f"Media input path is not a directory: {media_input_dir}")
 
     media_names = collect_media_names(filtered_df)
-    copy_media_files(media_names, media_input_dir, media_output_dir)
+    copy_media_files(media_names, media_input_dir, media_output_dir, args.dry_run)
 
 
 if __name__ == "__main__":

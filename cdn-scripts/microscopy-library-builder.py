@@ -142,6 +142,7 @@ def process_image_plate(
     full_output_dir,
     preview_output_dir,
     lightbox_output_dir,
+    dry_run
 ):
     """
     Process a standard image plate:
@@ -161,6 +162,11 @@ def process_image_plate(
         and preview_destination.exists()
         and lightbox_destination.exists()
     ):
+        return "skipped"
+
+    # Return if a dry run has been specified
+    if dry_run:
+        print(f"Would process: {source.name}")
         return "skipped"
 
     # Copy full
@@ -257,6 +263,7 @@ def process_video_plate(
     full_output_dir,
     preview_output_dir,
     lightbox_output_dir,
+    dry_run
 ):
     """
     Process a video plate:
@@ -283,6 +290,11 @@ def process_video_plate(
 
     # Skip if outputs already exist
     if full_destination.exists() and lightbox_destination.exists():
+        return "skipped"
+
+    # Return if a dry run has been specified
+    if dry_run:
+        print(f"Would process: {source.name}")
         return "skipped"
 
     # Copy MP4
@@ -332,7 +344,7 @@ def process_video_plate(
     return "copied"
 
 
-def copy_plate_images(plate_names, input_dir, output_dir):
+def copy_plate_images(plate_names, input_dir, output_dir, dry_run):
     """
     Main dispatcher for plate processing.
     """
@@ -374,6 +386,7 @@ def copy_plate_images(plate_names, input_dir, output_dir):
                 full_output_dir,
                 preview_output_dir,
                 lightbox_output_dir,
+                dry_run
             )
 
             if result == "copied":
@@ -394,6 +407,7 @@ def copy_plate_images(plate_names, input_dir, output_dir):
             full_output_dir,
             preview_output_dir,
             lightbox_output_dir,
+            dry_run
         )
 
         if result == "copied":
@@ -446,11 +460,13 @@ def main():
     parser.add_argument("-ed", "--end-date", default=None, help="Only include plates upp to this date")
     parser.add_argument("-pid", "--plate-input-dir", default=plate_library_folder, help="Root folder to search for plate image files")
     parser.add_argument("-pod", "--plate-output-dir", help="Plate image output folder")
+    parser.add_argument("-dr", "--dry-run", action="store_true", help="Dry run that does not update any files")
 
     args = parser.parse_args()
     
     # Export the investigation list
-    export_to_csv(args.input, args.investigation_sql, args.investigation_output)
+    if not args.dry_run:
+        export_to_csv(args.input, args.investigation_sql, args.investigation_output)
 
     # Filter the plate index
     filtered_df = filter_plate_index(args.input, args.plate_sql, args.plate_output, args.start_date, args.end_date)
@@ -465,7 +481,7 @@ def main():
         raise NotADirectoryError(f"Plate input path is not a directory: {plate_input_dir}")
 
     plate_names = collect_plate_names(filtered_df)
-    copy_plate_images(plate_names, plate_input_dir, plate_output_dir)
+    copy_plate_images(plate_names, plate_input_dir, plate_output_dir, args.dry_run)
 
 
 if __name__ == "__main__":

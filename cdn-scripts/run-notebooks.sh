@@ -55,8 +55,8 @@ while IFS= read -r file; do
 
         # The wildlife site notebooks normally require parameters while the other site notebooks don't, so run papermill
         # with appropriate parameters
-        echo "Running notebook $sitename/$filename ..."
-        if [[ "$NO_UPDATE" == "" ]]; then
+        if [[ "$DRY_RUN" == "" ]]; then
+            echo "Running notebook $sitename/$filename ..."
             if [[ "$sitename" == "wildlife" ]]; then
                 if [[ "$filename" == "year_in_the_life.ipynb" ]]; then
                     papermill "$filename" /dev/null -p DATA_FILE_NAME "abingdon_classification.yml"
@@ -71,6 +71,8 @@ while IFS= read -r file; do
             else
                 papermill "$filename" /dev/null
             fi
+        else
+            echo "Would run notebook $sitename/$filename"
         fi
     fi
 done <<< "$files"

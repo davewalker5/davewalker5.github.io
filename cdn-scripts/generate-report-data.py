@@ -389,13 +389,18 @@ def extract_wildlife_reports(cdn_folder: Path, entries: Iterable[ManifestEntry])
     )
 
 
-def write_yaml(records: list[Record], path: Path) -> None:
+def write_yaml(records: list[Record], path: Path, dry_run: bool) -> None:
     """
     Write records as a Jekyll-friendly YAML data file
     
     :param records: List of records to write
     :param path: Path to the YAML file to write
+    :param dry_run: If true, don't update the data file
     """
+    if dry_run:
+        print(f"Would write {path}")
+        return
+
     path.parent.mkdir(parents=True, exist_ok=True)
 
     with path.open("w", encoding="utf-8") as f:
@@ -428,6 +433,8 @@ def parse_args() -> argparse.Namespace:
                         help="Path to the TSV manifest file.")
     parser.add_argument("-t", "--type", required=True, choices=sorted(EXTRACTORS),
                         help="Type of extraction to perform.")
+    parser.add_argument("-dr", "--dry-run", action="store_true",
+                        help="Dry run that does not update any files")
     return parser.parse_args()
 
 
@@ -442,7 +449,7 @@ def main() -> None:
     output = Path(__file__).parent.parent / "_data" / DATA_FILES[args.type]
     records = extractor(cdn_folder, entries)
 
-    write_yaml(records, Path(output))
+    write_yaml(records, Path(output), args.dry_run)
 
     print(f"Wrote {len(records)} records to {output}")
 

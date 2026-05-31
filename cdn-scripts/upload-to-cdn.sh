@@ -12,6 +12,7 @@ SOURCE_FOLDER=""
 BUCKET=""
 TARGET_FOLDER=""
 FORCE_UPLOAD=false
+DRY_RUN=false
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -29,6 +30,10 @@ while [[ $# -gt 0 ]]; do
             ;;
         --force)
             FORCE_UPLOAD=true
+            shift
+            ;;
+        --dry-run)
+            DRY_RUN=true
             shift
             ;;
         -h|--help)
@@ -183,11 +188,16 @@ while IFS= read -r -d '' FILE; do
             echo "  Content-Disposition: attachment; filename=\"$FILENAME\""
         fi
 
-        wrangler "${WRANGLER_ARGS[@]}"
+        if [[ "$DRY_RUN" == false ]]; then
+            wrangler "${WRANGLER_ARGS[@]}"
+        else
+            echo "Would upload: $OBJECT_KEY"
+        fi
     fi
 
-    printf '%s\t%s\n' "$RELATIVE_PATH" "$HASH" >> "$NEW_MANIFEST"
-
+    if [[ "$DRY_RUN" == false ]]; then
+        printf '%s\t%s\n' "$RELATIVE_PATH" "$HASH" >> "$NEW_MANIFEST"
+    fi
 done
 
 mv "$NEW_MANIFEST" "$MANIFEST"

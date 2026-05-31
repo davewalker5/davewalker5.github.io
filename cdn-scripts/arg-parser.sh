@@ -8,8 +8,8 @@ export COUNTRY=""
 export LOCATION=""
 export CATEGORY=""
 export YEAR=""
-export NO_UPDATE=""
-export FORCE=""
+export DRY_RUN=""
+export STATUS_ONLY=""
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
@@ -33,12 +33,16 @@ while [[ $# -gt 0 ]]; do
             export YEAR=$2
             shift 2
             ;;
-        --noupdate)
-            export NO_UPDATE="true"
+        --dry-run)
+            export DRY_RUN="true"
             shift 1
             ;;
-        --force)
-            export FORCE="true"
+        --no-upload)
+            export NO_UPLOAD="true"
+            shift 1
+            ;;
+        --status)
+            export STATUS_ONLY="true"
             shift 1
             ;;
         *)

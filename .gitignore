@@ -12,3 +12,4 @@ Location-Date-Analysis.xlsx
 _site
 exports/**/*.pdf
 exports/**/*.html
+*.egg-info
