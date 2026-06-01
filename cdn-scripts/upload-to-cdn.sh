@@ -189,7 +189,7 @@ while IFS= read -r -d '' FILE; do
         fi
 
         if [[ "$DRY_RUN" == false ]]; then
-            wrangler "${WRANGLER_ARGS[@]}"
+            wrangler --cwd "$HOME" "${WRANGLER_ARGS[@]}"
         else
             echo "Would upload: $OBJECT_KEY"
         fi
