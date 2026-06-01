@@ -189,7 +189,7 @@ while IFS= read -r -d '' FILE; do
         fi
 
         if [[ "$DRY_RUN" == false ]]; then
-            wrangler --cwd "$HOME" "${WRANGLER_ARGS[@]}"
+            wrangler "${WRANGLER_ARGS[@]}"
         else
             echo "Would upload: $OBJECT_KEY"
         fi
@@ -200,5 +200,9 @@ while IFS= read -r -d '' FILE; do
     fi
 done
 
+# Remove the wrangler cache folder
+rm -fr .wrangler
+
+# Copy the updated manifest into place
 mv "$NEW_MANIFEST" "$MANIFEST"
 echo "Manifest updated: $MANIFEST"
