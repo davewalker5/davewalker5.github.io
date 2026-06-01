@@ -30,3 +30,8 @@
   category: "tools"
   description: Scientific computing, modelling, and numerical experiments on the TI-84 Plus CE-T Python Calculator
   link: https://github.com/davewalker5/ti-84-python
+- title: LogSpiral
+  category: "tools"
+  description: Procedural shell morphology experiments using logarithmic spirals to generate shell-like biological forms
+  link: https://github.com/davewalker5/LogSpiral
+
