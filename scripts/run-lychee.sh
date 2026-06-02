@@ -10,5 +10,6 @@ lychee --accept 200,429 \
         --exclude 'file://.*/view-recording\.html(%23|#).*' \
         --exclude 'https://www.tripadvisor.co.uk/Profile/DaveWalker5' \
         --exclude 'http://www.bats.org.uk/' \
+        --exclude '^https://fieldnotesjournal\.uk/' \
         --exclude-path '_site/publication/**' \
         '_site/**/*.html'
