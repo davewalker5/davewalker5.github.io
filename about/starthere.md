@@ -3,7 +3,28 @@ layout: default
 title: Start Here
 description: A guide to exploring Field Notes Journal — a personal natural history of place built from long-term observation, recording, and analysis.
 permalink: /start-here/
+images:
+  - name: "/images/site/SI-II-046.png"
+    alt: "Red Dead-Nettle Stem, T.S., Transitional Zone"
+    caption: "Red Dead-Nettle Stem, T.S., Transitional Zone"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "/images/site/ammonite-004.png"
+    alt: "Simulation of Ammonite-Like Shell Showing Internal Structure"
+    caption: "Simulation of Ammonite-Like Shell Showing Internal Structure"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "/images/site/similarity-heatmap.png"
+    alt: "Species Similarity Heatmap"
+    caption: "Species Similarity Heatmap"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
+
+{% include image-block.html images=page.images assets=site.assets_url %}
 
 # Start Here
 
@@ -69,6 +90,25 @@ Particular attention is given to behavioural structure within recordings and the
 
 <hr/>
 
+Computational Shell Morphology
+
+Explorations of shell growth, coiling geometry, and biological morphospace using logarithmic spirals and procedural growth models.
+
+This section combines:
+
+* Logarithmic spiral growth
+* Swept aperture shell generation
+* Growth ribs and pigmentation banding
+* Internal chamber and siphuncle modelling
+* Transparent cutaway shell rendering
+* Comparative shell morphologies
+
+The resulting models explore how relatively simple developmental rules can generate complex natural forms reminiscent of nautiluses, ammonites, ramshorn snails, and more speculative shell geometries.
+
+Part mathematical exploration, part computational natural history, the project investigates the relationship between growth, geometry, and biological form.
+
+<hr/>
+
 ### Pocket Ecology
 
 Portable ecological computation on constrained handheld systems, particularly the TI-84 Plus CE-T Python calculator.
@@ -107,6 +147,7 @@ If you would like to explore the site gradually, these sections provide particul
 - The seasonal ecology [modelling](/wildlife/modelling/) and [_Wildlife Through the Year in Abingdon_](/wildlife/seasonal/)￼ studies, which use long-term wildlife records to examine recurrence, timing, and ecological structure across the year
 - The [microscopy](/microscopy/) investigations and plate studies
 - The [bat acoustics analysis](/wildlife/batcalls/) pages
+- The [Computational Shell Morphology](/wildlife/shells/) project, exploring logarithmic growth, shell geometry, and biological morphospace through procedural modelling
 - The booklets available in the [reference section](/reference/)
 
 <hr/>
