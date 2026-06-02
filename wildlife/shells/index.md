@@ -407,5 +407,10 @@ proved important both visually and conceptually.
 
 This mirrors, in a highly simplified way, the layered processes involved in real biological shell formation.
 
+## Acknowledgements
+
+This work was inspired by the mathematics of logarithmic shell growth and by the broader traditions of theoretical morphology and computational natural history, particularly the work of D’Arcy Wentworth Thompson and David Raup.
+
+The models, visualisations and implementations presented here were developed specifically for this project.
 
 {% include logspiral-invitation.html %}
