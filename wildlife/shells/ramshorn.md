@@ -2,7 +2,7 @@
 layout: default
 title: Ramshorn-Like Shell
 breadcrumb: Ramshorn-Like Shell
-description: A planispiral shell form inspired by ramshorn snails, demonstrating tightly coiled low-spired growth and compact shell geometry
+description: 
 series: morphology
 chapter: 7
 images:

@@ -79,6 +79,6 @@ This work was inspired by the mathematics of logarithmic shell growth and by the
 
 The models, visualisations and implementations presented here were developed specifically for this project.
 
-For the historical and theoretical background, see, please see the section on [Background and Historical Context]({% link wildlife/shells/background.md %})
+For the historical and theoretical background, please see the section on [Background and Historical Context]({% link wildlife/shells/background.md %})
 
 {% include logspiral-invitation.html %}
