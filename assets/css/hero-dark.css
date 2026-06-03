@@ -205,3 +205,16 @@ header nav a:focus {
 .nav-sep {
   opacity: 0.4;
 }
+
+.feature-invite-with-image {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-invite-image {
+  float: right;
+  width: 120px;
+  max-width: 30%;
+  margin: 0 0 1rem 1.25rem;
+  opacity: 0.85;
+}
