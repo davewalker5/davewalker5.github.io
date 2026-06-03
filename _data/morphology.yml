@@ -24,6 +24,10 @@ chapters:
   - title: "Flared Shell"
     description: "Exploration of expanding aperture flare and exaggerated shell opening geometry"
     url: /wildlife/shells/flared.html
+  - title: "Tower Shell (Turritella-Like)"
+    description: "A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting flattened whorls."
+    url: /wildlife/shells/turritella.html
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html
+  
