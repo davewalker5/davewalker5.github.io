@@ -100,6 +100,7 @@ logo: "/assets/images/banner-1280.jpg"
 exclude:
   - _site
   - _templates
+  - _unused
   - .bundle
   - .styles
   - cspell

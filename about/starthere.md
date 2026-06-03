@@ -147,7 +147,7 @@ If you would like to explore the site gradually, these sections provide particul
 - The seasonal ecology [modelling](/wildlife/modelling/) and [_Wildlife Through the Year in Abingdon_](/wildlife/seasonal/)￼ studies, which use long-term wildlife records to examine recurrence, timing, and ecological structure across the year
 - The [microscopy](/microscopy/) investigations and plate studies
 - The [bat acoustics analysis](/wildlife/batcalls/) pages
-- The [Computational Shell Morphology](/wildlife/shells/) project, exploring logarithmic growth, shell geometry, and biological morphospace through procedural modelling
+- The [computational shell morphology](/wildlife/shells/) project, exploring logarithmic growth, shell geometry, and biological morphospace through procedural modelling
 - The booklets available in the [reference section](/reference/)
 
 <hr/>
