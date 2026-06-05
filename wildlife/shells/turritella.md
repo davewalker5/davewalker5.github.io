@@ -26,7 +26,7 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-### Tower Shell (Turritella-Like)
+# Tower Shell (Turritella-Like)
 
 {% assign assets_path = site.assets_url | append: "/images/modelling/shells/" %}
 {% include image-block.html images=page.images assets=assets_path %}
