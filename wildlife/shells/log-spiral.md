@@ -46,7 +46,7 @@ The spiral is converted into Cartesian coordinates using:
 
 ```
 x = r * cos(theta)
-y = r * cos(theta)
+y = r * sin(theta)
 ```
 
 These coordinates define the path followed by the shell aperture during growth.
