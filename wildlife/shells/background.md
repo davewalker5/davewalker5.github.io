@@ -118,10 +118,10 @@ This makes it particularly well suited to modelling shell growth because the org
 
 In simplified form, many shell models can therefore be understood as:
 
-1. defining an aperture shape
-2. moving that aperture along a spiral trajectory
-3. expanding it gradually through time
-4. and optionally modifying the resulting geometry through ornamentation or structural rules.
+1. Defining an aperture shape
+2. Moving that aperture along a spiral trajectory
+3. Expanding it gradually through time
+4. Optionally modifying the resulting geometry through ornamentation or structural rules.
 
 Real biological shells are of course substantially more complex, involving:
 
@@ -146,7 +146,7 @@ The goal is not to reproduce any single historical shell model exactly, nor to c
 - Provide visually interpretable models
 - Support a broader natural-history practice grounded in curiosity, structure, and observation
 
-The repository therefore occupies a space between:
+The project therefore occupies a space between:
 
 - Scientific modelling
 - Computational illustration

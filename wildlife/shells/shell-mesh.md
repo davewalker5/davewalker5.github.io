@@ -49,7 +49,6 @@ The local aperture width coordinate is projected into the horizontal plane using
 ```
 x(p) = x + x(local) * cos(theta)
 y(p) = y + x(local) * cos(theta)
-y(p) = y + x(local) * sin(theta)
 ```
 
 This means each aperture turns with the spiral as shell growth proceeds.
@@ -61,7 +60,7 @@ For flat-coiled shells such as nautilus-like or ammonite-like forms, the shell c
 For high-spired gastropod forms, the growth path must also rise through space. The mesh builder therefore assigns a vertical centre position:
 
 ```
-z(centre) = z(path))
+z(centre) = z(path)
 ```
 
 or, if no explicit path is supplied:
@@ -80,7 +79,7 @@ The model also supports a simple aperture tilt. This is implemented as a shear:
 z(p) = z(centre) + z(local) + k * x(local)
 ```
 
-where (k) is the aperture tilt value.
+where k is the aperture tilt value.
 
 This does not create the shell's upward climb; that comes from the axial path. Instead, the shear makes one side of the aperture sit slightly higher than the other.
 
