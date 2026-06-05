@@ -4,7 +4,7 @@ title: Nautilus-Like Shell
 breadcrumb: Nautilus-Like Shell
 description: A chambered shell form inspired by nautiloids, exploring smooth logarithmic coiling, internal septa, and classical spiral shell geometry
 series: morphology
-chapter: 4
+chapter: 7
 images:
   - name: "nautilus-001.png"
     alt: "Simulation of Nautilus-Like Shell"

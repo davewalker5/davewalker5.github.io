@@ -3,9 +3,18 @@ chapters:
   - title: "Background and Historical Context"
     description: "Mathematical, biological, and historical traditions underlying computational shell morphology"
     url: /wildlife/shells/background.html
-  - title: "Core Modelling Concepts"
-    description: "Introduction to the geometric and computational principles used to generate shell forms"
-    url: /wildlife/shells/concepts.html
+  - title: "Logarithmic Spiral Growth"
+    description: "Mathematical foundations of shell growth through logarithmic spirals and aperture expansion"
+    url: /wildlife/shells/log-spiral.html
+  - title: "Building the Shell Mesh"
+    description: "Generating three-dimensional shell forms by sweeping apertures along growth paths"
+    url: /wildlife/shells/shell-mesh.html
+  - title: "Chamber Septa"
+    description: "Modelling internal chamber walls through nested growth surfaces"
+    url: /wildlife/shells/chamber-septa.html
+  - title: "The Siphuncle"
+    description: "Constructing a simplified internal siphuncle linking shell chambers"
+    url: /wildlife/shells/siphuncle.html
   - title: "The Example Shell Presets"
     description: "A guide to the example shell forms included in the project"
     url: /wildlife/shells/examples.html
@@ -25,7 +34,7 @@ chapters:
     description: "Exploration of expanding aperture flare and exaggerated shell opening geometry"
     url: /wildlife/shells/flared.html
   - title: "Tower Shell (Turritella-Like)"
-    description: "A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting flattened whorls."
+    description: "A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting flattened whorls"
     url: /wildlife/shells/turritella.html
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"

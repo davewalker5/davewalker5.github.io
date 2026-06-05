@@ -4,7 +4,7 @@ title: Ammonite-Like Shell
 breadcrumb: Ammonite-Like Shell
 description: A ribbed coiled shell form inspired by ammonites, combining logarithmic growth with ornamentation and evolving shell expansion
 series: morphology
-chapter: 6
+chapter: 9
 images:
   - name: "ammonite-001.png"
     alt: "Simulation of Ammonite-Like Shell"

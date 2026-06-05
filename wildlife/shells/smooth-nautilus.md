@@ -4,7 +4,7 @@ title: Nautilus-Like Shell with a Smooth Surface
 breadcrumb: Nautilus-Like Shell with a Smooth Surface
 description: A simplified smooth-surfaced variant of the nautilus-inspired model, emphasising overall growth geometry and shell curvature without strong external ornamentation
 series: morphology
-chapter: 5
+chapter: 8
 images:
   - name: "smooth-nautilus-001.png"
     alt: "Simulation of Smooth Nautilus-Like Shell"
