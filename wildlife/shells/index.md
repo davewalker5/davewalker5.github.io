@@ -4,37 +4,19 @@ title: Computational Shell Morphology
 description: Explorations of shell growth, coiling geometry, and biological morphospace using logarithmic spirals, swept apertures, and procedural natural history models
 breadcrumb: Computational Shell Morphology
 permalink: /wildlife/shells/
-images:
-  - name: "ammonite-002.png"
-    alt: "Simulation of Ammonite-Like Shell"
-    caption: "Simulation of Ammonite-Like Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "ammonite-004.png"
-    alt: "Simulation of Ammonite-Like Shell Showing Internal Structure"
-    caption: "Simulation of Ammonite-Like Shell Showing Internal Structure"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "smooth-nautilus-002.png"
-    alt: "Simulation of Smooth Nautilus-Like Shell"
-    caption: "Simulation of Smooth Nautilus-Like Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "turritella-001.png"
-    alt: "Simulation of Turritella-Like Shell"
-    caption: "Simulation of Turritella-Like Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
+assets: "/images/modelling/shells/"
+contact_sheet:
+   name: "contact-sheet-001.png"
+   alt: "Modelled Shell Types Contact Sheet"
+   caption: "Modelled Shell Types Contact Sheet"
+   credit: "David Walker, Field Notes Journal"
+   license: "CC BY 4.0"
+   license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 # Computational Shell Morphology
 
-{% assign assets_path = site.assets_url | append: "/images/modelling/shells/" %}
-{% include image-block.html images=page.images assets=assets_path %}
+{% include fullwidth-image.html assets=page.assets img=page.contact_sheet %}
 
 This project explores the generation of shell-like forms through a combination of simple mathematical growth rules and procedural geometry.
 
