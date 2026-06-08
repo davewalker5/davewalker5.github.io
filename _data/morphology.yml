@@ -36,6 +36,9 @@ chapters:
   - title: "Tower Shell (Turritella-Like)"
     description: "A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting flattened whorls"
     url: /wildlife/shells/turritella.html
+  - title: "Orthocone-Like Shell"
+    description: "A straight-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
+    url: /wildlife/shells/orthocone.html
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html

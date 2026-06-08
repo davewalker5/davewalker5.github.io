@@ -6,19 +6,13 @@ description:
 series: morphology
 chapter: 10
 images:
-  - name: "ramshorn-001.png"
+  - name: "ramshorn-opaque-iso.png"
     alt: "Simulation of Ramshorn-Like Shell"
     caption: "Simulation of Ramshorn-Like Shell"
     credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "ramshorn-002.png"
-    alt: "Simulation of Ramshorn-Like Shell"
-    caption: "Simulation of Ramshorn-Like Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "ramshorn-003.png"
+  - name: "ramshorn-opaque-top.png"
     alt: "Simulation of Ramshorn-Like Shell"
     caption: "Simulation of Ramshorn-Like Shell"
     credit: "David Walker, Field Notes Journal"

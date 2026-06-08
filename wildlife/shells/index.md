@@ -6,7 +6,7 @@ breadcrumb: Computational Shell Morphology
 permalink: /wildlife/shells/
 assets: "/images/modelling/shells/"
 contact_sheet:
-   name: "contact-sheet-001.png"
+   name: "contact-sheet.png"
    alt: "Modelled Shell Types Contact Sheet"
    caption: "Modelled Shell Types Contact Sheet"
    credit: "David Walker, Field Notes Journal"

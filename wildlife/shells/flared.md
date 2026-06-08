@@ -6,19 +6,13 @@ description: An exploration of expanding aperture flare and exaggerated shell op
 series: morphology
 chapter: 11
 images:
-  - name: "flared-001.png"
+  - name: "flared-opaque-iso.png"
     alt: "Simulation of Flared Shell"
     caption: "Simulation of Flared Shell"
     credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "flared-002.png"
-    alt: "Simulation of Flared Shell"
-    caption: "Simulation of Flared Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "flared-003.png"
+  - name: "flared-opaque-top.png"
     alt: "Simulation of Flared Shell"
     caption: "Simulation of Flared Shell"
     credit: "David Walker, Field Notes Journal"
