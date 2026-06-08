@@ -6,19 +6,13 @@ description: A high-spired gastropod shell generated from logarithmic growth and
 series: morphology
 chapter: 12
 images:
-  - name: "turritella-001.png"
+  - name: "turritella-opaque-presentation.png"
     alt: "Simulation of Turritella-Like Shell"
     caption: "Simulation of Turritella-Like Shell"
     credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "turritella-002.png"
-    alt: "Simulation of Turritella-Like Shell"
-    caption: "Simulation of Turritella-Like Shell"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "turritella-003.png"
+  - name: "turritella-opaque-top.png"
     alt: "Simulation of Turritella-Like Shell"
     caption: "Simulation of Turritella-Like Shell"
     credit: "David Walker, Field Notes Journal"
