@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 14
+chapter: 15
 images:
 ---
 
@@ -38,6 +38,8 @@ More generally, the tower-shell experiments showed that aperture geometry, whorl
 
 The orthocone investigations extended this observation further. By replacing the logarithmic spiral growth path with a simple linear growth trajectory, the same aperture-sweep framework produced straight-shelled cephalopod forms rather than coiled shells. This reinforced the idea that shell morphology emerges from the interaction between aperture growth and growth trajectory, with coiling representing only one possible developmental path among many.
 
+The subsequent development of cyrtocone shells extended this idea further. Introducing curvature into the growth trajectory produced recognisably different cephalopod morphologies while leaving aperture growth, chamber generation and siphuncle construction largely unchanged. Together, the orthocone and cyrtocone models demonstrated that growth trajectory itself constitutes a major driver of shell morphology, capable of generating substantial anatomical diversity without requiring changes to the underlying developmental mechanisms.
+
 ## Growth Rules and Rendering Rules
 
 A useful distinction emerged between growth rules and rendering rules.
@@ -67,6 +69,8 @@ This demonstrated that many shell features are most naturally defined relative t
 
 The development of orthocone shells also showed that internal features such as the siphuncle can be expressed in shell-relative coordinates rather than absolute geometry. Defining siphuncle position as a proportion of local shell radius allowed the same conceptual structure to be reused across both coiled and straight-shelled shell architectures.
 
+The cyrtocone investigations extended this principle beyond growth coordinates. Once shell curvature was introduced, aperture orientation, chamber geometry and siphuncle construction could no longer rely on fixed global reference frames. Instead, these structures had to be generated relative to local coordinate systems derived from the shell centreline itself. This revealed that many aspects of shell construction are most naturally expressed in terms of shell-relative geometry rather than absolute spatial coordinates.
+
 ## Computational Natural History
 
 The project increasingly suggests that diverse shell forms can emerge from a common set of geometric and developmental principles.
@@ -74,6 +78,8 @@ The project increasingly suggests that diverse shell forms can emerge from a com
 The orthocone investigations broadened this perspective by demonstrating that many aspects of shell construction can be expressed independently of any particular shell geometry. Chamber formation, siphuncle placement and shell-wall generation could all be reformulated in terms of growth-relative coordinates and developmental progression.
 
 Although the models presented here are intentionally abstract, they suggest how complex shell forms may emerge from the interaction of a relatively small number of growth processes operating over long periods of development. More broadly, they hint at the possibility of a general growth-based framework capable of generating a wide range of shell architectures from shared underlying rules.
+
+The progression from logarithmic spiral shells through tower shells, orthocones and cyrtocones also suggested a useful higher-level abstraction: shell form can be viewed as the interaction between a growth trajectory and a growing aperture. Under this interpretation, logarithmic spirals, straight axes and curved axes become alternative growth-path geometries within a shared developmental framework. The resulting diversity of forms emerges less from fundamentally different construction processes than from variations in how growth is directed through space.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}

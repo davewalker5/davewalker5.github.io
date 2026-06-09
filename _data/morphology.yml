@@ -39,6 +39,9 @@ chapters:
   - title: "Orthocone-Like Shell"
     description: "A straight-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
     url: /wildlife/shells/orthocone.html
+  - title: "Cyrtocone-Like Shell"
+    description: "A curve-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
+    url: /wildlife/shells/cyrtocone.html
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html
