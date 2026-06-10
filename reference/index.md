@@ -9,11 +9,19 @@ body_class: reference
 
 # Reference
 
+## eBooks
+
+Compiled publications bringing together observations, investigations, analyses and narrative into structured, long-form editions in eBook format.
+
+{% include reference-table.html category="eBooks" show_format=true %}
+
+EPUB files can be read directly in Apple Books, Kobo and many other eReaders. Kindle users can send EPUB files to their Kindle library using Amazon’s Send to Kindle service.
+
 ## Booklets
 
-Compiled reports presented as booklet-style publications, bringing together observations and analyses in a more structured, long-form format.
+Compiled publications bringing together observations, investigations, analyses and narrative structured, long-form editions in PDF format.
 
-{% include reference-table.html category="Booklets" %}
+{% include reference-table.html category="Booklets" show_format=true %}
 
 ## Tools
 
