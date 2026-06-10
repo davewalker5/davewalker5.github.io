@@ -31,7 +31,7 @@ images:
 notes:
   - title: "Safari"
     text: "From the Arabic <em>safar</em>, meaning journey or travel, and entering Swahili as <em>safari</em>, meaning a journey or expedition"
-  - title: "Village Weaver (<em>Ploceus cucullatus<e/m>)"
+  - title: "Village Weaver (<em>Ploceus cucullatus</em>)"
     text: "active in hotel gardens; small groups moving through ornamental trees and shrubs, frequent calling and display behaviour"
 ---
 
