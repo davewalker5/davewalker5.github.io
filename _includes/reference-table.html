@@ -3,6 +3,9 @@
     <tr>
     <th>Area</th>
     <th>Data</th>
+    {% if include.show_format %}
+        <th>Format</th>
+    {% endif %}
     <th>Reference</th>
     </tr>
 </thead>
@@ -42,6 +45,11 @@
             <span class="muted">No link</span>
         {% endif %}
         </td>
+        {% if include.show_format %}
+            <td>
+                {{ r.url | split: "." | last | upcase }}
+            </td>
+        {% endif %}
         <td>
         {% if r.reference %}
             <code>{{ r.reference }}</code>
