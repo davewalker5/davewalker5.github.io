@@ -1,0 +1,55 @@
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  line-height: 1.45;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+figure {
+  margin: 1em 0;
+}
+
+figcaption {
+  font-size: 0.9em;
+}
+
+.book-cover,
+.book-toc,
+.book-post {
+  break-before: page;
+}
+
+.print-only,
+.book-post-body .inline-gallery__viewer {
+  display: none !important;
+}
+
+pre,
+code {
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.book-post-title,
+.epub-section-title {
+  display: block !important;
+  visibility: visible !important;
+  font-size: 1.6em;
+  line-height: 1.2;
+  margin: 1.4em 0 0.6em 0;
+  font-weight: bold;
+}
+
+.signature-name-image {
+    height: 32px;
+    width: auto;
+}
+
+.signature .date {
+    display: block;
+    font-size: 0.9em;
+    margin-top: 0.5em;
+}
