@@ -42,6 +42,9 @@ chapters:
   - title: "Cyrtocone-Like Shell"
     description: "A curve-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
     url: /wildlife/shells/cyrtocone.html
+  - title: "Crioceratite-Like Shell"
+    description: "A ribbed crioceratite-inspired shell with open coiling, pronounced growth ornamentation, curved septa and a visible siphuncle"
+    url: /wildlife/shells/crioceratite.html
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html

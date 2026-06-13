@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 15
+chapter: 16
 images:
 ---
 
@@ -39,6 +39,8 @@ More generally, the tower-shell experiments showed that aperture geometry, whorl
 The orthocone investigations extended this observation further. By replacing the logarithmic spiral growth path with a simple linear growth trajectory, the same aperture-sweep framework produced straight-shelled cephalopod forms rather than coiled shells. This reinforced the idea that shell morphology emerges from the interaction between aperture growth and growth trajectory, with coiling representing only one possible developmental path among many.
 
 The subsequent development of cyrtocone shells extended this idea further. Introducing curvature into the growth trajectory produced recognisably different cephalopod morphologies while leaving aperture growth, chamber generation and siphuncle construction largely unchanged. Together, the orthocone and cyrtocone models demonstrated that growth trajectory itself constitutes a major driver of shell morphology, capable of generating substantial anatomical diversity without requiring changes to the underlying developmental mechanisms.
+
+The development of the crioceratite model provided an instructive counterpoint to the orthocone and cyrtocone investigations. Whereas those forms required new growth trajectories, the crioceratite emerged entirely within the existing logarithmic-spiral framework. Relatively modest changes to shell expansion, whorl interaction and ornamentation transformed a tightly coiled ammonite-like shell into a recognisably open-coiled heteromorph form. This demonstrated that substantial morphological diversification can arise both from changes in growth trajectory and from changes in the interaction between successive growth stages within a shared developmental framework.
 
 ## Growth Rules and Rendering Rules
 
@@ -80,6 +82,8 @@ The orthocone investigations broadened this perspective by demonstrating that ma
 Although the models presented here are intentionally abstract, they suggest how complex shell forms may emerge from the interaction of a relatively small number of growth processes operating over long periods of development. More broadly, they hint at the possibility of a general growth-based framework capable of generating a wide range of shell architectures from shared underlying rules.
 
 The progression from logarithmic spiral shells through tower shells, orthocones and cyrtocones also suggested a useful higher-level abstraction: shell form can be viewed as the interaction between a growth trajectory and a growing aperture. Under this interpretation, logarithmic spirals, straight axes and curved axes become alternative growth-path geometries within a shared developmental framework. The resulting diversity of forms emerges less from fundamentally different construction processes than from variations in how growth is directed through space.
+
+The crioceratite investigations suggested a complementary mechanism for morphological diversification. Not all major changes in shell form required alternative growth trajectories; some emerged through modifications to the relationship between successive whorls within the same logarithmic growth process. The transition from tightly coiled ammonite-like shells to open-coiled heteromorph forms demonstrated how substantial anatomical differences can arise from relatively small adjustments to developmental parameters while retaining the same underlying construction principles.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
