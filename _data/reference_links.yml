@@ -82,6 +82,11 @@
   url: /downloads/booklets/computational-shell-morphology.pdf
   category: Booklets
 
+- area: Travel
+  title: Mallorca, 2026 - Field Notes from a Return to a Familiar Island
+  url: /downloads/booklets/mallorca-2026.pdf
+  category: Booklets
+
 # --------------------------------------------------------------------------------
 # eBooks
 # --------------------------------------------------------------------------------
@@ -113,6 +118,11 @@
 - area: Wildlife
   title: Computational Shell Morphology
   url: /downloads/ebooks/computational-shell-morphology.epub
+  category: eBooks
+
+- area: Travel
+  title: Mallorca, 2026 - Field Notes from a Return to a Familiar Island
+  url: /downloads/ebooks/mallorca-2026.epub
   category: eBooks
 
 # --------------------------------------------------------------------------------

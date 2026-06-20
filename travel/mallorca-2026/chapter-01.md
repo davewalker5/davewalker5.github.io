@@ -48,9 +48,6 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
-
 Twelve years is a surprisingly long time.
 
 Long enough for memories to soften around the edges. Long enough to forget details while retaining an overall impression. Long enough, perhaps, for a place to become partly real and partly reconstructed from memory.

@@ -24,9 +24,6 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
-
 One of the pleasures of returning to Mallorca after many years away is rediscovering just how much wildlife exists alongside the holiday experience.
 
 This morning, sitting beneath the shade of a flowering tree on the seafront, a Tipuana tipu, at Puerto de Pollença, I became aware of a constant movement high in the branches. Looking more carefully, the canopy was alive with butterflies. Dozens of them drifted through the flowers, settling briefly before moving on to the next cluster of blooms.

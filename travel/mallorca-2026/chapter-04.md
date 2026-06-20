@@ -48,9 +48,6 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
-
 It began, as many good travel observations do, with lunch.
 
 After the boat journey from Sa Calobra, we arrived in Port de Sóller and wandered into a harbour-side restaurant without much planning. The harbour was busy but not hurried; boats moved gently on their moorings and the waterfront cafés hummed with conversation. Looking down the menu, one dish immediately caught my eye: calamares a la plancha.

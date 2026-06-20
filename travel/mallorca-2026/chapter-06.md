@@ -9,6 +9,13 @@ excerpt: A bright red and yellow aircraft skims across Pollensa Bay, scooping th
 series: mallorca2026
 assets: "/images/mallorca/"
 chapter: 6
+waterbomber:
+  name: "43-23.jpg"
+  alt: "Canadair CL-215T Water Bomber 43-23"
+  caption: "Canadair CL-215T Water Bomber 43-23"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 <figure class="report-figure no-print">
@@ -19,6 +26,10 @@ chapter: 6
     </video>
   </div>
 </figure>
+
+<div class="print-only">
+{% include fullwidth-image.html assets=page.assets img=page.waterbomber %}
+</div>
 
 Some observations announce themselves quietly. Others arrive low over a bay trailing spray.
 

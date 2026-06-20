@@ -8,8 +8,16 @@ tags: ["travel-journal", "mallorca", "natural-history", "field-notes"]
 excerpt: "Field Notes from a return to a familiar island"
 permalink: "/travel/mallorca-2026/"
 assets: "/images/mallorca/"
-images:
+perto_pollensa:
+  name: "puerto-de-pollensa-004.jpg"
+  alt: "Puerto de Pollensa"
+  caption: "Puerto de Pollensa"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
+
+{% include fullwidth-image.html assets=page.assets img=page.perto_pollensa %}
 
 Some places become part of a person’s life not through a single extraordinary visit, but through repeated returns.
 
@@ -57,6 +65,8 @@ Together, however, they capture something of the character of the journey and of
 
 What follows is simply a week in Mallorca, recorded through observation, curiosity, and the habit of keeping notes.
 
+<div class="no-print">
+
 ## Contents
 
 <table class="data-table">
@@ -92,3 +102,4 @@ What follows is simply a week in Mallorca, recorded through observation, curiosi
     </tbody>
 </table>
 
+</div>

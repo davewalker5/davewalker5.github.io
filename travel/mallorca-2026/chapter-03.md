@@ -48,9 +48,6 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
-
 There are certain smells that seem to bypass thought entirely.
 
 No effort is required. No conscious recollection. A scent arrives, and suddenly a place, a season, or a moment from years ago returns in full colour.

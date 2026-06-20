@@ -72,9 +72,6 @@ images:
     license: "All rights reserved — not licensed for reuse"
 ---
 
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
-
 In Puerto de Pollensa, in a restaurant tucked away down a side street just off the seafront, a flamenco performance unfolded. It was clearly a modern interpretation, designed in part for visitors like us. Purists might have found plenty to debate. Yet, as so often happens when travelling, what began as entertainment gradually became something more interesting.
 
 The familiar image of flamenco was there: dramatic poses, flowing dresses, Spanish guitar, and all the visual elements that have become synonymous with the art form. It was enjoyable, certainly, but it was a particular sequence that stopped me paying attention to the spectacle and started me paying attention to the performance.
