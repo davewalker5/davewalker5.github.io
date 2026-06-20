@@ -8,7 +8,7 @@ tags: ["western corridor", "serengeti", "safari", "travel-journal", "wildlife-tr
 excerpt: "The Western Corridor opens onto something vast: zebra in their thousands, wildebeest in their tens of thousands, and the first true encounter with the scale and movement of the Migration"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 14
+chapter: 13
 zebra:
     name: "13-zebra-panorama.jpg"
     alt: "Migrating Plains Zebra (Equus quagga), Western Corridor"

@@ -8,7 +8,7 @@ tags: ["western corridor", "serengeti", "lake manyara", "transfer", "safari", "t
 excerpt: "A sighting of a leopard and cub in a tree marks the departure from the Serengeti, followed by a long journey North and arrival at Lake Manyara, where the tone shifts from dust and distance to comfort and space"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 17
+chapter: 16
 images:
   - name: "16-leopard-001.jpg"
     alt: "Leopard (Panthera pardus) with cub, Serengeti National Park"

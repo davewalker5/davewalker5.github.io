@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: journal
 title: Music in the Floorboards
+breadcrumb: Music in the Floorboards
 date: 2026-06-20 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, travel, flamenco, music, rhythm, observation, culture, spain]
 excerpt: A flamenco performance in Puerto de Pollensa revealed something unexpected - not simply a dance, but a musician using their feet as a percussion instrument
 series: mallorca2026
-series_order: 7
+assets: "/images/mallorca/"
+chapter: 7
 images:
   - name: "flamenco-001.jpg"
     alt: "Flamenco at Zarzales"
@@ -69,9 +71,6 @@ images:
     credit: "David Walker, Field Notes Journal"
     license: "All rights reserved — not licensed for reuse"
 ---
-
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
 
 In Puerto de Pollensa, in a restaurant tucked away down a side street just off the seafront, a flamenco performance unfolded. It was clearly a modern interpretation, designed in part for visitors like us. Purists might have found plenty to debate. Yet, as so often happens when travelling, what began as entertainment gradually became something more interesting.
 

@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: journal
 title: The Last Morning
+breadcrumb: The Last Morning
 date: 2026-06-20 00:00:02
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, travel, reflection, place, memory, departure, field-notes-practice]
 excerpt: A reflection on the curious sadness of packing, the temporary homes we create while travelling, and the traces of a place that travel home with us
 series: mallorca2026
-series_order: 8
 assets: "/images/mallorca/"
+chapter: 8
 lagola:
   name: "la-gola.jpg"
   alt: "La Gola, Puerto de Pollensa"
@@ -15,7 +16,6 @@ lagola:
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
-images:
 ---
 
 {% include fullwidth-image.html assets=page.assets img=page.lagola %}

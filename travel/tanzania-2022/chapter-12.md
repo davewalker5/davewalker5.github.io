@@ -8,7 +8,7 @@ tags: ["serengeti", "safari", "travel-journal", "wildlife-travel"]
 excerpt: "A reluctant breakfast and a final, memorable departure from a disappointing camp, before setting out towards the Western Corridor of the Serengeti"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 13
+chapter: 12
 images:
 notes:
   - title: "Serengeti Western Corridor"

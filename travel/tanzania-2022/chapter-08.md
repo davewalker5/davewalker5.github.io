@@ -8,7 +8,7 @@ tags: ["ngorongoro", "safari", "travel-journal", "wildlife-travel"]
 excerpt: "An early descent into the Ngorongoro Crater brings lions in the dawn light, birdlife across the plains, and a full day of encounters within the caldera, with the elusive black rhino still just out of sight"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 9
+chapter: 8
 panorama:
   name: "08-ngorongoro.jpg"
   alt: "The Ngorongoro Crater, viewed from the crater rim"

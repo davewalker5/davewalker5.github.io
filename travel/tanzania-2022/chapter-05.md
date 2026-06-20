@@ -8,7 +8,7 @@ tags: ["lake eyasi", "kisima ngeda", "safari", "travel-journal", "wildlife-trave
 excerpt: "Leaving Tarangire behind, the journey west leads to Lake Eyasi, where a quieter landscape, a characterful lodge, and a change of pace mark the next stage of the safari"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 6
+chapter: 5
 images:
   - name: "05-kisima-ngeda-001.jpg"
     alt: "Tented Accommodation, Kisima Ngeda Lodge, Lake Eyasi"

@@ -8,7 +8,7 @@ tags: ["lake manyara", "transfer", "arusha", "zanzibar", "safari", "travel-journ
 excerpt: "The safari comes to a close with a final morning in Tanzania, bringing a mix of reflection, gratitude, and quiet departure as the journey continues on to Zanzibar"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 19
+chapter: 18
 images:
 notes:
   - title: "Arusha"

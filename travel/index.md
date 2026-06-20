@@ -12,33 +12,23 @@ The focus remains the same: observation, place, and the experience of being pres
 
 They are not guides, nor itineraries. They are accounts of days: what was seen, what was noticed, and what it felt like to move through unfamiliar environments.
 
-## Tanzania Safari Journal
-
-A multi-day account of a journey through northern Tanzania, moving from the foothills of Mount Meru through Tarangire, Lake Eyasi, and beyond.
-
-The journal follows the progression of the landscape and the experience: from first impressions and adjustment, through immersion in the savannah, to encounters with wildlife and place.
+## Travel Journals
 
 <table class="data-table">
     <thead>
         <tr>
-            <th>Chapter</th>
             <th>Title</th>
             <th>Date</th>
         </tr>
     </thead>
     <tbody>
-        {% for chapter in site.data.tanzania2022.chapters %}
+        {% for journal in site.data.travel.journals %}
             <tr>
-                {% if forloop.index0 > 0 %}
-                    <td>{{ forloop.index0 }}</td>
-                {% else %}
-                    <td></td>
-                {% endif %}
-                <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
+                <td><a href="{{ journal.url }}">{{ journal.title }}</a></td>
                 <td>
-                    {% if chapter.date %}
-                        {% assign day = chapter.date | date: "%-d" %}
-                        {% assign day = chapter.date | date: "%-d" %}
+                    {% if journal.date %}
+                        {% assign day = journal.date | date: "%-d" %}
+                        {% assign day = journal.date | date: "%-d" %}
 
                         {% case day %}
                             {% when '1' or '21' or '31' %}{% assign suffix = "st" %}
@@ -47,19 +37,13 @@ The journal follows the progression of the landscape and the experience: from fi
                             {% else %}{% assign suffix = "th" %}
                         {% endcase %}
 
-                        {{ day }}{{ suffix }} {{ chapter.date | date: "%B %Y" }}
+                        {{ day }}{{ suffix }} {{ journal.date | date: "%B %Y" }}
                     {% endif %}
                 </td>
             </tr>
         {% endfor %}
     </tbody>
 </table>
-
-{% if site.data.tanzania2022.is_complete == false %}
-<p>
-    <em>The journal is currently being published in stages, following the original sequence of the journey.</em>
-</p>
-{% endif %}
 
 ## Other Travel Writing
 

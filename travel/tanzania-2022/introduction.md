@@ -6,9 +6,7 @@ date: 2026-04-20
 categories: ["travel", "tanzania", "field-notes"]
 tags: ["safari", "travel-journal", "wildlife-travel"]
 excerpt: "Field Notes from a long-awaited journey"
-series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 1
 permalink: "/travel/tanzania-2022/"
 images:
   - name: "00-hyena.jpg"
@@ -86,3 +84,38 @@ If the Journal is a personal natural history of place, then this is a record of 
 ## Closing line
 
 What follows is simply the journey, as it unfolded - one day at a time.
+
+## Contents
+
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Chapter</th>
+            <th>Title</th>
+            <th>Date</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for chapter in site.data.tanzania2022.chapters %}
+            <tr>
+                <td>{{ forloop.index }}</td>
+                <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
+                <td>
+                    {% if chapter.date %}
+                        {% assign day = chapter.date | date: "%-d" %}
+                        {% assign day = chapter.date | date: "%-d" %}
+
+                        {% case day %}
+                            {% when '1' or '21' or '31' %}{% assign suffix = "st" %}
+                            {% when '2' or '22' %}{% assign suffix = "nd" %}
+                            {% when '3' or '23' %}{% assign suffix = "rd" %}
+                            {% else %}{% assign suffix = "th" %}
+                        {% endcase %}
+
+                        {{ day }}{{ suffix }} {{ chapter.date | date: "%B %Y" }}
+                    {% endif %}
+                </td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>

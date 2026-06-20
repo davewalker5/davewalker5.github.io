@@ -1,13 +1,21 @@
 ---
-layout: post
+layout: journal
 title: The Red and Yellow Aircraft
+breadcrumb: The Red and Yellow Aircraft
 date: 2026-06-19 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, pollensa-bay, travel, aviation, canadair, water-bomber, grupo-43, wildfire, observation, mediterranean]
 excerpt: A bright red and yellow aircraft skims across Pollensa Bay, scooping thousands of litres of seawater before climbing away towards the mountains. A holiday observation becomes a small investigation into Spain’s remarkable firefighting aircraft
 series: mallorca2026
-series_order: 6
-images:
+assets: "/images/mallorca/"
+chapter: 6
+waterbomber:
+  name: "43-23.jpg"
+  alt: "Canadair CL-215T Water Bomber 43-23"
+  caption: "Canadair CL-215T Water Bomber 43-23"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 <figure class="report-figure no-print">
@@ -18,6 +26,10 @@ images:
     </video>
   </div>
 </figure>
+
+<div class="print-only">
+{% include fullwidth-image.html assets=page.assets img=page.waterbomber %}
+</div>
 
 Some observations announce themselves quietly. Others arrive low over a bay trailing spray.
 

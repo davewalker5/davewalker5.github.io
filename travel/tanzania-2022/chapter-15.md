@@ -8,7 +8,7 @@ tags: ["western corridor", "serengeti", "safari", "travel-journal", "wildlife-tr
 excerpt: "A day in the Western Corridor brings the realities of the Migration into sharp focus, from the harsh consequences at the Grumeti River to the quieter rhythms of herds gathering to drink on the plains."
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 16
+chapter: 15
 crossing:
     name: "15-grumeti-crossing.jpg"
     alt: "Wildebeest carcasses at the Grumeti River crossing, Western Corridor"

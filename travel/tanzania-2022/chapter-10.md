@@ -8,7 +8,7 @@ tags: ["serengeti", "safari", "travel-journal", "wildlife-travel"]
 excerpt: "An arrival that promised much and delivered… something else entirely. A memorable stay for all the wrong reasons, redeemed only by wildlife, wit, and the shared determination to see the funny side"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 11
+chapter: 10
 images:
 notes:
   - title: "Accommodation quality"

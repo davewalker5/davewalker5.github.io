@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: journal
 title: Returning to Mallorca
+breadcrumb: Returning to Mallorca
 date: 2026-06-14 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, travel, observation, natural-history, language, birds, butterflies, mediterranean]
 excerpt: Returning to Mallorca after a twelve-year absence, and rediscovering a familiar place through gulls, butterflies, language, aircraft and the simple practice of paying attention.
 series: mallorca2026
-series_order: 1
+assets: "/images/mallorca/"
+chapter: 1
 images:
   - name: "ca-na-magdalena.jpg"
     alt: "Entrance to Ca Na Magdalena"
@@ -45,9 +47,6 @@ images:
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
 
 Twelve years is a surprisingly long time.
 

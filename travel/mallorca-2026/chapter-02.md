@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: journal
 title: Butterflies and Hawk-Moths
+breadcrumb: Butterflies and Hawk-Moths
 date: 2026-06-15 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, travel, natural-history, butterflies, moths, hawk-moth, painted-lady, cleopatra-butterfly, mediterranean]
 excerpt: A morning among nectaring butterflies in Puerto de Pollença and an unexpected encounter with some hovering hawk-moths
 series: mallorca2026
-series_order: 2
+assets: "/images/mallorca/"
+chapter: 2
 images:
   - name: "painted-lady.jpg"
     alt: "Painted Lady (Vanessa cardui)"
@@ -21,9 +23,6 @@ images:
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-{% assign assets_path = site.assets_url | append: "/images/mallorca/" %}
-{% include image-block.html images=page.images assets=assets_path %}
 
 One of the pleasures of returning to Mallorca after many years away is rediscovering just how much wildlife exists alongside the holiday experience.
 

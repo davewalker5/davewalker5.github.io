@@ -8,7 +8,7 @@ tags: ["tarangire national park", "safari", "tarangire", "travel-journal", "wild
 excerpt: "A full day in Tarangire brings early-morning bush life, close encounters with buffalo and lions with cubs, and a final sighting of a leopard in the late afternoon light"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 5
+chapter: 4
 images:
   - name: "04-tented-room.jpg"
     alt: "Tented Accommodation, Tarangire Kuro Treetops Lodge"

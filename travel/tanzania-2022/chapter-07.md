@@ -8,7 +8,7 @@ tags: ["lake eyasi", "kisima ngeda", "hadzabe", "ngorongoro", "safari", "travel-
 excerpt: "A morning with the Hadzabe reveals hunting practice and foraging in the bush, before the journey continues to the high rim of Ngorongoro"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 8
+chapter: 7
 arrowhead:
   - name: "06-arrowhead.jpg"
     alt: "Field Sketch of an Arrowhead Forged from a Nail, Datoga Village"
