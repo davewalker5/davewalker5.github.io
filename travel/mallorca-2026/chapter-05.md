@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: journal
 title: Eating the Landscape
+breadcrumb: Eating the Landscape
 date: 2026-06-18 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, food, travel, natural-history, mediterranean, landscape, observation]
 excerpt: From squid by the harbour to goat from the mountains, a reflection on how local food reveals the character of a place
 series: mallorca2026
-series_order: 5
-images:
+assets: "/images/mallorca/"
+chapter: 5
 ---
 
 One of the pleasures of travel is that it occasionally reconnects food with place.

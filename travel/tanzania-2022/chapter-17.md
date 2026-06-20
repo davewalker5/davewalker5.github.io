@@ -8,7 +8,7 @@ tags: ["lake manyara", "safari", "travel-journal", "wildlife-travel"]
 excerpt: "A final game drive at Lake Manyara reveals a landscape changed by recent rains, with quieter wildlife encounters and a closing day that mixes moments of interest with a more challenging cultural visit"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 18
+chapter: 17
 images:
   - name: "17-african-fish-eagle.jpg"
     alt: "African Fish Eagle (Icthyophaga vocifer), Lake Manyara National Park"

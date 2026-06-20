@@ -8,7 +8,7 @@ tags: ["lake eyasi", "kisima ngeda", "datoga", "safari", "travel-journal", "wild
 excerpt: ""
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 7
+chapter: 6
 closing:
   - name: "06-datoga-women-003.jpg"
     alt: "A photograph taken together at the end of our visit, outside the women’s house"

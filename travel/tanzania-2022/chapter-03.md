@@ -8,7 +8,7 @@ tags: ["tarangire national park", "safari", "tarangire", "travel-journal", "wild
 excerpt: "Entering Tarangire National Park, the landscape opens into classic savannah: baobabs, elephant herds, and a first lion sighting in the evening light, before arrival at a treetop lodge in the bush"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 4
+chapter: 3
 images:
   - name: "03-termite-mounts.jpg"
     alt: "Termite Mounds, Tarangire National Park"

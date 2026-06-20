@@ -8,7 +8,7 @@ tags: ["safari", "arusha", "mount-meru", "travel-journal", "wildlife-travel"]
 excerpt: "After an overnight journey via Doha, arrival in Northern Tanzania brought first impressions of farms, roadsides, Mount Meru, and weaverbirds in the hotel gardens"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 2
+chapter: 1
 images:
   - name: "01-qatar-lounge-lhr.jpg"
     alt: "Qatar Airlines Lounge, London Heathrow"

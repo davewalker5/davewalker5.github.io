@@ -8,7 +8,7 @@ tags: ["arusha national park", "safari", "arusha", "mount-meru", "travel-journal
 excerpt: "A first full day on safari in Arusha National Park brings mountain air, a ‘small Serengeti’, and close encounters with giraffe, buffalo, and birdlife, before continuing towards Tarangire"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 3
+chapter: 2
 images:
   - name: "02-little-serengeti.jpg"
     alt: "'Small Serengeti', Arusha National Park"

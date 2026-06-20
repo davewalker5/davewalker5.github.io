@@ -8,7 +8,7 @@ tags: ["olduvai", "gorge", "serengeti", "safari", "travel-journal", "wildlife-tr
 excerpt: "Leaving the Ngorongoro Crater, the journey crosses the Olduvai Gorge before continuing west into the Serengeti, with encounters along the way and a first sense of the scale of the plains beyond"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 10
+chapter: 9
 panorama:
   name: "09-olduvai-gorge-001.jpg"
   alt: "The Olduvai Gorge, Rift Valley, Tanzania, viewed from the rim"

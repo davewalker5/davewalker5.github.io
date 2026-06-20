@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: journal
 title: "The Smell of Summer"
+breadcrumb: "The Smell of Summer"
 date: 2026-06-16 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, travel, memory, observation, sensory-landscape, summer, mediterranean]
 excerpt: "A reflection on Piz Buin suncream, holiday scents, and the curious way that smell can preserve a place long after the details have faded."
 series: mallorca2026
-series_order: 3
+assets: "/images/mallorca/"
+chapter: 3
 images:
   - name: "morning-coffee.jpg"
     alt: "Morning Coffee at Gran Cafe 1919"

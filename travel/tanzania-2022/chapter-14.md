@@ -8,7 +8,7 @@ tags: ["western corridor", "serengeti", "safari", "travel-journal", "wildlife-tr
 excerpt: "A dawn balloon flight over the Serengeti reveals the landscape from above: quiet movement, scattered wildlife, and a gentle return to earth followed by an unexpected bush breakfast"
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 15
+chapter: 14
 takeoff:
     name: "14-take-off-001.jpg"
     alt: "Taking flight over the Western Corridor"

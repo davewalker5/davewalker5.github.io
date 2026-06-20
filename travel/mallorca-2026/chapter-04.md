@@ -1,12 +1,14 @@
 ---
-layout: post
+layout: journal
 title: Calamares à la Plancha
+breadcrumb: Calamares à la Plancha
 date: 2026-06-17 00:00:01
 categories: [field-notes]
 tags: [mallorca, port-de-soller, sa-calobra, travel, food, calamares, mediterranean, tramway, local-history, observation]
 excerpt: A harbour-side lunch in Port de Sóller leads from grilled squid and Mallorcan wine to reflections on Mediterranean traditions, historic trams, and the slower rhythms of place
 series: mallorca2026
-series_order: 4
+assets: "/images/mallorca/"
+chapter: 4
 images:
   - name: "rcd-mallorca-bus.jpg"
     alt: "The RCD Mallorca Team Bus, our transport for the bus-based legs of the day"

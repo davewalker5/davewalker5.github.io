@@ -8,7 +8,7 @@ tags: ["serengeti", "safari", "travel-journal", "wildlife-travel"]
 excerpt: "A day that more than redeemed the previous night: an extraordinary game drive of close encounters and quiet moments, briefly softening the memory of our surroundings — until reality returned in the early hours."
 series: tanzania2022
 assets: "/images/tanzania/"
-chapter: 12
+chapter: 11
 suckling:
   name: "11-lion-cubs-suckling.jpg"
   alt: "Lioness (Panthera leo) suckling young cubs, Central Serengeti"

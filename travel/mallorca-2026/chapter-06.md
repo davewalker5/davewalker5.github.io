@@ -1,13 +1,14 @@
 ---
-layout: post
+layout: journal
 title: The Red and Yellow Aircraft
+breadcrumb: The Red and Yellow Aircraft
 date: 2026-06-19 00:00:01
 categories: [field-notes]
 tags: [mallorca, puerto-de-pollensa, pollensa-bay, travel, aviation, canadair, water-bomber, grupo-43, wildfire, observation, mediterranean]
 excerpt: A bright red and yellow aircraft skims across Pollensa Bay, scooping thousands of litres of seawater before climbing away towards the mountains. A holiday observation becomes a small investigation into Spain’s remarkable firefighting aircraft
 series: mallorca2026
-series_order: 6
-images:
+assets: "/images/mallorca/"
+chapter: 6
 ---
 
 <figure class="report-figure no-print">

@@ -1,9 +1,5 @@
 series_name: "Tanzania, 2022"
-is_complete: true
 chapters:
-  - title: "Field Notes from a Long-Awaited Journey"
-    date: 2026-04-20
-    url: /travel/tanzania-2022/
   - title: "Arrival in Tanzania"
     date: 2022-06-20
     url: /travel/tanzania-2022/chapter-01.html
