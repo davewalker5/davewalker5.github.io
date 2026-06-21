@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 16
+chapter: 17
 images:
 ---
 
@@ -84,6 +84,8 @@ Although the models presented here are intentionally abstract, they suggest how 
 The progression from logarithmic spiral shells through tower shells, orthocones and cyrtocones also suggested a useful higher-level abstraction: shell form can be viewed as the interaction between a growth trajectory and a growing aperture. Under this interpretation, logarithmic spirals, straight axes and curved axes become alternative growth-path geometries within a shared developmental framework. The resulting diversity of forms emerges less from fundamentally different construction processes than from variations in how growth is directed through space.
 
 The crioceratite investigations suggested a complementary mechanism for morphological diversification. Not all major changes in shell form required alternative growth trajectories; some emerged through modifications to the relationship between successive whorls within the same logarithmic growth process. The transition from tightly coiled ammonite-like shells to open-coiled heteromorph forms demonstrated how substantial anatomical differences can arise from relatively small adjustments to developmental parameters while retaining the same underlying construction principles.
+
+The subsequent development of serpenticone morphologies reinforced this observation. Unlike the crioceratite, the serpenticone remains fully planispiral and requires no alteration to the underlying growth framework. Changes to shell expansion rate, whorl overlap and ornamentation alone were sufficient to transform a conventional ammonite-like shell into a recognisably distinct cephalopod form. Together, the ammonite, serpenticone and crioceratite models demonstrated that substantial morphological diversity can emerge from relatively small movements through parameter space while preserving the same fundamental developmental process.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
