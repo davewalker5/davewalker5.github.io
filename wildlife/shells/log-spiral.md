@@ -19,7 +19,11 @@ log_spiral:
 
 {% include fullwidth-image.html assets=page.assets img=page.log_spiral %}
 
-The foundation of the shell morphology model is the logarithmic spiral. This simple mathematical curve appears throughout nature and provides a useful approximation to the growth patterns seen in many mollusc shells.
+The logarithmic spiral formed the starting point of the shell morphology project and remains one of its most important growth models. Many molluscan shells can be approximated by logarithmic spiral growth, making it a useful framework for exploring shell form computationally.
+
+As the project expanded, additional growth trajectories such as straight orthocone and curved cyrtocone centrelines were introduced. The logarithmic spiral therefore represents one member of a broader family of growth-path models used throughout the project.
+
+This simple mathematical curve appears throughout nature and provides a useful approximation to the growth patterns seen in many mollusc shells.
 
 Unlike an ordinary spiral, where spacing between successive turns remains constant, a logarithmic spiral expands continuously as it rotates. As the spiral grows, its overall shape remains similar to itself at all scales, a property known as self-similarity.
 
