@@ -75,7 +75,7 @@ The present project strongly echoes this tradition by treating shell forms as ex
 
 ## Computational Natural History
 
-While inspired by historical theoretical morphology, this repository is also part of a broader contemporary interest in what might be described as computational natural history.
+While inspired by historical theoretical morphology, this project is also part of a broader contemporary interest in what might be described as computational natural history.
 
 Rather than treating computation solely as a tool for prediction or optimisation, computational natural history uses code as:
 

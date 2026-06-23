@@ -100,19 +100,19 @@ In simplified form:
 
 The result is a continuous surface representing the shell wall laid down through growth.
 
-## Growth Ribs
+## Growth Ribs and Segmentation
 
-Growth ribs are created by periodically expanding and contracting the aperture as it moves along the path:
+Growth ornamentation can be generated in several ways. The simplest approach uses a periodic sinusoidal modulation of aperture size:
 
 ```
 f(rib) = 1 + A * sin(F * theta)
 ```
 
-where A controls rib strength and F controls rib frequency.
+where A controls rib strength and F controls rib frequency. This factor is applied directly to the aperture dimensions, so the ribs are part of the geometry rather than just a colour effect. Low frequencies produce broad, widely spaced ribs. Higher frequencies produce finer, more closely spaced growth lines.
 
-This factor is applied directly to the aperture dimensions, so the ribs are part of the geometry rather than just a colour effect.
+The framework also supports segmented ornamentation, in which the shell is divided into discrete growth intervals. In orthocone-like forms these segments can be aligned with chamber spacing, producing annulated shells whose external ornamentation reflects the underlying chamber architecture.
 
-Low frequencies produce broad, widely spaced ribs. Higher frequencies produce finer, more closely spaced growth lines.
+These two approaches illustrate an important principle of the model: shell ornamentation can be generated either as a continuous variation in growth or as a sequence of discrete growth events.
 
 ## Aperture Lip
 
