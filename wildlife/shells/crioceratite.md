@@ -4,7 +4,7 @@ title: Crioceratite-Like Shell
 breadcrumb: Crioceratite-Like Shell
 description: A ribbed crioceratite-inspired shell with open coiling, pronounced growth ornamentation, curved septa and a visible siphuncle
 series: morphology
-chapter: 15
+chapter: 11
 assets: "/images/modelling/shells/"
 images:
   - name: "crioceratite-opaque-presentation.png"

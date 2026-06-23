@@ -4,7 +4,7 @@ title: Orthocone-Like Shell
 breadcrumb: Orthocone-Like Shell
 description: A straight-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle
 series: morphology
-chapter: 13
+chapter: 15
 assets: "/images/modelling/shells/"
 orthocone:
   name: "orthocone.png"

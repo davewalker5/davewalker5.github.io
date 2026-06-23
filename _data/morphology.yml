@@ -1,53 +1,105 @@
 series_name: "Computational Shell Morphology"
 chapters:
+  # --------------------------------------------------------------------------------
+  # Introductory sections
+  # --------------------------------------------------------------------------------
   - title: "Background and Historical Context"
-    description: "Mathematical, biological, and historical traditions underlying computational shell morphology"
+    description: "A background to computational shell morphology"
     url: /wildlife/shells/background.html
+
   - title: "Logarithmic Spiral Growth"
-    description: "Mathematical foundations of shell growth through logarithmic spirals and aperture expansion"
+    description: "Mathematical foundations of shell growth"
     url: /wildlife/shells/log-spiral.html
+
   - title: "Building the Shell Mesh"
     description: "Generating three-dimensional shell forms by sweeping apertures along growth paths"
     url: /wildlife/shells/shell-mesh.html
+
   - title: "Chamber Septa"
     description: "Modelling internal chamber walls through nested growth surfaces"
     url: /wildlife/shells/chamber-septa.html
+
   - title: "The Siphuncle"
     description: "Constructing a simplified internal siphuncle linking shell chambers"
     url: /wildlife/shells/siphuncle.html
-  - title: "The Example Shell Presets"
+
+  - title: "Morphological Examples"
     description: "A guide to the example shell forms included in the project"
     url: /wildlife/shells/examples.html
+
+  # --------------------------------------------------------------------------------
+  # Coiled Nautiloids
+  # --------------------------------------------------------------------------------
   - title: "Nautilus-Like Shell"
-    description: "Chambered shell form inspired by nautiloids, exploring logarithmic coiling, internal septa, and classical spiral shell geometry"
+    morphological_family: "Coiled Nautiloid"
+    description: "A chambered shell exploring classical logarithmic coiling"
     url: /wildlife/shells/nautilus.html
+
   - title: "Nautilus-Like Shell with a Smooth Surface"
-    description: "A simplified smooth-surfaced variant of the nautilus-inspired model"
+    morphological_family: "Coiled Nautiloid"
+    description: "A smooth-surfaced variant of the nautilus model"
     url: /wildlife/shells/smooth-nautilus.html
+
+  # --------------------------------------------------------------------------------
+  # Ammonoids
+  # --------------------------------------------------------------------------------
   - title: "Ammonite-Like Shell"
-    description: "A shell form inspired by ammonites, combining logarithmic growth with ornamentation and evolving shell expansion"
+    morphological_family: "Ammonoid"
+    description: "A ribbed ammonoid form with chambered coiling"
     url: /wildlife/shells/ammonite.html
-  - title: "Ramshorn-Like Shell"
-    description: "A shell form inspired by ramshorn snails, demonstrating tightly coiled low-spired growth and compact shell geometry"
-    url: /wildlife/shells/ramshorn.html
-  - title: "Flared Shell"
-    description: "Exploration of expanding aperture flare and exaggerated shell opening geometry"
-    url: /wildlife/shells/flared.html
-  - title: "Tower Shell (Turritella-Like)"
-    description: "A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting flattened whorls"
-    url: /wildlife/shells/turritella.html
-  - title: "Orthocone-Like Shell"
-    description: "A straight-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
-    url: /wildlife/shells/orthocone.html
-  - title: "Cyrtocone-Like Shell"
-    description: "A curve-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle"
-    url: /wildlife/shells/cyrtocone.html
-  - title: "Crioceratite-Like Shell"
-    description: "A ribbed crioceratite-inspired shell with open coiling, pronounced growth ornamentation, curved septa and a visible siphuncle"
-    url: /wildlife/shells/crioceratite.html
+
   - title: "Serpenticone Ammonite-Like Shell"
-    description: “A ribbed serpenticone ammonite-inspired shell with evolute coiling, slow shell expansion, curved septa and a visible siphuncle”
+    morphological_family: "Ammonoid"
+    description: "An evolute ammonoid with slow shell expansion"
     url: /wildlife/shells/serpenticone.html
+
+  - title: "Crioceratite-Like Shell"
+    morphological_family: "Ammonoid"
+    description: "An open-coiled ammonoid with pronounced ribbing"
+    url: /wildlife/shells/crioceratite.html
+
+  # --------------------------------------------------------------------------------
+  # Gastropods
+  # --------------------------------------------------------------------------------
+  - title: "Ramshorn-Like Shell"
+    morphological_family: "Gastropod"
+    description: "A tightly coiled low-spired gastropod form"
+    url: /wildlife/shells/ramshorn.html
+
+  - title: "Flared Shell"
+    morphological_family: "Gastropod"
+    description: "An exploration of exaggerated aperture flare"
+    url: /wildlife/shells/flared.html
+
+  - title: "Tower Shell (Turritella-Like)"
+    morphological_family: "Gastropod"
+    description: "A high-spired shell generated by axial growth"
+    url: /wildlife/shells/turritella.html
+
+  # --------------------------------------------------------------------------------
+  # Orthoconic Nautiloids
+  # --------------------------------------------------------------------------------
+  - title: "Orthocone-Like Shell"
+    morphological_family: "Orthoconic Nautiloid"
+    description: "A straight chambered shell with a central siphuncle"
+    url: /wildlife/shells/orthocone.html
+  
+  - title: "Annulated Orthocone-Like Shell"
+    morphological_family: "Orthoconic Nautiloid"
+    description: "A segmented orthocone with annulated ornamentation"
+    url: /wildlife/shells/annulated-orthocone.html
+
+  # --------------------------------------------------------------------------------
+  # Curved Nautiloids
+  # --------------------------------------------------------------------------------
+  - title: "Cyrtocone-Like Shell"
+    morphological_family: "Curved Nautiloid"
+    description: "A gently curved chambered shell form"
+    url: /wildlife/shells/cyrtocone.html
+
+  # --------------------------------------------------------------------------------
+  # Observations and insights
+  # --------------------------------------------------------------------------------
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html

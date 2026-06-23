@@ -4,7 +4,7 @@ title: Turritella-Like Shell
 breadcrumb: Turritella-Like Shell
 description: A high-spired gastropod shell generated from logarithmic growth and axial translation, with closely abutting whorls, flattened whorl profiles and simple growth ribbing.
 series: morphology
-chapter: 12
+chapter: 14
 images:
   - name: "turritella-opaque-presentation.png"
     alt: "Simulation of Turritella-Like Shell"
