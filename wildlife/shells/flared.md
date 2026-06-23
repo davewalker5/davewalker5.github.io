@@ -4,7 +4,7 @@ title: Flared Shell
 breadcrumb: Flared Shell
 description: An exploration of expanding aperture flare and exaggerated shell opening geometry, producing forms reminiscent of trumpet and flared gastropod shells
 series: morphology
-chapter: 11
+chapter: 13
 images:
   - name: "flared-opaque-iso.png"
     alt: "Simulation of Flared Shell"

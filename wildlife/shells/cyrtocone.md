@@ -4,7 +4,7 @@ title: Cyrtocone-Like Shell
 breadcrumb: Cyrtocone-Like Shell
 description: A curve-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle
 series: morphology
-chapter: 14
+chapter: 17
 assets: "/images/modelling/shells/"
 images:
   - name: "cyrtocone-opaque-iso.png"

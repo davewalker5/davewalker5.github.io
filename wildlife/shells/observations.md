@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 17
+chapter: 18
 images:
 ---
 
@@ -50,6 +50,8 @@ Growth-related parameters such as logarithmic expansion, coiling rate, aperture 
 
 The project therefore acts not only as a graphics exercise, but also as a simplified exploration of computational natural history and developmental morphology.
 
+The development of the annulated orthocone revealed an additional distinction within shell ornamentation itself. Continuous ornamentation, such as sinusoidal ribbing or pigmentation bands, primarily affects surface appearance. By contrast, discrete growth ornamentation, such as annulations, can introduce visually significant developmental structure while leaving the underlying shell geometry unchanged. The resulting forms suggest that ornamentation spans a spectrum from purely decorative surface features to structures that express aspects of growth history and shell construction.
+
 ## Structural Abstractions
 
 In practice, separating:
@@ -86,6 +88,8 @@ The progression from logarithmic spiral shells through tower shells, orthocones 
 The crioceratite investigations suggested a complementary mechanism for morphological diversification. Not all major changes in shell form required alternative growth trajectories; some emerged through modifications to the relationship between successive whorls within the same logarithmic growth process. The transition from tightly coiled ammonite-like shells to open-coiled heteromorph forms demonstrated how substantial anatomical differences can arise from relatively small adjustments to developmental parameters while retaining the same underlying construction principles.
 
 The subsequent development of serpenticone morphologies reinforced this observation. Unlike the crioceratite, the serpenticone remains fully planispiral and requires no alteration to the underlying growth framework. Changes to shell expansion rate, whorl overlap and ornamentation alone were sufficient to transform a conventional ammonite-like shell into a recognisably distinct cephalopod form. Together, the ammonite, serpenticone and crioceratite models demonstrated that substantial morphological diversity can emerge from relatively small movements through parameter space while preserving the same fundamental developmental process.
+
+The annulated orthocone provided a complementary example. Here, substantial changes in perceived shell form emerged not from alterations to growth trajectory or aperture expansion, but from the introduction of a different ornamentation strategy. This suggests that morphological diversity may arise through changes in both developmental architecture and the way growth history is expressed on the shell surface.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}

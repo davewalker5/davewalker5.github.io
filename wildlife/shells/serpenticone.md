@@ -4,7 +4,7 @@ title: Serpenticone Ammonite-Like Shell
 breadcrumb: Serpenticone Ammonite-Like Shell
 description: A ribbed serpenticone serpenticone-inspired shell with slow shell expansion, pronounced growth ornamentation, curved septa and a visible siphuncle
 series: morphology
-chapter: 16
+chapter: 10
 images:
   - name: "serpenticone-opaque-presentation.png"
     alt: "Simulation of Serpenticone Ammonite-Like Shell"
