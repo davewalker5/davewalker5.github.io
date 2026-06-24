@@ -6,6 +6,13 @@ description: A curve-shelled cephalopod form generated through linear growth, wi
 series: morphology
 chapter: 17
 assets: "/images/modelling/shells/"
+growth_schematic:
+  name: "cyrtocone-growth-schematic.png"
+  alt: "Orthocone Growth Schematic"
+  caption: "Orthocone Growth Schematic"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 images:
   - name: "cyrtocone-opaque-iso.png"
     alt: "Simulation of Cyrtocone-Like Shell"
@@ -45,6 +52,8 @@ Where the orthocone grows along a straight centreline, the cyrtocone follows a g
 Within the shell morphology framework, the cyrtocone provides an important demonstration that major changes in shell form can arise from modifications to the growth trajectory while leaving much of the underlying shell-generation machinery unchanged.
 
 ## A Curved Growth Path
+
+{% include fullwidth-image.html assets=page.assets img=page.growth_schematic %}
 
 The cyrtocone differs from the orthocone primarily in the geometry of its growth axis.
 

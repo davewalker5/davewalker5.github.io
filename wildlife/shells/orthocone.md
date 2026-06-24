@@ -13,6 +13,13 @@ orthocone:
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
+growth_schematic:
+  name: "orthocone-growth-schematic.png"
+  alt: "Orthocone Growth Schematic"
+  caption: "Orthocone Growth Schematic"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 images:
   - name: "orthocone-opaque-aperture.png"
     alt: "Simulation of Orthocone-Like Shell"
@@ -182,6 +189,8 @@ The model also allows the siphuncle to be displaced from the shell centreline. I
 More broadly, the orthocone demonstrated that internal structures must be generated within the local coordinate system of the shell architecture rather than assuming a single geometric framework for all shell forms. As with chamber generation, the simplicity of the orthocone made such issues immediately visible and provided a valuable validation model during development.
 
 ## From Growth Axis to Shell
+
+{% include fullwidth-image.html assets=page.assets img=page.growth_schematic %}
 
 The orthocone growth axis defines only the shell trajectory and aperture size.
 
