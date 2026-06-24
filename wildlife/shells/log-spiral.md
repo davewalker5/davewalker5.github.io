@@ -13,6 +13,13 @@ log_spiral:
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
+growth_schematic:
+  name: "ammonite-growth-schematic.png"
+  alt: "Log Spiral Growth Schematic"
+  caption: "Log Spiral Growth Schematic"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 # Logarithmic Spiral Growth
@@ -61,7 +68,9 @@ A shell can be thought of as the accumulated record of a growing aperture. At ea
 
 The figure above shows a sequence of elliptical apertures positioned along the spiral growth path. As the spiral expands, the apertures increase in size, illustrating how shell growth proceeds through time.
 
-Although only a two-dimensional representation is shown here, the same principle forms the basis of the three-dimensional shell model. The shell surface emerges by sweeping successive apertures along the growth trajectory and connecting neighbouring growth stages together.
+The shell surface emerges by sweeping successive apertures along the growth trajectory and connecting neighbouring growth stages together:
+
+{% include fullwidth-image.html assets=page.assets img=page.growth_schematic %}
 
 ## Aperture Sizing Modes
 
