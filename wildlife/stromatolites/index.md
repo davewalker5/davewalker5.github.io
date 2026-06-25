@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Stromatolite Growth Modelling
-description: n exploration of how microbial growth, sedimentation and environmental change combine to produce the layered structures of stromatolites through computational modelling.
+description: An exploration of how microbial growth, sedimentation and environmental change combine to produce the layered structures of stromatolites through computational modelling.
 breadcrumb: Stromatolite Growth Modelling
 permalink: /wildlife/stromatolites/
 assets: "/images/modelling/stromatolites/"
