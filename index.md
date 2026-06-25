@@ -35,6 +35,7 @@ Each part can be explored on its own, but together they form a set of personal f
 
 If you are visiting for the first time, the [Start Here](/start-here/) page provides a guided introduction to the main sections of the site.
 
+{% include stromatolite-modelling-invitation.html %}
 {% include shell-modelling-invitation.html %}
 {% include modelling-invitation.html %}
 {% include tanzania-invitation.html %}

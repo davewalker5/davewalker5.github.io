@@ -87,6 +87,11 @@
   url: /downloads/booklets/mallorca-2026.pdf
   category: Booklets
 
+- area: Wildlife
+  title: Stromatolite Growth Modelling
+  url: /downloads/booklets/stromatolite-growth.pdf
+  category: Booklets
+
 # --------------------------------------------------------------------------------
 # eBooks
 # --------------------------------------------------------------------------------
@@ -123,6 +128,11 @@
 - area: Travel
   title: Mallorca, 2026 - Field Notes from a Return to a Familiar Island
   url: /downloads/ebooks/mallorca-2026.epub
+  category: eBooks
+
+- area: Wildlife
+  title: Stromatolite Growth Modelling
+  url: /downloads/ebooks/stromatolite-growth.epub
   category: eBooks
 
 # --------------------------------------------------------------------------------

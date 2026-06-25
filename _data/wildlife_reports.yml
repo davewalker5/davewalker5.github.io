@@ -6267,20 +6267,6 @@
   location_title: Oxford
   category: Birds
   category_title: Birds
-  species: WhiteBibbed-Mallard
-  species_title: Whitebibbed Mallard
-  base: WhiteBibbed-Mallard
-  title: Whitebibbed Mallard
-  png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/WhiteBibbed-Mallard.png
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/WhiteBibbed-Mallard.xlsx
-- report_type: trend
-  report_type_title: Trend
-  country: United-Kingdom
-  country_title: United Kingdom
-  location: Oxford
-  location_title: Oxford
-  category: Birds
-  category_title: Birds
   species: Woodpigeon
   species_title: Woodpigeon
   base: Woodpigeon
