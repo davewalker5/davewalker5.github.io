@@ -12,7 +12,7 @@ assets: "/images/modelling/stromatolites/"
 
 ## One-minute overview
 
-Stromatolites develop through the continual interaction of microbial growth, sediment deposition and changing environmental conditions. The model represents these processes as coupled ordinary differential equations, allowing laminated structures to emerge naturally from biologically interpretable feedbacks.
+Stromatolites grow because microbial mats build upward. Sediment periodically buries the surface. Microbes recover where light is sufficient, producing new layers. The model treats these interacting processes as coupled differential equations, allowing complex laminated structures to emerge naturally from simple ecological feedbacks.
 
 ## The Growth Model
 
@@ -97,17 +97,26 @@ The first term represents microbial reproduction, the second represents ordinary
 
 ### Light Availability
 
-Photosynthetic growth depends upon the amount of light reaching the microbial surface. Light decreases exponentially with depth according to:
+Photosynthetic growth depends upon the amount of light reaching the actively growing microbial surface. Rather than depending directly upon stromatolite height, light is calculated from the depth of water above the living mat.
+
+The current implementation therefore computes:
 
 ```
-L(H)=exp(-kH)
+water_depth = water_level − H
+```
+
+followed by:
+
+```
+L = exp(−k · water_depth)
 ```
 
 where
 
-- k is the attenuation coefficient
+- k is the attenuation coefficient of the water
+- water_depth is the depth of water above the living microbial surface.
 
-As the stromatolite grows taller, less light reaches the actively growing surface, reducing biological productivity. This relationship follows the familiar Beer–Lambert attenuation law widely used throughout ecology and oceanography.
+As the stromatolite grows upward, the living surface approaches the water surface and the depth of overlying water decreases. Consequently, less light is absorbed before reaching the microbial mat, increasing the potential rate of photosynthesis. Seasonal variation in incident light is applied separately before this attenuation calculation.
 
 ### Sediment Dynamics
 
@@ -139,7 +148,7 @@ Together these feedbacks generate the layered structures characteristic of strom
 
 ## Solving the Equations
 
-The model consists of a coupled system of ordinary differential equations (ODEs).
+The model combines continuous biological growth equations with discrete ecological events such as sediment burial and microbial recolonisation. Continuous processes are integrated numerically using an adaptive ODE solver, while discrete events modify the layered structure as thresholds are reached.
 
 No analytical solution is expected for the full model, particularly once environmental forcing and stochastic events are introduced.
 

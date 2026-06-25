@@ -18,8 +18,6 @@ column_development:
 
 {% include fullwidth-image.html assets=page.assets img=page.column_development %}
 
-This project explores how some of Earth’s earliest complex biological structures can be reproduced using relatively simple computational models, beginning with a one-dimensional model allows the underlying ecological mechanisms to be understood before extending the framework to more realistic two- and three-dimensional growth.
-
 Rather than attempting to simulate every microscopic process occurring within a microbial mat, the project focuses on the larger ecological interactions that govern stromatolite development: microbial growth, sediment deposition, burial, photosynthesis and changing environmental conditions.
 
 The aim is to investigate how these interacting processes can give rise to the layered structures preserved in the fossil record.
@@ -54,31 +52,55 @@ As the project evolves, new mechanisms are added only where they improve the bio
 
 ## Current Model
 
-The current implementation combines several interacting components.
+The current implementation combines continuous biological growth with discrete ecological events to simulate the development of a layered stromatolite through time.
+
+Rather than representing the stromatolite as a single continuously growing surface, the model treats the actively growing microbial mat as the uppermost living layer. As growth proceeds, sediment deposition and burial create new laminae while older layers become biologically inactive but remain part of the accumulating structure.
 
 ### Core biological model
 
-The underlying mathematical model describes the interaction between:
+The biological processes are described by a set of coupled growth equations representing interactions between:
 
-- Microbial growth
-- Sediment accumulation
-- Burial
-- Photosynthetic activity
+* Microbial growth
+* Photosynthetic activity
+* Sediment accumulation
+* Burial
 
-These processes are represented as coupled ordinary differential equations (ODEs), solved numerically through time.
+These continuous processes are integrated numerically through time using an adaptive ODE solver.
 
-### Environmental forcing
+### Layered structure
 
-Environmental conditions are represented as independent forcing functions that influence the biological rates without changing the underlying equations.
+The current implementation extends the core equations with an event-driven layered model.
+
+As the simulation progresses:
+
+* The uppermost microbial mat grows continuously.
+* Sediment is deposited onto the living surface.
+* Burial events terminate growth of the active layer.
+* A new microbial mat is established on the newly buried surface.
+* Older buried layers remain preserved within the developing stromatolite.
+
+This combination of continuous growth and discrete ecological events allows the characteristic laminated structure of stromatolites to emerge naturally from repeated cycles of growth, burial and recolonisation.
+
+### ## Environmental forcing
+
+Environmental conditions are represented as independent forcing functions that modify the biological growth rates without changing the underlying biological framework.
 
 Current forcing includes:
 
-- Seasonal light variation
-- Annual temperature cycles
-- Light attenuation through the overlying water column
-- Sediment-driven burial events
+* Seasonal light variation
+* Annual temperature cycles
+* Light attenuation through the overlying water column
+* Sediment-driven burial events
 
-This modular design makes it straightforward to introduce additional environmental influences as the project develops.
+Each forcing function represents a distinct environmental process and can be enabled, modified or extended independently, allowing increasingly realistic ecological scenarios to be explored while maintaining a transparent and modular model architecture.
+
+## How to Read this Booklet
+
+The pages in this booklet describe both the conceptual mathematical framework and its current computational implementation.
+
+The Core Growth Model introduces the underlying biological equations that motivate the simulation. Subsequent pages describe how these equations are realised within the current layered implementation through numerical integration, environmental forcing and discrete ecological events such as burial and recolonisation.
+
+The implementation therefore represents an evolving computational realisation of the core biological model rather than a direct one-to-one transcription of the introductory equations.
 
 ## Project Goals
 

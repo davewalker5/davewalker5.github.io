@@ -10,7 +10,7 @@ assets: "/images/modelling/stromatolites/"
 
 # Light Attentuation
 
-Photosynthetic microbial communities depend not simply on the amount of sunlight available, but on how much of that light penetrates the water column before reaching the living surface.
+Photosynthetic microbial mats depend upon the amount of light reaching their actively growing surface.
 
 In the earliest versions of the model, light availability was reduced according to the total height of the stromatolite. While this provided a simple mechanism for limiting growth, it implied that the stromatolite itself was responsible for attenuating incoming light.
 
@@ -50,6 +50,8 @@ water_depth = max( minimum_water_cover, water_level − stromatolite_height )
 ```
 
 This ensures that the microbial community always remains submerged while still allowing shallow-water growth.
+
+The stromatolite height used in this calculation is the elevation of the actively growing surface measured from the original substrate. It therefore represents the total accumulated thickness of the stromatolite rather than the thickness of the current microbial mat.
 
 ## Light Attenuation
 
