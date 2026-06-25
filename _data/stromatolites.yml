@@ -1,0 +1,27 @@
+series_name: "Computational Shell Morphology"
+chapters:
+  # --------------------------------------------------------------------------------
+  # Model Description
+  # --------------------------------------------------------------------------------
+  - title: "The Core Growth Model"
+    description: "The biological equations that underpin simulated stromatolite development"
+    url: /wildlife/stromatolites/core-model.html
+
+  - title: "Seasonal Environmental Forcing"
+    description: "How annual cycles of light and temperature influence microbial growth"
+    url: /wildlife/stromatolites/seasonal-forcing.html
+
+  - title: "Sediment Burial Events"
+    description: "How episodic sediment deposition creates new laminae through burial and recolonisation"
+    url: /wildlife/stromatolites/sediment-burial.html
+
+  - title: "Light Attentuation"
+    description: "Modelling how water depth controls the light reaching the microbial surface"
+    url: /wildlife/stromatolites/light-attenuation.html
+
+  # --------------------------------------------------------------------------------
+  # Model Interpretation
+  # --------------------------------------------------------------------------------
+  - title: "Interpreting the 1-D Model"
+    description: "Understanding the behaviour and outputs of the current one-dimensional simulation"
+    url: /wildlife/stromatolites/1d-model-interpretation.html

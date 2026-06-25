@@ -11,11 +11,11 @@
   link: /wildlife/seasonal/
 - title: "Seasonal Species Directory for Abingdon"
   category: "projects"
-  description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive ecological classifications"
+  description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive classifications"
   link: /wildlife/seasonal/abingdon.html
 - title: "Seasonal Species Directory for Thrupp Lake"
   category: "projects"
-  description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive ecological classifications"
+  description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive classifications"
   link: /wildlife/seasonal/thrupp_lake.html
 - title: "Bat Call Analysis"
   category: "projects"
@@ -25,6 +25,10 @@
   category: "projects"
   description: "Explorations of shell growth and coiling geometry using logarithmic spirals and procedural natural history models"
   link: /wildlife/shells/
+- title: "Stromatolite Growth Modelling"
+  category: "projects"
+  description: "Explorations of stromatolite growth through computational ecology, environmental forcing, and emergent structure"
+  link: /wildlife/stromatolites/
 - title: "Pocket Ecology"
   category: "projects"
   description: "Portable ecological modelling, bat acoustics analysis, and constrained computational natural history tools"
