@@ -18,6 +18,8 @@ column_development:
 
 {% include fullwidth-image.html assets=page.assets img=page.column_development %}
 
+This project explores how some of Earth’s earliest complex biological structures can be reproduced using relatively simple computational models, starting with a one-dimensional model that allows the underlying ecological mechanisms to be understood before extending the framework to more realistic two- and three-dimensional growth.
+
 Rather than attempting to simulate every microscopic process occurring within a microbial mat, the project focuses on the larger ecological interactions that govern stromatolite development: microbial growth, sediment deposition, burial, photosynthesis and changing environmental conditions.
 
 The aim is to investigate how these interacting processes can give rise to the layered structures preserved in the fossil record.
@@ -60,10 +62,10 @@ Rather than representing the stromatolite as a single continuously growing surfa
 
 The biological processes are described by a set of coupled growth equations representing interactions between:
 
-* Microbial growth
-* Photosynthetic activity
-* Sediment accumulation
-* Burial
+- Microbial growth
+- Photosynthetic activity
+- Sediment accumulation
+- Burial
 
 These continuous processes are integrated numerically through time using an adaptive ODE solver.
 
@@ -73,30 +75,30 @@ The current implementation extends the core equations with an event-driven layer
 
 As the simulation progresses:
 
-* The uppermost microbial mat grows continuously.
-* Sediment is deposited onto the living surface.
-* Burial events terminate growth of the active layer.
-* A new microbial mat is established on the newly buried surface.
-* Older buried layers remain preserved within the developing stromatolite.
+- The uppermost microbial mat grows continuously.
+- Sediment is deposited onto the living surface.
+- Burial events terminate growth of the active layer.
+- A new microbial mat is established on the newly buried surface.
+- Older buried layers remain preserved within the developing stromatolite.
 
 This combination of continuous growth and discrete ecological events allows the characteristic laminated structure of stromatolites to emerge naturally from repeated cycles of growth, burial and recolonisation.
 
-### ## Environmental forcing
+### Environmental forcing
 
 Environmental conditions are represented as independent forcing functions that modify the biological growth rates without changing the underlying biological framework.
 
 Current forcing includes:
 
-* Seasonal light variation
-* Annual temperature cycles
-* Light attenuation through the overlying water column
-* Sediment-driven burial events
+- Seasonal light variation
+- Annual temperature cycles
+- Light attenuation through the overlying water column
+- Sediment-driven burial events
 
 Each forcing function represents a distinct environmental process and can be enabled, modified or extended independently, allowing increasingly realistic ecological scenarios to be explored while maintaining a transparent and modular model architecture.
 
-## How to Read this Booklet
+## How to Read these Project Pages
 
-The pages in this booklet describe both the conceptual mathematical framework and its current computational implementation.
+The pages in this section of the site describe both the conceptual mathematical framework and its current computational implementation.
 
 The Core Growth Model introduces the underlying biological equations that motivate the simulation. Subsequent pages describe how these equations are realised within the current layered implementation through numerical integration, environmental forcing and discrete ecological events such as burial and recolonisation.
 
