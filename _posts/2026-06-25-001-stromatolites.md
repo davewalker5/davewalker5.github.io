@@ -1,20 +1,27 @@
 ---
 layout: post
-title: "From Museum Visit to Mathematical Model: Exploring Stromatolite Growth"
+title: "From Notebook Sketch to Computational Model: Exploring Stromatolite Growth"
 date: 2026-06-25 00:00:01
 categories: [field-notes]
-tags: []
-excerpt: 
-assets: "/images/modelling/stromatolites/"
+tags: [stromatolites, early-life, palaeontology, modelling, computational-natural-history, microbial-mats, ecology, mathematics, simulation, natural-history]
+excerpt: "A breakfast spent sketching stromatolite formation on a Kindle Scribe became an unexpected exploration of how microbial growth, sedimentation and environmental change can be modelled computationally."
+assets: "/images/"
+notebook:
+   name: "blog/stromatolite-notes.png"
+   alt: "Notes on Stromatolite Growth"
+   caption: "Notes on Stromatolite Growth"
+   credit: "David Walker, Field Notes Journal"
+   license: "CC BY 4.0"
+   license_link: "https://creativecommons.org/licenses/by/4.0"
 growth_summary:
-   name: "1d-growth-summary.png"
+   name: "modelling/stromatolites/1d-growth-summary.png"
    alt: "1-D Model Growth Summary"
    caption: "1-D Model Growth Summary"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 column_development:
-   name: "1d-column-snapshots.png"
+   name: "modelling/stromatolites/1d-column-snapshots.png"
    alt: "1-D Model Column Development"
    caption: "1-D Model Column Development"
    credit: "David Walker, Field Notes Journal"
@@ -23,60 +30,99 @@ column_development:
 images:
 ---
 
-One of the pleasures of returning to places you’ve visited before is discovering that your interests have quietly shifted.
+Sometimes a new project begins with months of planning. Sometimes it begins with a single question.
 
-During a recent visit to the Oxford University Museum of Natural History, I found myself spending less time looking at the spectacular skeletons and more time studying something far older and, in many ways, even more remarkable: stromatolites.
+This one started over breakfast.
 
-For over three billion years, these layered structures have recorded the interaction between microbial life and its environment. Long before animals, forests or flowering plants appeared, communities of microscopic organisms were trapping sediment, growing towards the light, and slowly constructing structures that would become some of the oldest biological fossils preserved on Earth.
+I had recently bought a Kindle Scribe, partly because I wanted to move beyond highlighting passages in books and towards something more reflective: reading, sketching and summarising ideas in my own words. To put it through its paces, I began re-reading the section on stromatolites in _The History of Life in 25 Fossils_.
 
-As I read more about how stromatolites are thought to form, I began wondering whether the underlying process could be explored computationally.
+Rather than simply making notes, I tried to capture the formation of a stromatolite as a sequence of sketches.
 
-Not by reproducing every microscopic detail, but by asking a much simpler question:
+{% include fullwidth-image.html assets=page.assets img=page.notebook %}
 
-> How little mathematics is needed before recognisable stromatolite behaviour begins to emerge?
+The process itself proved remarkably straightforward.
 
-That question became the starting point for a new Field Notes Journal project.
+Microbial mats grow towards the light. Sediment settles on the sticky surface. The microbes then grow upwards through the newly deposited sediment towards the sunlight once again. Repeating this simple cycle over long periods gradually builds the characteristic laminated structures preserved in the fossil record.
 
-## A Model Built from Processes
+As I finished the sketch, a thought occurred almost immediately.
 
-Rather than attempting a complete biological simulation, the current model concentrates on the principal ecological interactions involved in stromatolite development.
+> Could I model this?
 
-Microbial communities grow through photosynthesis. Sediment is deposited by the surrounding environment. Burial interrupts biological growth before new microbial mats recolonise the newly exposed surface. Seasonal changes in light and temperature alter growth rates, while the overlying water column controls how much light reaches the actively growing surface.
+That single question became the starting point for a new Field Notes Journal project.
 
-Each of these processes is represented by a relatively simple mathematical model. Together they are solved numerically through time, allowing their interaction to determine how the stromatolite develops.
+## Thinking Through Drawing
 
-An important design decision was to keep the biological model separate from the environmental processes. Seasonality, sediment deposition and light attenuation act as modular forcing functions rather than being embedded directly within the core equations. This makes the behaviour easier to interpret while allowing increasingly realistic environments to be explored in future versions.
+One of the things I’ve found most rewarding about using the Kindle Scribe is that writing and drawing are not simply methods of recording information—they’re ways of understanding it.
 
-## Watching Structure Emerge
+Reducing several pages of text to a handful of diagrams forces the underlying processes to become clearer. Relationships that are easy to overlook while reading suddenly become obvious once they’re sketched out.
 
-The current implementation is deliberately one-dimensional.
+In this case, the sequence of microbial growth, sediment deposition and renewed growth began to look less like a description and more like a system: one whose behaviour might be explored mathematically.
 
-Although it cannot yet reproduce the domed forms associated with many stromatolites, it provides an ideal environment for investigating the biological and environmental processes that generate layered growth.
+The Scribe had done exactly what I had hoped it would do. It hadn’t simply stored notes; it had helped generate a new question.
 
-One of the most satisfying aspects of the project has been watching those layers emerge naturally.
+## From Biological Process to Mathematical Model
 
-Rather than instructing the model to create a new lamina after a fixed interval, layering develops because environmental sediment periodically buries the active microbial surface. Biological growth resumes on the newly deposited sediment, gradually constructing the laminated column seen in the simulation.
+Rather than attempting to reproduce every microscopic detail of a living microbial mat, the project concentrates on the principal ecological interactions believed to drive stromatolite development.
+
+The current model represents:
+
+- Microbial growth driven by photosynthesis
+- Seasonal variation in light and temperature
+- Attenuation of light through the overlying water column
+- Sediment deposition and burial
+- Recolonisation following burial
+
+Each of these processes is represented by relatively simple mathematical relationships, solved numerically through time using a system of coupled ordinary differential equations.
+
+An important design decision has been to keep the biological model separate from the environmental processes. Rather than embedding seasonality or sedimentation directly within the equations, these influences act as independent forcing functions. This keeps the biological framework relatively simple while allowing increasingly realistic environments to be explored as the project develops.
+
+## Beginning in One Dimension
+
+The first version of the model is intentionally one-dimensional.
+
+Instead of attempting to reproduce the familiar domed forms of mature stromatolites, it concentrates on understanding the processes responsible for vertical growth and lamination.
+
+This provides a useful environment for testing biological assumptions, refining the model and investigating the influence of individual environmental processes before introducing the additional complexity of higher-dimensional growth.
+
+One of the most satisfying aspects of the work has been seeing layered structure emerge naturally from the interaction of these processes.
+
+The model is not instructed to produce a new lamina after a fixed interval. Instead, sediment deposition periodically buries the active microbial surface, after which growth resumes on the newly deposited sediment. The layering therefore arises as an emergent consequence of ecological interaction rather than an explicitly programmed pattern.
 
 {% include fullwidth-image.html assets=page.assets img=page.column_development %}
 
-The model also produces a range of diagnostic outputs showing microbial growth, sediment deposition, seasonal forcing and burial events throughout the simulation.
+## Looking Inside the Model
 
-These visualisations are valuable not simply because they show the model working, but because they make it possible to understand why particular structures develop.
+Alongside the simulated stromatolite itself, the project generates a range of diagnostic plots showing microbial growth, sediment accumulation, seasonal forcing and burial events throughout the simulation.
+
+These visualisations are useful not simply because they demonstrate that the model runs successfully, but because they help explain why particular patterns emerge.
 
 {% include fullwidth-image.html assets=page.assets img=page.growth_summary %}
 
+Understanding the behaviour of the model is just as important as producing visually convincing results.
+
 ## Looking Ahead
 
-This first version is intended as a proof of concept rather than a finished model.
+The current implementation should be viewed as a foundation rather than a finished model.
 
-Future work will explore richer environmental forcing, more realistic sediment dynamics and, ultimately, higher-dimensional models capable of reproducing the characteristic forms of stromatolites as well as their internal layered structure.
+Future work will explore richer environmental forcing, more realistic sediment dynamics and, ultimately, two- and three-dimensional simulations capable of reproducing not only laminated growth but the characteristic morphology of stromatolites themselves.
 
-Like the Computational Shell Morphology project, this investigation forms part of a broader interest in computational natural history: using mathematics and simulation as tools for exploring the processes that shape the natural world.
+Like the Computational Shell Morphology project before it, this investigation forms part of a broader interest in computational natural history: using mathematics, simulation and visualisation as tools for exploring the processes that shape the natural world.
 
-Sometimes a museum visit ends with a few photographs or notes.
+## A Very Field Notes Beginning
 
-Occasionally it becomes the beginning of an entirely new line of investigation.
+Reflecting on the project afterwards, what strikes me most is not the mathematics, but how naturally it emerged from the Field Notes process itself.
 
-For me, this project has proved to be one of those occasions.
+- A museum visit prompted further reading
+- Reading became note-taking
+- Note-taking became sketching
+- Sketching clarified the biology
+- Understanding prompted a question
+- The question became a computational model
+
+That progression—from observation to understanding, and from understanding to investigation—is exactly what I hope Field Notes Journal encourages.
+
+Sometimes the most interesting discoveries are not found in the field.
+
+Sometimes they begin with a notebook, a sketch, and a simple question asked over breakfast.
 
 {% include stromatolite-modelling-invitation.html %}
