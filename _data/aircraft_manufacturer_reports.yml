@@ -82,6 +82,10 @@
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/BRM-Aero/aircraft-type-pie-chart.png
   xlsx_path: ''
+- manufacturer: Canadair
+  base: aircraft-type-pie-chart
+  png_path: /aircraft/reports/manufacturer/Canadair/aircraft-type-pie-chart.png
+  xlsx_path: ''
 - manufacturer: CASA
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/CASA/aircraft-type-pie-chart.png
