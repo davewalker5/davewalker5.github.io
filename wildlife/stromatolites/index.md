@@ -104,7 +104,7 @@ Each forcing function represents a distinct environmental process and can be ena
 
 ## Current Implementations
 
-The project currently contains two complementary implementations of the core biological model.
+The project currently contains several complementary implementations of the core biological model.
 
 ### One-Dimensional Reference Model
 
