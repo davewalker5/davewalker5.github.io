@@ -12,7 +12,7 @@ assets: "/images/modelling/stromatolites/"
 
 ## One-minute overview
 
-Stromatolites grow because microbial mats build upward. Sediment periodically buries the surface. Microbes recover where light is sufficient, producing new layers. The model treats these interacting processes as coupled differential equations, allowing complex laminated structures to emerge naturally from simple ecological feedbacks.
+Stromatolites grow because photosynthetic microbial mats continually grow upward towards the light, trapping and binding sediment to form successive laminated layers. Sediment periodically buries the surface. Microbes recover where light is sufficient, producing new layers. The model treats these interacting processes as coupled differential equations, allowing complex laminated structures to emerge naturally from simple ecological feedbacks.
 
 ## The Growth Model
 
@@ -147,17 +147,24 @@ Together these feedbacks generate the layered structures characteristic of strom
 
 ## Solving the Equations
 
-The model combines continuous biological growth equations with discrete ecological events such as sediment burial and microbial recolonisation. Continuous processes are integrated numerically using an adaptive ODE solver, while discrete events modify the layered structure as thresholds are reached.
+The model combines continuous biological growth equations with discrete ecological events such as sediment burial and microbial recolonisation. Continuous processes are integrated numerically, while discrete events modify the layered structure as thresholds are reached.
 
 No analytical solution is expected for the full model, particularly once environmental forcing and stochastic events are introduced.
 
-Instead, the equations are solved numerically using an adaptive ODE solver.
+Instead, the equations are solved numerically.
 
 This allows biological growth, sediment accumulation and environmental forcing to interact continuously through time while maintaining numerical stability.
 
-## Extension to Two Dimensions
 
-The equations above describe the biological behaviour at an individual location on the stromatolite surface. In the two-dimensional implementation, these same equations are solved independently for every position along a horizontal transect. Additional spatial processes, including lateral smoothing and spatially variable sediment supply, couple neighbouring locations while leaving the underlying biological model unchanged. Each surface location therefore experiences its own environmental history while remaining coupled to neighbouring locations through spatial processes.
+## Extension to Higher Dimensions
+
+The equations above describe the biological behaviour at an individual location on the stromatolite surface. They are therefore independent of the overall geometry used to represent the growing structure.
+
+In the two-dimensional implementation, these equations are solved independently for every position along a horizontal transect. In the three-dimensional rectangular model, the same equations are evaluated across a two-dimensional grid representing the complete microbial surface.
+
+Each surface location maintains its own biological state and environmental history while interacting with neighbouring locations through weak spatial smoothing and locally varying environmental conditions. The governing biological equations themselves remain unchanged.
+
+This separation between biological processes and spatial representation is a central design principle of the project. Increasingly realistic stromatolite geometries are introduced by extending the spatial framework rather than by modifying the underlying ecological model.
 
 ## Extending the Model
 
