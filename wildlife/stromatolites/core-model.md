@@ -24,7 +24,7 @@ The resulting framework provides a biologically interpretable model that can lat
 
 ## The Basic Idea
 
-At any point in time, each position on the stromatolite surface is influenced by two competing processes:
+At each position on the actively growing stromatolite surface, growth is influenced by two competing processes:
 
 - microbial growth increases surface height
 - sediment burial suppresses further growth
@@ -40,7 +40,7 @@ The model tracks three primary state variables.
 ### Surface Height
 
 ```
-H(t)
+H(x, t)
 ```
 
 The height of the stromatolite surface above its initial substrate. Growth of this surface represents the visible accumulation of laminated carbonate through time.
@@ -48,7 +48,7 @@ The height of the stromatolite surface above its initial substrate. Growth of th
 ### Living Microbial Biomass
 
 ```
-B(t)
+B(x, t)
 ```
 
 The active microbial community responsible for trapping sediment and promoting carbonate precipitation. Biomass increases through growth but decreases naturally through mortality and burial.
@@ -56,7 +56,7 @@ The active microbial community responsible for trapping sediment and promoting c
 ### Sediment Layer Thickness
 
 ```
-S(t)
+S(x, t)
 ```
 
 The thickness of loose sediment covering the microbial surface. Sediment accumulates through deposition and is gradually stabilised or incorporated into the growing stromatolite.
@@ -66,7 +66,7 @@ The thickness of loose sediment covering the microbial surface. Sediment accumul
 Surface elevation changes according to
 
 ```
-dH/dt = αB − βS
+∂H/∂t = αB − βS
 ```
 
 where:
@@ -83,7 +83,7 @@ This simple equation captures the central balance between construction and buria
 Living biomass changes according to
 
 ```
-dB/dt = μL(H)B − δB − γSB
+∂B/∂t = μL(H(x,t))B − δB − γSB
 ```
 
 where
@@ -123,7 +123,7 @@ As the stromatolite grows upward, the living surface approaches the water surfac
 Sediment thickness evolves according to
 
 ```
-dS/dt = D − λB − εS
+∂S/∂t = D − λB − εS
 ```
 
 where
@@ -140,7 +140,6 @@ Sediment is continuously supplied from the surrounding environment. Microbial co
 The equations are linked:
 
 - Increasing biomass causes faster surface growth
-- Increasing surface height reduces available light
 - Reduced light slows biological growth
 - Sediment suppresses biomass while simultaneously limiting vertical growth
 
@@ -155,6 +154,10 @@ No analytical solution is expected for the full model, particularly once environ
 Instead, the equations are solved numerically using an adaptive ODE solver.
 
 This allows biological growth, sediment accumulation and environmental forcing to interact continuously through time while maintaining numerical stability.
+
+## Extension to Two Dimensions
+
+The equations above describe the biological behaviour at an individual location on the stromatolite surface. In the two-dimensional implementation, these same equations are solved independently for every position along a horizontal transect. Additional spatial processes, including lateral smoothing and spatially variable sediment supply, couple neighbouring locations while leaving the underlying biological model unchanged. Each surface location therefore experiences its own environmental history while remaining coupled to neighbouring locations through spatial processes.
 
 ## Extending the Model
 

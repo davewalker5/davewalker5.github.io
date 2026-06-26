@@ -5,10 +5,10 @@ description: An exploration of how microbial growth, sedimentation and environme
 breadcrumb: Stromatolite Growth Modelling
 permalink: /wildlife/stromatolites/
 assets: "/images/modelling/stromatolites/"
-column_development:
-   name: "1d-column-snapshots.png"
-   alt: "1-D Model Column Development"
-   caption: "1-D Model Column Development"
+banner_image:
+   name: "2d-surface-snapshots.png"
+   alt: "2-D Cross-Sectional Model Surface Snapshots"
+   caption: "2-D Cross-Sectional Model Surface Snapshots"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
@@ -16,9 +16,11 @@ column_development:
 
 # Stromatolite Growth Modelling
 
-{% include fullwidth-image.html assets=page.assets img=page.column_development %}
+{% include fullwidth-image.html assets=page.assets img=page.banner_image %}
 
-This project explores how some of Earth’s earliest complex biological structures can be reproduced using relatively simple computational models, starting with a one-dimensional model that allows the underlying ecological mechanisms to be understood before extending the framework to more realistic two- and three-dimensional growth.
+Welcome to the *Stromatolite Growth Modelling- project.
+
+This project explores how some of Earth’s earliest complex biological structures can be reproduced using relatively simple computational models.
 
 Rather than attempting to simulate every microscopic process occurring within a microbial mat, the project focuses on the larger ecological interactions that govern stromatolite development: microbial growth, sediment deposition, burial, photosynthesis and changing environmental conditions.
 
@@ -54,9 +56,11 @@ As the project evolves, new mechanisms are added only where they improve the bio
 
 ## Current Model
 
-The current implementation combines continuous biological growth with discrete ecological events to simulate the development of a layered stromatolite through time.
+The project consists of a common biological framework implemented at multiple spatial scales. The one-dimensional model provides a reference implementation for understanding the governing biology, while the two-dimensional model extends the same equations into a spatially distributed cross-section for investigating stromatolite morphology.
 
-Rather than representing the stromatolite as a single continuously growing surface, the model treats the actively growing microbial mat as the uppermost living layer. As growth proceeds, sediment deposition and burial create new laminae while older layers become biologically inactive but remain part of the accumulating structure.
+The underlying biological equations describe microbial growth, sediment accumulation, photosynthesis and burial. These equations are first explored using a one-dimensional reference implementation before being extended into a spatially distributed two-dimensional cross-section model.
+
+This separation allows the biological framework to remain unchanged while progressively richer spatial behaviour is investigated.
 
 ### Core biological model
 
@@ -96,13 +100,31 @@ Current forcing includes:
 
 Each forcing function represents a distinct environmental process and can be enabled, modified or extended independently, allowing increasingly realistic ecological scenarios to be explored while maintaining a transparent and modular model architecture.
 
+## Current Implementations
+
+The project currently contains two complementary implementations of the core biological model.
+
+### One-Dimensional Reference Model
+
+The one-dimensional model represents a single vertical growth column and serves as the reference implementation of the biological equations.
+
+It provides a transparent framework for understanding microbial growth, sediment burial and lamina formation before introducing spatial complexity.
+
+### Two-Dimensional Cross-Section Model
+
+The two-dimensional model extends the same biological framework across a horizontal transect composed of many interacting growth columns.
+
+Each surface location evolves according to the same governing equations while responding to its own local environmental conditions, allowing spatial variability and evolving surface morphology to emerge naturally.
+
 ## How to Read these Project Pages
 
-The pages in this section of the site describe both the conceptual mathematical framework and its current computational implementation.
+The pages this section of the site fall into three complementary categories:
 
-The Core Growth Model introduces the underlying biological equations that motivate the simulation. Subsequent pages describe how these equations are realised within the current layered implementation through numerical integration, environmental forcing and discrete ecological events such as burial and recolonisation.
+- Core biological processes describe the governing equations and ecological mechanisms underlying stromatolite growth
+- Computational implementations describe how those biological processes are represented within the one-dimensional reference model and the two-dimensional cross-section model
+- Model interpretation explains how to read and interpret the diagnostic outputs produced by each implementation.
 
-The implementation therefore represents an evolving computational realisation of the core biological model rather than a direct one-to-one transcription of the introductory equations.
+This organisation reflects the philosophy of the project: the biological model remains constant while progressively richer spatial representations are explored.
 
 ## Project Goals
 
@@ -112,6 +134,7 @@ The project aims to:
 - Investigate the interaction between biology and environment
 - Develop an interpretable computational model
 - Generate realistic layered structures through emergent behaviour
+- Investigate how spatial structure and stromatolite morphology emerge from the same underlying biological framework
 - Provide an accessible explanation of the underlying mathematics
 
 Equally importantly, the project serves as a computational natural history exercise, demonstrating how relatively simple mathematical models can illuminate biological processes operating over geological timescales.

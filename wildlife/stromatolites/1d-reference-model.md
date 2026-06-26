@@ -1,8 +1,8 @@
 ---
 layout: default
-title: Interpreting the 1-D Model
-breadcrumb: Interpreting the 1-D Model
-description: A guide to reading the diagnostic plots produced by the one-dimensional stromatolite simulation
+title: The One-Dimensional Reference Model
+breadcrumb: 1D Reference Model
+description: Interpreting the outputs of the one-dimensional reference implementation of the stromatolite growth model
 series: stromatolites
 chapter: 5
 assets: "/images/modelling/stromatolites/"
@@ -43,7 +43,7 @@ column_development:
    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# Interpreting the 1-D Model
+# The One-Dimensional Reference Model
 
 The one-dimensional stromatolite model provides a simplified representation of vertical stromatolite growth through time.
 

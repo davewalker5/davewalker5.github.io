@@ -12,102 +12,117 @@ assets: "/images/modelling/stromatolites/"
 
 One of the defining characteristics of stromatolites is their laminated internal structure.
 
-Each lamina represents a period of microbial growth followed by the deposition of sediment, after which a new microbial community colonises the freshly buried surface and begins the next phase of growth.
+Each lamina represents a period of microbial growth that is interrupted by the deposition of sediment. Once the actively growing microbial surface becomes buried, photosynthetic activity ceases and a new microbial community colonises the freshly deposited material. Repeated cycles of growth, burial and recolonisation gradually construct the layered architecture preserved within the stromatolite.
 
-Early versions of the model reproduced this behaviour by burying the microbial mat once it reached a predetermined thickness.
+The model treats burial not as an arbitrary event, but as an ecological consequence of sediment deposition.
 
-While this approach generated convincing layered structures, the timing of burial was fixed and therefore independent of environmental conditions.
+## Burial as an Ecological Process
 
-The model has since been refined so that burial is driven directly by sediment deposition, allowing lamination to emerge naturally from environmental processes.
+Early versions of the model generated laminae by burying the microbial mat once it reached a predetermined thickness.
 
-## From Scheduled Burial to Process-Driven Burial
+Although this produced convincing layered structures, it implied that burial was triggered by biological growth itself rather than by changes in the surrounding environment.
 
-The original implementation followed a simple rule.
+The current implementation instead links burial directly to sediment accumulation.
 
-1. Microbial mat grows
-2. Mat reaches fixed thickness
-3. Burial occurs
-4. New lamina begins
-
-Although computationally straightforward, this approach implied that burial was triggered by biological growth rather than by changes in the surrounding environment.
-
-In reality, burial occurs because sediment is deposited onto the microbial surface. The revised model therefore links burial directly to sediment accumulation.
+This better reflects natural stromatolite systems, where the deposition of sediment—often associated with storms or other energetic conditions—periodically interrupts microbial growth.
 
 ## Ecological Sequence
 
-The revised model follows the sequence believed to occur in natural stromatolites.
+The model represents the following sequence of events.
 
-1. Storm or sediment deposition
-2. Microbial surface becomes buried
-3. Photosynthetic activity declines
-4. New microbial community colonises
-5. Growth resumes
-6. Next lamina develops
+1. Sediment is deposited onto the actively growing microbial surface.
+2. Sediment accumulates above the microbial mat.
+3. Once sufficient material has accumulated, the active surface becomes buried.
+4. Photosynthetic activity at the buried surface ceases.
+5. A new microbial community colonises the newly deposited sediment.
+6. Biological growth resumes, initiating the next lamina.
 
-This sequence reflects the interaction between biological growth and changing environmental conditions rather than an externally imposed timing rule.
+Rather than prescribing when a new layer should form, the model allows this sequence to emerge naturally from changing environmental conditions.
 
-## Sediment as the Trigger
+## Burial Thresholds
 
-Instead of monitoring microbial thickness, the model monitors sediment accumulation. When sufficient sediment is deposited onto the living microbial surface, the active layer becomes buried and biological activity shifts to the newly exposed sediment surface.
+The model continuously monitors the amount of sediment present on the actively growing surface.
 
-The timing of lamination therefore depends upon the surrounding depositional environment.
+When sediment accumulation exceeds a specified threshold, the existing microbial layer is considered buried and biological activity is transferred to a newly established surface above the deposited sediment.
+
+Because sediment deposition varies through time, the timing of burial events also varies naturally.
+
+Periods of sustained low sediment supply may allow prolonged biological growth, whereas energetic depositional events can rapidly terminate an existing growth phase.
 
 ## Relationship to Storm Events
 
-Large burial events are commonly associated with energetic conditions such as storms, as they introduce a pulse of sediment into the system.
+Many burial events are associated with episodic increases in sediment supply.
 
-If sufficient material is deposited, the existing microbial surface becomes buried, terminating the current phase of growth.
+Within the model these may arise from stochastic storm events, which temporarily increase the rate of sediment deposition.
 
-Following recolonisation, a new microbial layer begins to develop above the deposited sediment.
+Large sediment pulses therefore produce:
 
-Storms therefore become an important mechanism for generating distinct lamina boundaries.
+- More frequent burial events
+- Sediment-rich laminae
+- Shorter intervals of uninterrupted biological growth
+
+Quieter environmental conditions allow microbial mats to remain active for longer periods, producing thicker biologically dominated laminae.
+
+The internal structure of the stromatolite therefore reflects both its biological development and its environmental history.
 
 ## Emergent Lamination
 
-Because burial now depends upon environmental conditions rather than a fixed growth threshold, the internal structure of the stromatolite becomes more variable.
+Because burial is controlled by sediment deposition rather than by a fixed biological thickness, the resulting laminated structure is an emergent property of the simulation.
 
 The model naturally produces:
 
 - Laminae of differing thickness
-- Irregular intervals between burial events
-- Thicker sediment-rich layers following energetic conditions
-- Thinner layers during quieter periods
+- Variable intervals between successive burial events
+- Sediment-rich layers following energetic conditions
+- Biologically dominated intervals during quieter periods
 
-These features emerge from the interaction between growth and sedimentation rather than from explicit programming.
+These features are not prescribed directly. They arise from the interaction between microbial growth and changing environmental conditions.
 
-## Interaction with the Core Model
+## Extension to Two Dimensions
 
-Burial events do not introduce new biological processes. Instead, they alter the conditions experienced by the existing microbial community. The sequence during each simulation becomes:
+The same ecological process applies in both the one-dimensional and two-dimensional implementations of the model.
 
-1. Sediment is deposited.
-2. Burial depth is updated.
-3. The existing microbial surface may become buried.
-4. Biological growth is transferred to the newly exposed surface.
-5. Growth resumes according to the core biological equations.
+In the one-dimensional model, a burial event affects the single actively growing column.
 
-The differential equations describing microbial growth remain unchanged. Only the environmental conditions controlling the active growth surface are modified.
+In the two-dimensional model, each position along the stromatolite surface maintains its own active microbial community and sediment layer. Burial is therefore evaluated independently at every surface location.
 
-## Relationship to Other Environmental Forcing
+Neighbouring positions may consequently become buried at different times, producing laterally variable laminae and a more realistic internal structure. The underlying ecological process remains unchanged; only its spatial representation becomes richer.
 
-Burial events operate alongside the other environmental forcing mechanisms within the model.
+## Relationship to the Core Model
 
-- Seasonality controls the rate of biological growth
-- Water-column attenuation determines the amount of light available for photosynthesis
-- Sediment deposition determines when an actively growing microbial surface becomes buried
+Burial events do not introduce new biological processes. Instead, they alter the conditions under which the existing biological model operates.
 
-Together these processes govern both the rate of stromatolite growth and the formation of its characteristic layered structure.
+During each simulation step the model:
+
+1. Updates environmental sediment deposition.
+2. Calculates sediment accumulation at the active surface.
+3. Determines whether burial occurs.
+4. Establishes a new active microbial surface where required.
+5. Continues solving the biological growth equations.
+
+The governing differential equations remain unchanged throughout this sequence.
+
+## Relationship to Other Environmental Processes
+
+Burial operates alongside the other environmental forcing mechanisms within the model.
+
+- Seasonal forcing modifies biological growth rates.
+- Water-column attenuation determines the light available for photosynthesis.
+- Sediment deposition controls when active microbial surfaces become buried.
+
+Together these processes determine both the rate of stromatolite growth and the formation of its characteristic laminated structure.
 
 ## Design Philosophy
 
-This refinement illustrates an important principle of the stromatolite model.
+The burial model illustrates one of the central design principles used throughout the project.
 
-Where possible, visible structures should emerge from ecological processes rather than from predefined construction rules.
+Wherever possible, visible geological structures should emerge from biologically and environmentally meaningful processes rather than from predefined construction rules.
 
-The model no longer instructs the stromatolite to create a new lamina after reaching a particular thickness.
+The model does not instruct the stromatolite to produce a new lamina after reaching a particular thickness.
 
-Instead, lamination arises naturally because environmental sediment deposition periodically buries the living microbial surface, forcing growth to begin again on a newly established layer.
+Instead, new layers form because environmental sediment deposition periodically buries the living microbial surface, forcing biological activity to migrate upward onto newly deposited material.
 
-The resulting structure is therefore an emergent property of the interaction between biology and environment, rather than an imposed geometric pattern.
+Lamination is therefore an emergent consequence of ecological interaction rather than an imposed geometric pattern.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
