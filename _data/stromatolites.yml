@@ -20,8 +20,16 @@ chapters:
     url: /wildlife/stromatolites/light-attenuation.html
 
   # --------------------------------------------------------------------------------
-  # Model Interpretation
+  # Model Interpretations
   # --------------------------------------------------------------------------------
-  - title: "Interpreting the 1-D Model"
-    description: "Understanding the behaviour and outputs of the current one-dimensional simulation"
-    url: /wildlife/stromatolites/1d-model-interpretation.html
+  - title: "1-D Reference Model"
+    description: "Interpreting the outputs of the 1-D reference implementation of stromatolite growth"
+    url: /wildlife/stromatolites/1d-reference-model.html
+
+  - title: "2-D Cross-Sectional Model"
+    description: "Extending the model from a 1-D column to a spatially distributed 2-D cross-section"
+    url: /wildlife/stromatolites/2d-cross-sectional-model.html
+
+  - title: "Interpreting the 2-D Model"
+    description: "Interpreting the outputs of the 2-D cross-sectional model of stromatolite growth"
+    url: /wildlife/stromatolites/2d-model-interpretation.html

@@ -16,6 +16,8 @@ Natural environments, however, are rarely constant. Throughout the year, changin
 
 Rather than introducing additional state variables, the model represents these seasonal effects as external forcing functions that modify existing biological rates. This approach keeps the core model unchanged while allowing environmental conditions to vary naturally through time.
 
+Seasonal forcing is evaluated independently at every active surface location
+
 ## Why Use Forcing Functions?
 
 Seasonality does not create new biological processes. Instead, it changes the conditions under which existing processes occur.

@@ -87,11 +87,11 @@ The calculated light factor is then incorporated into the biological growth equa
 
 During each simulation step the model performs the following sequence.
 
-1. Calculate the current seasonal surface illumination.
-2. Determine the depth of water above the stromatolite.
-3. Calculate light attenuation through the water column.
-4. Compute the biological light-limitation factor.
-5. Update microbial growth using the existing differential equations.
+1. Calculate the current seasonal surface illumination
+2. Determine the depth of water above each point on the actively growing surface
+3. Calculate light attenuation through the water column
+4. Compute the biological light-limitation factor
+5. Update microbial growth using the existing differential equations
 
 This allows changing stromatolite height to influence photosynthetic productivity without altering the underlying biological model.
 
