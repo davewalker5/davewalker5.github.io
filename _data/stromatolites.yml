@@ -33,3 +33,11 @@ chapters:
   - title: "Interpreting the 2-D Model"
     description: "Interpreting the outputs of the 2-D cross-sectional model of stromatolite growth"
     url: /wildlife/stromatolites/2d-model-interpretation.html
+
+  - title: "3-D Rectangular Model"
+    description: "Extending the model from a 2-D cross-section to a 3-D stromatolite surface"
+    url: /wildlife/stromatolites/3d-rectangular-model.html
+
+  - title: "Interpreting the 3-D Model"
+    description: "Interpreting the outputs of the 3-D rectangular model of stromatolite growth"
+    url: /wildlife/stromatolites/3d-rectangular-interpretation.html
