@@ -73,7 +73,7 @@ The biological processes are described by a set of coupled growth equations repr
 - Sediment accumulation
 - Burial
 
-These continuous processes are integrated numerically through time using an adaptive ODE solver.
+These continuous processes are integrated numerically through time.
 
 ### Layered structure
 
