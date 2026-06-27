@@ -78,15 +78,19 @@ The model naturally produces:
 
 These features are not prescribed directly. They arise from the interaction between microbial growth and changing environmental conditions.
 
-## Extension to Two Dimensions
+## Extension to Spatial Models
 
-The same ecological process applies in both the one-dimensional and two-dimensional implementations of the model.
+The same ecological process applies throughout every implementation of the project.
 
-In the one-dimensional model, a burial event affects the single actively growing column.
+In the one-dimensional reference model, burial affects a single actively growing microbial column.
 
-In the two-dimensional model, each position along the stromatolite surface maintains its own active microbial community and sediment layer. Burial is therefore evaluated independently at every surface location.
+In the two-dimensional cross-sectional model, each position along the stromatolite surface maintains its own active microbial community and sediment layer. Burial is therefore evaluated independently at every surface location, allowing neighbouring regions to experience different environmental histories.
 
-Neighbouring positions may consequently become buried at different times, producing laterally variable laminae and a more realistic internal structure. The underlying ecological process remains unchanged; only its spatial representation becomes richer.
+The three-dimensional implementations extend this same principle across an entire microbial surface. Every active surface cell independently accumulates sediment, undergoes burial and establishes new microbial layers while remaining subject to the same underlying biological equations.
+
+Consequently, the increasingly complex laminated structures observed in the three-dimensional models do not arise from new burial mechanisms. They emerge simply because the same ecological process is operating across progressively richer spatial geometries.
+
+Throughout every implementation, the biological rules governing burial remain unchanged; only their spatial representation becomes more realistic.
 
 ## Relationship to the Core Model
 
