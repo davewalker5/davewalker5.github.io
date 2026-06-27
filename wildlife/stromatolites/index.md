@@ -6,9 +6,9 @@ breadcrumb: Stromatolite Growth Modelling
 permalink: /wildlife/stromatolites/
 assets: "/images/modelling/stromatolites/"
 banner_image:
-   name: "3d-circular-final-surface-render.png"
-   alt: "Emergent three-dimensional stromatolite surface produced by the circular masked growth model"
-   caption: "Emergent three-dimensional stromatolite surface produced by the circular masked growth model"
+   name: "3d-circular-domed-final-surface-render.png"
+   alt: "Emergent three-dimensional domed stromatolite surface produced by the circular domed growth model"
+   caption: "Emergent three-dimensional domed stromatolite surface produced by the circular domed growth model"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
@@ -25,6 +25,8 @@ Rather than attempting to simulate every microscopic process occurring within a 
 The aim is to investigate how these interacting processes can give rise to the layered structures preserved in the fossil record.
 
 By deliberately separating biological processes from spatial representation, the project demonstrates how increasingly realistic stromatolite morphology can emerge without requiring increasingly complicated biology.
+
+Beginning with a one-dimensional reference implementation and progressing through increasingly sophisticated spatial representations, the project demonstrates that the same underlying biological model can reproduce a fully three-dimensional domed stromatolite simply through successive refinements of geometry. This progressive approach provides a transparent link between biological assumptions, computational implementation and the complex morphologies preserved in the geological record.
 
 ## Why Stromatolites?
 
@@ -58,10 +60,13 @@ As the project evolves, new mechanisms are added only where they improve the bio
 
 The project consists of a common biological framework implemented across progressively richer spatial representations and increasingly realistic stromatolite geometries.
 
+Each successive implementation preserves the same governing biological equations while extending only the spatial representation, demonstrating how increasingly realistic stromatolite morphology can emerge without increasing biological complexity.
+
 - The one-dimensional model provides a reference implementation of the governing biology
 - The two-dimensional model extends these equations into a spatial cross-section
 - The three-dimensional rectangular model establishes the complete three-dimensional computational framework
 - The circular masked model applies that framework to a realistic stromatolite footprint
+- The circular domed model introduces realistic stromatolite morphology while preserving the existing biological model
 
 Throughout each stage, the biological equations describing microbial growth, sediment accumulation, photosynthesis and burial remain unchanged while the geometric representation becomes increasingly realistic.
 
@@ -129,6 +134,14 @@ The circular masked model applies the existing three-dimensional biological fram
 
 No new biological processes are introduced. Instead, growth is confined to a circular microbial colony, demonstrating how realistic colony geometry can emerge simply by changing the spatial representation while preserving the underlying biological model.
 
+### Three-Dimensional Circular Domed Model
+
+The circular domed model extends the circular growth domain by introducing an idealised domed stromatolite geometry representative of many natural stromatolites.
+
+The underlying biological model remains unchanged. Instead, a configurable domed surface provides the geometric framework upon which microbial growth, sediment accumulation and burial processes act throughout the simulation.
+
+This implementation demonstrates how recognisable stromatolite morphology can emerge through geometric refinement alone, completing the progression from one-dimensional biological growth to a fully three-dimensional domed stromatolite.
+
 ## How to Read these Pages
 
 The pages in this section of the site fall into three complementary categories:
@@ -157,13 +170,13 @@ Equally importantly, the project serves as a computational natural history exerc
 The project has been developed incrementally, with each implementation extending the previous while preserving the underlying biological framework.
 
 1. One-dimensional — establish the biological model and lamination
-2. Two-dimensional — extend the model into space to investigate cross-sectional morphology
-3. Three-dimensional rectangular — establish a complete three-dimensional computational framework
+2. Two-dimensional — extend the model into a spatial cross-section
+3. Three-dimensional rectangular — establish the complete three-dimensional computational framework
 4. Three-dimensional circular — apply the framework to a realistic stromatolite footprint
-5. Future — investigate domed morphology, expanding colonies and more realistic environmental interactions
+5. Three-dimensional domed — introduce realistic stromatolite morphology while preserving the underlying biological model
+6. Future — investigate emergent dome formation, expanding colonies, erosion and more realistic environmental interactions
 
 This staged approach allows each increase in complexity to be evaluated independently while maintaining a transparent relationship between biological assumptions and observed morphology.
-
 
 ## Contents
 
