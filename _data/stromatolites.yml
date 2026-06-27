@@ -38,6 +38,14 @@ chapters:
     description: "Extending the model from a 2-D cross-section to a 3-D stromatolite surface"
     url: /wildlife/stromatolites/3d-rectangular-model.html
 
-  - title: "Interpreting the 3-D Model"
+  - title: "Interpreting the 3-D Rectangular Model"
     description: "Interpreting the outputs of the 3-D rectangular model of stromatolite growth"
     url: /wildlife/stromatolites/3d-rectangular-interpretation.html
+
+  - title: "3-D Circular Masked Model"
+    description: "Extending the model from a rectangular 3-D surface to a circular stromatolite colony"
+    url: /wildlife/stromatolites/3d-circular-model.html
+
+  - title: "Interpreting the 3-D Circular Masked Model"
+    description: "Interpreting the outputs of the 3-D circular masked model of stromatolite growth"
+    url: /wildlife/stromatolites/3d-circular-interpretation.html

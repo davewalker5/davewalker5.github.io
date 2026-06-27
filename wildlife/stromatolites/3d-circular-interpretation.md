@@ -1,58 +1,58 @@
 ---
 layout: default
-title: Interpreting the 3-D Rectangular Model Output
-breadcrumb: 3D Rectangular Model Interpretation
-description: Interpreting the outputs of the 3-D rectangular model of stromatolite growth
+title: Interpreting the 3-D Circular Masked Model Model Output
+breadcrumb: 3D Circular Masked Model Interpretation
+description: Interpreting the outputs of the 3-D rcircular masked model of stromatolite growth
 series: stromatolites
-chapter: 9
+chapter: 11
 assets: "/images/modelling/stromatolites/"
 growth_summary:
-   name: "3d-growth-summary.png"
-   alt: "3-D Rectangular Model Growth Summary"
+   name: "3d-circular-growth-summary.png"
+   alt: "3-D Circular Masked Model Growth Summary"
    caption: "3-D Rectangular  Model Growth Summary"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 environmental_forcing:
-   name: "3d-environmental-forcing.png"
-   alt: "3-D Rectangular Model Environmental Forcing"
-   caption: "3-D Rectangular Model Environmental Forcing"
+   name: "3d-circular-environmental-forcing.png"
+   alt: "3-D Circular Masked Model Environmental Forcing"
+   caption: "3-D Circular Masked Model Environmental Forcing"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 surface_snapshots:
-   name: "3d-surface-snapshots.png"
-   alt: "3-D Rectangular Model Surface Snapshots"
-   caption: "3-D Rectangular Model Surface Snapshots"
+   name: "3d-circular-surface-snapshots.png"
+   alt: "3-D Circular Masked Model Surface Snapshots"
+   caption: "3-D Circular Masked Model Surface Snapshots"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 surface_maps:
-   name: "3d-final-surface-maps.png"
-   alt: "3-D Rectangular Model Final Surface Maps"
-   caption: "3-D Rectangular Model Final Surface Maps"
+   name: "3d-circular-final-surface-maps.png"
+   alt: "3-D Circular Masked Model Final Surface Maps"
+   caption: "3-D Circular Masked Model Final Surface Maps"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 surface_render:
-   name: "3d-final-surface-render.png"
-   alt: "3-D Rectangular Model Final Surface Render"
-   caption: "3-D Rectangular Model Final Surface Render"
+   name: "3d-circular-final-surface-render.png"
+   alt: "3-D Circular Masked Model Final Surface Render"
+   caption: "3-D Circular Masked Model Final Surface Render"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 final_surface_cross_section:
-   name: "3d-final-cross-section-slice.png"
-   alt: "3-D Rectangular Model Final Surface Cross-Section Slice"
-   caption: "3-D Rectangular Model Final Surface Cross-Section Slice"
+   name: "3d-circular-final-cross-section-slice.png"
+   alt: "3-D Circular Masked Model Final Surface Cross-Section Slice"
+   caption: "3-D Circular Masked Model Final Surface Cross-Section Slice"
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# Interpreting the 3-D Rectangular Model Output
+# Interpreting the 3-D Circular Masked Model Model Output
 
-The three-dimensional rectangular model extends the biological framework established by the previous simulations into a complete three-dimensional microbial surface.
+The three-dimensional circular masked model extends the biological framework established by the previous simulations into a complete three-dimensional microbial surface whose active growth is confined to a circular domain.
 
 The figures below illustrate how local biological processes combine to produce a growing stromatolite whose morphology emerges naturally from environmental forcing and accumulated growth history.
 
@@ -66,7 +66,7 @@ Mean stromatolite height increases steadily throughout the simulation, while sur
 
 Because each surface location maintains its own biological history, environmental disturbances produce temporary increases in roughness before gradual relaxation of the growing surface.
 
-The overall behaviour closely mirrors that observed in the earlier one- and two-dimensional models, demonstrating that extending the model into three dimensions does not alter the underlying biology.
+The overall biological behaviour remains consistent with previous implementations, confirming that changing the colony geometry does not alter the governing biological model.
 
 ## Environmental Forcing
 
@@ -102,19 +102,19 @@ Many of these variables show closely related spatial patterns.
 
 Regions that have experienced favourable growth conditions remain slightly elevated, receive marginally greater illumination through reduced water depth and consequently maintain subtle differences in biological activity.
 
+Outside the active colony, no biological quantities are defined, allowing the circular footprint to remain clearly distinguished from the surrounding computational grid.
+
 These relationships emerge naturally from the interaction of the existing biological model with the evolving surface geometry.
 
 ## Final Three-Dimensional Surface
 
 {% include fullwidth-image.html assets=page.assets img=page.surface_render %}
 
-The three-dimensional surface reconstruction provides the clearest visualisation of the developing stromatolite.
+The final surface reconstruction provides the clearest illustration of the principal advance represented by this implementation.
 
-Although the initial substrate is perfectly flat, local environmental history produces gentle hummocks and depressions across the microbial surface.
+Although the biological model is identical to that used by the rectangular simulation, the circular growth domain produces a morphology immediately recognisable as a discrete stromatolite colony rather than an idealised computational surface.
 
-No large-scale morphology is prescribed directly.
-
-Instead, the surface topography emerges from the cumulative effects of independent biological growth, sediment deposition and burial acting over thousands of simulation steps.
+The resulting form emerges entirely from the interaction of the existing biological processes with the circular spatial geometry.
 
 ## Internal Cross-Section
 
@@ -126,25 +126,25 @@ The coloured laminae record successive episodes of biological growth and sedimen
 
 Local variations in layer thickness reflect the differing environmental histories experienced by neighbouring regions of the stromatolite.
 
-Because the model represents a complete three-dimensional volume, similar sections may be extracted at any position through the structure.
+Because the model represents a complete three-dimensional volume, similar sections may be extracted at any position within the structure.
 
-## What the Three-Dimensional Model Demonstrates
+The internal lamination extends naturally to the colony margin, demonstrating that restricting the active growth domain alters the external morphology without affecting the underlying depositional processes.
 
-The three-dimensional rectangular implementation demonstrates that realistic stromatolite morphology can begin to emerge without introducing additional biological complexity.
+## What the Circular Model Demonstrates
 
-Every surface location follows the same governing equations established by the reference one-dimensional model.
+The circular masked model demonstrates that a substantial increase in morphological realism can be achieved without introducing additional biological complexity.
 
-Nevertheless, small differences in local environmental history accumulate into coherent three-dimensional surface relief.
+By changing only the spatial domain over which the existing biological model operates, the simulation produces a recognisable stromatolite colony whose external form emerges naturally from the same ecological processes established in earlier implementations.
 
-The model therefore shows that complex spatial structure can arise naturally from repeated interactions between simple biological processes and environmental forcing.
+The model therefore reinforces one of the central themes of this project: increasingly realistic morphology need not require increasingly complicated biology.
 
 ## Looking Ahead
 
-The rectangular geometry represents an idealised computational platform rather than a complete representation of natural stromatolites.
+The circular masked implementation represents the first model in the project to reproduce the characteristic overall geometry of a natural stromatolite while preserving the same underlying biological framework.
 
-Its principal purpose is to establish the numerical framework required for fully three-dimensional growth.
+With a realistic three-dimensional colony geometry now established, future developments can focus on investigating how large-scale stromatolite morphology emerges through the interaction of biology, environment and surface geometry.
 
-Future developments will introduce circular growth domains, domed morphology and more realistic environmental interactions while preserving the biological model established throughout the earlier stages of the project.
+Potential directions include expanding colony margins, domed growth forms, spatially varying environmental conditions and more realistic sediment transport, while continuing to preserve the modular biological model established throughout the earlier stages of the project.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
