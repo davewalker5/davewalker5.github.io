@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Start Here
-description: A guide to exploring Field Notes Journal — a personal natural history of place built from long-term observation, recording, and analysis.
+description: A guide to exploring Field Notes Journal — a long-term practice of observation, enquiry, and computational natural history
 permalink: /start-here/
 images:
   - name: "/images/site/SI-II-046.png"
@@ -18,7 +18,6 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
   - name: "/images/site/similarity-heatmap.png"
     alt: "Species Similarity Heatmap"
-    caption: "Species Similarity Heatmap"
     credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
@@ -28,142 +27,103 @@ images:
 
 # Start Here
 
-Welcome to Field Notes Journal — a personal natural history of place built from long-term observation, recording, and analysis.
+Welcome to Field Notes Journal.
 
-This site brings together wildlife recording, microscopy, bat acoustics, weather measurement, seasonal modelling, and field journaling. Though the subjects differ, they are connected by the same underlying practice: to observe carefully, record systematically, and return to those records over time in search of pattern, recurrence, and change.
+This is a long-term practice of observation, enquiry, and understanding. It brings together natural history, travel, microscopy, computational modelling, and reflective writing, all connected by the same underlying approach: observe carefully, record faithfully, ask questions, and return often.
 
-Some parts of the site resemble a notebook, some a field guide, some an archive, and some a laboratory bench. Together, they form a long-running record of attention directed toward the living world and its surrounding conditions.
+Some projects remain simple field notes. Others grow into analyses, software, computational models, or extended essays. Together they document not only the natural world, but the process of learning about it.
 
-If you are visiting for the first time, the sections below provide a good starting point.
+If this is your first visit, the sections below provide a good introduction.
+
+<hr/>
+
+## The Field Notes Approach
+
+Although the subjects vary, most projects follow a similar path.
+
+- An observation raises a question
+- The question leads to recording, reading, or investigation
+- Records accumulate into evidence of patterns
+- Analysis and modelling help explore those patterns
+- Writing and publication share both the results and the process
+- Reflection suggests new questions, and the cycle begins again
+
+Field Notes is therefore less a collection of finished work than a continually evolving record of enquiry.
 
 <hr/>
 
-## Explore the Site
+## Explore the Subjects
 
-### Wildlife Recording
+### Wildlife and Seasonal Ecology
 
-Long-term wildlife observations arranged into reports, trends, heatmaps, seasonal summaries, and ecological analyses.
+Long-term wildlife recording forms the foundation of much of the site.
 
-This section includes:
+Here you’ll find species records, seasonal reports, ecological analyses, similarity studies, datasets, and visualisations that explore how repeated observations reveal changing ecological patterns over time.
 
-- Species directories
-- Abundance and composition reports
-- “Year In The Life” seasonal studies
-- Ecological clustering and similarity analysis
-- Downloadable datasets and charts
-
-The emphasis is not simply on individual sightings, but on how repeated observations accumulate into visible seasonal and ecological structure.
-
-<hr/>
+Rather than focusing on individual sightings, the emphasis is on continuity, accumulation, and the emergence of structure from long-term observation.
 
 ### Microscopy
 
-Microscopy investigations carried out using a restored 1912 Leitz microscope and a structured programme of specimen study.
+Microscopy extends observation into another scale of the natural world.
 
-Topics include:
+Using a restored 1912 Leitz microscope alongside modern imaging techniques, these investigations explore plant anatomy, pollen, spores, aquatic life, prepared slides, and historical microscopy methods through notebook-style studies.
 
-- Plant structure
-- Pollen and spores
-- Aquatic microscopic life
-- Prepared slide investigations
-- Historical microscopy methods
-- Notebook-style plate records
+### Computational Natural History
 
-The work follows the older observational tradition of careful specimen-by-specimen examination, supported by modern imaging and digital archiving.
+Some questions cannot be answered through observation alone.
 
-<hr/>
+This section explores natural systems through computational models that investigate how simple biological or physical processes can generate the forms and patterns observed in nature.
 
-### Bat Acoustics
+Current projects include:
 
-Analysis of bat recordings using spectrograms, pulse timing, and behavioural interpretation.
+- Computational shell morphology
+- Stromatolite growth modelling
+- Ecological modelling
+- Experimental visualisation and simulation
 
-This section combines:
+Each project combines software, documentation, interpretation, and visualisation to explore understanding rather than simply produce attractive results.
 
-- Field recordings
-- Spectrogram analysis
-- Feeding buzz detection
-- Pulse timing studies
-- Heterodyne and time-expansion workflows
-- Custom analysis software and notebooks
+### Field Journals and Travel
 
-Particular attention is given to behavioural structure within recordings and the relationship between sound, movement, and feeding activity.
+Travel journals, local field notes, and longer observational essays combine narrative writing with photographs, maps, records, and supporting material.
 
-<hr/>
-
-Computational Shell Morphology
-
-Explorations of shell growth, coiling geometry, and biological morphospace using logarithmic spirals and procedural growth models.
-
-This section combines:
-
-* Logarithmic spiral growth
-* Swept aperture shell generation
-* Growth ribs and pigmentation banding
-* Internal chamber and siphuncle modelling
-* Transparent cutaway shell rendering
-* Comparative shell morphologies
-
-The resulting models explore how relatively simple developmental rules can generate complex natural forms reminiscent of nautiluses, ammonites, ramshorn snails, and more speculative shell geometries.
-
-Part mathematical exploration, part computational natural history, the project investigates the relationship between growth, geometry, and biological form.
-
-<hr/>
+These projects aim to capture not only places visited, but the process of paying attention to them.
 
 ### Pocket Ecology
 
-Portable ecological computation on constrained handheld systems, particularly the TI-84 Plus CE-T Python calculator.
+Portable ecological computation explores what useful field analysis can be achieved on simple handheld devices, particularly the TI-84 Plus CE-T Python calculator.
 
-Projects include:
-
-- Seasonal wildlife models
-- Ecological timing tools
-- Behavioural pulse analysis
-- Simplified field-ready analytical workflows
-
-This section explores the idea that useful ecological computation need not depend upon large or complex systems.
+These projects investigate how lightweight computational tools can support observation and decision-making in the field.
 
 <hr/>
 
-### Field Journals
+## Suggested Starting Points
 
-Long-form observational writing and compiled reports drawn from travel, local recording, and extended investigations.
+If you would like to explore the site gradually, these projects provide a good introduction.
 
-These journals combine narrative observation with structured records, photographs, maps, charts, and specimen notes.
-
-Examples include:
-
-- Wildlife travel journals
-- Seasonal field observations
-- Microscopy investigations
-- Notebook-derived reports
-- Compiled PDF field booklets
-
-<hr/>
-
-## A Suggested Starting Path
-
-If you would like to explore the site gradually, these sections provide particularly good entry points:
-
-- The seasonal ecology [modelling](/wildlife/modelling/) and [_Wildlife Through the Year in Abingdon_](/wildlife/seasonal/)￼ studies, which use long-term wildlife records to examine recurrence, timing, and ecological structure across the year
-- The [microscopy](/microscopy/) investigations and plate studies
-- The [bat acoustics analysis](/wildlife/batcalls/) pages
-- The [computational shell morphology](/wildlife/shells/) project, exploring logarithmic growth, shell geometry, and biological morphospace through procedural modelling
-- The booklets available in the [reference section](/reference/)
+- [Seasonal Ecology](/wildlife/modelling/), where years of wildlife records reveal annual ecological patterns
+- [Computational Shell Morphology](/wildlife/shells/), exploring how simple growth rules generate remarkably diverse biological forms
+- [Stromatolite Growth Modelling](/wildlife/stromatolites/), following the development of computational models inspired by one of Earth’s earliest ecosystems
+- [Microscopy](/microscopy/), revealing familiar organisms at an unfamiliar scale
+- [Travel Journals](/travel/), where observation and narrative come together in the field
+- [Reference Booklets and eBooks](/reference/), bringing together many of the larger investigations in downloadable form
 
 <hr/>
 
 ## The Underlying Idea
 
-Field Notes Journal is built around a simple principle:
+Field Notes is built on the premise that:
 
-> A single observation may be interesting; a long run of observations becomes evidence of pattern
+> Observation is the beginning, not the end
 
-The site therefore places emphasis on continuity, accumulation, and return. Reports are generated not from isolated moments, but from the steady keeping of records over months and years.
+A single observation may be interesting. A long sequence of observations reveals patterns. Patterns raise questions. Questions invite investigation.
 
-In that respect, the site is less a gallery of highlights than an ongoing working archive — a digital continuation of the older field notebook tradition.
+Understanding grows through returning repeatedly to the same subjects over time.
+
+For that reason, many projects published here include not only their conclusions but also the methods, software, documentation, datasets, and reflections that produced them. The aim is to make the process of understanding as visible as the results themselves.
 
 <hr/>
 
-## About the Site
+## About the Project
 
-If you would like to read more about the origins, philosophy, and methods behind the project, see the [About](/about/) page.
+If you would like to learn more about the ideas and philosophy behind Field Notes Journal, visit the [About](/about/) page.

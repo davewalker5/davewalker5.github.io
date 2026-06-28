@@ -1,61 +1,88 @@
 ---
 layout: default
 title: About Field Notes Journal
-description: A personal record of long-term observation, presenting structured reports and datasets from wildlife, microscopy, aircraft, and weather recording.
+description: The ideas, methods, and philosophy behind Field Notes Journal — a long-term practice of observation, enquiry, computational natural history, and reflective understanding
 ---
 
-# About
+# About Field Notes Journal
 
-Field Notes Journal is a personal natural history of place, built from long-term observation and the steady accumulation of records.
+Field Notes Journal is a long-term practice of observation, enquiry, and understanding.
 
-It brings together wildlife recording, microscopy, aircraft observation, and weather measurement — not as separate interests, but as parts of the same underlying practice: to note what is seen, when and where it occurs, and how those observations change over time.
+It began with a simple habit: taking notes about the natural world. Wildlife sightings, weather observations, microscope slides, journeys, museum visits, and everyday encounters all became entries in a growing collection of notebooks and records. Over time, those records revealed something important. Individual observations are valuable, but their greatest value often lies in what they become when they are revisited, compared, analysed, and reflected upon.
 
-The site presents reports derived from my own accumulated datasets. Its purpose is not merely to display results, but to preserve a habit of attention: to record what is observed, and to understand those observations more clearly by allowing them to stand in company with earlier years.
+This site is the result of that continuing process.
 
-The underlying principle is simple: a single observation may be interesting; a long run of observations becomes evidence of pattern. For that reason, I have long been drawn to recording as a practice in itself — the steady keeping of notes, lists, sightings, measurements, and specimens, not only for immediate interest, but so that they may later be reviewed, compared, and better understood.
+Although the subjects represented here are varied, they are connected by a common approach. Observation leads to recording. Recording allows patterns to emerge. Patterns raise questions. Those questions may lead to further observation, reading, computational modelling, or writing. Reflection then suggests where to look next.
 
-This site is an extension of that habit.
+The work is therefore less about collecting information than about developing understanding.
 
-Though modern in its means, it is old-fashioned in spirit. I have always admired the tradition of the field notebook: the orderly page, the dated entry, and the accumulation of particulars, along with the belief that patient looking is worthwhile. Here, those same instincts are carried into a digital form. Databases, scripts, charts, maps, and downloadable tables serve, in effect, as contemporary equivalents of indexed notebooks and tabulated observations.
+## The Practice
+
+Every project begins with curiosity.
+
+Sometimes that curiosity is prompted by a bird seen during a morning walk. Sometimes by a fossil in a museum, an unfamiliar plant beneath a microscope, a landscape encountered while travelling, or a paragraph in a book that raises an unexpected question.
+
+Some questions can be answered by returning to the field with a notebook. Others require analysis, historical reading, or computational exploration. Many evolve gradually over months or years as new observations accumulate.
+
+The process is deliberately iterative.
+
+- Observe carefully
+- Record faithfully
+- Return to earlier observations
+- Look for pattern and change
+- Explore questions through analysis or modelling
+- Document what has been learned
+- Reflect on the process, and begin again
+
+Publication is therefore not the conclusion of a project, but another stage within an ongoing cycle of enquiry.
+
+## Observation and Computational Natural History
+
+Observation remains the foundation of Field Notes, but observation is not always sufficient to answer the questions it raises.
+
+Some investigations therefore develop into computational models that explore how natural systems might behave under different assumptions. These models are not intended to replace observation, but to complement it. They provide a way of testing ideas, exploring mechanisms, and asking “what if?” questions that would otherwise remain difficult to investigate.
+
+Recent projects have explored subjects including shell morphology, stromatolite growth, ecological pattern, and biological form. In each case, the objective is the same: not simply to produce simulations, but to improve understanding of the natural systems that inspired them.
+
+The models, software, documentation, and interpretations published alongside them are all part of that process.
 
 ## Method
 
-The material presented here is generated from my own recorded data.
+Most of the material published here originates from personal observations, field notes, photographs, measurements, or specimens. Other investigations begin with published scientific literature or historical sources before developing into original analyses or computational studies.
 
-Depending on the subject, records may include dates, locations, categories, species, counts, measurements, positions, or other structured details. These are stored and organised, then used to produce summary reports intended to make patterns easier to inspect. Some reports are visual, some tabular, and some interactive; all arise from the same general aim: to turn accumulated observations into something that can be reviewed clearly and revisited later.
+Across these different subjects, the working method remains broadly consistent.
 
-The site is arranged by subject area, but the method is broadly consistent throughout:
+- Observations and ideas are recorded as they arise
+- Records are organised so they can be revisited over time
+- Analysis seeks patterns rather than isolated events
+- Where appropriate, computational tools are developed to investigate those patterns further
+- The methods, results, and interpretations are documented together
+- Reflection informs future observations and investigations
 
-- Observations are recorded systematically over time  
-- Records are structured so that they can be compared  
-- Reports are generated from those records rather than compiled by hand  
-- Charts, maps, and tables are provided as aids to interpretation  
-- Downloadable data is included where appropriate, so that the underlying record is not concealed by the presentation  
+Where possible, supporting datasets, notebooks, software, reports, and downloadable publications are made available alongside the work itself.
 
-The emphasis is therefore on continuity rather than novelty. This is not a news feed, nor a gallery of isolated highlights, but a working record of repeated attention.
+The intention is not simply to present conclusions, but to make the process of understanding visible.
 
 ## Background
 
-The analytical and modelling work presented within the journal arises from a long-standing interest in the interpretation of observed patterns through structured records and quantitative methods.
+My academic background includes degrees in chemistry and mathematics, including a PhD in mathematics. While Field Notes Journal is not intended as a formal scientific publication, that training naturally informs many of the analytical and computational aspects of the work.
 
-My academic background includes degrees in chemistry and mathematics, including a PhD in mathematics. Though the site is not intended as a formal scientific publication, that training informs the computational and analytical aspects of the work presented here, including ecological modelling, acoustic analysis, and the development of custom tools for exploring long-term observational datasets.
+Most of the software used throughout the project—including databases, report-generation tools, mapping workflows, visualisations, and computational models—is developed specifically to support the questions being explored. The technology is important, but only as a means of investigation. The purpose of each tool is to help answer a question rather than simply to demonstrate a technical capability.
 
-Most of the systems used throughout the journal — including data-processing pipelines, report-generation tools, mapping workflows, and modelling experiments — are developed and maintained personally using Python, SQLite, and related open-source tools.
+## Why “Field Notes”?
 
-The work remains, however, grounded primarily in observation itself: the long accumulation of records, the revisiting of earlier notes, and the belief that careful attention over time reveals patterns not always visible in isolated observations.
+The title reflects both the origins of the project and its continuing philosophy.
 
-## Scope
+Traditional field notebooks were never intended merely as diaries. They were working documents: places where observations were recorded, comparisons made, hypotheses formed, and ideas gradually refined through repeated return.
 
-The subjects represented here differ in character, but are united by a common approach.
+Field Notes Journal attempts to continue that tradition using contemporary tools. Databases replace card indexes, scripts replace manual tabulation, and interactive visualisations complement hand-drawn charts, but the underlying aim remains unchanged: to pay careful attention, to preserve observations faithfully, and to allow understanding to emerge gradually through sustained enquiry.
 
-Wildlife reports reflect the long-term accumulation of sightings and their arrangement into trends, compositions, abundance summaries, heatmaps, and other views. Microscopy work follows a similar spirit at another scale: the careful examination of structure, specimen by specimen, often with reference to older observational traditions. Aircraft and weather records extend the same impulse into domains where regular observation yields its own distinct patterns.
+## The Site
 
-What joins them is an interest in recurrence, seasonality, variation, and duration.
+Field Notes Journal is designed to function as both a working notebook and a published archive.
 
-## A note on the site itself
+Some projects remain short observational notes. Others develop into extended investigations supported by software, datasets, documentation, and downloadable publications. Together they represent an evolving body of work rather than a finished collection.
 
-Field Notes Journal is also, in part, an experiment in presentation.
+The site therefore documents not only the natural world, but also the continuing process of learning about it.
 
-The intention is to create a site that feels less like a generic dashboard and more like a published record: orderly, navigable, and plain in the best sense. Reports are designed to be easy to browse, but also capable of standing as a kind of archive — a place where observations made over months or years can be consulted without fuss.
-
-In that respect, the site is not separate from the recording practice behind it. It is one further layer of the same enterprise: observation, arrangement, review, and return.
+Understanding is never complete. Each project answers some questions, raises others, and points towards the next observation waiting to be made.

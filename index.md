@@ -5,35 +5,56 @@ title: Home
 
 ## Welcome to the Field Notes Journal
 
-**Field Notes Journal** is a record of an ongoing habit: noticing what’s around me, and writing it down.
+Field Notes Journal is a long-term record of observation, enquiry and understanding.
 
-It brings together wildlife observations, travel journals, and day-to-day field notes, alongside longer-term studies of the patterns behind them.
+It begins with simple acts of noticing: a bird seen on a morning walk, a fossil in a museum, a landscape encountered while travelling, a passage in a book that raises an unexpected question. Some observations remain just that. Others become investigations that unfold over weeks, months or even years.
 
 Everything here begins with observation, and builds over time.
 
 <hr/>
 
-## On Keeping Field Notes
+## A Practice of Curiosity
 
-Most of these notes begin outdoors - on walks, in passing moments, and in the gradual accumulation of small observations. Some continue later, at a desk or bench, where they are revisited, examined, and extended.
+Field Notes is less a collection of finished work than an ongoing practice.
 
-Over time, this has grown into a set of connected strands: writing, wildlife records, travel accounts, and longer-running investigations into the patterns behind what I see.
+Observations are recorded, revisited and reflected upon. Patterns emerge. Questions lead to further observations, reading and research. Some investigations remain descriptive; others develop into computational models or longer pieces of writing. Reflection often suggests new questions, and the cycle begins again.
 
-The site brings these together as a combination of narrative, records, and analysis: written entries, structured reports, charts, images, and datasets. The tools used to create them are modern, but the approach is a familiar one - patient, incremental, and shaped by repetition.
+The aim is not simply to collect information, but to develop understanding through careful, incremental enquiry.
 
-You’ll find material here covering:
-
-- Wildlife sightings and natural history records
-- Travel journals and field-based writing
-- Photography and microscopy as observational tools
-- Seasonal ecology and long-term pattern analysis
-- Weather observations and local environmental recording
-
-Each part can be explored on its own, but together they form a set of personal field notes: a way of returning to everyday observations and allowing them to build into something larger over time.
+Modern tools make much of this work possible, but the underlying approach is an old one: observe carefully, record faithfully, think critically, and return often.
 
 <hr/>
 
-If you are visiting for the first time, the [Start Here](/start-here/) page provides a guided introduction to the main sections of the site.
+### What You’ll Find Here
+
+The journal brings together several connected strands of work.
+
+- Wildlife observations and natural history recording
+- Seasonal ecology and long-term environmental monitoring
+- Travel journals and place-based writing
+- Photography and microscopy as observational tools
+- Computational modelling inspired by natural history
+- Essays, notebooks and reflections on the process of enquiry
+
+Some projects are brief notes; others become substantial studies supported by datasets, software, visualisations and downloadable publications. Each can be explored independently, but together they document an evolving way of engaging with the natural world.
+
+<hr/>
+
+## Observation to Understanding
+
+Many projects follow a similar path.
+
+- An observation becomes a question
+- A question leads to reading, recording or experimentation
+- Those records become analyses, models or written accounts
+
+Publication marks not the end of a project, but another stage in an ongoing conversation with the subject.
+
+The emphasis throughout is on understanding rather than simply producing results. The models, reports and visualisations are valuable because they help answer questions, not because they are ends in themselves.
+
+<hr/>
+
+If you are visiting for the first time, the [Start Here](/start-here) page provides a guided introduction to the main sections of the site.
 
 {% include stromatolite-modelling-invitation.html %}
 {% include shell-modelling-invitation.html %}
