@@ -6,6 +6,8 @@ categories: [field-notes]
 tags: [stromatolites, early-life, palaeontology, modelling, computational-natural-history, microbial-mats, ecology, mathematics, simulation, natural-history]
 excerpt: "A breakfast spent sketching stromatolite formation on a Kindle Scribe became an unexpected exploration of how microbial growth, sedimentation and environmental change can be modelled computationally."
 assets: "/images/"
+series: stromatolites
+series_order: 1
 notebook:
    name: "blog/stromatolite-notes.png"
    alt: "Notes on Stromatolite Growth"
