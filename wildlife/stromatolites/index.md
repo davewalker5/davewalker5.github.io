@@ -167,16 +167,20 @@ Equally importantly, the project serves as a computational natural history exerc
 
 ## Model Evolution
 
-The project has been developed incrementally, with each implementation extending the previous while preserving the underlying biological framework.
+The project has been developed as a sequence of deliberately incremental steps. Rather than increasing both biological and computational complexity simultaneously, each implementation introduces only one major conceptual advance while preserving everything established previously.
 
-1. One-dimensional — establish the biological model and lamination
-2. Two-dimensional — extend the model into a spatial cross-section
-3. Three-dimensional rectangular — establish the complete three-dimensional computational framework
-4. Three-dimensional circular — apply the framework to a realistic stromatolite footprint
-5. Three-dimensional domed — introduce realistic stromatolite morphology while preserving the underlying biological model
-6. Future — investigate emergent dome formation, expanding colonies, erosion and more realistic environmental interactions
+This approach allows every stage to be understood, tested and evaluated before moving on to the next:
 
-This staged approach allows each increase in complexity to be evaluated independently while maintaining a transparent relationship between biological assumptions and observed morphology.
+1. *One-Dimensional Reference Model* — establish and validate the core biological growth model
+2. *Two-Dimensional Cross-Section Model* — demonstrate that the same biology scales naturally across a spatial surface
+3. *Three-Dimensional Rectangular Model* — extend the computational framework into fully three-dimensional space
+4. *Three-Dimensional Circular Model* — remove the artificial rectangular boundary while preserving the same biological model
+5. *Three-Dimensional Domed Model* — replace the idealised flat surface with a biologically plausible stromatolite morphology, again without changing the underlying biology
+6. *Future Development* — investigate emergent dome formation, expanding microbial colonies, erosion and increasingly realistic environmental interactions
+
+The progression is therefore not simply a sequence of increasingly sophisticated geometries. Each stage answers a specific modelling question while demonstrating that increasingly realistic stromatolite morphology can emerge from the same underlying biological principles. This incremental philosophy keeps the relationship between biological assumptions, computational implementation and observed morphology both transparent and scientifically interpretable.
+
+The interactive visualisation developed alongside the domed model extends this philosophy into scientific communication: it changes how the results are explored, not the science that produces them.
 
 ## Contents
 
