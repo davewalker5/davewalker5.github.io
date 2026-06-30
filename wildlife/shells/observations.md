@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 18
+chapter: 20
 images:
 ---
 
@@ -20,7 +20,7 @@ The project consequently treats shell form not simply as static geometry, but as
 
 ## The Major Drivers of Shell Morphology
 
-A recurring theme across the shell presets is that morphology emerges from the interaction of a relatively small number of mechanisms:
+A recurring theme throughout the project is that shell morphology emerges from the interaction of a relatively small number of developmental processes:
 
 1. Logarithmic radial growth
 2. Growth trajectory and spatial translation
@@ -48,7 +48,7 @@ A useful distinction emerged between growth rules and rendering rules.
 
 Growth-related parameters such as logarithmic expansion, coiling rate, aperture geometry and growth trajectory largely determine overall shell architecture. By contrast, features such as ribbing, pigmentation and shell-wall thickness primarily influence appearance. Although ornamentation contributes significantly to realism, the most substantial morphological changes generally arose from modifications to the growth process itself rather than from surface decoration.
 
-The project therefore acts not only as a graphics exercise, but also as a simplified exploration of computational natural history and developmental morphology.
+The project therefore extends beyond computer graphics into a simplified exploration of developmental morphology and computational natural history.
 
 The development of the annulated orthocone revealed an additional distinction within shell ornamentation itself. Continuous ornamentation, such as sinusoidal ribbing or pigmentation bands, primarily affects surface appearance. By contrast, discrete growth ornamentation, such as annulations, can introduce visually significant developmental structure while leaving the underlying shell geometry unchanged. The resulting forms suggest that ornamentation spans a spectrum from purely decorative surface features to structures that express aspects of growth history and shell construction.
 
@@ -75,21 +75,39 @@ The development of orthocone shells also showed that internal features such as t
 
 The cyrtocone investigations extended this principle beyond growth coordinates. Once shell curvature was introduced, aperture orientation, chamber geometry and siphuncle construction could no longer rely on fixed global reference frames. Instead, these structures had to be generated relative to local coordinate systems derived from the shell centreline itself. This revealed that many aspects of shell construction are most naturally expressed in terms of shell-relative geometry rather than absolute spatial coordinates.
 
+## Classification as Morphological Description
+
+As the collection of shell models expanded, describing shells simply by their preset names became increasingly limiting. Introducing a computational classification demonstrated that shell morphology can be decomposed into a small set of largely independent descriptive characteristics.
+
+Separating biological affinity, growth geometry and observable morphology produced a flexible vocabulary capable of describing every shell currently implemented while remaining readily extensible to future forms.
+
+More significantly, the classification became more than an organisational convenience. By expressing shell form in a consistent, machine-readable way, it established a bridge between computational modelling and comparative morphology, allowing shell morphology itself to become the subject of quantitative investigation.
+
+## From Individual Models to Morphospace
+
+The introduction of classification naturally led to a second observation.
+
+Once every shell could be described using the same morphological vocabulary, it became possible to compare shell forms quantitatively without analysing their meshes directly.
+
+The resulting similarity analysis demonstrated that relationships between shell forms emerge naturally from their recorded characteristics. Expected groupings, such as orthocones with annulated orthocones, ammonites with serpenticones and Turritella variants with one another, arose automatically from the classification rather than being specified in advance.
+
+Perhaps more importantly, the analysis highlighted the distinction between morphological similarity and evolutionary relationship. Convergent shell forms may occupy nearby positions within the computational morphospace despite belonging to different biological lineages.
+
+The project therefore evolved from generating individual shell geometries towards constructing and exploring a computational morphospace of shell form.
+
 ## Computational Natural History
 
-The project increasingly suggests that diverse shell forms can emerge from a common set of geometric and developmental principles.
+Viewed as a whole, the project increasingly suggests that shell diversity can be understood at several complementary levels.
 
-The orthocone investigations broadened this perspective by demonstrating that many aspects of shell construction can be expressed independently of any particular shell geometry. Chamber formation, siphuncle placement and shell-wall generation could all be reformulated in terms of growth-relative coordinates and developmental progression.
+Individual shell forms emerge from the interaction between a relatively small number of developmental processes, including aperture growth, growth trajectory, coiling behaviour and ornamentation. These mechanisms proved capable of generating a remarkably broad range of shell morphologies while remaining conceptually simple.
 
-Although the models presented here are intentionally abstract, they suggest how complex shell forms may emerge from the interaction of a relatively small number of growth processes operating over long periods of development. More broadly, they hint at the possibility of a general growth-based framework capable of generating a wide range of shell architectures from shared underlying rules.
+As the collection of shell models expanded, it became apparent that generation alone was only part of the investigation. Introducing a computational classification provided a consistent vocabulary for describing shell morphology independently of the underlying implementation. Growth mathematics, biological inspiration and observable shell characteristics could each be recorded separately, allowing shells to be organised and compared in a systematic way.
 
-The progression from logarithmic spiral shells through tower shells, orthocones and cyrtocones also suggested a useful higher-level abstraction: shell form can be viewed as the interaction between a growth trajectory and a growing aperture. Under this interpretation, logarithmic spirals, straight axes and curved axes become alternative growth-path geometries within a shared developmental framework. The resulting diversity of forms emerges less from fundamentally different construction processes than from variations in how growth is directed through space.
+This descriptive framework naturally led to quantitative similarity analysis. By comparing the recorded morphological characteristics rather than the generated meshes, relationships between shell forms emerged directly from their classifications. Expected groupings, such as orthocones with annulated orthocones, ammonites with serpenticones and the two Turritella variants, arose automatically without requiring predefined taxonomic groupings. At the same time, the analysis illustrated the distinction between morphological similarity and evolutionary relationship, allowing convergent forms to occupy nearby positions within the resulting morphospace despite differing biological origins.
 
-The crioceratite investigations suggested a complementary mechanism for morphological diversification. Not all major changes in shell form required alternative growth trajectories; some emerged through modifications to the relationship between successive whorls within the same logarithmic growth process. The transition from tightly coiled ammonite-like shells to open-coiled heteromorph forms demonstrated how substantial anatomical differences can arise from relatively small adjustments to developmental parameters while retaining the same underlying construction principles.
+Taken together, these developments suggest a progression in the scope of the project. What began as an investigation into the computational generation of shell geometry has evolved into a broader exploration of computational shell morphology. The emphasis has shifted from asking whether particular shell forms can be reproduced towards understanding how those forms relate to one another, which developmental mechanisms underpin their diversity, and how that diversity can be described and analysed within a consistent computational framework.
 
-The subsequent development of serpenticone morphologies reinforced this observation. Unlike the crioceratite, the serpenticone remains fully planispiral and requires no alteration to the underlying growth framework. Changes to shell expansion rate, whorl overlap and ornamentation alone were sufficient to transform a conventional ammonite-like shell into a recognisably distinct cephalopod form. Together, the ammonite, serpenticone and crioceratite models demonstrated that substantial morphological diversity can emerge from relatively small movements through parameter space while preserving the same fundamental developmental process.
-
-The annulated orthocone provided a complementary example. Here, substantial changes in perceived shell form emerged not from alterations to growth trajectory or aperture expansion, but from the introduction of a different ornamentation strategy. This suggests that morphological diversity may arise through changes in both developmental architecture and the way growth history is expressed on the shell surface.
+Although intentionally simplified, the models demonstrate how a relatively small collection of geometric and developmental principles can generate, describe and compare a diverse range of shell forms. In that sense, the project increasingly increasingly sits at the intersection of computer graphics, developmental morphology and computational natural history.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
