@@ -100,6 +100,14 @@ chapters:
   # --------------------------------------------------------------------------------
   # Observations and insights
   # --------------------------------------------------------------------------------
+  - title: "Computational Shell Classification"
+    description: "A descriptive framework for classification of computational shell models"
+    url: /wildlife/shells/classification.html
+  
+  - title: "Morphological Shell Similarity"
+    description: "Quantifying morphological similarity from shell classification characteristics"
+    url: /wildlife/shells/similarity.html
+
   - title: "Observations"
     description: "Notes and reflections arising from the modelling process"
     url: /wildlife/shells/observations.html
