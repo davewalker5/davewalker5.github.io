@@ -12,6 +12,13 @@ contact_sheet:
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
+explorer:
+   name: "morphospace-explorer.png"
+   alt: "Interactive Morphospace Explorer"
+   caption: "Interactive Morphospace Explorer"
+   credit: "David Walker, Field Notes Journal"
+   license: "CC BY 4.0"
+   license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 # Computational Shell Morphology
@@ -31,6 +38,18 @@ Although highly simplified, the resulting models reproduce many features associa
 The emphasis is not on producing biologically exact simulations. Instead, the project explores how complex and recognisably natural forms can emerge from the interaction of relatively simple developmental rules.
 
 In this sense, the models can be viewed as small experiments in computational natural history. They sit somewhere between mathematical visualisation, procedural modelling and developmental morphology, using code as a tool for investigating the relationship between growth process and biological form.
+
+## Interactive Morphology Explorer
+
+{% include fullwidth-image.html assets=page.assets img=page.explorer %}
+
+The shell models described throughout this project can also be explored interactively using the Morphology Explorer.
+
+Rather than viewing a fixed set of examples, the explorer allows you to browse the morphological families, compare shell forms and investigate how changes in growth parameters influence shell geometry.
+
+<p class="feature-invite-action">
+<a href="/wildlife/shells/explorer.html">Launch the Morphology Explorer</a>
+</p>
 
 ## Contents
 
