@@ -1,0 +1,466 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Morphospace Explorer</title>
+  <script src="https://cdn.plot.ly/plotly-2.35.2.min.js"></script>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #07090d;
+      --panel: #11161d;
+      --panel-raised: #171d26;
+      --control: #0b0f15;
+      --text: #f2f5f8;
+      --muted: #99a4b2;
+      --line: #2a3340;
+      --accent: #f59e0b;
+      --accent-dark: #b45309;
+      --siphuncle: rgb(180,120,80);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.4;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(240px, 300px) minmax(240px, 320px) minmax(0, 1fr);
+      height: 100vh;
+      min-height: 0;
+    }
+
+    .panel {
+      border-right: 1px solid var(--line);
+      background: var(--panel);
+      padding: 18px;
+      overflow: auto;
+    }
+
+    .viewer {
+      display: grid;
+      grid-template-rows: auto minmax(420px, 1fr);
+      min-width: 0;
+    }
+
+    .toolbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 14px clamp(16px, 3vw, 32px);
+      border-bottom: 1px solid var(--line);
+      background: var(--panel-raised);
+    }
+
+    .toolbar h2 {
+      margin: 0;
+      font-size: 1.05rem;
+      letter-spacing: 0;
+    }
+
+    .filters {
+      display: grid;
+      gap: 12px;
+    }
+
+    .panel-title {
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 800;
+      letter-spacing: 0;
+      margin: 0 0 12px;
+      text-transform: uppercase;
+    }
+
+    label {
+      display: grid;
+      gap: 5px;
+      color: var(--muted);
+      font-size: 0.78rem;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    select {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--control);
+      color: var(--text);
+      padding: 8px 10px;
+      font-size: 0.95rem;
+    }
+
+    .shell-count {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin: 0 0 10px;
+    }
+
+    .shell-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .shell-button {
+      width: 100%;
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      background: var(--control);
+      color: var(--text);
+      cursor: pointer;
+      padding: 10px;
+      text-align: left;
+    }
+
+    .shell-button:hover,
+    .shell-button:focus {
+      border-color: var(--accent);
+      background: #141b24;
+      outline: none;
+    }
+
+    .shell-button.active {
+      border-color: var(--accent);
+      box-shadow: inset 3px 0 0 var(--accent);
+      background: #171d26;
+    }
+
+    .shell-button strong {
+      display: block;
+      font-size: 0.98rem;
+      margin-bottom: 4px;
+    }
+
+    .shell-button span {
+      color: var(--muted);
+      display: block;
+      font-size: 0.82rem;
+    }
+
+    .toggle {
+      align-items: center;
+      color: var(--text);
+      display: flex;
+      font-size: 0.9rem;
+      font-weight: 600;
+      gap: 8px;
+      text-transform: none;
+    }
+
+    .toggle input {
+      accent-color: var(--accent);
+      height: 18px;
+      width: 18px;
+    }
+
+    #plot {
+      background: #000000;
+      min-height: 420px;
+      height: 100%;
+      width: 100%;
+    }
+
+    .empty-state,
+    .loading-state,
+    .error-state {
+      align-items: center;
+      color: var(--muted);
+      display: flex;
+      min-height: 420px;
+      justify-content: center;
+      padding: 24px;
+      text-align: center;
+    }
+
+    .error-state {
+      color: #fda4af;
+    }
+
+    @media (max-width: 860px) {
+      main {
+        grid-template-columns: 1fr;
+      }
+
+      .panel {
+        border-right: 0;
+        border-bottom: 1px solid var(--line);
+        max-height: 36vh;
+      }
+
+      .toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <aside class="panel filter-panel">
+      <h2 class="panel-title">Filters</h2>
+      <form class="filters" id="filters"></form>
+    </aside>
+    <aside class="panel results-panel">
+      <h2 class="panel-title">Results</h2>
+      <p class="shell-count" id="shell-count"></p>
+      <div class="shell-list" id="shell-list"></div>
+    </aside>
+    <section class="viewer">
+      <div class="toolbar">
+        <h2 id="selected-shell">Select a shell</h2>
+        <label class="toggle">
+          <input type="checkbox" id="transparent-shell">
+          Semi-transparent shell
+        </label>
+      </div>
+      <div id="plot" class="empty-state">Choose a shell to load its geometry.</div>
+    </section>
+  </main>
+
+  <script>
+    const explorer = {"fields": ["geometry", "family", "form", "coiling", "umbilicus", "whorl_contact", "axis", "spire", "aperture"], "fieldLabels": {"geometry": "Geometry", "family": "Family", "form": "Form", "coiling": "Coiling", "umbilicus": "Umbilicus", "whorl_contact": "Whorl Contact", "axis": "Axis", "spire": "Spire", "aperture": "Aperture"}, "filterOptions": {"geometry": ["centreline-conical", "conical-helix", "log-spiral"], "family": ["ammonoid", "gastropod", "nautiloid", "orthoceratoid"], "form": ["coiled-cephalopod", "crioconic", "cyrtoconic", "flared", "nautiliconic", "orthoconic", "planispiral", "serpenticonic", "turriform"], "coiling": ["high-spired", "low-spired", "none", "open-planispiral", "planispiral"], "umbilicus": ["moderate", "narrow", "open", "wide"], "whorl_contact": ["detached", "overlapping", "stacked", "touching"], "axis": ["curved", "straight"], "spire": ["high", "low"], "aperture": ["expanded"]}, "shells": [{"filename": "ammonite", "name": "Ammonite", "classification": {"geometry": "log-spiral", "family": "ammonoid", "form": "coiled-cephalopod", "coiling": "planispiral", "umbilicus": "moderate", "whorl_contact": "touching"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/ammonite/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/ammonite/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/ammonite/siphuncle.json"}}, {"filename": "annulated-orthocone", "name": "Annulated Orthocone", "classification": {"geometry": "centreline-conical", "family": "orthoceratoid", "form": "orthoconic", "coiling": "none", "axis": "straight"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/annulated-orthocone/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/annulated-orthocone/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/annulated-orthocone/siphuncle.json"}}, {"filename": "crioceratite", "name": "Crioceratite", "classification": {"geometry": "log-spiral", "family": "ammonoid", "form": "crioconic", "coiling": "open-planispiral", "umbilicus": "open", "whorl_contact": "detached"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/crioceratite/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/crioceratite/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/crioceratite/siphuncle.json"}}, {"filename": "cyrtocone", "name": "Cyrtocone", "classification": {"geometry": "centreline-conical", "family": "orthoceratoid", "form": "cyrtoconic", "coiling": "none", "axis": "curved"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/cyrtocone/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/cyrtocone/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/cyrtocone/siphuncle.json"}}, {"filename": "flared", "name": "Flared", "classification": {"geometry": "log-spiral", "family": "gastropod", "form": "flared", "coiling": "low-spired", "spire": "low", "aperture": "expanded"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/flared/shell.json"}}, {"filename": "nautilus", "name": "Nautilus", "classification": {"geometry": "log-spiral", "family": "nautiloid", "form": "nautiliconic", "coiling": "planispiral", "umbilicus": "narrow", "whorl_contact": "overlapping"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/nautilus/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/nautilus/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/nautilus/siphuncle.json"}}, {"filename": "orthocone", "name": "Orthocone", "classification": {"geometry": "centreline-conical", "family": "orthoceratoid", "form": "orthoconic", "coiling": "none", "axis": "straight"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/orthocone/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/orthocone/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/orthocone/siphuncle.json"}}, {"filename": "ramshorn", "name": "Ramshorn", "classification": {"geometry": "log-spiral", "family": "gastropod", "form": "planispiral", "coiling": "planispiral", "umbilicus": "wide", "whorl_contact": "touching"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/ramshorn/shell.json"}}, {"filename": "serpenticone", "name": "Serpenticone", "classification": {"geometry": "log-spiral", "family": "ammonoid", "form": "serpenticonic", "coiling": "planispiral", "umbilicus": "wide", "whorl_contact": "touching"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/serpenticone/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/serpenticone/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/serpenticone/siphuncle.json"}}, {"filename": "smooth-nautilus", "name": "Smooth Nautilus", "classification": {"geometry": "log-spiral", "family": "nautiloid", "form": "nautiliconic", "coiling": "planispiral", "umbilicus": "narrow", "whorl_contact": "overlapping"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/smooth-nautilus/shell.json", "chamber-septa": "https://assets.fieldnotesjournal.uk/meshes/smooth-nautilus/chamber-septa.json", "siphuncle": "https://assets.fieldnotesjournal.uk/meshes/smooth-nautilus/siphuncle.json"}}, {"filename": "turritella-helix", "name": "Turritella Helix", "classification": {"geometry": "conical-helix", "family": "gastropod", "form": "turriform", "coiling": "high-spired", "whorl_contact": "stacked", "spire": "high"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/turritella-helix/shell.json"}}, {"filename": "turritella", "name": "Turritella", "classification": {"geometry": "log-spiral", "family": "gastropod", "form": "turriform", "coiling": "high-spired", "whorl_contact": "stacked", "spire": "high"}, "meshes": {"shell": "https://assets.fieldnotesjournal.uk/meshes/turritella/shell.json"}}]};
+    const state = {
+      filters: {},
+      selected: null,
+      traces: [],
+    };
+
+    const filtersElement = document.getElementById("filters");
+    const shellListElement = document.getElementById("shell-list");
+    const shellCountElement = document.getElementById("shell-count");
+    const plotElement = document.getElementById("plot");
+    const selectedShellElement = document.getElementById("selected-shell");
+    const transparentShellElement = document.getElementById("transparent-shell");
+    const YL_OR_BR_COLORSCALE = [
+      [0.0, "rgb(255,255,229)"],
+      [0.125, "rgb(255,247,188)"],
+      [0.25, "rgb(254,227,145)"],
+      [0.375, "rgb(254,196,79)"],
+      [0.5, "rgb(254,153,41)"],
+      [0.625, "rgb(236,112,20)"],
+      [0.75, "rgb(204,76,2)"],
+      [0.875, "rgb(153,52,4)"],
+      [1.0, "rgb(102,37,6)"],
+    ];
+
+    function valueLabel(value) {
+      return String(value).replaceAll("_", " ").replaceAll("-", " ").replace(/\b\w/g, match => match.toUpperCase());
+    }
+
+    function renderFilters() {
+      filtersElement.innerHTML = "";
+      for (const field of explorer.fields) {
+        const label = document.createElement("label");
+        label.textContent = explorer.fieldLabels[field];
+
+        const select = document.createElement("select");
+        select.dataset.field = field;
+
+        const allOption = document.createElement("option");
+        allOption.value = "";
+        allOption.textContent = "All";
+        select.appendChild(allOption);
+
+        for (const value of explorer.filterOptions[field]) {
+          const option = document.createElement("option");
+          option.value = value;
+          option.textContent = valueLabel(value);
+          select.appendChild(option);
+        }
+
+        select.addEventListener("change", event => {
+          const selectedValue = event.target.value;
+          if (selectedValue) {
+            state.filters[field] = selectedValue;
+          } else {
+            delete state.filters[field];
+          }
+          renderShellList();
+        });
+
+        label.appendChild(select);
+        filtersElement.appendChild(label);
+      }
+    }
+
+    function matchingShells() {
+      return explorer.shells.filter(shell => {
+        for (const [field, value] of Object.entries(state.filters)) {
+          if (shell.classification[field] !== value) {
+            return false;
+          }
+        }
+        return true;
+      });
+    }
+
+    function renderShellList() {
+      const shells = matchingShells();
+      shellListElement.innerHTML = "";
+      shellCountElement.textContent = `${shells.length} shell${shells.length === 1 ? "" : "s"}`;
+
+      for (const shell of shells) {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.className = `shell-button${state.selected?.filename === shell.filename ? " active" : ""}`;
+        button.innerHTML = `<strong>${shell.name}</strong><span>${metadataSummary(shell)}</span>`;
+        button.addEventListener("click", () => selectShell(shell));
+        shellListElement.appendChild(button);
+      }
+    }
+
+    function metadataSummary(shell) {
+      return explorer.fields
+        .filter(field => shell.classification[field])
+        .slice(0, 3)
+        .map(field => valueLabel(shell.classification[field]))
+        .join(" · ");
+    }
+
+    async function selectShell(shell) {
+      state.selected = shell;
+      state.traces = [];
+      renderShellList();
+      selectedShellElement.textContent = shell.name;
+      plotElement.className = "loading-state";
+      plotElement.textContent = "Loading geometry...";
+
+      try {
+        const traces = [];
+        traces.push(makeTrace("shell", await loadMesh(shell.meshes.shell), shell));
+
+        if (shell.meshes["chamber-septa"]) {
+          traces.push(makeTrace("chamber-septa", await loadMesh(shell.meshes["chamber-septa"]), shell));
+        }
+
+        if (shell.meshes.siphuncle) {
+          traces.push(makeTrace("siphuncle", await loadMesh(shell.meshes.siphuncle), shell));
+        }
+
+        state.traces = traces;
+        renderPlot();
+      } catch (error) {
+        plotElement.className = "error-state";
+        plotElement.textContent = `Unable to load geometry for ${shell.name}: ${error.message}`;
+      }
+    }
+
+    async function loadMesh(url) {
+      if (window.location.protocol === "file:") {
+        throw new Error("Local file mode cannot load mesh JSON. Run python src/morphospace_explorer.py --serve and open the local http:// address it prints.");
+      }
+
+      const response = await fetch(url);
+      if (!response.ok) {
+        throw new Error(`${url} returned ${response.status}`);
+      }
+      return response.json();
+    }
+
+    function makeTrace(part, mesh, shell) {
+      const isShell = part === "shell";
+      const name = {
+        "shell": "Shell",
+        "chamber-septa": "Chamber septa",
+        "siphuncle": "Siphuncle",
+      }[part];
+
+      const trace = {
+        type: "mesh3d",
+        name,
+        x: mesh.vertices.x,
+        y: mesh.vertices.y,
+        z: mesh.vertices.z,
+        i: mesh.faces.i,
+        j: mesh.faces.j,
+        k: mesh.faces.k,
+        flatshading: false,
+        hoverinfo: "skip",
+      };
+
+      if (isShell) {
+        trace.opacity = transparentShellElement.checked ? 0.35 : 1.0;
+        if (mesh.intensity) {
+          trace.intensity = mesh.intensity;
+          trace.intensitymode = "vertex";
+          trace.colorscale = YL_OR_BR_COLORSCALE;
+          trace.showscale = false;
+        }
+        trace.lighting = {
+          ambient: 0.35,
+          diffuse: 0.95,
+          specular: 1.2,
+          roughness: 0.12,
+          fresnel: 0.5,
+        };
+      } else if (part === "chamber-septa") {
+        trace.opacity = 0.72;
+        if (mesh.intensity) {
+          trace.intensity = mesh.intensity;
+          trace.intensitymode = "vertex";
+          trace.colorscale = YL_OR_BR_COLORSCALE;
+          trace.showscale = false;
+        }
+      } else {
+        trace.color = getComputedStyle(document.documentElement).getPropertyValue("--siphuncle").trim();
+        trace.opacity = 0.95;
+      }
+
+      return trace;
+    }
+
+    function renderPlot() {
+      if (!state.selected || state.traces.length === 0) {
+        return;
+      }
+
+      state.traces = state.traces.map(trace => {
+        if (trace.name === "Shell") {
+          return {...trace, opacity: transparentShellElement.checked ? 0.35 : 1.0};
+        }
+        return trace;
+      });
+
+      plotElement.className = "";
+      plotElement.textContent = "";
+
+      Plotly.react(plotElement, state.traces, {
+        margin: {l: 0, r: 0, t: 0, b: 0},
+        paper_bgcolor: "#000000",
+        plot_bgcolor: "#000000",
+        showlegend: true,
+        legend: {
+          x: 0.02,
+          y: 0.98,
+          bgcolor: "rgba(0,0,0,0.68)",
+          font: {color: "#f8fafc"},
+        },
+        scene: {
+          aspectmode: "data",
+          bgcolor: "rgba(0,0,0,0)",
+          xaxis: {visible: false},
+          yaxis: {visible: false},
+          zaxis: {visible: false},
+          camera: {eye: {x: 1.6, y: 1.7, z: 1.1}},
+        },
+      }, {responsive: true, displaylogo: false});
+    }
+
+    transparentShellElement.addEventListener("change", renderPlot);
+
+    renderFilters();
+    renderShellList();
+  </script>
+</body>
+</html>
