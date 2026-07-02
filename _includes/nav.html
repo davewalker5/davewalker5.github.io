@@ -21,6 +21,7 @@
 
     <span class="nav-sep">&middot;</span>
 
+    <a href="{{ '/why/' | relative_url }}"{% if page.url contains '/why/' and page.layout != 'post' %} class="active"{% endif %}>Why I Keep Field Notes</a>
     <a href="{{ '/reference/' | relative_url }}"{% if page.url contains '/reference/' and page.layout != 'post' %} class="active"{% endif %}>Reference</a>
     <a href="{{ '/blog/' | relative_url }}"{% if page.url contains '/blog/' or page.layout == 'post' %} class="active"{% endif %}>Blog</a>
     <a href="{{ '/about/' | relative_url }}"{% if page.url contains '/about/' and page.layout != 'post' %} class="active"{% endif %}>About</a>
