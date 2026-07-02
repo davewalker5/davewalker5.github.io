@@ -12,6 +12,13 @@ banner_image:
    credit: "David Walker, Field Notes Journal"
    license: "CC BY 4.0"
    license_link: "https://creativecommons.org/licenses/by/4.0"
+explorer:
+   name: "3d-interactive-render-001.png"
+   alt: "Interactive Stromatolite Explorer"
+   caption: "Interactive Stromatolite Explorer"
+   credit: "David Walker, Field Notes Journal"
+   license: "CC BY 4.0"
+   license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 # Stromatolite Growth Modelling
@@ -181,6 +188,30 @@ This approach allows every stage to be understood, tested and evaluated before m
 The progression is therefore not simply a sequence of increasingly sophisticated geometries. Each stage answers a specific modelling question while demonstrating that increasingly realistic stromatolite morphology can emerge from the same underlying biological principles. This incremental philosophy keeps the relationship between biological assumptions, computational implementation and observed morphology both transparent and scientifically interpretable.
 
 The interactive visualisation developed alongside the domed model extends this philosophy into scientific communication: it changes how the results are explored, not the science that produces them.
+
+## Interactive Stromatolite Explorer
+
+{% include fullwidth-image.html assets=page.assets img=page.explorer %}
+
+The three-dimensional rectangular, circular masked and domed stromatolite models can all be explored interactively using the Interactive Stromatolite Explorer.
+
+Rather than viewing only the final stromatolite surface and accompanying growth charts, the explorer allows you to rotate the model, inspect it from any angle, browse through representative growth layers and replay the development of the stromatolite through time.
+
+Three explorers are available, corresponding to the progressively more sophisticated three-dimensional models developed throughout the project:
+
+<p class="feature-invite-action">
+<a href="/wildlife/stromatolites/3d-rectangular-interactive.html">Launch the 3D Rectangular Model Explorer</a>
+</p>
+
+<p class="feature-invite-action">
+<a href="/wildlife/stromatolites/3d-circular-interactive.html">Launch the 3D Circular Masked Model Explorer</a>
+</p>
+
+<p class="feature-invite-action">
+<a href="/wildlife/stromatolites/3d-domed-interactive.html">Launch the 3D Circular Domed Model Explorer</a>
+</p>
+
+The explorer introduces no new biology. Its purpose is simply to provide another way of understanding how increasingly realistic stromatolite morphology emerges from the same underlying biological framework.
 
 ## Contents
 
