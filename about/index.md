@@ -16,6 +16,8 @@ Although the subjects represented here are varied, they are connected by a commo
 
 The work is therefore less about collecting information than about developing understanding.
 
+If you’re interested in why this project exists, rather than simply how it works, I’ve written a short personal reflection: [Why I Keep Field Notes](/why/).
+
 ## The Practice
 
 Every project begins with curiosity.

@@ -126,4 +126,4 @@ For that reason, many projects published here include not only their conclusions
 
 ## About the Project
 
-If you would like to learn more about the ideas and philosophy behind Field Notes Journal, visit the [About](/about/) page.
+If you would like to understand both the philosophy behind the project and the personal reasons it exists, visit [About](/about/) and [Why I Keep Field Notes](/why/).
