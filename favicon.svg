@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-labelledby="title desc">
+  <title id="title">Field Notes favicon</title>
+  <desc id="desc">A hand-tuned cream spiral on a deep green rounded square.</desc>
+  <defs>
+    <linearGradient id="field-notes-green" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#164b29"/>
+      <stop offset="0.55" stop-color="#123f24"/>
+      <stop offset="1" stop-color="#0c321d"/>
+    </linearGradient>
+  </defs>
+  <rect x="0" y="0" width="512" height="512" rx="55" ry="55" fill="url(#field-notes-green)"/>
+  <path d="M 106 421 C 58 362, 54 276, 86 203 C 127 111, 213 61, 303 81 C 397 102, 454 184, 430 273 C 402 379, 263 407, 211 318 C 169 247, 227 175, 301 194 C 361 210, 381 282, 330 320 C 284 355, 224 314, 244 260 C 263 211, 323 212, 338 256 C 349 287, 313 310, 291 287 C 274 270, 285 244, 307 247 C 326 250, 328 274, 311 282"
+        fill="none"
+        stroke="#f5f0dc"
+        stroke-width="18"
+        stroke-linecap="round"
+        stroke-linejoin="round"/>
+</svg>
