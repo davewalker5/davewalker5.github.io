@@ -34,4 +34,12 @@
   category: "tools"
   description: Procedural shell morphology experiments using logarithmic spirals to generate shell-like biological forms
   link: https://github.com/davewalker5/LogSpiral
+- title: StromatoliteGrowth
+  category: "tools"
+  description: Computational models for exploring stromatolite growth and the emergence of layered structures
+  link: https://github.com/davewalker5/StromatoliteGrowth
+- title: FossilTracker
+  category: "tools"
+  description: Personal fossil collection catalogue with taxonomy, provenance, measurements, images, and field notes
+  link: https://github.com/davewalker5/FossilTracker
 
