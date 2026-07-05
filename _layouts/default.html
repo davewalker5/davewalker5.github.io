@@ -84,6 +84,12 @@
   <link rel="stylesheet" href="{{ '/assets/css/pdf.css?v=4.0' | relative_url }}" media="print">
   <link rel="stylesheet" href="{{ '/assets/css/species-classification.css?v=4.0' | relative_url }}">
 
+  {% if page.extra_css %}
+    {% for css in page.extra_css %}
+    <link rel="stylesheet" href="{{ css | relative_url }}">
+    {% endfor %}
+  {% endif %}
+
   <style>
     /*
       Layout fallbacks
