@@ -30,16 +30,20 @@
   category: "tools"
   description: Scientific computing, modelling, and numerical experiments on the TI-84 Plus CE-T Python Calculator
   link: https://github.com/davewalker5/ti-84-python
-- title: LogSpiral
+- title: Log Spiral
   category: "tools"
   description: Procedural shell morphology experiments using logarithmic spirals to generate shell-like biological forms
   link: https://github.com/davewalker5/LogSpiral
-- title: StromatoliteGrowth
+- title: Stromatolite Growth
   category: "tools"
   description: Computational models for exploring stromatolite growth and the emergence of layered structures
   link: https://github.com/davewalker5/StromatoliteGrowth
-- title: FossilTracker
+- title: Fossil Tracker
   category: "tools"
   description: Personal fossil collection catalogue with taxonomy, provenance, measurements, images, and field notes
   link: https://github.com/davewalker5/FossilTracker
+- title: Molecular Clock Simulator
+  category: "tools"
+  description: Computational models and interactive tools for exploring molecular clock theory and phylogenetic inference
+  link: https://github.com/davewalker5/MolecularClockSimulation
 
