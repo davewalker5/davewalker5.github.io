@@ -14,7 +14,11 @@ This site is the result of that continuing process.
 
 Although the subjects represented here are varied, they are connected by a common approach. Observation leads to recording. Recording allows patterns to emerge. Patterns raise questions. Those questions may lead to further observation, reading, computational modelling, or writing. Reflection then suggests where to look next.
 
-The work is therefore less about collecting information than about developing understanding.
+The work is therefore less about collecting information than about developing understanding. This relationship between learning and doing lies at the heart of the project.
+
+> Learn enough to make something real. Make something real so you can learn what matters next.
+
+Reading informs observation. Observation suggests experiments. Computational models reveal new questions. Writing clarifies understanding. Each stage prepares the ground for the next.
 
 If you’re interested in why this project exists, rather than simply how it works, I’ve written a short personal reflection: [Why I Keep Field Notes](/why/).
 
