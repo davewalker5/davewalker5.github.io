@@ -6,6 +6,8 @@ categories: [field-notes]
 tags: [molecular-evolution, molecular-clock, phylogenetics, computational-natural-history, genetics, simulation, evolutionary-biology]
 excerpt: "A new computational natural history project explores how molecular clocks and phylogenetic trees can be understood by building each component from first principles."
 assets: "/images/blog/"
+series: "Molecular Clock Simulation"
+series_order: 1
 explorer:
    name: "relaxed-clock-explorer.png"
    alt: "Relaxed Molecular Clock Explorer"
