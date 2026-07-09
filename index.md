@@ -56,6 +56,7 @@ The emphasis throughout is on understanding rather than simply producing results
 
 If you are visiting for the first time, the [Start Here](/start-here) page provides a guided introduction to the main sections of the site.
 
+{% include molecular-clock-invitation.html %}
 {% include stromatolite-modelling-invitation.html %}
 {% include shell-modelling-invitation.html %}
 {% include modelling-invitation.html %}
