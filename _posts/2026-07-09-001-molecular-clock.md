@@ -23,7 +23,7 @@ Instead, it has unfolded as a sequence of connected ideas, each making the next 
 
 First came the simulation of DNA sequence evolution. Then the problem of estimating evolutionary distance. That led naturally to substitution models, each trying to account for the mutations that are no longer directly visible in present-day sequences.
 
-This week, those pieces finally came together, as the project can now reconstruct its first phylogenetic trees.
+Today, those pieces finally came together, as the project can now reconstruct its first phylogenetic trees.
 
 {% include fullwidth-image.html assets=page.assets img=page.upgma %}
 
