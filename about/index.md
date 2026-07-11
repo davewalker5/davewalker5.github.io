@@ -1,94 +1,119 @@
 ---
 layout: default
 title: About Field Notes Journal
-description: The ideas, methods, and philosophy behind Field Notes Journal — a long-term practice of observation, enquiry, computational natural history, and reflective understanding
+description: The ideas, methods and philosophy behind Field Notes Journal — a long-term practice of observation, curiosity, computational natural history and reflective understanding.
 ---
 
 # About Field Notes Journal
 
-Field Notes Journal is a long-term practice of observation, enquiry, and understanding.
+Field Notes Journal is a long-term practice of paying close attention to the natural world.
 
-It began with a simple habit: taking notes about the natural world. Wildlife sightings, weather observations, microscope slides, journeys, museum visits, and everyday encounters all became entries in a growing collection of notebooks and records. Over time, those records revealed something important. Individual observations are valuable, but their greatest value often lies in what they become when they are revisited, compared, analysed, and reflected upon.
+It began with a simple habit: making notes about things I observed. Wildlife sightings, weather, microscope slides, museum visits, landscapes, fossils and everyday encounters gradually accumulated into notebooks, photographs and records. Over time, those observations revealed something important.
 
-This site is the result of that continuing process.
+Individual observations are valuable. Their greatest value, however, often lies in the questions they inspire.
 
-Although the subjects represented here are varied, they are connected by a common approach. Observation leads to recording. Recording allows patterns to emerge. Patterns raise questions. Those questions may lead to further observation, reading, computational modelling, or writing. Reflection then suggests where to look next.
+Some questions can be answered by returning to the field with a notebook. Others require reading, analysis, computational modelling or experimentation. Many evolve gradually over months or years as new observations accumulate.
 
-The work is therefore less about collecting information than about developing understanding. This relationship between learning and doing lies at the heart of the project.
+The result is that projects are rarely planned in advance. Instead, they emerge naturally as one question leads to another. This site is a record of that continuing process.
 
-> Learn enough to make something real. Make something real so you can learn what matters next.
+> _Pay close attention to the natural world, follow the questions honestly, and allow what you learn to change how you see it_
 
-Reading informs observation. Observation suggests experiments. Computational models reveal new questions. Writing clarifies understanding. Each stage prepares the ground for the next.
+That sentence has gradually become the guiding philosophy of Field Notes Journal.
 
-If you’re interested in why this project exists, rather than simply how it works, I’ve written a short personal reflection: [Why I Keep Field Notes](/why/).
+## Curiosity in Practice
 
-## The Practice
+Every project begins with curiosity:
 
-Every project begins with curiosity.
+- Sometimes that curiosity is prompted by a bird seen during a morning walk
+- Sometimes by an unfamiliar plant beneath the microscope
+- Sometimes by a fossil in a museum cabinet or a paragraph in a book that raises an unexpected question
 
-Sometimes that curiosity is prompted by a bird seen during a morning walk. Sometimes by a fossil in a museum, an unfamiliar plant beneath a microscope, a landscape encountered while travelling, or a paragraph in a book that raises an unexpected question.
+What happens next is rarely predictable. Observation raises questions and questions lead to reading that, in turn, suggests new observations.
 
-Some questions can be answered by returning to the field with a notebook. Others require analysis, historical reading, or computational exploration. Many evolve gradually over months or years as new observations accumulate.
+Some questions develop into computational models, software or extended investigations. Others simply deepen my understanding of a familiar place or organism.
 
-The process is deliberately iterative.
+Each project answers some questions while raising others.
+
+Learning is therefore not a straight path but a continuing cycle of observation, enquiry and reflection.
+
+## Observation and Computational Natural History
+
+Observation remains the foundation of Field Notes Journal, but observation is not always sufficient to explain what has been observed.
+
+Some investigations therefore develop into computational models that explore how natural systems behave under different assumptions. These models are not intended to replace observation but to complement it. They provide a way of testing ideas, exploring mechanisms and asking questions that would otherwise remain difficult to investigate.
+
+Projects have explored subjects including shell morphology, stromatolite growth, molecular evolution, phylogenetic reconstruction and ecological pattern.
+
+The objective is always the same:
+
+- Not simply to build software
+- Not simply to produce simulations
+
+But to understand the natural systems that inspired them more clearly.
+
+## A Way of Looking at Nature
+
+Field Notes Journal is built on a simple belief.
+
+> _Every organism has something to teach us if we take the time to observe carefully_
+
+Whether studying microbial mats that transformed Earth's atmosphere billions of years ago, the shell of an ammonite, a dragonfly beside a pond or a modern woodland bird, the aim is the same: to understand each as a living organism - or part of the history of life - exquisitely adapted to its own environment.
+
+That perspective has gradually become one of the most rewarding parts of the project.
+
+The more I learn about the natural world, the more I find myself respecting not only its most spectacular forms, but also its humbler ones. The earliest microbial communities, the simplest plants and the smallest invertebrates are no less remarkable than the largest dinosaurs. Each represents a successful way of living within its own time and place.
+
+Understanding that continuity has changed the way I see the history of life—and my own place within it.
+
+## Method
+
+Although the subjects explored here are diverse, the working method remains broadly consistent.
 
 - Observe carefully
 - Record faithfully
 - Return to earlier observations
 - Look for pattern and change
-- Explore questions through analysis or modelling
-- Document what has been learned
-- Reflect on the process, and begin again
+- Follow the questions wherever they lead
+- Build tools or models where they help answer those questions
+- Document both the process and the conclusions
+- Reflect, then begin again
 
-Publication is therefore not the conclusion of a project, but another stage within an ongoing cycle of enquiry.
-
-## Observation and Computational Natural History
-
-Observation remains the foundation of Field Notes, but observation is not always sufficient to answer the questions it raises.
-
-Some investigations therefore develop into computational models that explore how natural systems might behave under different assumptions. These models are not intended to replace observation, but to complement it. They provide a way of testing ideas, exploring mechanisms, and asking “what if?” questions that would otherwise remain difficult to investigate.
-
-Recent projects have explored subjects including shell morphology, stromatolite growth, ecological pattern, and biological form. In each case, the objective is the same: not simply to produce simulations, but to improve understanding of the natural systems that inspired them.
-
-The models, software, documentation, and interpretations published alongside them are all part of that process.
-
-## Method
-
-Most of the material published here originates from personal observations, field notes, photographs, measurements, or specimens. Other investigations begin with published scientific literature or historical sources before developing into original analyses or computational studies.
-
-Across these different subjects, the working method remains broadly consistent.
-
-- Observations and ideas are recorded as they arise
-- Records are organised so they can be revisited over time
-- Analysis seeks patterns rather than isolated events
-- Where appropriate, computational tools are developed to investigate those patterns further
-- The methods, results, and interpretations are documented together
-- Reflection informs future observations and investigations
-
-Where possible, supporting datasets, notebooks, software, reports, and downloadable publications are made available alongside the work itself.
-
-The intention is not simply to present conclusions, but to make the process of understanding visible.
+Publication is therefore not the end of a project. It is another stage in the process of understanding.
 
 ## Background
 
-My academic background includes degrees in chemistry and mathematics, including a PhD in mathematics. While Field Notes Journal is not intended as a formal scientific publication, that training naturally informs many of the analytical and computational aspects of the work.
+My academic background includes degrees in chemistry and mathematics, including a PhD in mathematics. Although Field Notes Journal is not intended as a formal scientific publication, that training naturally influences the analytical and computational aspects of the work.
 
-Most of the software used throughout the project—including databases, report-generation tools, mapping workflows, visualisations, and computational models—is developed specifically to support the questions being explored. The technology is important, but only as a means of investigation. The purpose of each tool is to help answer a question rather than simply to demonstrate a technical capability.
+Most of the software used throughout the project is developed specifically to investigate questions raised through observation. Databases, visualisations, simulations and interactive tools are all built for the same reason: to understand something in the natural world more completely.
 
-## Why “Field Notes”?
+Technology is never the destination.
 
-The title reflects both the origins of the project and its continuing philosophy.
+It is simply another field notebook.
 
-Traditional field notebooks were never intended merely as diaries. They were working documents: places where observations were recorded, comparisons made, hypotheses formed, and ideas gradually refined through repeated return.
+## Why "Field Notes"?
 
-Field Notes Journal attempts to continue that tradition using contemporary tools. Databases replace card indexes, scripts replace manual tabulation, and interactive visualisations complement hand-drawn charts, but the underlying aim remains unchanged: to pay careful attention, to preserve observations faithfully, and to allow understanding to emerge gradually through sustained enquiry.
+Traditional field notebooks were never intended merely as diaries.
+
+They were working documents where observations were recorded, comparisons made, hypotheses formed and ideas gradually refined through repeated return.
+
+Field Notes Journal attempts to continue that tradition using contemporary tools. Databases replace card indexes, scripts replace manual tabulation and interactive visualisations complement hand-drawn diagrams, but the underlying purpose remains unchanged.
+
+- To observe carefully
+- To preserve observations faithfully
+- To follow the questions honestly
+
+And to allow understanding to emerge gradually through sustained enquiry.
 
 ## The Site
 
-Field Notes Journal is designed to function as both a working notebook and a published archive.
+Field Notes Journal is both a working notebook and a published archive.
 
-Some projects remain short observational notes. Others develop into extended investigations supported by software, datasets, documentation, and downloadable publications. Together they represent an evolving body of work rather than a finished collection.
+Some investigations remain brief observational notes. Others develop into extended studies supported by software, datasets, documentation and downloadable publications.
 
-The site therefore documents not only the natural world, but also the continuing process of learning about it.
+Together they document not only the natural world, but also a continuing process of learning:
 
-Understanding is never complete. Each project answers some questions, raises others, and points towards the next observation waiting to be made.
+- Understanding is never complete
+- Every observation suggests another question
+- Every answer changes the next observation
+
+And so the cycle begins again.
