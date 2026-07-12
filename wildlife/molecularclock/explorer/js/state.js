@@ -29,6 +29,8 @@ export const state = {
  * @returns {void} The shared state is modified in place.
  */
 export function invalidateAfter(stage) {
+  // Results form a dependency chain, so only stages to the right of the
+  // changed stage are stale. The result at `stage` has just been replaced.
   const order = ["simulation", "distance", "reconstruction", "calibration"];
   const start = order.indexOf(stage) + 1;
   for (let i = start; i < order.length; i += 1) state[order[i]] = null;

@@ -6,13 +6,19 @@ import { SeededRandom, walkTree } from "./utilities.js";
  */
 export function runSimulation(settings) {
   validateSettings(settings);
+  // One seeded generator is deliberately shared by topology annotation and
+  // sequence evolution so the complete run is reproducible from one seed.
   const rng = new SeededRandom(settings.seed),
     counter = { node: 0, leaf: 0, taxon: 0 };
   const root = buildTree(settings.maxDepth, counter);
+  // The root supplies both the ancestral sequence and the first rate inherited
+  // by its daughters. Every later annotation is stored on the child branch.
   root.sequence = randomSequence(settings.sequenceLength, rng);
   root.rate = settings.rootRate;
   assignBranches(root, settings, rng);
   evolve(root, root.sequence, settings, rng);
+  // Flatten once to derive all presentation values without walking the tree
+  // independently for every statistic.
   const nodes = walkTree(root),
     branches = nodes.filter((n) => n.parentId),
     rates = branches.map((n) => n.rate),
@@ -40,6 +46,7 @@ export function runSimulation(settings) {
 
 /** Builds a full binary topology with stable educational labels. @param {number} maxDepth Branching depth. @param {object} counter Mutable identifiers. @param {number} depth Current recursion depth. @returns {object} Subtree root. */
 function buildTree(maxDepth, counter, depth = 0) {
+  // Reaching maxDepth terminates recursion and creates a named terminal taxon.
   if (depth === maxDepth)
     return {
       id: `leaf_${++counter.leaf}`,
@@ -55,6 +62,7 @@ function buildTree(maxDepth, counter, depth = 0) {
     children: [],
     mutations: [],
   };
+  // Two recursive calls create the deliberately simple full binary topology.
   node.children = [
     buildTree(maxDepth, counter, depth + 1),
     buildTree(maxDepth, counter, depth + 1),
@@ -65,6 +73,8 @@ function buildTree(maxDepth, counter, depth = 0) {
 /** Assigns duration, autocorrelated rate and genetic length to every branch. @param {object} node Parent node. @param {object} settings Clock settings. @param {SeededRandom} rng Random source. @returns {void} Mutates child annotations. */
 function assignBranches(node, settings, rng) {
   for (const child of node.children) {
+    // Jitter is symmetric around the base duration. Validation guarantees the
+    // lower end remains positive.
     const duration =
       settings.durationJitter === 0
         ? settings.branchDuration
@@ -73,16 +83,22 @@ function assignBranches(node, settings, rng) {
             settings.branchDuration + settings.durationJitter,
           );
     const modifier = rng.lognormal(
+      // This log-space mean makes the multiplier's arithmetic mean equal one,
+      // avoiding systematic rate inflation as rates pass down the tree.
       -0.5 * settings.rateSigma ** 2,
       settings.rateSigma,
     );
     child.parentId = node.id;
     child.duration = duration;
     child.rate = Math.min(
+      // Clamping models explicit biological bounds while retaining parent-to-
+      // child autocorrelation through the inherited rate multiplier.
       settings.maximumRate,
       Math.max(settings.minimumRate, node.rate * modifier),
     );
     child.geneticChange = duration * child.rate;
+    // Rate × elapsed time is expected substitutions per site; multiplying by
+    // alignment length gives the expected number of sequence changes.
     child.expected = settings.sequenceLength * child.geneticChange;
     assignBranches(child, settings, rng);
   }
@@ -94,9 +110,13 @@ function evolve(node, rootSequence, settings, rng) {
     const bases = [...node.sequence],
       events = [],
       probability = 1 - Math.exp(-child.rate * child.duration);
+    // The Poisson no-event probability is exp(-rate × time), hence its
+    // complement is the chance that a site changes on this branch.
     for (let i = 0; i < bases.length; i += 1) {
       if (rng.random() >= probability) continue;
       const candidates = ["A", "C", "G", "T"].filter(
+        // A substitution must change the current state. When reversions are
+        // disabled, the original root state is also excluded.
         (base) =>
           base !== bases[i] &&
           (settings.allowBackMutation || base !== rootSequence[i]),
@@ -111,6 +131,8 @@ function evolve(node, rootSequence, settings, rng) {
       bases[i] = derived;
     }
     child.sequence = bases.join("");
+    // Daughter sequences become parents on the next recursive level, allowing
+    // mutations to accumulate along a lineage.
     child.mutations = events;
     evolve(child, rootSequence, settings, rng);
   }
@@ -119,6 +141,7 @@ function evolve(node, rootSequence, settings, rng) {
 /** Creates a random root DNA sequence. @param {number} length Site count. @param {SeededRandom} rng Random source. @returns {string} Root DNA. */
 function randomSequence(length, rng) {
   let result = "";
+  // Equal sampling of A/C/G/T mirrors the Python explorer's simple root model.
   for (let i = 0; i < length; i += 1)
     result += rng.choice(["A", "C", "G", "T"]);
   return result;
@@ -126,15 +149,18 @@ function randomSequence(length, rng) {
 
 /** Serializes the simulated tree using the selected branch quantity. @param {object} node Current node. @param {string} branchType time, rate or genetic_change. @returns {string} Newick subtree. */
 export function toNewick(node, branchType) {
+  // Internal labels are stable identifiers; leaves retain their taxon names.
   const label = node.children.length ? `internal_${node.id}` : node.name;
   const value =
+    // Newick can expose time, rate, or their product for teaching comparisons.
     branchType === "time"
       ? node.duration
       : branchType === "rate"
         ? node.rate
         : node.geneticChange;
   const branch = node.parentId
-    ? `:${Number(value).toPrecision(10).replace(/0+$/, "").replace(/\.$/, "")}`
+    ? // The root has no incoming branch and therefore receives no branch length.
+      `:${Number(value).toPrecision(10).replace(/0+$/, "").replace(/\.$/, "")}`
     : "";
   return node.children.length
     ? `(${node.children.map((child) => toNewick(child, branchType)).join(",")})${label}${branch}`
@@ -143,6 +169,8 @@ export function toNewick(node, branchType) {
 
 /** Rejects impossible parameter combinations before computation. @param {object} s Settings. @returns {void} Throws a readable error. */
 function validateSettings(s) {
+  // Validate coupled ranges here because native input min/max attributes do not
+  // express relationships such as jitter < duration or min <= root <= max.
   if (s.sequenceLength < 1 || s.maxDepth < 1)
     throw new Error("Sequence length and tree depth must be positive");
   if (

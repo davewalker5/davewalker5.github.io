@@ -8,6 +8,8 @@ import {
 
 /** Calculates a symmetric pairwise evolutionary distance matrix. @param {Object<string,string>} sequences Labelled alignment. @param {string} model Distance model key. @returns {object} Matrix payload. */
 export function calculateDistanceMatrix(sequences, model) {
+  // Evaluate every ordered pair for a straightforward, readable implementation.
+  // The distance functions are symmetric, so the resulting matrix is symmetric too.
   const labels = Object.keys(sequences),
     matrix = labels.map((a) =>
       labels.map((b) => calculateDistance(sequences[a], sequences[b], model)),
@@ -17,6 +19,8 @@ export function calculateDistanceMatrix(sequences, model) {
 
 /** Builds diagnostic values for one taxon pair. @param {Object<string,string>} sequences Sequence mapping. @param {string} a First taxon. @param {string} b Second taxon. @param {string} model Model key. @returns {object} Observed and corrected values. */
 export function pairwiseSummary(sequences, a, b, model) {
+  // Reuse the same primitive calculations as the matrix so the educational
+  // diagnostics cannot drift from the value displayed in its selected cell.
   const first = sequences[a],
     second = sequences[b],
     counts = substitutionCounts(first, second);

@@ -5,6 +5,7 @@ const TRANSITIONS = new Set(["AG", "GA", "CT", "TC"]);
 export function hamming(a, b) {
   validatePair(a, b, false);
   let n = 0;
+  // Hamming distance is a raw count, so every unequal aligned site contributes one.
   for (let i = 0; i < a.length; i += 1) if (a[i] !== b[i]) n += 1;
   return n;
 }
@@ -12,6 +13,7 @@ export function hamming(a, b) {
 export function proportional(a, b) {
   validatePair(a, b, false);
   if (!a.length) throw new Error("Sequences must not be empty");
+  // Dividing by alignment length makes results comparable across datasets.
   return hamming(a, b) / a.length;
 }
 /** Applies the JC69 repeated-substitution correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Substitutions per site or infinity. */
@@ -40,6 +42,7 @@ export function k80(a, b) {
     q = transversions / a.length,
     x = 1 - 2 * p - q,
     y = 1 - 2 * q;
+  // Non-positive logarithm arguments indicate substitution saturation.
   return x <= 0 || y <= 0 ? Infinity : -0.5 * Math.log(x) - 0.25 * Math.log(y);
 }
 /** Estimates pooled nucleotide frequencies. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {Object<string,number>} A/C/G/T frequencies. */
@@ -77,6 +80,7 @@ export function hky85(a, b) {
 
 /** Dispatches a named distance model. @param {string} a First sequence. @param {string} b Second sequence. @param {string} model Model key. @returns {number} Pairwise distance. */
 export function calculateDistance(a, b, model) {
+  // Keeping dispatch in one table makes the matrix algorithm model-agnostic.
   const models = { hamming, proportional, jc69, k80, f81, hky85 };
   if (!models[model]) throw new Error(`Unknown distance model: ${model}`);
   return models[model](a, b);
@@ -84,8 +88,20 @@ export function calculateDistance(a, b, model) {
 
 /** Validates aligned sequences and optional DNA alphabet. @param {string} a First sequence. @param {string} b Second sequence. @param {boolean} dna Require DNA. @returns {void} Throws for invalid input. */
 function validatePair(a, b, dna) {
+  // All models require an alignment; corrected DNA models additionally require
+  // a non-empty canonical nucleotide alphabet.
   if (a.length !== b.length)
     throw new Error("Sequences must have the same length");
   if (dna && (!a.length || [...(a + b)].some((x) => !DNA.has(x))))
     throw new Error("Corrected models require non-empty A/C/G/T sequences");
 }
+// JC69 cannot distinguish finite distances once 75% of sites differ; the
+// logarithm reaches its boundary there, so report saturation explicitly.
+// Purine↔purine and pyrimidine↔pyrimidine changes are transitions;
+// every other unequal DNA pair is a transversion.
+// K80 estimates the two observed proportions separately because transitions
+// and transversions commonly occur at different rates.
+// Pool both taxa so their pairwise correction uses one shared composition.
+// 1 - sum(pi²) is the expected mismatch ceiling under the observed base mix.
+// The composition factor separates purine and pyrimidine mass while p and q
+// retain the observed transition/transversion distinction.
