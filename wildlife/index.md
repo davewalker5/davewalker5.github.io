@@ -1,17 +1,17 @@
 ---
 layout: default
-title: Wildlife Recording and Seasonal Ecology
-description: Wildlife recording, seasonal ecology, bat acoustics, and ecological analyses derived from long-term personal field observations
+title: Wildlife Recording and Computational Natural History
+description: Wildlife recording, computational natural history, ecological modelling, and seasonal interpretation grounded in long-term field observations
 breadcrumb: Wildlife Reports
 ---
 
-# Wildlife Recording and Seasonal Ecology
+# Wildlife Recording and Computational Natural History
 
-This section is built from long-running personal field records - notes of what was seen, where, and when.
+Everything in this section begins with paying attention to the natural world: recording what was seen, where, when, and under what conditions. Long-term field observations remain the foundation of the work.
 
-Over time, those observations accumulate into larger patterns: seasonal structure, ecological recurrence, variation between places, and changing relationships across years. Some sections of the site present the records directly; others explore the patterns and models emerging from them.
+From those observations, the questions gradually become larger. Seasonal patterns emerge, ecological relationships become clearer, and simple records develop into opportunities for interpretation, modelling and experiment. Alongside field notes and species accounts you'll find computational studies of shell growth, stromatolite development, molecular evolution, bat acoustics, and other attempts to understand natural systems by building models of them.
 
-The approach is simple: go out, look carefully, and keep a record.
+The aim is not simply to collect observations, but to use them as the starting point for exploring how nature works—combining careful field recording with computational natural history, while keeping both firmly grounded in observation.
 
 ---
 
