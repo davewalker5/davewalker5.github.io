@@ -9,6 +9,7 @@ export function renderRateChart(root) {
   // exact value needed for comparison and accessibility.
   return `<div class="rate-list">${branches.map((node) => `<div class="rate-row"><span>${escapeHtml(node.name || node.id)}</span><span class="rate-bar"><i style="width:${(100 * node.rate) / maximum}%"></i></span><strong>${formatNumber(node.rate, 5)}</strong></div>`).join("")}</div>`;
 }
+
 /** Render a numeric matrix with value-dependent shading. @param {string[]} labels Labels. @param {number[][]} matrix Values. @returns {string} Accessible table. Finite cells are normalised by the largest value and saturated cells are marked. */
 export function renderMatrix(labels, matrix) {
   // Infinite saturated distances cannot define the colour scale, so calculate

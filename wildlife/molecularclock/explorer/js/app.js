@@ -32,6 +32,7 @@ function initialise() {
   // Seeded defaults provide useful content on first open without requiring a click.
   simulate();
 }
+
 /** Render sidebar controls and bind them to shared settings. @returns {void} Numeric and boolean values retain their semantic types. */
 function controls() {
   // Field metadata keeps labels, bounds, and state keys together so the sidebar
@@ -61,6 +62,7 @@ function controls() {
   });
   sidebar.querySelector("#simulate").onclick = simulate;
 }
+
 /** Run simulation and invalidate dependent stages. @returns {void} Validation errors stay beside the controls. */
 function simulate() {
   const box = sidebar.querySelector("#side-error");
@@ -76,6 +78,7 @@ function simulate() {
     box.hidden = false;
   }
 }
+
 /** Render the active cached workflow stage. @returns {void} */
 function render() {
   // Workspace renderers read shared state and do not recompute upstream stages.
@@ -86,6 +89,7 @@ function render() {
     calibration: calibrationView,
   })[state.activeTab]();
 }
+
 /** Render simulation summary, tree, rates, sequences, and Newick. @returns {void} */
 function simulationView() {
   // All values below come from the cached result of the last explicit simulation.
@@ -102,6 +106,7 @@ function simulationView() {
       "",
     )}</div></article><article class="card"><h3>True tree (Newick)</h3><pre>${escapeHtml(r.newick)}</pre></article>`;
 }
+
 /** Render distance model controls and cached matrix. @returns {void} Changing correction invalidates downstream trees. */
 function distanceView() {
   // Terminal label order is shared by selectors, matrix rows, and reconstruction.
@@ -139,6 +144,7 @@ function distanceView() {
         workspace.querySelector("#results").innerHTML = distanceResults(labels);
     };
 }
+
 /** Build matrix and selected-pair diagnostics. @param {string[]} labels Taxa. @returns {string} Results markup. */
 function distanceResults(labels) {
   if (!state.distance)
@@ -157,6 +163,7 @@ function distanceResults(labels) {
     sat = state.distance.matrix.flat().some((x) => !Number.isFinite(x));
   return `<article class="card"><h3>Evolutionary distances</h3>${renderMatrix(labels, state.distance.matrix)}</article><div class="grid metrics">${metric("Hamming differences", s.hamming)}${metric("Observed p-distance", formatNumber(s.proportional))}${metric("Transitions", s.transitions)}${metric("Transversions", s.transversions)}${metric("Corrected distance", formatNumber(s.corrected))}</div>${sat ? '<div class="info warning">A corrected distance is saturated (∞); use a simpler model or lower-rate simulation before reconstruction.</div>' : ""}`;
 }
+
 /** Render UPGMA and Neighbor Joining reconstruction. @returns {void} */
 function reconstructionView() {
   // Reconstruction depends on finite distances, so an absent matrix is a hard
@@ -190,6 +197,7 @@ function reconstructionView() {
       reconstructionView();
     });
 }
+
 /** Build reconstructed tree and Newick output. @returns {string} Results markup. */
 function treeResults() {
   // Rooted/unrooted is an interpretation of the algorithm; the common renderer
@@ -201,6 +209,7 @@ function treeResults() {
     );
   return `<article class="card"><h3>Reconstructed tree <span class="pill">${state.settings.reconstructionMethod === "upgma" ? "rooted" : "unrooted"}</span></h3><div class="tree-wrap">${renderTree(state.reconstruction)}</div></article><article class="card"><h3>Newick representation</h3><pre>${escapeHtml(clusterToNewick(state.reconstruction))}</pre></article>`;
 }
+
 /** Render single-point calibration controls and assumptions. @returns {void} */
 function calibrationView() {
   // Default to the first two stable taxon labels, then preserve the user's last
@@ -232,6 +241,7 @@ function calibrationView() {
       calibrationView();
     });
 }
+
 /** Build calibrated metrics, tree and Newick. @returns {string} Results markup. */
 function calibrationResults() {
   // Metadata deliberately exposes the intermediate depth and factor, making the
@@ -241,6 +251,7 @@ function calibrationResults() {
   const { tree, metadata: m } = state.calibration;
   return `<div class="grid metrics">${metric("Known age", `${formatNumber(m.calibrationAgeMya, 3)} Mya`)}${metric("Reconstructed depth", formatNumber(m.reconstructedDepth, 6))}${metric("Scale factor", formatNumber(m.scaleFactor, 6))}</div><article class="card"><h3>Calibrated tree</h3><div class="tree-wrap">${renderTree(tree, { units: "million years" })}</div></article><article class="card"><h3>Calibrated Newick</h3><pre>${escapeHtml(calibratedNewick(tree))}</pre></article>`;
 }
+
 /** Run a UI action and show its error locally. @param {Function} action Action. @returns {void} */
 function attempt(action) {
   try {
@@ -251,6 +262,7 @@ function attempt(action) {
       `<div class="info error">${escapeHtml(e.message)}</div>`;
   }
 }
+
 /** Render select options. @param {string[]} values Values. @param {string} selected Selected value. @returns {string} Markup. */
 function options(values, selected) {
   // Labels originate from generated taxa but are escaped to keep this helper safe
@@ -262,11 +274,13 @@ function options(values, selected) {
     )
     .join("");
 }
+
 /** Render a metric. @param {string} label Label. @param {unknown} value Value. @returns {string} Markup. */
 function metric(label, value) {
   // Escape computed values before interpolation into reusable summary cards.
   return `<div class="metric"><span>${label}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
+
 /** Render prerequisite guidance. @param {string} title Heading. @param {string} message Guidance. @returns {string} Markup. */
 function empty(title, message) {
   // Empty states explain the upstream action needed to unlock a workflow stage.

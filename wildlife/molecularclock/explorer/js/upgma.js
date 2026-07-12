@@ -85,6 +85,7 @@ export function clusterToNewick(root) {
   }
   return render(root) + ";";
 }
+
 /** Quotes labels containing Newick punctuation. @param {string} label Taxon label. @returns {string} Safe label. */
 function quote(label) {
   // Newick delimiters and whitespace require apostrophe quoting; embedded

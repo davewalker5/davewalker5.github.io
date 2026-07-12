@@ -127,11 +127,13 @@ function key(a, b) {
   // be confused with a taxon name produced by this explorer.
   return [a.name, b.name].sort().join("\u0000");
 }
+
 /** Stores a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @param {number} value Distance. @returns {void} */
 function setDistance(map, a, b, value) {
   // Centralising map access prevents inconsistent key construction.
   map.set(key(a, b), value);
 }
+
 /** Reads a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @returns {number} Stored distance. */
 function getDistance(map, a, b) {
   // A missing value indicates an internal algorithm error and naturally
