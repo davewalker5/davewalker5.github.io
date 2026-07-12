@@ -4,10 +4,13 @@
 /** Deterministic small pseudo-random generator suitable for repeatable teaching runs. */
 class SeededRandom {
   constructor(seed) {
+    // Coerce the user seed into the unsigned 32-bit state expected by Mulberry32.
     this.value = (Number(seed) || 0) >>> 0;
     this.spare = null;
   }
   random() {
+    // Mulberry32 combines shifts and integer multiplication into a compact,
+    // deterministic generator suitable for simulation demonstrations.
     this.value = (this.value + 0x6d2b79f5) >>> 0;
     let t = this.value;
     t = Math.imul(t ^ (t >>> 15), t | 1);
@@ -15,13 +18,17 @@ class SeededRandom {
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   }
   uniform(a, b) {
+    // Affine scaling maps the generator's [0, 1) output onto [a, b).
     return a + (b - a) * this.random();
   }
   choice(items) {
+    // Every array slot receives an equal-width interval of random values.
     return items[Math.floor(this.random() * items.length)];
   }
   normal() {
     if (this.spare !== null) {
+      // Box-Muller produces two independent normal values; cache one to avoid
+      // repeating its logarithm and trigonometric work on the next request.
       const value = this.spare;
       this.spare = null;
       return value;
@@ -30,11 +37,13 @@ class SeededRandom {
       v = 0;
     while (u === 0) u = this.random();
     while (v === 0) v = this.random();
+    // Zero is rejected because log(0) is undefined in the Box-Muller transform.
     const mag = Math.sqrt(-2 * Math.log(u));
     this.spare = mag * Math.sin(2 * Math.PI * v);
     return mag * Math.cos(2 * Math.PI * v);
   }
   lognormal(mu, sigma) {
+    // Exponentiating a normal variate produces a positive lognormal multiplier.
     return Math.exp(mu + sigma * this.normal());
   }
 }
@@ -44,6 +53,7 @@ class SeededRandom {
  * @returns {string} HTML-safe text.
  */
 function escapeHtml(value) {
+  // Replace the five characters that can alter HTML text or attribute syntax.
   return String(value).replace(
     /[&<>'"]/g,
     (c) =>
@@ -59,6 +69,8 @@ function escapeHtml(value) {
  * @returns {string} Compact display value.
  */
 function formatNumber(value, digits = 5) {
+  // Corrected distances may saturate mathematically; show infinity explicitly
+  // instead of leaking JavaScript's string representation into the interface.
   return Number.isFinite(value)
     ? Number(value).toFixed(digits).replace(/0+$/, "").replace(/\.$/, "")
     : "∞";
@@ -70,6 +82,7 @@ function formatNumber(value, digits = 5) {
  */
 function walkTree(root) {
   const nodes = [root];
+  // Pre-order recursion preserves the simulator's deterministic left-to-right order.
   for (const child of root.children || []) nodes.push(...walkTree(child));
   return nodes;
 }
@@ -106,6 +119,8 @@ const state = {
  * @returns {void} The shared state is modified in place.
  */
 function invalidateAfter(stage) {
+  // Results form a dependency chain, so only stages to the right of the
+  // changed stage are stale. The result at `stage` has just been replaced.
   const order = ["simulation", "distance", "reconstruction", "calibration"];
   const start = order.indexOf(stage) + 1;
   for (let i = start; i < order.length; i += 1) state[order[i]] = null;
@@ -119,6 +134,7 @@ const TRANSITIONS = new Set(["AG", "GA", "CT", "TC"]);
 function hamming(a, b) {
   validatePair(a, b, false);
   let n = 0;
+  // Hamming distance is a raw count, so every unequal aligned site contributes one.
   for (let i = 0; i < a.length; i += 1) if (a[i] !== b[i]) n += 1;
   return n;
 }
@@ -126,6 +142,7 @@ function hamming(a, b) {
 function proportional(a, b) {
   validatePair(a, b, false);
   if (!a.length) throw new Error("Sequences must not be empty");
+  // Dividing by alignment length makes results comparable across datasets.
   return hamming(a, b) / a.length;
 }
 /** Applies the JC69 repeated-substitution correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Substitutions per site or infinity. */
@@ -154,6 +171,7 @@ function k80(a, b) {
     q = transversions / a.length,
     x = 1 - 2 * p - q,
     y = 1 - 2 * q;
+  // Non-positive logarithm arguments indicate substitution saturation.
   return x <= 0 || y <= 0 ? Infinity : -0.5 * Math.log(x) - 0.25 * Math.log(y);
 }
 /** Estimates pooled nucleotide frequencies. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {Object<string,number>} A/C/G/T frequencies. */
@@ -191,6 +209,7 @@ function hky85(a, b) {
 
 /** Dispatches a named distance model. @param {string} a First sequence. @param {string} b Second sequence. @param {string} model Model key. @returns {number} Pairwise distance. */
 function calculateDistance(a, b, model) {
+  // Keeping dispatch in one table makes the matrix algorithm model-agnostic.
   const models = { hamming, proportional, jc69, k80, f81, hky85 };
   if (!models[model]) throw new Error(`Unknown distance model: ${model}`);
   return models[model](a, b);
@@ -198,15 +217,29 @@ function calculateDistance(a, b, model) {
 
 /** Validates aligned sequences and optional DNA alphabet. @param {string} a First sequence. @param {string} b Second sequence. @param {boolean} dna Require DNA. @returns {void} Throws for invalid input. */
 function validatePair(a, b, dna) {
+  // All models require an alignment; corrected DNA models additionally require
+  // a non-empty canonical nucleotide alphabet.
   if (a.length !== b.length)
     throw new Error("Sequences must have the same length");
   if (dna && (!a.length || [...(a + b)].some((x) => !DNA.has(x))))
     throw new Error("Corrected models require non-empty A/C/G/T sequences");
 }
+// JC69 cannot distinguish finite distances once 75% of sites differ; the
+// logarithm reaches its boundary there, so report saturation explicitly.
+// Purine↔purine and pyrimidine↔pyrimidine changes are transitions;
+// every other unequal DNA pair is a transversion.
+// K80 estimates the two observed proportions separately because transitions
+// and transversions commonly occur at different rates.
+// Pool both taxa so their pairwise correction uses one shared composition.
+// 1 - sum(pi²) is the expected mismatch ceiling under the observed base mix.
+// The composition factor separates purine and pyrimidine mass while p and q
+// retain the observed transition/transversion distinction.
 
 /* js/distance_matrix.js */
 /** Calculates a symmetric pairwise evolutionary distance matrix. @param {Object<string,string>} sequences Labelled alignment. @param {string} model Distance model key. @returns {object} Matrix payload. */
 function calculateDistanceMatrix(sequences, model) {
+  // Evaluate every ordered pair for a straightforward, readable implementation.
+  // The distance functions are symmetric, so the resulting matrix is symmetric too.
   const labels = Object.keys(sequences),
     matrix = labels.map((a) =>
       labels.map((b) => calculateDistance(sequences[a], sequences[b], model)),
@@ -216,6 +249,8 @@ function calculateDistanceMatrix(sequences, model) {
 
 /** Builds diagnostic values for one taxon pair. @param {Object<string,string>} sequences Sequence mapping. @param {string} a First taxon. @param {string} b Second taxon. @param {string} model Model key. @returns {object} Observed and corrected values. */
 function pairwiseSummary(sequences, a, b, model) {
+  // Reuse the same primitive calculations as the matrix so the educational
+  // diagnostics cannot drift from the value displayed in its selected cell.
   const first = sequences[a],
     second = sequences[b],
     counts = substitutionCounts(first, second);
@@ -254,10 +289,14 @@ const MODEL_EXPLANATIONS = {
 /** Reconstructs a rooted ultrametric tree with UPGMA. @param {string[]} labels Taxa. @param {number[][]} matrix Symmetric distances. @returns {object} Root cluster. */
 function upgma(labels, matrix) {
   validateMatrix(labels, matrix);
+  // Begin with one zero-height cluster per taxon. Sorting provides deterministic
+  // output when two or more candidate pairs have exactly the same distance.
   let clusters = [...labels]
     .sort()
     .map((name) => ({ name, members: [name], height: 0, children: [] }));
   while (clusters.length > 1) {
+    // UPGMA considers every active pair and joins the pair with the smallest
+    // mean distance across their original descendant taxa.
     const candidates = [];
     for (let i = 0; i < clusters.length; i += 1)
       for (let j = i + 1; j < clusters.length; j += 1)
@@ -274,6 +313,8 @@ function upgma(labels, matrix) {
       [left, right] = [a, b].sort((x, y) => x.name.localeCompare(y.name)),
       height = distance / 2,
       members = [...left.members, ...right.members].sort();
+    // An ultrametric parent sits at half the inter-cluster distance. Subtracting
+    // each child's existing height converts that absolute height to a branch length.
     const merged = {
       name: members.join("+"),
       members,
@@ -284,6 +325,7 @@ function upgma(labels, matrix) {
       ],
     };
     clusters = clusters
+      // Replace the selected pair with their parent and repeat until one root remains.
       .filter((c) => c !== a && c !== b)
       .concat(merged)
       .sort((x, y) => x.name.localeCompare(y.name));
@@ -306,6 +348,8 @@ function clusterDistance(a, b, labels, matrix) {
 
 /** Validates reconstruction input. @param {string[]} labels Taxa. @param {number[][]} matrix Distances. @returns {void} Throws on invalid data. */
 function validateMatrix(labels, matrix) {
+  // Reconstruction is undefined for saturated, negative, or asymmetric input,
+  // so reject it before an iterative algorithm can produce a misleading tree.
   if (labels.length < 2 || matrix.length !== labels.length)
     throw new Error("A square matrix with at least two taxa is required");
   for (let i = 0; i < labels.length; i += 1)
@@ -323,6 +367,7 @@ function validateMatrix(labels, matrix) {
 /** Serializes any reconstruction cluster to Newick. @param {object} root Root cluster. @returns {string} Semicolon-terminated Newick. */
 function clusterToNewick(root) {
   function render(node) {
+    // Post-order recursion serializes children before their enclosing parent.
     if (!node.children.length) return quote(node.name);
     return `(${node.children.map((child) => `${render(child.node)}:${child.length.toFixed(6)}`).join(",")})`;
   }
@@ -330,20 +375,27 @@ function clusterToNewick(root) {
 }
 /** Quotes labels containing Newick punctuation. @param {string} label Taxon label. @returns {string} Safe label. */
 function quote(label) {
+  // Newick delimiters and whitespace require apostrophe quoting; embedded
+  // apostrophes are escaped by doubling them.
   return /[\s(),:;\[\]']/.test(label)
     ? `'${label.replaceAll("'", "''")}'`
     : label;
 }
+// Averaging all original cross-cluster cells automatically weights larger
+// clusters by their number of taxa, as required by UPGMA.
 
 /* js/neighbour_joining.js */
 /** Reconstructs a distance tree with Neighbor Joining. @param {string[]} labels Taxa. @param {number[][]} matrix Symmetric distances. @returns {object} Unrooted central cluster representation. */
 function neighbourJoining(labels, matrix) {
   validateMatrix(labels, matrix);
+  // Store only one value per unordered cluster pair. Stable cluster names make
+  // the map compact and deterministic throughout repeated joins.
   let clusters = [...labels]
       .sort()
       .map((name) => ({ name, members: [name], height: 0, children: [] })),
     distances = new Map();
   const index = Object.fromEntries(labels.map((x, i) => [x, i]));
+  // Seed the active distance map from the user-visible input matrix.
   for (let i = 0; i < clusters.length; i += 1)
     for (let j = i + 1; j < clusters.length; j += 1)
       setDistance(
@@ -353,6 +405,8 @@ function neighbourJoining(labels, matrix) {
         matrix[index[clusters[i].name]][index[clusters[j].name]],
       );
   while (clusters.length > 3) {
+    // Each row total measures how far a cluster lies from all other active
+    // clusters and is used to remove this global divergence from pair choice.
     const totals = Object.fromEntries(
       clusters.map((a) => [
         a.name,
@@ -362,6 +416,8 @@ function neighbourJoining(labels, matrix) {
       ]),
     );
     const pairs = [];
+    // The Q criterion favours pairs that are close to each other relative to
+    // their total distances from the rest of the tree.
     for (let i = 0; i < clusters.length; i += 1)
       for (let j = i + 1; j < clusters.length; j += 1)
         pairs.push({
@@ -378,6 +434,8 @@ function neighbourJoining(labels, matrix) {
     let { a, b } = pairs[0];
     [a, b] = [a, b].sort((x, y) => x.name.localeCompare(y.name));
     const d = getDistance(distances, a, b),
+      // NJ permits unequal child branches; the row-total difference allocates
+      // the observed pair distance between the two children.
       left =
         0.5 * d +
         (totals[a.name] - totals[b.name]) / (2 * (clusters.length - 2)),
@@ -393,6 +451,7 @@ function neighbourJoining(labels, matrix) {
       },
       remaining = clusters.filter((c) => c !== a && c !== b),
       next = new Map();
+    // Distances among unaffected clusters carry forward unchanged.
     for (let i = 0; i < remaining.length; i += 1)
       for (let j = i + 1; j < remaining.length; j += 1)
         setDistance(
@@ -401,6 +460,8 @@ function neighbourJoining(labels, matrix) {
           remaining[j],
           getDistance(distances, remaining[i], remaining[j]),
         );
+    // The NJ reduction formula gives each remaining cluster's distance to the
+    // newly created internal node without cluster-size weighting.
     for (const c of remaining)
       setDistance(
         next,
@@ -414,6 +475,7 @@ function neighbourJoining(labels, matrix) {
     distances = next;
   }
   if (clusters.length === 2) {
+    // Two-taxon input has no Q-matrix iteration, so connect both at the midpoint.
     const [a, b] = clusters,
       d = getDistance(distances, a, b);
     return {
@@ -430,6 +492,8 @@ function neighbourJoining(labels, matrix) {
     dab = getDistance(distances, a, b),
     dac = getDistance(distances, a, c),
     dbc = getDistance(distances, b, c);
+  // With three clusters remaining, the three pairwise equations uniquely
+  // determine their branches to one unrooted central node.
   return {
     name: labels.slice().sort().join("+"),
     members: labels.slice().sort(),
@@ -444,14 +508,19 @@ function neighbourJoining(labels, matrix) {
 
 /** Creates a stable unordered cluster key. @param {object} a First cluster. @param {object} b Second cluster. @returns {string} Map key. */
 function key(a, b) {
+  // Sorting makes lookup independent of caller order; the NUL separator cannot
+  // be confused with a taxon name produced by this explorer.
   return [a.name, b.name].sort().join("\u0000");
 }
 /** Stores a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @param {number} value Distance. @returns {void} */
 function setDistance(map, a, b, value) {
+  // Centralising map access prevents inconsistent key construction.
   map.set(key(a, b), value);
 }
 /** Reads a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @returns {number} Stored distance. */
 function getDistance(map, a, b) {
+  // A missing value indicates an internal algorithm error and naturally
+  // propagates into validation rather than being silently treated as zero.
   return map.get(key(a, b));
 }
 
@@ -462,13 +531,19 @@ function getDistance(map, a, b) {
  */
 function runSimulation(settings) {
   validateSettings(settings);
+  // One seeded generator is deliberately shared by topology annotation and
+  // sequence evolution so the complete run is reproducible from one seed.
   const rng = new SeededRandom(settings.seed),
     counter = { node: 0, leaf: 0, taxon: 0 };
   const root = buildTree(settings.maxDepth, counter);
+  // The root supplies both the ancestral sequence and the first rate inherited
+  // by its daughters. Every later annotation is stored on the child branch.
   root.sequence = randomSequence(settings.sequenceLength, rng);
   root.rate = settings.rootRate;
   assignBranches(root, settings, rng);
   evolve(root, root.sequence, settings, rng);
+  // Flatten once to derive all presentation values without walking the tree
+  // independently for every statistic.
   const nodes = walkTree(root),
     branches = nodes.filter((n) => n.parentId),
     rates = branches.map((n) => n.rate),
@@ -496,6 +571,7 @@ function runSimulation(settings) {
 
 /** Builds a full binary topology with stable educational labels. @param {number} maxDepth Branching depth. @param {object} counter Mutable identifiers. @param {number} depth Current recursion depth. @returns {object} Subtree root. */
 function buildTree(maxDepth, counter, depth = 0) {
+  // Reaching maxDepth terminates recursion and creates a named terminal taxon.
   if (depth === maxDepth)
     return {
       id: `leaf_${++counter.leaf}`,
@@ -511,6 +587,7 @@ function buildTree(maxDepth, counter, depth = 0) {
     children: [],
     mutations: [],
   };
+  // Two recursive calls create the deliberately simple full binary topology.
   node.children = [
     buildTree(maxDepth, counter, depth + 1),
     buildTree(maxDepth, counter, depth + 1),
@@ -521,6 +598,8 @@ function buildTree(maxDepth, counter, depth = 0) {
 /** Assigns duration, autocorrelated rate and genetic length to every branch. @param {object} node Parent node. @param {object} settings Clock settings. @param {SeededRandom} rng Random source. @returns {void} Mutates child annotations. */
 function assignBranches(node, settings, rng) {
   for (const child of node.children) {
+    // Jitter is symmetric around the base duration. Validation guarantees the
+    // lower end remains positive.
     const duration =
       settings.durationJitter === 0
         ? settings.branchDuration
@@ -529,16 +608,22 @@ function assignBranches(node, settings, rng) {
             settings.branchDuration + settings.durationJitter,
           );
     const modifier = rng.lognormal(
+      // This log-space mean makes the multiplier's arithmetic mean equal one,
+      // avoiding systematic rate inflation as rates pass down the tree.
       -0.5 * settings.rateSigma ** 2,
       settings.rateSigma,
     );
     child.parentId = node.id;
     child.duration = duration;
     child.rate = Math.min(
+      // Clamping models explicit biological bounds while retaining parent-to-
+      // child autocorrelation through the inherited rate multiplier.
       settings.maximumRate,
       Math.max(settings.minimumRate, node.rate * modifier),
     );
     child.geneticChange = duration * child.rate;
+    // Rate × elapsed time is expected substitutions per site; multiplying by
+    // alignment length gives the expected number of sequence changes.
     child.expected = settings.sequenceLength * child.geneticChange;
     assignBranches(child, settings, rng);
   }
@@ -550,9 +635,13 @@ function evolve(node, rootSequence, settings, rng) {
     const bases = [...node.sequence],
       events = [],
       probability = 1 - Math.exp(-child.rate * child.duration);
+    // The Poisson no-event probability is exp(-rate × time), hence its
+    // complement is the chance that a site changes on this branch.
     for (let i = 0; i < bases.length; i += 1) {
       if (rng.random() >= probability) continue;
       const candidates = ["A", "C", "G", "T"].filter(
+        // A substitution must change the current state. When reversions are
+        // disabled, the original root state is also excluded.
         (base) =>
           base !== bases[i] &&
           (settings.allowBackMutation || base !== rootSequence[i]),
@@ -567,6 +656,8 @@ function evolve(node, rootSequence, settings, rng) {
       bases[i] = derived;
     }
     child.sequence = bases.join("");
+    // Daughter sequences become parents on the next recursive level, allowing
+    // mutations to accumulate along a lineage.
     child.mutations = events;
     evolve(child, rootSequence, settings, rng);
   }
@@ -575,6 +666,7 @@ function evolve(node, rootSequence, settings, rng) {
 /** Creates a random root DNA sequence. @param {number} length Site count. @param {SeededRandom} rng Random source. @returns {string} Root DNA. */
 function randomSequence(length, rng) {
   let result = "";
+  // Equal sampling of A/C/G/T mirrors the Python explorer's simple root model.
   for (let i = 0; i < length; i += 1)
     result += rng.choice(["A", "C", "G", "T"]);
   return result;
@@ -582,15 +674,18 @@ function randomSequence(length, rng) {
 
 /** Serializes the simulated tree using the selected branch quantity. @param {object} node Current node. @param {string} branchType time, rate or genetic_change. @returns {string} Newick subtree. */
 function toNewick(node, branchType) {
+  // Internal labels are stable identifiers; leaves retain their taxon names.
   const label = node.children.length ? `internal_${node.id}` : node.name;
   const value =
+    // Newick can expose time, rate, or their product for teaching comparisons.
     branchType === "time"
       ? node.duration
       : branchType === "rate"
         ? node.rate
         : node.geneticChange;
   const branch = node.parentId
-    ? `:${Number(value).toPrecision(10).replace(/0+$/, "").replace(/\.$/, "")}`
+    ? // The root has no incoming branch and therefore receives no branch length.
+      `:${Number(value).toPrecision(10).replace(/0+$/, "").replace(/\.$/, "")}`
     : "";
   return node.children.length
     ? `(${node.children.map((child) => toNewick(child, branchType)).join(",")})${label}${branch}`
@@ -599,6 +694,8 @@ function toNewick(node, branchType) {
 
 /** Rejects impossible parameter combinations before computation. @param {object} s Settings. @returns {void} Throws a readable error. */
 function validateSettings(s) {
+  // Validate coupled ranges here because native input min/max attributes do not
+  // express relationships such as jitter < duration or min <= root <= max.
   if (s.sequenceLength < 1 || s.maxDepth < 1)
     throw new Error("Sequence length and tree depth must be positive");
   if (
@@ -622,16 +719,21 @@ function validateSettings(s) {
 /* js/calibration.js */
 /** Calibrates all reconstruction branches from the known age of one MRCA. @param {object} root Reconstruction cluster. @param {string[]} taxa Two or more descendant taxa. @param {number} ageMya Known MRCA age. @returns {object} Calibrated copy and metadata. */
 function calibrateTree(root, taxa, ageMya) {
+  // A calibration point needs at least two distinct descendants and a positive age.
   if (new Set(taxa).size < 2 || !Number.isFinite(ageMya) || ageMya <= 0)
     throw new Error("Choose two different taxa and a positive calibration age");
   const mrca = findMrca(root, new Set(taxa)),
     depths = taxa.map((t) => distanceToTaxon(mrca, t));
   if (depths.some((x) => x === null))
     throw new Error("Calibration taxa were not found below a unique MRCA");
+  // An ultrametric tree gives identical descendant paths. Their mean is also a
+  // transparent approximation for non-ultrametric NJ reconstructions.
   const reconstructedDepth = depths.reduce((a, b) => a + b, 0) / depths.length;
   if (reconstructedDepth <= 0)
     throw new Error("Calibration node depth must be greater than zero");
   const scaleFactor = ageMya / reconstructedDepth,
+    // Clone while scaling so the original reconstructed tree remains available
+    // for comparison in the preceding workspace.
     tree = scaleTree(root, scaleFactor);
   return {
     tree,
@@ -649,14 +751,18 @@ function calibrateTree(root, taxa, ageMya) {
 function findMrca(node, taxa) {
   for (const child of node.children) {
     const names = new Set(child.node.members);
+    // Descend only while one child still contains every requested taxon. The
+    // first node where no child qualifies is their smallest shared subtree.
     if ([...taxa].every((x) => names.has(x))) return findMrca(child.node, taxa);
   }
   return node;
 }
 /** Measures path length from a cluster to a leaf. @param {object} node Starting cluster. @param {string} taxon Leaf label. @param {number} distance Accumulated length. @returns {number|null} Path length. */
 function distanceToTaxon(node, taxon, distance = 0) {
+  // Reaching a leaf resolves this search path; a different leaf is a dead end.
   if (!node.children.length) return node.name === taxon ? distance : null;
   for (const child of node.children) {
+    // Branch lengths are stored on child wrappers, so add before descending.
     const found = distanceToTaxon(child.node, taxon, distance + child.length);
     if (found !== null) return found;
   }
@@ -664,6 +770,8 @@ function distanceToTaxon(node, taxon, distance = 0) {
 }
 /** Deep-copies a tree and scales all child branches. @param {object} node Current cluster. @param {number} factor Scale factor. @returns {object} Calibrated clone. */
 function scaleTree(node, factor) {
+  // Spread scalar node metadata, copy the members array, and recursively create
+  // new edge wrappers so no object in the input tree is mutated.
   return {
     ...node,
     members: [...node.members],
@@ -678,23 +786,32 @@ function scaleTree(node, factor) {
 /** Serializes a cluster with calibrated precision. @param {object} root Tree root. @returns {string} Newick document. */
 function calibratedNewick(root) {
   function render(node) {
+    // Leaves contribute labels; internal nodes recursively enclose their children.
     if (!node.children.length) return node.name;
+    // Twelve significant digits match the Python calibration serializer closely
+    // while trimming insignificant trailing zeroes for readable output.
     return `(${node.children.map((child) => `${render(child.node)}:${child.length.toPrecision(12).replace(/0+$/, "").replace(/\.$/, "")}`).join(",")})`;
   }
+  // A semicolon terminates a complete Newick document.
   return render(root) + ";";
 }
 
 /* js/tree_renderer.js */
 /** Render a responsive rectangular phylogram. @param {object} root Tree root. @param {object} options Metric and description. @returns {string} Accessible SVG. The algorithm places leaves in rows, centres parents, and scales x by cumulative branch length. */
 function renderTree(root, options = {}) {
+  // A fixed viewBox keeps geometry predictable while CSS scales the SVG to its card.
   const width = 1200,
     leaves = leafNodes(root),
     height = Math.max(220, 70 + (leaves.length - 1) * 58),
     positions = new Map(),
     distances = new Map([[root, 0]]);
+  // Horizontal position represents accumulated evolutionary distance rather
+  // than topology alone, producing a true rectangular phylogram.
   assignDistances(root, distances, options);
   const maximum = Math.max(...distances.values(), 1e-12),
     drawable = 984;
+  // Leaves receive evenly spaced rows. Internal y positions cannot be computed
+  // until these terminal anchors exist.
   leaves.forEach((leaf, index) =>
     positions.set(leaf, {
       x: 36 + (distances.get(leaf) / maximum) * drawable,
@@ -703,6 +820,8 @@ function renderTree(root, options = {}) {
   );
   assignParents(root, positions, distances, maximum, drawable);
   const branches = [];
+  // Draw each edge as a vertical connector followed by a horizontal branch;
+  // labels sit halfway along the horizontal, length-bearing portion.
   for (const parent of nodes(root))
     for (const edge of edges(parent, options)) {
       const a = positions.get(parent),
@@ -718,11 +837,14 @@ function renderTree(root, options = {}) {
   });
   const description =
     options.description || `Tree scaled by ${options.units || "branch length"}`;
+  // All labels are escaped because SVG text is parsed as markup like ordinary HTML.
   return `<svg class="tree-svg" viewBox="0 0 ${width} ${height}" role="img" aria-label="${escapeHtml(description)}"><title>${escapeHtml(description)}</title>${branches.join("")}${points.join("")}</svg>`;
 }
 
 /** Normalise child representations. @param {object} node Parent. @param {object} options Metric choice. @returns {object[]} Child edges. Reconstruction stores wrappers; simulation stores annotations on nodes. */
 function edges(node, options = {}) {
+  // Reconstruction algorithms use {node, length} edge wrappers, whereas the
+  // simulator stores incoming branch annotations directly on child nodes.
   return (node.children || []).map((child) =>
     child.node
       ? child
@@ -731,6 +853,8 @@ function edges(node, options = {}) {
 }
 /** Select a simulated branch quantity. @param {object} node Child node. @param {string} metric Quantity name. @returns {number} Drawing length. */
 function simulatedLength(node, metric = "genetic_change") {
+  // Clamp only missing or negative display quantities; valid simulation branch
+  // values are non-negative and reconstruction edges bypass this helper.
   return Math.max(
     0,
     Number(
@@ -744,11 +868,13 @@ function simulatedLength(node, metric = "genetic_change") {
 }
 /** Traverse nodes parent first. @param {object} root Root. @returns {object[]} Flattened tree. */
 function nodes(root) {
+  // Pre-order traversal is sufficient because rendering uses stored coordinates.
   return [root, ...edges(root).flatMap((edge) => nodes(edge.node))];
 }
 /** Collect leaves in deterministic child order. @param {object} root Root. @returns {object[]} Leaves. */
 function leafNodes(root) {
   const children = edges(root);
+  // Preserving child order keeps taxon rows stable across redraws.
   return children.length
     ? children.flatMap((edge) => leafNodes(edge.node))
     : [root];
@@ -756,6 +882,7 @@ function leafNodes(root) {
 /** Accumulate root-to-node distances. @param {object} node Parent. @param {Map} distances Output. @param {object} options Metric choice. @returns {void} */
 function assignDistances(node, distances, options) {
   for (const edge of edges(node, options)) {
+    // A child's root distance equals its parent's distance plus its incoming edge.
     distances.set(edge.node, distances.get(node) + edge.length);
     assignDistances(edge.node, distances, options);
   }
@@ -769,22 +896,30 @@ function assignParents(node, positions, distances, maximum, drawable) {
     ),
     y = ys.reduce((a, b) => a + b, 0) / ys.length;
   positions.set(node, {
+    // Internal x follows the same cumulative-distance scale used for leaves.
     x: 36 + (distances.get(node) / maximum) * drawable,
     y,
   });
   return y;
 }
+// Post-order recursion ensures every child y-coordinate exists before its parent.
 
 /* js/charts.js */
 /** Render lineage rates as horizontal bars. @param {object} root Simulated root. @returns {string} HTML chart. Each bar is normalised to the largest observed rate. */
 function renderRateChart(root) {
+  // The root has no incoming branch, so omit it from the lineage-rate chart.
   const branches = walkTree(root).filter((node) => node.parentId),
     maximum = Math.max(...branches.map((node) => node.rate), 1e-12);
+  // Width communicates relative rate while the adjacent number preserves the
+  // exact value needed for comparison and accessibility.
   return `<div class="rate-list">${branches.map((node) => `<div class="rate-row"><span>${escapeHtml(node.name || node.id)}</span><span class="rate-bar"><i style="width:${(100 * node.rate) / maximum}%"></i></span><strong>${formatNumber(node.rate, 5)}</strong></div>`).join("")}</div>`;
 }
 /** Render a numeric matrix with value-dependent shading. @param {string[]} labels Labels. @param {number[][]} matrix Values. @returns {string} Accessible table. Finite cells are normalised by the largest value and saturated cells are marked. */
 function renderMatrix(labels, matrix) {
+  // Infinite saturated distances cannot define the colour scale, so calculate
+  // its maximum from finite cells only and style saturation separately.
   const maximum = Math.max(...matrix.flat().filter(Number.isFinite), 1e-12);
+  // Both row and column headers are retained to make symmetry visually explicit.
   return `<div class="table-scroll"><table><thead><tr><th>Taxon</th>${labels.map((x) => `<th>${escapeHtml(x)}</th>`).join("")}</tr></thead><tbody>${matrix.map((row, i) => `<tr><td>${escapeHtml(labels[i])}</td>${row.map((value) => `<td class="heat ${Number.isFinite(value) ? "" : "saturated"}" style="background:rgba(37,99,235,${Number.isFinite(value) ? 0.08 + (0.42 * value) / maximum : 0.55})">${formatNumber(value, 5)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>`;
 }
 
@@ -793,6 +928,8 @@ const workspace = document.querySelector("#workspace"),
   sidebar = document.querySelector("#sidebar-controls");
 /** Start the explorer and attach tab navigation. @returns {void} A default seeded run makes the workflow immediately usable. */
 function initialise() {
+  // One delegated listener handles all tab buttons and keeps the active styling
+  // in sync with the workspace selected in shared state.
   document.querySelector(".tabs").onclick = (e) => {
     const b = e.target.closest("[data-tab]");
     if (!b) return;
@@ -803,10 +940,13 @@ function initialise() {
     render();
   };
   controls();
+  // Seeded defaults provide useful content on first open without requiring a click.
   simulate();
 }
 /** Render sidebar controls and bind them to shared settings. @returns {void} Numeric and boolean values retain their semantic types. */
 function controls() {
+  // Field metadata keeps labels, bounds, and state keys together so the sidebar
+  // remains easy to compare with the simulator configuration.
   const fields = [
     ["Sequence length", "sequenceLength", 100, 5000, 100],
     ["Tree depth", "maxDepth", 1, 5, 1],
@@ -836,17 +976,20 @@ function controls() {
 function simulate() {
   const box = sidebar.querySelector("#side-error");
   try {
+    // A successful upstream run makes every cached downstream result obsolete.
     state.simulation = runSimulation(state.settings);
     invalidateAfter("simulation");
     box.hidden = true;
     render();
   } catch (e) {
+    // Keep parameter errors beside the inputs instead of interrupting with an alert.
     box.textContent = e.message;
     box.hidden = false;
   }
 }
 /** Render the active cached workflow stage. @returns {void} */
 function render() {
+  // Workspace renderers read shared state and do not recompute upstream stages.
   ({
     simulation: simulationView,
     distance: distanceView,
@@ -856,6 +999,7 @@ function render() {
 }
 /** Render simulation summary, tree, rates, sequences, and Newick. @returns {void} */
 function simulationView() {
+  // All values below come from the cached result of the last explicit simulation.
   const r = state.simulation,
     s = r.summary;
   workspace.innerHTML = `<h2 class="section-title">Simulation</h2><p class="section-lead">A full binary history with autocorrelated lognormal lineage rates.</p><div class="grid metrics">${metric("Terminal taxa", s.terminalTaxa)}${metric("Sequence length", s.sequenceLength)}${metric("Mean rate", formatNumber(s.meanRate, 5))}${metric("Observed mutations", s.observed)}</div><div class="grid two-col"><article class="card"><h3>Simulated phylogeny <span class="pill">${state.settings.branchLengths.replace("_", " ")}</span></h3><div class="tree-wrap">${renderTree(r.root, { metric: state.settings.branchLengths })}</div></article><article class="card"><h3>Branch rates</h3>${renderRateChart(r.root)}</article></div><article class="card"><h3>Terminal sequences</h3><div class="sequence-list">${Object.entries(
@@ -871,6 +1015,7 @@ function simulationView() {
 }
 /** Render distance model controls and cached matrix. @returns {void} Changing correction invalidates downstream trees. */
 function distanceView() {
+  // Terminal label order is shared by selectors, matrix rows, and reconstruction.
   const labels = Object.keys(state.simulation.sequences);
   workspace.innerHTML = `<h2 class="section-title">Distance Matrix</h2><p class="section-lead">Compare aligned sequences and correct for hidden substitutions.</p><article class="card"><div class="inline-fields"><label class="field"><span>Correction model</span><select id="model">${Object.entries(
     MODEL_LABELS,
@@ -883,6 +1028,7 @@ function distanceView() {
       "",
     )}</select></label><label class="field"><span>First taxon</span><select id="a">${options(labels, labels[0])}</select></label><label class="field"><span>Second taxon</span><select id="b">${options(labels, labels[1])}</select></label></div><button id="calculate" class="primary action">Calculate distance matrix</button><div class="info">${MODEL_EXPLANATIONS[state.settings.distanceModel]}</div></article><div id="results">${distanceResults(labels)}</div>`;
   workspace.querySelector("#model").onchange = (e) => {
+    // A model change invalidates the matrix and anything inferred from that matrix.
     state.settings.distanceModel = e.target.value;
     state.distance = null;
     invalidateAfter("distance");
@@ -890,6 +1036,7 @@ function distanceView() {
   };
   workspace.querySelector("#calculate").onclick = () =>
     attempt(() => {
+      // Matrix calculation is explicit so users can adjust controls before committing.
       state.distance = calculateDistanceMatrix(
         state.simulation.sequences,
         state.settings.distanceModel,
@@ -923,6 +1070,8 @@ function distanceResults(labels) {
 }
 /** Render UPGMA and Neighbor Joining reconstruction. @returns {void} */
 function reconstructionView() {
+  // Reconstruction depends on finite distances, so an absent matrix is a hard
+  // workflow boundary rather than something this view calculates implicitly.
   if (!state.distance) {
     workspace.innerHTML = empty(
       "Distance matrix required",
@@ -933,6 +1082,7 @@ function reconstructionView() {
   const up = state.settings.reconstructionMethod === "upgma";
   workspace.innerHTML = `<h2 class="section-title">Reconstruction</h2><p class="section-lead">Infer a phylogeny from evolutionary distances.</p><article class="card"><label class="field"><span>Algorithm</span><select id="method"><option value="upgma" ${up ? "selected" : ""}>UPGMA</option><option value="nj" ${up ? "" : "selected"}>Neighbour Joining</option></select></label><button id="reconstruct" class="primary action">Reconstruct tree</button><div class="info">${up ? "UPGMA returns a rooted ultrametric tree." : "Neighbour Joining returns an unrooted tree; the displayed centre is a drawing convention."}</div></article><div id="results">${treeResults()}</div>`;
   workspace.querySelector("#method").onchange = (e) => {
+    // Switching algorithms preserves the distance matrix but clears later stages.
     state.settings.reconstructionMethod = e.target.value;
     state.reconstruction = null;
     invalidateAfter("reconstruction");
@@ -940,6 +1090,8 @@ function reconstructionView() {
   };
   workspace.querySelector("#reconstruct").onclick = () =>
     attempt(() => {
+      // Both algorithms return the same cluster shape, allowing shared rendering,
+      // Newick serialization, and calibration code.
       const d = state.distance;
       state.reconstruction =
         state.settings.reconstructionMethod === "upgma"
@@ -951,6 +1103,8 @@ function reconstructionView() {
 }
 /** Build reconstructed tree and Newick output. @returns {string} Results markup. */
 function treeResults() {
+  // Rooted/unrooted is an interpretation of the algorithm; the common renderer
+  // uses the central NJ node only as a practical drawing origin.
   if (!state.reconstruction)
     return empty(
       "Tree not reconstructed",
@@ -960,6 +1114,8 @@ function treeResults() {
 }
 /** Render single-point calibration controls and assumptions. @returns {void} */
 function calibrationView() {
+  // Default to the first two stable taxon labels, then preserve the user's last
+  // successful selection on subsequent renders.
   if (!state.reconstruction) {
     workspace.innerHTML = empty(
       "Reconstructed tree required",
@@ -974,6 +1130,8 @@ function calibrationView() {
   workspace.innerHTML = `<h2 class="section-title">Calibration</h2><p class="section-lead">Scale every branch from the known age of one MRCA.</p><article class="card"><div class="inline-fields"><label class="field"><span>First taxon</span><select id="ca">${options(taxa, chosen[0])}</select></label><label class="field"><span>Second taxon</span><select id="cb">${options(taxa, chosen[1])}</select></label><label class="field"><span>Known MRCA age (Mya)</span><input id="age" type="number" min=".001" step=".1" value="${state.settings.calibrationAge}"></label></div><button id="calibrate" class="primary action">Calibrate tree</button></article><div id="results">${calibrationResults()}</div><article class="card"><h3>Assumptions</h3><ul class="assumptions"><li>The taxa identify one MRCA.</li><li>Mean descendant path represents reconstructed depth.</li><li>One scale factor preserves topology and relative branches.</li><li>A single calibration does not model uncertainty.</li></ul></article>`;
   workspace.querySelector("#calibrate").onclick = () =>
     attempt(() => {
+      // Persist validated control values alongside the result so re-rendering
+      // does not reset the selected calibration point.
       const t = [
           workspace.querySelector("#ca").value,
           workspace.querySelector("#cb").value,
@@ -987,6 +1145,8 @@ function calibrationView() {
 }
 /** Build calibrated metrics, tree and Newick. @returns {string} Results markup. */
 function calibrationResults() {
+  // Metadata deliberately exposes the intermediate depth and factor, making the
+  // simple scaling calculation auditable rather than presenting only a final tree.
   if (!state.calibration)
     return empty("Tree not calibrated", "Choose two taxa and a known age.");
   const { tree, metadata: m } = state.calibration;
@@ -995,6 +1155,7 @@ function calibrationResults() {
 /** Run a UI action and show its error locally. @param {Function} action Action. @returns {void} */
 function attempt(action) {
   try {
+    // Workspace actions share one error boundary and render failures in context.
     action();
   } catch (e) {
     workspace.querySelector("#results").innerHTML =
@@ -1003,6 +1164,8 @@ function attempt(action) {
 }
 /** Render select options. @param {string[]} values Values. @param {string} selected Selected value. @returns {string} Markup. */
 function options(values, selected) {
+  // Labels originate from generated taxa but are escaped to keep this helper safe
+  // if future versions accept uploaded or user-named sequences.
   return values
     .map(
       (v) =>
@@ -1012,12 +1175,18 @@ function options(values, selected) {
 }
 /** Render a metric. @param {string} label Label. @param {unknown} value Value. @returns {string} Markup. */
 function metric(label, value) {
+  // Escape computed values before interpolation into reusable summary cards.
   return `<div class="metric"><span>${label}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
 /** Render prerequisite guidance. @param {string} title Heading. @param {string} message Guidance. @returns {string} Markup. */
 function empty(title, message) {
+  // Empty states explain the upstream action needed to unlock a workflow stage.
   return `<div class="card empty"><div class="icon">◌</div><h2>${title}</h2><p>${message}</p></div>`;
 }
 initialise();
+// Convert DOM strings at the boundary; algorithms should receive numbers
+// and booleans rather than knowing anything about form controls.
+// Read the current pair selectors only for the diagnostic cards; the full
+// matrix remains cached and is unaffected by which pair is inspected.
 
 })();
