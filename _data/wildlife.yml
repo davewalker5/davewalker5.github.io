@@ -29,6 +29,10 @@
   category: "projects"
   description: "Explorations of stromatolite growth through computational ecology, environmental forcing, and emergent structure"
   link: /wildlife/stromatolites/
+- title: "Computational Molecular Evolution"
+  category: "projects"
+  description: "Explorations of molecular evolution through computational modelling, phylogenetic reconstruction, and fossil calibration"
+  link: /wildlife/molecularclock/
 - title: "Pocket Ecology"
   category: "projects"
   description: "Portable ecological modelling, bat acoustics analysis, and constrained computational natural history tools"
