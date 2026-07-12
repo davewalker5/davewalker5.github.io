@@ -5,6 +5,7 @@ export class SeededRandom {
     this.value = (Number(seed) || 0) >>> 0;
     this.spare = null;
   }
+
   random() {
     // Mulberry32 combines shifts and integer multiplication into a compact,
     // deterministic generator suitable for simulation demonstrations.
@@ -14,14 +15,17 @@ export class SeededRandom {
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   }
+
   uniform(a, b) {
     // Affine scaling maps the generator's [0, 1) output onto [a, b).
     return a + (b - a) * this.random();
   }
+
   choice(items) {
     // Every array slot receives an equal-width interval of random values.
     return items[Math.floor(this.random() * items.length)];
   }
+
   normal() {
     if (this.spare !== null) {
       // Box-Muller produces two independent normal values; cache one to avoid
@@ -39,6 +43,7 @@ export class SeededRandom {
     this.spare = mag * Math.sin(2 * Math.PI * v);
     return mag * Math.cos(2 * Math.PI * v);
   }
+
   lognormal(mu, sigma) {
     // Exponentiating a normal variate produces a positive lognormal multiplier.
     return Math.exp(mu + sigma * this.normal());

@@ -8,6 +8,7 @@ class SeededRandom {
     this.value = (Number(seed) || 0) >>> 0;
     this.spare = null;
   }
+
   random() {
     // Mulberry32 combines shifts and integer multiplication into a compact,
     // deterministic generator suitable for simulation demonstrations.
@@ -17,14 +18,17 @@ class SeededRandom {
     t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
     return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
   }
+
   uniform(a, b) {
     // Affine scaling maps the generator's [0, 1) output onto [a, b).
     return a + (b - a) * this.random();
   }
+
   choice(items) {
     // Every array slot receives an equal-width interval of random values.
     return items[Math.floor(this.random() * items.length)];
   }
+
   normal() {
     if (this.spare !== null) {
       // Box-Muller produces two independent normal values; cache one to avoid
@@ -42,6 +46,7 @@ class SeededRandom {
     this.spare = mag * Math.sin(2 * Math.PI * v);
     return mag * Math.cos(2 * Math.PI * v);
   }
+
   lognormal(mu, sigma) {
     // Exponentiating a normal variate produces a positive lognormal multiplier.
     return Math.exp(mu + sigma * this.normal());
@@ -138,6 +143,7 @@ function hamming(a, b) {
   for (let i = 0; i < a.length; i += 1) if (a[i] !== b[i]) n += 1;
   return n;
 }
+
 /** Calculates observed differences per site. @param {string} a First sequence. @param {string} b Second sequence. @returns {number} Proportional distance. */
 function proportional(a, b) {
   validatePair(a, b, false);
@@ -145,12 +151,14 @@ function proportional(a, b) {
   // Dividing by alignment length makes results comparable across datasets.
   return hamming(a, b) / a.length;
 }
+
 /** Applies the JC69 repeated-substitution correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Substitutions per site or infinity. */
 function jc69(a, b) {
   validatePair(a, b, true);
   const p = proportional(a, b);
   return p === 0 ? 0 : p >= 0.75 ? Infinity : -0.75 * Math.log(1 - (4 * p) / 3);
 }
+
 /** Counts transition and transversion differences. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {{transitions:number,transversions:number}} Substitution counts. */
 function substitutionCounts(a, b) {
   validatePair(a, b, true);
@@ -163,6 +171,7 @@ function substitutionCounts(a, b) {
   }
   return { transitions, transversions };
 }
+
 /** Applies the Kimura two-parameter correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 function k80(a, b) {
   const { transitions, transversions } = substitutionCounts(a, b);
@@ -174,6 +183,7 @@ function k80(a, b) {
   // Non-positive logarithm arguments indicate substitution saturation.
   return x <= 0 || y <= 0 ? Infinity : -0.5 * Math.log(x) - 0.25 * Math.log(y);
 }
+
 /** Estimates pooled nucleotide frequencies. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {Object<string,number>} A/C/G/T frequencies. */
 function frequencies(a, b) {
   validatePair(a, b, true);
@@ -182,6 +192,7 @@ function frequencies(a, b) {
   for (const base of Object.keys(result)) result[base] /= a.length + b.length;
   return result;
 }
+
 /** Applies F81 with empirical base composition. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 function f81(a, b) {
   const p = proportional(a, b);
@@ -192,6 +203,7 @@ function f81(a, b) {
     ? Infinity
     : -factor * Math.log(1 - p / factor);
 }
+
 /** Applies the project's HKY85 approximation. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 function hky85(a, b) {
   const { transitions, transversions } = substitutionCounts(a, b);
@@ -373,6 +385,7 @@ function clusterToNewick(root) {
   }
   return render(root) + ";";
 }
+
 /** Quotes labels containing Newick punctuation. @param {string} label Taxon label. @returns {string} Safe label. */
 function quote(label) {
   // Newick delimiters and whitespace require apostrophe quoting; embedded
@@ -512,11 +525,13 @@ function key(a, b) {
   // be confused with a taxon name produced by this explorer.
   return [a.name, b.name].sort().join("\u0000");
 }
+
 /** Stores a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @param {number} value Distance. @returns {void} */
 function setDistance(map, a, b, value) {
   // Centralising map access prevents inconsistent key construction.
   map.set(key(a, b), value);
 }
+
 /** Reads a current cluster distance. @param {Map} map Distance map. @param {object} a First cluster. @param {object} b Second cluster. @returns {number} Stored distance. */
 function getDistance(map, a, b) {
   // A missing value indicates an internal algorithm error and naturally
@@ -757,6 +772,7 @@ function findMrca(node, taxa) {
   }
   return node;
 }
+
 /** Measures path length from a cluster to a leaf. @param {object} node Starting cluster. @param {string} taxon Leaf label. @param {number} distance Accumulated length. @returns {number|null} Path length. */
 function distanceToTaxon(node, taxon, distance = 0) {
   // Reaching a leaf resolves this search path; a different leaf is a dead end.
@@ -768,6 +784,7 @@ function distanceToTaxon(node, taxon, distance = 0) {
   }
   return null;
 }
+
 /** Deep-copies a tree and scales all child branches. @param {object} node Current cluster. @param {number} factor Scale factor. @returns {object} Calibrated clone. */
 function scaleTree(node, factor) {
   // Spread scalar node metadata, copy the members array, and recursively create
@@ -851,6 +868,7 @@ function edges(node, options = {}) {
       : { node: child, length: simulatedLength(child, options.metric) },
   );
 }
+
 /** Select a simulated branch quantity. @param {object} node Child node. @param {string} metric Quantity name. @returns {number} Drawing length. */
 function simulatedLength(node, metric = "genetic_change") {
   // Clamp only missing or negative display quantities; valid simulation branch
@@ -866,11 +884,13 @@ function simulatedLength(node, metric = "genetic_change") {
     ) || 0,
   );
 }
+
 /** Traverse nodes parent first. @param {object} root Root. @returns {object[]} Flattened tree. */
 function nodes(root) {
   // Pre-order traversal is sufficient because rendering uses stored coordinates.
   return [root, ...edges(root).flatMap((edge) => nodes(edge.node))];
 }
+
 /** Collect leaves in deterministic child order. @param {object} root Root. @returns {object[]} Leaves. */
 function leafNodes(root) {
   const children = edges(root);
@@ -879,6 +899,7 @@ function leafNodes(root) {
     ? children.flatMap((edge) => leafNodes(edge.node))
     : [root];
 }
+
 /** Accumulate root-to-node distances. @param {object} node Parent. @param {Map} distances Output. @param {object} options Metric choice. @returns {void} */
 function assignDistances(node, distances, options) {
   for (const edge of edges(node, options)) {
@@ -887,6 +908,7 @@ function assignDistances(node, distances, options) {
     assignDistances(edge.node, distances, options);
   }
 }
+
 /** Centre internal nodes after leaf layout. @param {object} node Node. @param {Map} positions Output. @param {Map} distances Cumulative distances. @param {number} maximum Scale. @param {number} drawable Width. @returns {number} Vertical position. */
 function assignParents(node, positions, distances, maximum, drawable) {
   const children = edges(node);
@@ -914,6 +936,7 @@ function renderRateChart(root) {
   // exact value needed for comparison and accessibility.
   return `<div class="rate-list">${branches.map((node) => `<div class="rate-row"><span>${escapeHtml(node.name || node.id)}</span><span class="rate-bar"><i style="width:${(100 * node.rate) / maximum}%"></i></span><strong>${formatNumber(node.rate, 5)}</strong></div>`).join("")}</div>`;
 }
+
 /** Render a numeric matrix with value-dependent shading. @param {string[]} labels Labels. @param {number[][]} matrix Values. @returns {string} Accessible table. Finite cells are normalised by the largest value and saturated cells are marked. */
 function renderMatrix(labels, matrix) {
   // Infinite saturated distances cannot define the colour scale, so calculate
@@ -943,6 +966,7 @@ function initialise() {
   // Seeded defaults provide useful content on first open without requiring a click.
   simulate();
 }
+
 /** Render sidebar controls and bind them to shared settings. @returns {void} Numeric and boolean values retain their semantic types. */
 function controls() {
   // Field metadata keeps labels, bounds, and state keys together so the sidebar
@@ -972,6 +996,7 @@ function controls() {
   });
   sidebar.querySelector("#simulate").onclick = simulate;
 }
+
 /** Run simulation and invalidate dependent stages. @returns {void} Validation errors stay beside the controls. */
 function simulate() {
   const box = sidebar.querySelector("#side-error");
@@ -987,6 +1012,7 @@ function simulate() {
     box.hidden = false;
   }
 }
+
 /** Render the active cached workflow stage. @returns {void} */
 function render() {
   // Workspace renderers read shared state and do not recompute upstream stages.
@@ -997,6 +1023,7 @@ function render() {
     calibration: calibrationView,
   })[state.activeTab]();
 }
+
 /** Render simulation summary, tree, rates, sequences, and Newick. @returns {void} */
 function simulationView() {
   // All values below come from the cached result of the last explicit simulation.
@@ -1013,6 +1040,7 @@ function simulationView() {
       "",
     )}</div></article><article class="card"><h3>True tree (Newick)</h3><pre>${escapeHtml(r.newick)}</pre></article>`;
 }
+
 /** Render distance model controls and cached matrix. @returns {void} Changing correction invalidates downstream trees. */
 function distanceView() {
   // Terminal label order is shared by selectors, matrix rows, and reconstruction.
@@ -1050,6 +1078,7 @@ function distanceView() {
         workspace.querySelector("#results").innerHTML = distanceResults(labels);
     };
 }
+
 /** Build matrix and selected-pair diagnostics. @param {string[]} labels Taxa. @returns {string} Results markup. */
 function distanceResults(labels) {
   if (!state.distance)
@@ -1068,6 +1097,7 @@ function distanceResults(labels) {
     sat = state.distance.matrix.flat().some((x) => !Number.isFinite(x));
   return `<article class="card"><h3>Evolutionary distances</h3>${renderMatrix(labels, state.distance.matrix)}</article><div class="grid metrics">${metric("Hamming differences", s.hamming)}${metric("Observed p-distance", formatNumber(s.proportional))}${metric("Transitions", s.transitions)}${metric("Transversions", s.transversions)}${metric("Corrected distance", formatNumber(s.corrected))}</div>${sat ? '<div class="info warning">A corrected distance is saturated (∞); use a simpler model or lower-rate simulation before reconstruction.</div>' : ""}`;
 }
+
 /** Render UPGMA and Neighbor Joining reconstruction. @returns {void} */
 function reconstructionView() {
   // Reconstruction depends on finite distances, so an absent matrix is a hard
@@ -1101,6 +1131,7 @@ function reconstructionView() {
       reconstructionView();
     });
 }
+
 /** Build reconstructed tree and Newick output. @returns {string} Results markup. */
 function treeResults() {
   // Rooted/unrooted is an interpretation of the algorithm; the common renderer
@@ -1112,6 +1143,7 @@ function treeResults() {
     );
   return `<article class="card"><h3>Reconstructed tree <span class="pill">${state.settings.reconstructionMethod === "upgma" ? "rooted" : "unrooted"}</span></h3><div class="tree-wrap">${renderTree(state.reconstruction)}</div></article><article class="card"><h3>Newick representation</h3><pre>${escapeHtml(clusterToNewick(state.reconstruction))}</pre></article>`;
 }
+
 /** Render single-point calibration controls and assumptions. @returns {void} */
 function calibrationView() {
   // Default to the first two stable taxon labels, then preserve the user's last
@@ -1143,6 +1175,7 @@ function calibrationView() {
       calibrationView();
     });
 }
+
 /** Build calibrated metrics, tree and Newick. @returns {string} Results markup. */
 function calibrationResults() {
   // Metadata deliberately exposes the intermediate depth and factor, making the
@@ -1152,6 +1185,7 @@ function calibrationResults() {
   const { tree, metadata: m } = state.calibration;
   return `<div class="grid metrics">${metric("Known age", `${formatNumber(m.calibrationAgeMya, 3)} Mya`)}${metric("Reconstructed depth", formatNumber(m.reconstructedDepth, 6))}${metric("Scale factor", formatNumber(m.scaleFactor, 6))}</div><article class="card"><h3>Calibrated tree</h3><div class="tree-wrap">${renderTree(tree, { units: "million years" })}</div></article><article class="card"><h3>Calibrated Newick</h3><pre>${escapeHtml(calibratedNewick(tree))}</pre></article>`;
 }
+
 /** Run a UI action and show its error locally. @param {Function} action Action. @returns {void} */
 function attempt(action) {
   try {
@@ -1162,6 +1196,7 @@ function attempt(action) {
       `<div class="info error">${escapeHtml(e.message)}</div>`;
   }
 }
+
 /** Render select options. @param {string[]} values Values. @param {string} selected Selected value. @returns {string} Markup. */
 function options(values, selected) {
   // Labels originate from generated taxa but are escaped to keep this helper safe
@@ -1173,11 +1208,13 @@ function options(values, selected) {
     )
     .join("");
 }
+
 /** Render a metric. @param {string} label Label. @param {unknown} value Value. @returns {string} Markup. */
 function metric(label, value) {
   // Escape computed values before interpolation into reusable summary cards.
   return `<div class="metric"><span>${label}</span><strong>${escapeHtml(value)}</strong></div>`;
 }
+
 /** Render prerequisite guidance. @param {string} title Heading. @param {string} message Guidance. @returns {string} Markup. */
 function empty(title, message) {
   // Empty states explain the upstream action needed to unlock a workflow stage.

@@ -54,6 +54,7 @@ function edges(node, options = {}) {
       : { node: child, length: simulatedLength(child, options.metric) },
   );
 }
+
 /** Select a simulated branch quantity. @param {object} node Child node. @param {string} metric Quantity name. @returns {number} Drawing length. */
 function simulatedLength(node, metric = "genetic_change") {
   // Clamp only missing or negative display quantities; valid simulation branch
@@ -69,11 +70,13 @@ function simulatedLength(node, metric = "genetic_change") {
     ) || 0,
   );
 }
+
 /** Traverse nodes parent first. @param {object} root Root. @returns {object[]} Flattened tree. */
 function nodes(root) {
   // Pre-order traversal is sufficient because rendering uses stored coordinates.
   return [root, ...edges(root).flatMap((edge) => nodes(edge.node))];
 }
+
 /** Collect leaves in deterministic child order. @param {object} root Root. @returns {object[]} Leaves. */
 function leafNodes(root) {
   const children = edges(root);
@@ -82,6 +85,7 @@ function leafNodes(root) {
     ? children.flatMap((edge) => leafNodes(edge.node))
     : [root];
 }
+
 /** Accumulate root-to-node distances. @param {object} node Parent. @param {Map} distances Output. @param {object} options Metric choice. @returns {void} */
 function assignDistances(node, distances, options) {
   for (const edge of edges(node, options)) {
@@ -90,6 +94,7 @@ function assignDistances(node, distances, options) {
     assignDistances(edge.node, distances, options);
   }
 }
+
 /** Centre internal nodes after leaf layout. @param {object} node Node. @param {Map} positions Output. @param {Map} distances Cumulative distances. @param {number} maximum Scale. @param {number} drawable Width. @returns {number} Vertical position. */
 function assignParents(node, positions, distances, maximum, drawable) {
   const children = edges(node);

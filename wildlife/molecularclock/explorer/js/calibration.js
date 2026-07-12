@@ -38,6 +38,7 @@ function findMrca(node, taxa) {
   }
   return node;
 }
+
 /** Measures path length from a cluster to a leaf. @param {object} node Starting cluster. @param {string} taxon Leaf label. @param {number} distance Accumulated length. @returns {number|null} Path length. */
 function distanceToTaxon(node, taxon, distance = 0) {
   // Reaching a leaf resolves this search path; a different leaf is a dead end.
@@ -49,6 +50,7 @@ function distanceToTaxon(node, taxon, distance = 0) {
   }
   return null;
 }
+
 /** Deep-copies a tree and scales all child branches. @param {object} node Current cluster. @param {number} factor Scale factor. @returns {object} Calibrated clone. */
 function scaleTree(node, factor) {
   // Spread scalar node metadata, copy the members array, and recursively create

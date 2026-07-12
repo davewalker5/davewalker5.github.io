@@ -9,6 +9,7 @@ export function hamming(a, b) {
   for (let i = 0; i < a.length; i += 1) if (a[i] !== b[i]) n += 1;
   return n;
 }
+
 /** Calculates observed differences per site. @param {string} a First sequence. @param {string} b Second sequence. @returns {number} Proportional distance. */
 export function proportional(a, b) {
   validatePair(a, b, false);
@@ -16,12 +17,14 @@ export function proportional(a, b) {
   // Dividing by alignment length makes results comparable across datasets.
   return hamming(a, b) / a.length;
 }
+
 /** Applies the JC69 repeated-substitution correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Substitutions per site or infinity. */
 export function jc69(a, b) {
   validatePair(a, b, true);
   const p = proportional(a, b);
   return p === 0 ? 0 : p >= 0.75 ? Infinity : -0.75 * Math.log(1 - (4 * p) / 3);
 }
+
 /** Counts transition and transversion differences. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {{transitions:number,transversions:number}} Substitution counts. */
 export function substitutionCounts(a, b) {
   validatePair(a, b, true);
@@ -34,6 +37,7 @@ export function substitutionCounts(a, b) {
   }
   return { transitions, transversions };
 }
+
 /** Applies the Kimura two-parameter correction. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 export function k80(a, b) {
   const { transitions, transversions } = substitutionCounts(a, b);
@@ -45,6 +49,7 @@ export function k80(a, b) {
   // Non-positive logarithm arguments indicate substitution saturation.
   return x <= 0 || y <= 0 ? Infinity : -0.5 * Math.log(x) - 0.25 * Math.log(y);
 }
+
 /** Estimates pooled nucleotide frequencies. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {Object<string,number>} A/C/G/T frequencies. */
 export function frequencies(a, b) {
   validatePair(a, b, true);
@@ -53,6 +58,7 @@ export function frequencies(a, b) {
   for (const base of Object.keys(result)) result[base] /= a.length + b.length;
   return result;
 }
+
 /** Applies F81 with empirical base composition. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 export function f81(a, b) {
   const p = proportional(a, b);
@@ -63,6 +69,7 @@ export function f81(a, b) {
     ? Infinity
     : -factor * Math.log(1 - p / factor);
 }
+
 /** Applies the project's HKY85 approximation. @param {string} a First DNA sequence. @param {string} b Second DNA sequence. @returns {number} Corrected distance or infinity. */
 export function hky85(a, b) {
   const { transitions, transversions } = substitutionCounts(a, b);
