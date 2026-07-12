@@ -1,1 +1,2 @@
 .action{width:auto;min-width:190px}.sequence-list{display:grid;gap:8px}.sequence-list details{border:1px solid var(--border);border-radius:6px;background:var(--stripe)}.sequence-list summary{padding:10px 13px;cursor:pointer;font-weight:650}.sequence-list pre{margin:0;border:0;border-top:1px solid var(--border);border-radius:0}.saturated{color:var(--amber);font-weight:700}button:focus-visible,input:focus-visible,select:focus-visible,summary:focus-visible{outline:2px solid var(--cyan);outline-offset:2px}
+.brand img.brand-mark{display:block;object-fit:cover;background:none}
