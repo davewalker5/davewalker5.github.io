@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Relaxed Molecular Clock Explorer</title>
+  <link rel="stylesheet" href="css/explorer.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <aside class="sidebar">
+    <div class="brand"><span class="brand-mark">MC</span><div><strong>Relaxed Clock</strong><small>Standalone explorer</small></div></div>
+    <div id="sidebar-controls"></div>
+  </aside>
+  <main>
+    <header class="page-header">
+      <div><p class="eyebrow">MOLECULAR CLOCK SIMULATION</p><h1>Relaxed Molecular Clock Explorer</h1>
+      <p>Follow simulated DNA evolution from lineage-specific rates to a calibrated phylogeny.</p></div>
+      <span class="offline-badge">● Runs locally</span>
+    </header>
+    <nav class="tabs" aria-label="Explorer workspaces">
+      <button data-tab="simulation" class="active">Simulation</button>
+      <button data-tab="distance">Distance Matrix</button>
+      <button data-tab="reconstruction">Reconstruction</button>
+      <button data-tab="calibration">Calibration</button>
+    </nav>
+    <section id="workspace" aria-live="polite"></section>
+  </main>
+  <!-- A classic bundle allows direct file:// use; its readable source remains split across js/*.js. -->
+  <script defer src="js/explorer.bundle.js"></script>
+</body>
+</html>
