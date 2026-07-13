@@ -61,6 +61,25 @@ In the meantime, the interactive Molecular Clock Explorer is fully available and
 
 The accompanying reference material and downloadable booklet will be published shortly.
 
+<table class="data-table">
+    <thead>
+        <tr>
+            <th>Chapter</th>
+            <th>Title</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for chapter in site.data.molecular_clock.chapters %}
+            <tr>
+                <td>{{ forloop.index }}</td>
+                <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
+                <td>{{ chapter.description }}</td>
+            </tr>
+        {% endfor %}
+    </tbody>
+</table>
+
 ## Acknowledgements
 
 This project draws upon the long development of molecular evolutionary biology and phylogenetics, particularly the concepts of molecular clocks, substitution models and distance-based tree reconstruction developed over the latter half of the twentieth century.

@@ -1,0 +1,21 @@
+series_name: "Computational Molecular Evolution"
+chapters:
+  - title: "Simulating Molecular Evolution"
+    description: "Simulating DNA sequence evolution under strict and relaxed molecular clocks"
+    url: /wildlife/molecularclock/simulating.html
+
+  - title: "Measuring Genetic Distance"
+    description: "Calculating evolutionary distance and accounting for hidden molecular change"
+    url: /wildlife/molecularclock/distance.html
+
+  - title: "Reconstructing Evolutionary Trees"
+    description: "Reconstructing phylogenetic trees from genetic distance matrices"
+    url: /wildlife/molecularclock/reconstruction.html
+
+  - title: "Estimating Evolutionary Time"
+    description: "Converting reconstructed phylogenetic trees into estimated geological timescales"
+    url: /wildlife/molecularclock/calibration.html
+
+  - title: "Models, Assumptions and Reality"
+    description: "Understanding the assumptions behind computational molecular evolution"
+    url: /wildlife/molecularclock/limitations.html
