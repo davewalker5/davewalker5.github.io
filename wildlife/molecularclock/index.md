@@ -53,14 +53,6 @@ Rather than simply presenting finished results, the explorer encourages experime
 
 ## Contents
 
-This section is currently being expanded into a complete introduction to computational molecular evolution.
-
-Over the coming days it will grow into a series of chapters following the journey from simulated DNA sequences through genetic distance estimation, phylogenetic tree reconstruction and fossil calibration, explaining the biological ideas that underpin each stage.
-
-In the meantime, the interactive Molecular Clock Explorer is fully available and provides the complete computational workflow explored by the project.
-
-The accompanying reference material and downloadable booklet will be published shortly.
-
 <table class="data-table">
     <thead>
         <tr>

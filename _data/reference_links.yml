@@ -92,6 +92,11 @@
   url: /downloads/booklets/stromatolite-growth.pdf
   category: Booklets
 
+- area: Wildlife
+  title: Computational Molecular Evolution
+  url: /downloads/booklets/computational-molecular-evolution.pdf
+  category: Booklets
+
 # --------------------------------------------------------------------------------
 # eBooks
 # --------------------------------------------------------------------------------
@@ -133,6 +138,11 @@
 - area: Wildlife
   title: Stromatolite Growth Modelling
   url: /downloads/ebooks/stromatolite-growth.epub
+  category: eBooks
+
+- area: Wildlife
+  title: Computational Molecular Evolution
+  url: /downloads/ebooks/computational-molecular-evolution.epub
   category: eBooks
 
 # --------------------------------------------------------------------------------
