@@ -66,7 +66,6 @@ The accompanying reference material and downloadable booklet will be published s
         <tr>
             <th>Chapter</th>
             <th>Title</th>
-            <th>Morphology</th>
             <th>Description</th>
         </tr>
     </thead>
@@ -75,13 +74,6 @@ The accompanying reference material and downloadable booklet will be published s
             <tr>
                 <td>{{ forloop.index }}</td>
                 <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
-                <td>
-                    {% if chapter.morphological_family %}
-                        {{ chapter.morphological_family }}
-                    {% else %}
-                        -
-                    {% endif %}
-                </td>
                 <td>{{ chapter.description }}</td>
             </tr>
         {% endfor %}

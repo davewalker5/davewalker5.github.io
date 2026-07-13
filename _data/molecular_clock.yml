@@ -1,5 +1,9 @@
 series_name: "Computational Molecular Evolution"
 chapters:
   - title: "Simulating Molecular Evolution"
-    description: "Simulating DNA sequence evolution under strict and relaxed molecular clocks "
+    description: "Simulating DNA sequence evolution under strict and relaxed molecular clocks"
     url: /wildlife/molecularclock/simulating.html
+
+  - title: "Measuring Genetic Distance"
+    description: "Calculating evolutionary distance and accounting for hidden molecular change"
+    url: /wildlife/molecularclock/distance.html
