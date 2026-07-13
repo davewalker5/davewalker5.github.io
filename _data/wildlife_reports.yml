@@ -6267,6 +6267,20 @@
   location_title: Oxford
   category: Birds
   category_title: Birds
+  species: Swift
+  species_title: Swift
+  base: Swift
+  title: Swift
+  png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Swift.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Swift.xlsx
+- report_type: trend
+  report_type_title: Trend
+  country: United-Kingdom
+  country_title: United Kingdom
+  location: Oxford
+  location_title: Oxford
+  category: Birds
+  category_title: Birds
   species: WhiteBibbed-Mallard
   species_title: Whitebibbed Mallard
   base: WhiteBibbed-Mallard
@@ -7757,6 +7771,20 @@
   title: Herb Robert
   xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Herb-Robert.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Herb-Robert.png
+- report_type: trend
+  report_type_title: Trend
+  country: United-Kingdom
+  country_title: United Kingdom
+  location: Thrupp-Lake
+  location_title: Thrupp Lake
+  category: Flora
+  category_title: Flora
+  species: Hogweed
+  species_title: Hogweed
+  base: Hogweed
+  title: Hogweed
+  png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Hogweed.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Hogweed.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
