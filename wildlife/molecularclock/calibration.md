@@ -121,11 +121,11 @@ Only the units used to measure branch lengths are modified.
 
 Although the simplified approach illustrates the principle clearly, real molecular dating is considerably more sophisticated. Modern analyses typically combine:
 
-- Multiple fossil calibration points;
-- Uncertainty in fossil ages;
-- Varying evolutionary rates between lineages;
-- Statistical models of sequence evolution; and
-- Bayesian methods that estimate divergence times and evolutionary rates simultaneously.
+- Multiple fossil calibration points
+- Uncertainty in fossil ages
+- Varying evolutionary rates between lineages
+- Statistical models of sequence evolution
+- Bayesian methods that estimate divergence times and evolutionary rates simultaneously
 
 Rather than producing a single date for each evolutionary event, these methods often estimate a range of probable divergence times together with their associated uncertainties.
 
@@ -139,10 +139,10 @@ Instead, it aims to illustrate the final step in the molecular clock workflow.
 
 Beginning with simulated DNA sequence evolution, the project has followed the complete journey through computational molecular evolution:
 
-- Simulating DNA sequence evolution;
-- Measuring genetic distance;
-- Eeconstructing evolutionary relationships; and
-- Estimating evolutionary time through fossil calibration.
+- Simulating DNA sequence evolution
+- Measuring genetic distance
+- Reconstructing evolutionary relationships
+- Estimating evolutionary time through fossil calibration
 
 Together these stages demonstrate how molecular evidence can be transformed into an evidence-based hypothesis about the history of life.
 

@@ -79,11 +79,11 @@ One of the advantages of simulation is that the correct evolutionary history is 
 
 For every dataset we know:
 
-- the ancestral DNA sequence;
-- every mutation that occurred;
-- the true phylogenetic tree;
-- the evolutionary time represented by every branch; and
-- the mutation rate associated with every lineage.
+- The ancestral DNA sequence
+- Every mutation that occurred
+- The true phylogenetic tree
+- The evolutionary time represented by every branch
+- The mutation rate associated with every lineage
 
 Real biological datasets never provide this information. Simulation therefore offers a unique opportunity to understand how molecular evolutionary methods behave under controlled conditions before applying them to real organisms.
 
