@@ -7,3 +7,7 @@ chapters:
   - title: "Measuring Genetic Distance"
     description: "Calculating evolutionary distance and accounting for hidden molecular change"
     url: /wildlife/molecularclock/distance.html
+
+  - title: "Reconstructing Evolutionary Trees"
+    description: "Reconstructing phylogenetic trees from genetic distance matrices"
+    url: /wildlife/molecularclock/reconstruction.html
