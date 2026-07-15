@@ -178,6 +178,10 @@
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Gulfstream/aircraft-type-pie-chart.png
   xlsx_path: ''
+- manufacturer: Hawker
+  base: aircraft-type-pie-chart
+  png_path: /aircraft/reports/manufacturer/Hawker/aircraft-type-pie-chart.png
+  xlsx_path: ''
 - manufacturer: Hawker-Siddeley-Aircraft
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Hawker-Siddeley-Aircraft/aircraft-type-pie-chart.png
