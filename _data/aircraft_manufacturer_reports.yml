@@ -258,6 +258,10 @@
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Pipistrel/aircraft-type-pie-chart.png
   xlsx_path: ''
+- manufacturer: Pitts
+  base: aircraft-type-pie-chart
+  png_path: /aircraft/reports/manufacturer/Pitts/aircraft-type-pie-chart.png
+  xlsx_path: ''
 - manufacturer: Quest-Aircraft-Company
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Quest-Aircraft-Company/aircraft-type-pie-chart.png
