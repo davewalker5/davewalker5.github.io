@@ -4517,6 +4517,20 @@
   location_title: Abingdon
   category: Flora
   category_title: Flora
+  species: Queen-Annes-Lace
+  species_title: Queen Annes Lace
+  base: Queen-Annes-Lace
+  title: Queen Annes Lace
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Queen-Annes-Lace.xlsx
+  png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Queen-Annes-Lace.png
+- report_type: trend
+  report_type_title: Trend
+  country: United-Kingdom
+  country_title: United Kingdom
+  location: Abingdon
+  location_title: Abingdon
+  category: Flora
+  category_title: Flora
   species: Ragged-Robin
   species_title: Ragged Robin
   base: Ragged-Robin

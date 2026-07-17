@@ -274,6 +274,10 @@
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Robinson/aircraft-type-pie-chart.png
   xlsx_path: ''
+- manufacturer: Rockwell
+  base: aircraft-type-pie-chart
+  png_path: /aircraft/reports/manufacturer/Rockwell/aircraft-type-pie-chart.png
+  xlsx_path: ''
 - manufacturer: Saab
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Saab/aircraft-type-pie-chart.png
