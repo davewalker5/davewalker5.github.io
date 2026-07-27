@@ -20,7 +20,7 @@
   link: https://github.com/davewalker5/SpectrogramViewer
 - title: ADS-B BaseStation Reader
   category: "tools"
-  description: ADS-B tracking tool for live aircraft monitoring
+  description: Local-first ADS-B aircraft observation workbench with live tracking, historical sessions and analysis
   link: https://github.com/davewalker5/ADS-B-BaseStationReader
 - title: ODE Solver
   category: "tools"
