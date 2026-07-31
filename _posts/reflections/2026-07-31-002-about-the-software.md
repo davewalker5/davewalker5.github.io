@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When Software Became a Way of Looking at the World"
-date: 2026-08-01 00:00:01
+date: 2026-07-31 00:00:02
 categories: [field-notes]
 tags: [software, retirement, curiosity, observation, field-notes, research-practice, data-analysis]
 excerpt: "During my working life, software was principally the thing I made. Since retiring, it has increasingly become one of the ways I investigate the things that interest me."
