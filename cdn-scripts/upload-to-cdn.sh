@@ -56,7 +56,31 @@ TARGET_FOLDER="${TARGET_FOLDER#/}"
 TARGET_FOLDER="${TARGET_FOLDER%/}"
 
 MANIFEST="$SOURCE_FOLDER/.cdn-upload-manifest.tsv"
-NEW_MANIFEST="$(mktemp)"
+CURRENT_MANIFEST="$(mktemp)"
+
+cleanup() {
+    rm -f "$CURRENT_MANIFEST"
+}
+
+trap cleanup EXIT
+
+record_manifest_entry() {
+    local relative_path="$1"
+    local hash="$2"
+    local updated_manifest
+
+    # Keep each checkpoint on the same filesystem as the manifest so the
+    # replacement is atomic. If the run is interrupted, every completed upload
+    # remains recorded and will be skipped when the command is run again.
+    updated_manifest="$(mktemp "${MANIFEST}.updated.XXXXXX")"
+
+    if [[ -f "$MANIFEST" ]]; then
+        awk -F '\t' -v p="$relative_path" '$1 != p' "$MANIFEST" > "$updated_manifest"
+    fi
+
+    printf '%s\t%s\n' "$relative_path" "$hash" >> "$updated_manifest"
+    mv "$updated_manifest" "$MANIFEST"
+}
 
 # Files with these extensions should be served as downloads rather than opened inline.
 # Extend this list as needed, using lowercase extensions without the leading dot.
@@ -133,6 +157,7 @@ content_type_for_file() {
 
 find "$SOURCE_FOLDER" -type f \
     ! -name ".cdn-upload-manifest.tsv" \
+    ! -name ".cdn-upload-manifest.tsv.*" \
     -print0 |
 while IFS= read -r -d '' FILE; do
 
@@ -196,13 +221,23 @@ while IFS= read -r -d '' FILE; do
     fi
 
     if [[ "$DRY_RUN" == false ]]; then
-        printf '%s\t%s\n' "$RELATIVE_PATH" "$HASH" >> "$NEW_MANIFEST"
+        if [[ "$SHOULD_UPLOAD" == true ]]; then
+            record_manifest_entry "$RELATIVE_PATH" "$HASH"
+            echo "Manifest checkpointed: $RELATIVE_PATH"
+        fi
+
+        printf '%s\t%s\n' "$RELATIVE_PATH" "$HASH" >> "$CURRENT_MANIFEST"
     fi
 done
 
 # Remove the wrangler cache folder
 rm -fr .wrangler
 
-# Copy the updated manifest into place
-mv "$NEW_MANIFEST" "$MANIFEST"
-echo "Manifest updated: $MANIFEST"
+if [[ "$DRY_RUN" == false ]]; then
+    # Replace the checkpointed manifest with the complete current file list.
+    # This removes entries for source files that have since been deleted.
+    mv "$CURRENT_MANIFEST" "$MANIFEST"
+    echo "Manifest updated: $MANIFEST"
+else
+    echo "Dry run complete; manifest unchanged: $MANIFEST"
+fi
