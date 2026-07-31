@@ -47,6 +47,8 @@ def extract_aircraft_manufacturers(cdn_folder: Path, entries: Iterable[ManifestE
     :param entries:
     :return: Dictionary of the manufacturer name, base name, PNG file path and XLSX path
     """
+    del cdn_folder  # The manifest is the authority for which files exist.
+
     rows: dict[tuple[str, str], Record] = {}
 
     for rel_path, _checksum in entries:
@@ -67,15 +69,11 @@ def extract_aircraft_manufacturers(cdn_folder: Path, entries: Iterable[ManifestE
         base = filename.removesuffix(".xlsx")
         key = (manufacturer, base)
         
-        xlsx_path = f"/aircraft/reports/manufacturer/{manufacturer}/{base}.xlsx"
-        if not (cdn_folder / xlsx_path).exists():
-            xlsx_path = ""
-
         rows[key] = {
             "manufacturer": manufacturer,
             "base": base,
             "png_path": f"/aircraft/reports/manufacturer/{manufacturer}/{base}.png",
-            "xlsx_path": xlsx_path
+            "xlsx_path": f"/aircraft/reports/manufacturer/{manufacturer}/{base}.xlsx"
         }
 
     return sorted(rows.values(), key=lambda r: (r["manufacturer"].lower(), r["base"].lower()))
@@ -109,6 +107,8 @@ def extract_aircraft_reports(cdn_folder: Path, entries: Iterable[ManifestEntry])
     :param entries:
     :return: Dictionary of base name, title, PNG file path and XLSX path
     """
+    del cdn_folder  # The manifest is the authority for which files exist.
+
     seen: dict[str, set[str]] = {}
 
     for rel_path, _checksum in entries:
@@ -135,17 +135,13 @@ def extract_aircraft_reports(cdn_folder: Path, entries: Iterable[ManifestEntry])
 
     rows: list[Record] = []
 
-    for base, _ in seen.items():
-        xlsx_path = f"/aircraft/reports/{base}.xlsx"
-        if not (cdn_folder / xlsx_path).exists():
-            xlsx_path = ""
-
+    for base, extensions in seen.items():
         rows.append(
             {
                 "base": base,
                 "title": title_from_base(base),
                 "png_path": f"/aircraft/reports/{base}.png",
-                "xlsx_path": xlsx_path
+                "xlsx_path": f"/aircraft/reports/{base}.xlsx" if "xlsx" in extensions else ""
             }
         )
 
@@ -168,6 +164,8 @@ def extract_weather_reports(cdn_folder: Path, entries: Iterable[ManifestEntry]) 
     :param entries:
     :return: Dictionary of category, category title, base name, report title, PNG path and XLSX path
     """
+    del cdn_folder  # The manifest is the authority for which files exist.
+
     seen: dict[tuple[str, str], set[str]] = {}
 
     for rel_path, _checksum in entries:
@@ -196,18 +194,14 @@ def extract_weather_reports(cdn_folder: Path, entries: Iterable[ManifestEntry]) 
 
     rows: list[Record] = []
 
-    for (category, base), _ in seen.items():
-        xlsx_path = f"/weather/reports/{category}/{base}.xlsx"
-        if not (cdn_folder / xlsx_path).exists():
-            xlsx_path = ""
-
+    for (category, base), extensions in seen.items():
         rows.append(
             {
                 "category": category,
                 "base": base,
                 "title": title_from_base(base),
                 "png_path": f"/weather/reports/{category}/{base}.png",
-                "xlsx_path": xlsx_path
+                "xlsx_path": f"/weather/reports/{category}/{base}.xlsx" if "xlsx" in extensions else ""
             }
         )
 
