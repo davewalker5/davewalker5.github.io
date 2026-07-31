@@ -57,9 +57,10 @@ TARGET_FOLDER="${TARGET_FOLDER%/}"
 
 MANIFEST="$SOURCE_FOLDER/.cdn-upload-manifest.tsv"
 CURRENT_MANIFEST="$(mktemp)"
+FILE_LIST="$(mktemp)"
 
 cleanup() {
-    rm -f "$CURRENT_MANIFEST"
+    rm -f "$CURRENT_MANIFEST" "$FILE_LIST"
 }
 
 trap cleanup EXIT
@@ -155,10 +156,14 @@ content_type_for_file() {
     esac
 }
 
+# Snapshot the source tree before uploads begin. Checkpointing replaces the
+# manifest inside SOURCE_FOLDER, and mutating a directory while find is walking
+# it can cause entries to be skipped on some platforms.
 find "$SOURCE_FOLDER" -type f \
     ! -name ".cdn-upload-manifest.tsv" \
     ! -name ".cdn-upload-manifest.tsv.*" \
-    -print0 |
+    -print0 > "$FILE_LIST"
+
 while IFS= read -r -d '' FILE; do
 
     RELATIVE_PATH="${FILE#$SOURCE_FOLDER/}"
@@ -228,7 +233,7 @@ while IFS= read -r -d '' FILE; do
 
         printf '%s\t%s\n' "$RELATIVE_PATH" "$HASH" >> "$CURRENT_MANIFEST"
     fi
-done
+done < "$FILE_LIST"
 
 # Remove the wrangler cache folder
 rm -fr .wrangler
