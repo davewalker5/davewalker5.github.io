@@ -85,9 +85,11 @@ Each project combines software, documentation, interpretation, and visualisation
 
 ### Field Journals and Travel
 
-Travel journals, local field notes, and longer observational essays combine narrative writing with photographs, maps, records, and supporting material.
+Travel journals, local field notes, aviation observations, and longer essays combine narrative writing with photographs, maps, records, and supporting material.
 
-These projects aim to capture not only places visited, but the process of paying attention to them.
+Some projects follow journeys through unfamiliar places. Others remain closer to home, examining the movements taking place around and above a familiar landscape.
+
+Together, they aim to capture not only places visited, but the wider practice of paying attention to place, movement, and experience.
 
 ### Pocket Ecology
 
@@ -105,7 +107,7 @@ If you would like to explore the site gradually, these projects provide a good i
 - [Computational Shell Morphology](/wildlife/shells/), exploring how simple growth rules generate remarkably diverse biological forms
 - [Stromatolite Growth Modelling](/wildlife/stromatolites/), following the development of computational models inspired by one of Earth’s earliest ecosystems
 - [Microscopy](/microscopy/), revealing familiar organisms at an unfamiliar scale
-- [Travel Journals](/travel/), where observation and narrative come together in the field
+- [Travel and Aviation](/travel/), bringing together travel journals, manually recorded aircraft sightings, and live observation of the airspace above home
 - [Reference Booklets and eBooks](/reference/), bringing together many of the larger investigations in downloadable form
 
 <hr/>

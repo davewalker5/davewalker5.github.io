@@ -19,7 +19,7 @@ EPUB files can be read directly in Apple Books, Kobo and many other eReaders. Ki
 
 ## Booklets
 
-Compiled publications bringing together observations, investigations, analyses and narrative structured, long-form editions in PDF format.
+Compiled publications bringing together observations, investigations, analyses and narrative into structured, long-form editions in PDF format.
 
 {% include reference-table.html category="Booklets" show_format=true %}
 
@@ -35,7 +35,7 @@ These datasets support the wildlife, aircraft, and weather reports published els
 
 {% assign categories = site.data.reference_links | map: "category" | uniq | sort %}
 {% for category in categories %}
-  {% if category != "Booklets" and category != "Simulation Files" %}
+  {% if category != "Booklets" and category != "eBooks" and category != "Simulation Files" %}
 <h3>{{ category }}</h3>
 {% include reference-table.html category=category %}
   {% endif %}

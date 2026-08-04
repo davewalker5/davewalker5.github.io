@@ -8,7 +8,7 @@ description: The ideas, methods and philosophy behind Field Notes Journal — a 
 
 Field Notes Journal is a long-term practice of paying close attention to the natural world.
 
-It began with a simple habit: making notes about things I observed. Wildlife sightings, weather, microscope slides, museum visits, landscapes, fossils and everyday encounters gradually accumulated into notebooks, photographs and records. Over time, those observations revealed something important.
+It began with a simple habit: making notes about things I observed. Wildlife sightings, weather, microscope slides, museum visits, landscapes, fossils, journeys and everyday encounters gradually accumulated into notebooks, photographs and records.
 
 Individual observations are valuable. Their greatest value, however, often lies in the questions they inspire.
 
@@ -27,10 +27,11 @@ Every project begins with curiosity:
 - Sometimes that curiosity is prompted by a bird seen during a morning walk
 - Sometimes by an unfamiliar plant beneath the microscope
 - Sometimes by a fossil in a museum cabinet or a paragraph in a book that raises an unexpected question
+- Sometimes by travelling through an unfamiliar landscape and noticing how place, wildlife, weather and human movement fit together
 
 What happens next is rarely predictable. Observation raises questions and questions lead to reading that, in turn, suggests new observations.
 
-Some questions develop into computational models, software or extended investigations. Others simply deepen my understanding of a familiar place or organism.
+Some questions develop into computational models, software or extended investigations. Others simply deepen my understanding of a familiar place, an unfamiliar landscape, or an organism encountered there.
 
 Each project answers some questions while raising others.
 
@@ -64,6 +65,8 @@ That perspective has gradually become one of the most rewarding parts of the pro
 The more I learn about the natural world, the more I find myself respecting not only its most spectacular forms, but also its humbler ones. The earliest microbial communities, the simplest plants and the smallest invertebrates are no less remarkable than the largest dinosaurs. Each represents a successful way of living within its own time and place.
 
 Understanding that continuity has changed the way I see the history of life—and my own place within it.
+
+Travel extends that way of looking rather than interrupting it. Being somewhere unfamiliar changes what is noticed: different landscapes, species, weather, geology, patterns of movement and relationships between people and place. The travel journals preserve those encounters while they are still immediate, but they arise from the same practice as the wildlife records kept closer to home — paying attention, making a record, and allowing a place to reveal itself gradually.
 
 ## Method
 
@@ -108,7 +111,7 @@ And to allow understanding to emerge gradually through sustained enquiry.
 
 Field Notes Journal is both a working notebook and a published archive.
 
-Some investigations remain brief observational notes. Others develop into extended studies supported by software, datasets, documentation and downloadable publications.
+Some investigations remain brief observational notes or travel-journal entries. Others develop into extended studies supported by software, datasets, documentation and downloadable publications.
 
 Together they document not only the natural world, but also a continuing process of learning:
 
