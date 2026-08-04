@@ -25,10 +25,6 @@
 # --------------------------------------------------------------------------------
 # Additional Reports
 # --------------------------------------------------------------------------------
-- area: Aircraft
-  title: Aircraft sightings reports
-  url: /aircraft/
-  category: Additional Reports
 - area: Weather
   title: Weather reports
   url: /weather/
