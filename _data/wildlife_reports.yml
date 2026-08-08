@@ -476,8 +476,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -488,8 +488,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -500,8 +500,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -524,8 +524,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -620,8 +620,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -632,8 +632,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -644,8 +644,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -656,8 +656,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -668,8 +668,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -680,8 +680,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -692,8 +692,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -704,8 +704,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -716,8 +716,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -728,8 +728,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -740,8 +740,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -752,8 +752,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -764,8 +764,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -776,8 +776,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -788,8 +788,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -800,10 +800,10 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Dog
-    Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Dog
     Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Dog
+    Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -814,8 +814,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -826,8 +826,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -838,8 +838,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Trees/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Trees/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -850,8 +850,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -862,10 +862,10 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -876,10 +876,10 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -890,10 +890,10 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -904,10 +904,10 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -918,10 +918,10 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -932,10 +932,10 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -946,10 +946,10 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
-    Corridor)/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
     Corridor)/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Western
+    Corridor)/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -960,8 +960,8 @@
   category_title: Ants
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -972,8 +972,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -984,8 +984,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -996,8 +996,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1008,8 +1008,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1020,8 +1020,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1032,8 +1032,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
