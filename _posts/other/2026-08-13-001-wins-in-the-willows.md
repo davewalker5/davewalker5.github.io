@@ -1,10 +1,10 @@
 ---
 layout: post
-title: “A Wind in the Willows Day”
+title: A Wind in the Willows Day
 date: 2026-08-13 00:00:01
 categories: [field-notes]
 tags: [thames, walking, river, oxford, abingdon, wildlife, observation, books, animal-ethics]
-excerpt: “A walk up the Thames to Oxford and a slow boat home become a day of birds, butterflies, locks, sunlight, changing habits and the particular pleasures of paying attention.”
+excerpt: A walk up the Thames to Oxford and a slow boat home become a day of birds, butterflies, locks, sunlight, changing habits and the particular pleasures of paying attention
 ---
 
 There are days when the Thames feels less like a river running through the landscape and more like the landscape itself: a long, slow thread connecting fields, villages, wildlife, pubs, locks, boats and people.
