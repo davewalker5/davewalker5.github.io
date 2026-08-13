@@ -58,9 +58,10 @@ TARGET_FOLDER="${TARGET_FOLDER%/}"
 MANIFEST="$SOURCE_FOLDER/.cdn-upload-manifest.tsv"
 CURRENT_MANIFEST="$(mktemp)"
 FILE_LIST="$(mktemp)"
+UPLOAD_ERROR_LOG="$(mktemp)"
 
 cleanup() {
-    rm -f "$CURRENT_MANIFEST" "$FILE_LIST"
+    rm -f "$CURRENT_MANIFEST" "$FILE_LIST" "$UPLOAD_ERROR_LOG"
 }
 
 trap cleanup EXIT
@@ -156,6 +157,54 @@ content_type_for_file() {
     esac
 }
 
+upload_object() {
+    local object_path="$1"
+    local attempt=1
+    local max_attempts=3
+    local exit_status
+    local recoverable_status
+    local removed_stale_object=false
+
+    while (( attempt <= max_attempts )); do
+        : > "$UPLOAD_ERROR_LOG"
+
+        if wrangler "${WRANGLER_ARGS[@]}" 2>&1 | tee "$UPLOAD_ERROR_LOG"; then
+            return 0
+        else
+            exit_status=$?
+        fi
+
+        # R2 occasionally returns a Cloudflare 52x error while replacing an object.
+        # Removing that object before retrying clears the bad remote state.
+        recoverable_status="$(grep -Eo '(^|[^0-9])52[0-9]([^0-9]|$)' "$UPLOAD_ERROR_LOG" \
+            | grep -Eo '52[0-9]' \
+            | head -n 1 || true)"
+
+        if [[ -z "$recoverable_status" ]]; then
+            return "$exit_status"
+        fi
+
+        if (( attempt == max_attempts )); then
+            echo "Upload still failing with HTTP $recoverable_status after $max_attempts attempts: $object_path" >&2
+            return "$exit_status"
+        fi
+
+        if [[ "$removed_stale_object" == false ]]; then
+            echo "Received HTTP $recoverable_status; removing the destination object before retrying: $object_path" >&2
+            if ! wrangler r2 object delete "$object_path" --remote; then
+                echo "Could not remove the destination object: $object_path" >&2
+                return "$exit_status"
+            fi
+            removed_stale_object=true
+        else
+            echo "Received HTTP $recoverable_status again; retrying upload: $object_path" >&2
+        fi
+
+        sleep $(( attempt * 2 ))
+        ((attempt += 1))
+    done
+}
+
 # Snapshot the source tree before uploads begin. Checkpointing replaces the
 # manifest inside SOURCE_FOLDER, and mutating a directory while find is walking
 # it can cause entries to be skipped on some platforms.
@@ -219,7 +268,7 @@ while IFS= read -r -d '' FILE; do
         fi
 
         if [[ "$DRY_RUN" == false ]]; then
-            wrangler "${WRANGLER_ARGS[@]}"
+            upload_object "$BUCKET/$OBJECT_KEY"
         else
             echo "Would upload: $OBJECT_KEY"
         fi
