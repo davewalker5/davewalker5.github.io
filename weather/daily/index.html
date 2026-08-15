@@ -65,7 +65,8 @@ This page lists daily weather reports generated from personal weather station da
           </td>
           <td>
             {%- if report.xlsx_path != "" -%}
-              <a href="{{ report.xlsx_path | relative_url }}">Download</a>
+              {%- assign xlsx_path = site.assets_url | append: report.xlsx_path -%}
+              <a href="{{ xlsx_path }}">Download</a>
             {%- else -%}
               <span class="muted">-</span>
             {%- endif -%}
