@@ -34,7 +34,8 @@ This page lists weather station database management reports. Each entry includes
         </td>
         <td>
           {% if report.xlsx_path != "" %}
-            <a href="{{ report.xlsx_path | relative_url }}"
+            {% assign xlsx_path = site.assets_url | append: report.xlsx_path %}
+            <a href="{{ xlsx_path }}"
                target="_blank" rel="noopener noreferrer">
               Download
             </a>
