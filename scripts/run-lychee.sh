@@ -11,5 +11,8 @@ lychee --accept 200,429 \
         --exclude 'https://www.tripadvisor.co.uk/Profile/DaveWalker5' \
         --exclude 'http://www.bats.org.uk/' \
         --exclude '^https://fieldnotesjournal\.uk/' \
+        --exclude '^https://www.airhistory\.org\.uk/' \
+        --exclude '^https://www.airhistory\.net/' \
+        --exclude '^https://www\.ebay\.co\.uk/' \
         --exclude-path '_site/publication/**' \
         '_site/**/*.html'
