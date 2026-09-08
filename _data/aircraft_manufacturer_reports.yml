@@ -230,6 +230,10 @@
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/Lockheed/aircraft-type-pie-chart.png
   xlsx_path: /aircraft/reports/manufacturer/Lockheed/aircraft-type-pie-chart.xlsx
+- manufacturer: Max-Holste
+  base: aircraft-type-pie-chart
+  png_path: /aircraft/reports/manufacturer/Max-Holste/aircraft-type-pie-chart.png
+  xlsx_path: /aircraft/reports/manufacturer/Max-Holste/aircraft-type-pie-chart.xlsx
 - manufacturer: McDonnel-Douglas
   base: aircraft-type-pie-chart
   png_path: /aircraft/reports/manufacturer/McDonnel-Douglas/aircraft-type-pie-chart.png
