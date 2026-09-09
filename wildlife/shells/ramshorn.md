@@ -4,7 +4,7 @@ title: Ramshorn-Like Shell
 breadcrumb: Ramshorn-Like Shell
 description: 
 series: morphology
-chapter: 12
+chapter: 13
 images:
   - name: "ramshorn-opaque-iso.png"
     alt: "Simulation of Ramshorn-Like Shell"

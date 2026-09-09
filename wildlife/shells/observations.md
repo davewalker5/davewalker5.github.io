@@ -4,7 +4,7 @@ title: Observations
 breadcrumb: Observations
 description: Notes and reflections arising from the modelling process, including observations on shell geometry, parameter interactions, morphology, and computational natural history
 series: morphology
-chapter: 20
+chapter: 23
 images:
 ---
 
@@ -42,6 +42,8 @@ The subsequent development of cyrtocone shells extended this idea further. Intro
 
 The development of the crioceratite model provided an instructive counterpoint to the orthocone and cyrtocone investigations. Whereas those forms required new growth trajectories, the crioceratite emerged entirely within the existing logarithmic-spiral framework. Relatively modest changes to shell expansion, whorl interaction and ornamentation transformed a tightly coiled ammonite-like shell into a recognisably open-coiled heteromorph form. This demonstrated that substantial morphological diversification can arise both from changes in growth trajectory and from changes in the interaction between successive growth stages within a shared developmental framework.
 
+The tusk-shell model extended this principle beyond cephalopod morphology. Reusing a curved centreline and tapering aperture-sweep framework produced a recognisably scaphopod-like shell without requiring coiling, chambers or a siphuncle. This reinforced the distinction between computational growth geometry and biological identity: similar geometric mechanisms can contribute to shell forms belonging to very different molluscan groups.
+
 ## Growth Rules and Rendering Rules
 
 A useful distinction emerged between growth rules and rendering rules.
@@ -75,6 +77,8 @@ The development of orthocone shells also showed that internal features such as t
 
 The cyrtocone investigations extended this principle beyond growth coordinates. Once shell curvature was introduced, aperture orientation, chamber geometry and siphuncle construction could no longer rely on fixed global reference frames. Instead, these structures had to be generated relative to local coordinate systems derived from the shell centreline itself. This revealed that many aspects of shell construction are most naturally expressed in terms of shell-relative geometry rather than absolute spatial coordinates.
 
+The later siphuncle refinement strengthened this conclusion. Helically coiled shells such as Turrilites exposed the limitations of constructing internal tube sections in fixed global planes. Generating the siphuncle relative to the local path tangent, while transporting its cross-sectional frame continuously along the shell, produced a smoother and more general internal geometry. This further demonstrated that shell-relative coordinate systems are not merely convenient abstractions, but an important part of constructing reusable morphology across different growth trajectories.
+
 ## Classification as Morphological Description
 
 As the collection of shell models expanded, describing shells simply by their preset names became increasingly limiting. Introducing a computational classification demonstrated that shell morphology can be decomposed into a small set of largely independent descriptive characteristics.
@@ -91,7 +95,7 @@ Once every shell could be described using the same morphological vocabulary, it 
 
 The resulting similarity analysis demonstrated that relationships between shell forms emerge naturally from their recorded characteristics. Expected groupings, such as orthocones with annulated orthocones, ammonites with serpenticones and Turritella variants with one another, arose automatically from the classification rather than being specified in advance.
 
-Perhaps more importantly, the analysis highlighted the distinction between morphological similarity and evolutionary relationship. Convergent shell forms may occupy nearby positions within the computational morphospace despite belonging to different biological lineages.
+As the catalogue expanded, more revealing cross-lineage similarities also appeared. The Turrilites-like ammonoid clustered closely with the high-spired Turritella gastropods, while the tusk shell lay close to the curved cyrtocone form. These pairings arise from shared morphology rather than common biological ancestry and provide especially clear examples of the distinction between morphological similarity and evolutionary relationship.
 
 The project therefore evolved from generating individual shell geometries towards constructing and exploring a computational morphospace of shell form.
 
@@ -103,11 +107,11 @@ Individual shell forms emerge from the interaction between a relatively small nu
 
 As the collection of shell models expanded, it became apparent that generation alone was only part of the investigation. Introducing a computational classification provided a consistent vocabulary for describing shell morphology independently of the underlying implementation. Growth mathematics, biological inspiration and observable shell characteristics could each be recorded separately, allowing shells to be organised and compared in a systematic way.
 
-This descriptive framework naturally led to quantitative similarity analysis. By comparing the recorded morphological characteristics rather than the generated meshes, relationships between shell forms emerged directly from their classifications. Expected groupings, such as orthocones with annulated orthocones, ammonites with serpenticones and the two Turritella variants, arose automatically without requiring predefined taxonomic groupings. At the same time, the analysis illustrated the distinction between morphological similarity and evolutionary relationship, allowing convergent forms to occupy nearby positions within the resulting morphospace despite differing biological origins.
+This descriptive framework naturally led to quantitative similarity analysis. By comparing the recorded morphological characteristics rather than the generated meshes, relationships between shell forms emerged directly from their classifications. Some reflected obvious structural families, while others exposed convergent morphology across biological groups — such as the close relationship between Turrilites and Turritella forms, or between the tusk shell and curved cyrtoconic geometry. The resulting morphospace therefore captures morphological resemblance rather than evolutionary history.
 
 Taken together, these developments suggest a progression in the scope of the project. What began as an investigation into the computational generation of shell geometry has evolved into a broader exploration of computational shell morphology. The emphasis has shifted from asking whether particular shell forms can be reproduced towards understanding how those forms relate to one another, which developmental mechanisms underpin their diversity, and how that diversity can be described and analysed within a consistent computational framework.
 
-Although intentionally simplified, the models demonstrate how a relatively small collection of geometric and developmental principles can generate, describe and compare a diverse range of shell forms. In that sense, the project increasingly increasingly sits at the intersection of computer graphics, developmental morphology and computational natural history.
+Although intentionally simplified, the models demonstrate how a relatively small collection of geometric and developmental principles can generate, describe and compare a diverse range of shell forms. In that sense, the project increasingly sits at the intersection of computer graphics, developmental morphology and computational natural history.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}

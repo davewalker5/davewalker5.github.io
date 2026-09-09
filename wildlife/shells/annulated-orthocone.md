@@ -4,7 +4,7 @@ title: Annulated Orthocone-Like Shell
 breadcrumb: Annulated Orthocone-Like Shell
 description: A straight-shelled cephalopod form generated through linear growth, with internal chamber septa and a longitudinal siphuncle
 series: morphology
-chapter: 16
+chapter: 18
 assets: "/images/modelling/shells/"
 images:
   - name: "annulated-orthocone-opaque-iso.png"
