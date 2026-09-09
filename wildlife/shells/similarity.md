@@ -5,7 +5,7 @@ description: Comparing computational shell models by quantifying morphological s
 breadcrumb: Morphological Shell Similarity
 assets: "/images/modelling/shells/"
 series: morphology
-chapter: 19
+chapter: 22
 similarity_matrix:
    name: "similarity-matrix.png"
    alt: "Pairwise morphological similarity between computational shell models"
@@ -73,13 +73,16 @@ The resulting similarity matrix immediately reveals relationships between shell 
 
 Several expected groupings emerge naturally:
 
-- Orthocones cluster with annulated orthocones
+- Orthocones cluster strongly with annulated orthocones
 - Ammonites cluster with serpenticones
 - Nautilus variants are effectively identical
-- Turritella variants form their own group
+- Turritella variants form a distinct high-spired group
+- Turrilites joins the high-spired Turritella cluster despite belonging to a different biological lineage
+- The tusk shell lies closest to the curved cyrtocone model, reflecting their shared curved, tapering geometry despite representing different biological groups
+- The necklace shell lies closest to the flared shell, while retaining weaker similarities to several other gastropod-like forms
 - Ramshorn shells lie close to ammonites through convergent planispiral morphology despite belonging to a different biological lineage
 
-These relationships emerge directly from the recorded characteristics rather than being imposed beforehand.
+These relationships emerge directly from the recorded characteristics rather than being imposed beforehand. As the catalogue expands, the analysis increasingly highlights cases where similar shell geometries arise across different biological groups.
 
 {% include fullwidth-image.html assets=page.assets img=page.similarity_dendrogram %}
 
@@ -101,7 +104,7 @@ Although developed primarily to organise the shell collection, the similarity an
 
 The project therefore moves beyond generating individual shell geometries towards investigating relationships between shell forms themselves.
 
-As additional shell models are introduced, this morphospace will naturally expand, providing an increasingly rich framework for exploring computational shell morphology.
+As additional shell models are introduced, this morphospace expands, revealing both new morphological groupings and cases of convergent form across different biological lineages.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
