@@ -28,7 +28,9 @@ Lots of quacking.
 
 And somehow it is enormously relaxing.
 
-I think part of the reason is that everything was moving at the correct speed.
+Part of the appeal, I think, is that quacking is communicative, but not communicative to me. I am surrounded by a little society carrying on with its business, but there is no demand that I respond, interpret, decide or perform. I can simply sit there and listen to it happen.
+
+And I think part of the reason is that everything was moving at the correct speed.
 
 Nothing was hurried. Nothing needed improving. Nothing was demanding that I get on with it.
 
