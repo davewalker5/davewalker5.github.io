@@ -30,7 +30,11 @@ And somehow it is enormously relaxing.
 
 Part of the appeal, I think, is that quacking is communicative, but not communicative to me. I am surrounded by a little society carrying on with its business, but there is no demand that I respond, interpret, decide or perform. I can simply sit there and listen to it happen.
 
-And I think part of the reason is that everything was moving at the correct speed.
+And ducks are such immediate creatures. They paddle, fuss, forage, squabble over bread, then settle again. Watching and hearing them pulls attention into the present because their world is so conspicuously about what is happening right now.
+
+Perhaps that is part of why it feels so grounding.
+
+I also think part of the reason is that everything was moving at the correct speed.
 
 Nothing was hurried. Nothing needed improving. Nothing was demanding that I get on with it.
 
