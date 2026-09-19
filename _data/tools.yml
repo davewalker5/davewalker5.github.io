@@ -46,4 +46,8 @@
   category: "tools"
   description: Computational models and interactive tools for exploring molecular clock theory and phylogenetic inference
   link: https://github.com/davewalker5/MolecularClockSimulation
+- title: Music Catalogue
+  category: "tools"
+  description: A personal music collection manager with stylistic tagging and reporting to explore patterns and preferences
+  link: https://github.com/davewalker5/MusicCatalogue
 
