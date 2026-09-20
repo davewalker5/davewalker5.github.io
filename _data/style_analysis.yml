@@ -1,0 +1,37 @@
+series_name: "Music Catalogue Style Analysis"
+chapters:
+  - title: "Describing Artists"
+    description: "Artist-level style descriptions and mood associations"
+    url: /music/style/describing-artists.html
+
+  - title: "Feature Matrix"
+    description: "Combining numeric style scores, category indicators and artist-to-mood mappings"
+    url: /music/style/feature-matrix.html
+
+  - title: "Preparing the Features"
+    description: "Standardising style scores and weighting the category and mood indicators"
+    url: /music/style/preparing-features.html
+
+  - title: "The First Style Map"
+    description: "Plotting energy and intimacy with warmth as colour"
+    url: /music/style/first-style-map.html
+
+  - title: "Finding Groups"
+    description: "Finding Groups with K-Means"
+    url: /music/style/finding-groups.html
+
+  - title: "Choosing the Number of Clusters"
+    description: "Interpreting inertia and silhouette scores before selecting a working cluster count"
+    url: /music/style/selecting-k.html
+
+  - title: "Describing the Groups"
+    description: "Fitting the chosen grouping, then summarising clusters using readable style scores"
+    url: /music/style/describing-clusters.html
+
+  - title: "Mapping the Clustered Catalogue"
+    description: "Returning the group assignments to the familiar style map and adding artist density"
+    url: /music/style/visualising-groups.html
+
+  - title: "My Collection"
+    description: "Returning the group assignments to the familiar style map and adding artist density"
+    url: /music/style/my-collection.html
