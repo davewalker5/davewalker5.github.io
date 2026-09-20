@@ -76,4 +76,8 @@ I find that increasingly interesting — not just the music, but what happens wh
 
 These pages are simply notes made along the way.
 
+## Projects
+
+{% include landing-section.html title_column_name="Title" items=site.data.music category="projects" %}
+
 {% include music-catalogue-invitation.html %}
