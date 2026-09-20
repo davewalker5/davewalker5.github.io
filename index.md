@@ -7,7 +7,7 @@ title: Home
 
 Field Notes Journal is a long-term record of observation, enquiry and understanding.
 
-It begins with simple acts of noticing: a bird seen on a morning walk, a fossil in a museum, a landscape encountered while travelling, a passage in a book that raises an unexpected question. Some observations remain just that. Others become investigations that unfold over weeks, months or even years.
+It begins with simple acts of noticing: a bird seen on a morning walk, a fossil in a museum, a landscape encountered while travelling, a familiar song heard with fresh ears, a passage in a book that raises an unexpected question. Some observations remain just that. Others become investigations that unfold over weeks, months or even years.
 
 Everything here begins with observation, and builds over time.
 
@@ -35,8 +35,9 @@ The journal brings together several connected strands of work.
 - Photography and microscopy as observational tools
 - Computational modelling inspired by natural history
 - Essays, notebooks and reflections on the process of enquiry
+- Music - record collecting and investigations into musical character
 
-Some projects are brief notes; others become substantial studies supported by datasets, software, visualisations and downloadable publications. Each can be explored independently, but together they document an evolving way of engaging with the natural world.
+Some projects are brief notes; others become substantial studies supported by datasets, software, visualisations and downloadable publications. Each can be explored independently, but together they document an evolving way of engaging with the subjects that capture my curiosity.
 
 <hr/>
 

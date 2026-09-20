@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Start Here
-description: A guide to exploring Field Notes Journal — a long-term practice of observation, enquiry, and computational natural history
+description: A guide to Field Notes Journal — natural history, travel, music and investigations shaped by observation and curiosity
 permalink: /start-here/
 images:
   - name: "/images/site/SI-II-046.png"
@@ -29,9 +29,9 @@ images:
 
 Welcome to Field Notes Journal.
 
-This is a long-term practice of observation, enquiry, and understanding. It brings together natural history, travel, microscopy, computational modelling, and reflective writing, all connected by the same underlying approach: observe carefully, record faithfully, ask questions, and return often.
+This is a long-term practice of observation, enquiry, and understanding. It brings together natural history, travel, microscopy, computational modelling, music, and reflective writing, all connected by the same underlying approach: observe carefully, record faithfully, ask questions, and return often.
 
-Some projects remain simple field notes. Others grow into analyses, software, computational models, or extended essays. Together they document not only the natural world, but the process of learning about it.
+Some projects remain simple field notes. Others grow into analyses, software, computational models, or extended essays. Together they document the natural world and other interests, as well as the process of learning about them.
 
 If this is your first visit, the sections below provide a good introduction.
 
@@ -44,7 +44,7 @@ Although the subjects vary, most projects follow a similar path.
 - An observation raises a question
 - The question leads to recording, reading, or investigation
 - Records accumulate into evidence of patterns
-- Analysis and modelling help explore those patterns
+- Analysis and modelling help explore those patterns where useful
 - Writing and publication share both the results and the process
 - Reflection suggests new questions, and the cycle begins again
 
@@ -91,6 +91,14 @@ Some projects follow journeys through unfamiliar places. Others remain closer to
 
 Together, they aim to capture not only places visited, but the wider practice of paying attention to place, movement, and experience.
 
+### Music
+
+The [Music section](/music/) explores listening, collecting and the discoveries that emerge from returning to familiar recordings with fresh ears.
+
+Some notes begin with a particular song, singer or record. Others explore the collection as a whole, including the stories carried by physical records and the relationships that become visible through the Music Catalogue.
+
+The [Catalogue Style Analysis](/music/catalogue-style-analysis/) uses my recorded descriptions of artists to explore stylistic similarities. It is not an automated verdict on the music, but another way of asking questions about a collection built through years of listening.
+
 ### Pocket Ecology
 
 Portable ecological computation explores what useful field analysis can be achieved on simple handheld devices, particularly the TI-84 Plus CE-T Python calculator.
@@ -108,6 +116,7 @@ If you would like to explore the site gradually, these projects provide a good i
 - [Stromatolite Growth Modelling](/wildlife/stromatolites/), following the development of computational models inspired by one of Earth’s earliest ecosystems
 - [Microscopy](/microscopy/), revealing familiar organisms at an unfamiliar scale
 - [Travel and Aviation](/travel/), bringing together travel journals, manually recorded aircraft sightings, and live observation of the airspace above home
+- [Music](/music/), exploring listening and collecting, including a [Catalogue Style Analysis](/music/style/) built from descriptions in my Music Catalogue
 - [Reference Booklets and eBooks](/reference/), bringing together many of the larger investigations in downloadable form
 
 <hr/>
@@ -118,7 +127,7 @@ Field Notes is built on the premise that:
 
 > Observation is the beginning, not the end
 
-A single observation may be interesting. A long sequence of observations reveals patterns. Patterns raise questions. Questions invite investigation.
+A single observation may be interesting. A long sequence of observations may reveal patterns. Patterns raise questions. Questions invite investigation — whether the subject is wildlife, a landscape or a music collection.
 
 Understanding grows through returning repeatedly to the same subjects over time.
 

@@ -1,14 +1,14 @@
 ---
 layout: default
 title: About Field Notes Journal
-description: The ideas, methods and philosophy behind Field Notes Journal — a long-term practice of observation, curiosity, computational natural history and reflective understanding.
+description: The ideas, methods and philosophy behind Field Notes Journal — a long-term practice of observation, curiosity, natural history and reflective enquiry.
 ---
 
 # About Field Notes Journal
 
-Field Notes Journal is a long-term practice of paying close attention to the natural world.
+Field Notes Journal is a long-term practice of paying close attention: principally to the natural world, but also to music, places, objects and other things that invite a closer look.
 
-It began with a simple habit: making notes about things I observed. Wildlife sightings, weather, microscope slides, museum visits, landscapes, fossils, journeys and everyday encounters gradually accumulated into notebooks, photographs and records.
+It began with a simple habit: making notes about things I observed. Wildlife sightings, weather, microscope slides, museum visits, landscapes, fossils, journeys and everyday encounters gradually accumulated into notebooks, photographs and records. Natural history remains at the heart of the site, but the same habit of attention now extends to other enduring interests.
 
 Individual observations are valuable. Their greatest value, however, often lies in the questions they inspire.
 
@@ -16,7 +16,7 @@ Some questions can be answered by returning to the field with a notebook. Others
 
 The result is that projects are rarely planned in advance. Instead, they emerge naturally as one question leads to another. This site is a record of that continuing process.
 
-> _Pay close attention to the natural world, follow the questions honestly, and allow what you learn to change how you see it_
+> _Pay close attention, follow the questions honestly, and allow what you learn to change how you see the world_
 
 That sentence has gradually become the guiding philosophy of Field Notes Journal.
 
@@ -28,10 +28,11 @@ Every project begins with curiosity:
 - Sometimes by an unfamiliar plant beneath the microscope
 - Sometimes by a fossil in a museum cabinet or a paragraph in a book that raises an unexpected question
 - Sometimes by travelling through an unfamiliar landscape and noticing how place, wildlife, weather and human movement fit together
+- Sometimes by hearing a familiar song with different ears, examining a record, or noticing a pattern in my music collection
 
 What happens next is rarely predictable. Observation raises questions and questions lead to reading that, in turn, suggests new observations.
 
-Some questions develop into computational models, software or extended investigations. Others simply deepen my understanding of a familiar place, an unfamiliar landscape, or an organism encountered there.
+Some questions develop into computational models, software or extended investigations. Others simply deepen my understanding of a familiar place, an unfamiliar landscape, an organism encountered there, or a piece of music I want to hear again.
 
 Each project answers some questions while raising others.
 
@@ -68,6 +69,18 @@ Understanding that continuity has changed the way I see the history of life—an
 
 Travel extends that way of looking rather than interrupting it. Being somewhere unfamiliar changes what is noticed: different landscapes, species, weather, geology, patterns of movement and relationships between people and place. The travel journals preserve those encounters while they are still immediate, but they arise from the same practice as the wildlife records kept closer to home — paying attention, making a record, and allowing a place to reveal itself gradually.
 
+## Music, Collecting and Discovery
+
+Music belongs here for much the same reason as natural history: it rewards attention and repeated encounters.
+
+Sometimes a note begins with the experience of listening — an unexpectedly rediscovered song, a singer’s phrasing, or a connection between recordings that a genre label does not quite explain. At other times it begins with a physical record, its pressing, label or history. Both are ways of exploring a collection that has grown through years of listening and discovery.
+
+My Music Catalogue adds another dimension. Alongside the usual record information, it holds descriptions of the musical character I associate with artists. The [Catalogue Style Analysis](/music/style/) uses those recorded descriptions to explore similarities and concentrations within the collection.
+
+The analysis does not listen to the recordings or establish definitive musical genres. Its groupings depend on the descriptions, features and weights I have chosen. The result is a different view of the collection, and a source of questions to take back to the records.
+
+Not every encounter with music needs to become an analysis. Sometimes listening is enough, and the experience itself is worth preserving.
+
 ## Method
 
 Although the subjects explored here are diverse, the working method remains broadly consistent.
@@ -87,7 +100,7 @@ Publication is therefore not the end of a project. It is another stage in the pr
 
 My academic background includes degrees in chemistry and mathematics, including a PhD in mathematics. Although Field Notes Journal is not intended as a formal scientific publication, that training naturally influences the analytical and computational aspects of the work.
 
-Most of the software used throughout the project is developed specifically to investigate questions raised through observation. Databases, visualisations, simulations and interactive tools are all built for the same reason: to understand something in the natural world more completely.
+Much of the software used throughout the project is developed specifically to investigate questions raised through observation. Databases, visualisations, simulations and interactive tools help me understand natural systems, explore accumulated records and pursue questions about other interests.
 
 Technology is never the destination.
 
@@ -113,7 +126,7 @@ Field Notes Journal is both a working notebook and a published archive.
 
 Some investigations remain brief observational notes or travel-journal entries. Others develop into extended studies supported by software, datasets, documentation and downloadable publications.
 
-Together they document not only the natural world, but also a continuing process of learning:
+Together they document the natural world, other sustained interests and, above all, a continuing process of learning:
 
 - Understanding is never complete
 - Every observation suggests another question
