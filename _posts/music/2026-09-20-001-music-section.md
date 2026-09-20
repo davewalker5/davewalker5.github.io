@@ -8,8 +8,8 @@ excerpt: "Adding music to Field Notes raised an unexpected question about the ch
 assets: "/images/music/catalogue-style-analysis/"
 clustered_map:
   name: "catalogue-style-with-clustering.png"
-  alt: "Artist style map with coloured cluster dots, labelled groups and hexagonal density shading"
-  caption: "The final catalogue map: group membership and artist density shown together"
+  alt: "The collection from another perspective. Artists mapped by energy and intimacy, with colours indicating stylistic groupings and hexagonal shading showing concentrations of artists"
+  caption: "The collection from another perspective. Artists mapped by energy and intimacy, with colours indicating stylistic groupings and hexagonal shading showing concentrations of artists"
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
