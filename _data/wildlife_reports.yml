@@ -3271,6 +3271,20 @@
   location_title: Abingdon
   category: Butterflies
   category_title: Butterflies
+  species: Clouded-Yellow-Butterfly
+  species_title: Clouded Yellow Butterfly
+  base: Clouded-Yellow-Butterfly
+  title: Clouded Yellow Butterfly
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Clouded-Yellow-Butterfly.xlsx
+  png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Clouded-Yellow-Butterfly.png
+- report_type: trend
+  report_type_title: Trend
+  country: United-Kingdom
+  country_title: United Kingdom
+  location: Abingdon
+  location_title: Abingdon
+  category: Butterflies
+  category_title: Butterflies
   species: Comma-Butterfly
   species_title: Comma Butterfly
   base: Comma-Butterfly
