@@ -188,20 +188,6 @@
   location_title: Abingdon
   category: Flora
   category_title: Flora
-  species: Common-Cleavers
-  species_title: Common Cleavers
-  base: Common-Cleavers
-  title: Common Cleavers
-  xlsx_path: /wildlife/reports/United-Kingdom/heatwave/Abingdon/Flora/2025-2026-Abingdon-Flora-Common-Cleavers.xlsx
-  png_path: /wildlife/reports/United-Kingdom/heatwave/Abingdon/Flora/2025-2026-Abingdon-Flora-Common-Cleavers.png
-- report_type: heatwave
-  report_type_title: Heatwave Sightings
-  country: United-Kingdom
-  country_title: United Kingdom
-  location: Abingdon
-  location_title: Abingdon
-  category: Flora
-  category_title: Flora
   species: Common-Poppy
   species_title: Common Poppy
   base: Common-Poppy
