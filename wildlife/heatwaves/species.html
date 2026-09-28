@@ -1,0 +1,35 @@
+---
+layout: default
+title: Wildlife Species Comparison Chart
+breadcrumb: Wildlife Species Comparison Chart
+description: Wildlife species comparison chart based on personal field records, with downloadable data.
+---
+
+<h1 id="heading">Wildlife Species Comparison Chart</h1>
+
+<p id="intro">
+This chart shows wildlife sightings heatwave comparisons by species based on personal field records.
+</p>
+
+<p class="muted" id="meta"></p>
+
+<figure class="report-figure">
+  <div id="img-wrap" class="report-image-wrap">
+    <img id="report-img" class="responsive" alt="Wildlife species heatwave comparison chart"/>
+  </div>
+
+  <figcaption class="report-caption">
+    Species heatwave comparison chart generated from personal field records.
+  </figcaption>
+
+  <div class="download-block">
+    <a id="xlsx-link" class="download-btn" href="#" download>
+      ⬇ Download Wildlife Species Heatwave Comparison Data (XLSX)
+    </a>
+    <p class="download-note">Raw data used to generate this chart.</p>
+  </div>
+</figure>
+
+{%- assign reports = site.data.abingdon_2026_heatwave | where: "report_type", "heatwave" -%}
+<script id="heatwave-data" type="application/json">{{ reports | jsonify }}</script>
+<script src="{{ '/assets/js/heatwave-species.js' | relative_url }}"></script>
