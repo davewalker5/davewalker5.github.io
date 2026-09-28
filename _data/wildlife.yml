@@ -37,6 +37,10 @@
   category: "projects"
   description: "Portable ecological modelling, bat acoustics analysis, and constrained computational natural history tools"
   link: /wildlife/pocket/
+- title: "Wildlife Through the 2026 Heatwaves"
+  category: "projects"
+  description: "Comparison of wildlife sightings in Abingdon during the exceptionally hot spring and summer of 2026"
+  link: /wildlife/heatwaves/
 
 # --------------------------------------------------------------------------------
 # Reports
