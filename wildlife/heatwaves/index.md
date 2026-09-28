@@ -7,22 +7,22 @@ dataset: true
 assets: "/wildlife/reports/United-Kingdom/heatwave/Abingdon/"
 all:
   name: "2025-2026-Abingdon.png"
-  alt: "Bar chart comparing monthly wildlife sightings in Abingdon during 2025 and 2026. Sightings are generally lower in 2026 through spring and early summer, with the largest difference in June, before rebounding strongly in August"
-  caption: "Monthly wildlife sightings in Abingdon during 2025 and 2026. The most pronounced early-summer difference occurs in June, while August 2026 shows a strong rebound"
+  alt: "Bar chart comparing monthly wildlife sightings in Abingdon during 2025 and 2026 (all categories). Sightings are generally lower in 2026 through spring and early summer, with the largest difference in June, before rebounding strongly in August."
+  caption: "Monthly wildlife sightings in Abingdon during 2025 and 2026 (all categories). The most pronounced early-summer difference occurs in June, while August 2026 shows a strong rebound."
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
 all_birds:
   name: "2025-2026-Abingdon-Birds.png"
-  alt: "Bar chart comparing bird sightings by species in Abingdon from May to September 2025 and 2026. Most species were recorded less often in 2026, while Woodpigeon remained similar and Magpie sightings increased substantially"
-  caption: "Bird observations from May to September show marked differences between species. Wrens, tits, Dunnocks and several other familiar birds were encountered less frequently in 2026, while Woodpigeons remained broadly stable and Magpies increased"
+  alt: "Bar chart comparing bird sightings by species in Abingdon from May to September 2025 and 2026. Most species were recorded less often in 2026, while Woodpigeon remained similar and Magpie sightings increased substantially."
+  caption: "Bird observations from May to September show marked differences between species. Wrens, tits, Dunnocks and several other familiar birds were encountered less frequently in 2026, while Woodpigeons remained broadly stable and Magpies increased."
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
 all_flora:
   name: "2025-2026-Abingdon-Flora.png"
-  alt: "Bar chart comparing wildflower sightings by species in Abingdon during 2025 and 2026. Most selected species were recorded less often in 2026, while Common Poppy was a notable exception with more sightings"
-  caption: "Selected wildflower observations show the same broadly uneven pattern as the birds: several species became less prominent in the records, while Common Poppy moved strongly in the opposite direction"
+  alt: "Bar chart comparing wildflower sightings by species in Abingdon during 2025 and 2026. Most selected species were recorded less often in 2026, while Common Poppy was a notable exception with more sightings."
+  caption: "Selected wildflower observations show substantial differences between species. Several became much less prominent in the records during 2026, while Common Poppy moved strongly in the opposite direction."
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
@@ -36,7 +36,13 @@ Against that background, the wildlife records for Abingdon offered an opportunit
 
 > **Did the exceptional heat leave a visible signature in the wildlife I encountered?**
 
-This is not a controlled ecological survey. The records describe encounters made during ordinary observation, and changes in the number of records cannot by themselves demonstrate changes in population. What they can show is whether familiar species became more or less conspicuous within the landscape — and whether 2026 looked different from 2025 to the same observer.
+This is not a controlled ecological survey. The records describe encounters made during ordinary observation, and changes in the number of records cannot by themselves demonstrate changes in population.
+
+For mobile wildlife such as birds, changes in behaviour or detectability may substantially alter the number of encounters without any equivalent change in abundance.
+
+For flowering plants, however, the situation is somewhat different. During the hottest and driest periods of the summer, much of the vegetation in local hedgerows and verges visibly browned, died back or ceased flowering. Here the changing record may reflect not simply detectability, but a real reduction in the flowering vegetation present above ground.
+
+The records therefore cannot answer every ecological question raised by the summer, but they can show whether the wildlife visible within the local landscape changed — and whether 2026 looked different from 2025 to the same observer.
 
 The species included in the study are a subset of those from the [Wildlife Through the Year In Abingdon](/wildlife/seasonal/) work, selected both because I generally record enough data for them for the results to be meaningful and because they're amongst the species that I, _personally_, take note of in my local area.
 
@@ -58,9 +64,7 @@ For all bird observations, the monthly comparison is:
 | **Aug** |  **90** | **184** | **+104%** |
 | Sep     |     188 |     155 |      −18% |
 
-Across the selected bird species, the broad impression during 2026 was of fewer encounters.
-
-That impression is visible in the records. Across all bird observations, monthly totals were lower than in 2025 through much of the spring and early summer. May fell from 428 observations to 342, June from 231 to 161, and July from 283 to 257.
+Across the selected bird species, the broad impression during 2026 was of fewer encounters and that impression is visible in the records. Across all bird observations, monthly totals were lower than in 2025 through much of the spring and early summer. May fell from 428 observations to 342, June from 231 to 161, and July from 283 to 257.
 
 June produced the clearest difference, with observations approximately 30% below the corresponding month in 2025.
 
@@ -78,11 +82,9 @@ August was strikingly different: 184 bird observations were recorded in 2026 com
 
 {% include fullwidth-image.html assets=page.assets img=page.all_birds %}
 
-This distinction is important.
+This distinction is important because these records measure **encounters**, not population. A bird which remains present but changes where it spends its time, when it forages, how much it sings, or how readily it enters open ground can become much less visible without becoming less numerous.
 
-These records measure **encounters**, not population. A bird which remains present but changes where it spends its time, when it forages, how much it sings, or how readily it enters open ground can become much less visible without becoming less numerous.
-
-In ecological terms this is partly a question of detectability: how likely a species which is present is to be encountered and recorded.
+In ecological terms this is partly a question of **detectability**: how likely a species which is present is to be encountered and recorded.
 
 The following is the per-species data:
 
@@ -133,13 +135,17 @@ Swifts show a more complicated pattern. Overall observations fell from 28 to 22,
 
 The migrant records therefore support the impression of a relatively poor year overall, but not a simple relationship with the local heatwaves. Migration, conditions elsewhere on the migration route, breeding success and the enormous distances over which these birds can forage all complicate the picture.
 
-Here again, the observations are better understood as a record of **visibility within the local landscape** than as a direct measure of population.
+Here again, the observations are better understood primarily as a record of **detectability within the local landscape** than as a direct measure of population.
 
 ## The Flowers Changed Too
 
 {% include fullwidth-image.html assets=page.assets img=page.all_flora %}
 
-The wildflower records provide an interesting comparison because they show a broadly similar change emerging during early summer:
+The wildflower records provide a different but complementary view of the summer.
+
+Unlike birds, flowering plants cannot simply move elsewhere or alter their behaviour in a way which makes them harder to encounter. During the hottest and driest parts of the summer, the change in the vegetation itself was obvious: hedgerows and verges which had been green and productive earlier in the season became increasingly brown, dry and depleted of flowers.
+
+The records reflect that change:
 
 | Species            | 2025 | 2026 |   Change |
 | ------------------ | ---: | ---: | -------: |
@@ -153,30 +159,51 @@ The wildflower records provide an interesting comparison because they show a bro
 | Cuckoo-pint        |   13 |    7 | **−46%** |
 | Common Poppy       |   37 |   52 | **+41%** |
 
+April 2026 actually produced more wildflower observations than April 2025, while May was almost identical between the two years. In June, however, observations fell from 308 in 2025 to 180 in 2026 — a reduction of approximately 42%. That timing is particularly striking because it corresponds with the period in which the physical appearance of the vegetation changed most noticeably.
 
-April 2026 actually produced more wildflower observations than April 2025, while May was almost identical between the two years. In June, however, observations fell from 308 in 2025 to 180 in 2026 — a reduction of approximately 42%.
+For the flowers, therefore, reduced observations cannot be interpreted in quite the same way as reduced bird encounters. A perennial plant may remain alive below ground, and an annual may simply have completed its life cycle earlier, so the records still cannot be treated as population counts.
+
+But the above-ground floral resource itself had visibly contracted: plants browned, flowering ceased, and previously productive stretches of vegetation became much less productive.
 
 The response was again species-specific.
 
 Red Campion, Red Dead-nettle and Buttercup all became substantially less prominent in the records, while Common Poppy moved in the opposite direction and was recorded more frequently during June and July 2026.
 
-As with the birds, there is no single uniform response. Different species contributed differently to the changing appearance of the landscape.
+As with the birds, there was no single uniform response. Different species contributed differently to the changing appearance of the landscape.
 
-## Visibility Rather Than Abundance
+## Two Different Effects
 
-The strongest conclusion from these records is therefore also a deliberately cautious one.
+Taken together, the bird and wildflower records suggest that the exceptional summer may have altered the observable landscape through at least two different pathways.
 
-Against a background of somewhat lower encounter rates earlier in 2026, the exceptional heat coincided with a particularly marked change in the wildlife being encountered around Abingdon during early summer, especially June. Many familiar resident birds became less conspicuous, Swallows and Swifts were recorded less frequently overall, and several flowering plants showed substantial reductions in observations.
+For birds, **detectability** is likely to be an important part of the story. Birds may remain present while changing where they forage, when they are active, how much they sing, or how readily they occupy exposed ground. Fewer sightings therefore cannot be assumed to mean fewer birds.
 
-But these records do not constitute population counts.
+For flowering plants, the change was more physically apparent. During the driest periods, much of the vegetation visibly browned, died back or ceased flowering. The reduction in observations therefore accompanied a real contraction in the flowering vegetation present above ground.
 
-What changed most clearly was **visibility**.
+Neither record alone demonstrates population change.
 
-The distinction is particularly apparent in a year when some species declined sharply in the records while others remained stable or increased, and when overall bird observations rebounded strongly during August.
+But together they show that the landscape experienced something more complex than a simple across-the-board decline in wildlife.
 
-Rather than showing a landscape emptied of wildlife by the heat, the records suggest something subtler: **the character of the observable landscape changed**.
+## A Changed Observable Landscape
 
-Some of its familiar inhabitants became quieter or harder to encounter. Others remained conspicuous. A few — particularly the Magpies — seemed almost to take possession of the space left behind.
+The strongest conclusion from these records is therefore a deliberately cautious one.
+
+Against a background of somewhat lower encounter rates earlier in 2026, the exceptional heat coincided with a particularly marked change in the wildlife being encountered around Abingdon during early summer, especially June.
+
+Among birds, many familiar resident species became less conspicuous, Swallows and Swifts were recorded less frequently overall, while other species — particularly Magpies — remained stable or increased.
+
+Among wildflowers, the change was more tangible. The flowering landscape itself contracted as vegetation browned, died back or ceased flowering during the hottest and driest parts of the summer.
+
+These records do not constitute population counts but they do show that **the character of the observable landscape changed**.
+
+For birds, part of that change may have been behavioural: familiar species becoming quieter, less exposed or simply harder to encounter.
+
+For plants, it was visible in the vegetation itself: fewer flowers, less productive growth and increasingly dry, brown hedgerows and verges.
+
+And throughout both groups, individual species responded differently.
+
+Rather than showing a landscape uniformly emptied of wildlife by the heat, the records suggest something subtler: an altered landscape in which some familiar inhabitants became less conspicuous, some flowering resources visibly contracted, others remained comparatively resilient, and a few species moved conspicuously in the opposite direction.
+
+The Magpies, in particular, seemed almost to take possession of the space left behind.
 
 As an observational record of one unusually hot year, that may ultimately be the most interesting result.
 
