@@ -7,7 +7,7 @@ breadcrumb: Wildlife Seasonal Modelling
 
 # Wildlife Seasonal Modelling
 
-The models described in this booklet explore what simple processes might give rise to the patterns seen in seasonal observations. The observed curves used throughout are derived from long-term monthly aggregation of wildlife observation records collected within the study area.
+The models described here explore what simple processes might give rise to the patterns seen in seasonal observations. The observed curves used throughout are derived from long-term monthly aggregation of wildlife observation records collected within the study area.
 
 Each model begins with a small set of assumptions — about presence, detectability, and seasonal change — and asks whether these are sufficient to reproduce the curves observed in the data.
 
