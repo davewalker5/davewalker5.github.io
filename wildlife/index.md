@@ -17,7 +17,7 @@ The aim is not simply to collect observations, but to use them as the starting p
 
 ## Projects
 
-{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="projects" %}
+{% include landing-section.html title_column_name="Title" items=site.data.wildlife category="projects" sort=true show_type=true %}
 
 ## Reports
 

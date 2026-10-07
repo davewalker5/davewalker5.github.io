@@ -3,46 +3,67 @@
 # --------------------------------------------------------------------------------
 - title: "Seasonal Modelling"
   category: "projects"
+  type: "Computational"
   description: "Explorations of interpretable seasonal models and the ecological structures emerging from them"
   link: /wildlife/modelling/
+
 - title: "Wildlife Through The Year in Abingdon"
   category: "projects"
+  type: "Analysis"
   description: "Interpretive seasonal analyses examining how species contribute to the changing ecological character of the year"
   link: /wildlife/seasonal/
+
 - title: "Seasonal Species Directory for Abingdon"
   category: "projects"
+  type: "Field Directory"
   description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive classifications"
   link: /wildlife/seasonal/abingdon.html
+
 - title: "Seasonal Species Directory for Thrupp Lake"
   category: "projects"
+  type: "Field Directory"
   description: "Seasonal species accounts derived from long-term field observations, fitted curves, and interpretive classifications"
   link: /wildlife/seasonal/thrupp_lake.html
+
 - title: "Bat Call Analysis"
   category: "projects"
+  type: "Analysis"
   description: "Explorations of bat echolocation through spectrogram analysis, pulse timing, and behavioural structure"
   link: /wildlife/batcalls/
+
 - title: "Computational Shell Morphology"
   category: "projects"
+  type: "Computational"
   description: "Explorations of shell growth and coiling geometry using logarithmic spirals and procedural natural history models"
   link: /wildlife/shells/
+
 - title: "Stromatolite Growth Modelling"
   category: "projects"
+  type: "Computational"
   description: "Explorations of stromatolite growth through computational ecology, environmental forcing, and emergent structure"
   link: /wildlife/stromatolites/
+
 - title: "Computational Molecular Evolution"
   category: "projects"
+  type: "Computational"
   description: "Explorations of molecular evolution through computational modelling, phylogenetic reconstruction, and fossil calibration"
   link: /wildlife/molecularclock/
+
 - title: "Pocket Ecology"
   category: "projects"
+  type: "Tooling"
   description: "Portable ecological modelling, bat acoustics analysis, and constrained computational natural history tools"
   link: /wildlife/pocket/
+
 - title: "Wildlife Through the 2026 Heatwaves"
   category: "projects"
+  type: "Analysis"
   description: "Comparison of wildlife sightings in Abingdon during the exceptionally hot spring and summer of 2026"
   link: /wildlife/heatwaves/
+
 - title: "Other Minds: Exploring the Evolution of Animal Minds"
   category: "projects"
+  type: "Reading"
   description: "A reading project based on Peter Godfrey-Smith’s Other Minds, investigating questions about intelligence, sentience and consciousness"
   link: /wildlife/other-minds/
 
