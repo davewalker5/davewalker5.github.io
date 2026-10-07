@@ -1,7 +1,18 @@
-<table class="data-table">
+<style>
+  .landing-table td:last-child,
+  .landing-table th:last-child {
+    white-space: normal;
+    overflow-wrap: break-word;
+  }
+</style>
+
+<table class="data-table landing-table">
   <thead>
     <tr>
       <th>{{ include.title_column_name }}</th>
+      {% if include.show_type %}
+        <th>Type</th>
+      {% endif %}
       <th>Description</th>
     </tr>
   </thead>
@@ -14,14 +25,25 @@
     {% endif %}
     {% for item in sorted_items %}
         <tr>
-        <td>
-            {% if item.title_prefix && item.title_prefix != "" %}
-              <span>{{ item.title_prefix }}</span>
-            {% endif %}
-            <a href="{{ item.link | relative_url }}">{{ item.title }}</a>
-        </td>
-        <td>{{ item.description }}</td>
+          <td>
+              {% if item.title_prefix && item.title_prefix != "" %}
+                <span>{{ item.title_prefix }}</span>
+              {% endif %}
+              <a href="{{ item.link | relative_url }}">{{ item.title }}</a>
+          </td>
+          {% if include.show_type %}
+            <td>
+              {% if item.type != blank %}
+                <span>{{ item.type }}</span>
+              {% endif %}
+            </td>
+          {% endif %}
+          <td>{{ item.description }}</td>
         </tr>
     {% endfor %}
   </tbody>
 </table>
+
+{% if item.type and item.type != "" %}
+  {{ item.type }}
+{% endif %}
