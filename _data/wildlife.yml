@@ -41,6 +41,10 @@
   category: "projects"
   description: "Comparison of wildlife sightings in Abingdon during the exceptionally hot spring and summer of 2026"
   link: /wildlife/heatwaves/
+- title: "Other Minds: Exploring the Evolution of Animal Minds"
+  category: "projects"
+  description: "A reading project based on Peter Godfrey-Smith’s Other Minds, investigating questions about intelligence, sentience and consciousness"
+  link: /wildlife/other-minds/
 
 # --------------------------------------------------------------------------------
 # Reports
