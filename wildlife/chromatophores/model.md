@@ -117,8 +117,6 @@ This makes it possible to experiment with the effect of latency as well as speed
 
 For continuously changing displays, delay is handled differently. Instead of repeatedly starting a new countdown, the cell follows an earlier point in the signal's history. This allows the display to remain dynamic while still showing the effect of lag.
 
-See [Dynamic Displays](Dynamic-Displays) for that behaviour in more detail.
-
 ## Two Views of the Same State
 
 One of the most useful aspects of the simulator is that the same underlying state can be viewed in two different ways.
@@ -166,10 +164,10 @@ The current model also deliberately omits many aspects of real chromatophore bio
 
 Cells do not currently include:
 
-- fatigue;
-- damage;
-- muscle mechanics;
-- individual response-rate differences.
+- Fatigue
+- Damage
+- Muscle mechanics
+- Individual response-rate differences
 
 The field shares one expansion rate and one contraction rate, although every cell still retains its own current size, target and response delay.
 
