@@ -67,6 +67,12 @@
   description: "A reading project based on Peter Godfrey-Smith’s Other Minds, investigating questions about intelligence, sentience and consciousness"
   link: /wildlife/other-minds/
 
+- title: "Chromatophore Simulation"
+  category: "projects"
+  type: "Computational"
+  description: "Explorations of cephalopod-inspired chromatophore behaviour, dynamic skin patterning, and emergent visual displays"
+  link: /wildlife/chromatophores/
+
 # --------------------------------------------------------------------------------
 # Reports
 # --------------------------------------------------------------------------------

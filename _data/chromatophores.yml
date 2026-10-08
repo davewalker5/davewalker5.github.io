@@ -1,0 +1,13 @@
+series_name: "Chromatophore Simulator"
+chapters:
+  - title: "The Chromatophore Model"
+    description: "A simplified computational model of cephalopod-inspired chromatophores"
+    url: /wildlife/chromatophores/model.html
+
+  - title: "Static Patterns"
+    description: "Exploring how fixed target arrangements can produce different cephalopod-inspired skin patterns"
+    url: /wildlife/chromatophores/static.html
+
+  - title: "Dynamic Patterns"
+    description: "Exploring travelling waves, pulses, spreading signals and changing mottles"
+    url: /wildlife/chromatophores/dynamic.html
