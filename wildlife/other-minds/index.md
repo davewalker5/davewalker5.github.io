@@ -5,6 +5,8 @@ description: "A reading project based on Peter Godfrey-Smith’s Other Minds, us
 breadcrumb: Other Minds
 ---
 
+# Other Minds: Exploring the Evolution of Animal Minds
+
 Peter Godfrey-Smith's *Other Minds* uses cephalopods, particularly octopuses, to explore the evolution of nervous systems, intelligence, sentience and consciousness.
 
 This is not intended as a chapter-by-chapter summary or formal review of the book. It is a synthesis of the ideas I found most interesting while reading it, together with some of the questions and connections that emerged in my notebook.
