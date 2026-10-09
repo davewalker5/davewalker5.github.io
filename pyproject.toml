@@ -32,7 +32,8 @@ dependencies = [
   "seaborn",
   "sqlparse",
   "statsmodels",
-  "weasyprint"
+  "weasyprint",
+  "pyyaml"
 ]
 
 [tool.setuptools]
