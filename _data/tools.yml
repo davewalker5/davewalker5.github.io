@@ -1,53 +1,72 @@
-- title: Nature Recorder
-  category: "tools"
-  description: Used to log wildlife sightings and build long-term natural history records
-  link: https://github.com/davewalker5/NatureRecorderPy
+- title: ADS-B BaseStation Reader
+  category: tools
+  description: Local-first ADS-B aircraft observation workbench with live tracking,
+    historical sessions and analysis
+  link: https://github.com/davewalker5/ADS-B-BaseStationReader
+- title: Chromatophore Simulator
+  category: tools
+  description: An experimental graphical model inspired by cephalopod chromatophores
+    and dynamic skin patterning
+  link: https://github.com/davewalker5/ChromatophoreSimulator
 - title: Flight Recorder
-  category: "tools"
+  category: tools
   description: Used to capture and analyse aircraft observations
   link: https://github.com/davewalker5/FlightRecorder
-- title: Raspberry Pi Weather Station
-  category: "tools"
-  description: A small environmental monitoring system that records local weather conditions
-  link: https://github.com/davewalker5/RPi-WeatherStation
-- title: Plate Library
-  category: "tools"
-  description: Used to maintain a catalogue of photomicrographic plates and investigations
-  link: https://github.com/davewalker5/PlateLibrary
-- title: Spectrogram Viewer
-  category: "tools"
-  description: Command-line tool for analysing bat recordings, with noise reduction, viewers, and pulse-level call analysis
-  link: https://github.com/davewalker5/SpectrogramViewer
-- title: ADS-B BaseStation Reader
-  category: "tools"
-  description: Local-first ADS-B aircraft observation workbench with live tracking, historical sessions and analysis
-  link: https://github.com/davewalker5/ADS-B-BaseStationReader
-- title: ODE Solver
-  category: "tools"
-  description: Tool for exploring ODE models and visualising their behaviour over time
-  link: https://github.com/davewalker5/OdeSolver
-- title: TI-84 Python Applications
-  category: "tools"
-  description: Scientific computing, modelling, and numerical experiments on the TI-84 Plus CE-T Python Calculator
-  link: https://github.com/davewalker5/ti-84-python
-- title: Log Spiral
-  category: "tools"
-  description: Procedural shell morphology experiments using logarithmic spirals to generate shell-like biological forms
-  link: https://github.com/davewalker5/LogSpiral
-- title: Stromatolite Growth
-  category: "tools"
-  description: Computational models for exploring stromatolite growth and the emergence of layered structures
-  link: https://github.com/davewalker5/StromatoliteGrowth
 - title: Fossil Tracker
-  category: "tools"
-  description: Personal fossil collection catalogue with taxonomy, provenance, measurements, images, and field notes
+  category: tools
+  description: Personal fossil collection catalogue with taxonomy, provenance, measurements,
+    images, and field notes
   link: https://github.com/davewalker5/FossilTracker
+- title: Log Spiral
+  category: tools
+  description: Procedural shell morphology experiments using logarithmic spirals to
+    generate shell-like biological forms
+  link: https://github.com/davewalker5/LogSpiral
 - title: Molecular Clock Simulator
-  category: "tools"
-  description: Computational models and interactive tools for exploring molecular clock theory and phylogenetic inference
+  category: tools
+  description: Computational models and interactive tools for exploring molecular
+    clock theory and phylogenetic inference
   link: https://github.com/davewalker5/MolecularClockSimulation
 - title: Music Catalogue
-  category: "tools"
-  description: A personal music collection manager with stylistic tagging and reporting to explore patterns and preferences
+  category: tools
+  description: A personal music collection manager with stylistic tagging and reporting
+    to explore patterns and preferences
   link: https://github.com/davewalker5/MusicCatalogue
-
+- title: Nature Recorder
+  category: tools
+  description: Used to log wildlife sightings and build long-term natural history
+    records
+  link: https://github.com/davewalker5/NatureRecorderPy
+- title: ODE Solver
+  category: tools
+  description: Tool for exploring ODE models and visualising their behaviour over
+    time
+  link: https://github.com/davewalker5/OdeSolver
+- title: Plate Library
+  category: tools
+  description: Used to maintain a catalogue of photomicrographic plates and investigations
+  link: https://github.com/davewalker5/PlateLibrary
+- title: Raspberry Pi Weather Station
+  category: tools
+  description: A small environmental monitoring system that records local weather
+    conditions
+  link: https://github.com/davewalker5/RPi-WeatherStation
+- title: RC2014
+  category: tools
+  description: Programs exploring what can be done with an RC2014 Mini II retrocomputer
+  link: https://github.com/davewalker5/RC2014
+- title: Spectrogram Viewer
+  category: tools
+  description: Command-line tool for analysing bat recordings, with noise reduction,
+    viewers, and pulse-level call analysis
+  link: https://github.com/davewalker5/SpectrogramViewer
+- title: Stromatolite Growth
+  category: tools
+  description: Computational models for exploring stromatolite growth and the emergence
+    of layered structures
+  link: https://github.com/davewalker5/StromatoliteGrowth
+- title: TI-84 Python Applications
+  category: tools
+  description: Scientific computing, modelling, and numerical experiments on the TI-84
+    Plus CE-T Python Calculator
+  link: https://github.com/davewalker5/ti-84-python
