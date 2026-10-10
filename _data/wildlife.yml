@@ -73,6 +73,12 @@
   description: "Explorations of cephalopod-inspired chromatophore behaviour, dynamic skin patterning, and emergent visual displays"
   link: /wildlife/chromatophores/
 
+- title: "Octopus Controller"
+  category: "projects"
+  type: "Computational"
+  description: "Exploring how an octopus-inspired simulation uses distributed arm control to turn simple movement rules into coordinated behaviour"
+  link: /wildlife/octopus/
+
 # --------------------------------------------------------------------------------
 # Reports
 # --------------------------------------------------------------------------------

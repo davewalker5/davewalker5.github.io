@@ -37,6 +37,11 @@
   description: Used to log wildlife sightings and build long-term natural history
     records
   link: https://github.com/davewalker5/NatureRecorderPy
+- title: Octopus Controller
+  category: tools
+  description: An octopus-inspired simulation of distributed arm control, local sensing,
+    obstacle avoidance and grasping
+  link: https://github.com/davewalker5/OctopusController
 - title: ODE Solver
   category: tools
   description: Tool for exploring ODE models and visualising their behaviour over

@@ -1,0 +1,21 @@
+series_name: "Octopus Controller"
+chapters:
+  - title: "Central Controller"
+    description: "Exploring how a central controller coordinates eight independent arms without prescribing every movement"
+    url: /wildlife/octopus/central-controller.html
+
+  - title: "Reach Controller and Arm Movement"
+    description: "Exploring how neighbouring segments coordinate flexible reaching, contact sensing, obstacle avoidance and grasping"
+    url: /wildlife/octopus/reach-controller.html
+
+  - title: "Demonstrations"
+    description: "Exploring the individual behaviours of an octopus-inspired controller"
+    url: /wildlife/octopus/demonstrations.html
+
+  - title: "Behaviour Showcase"
+    description: "Bringing independent arm control, local sensing, obstacle avoidance and grasping together in a single reproducible simulation scenario"
+    url: /wildlife/octopus/showcase.html
+
+  - title: "A Tribute to Charles"
+    description: "An affectionate tribute to an octopus who proved rather more interested in dismantling an experiment than cooperating with it"
+    url: /wildlife/octopus/tribute.html
