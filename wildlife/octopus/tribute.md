@@ -13,13 +13,9 @@ _An affectionate tribute to an octopus who proved rather more interested in dism
 
 ## Meet Charles
 
-In the 1950s, researcher P. B. Dews conducted a series of experiments at the Naples Zoological Station in Italy, investigating learning and operant conditioning in the common octopus (Octopus vulgaris).
+In the 1950s, researcher P. B. Dews conducted a series of experiments at the Naples Zoological Station in Italy, investigating learning and operant conditioning in the common octopus (Octopus vulgaris). Three octopuses participated in the experiments. They were named Albert, Bertram and Charles.
 
-Three octopuses participated in the experiments. They were named Albert, Bertram and Charles.
-
-The objective was to investigate whether octopuses could learn to perform a specific action in exchange for a reward.
-
-The apparatus was relatively simple: operating a lever activated a light and delivered a small piece of fish.
+The objective was to investigate whether octopuses could learn to perform a specific action in exchange for a reward. The apparatus was relatively simple: operating a lever activated a light and delivered a small piece of food.
 
 Albert and Bertram learned to operate the lever with reasonable consistency.
 
@@ -27,11 +23,7 @@ Charles, however, proved to be a rather different experimental subject.
 
 ## An Octopus with Other Priorities
 
-Dews published his findings in 1959 in a paper entitled Some Observations on an Operant in the Octopus.
-
-Although Charles demonstrated that he could operate the lever, his behaviour differed markedly from that of the other two octopuses.
-
-Three aspects of his behaviour were particularly noteworthy.
+Dews published his findings in 1959 in a paper entitled Some Observations on an Operant in the Octopus. Although Charles demonstrated that he could operate the lever, his behaviour differed markedly from that of the other two octopuses. Three aspects of his behaviour were particularly noteworthy.
 
 ### 1. The Lever Incident
 
@@ -39,27 +31,17 @@ Albert and Bertram operated the lever relatively gently, floating freely in the 
 
 Charles adopted a somewhat more forceful technique.
 
-He anchored several arms against the sides of the tank, wrapped others around the lever, and applied considerable force.
-
-The lever was bent repeatedly.
-
-On the eleventh day, Charles finally broke it, prematurely interrupting the experiment.
+He anchored several arms against the sides of the tank, wrapped others around the lever, and applied considerable force. The lever was bent repeatedly and on the eleventh day, Charles finally broke it, prematurely interrupting the experiment.
 
 This was not, however, evidence that Charles was incapable of learning the required behaviour. Dews reported that Charles achieved a sequence of 80 consecutive lever responses across days nine and ten without any response taking longer than ten minutes.
 
-Charles could operate the apparatus.
-
-He simply did not always operate it in the manner the researchers intended.
+Charles could operate the apparatus. He simply did not always operate it in the manner the researchers intended.
 
 ### 2. The Lamp Incident
 
-The experimental lamp was suspended a little above the water.
+The experimental lamp was suspended a little above the water and Albert and Bertram paid it relatively little attention.
 
-Albert and Bertram paid it relatively little attention.
-
-Charles was considerably more interested.
-
-He repeatedly reached towards the lamp, encircled it with his arms and applied force in an apparent attempt to bring it into the tank.
+Charles was considerably more interested. He repeatedly reached towards the lamp, encircled it with his arms and applied force in an apparent attempt to bring it into the tank.
 
 From the experimenter’s perspective, this was an unhelpful distraction from the lever-operating task.
 
@@ -67,31 +49,19 @@ From the perspective of studying flexible and exploratory animal behaviour, it w
 
 ### 3. The Water-Jet Incident
 
-Perhaps the most entertaining of Charles’s documented behaviours was his tendency to direct jets of water out of his tank.
+Perhaps the most entertaining of Charles’s documented behaviours was his tendency to direct jets of water out of his tank. In particular, he directed them towards the experimenter and other people approaching the tank. Dews reported that Charles would spend considerable time with his eyes above the water surface, directing jets at nearby individuals.
 
-In particular, he directed them towards the experimenter and other people approaching the tank.
-
-Dews reported that Charles would spend considerable time with his eyes above the water surface, directing jets at nearby individuals.
-
-This behaviour interfered with the smooth running of the experiments.
-
-Together with the increasingly frequent attempts to manipulate the lamp, it eventually became sufficiently predominant to disrupt the lever-operating trials.
+This behaviour interfered with the smooth running of the experiments and together with the increasingly frequent attempts to manipulate the lamp, it eventually became sufficiently predominant to disrupt the lever-operating trials.
 
 Quite why Charles developed and maintained these behaviours remained unclear to the researchers.
 
 ## What Does Charles Tell Us?
 
-It would be tempting to describe Charles as mischievous, stubborn, rebellious or deliberately determined to frustrate the researchers.
-
-And, admittedly, the story almost invites such interpretations!
-
-However, these are human descriptions of behaviour. They do not establish Charles’s motivations or subjective experience.
+It would be tempting to describe Charles as mischievous, stubborn, rebellious or deliberately determined to frustrate the researchers and, admittedly, the story almost invites such interpretations! However, these are human descriptions of behaviour that do not establish Charles’s motivations or subjective experience.
 
 What the experiments actually demonstrate is something more interesting scientifically.
 
-Charles exhibited a range of behaviours that extended beyond the specific task the researchers were attempting to train.
-
-He manipulated the apparatus in unexpected ways, investigated another object in the experimental environment, and repeatedly directed water towards people outside his tank.
+Charles exhibited a range of behaviours that extended beyond the specific task the researchers were attempting to train. He manipulated the apparatus in unexpected ways, investigated another object in the experimental environment, and repeatedly directed water towards people outside his tank.
 
 Moreover, these behaviours differed substantially from those of Albert and Bertram.
 
@@ -99,23 +69,18 @@ Moreover, these behaviours differed substantially from those of Albert and Bertr
 
 An important distinction in animal cognition research is the difference between an animal’s capabilities and its willingness or motivation to perform a particular experimental task.
 
-If an animal performs poorly in a structured experiment, this does not necessarily mean that it lacks the cognitive ability being investigated.
+If an animal performs poorly in a structured experiment, this does not necessarily mean that it lacks the cognitive ability being investigated. The task may be poorly matched to its natural behaviour, its motivation may differ from the researcher’s expectations, or other features of the environment may attract its attention.
 
-The task may be poorly matched to its natural behaviour, its motivation may differ from the researcher’s expectations, or other features of the environment may attract its attention.
+Charles illustrates this problem rather beautifully:
 
-Charles illustrates this problem rather beautifully.
-
-The researchers wanted to investigate lever-operating behaviour.
-
-Charles demonstrated that the experimental environment offered several other possibilities for interaction.
+- The researchers wanted to investigate lever-operating behaviour
+- Charles demonstrated that the experimental environment offered several other possibilities for interaction
 
 His behaviour doesn’t prove any particular theory of octopus intelligence. It does, however, provide a memorable reminder that experimentally defined performance and behavioural capability are not always the same thing.
 
 ## Individual Differences
 
-Charles also highlights the importance of individual variation.
-
-Albert, Bertram and Charles were members of the same species, exposed to broadly similar experimental conditions, yet their observed behaviours differed.
+Charles also highlights the importance of individual variation. Albert, Bertram and Charles were members of the same species, exposed to broadly similar experimental conditions, yet their observed behaviours differed.
 
 It would be unwise to infer stable personality characteristics from this experiment alone.
 
@@ -123,59 +88,36 @@ Nevertheless, the contrast provides an intriguing illustration of the behavioura
 
 ## Why Charles Inspired Octopus Controller
 
-Octopus Controller began as an exploration of the unusual organisation of the octopus nervous system.
+Octopus Controller began as an exploration of the unusual organisation of the octopus nervous system. Unlike the rigid, jointed limbs commonly used in robotics, octopus arms are highly flexible muscular structures capable of complex movement and manipulation.
 
-Unlike the rigid, jointed limbs commonly used in robotics, octopus arms are highly flexible muscular structures capable of complex movement and manipulation.
-
-An octopus also possesses a remarkably distributed nervous system, with substantial neural processing occurring within the arms themselves.
-
-This raises an interesting computational question:
+An octopus also possesses a remarkably distributed nervous system, with substantial neural processing occurring within the arms themselves. This raises an interesting computational question:
 
 > How can relatively simple local control mechanisms contribute to complex, coordinated and environmentally responsive behaviour?
 
-Octopus Controller investigates aspects of that question through simulations of flexible arm movement, distributed control, local contact sensing, obstacle avoidance and grasping.
-
-Charles provides an especially memorable reminder of why these capabilities are interesting.
+Octopus Controller investigates aspects of that question through simulations of flexible arm movement, distributed control, local contact sensing, obstacle avoidance and grasping while Charles provides an especially memorable reminder of why these capabilities are interesting.
 
 His behaviour was not confined to the specific action requested by the experimenter. He explored, manipulated and interacted with several aspects of his environment.
 
-The project does not attempt to reproduce Charles’s nervous system, motivations or individual behaviour.
-
-Instead, it takes inspiration from the broader problem he illustrates: how flexible, sensory-rich appendages can support varied and sometimes unexpected interactions with the environment.
+The project does not attempt to reproduce Charles’s nervous system, motivations or individual behaviour. Instead, it takes inspiration from the broader problem he illustrates: how flexible, sensory-rich appendages can support varied and sometimes unexpected interactions with the environment.
 
 ## From Demonstrations to Experiments
 
-The initial release of Octopus Controller established the fundamental control mechanisms.
+The initial release of Octopus Controller established the fundamental control mechanisms and the second release introduced configurable scenarios, allowing users to define and reproduce experimental environments containing food, obstacles and individual arm objectives.
 
-Version 1.1.0 introduced configurable scenarios, allowing users to define and reproduce experimental environments containing food, obstacles and individual arm objectives.
+This makes it possible to investigate how the control system behaves under different conditions, rather than merely demonstrating predefined examples. In a small way, this reflects one of the lessons of Charles’s story: an experiment can become particularly interesting when the subject’s behaviour challenges the assumptions behind the experimental setup.
 
-This makes it possible to investigate how the control system behaves under different conditions, rather than merely demonstrating predefined examples.
-
-In a small way, this reflects one of the lessons of Charles’s story: an experiment can become particularly interesting when the subject’s behaviour challenges the assumptions behind the experimental setup.
-
-For a computational model, unexpected behaviour may reveal a limitation, a useful interaction between mechanisms, or a question worth investigating.
-
-Of course, unexpected behaviour in a simulation is not automatically evidence of intelligence. It must be understood in terms of the algorithms and conditions that produced it.
-
-Nevertheless, understanding why a system behaves unexpectedly can be one of the most productive parts of experimentation.
+For a computational model, unexpected behaviour may reveal a limitation, a useful interaction between mechanisms, or a question worth investigating and understanding why a system behaves unexpectedly can be one of the most productive parts of experimentation.
 
 ## A Suitable Mascot
 
 There is something particularly appealing about choosing Charles as the inspiration for a software project.
 
-He was not the most cooperative experimental subject.
+- He was not the most cooperative experimental subject
+- He was not content simply to operate the apparatus gently and collect his reward
 
-He was not content simply to operate the apparatus gently and collect his reward.
+Instead, he bent the lever, interfered with the lamp and squirted the experimenter and, eventually, he broke part of the equipment. And in doing so, he left behind a scientific anecdote that remains fascinating decades later.
 
-Instead, he bent the lever, interfered with the lamp and squirted the experimenter.
-
-Eventually, he broke part of the equipment.
-
-And in doing so, he left behind a scientific anecdote that remains fascinating decades later.
-
-Charles reminds us that studying animal behaviour requires more than designing an experiment and expecting the animal to follow instructions.
-
-Sometimes the unexpected behaviour is the most interesting part.
+Charles reminds us that studying animal behaviour requires more than designing an experiment and expecting the animal to follow instructions. Sometimes the unexpected behaviour is the most interesting part.
 
 Octopus Controller is therefore dedicated to Charles, and to the curiosity, flexibility and individuality that make octopuses such extraordinary animals.
 
