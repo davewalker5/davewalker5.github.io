@@ -9,15 +9,17 @@ chapter: 3
 
 # Demonstrations
 
-## Overview
+## Exploring the Controller's Behaviour
 
-Octopus Controller explores the control of flexible, octopus-inspired arms through a series of increasingly sophisticated simulations.
+How does a collection of relatively simple movement rules become a system capable of reaching towards objects, responding to obstacles and grasping food?
 
-The demonstrations progress from controlling a single arm to coordinating multiple arms, responding to local sensory information, navigating around obstacles and interacting with objects through grasping.
+One way to investigate this is to begin with a single flexible arm and progressively introduce additional capabilities.
 
-The underlying theme is **distributed control**: investigating how relatively simple control mechanisms, operating at the level of individual arms, can contribute to more complex and coordinated behaviour.
+The five demonstrations below follow that approach. Each builds upon the preceding experiments, moving from basic arm movement to independent multi-arm control, local contact sensing, obstacle avoidance and grasping.
 
-These demonstrations illustrate the capabilities of the simulation rather than attempting to reproduce the biological nervous system of an octopus in complete detail.
+The important question is not simply whether the controller can perform these tasks, but **how increasingly complex behaviour can arise from local control mechanisms without every movement being prescribed centrally**.
+
+These are computational experiments inspired by the organisation of the octopus nervous system, rather than attempts to reproduce its biology in complete detail.
 
 ## 1. Single-Arm Controller
 
@@ -78,23 +80,15 @@ In an octopus, the central nervous system interacts with substantial neural circ
   </div>
 </figure>
 
-The third demonstration introduces local environmental sensing.
+The third demonstration introduces local contact sensing.
 
-Rather than relying exclusively on predefined movement targets, individual arms can respond to information concerning nearby objects.
+Until this point, movement has been determined primarily by the arm's assigned destination and its geometric constraints. Now, individual segments can also detect when they come into contact with objects in the simulated environment.
 
-This is an important step towards modelling behaviour in which the environment influences how an arm moves.
+This introduces an important distinction between reaching towards an intended destination and responding to something the arm actually touches.
 
-This demonstration illustrates:
+Rather than detecting objects at a distance, the model uses sensing regions associated with individual segments to identify physical contact.
 
-- Detection of objects within a local sensing region
-- Arm responses informed by nearby environmental features
-- The interaction between sensory information and movement control
-
-**Significance:** Introduces sensory feedback into the control process.
-
-Biological octopus arms possess extensive sensory capabilities, including receptors associated with their suckers. These allow an arm to acquire information about objects it encounters.
-
-The simulation explores the broader computational principle that local sensory input can influence an appendage's behaviour without requiring every response to be individually specified by a central controller.
+In biological octopuses, sensory receptors distributed along the arms and associated with the suckers contribute to the animal's ability to investigate and manipulate objects. The simulation explores a simplified version of the principle that sensory information acquired locally can influence behaviour.
 
 ## 4. Obstacle Avoidance
 
@@ -177,6 +171,18 @@ The demonstrations should therefore be understood as examples of simulated contr
 In particular, the simulation does not establish that its behaviours arise through the same neural processes observed in living animals.
 
 Nevertheless, it provides a useful foundation for investigating distributed control, sensory feedback and the relationship between local and coordinated behaviour.
+
+## Investigating the Behaviours Yourself
+
+The [interactive Octopus Explorer](/wildlife/octopus/explorer/) allows you to experiment with these behaviours directly in your browser.
+
+You can assign movement targets, adjust individual arm parameters, reposition food and obstacles, and examine how the controller responds to different conditions.
+
+The explorer also supports predefined scenarios and allows you to upload your own experimental configurations as JSON files.
+
+For an example of several behaviours operating together, the next chapter, **Behaviour Showcase**, presents a reproducible scenario combining independent movement, obstacle avoidance, local contact sensing and grasping.
+
+Instructions for creating your own scenarios are available in the [Octopus Controller GitHub repository](https://github.com/davewalker5/OctopusController).
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
