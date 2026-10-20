@@ -16,6 +16,7 @@ Aldabra Giant Tortoise,Aldebrachelys gigantea,Reptiles
 Andouin's Gull,Ichthyaetus audouinii,Birds
 Arctic Tern,Sterna paradisaea,Birds
 Ashy Starling,Lamprotornis unicolor,Birds
+Asian Koel,Eudynamys scolopaceus,Birds
 Augur Buzzard,Buteo augur,Birds
 Azure Damselfly,Coenagrion puella,Damselflies
 Baboon,Papio anubis,Primates
@@ -39,8 +40,10 @@ Black-Headed Heron,Ardea melanocephala,Birds
 Blackbird,Turdus merula,Birds
 Blackcap,Sylvia atricapilla,Birds
 Blackthorn,Prunus spinosa,Trees
+Blacktip Reef Shark,Carcharhinus melanopterus,Fish
 Blue Tit,Cyanistes caeruleus,Birds
 Bluebell,Hyacinthoides non-scripta,Flora
+Bluespotted Cornetfish,Fistularia commersonii,Fish
 Bojer's Skink,Gongylomorphus bojerii,Reptiles
 Bramble,Rubus fruticosus,Flora
 Brimstone Butterfly,Gonepteryx rhamni,Butterflies
@@ -72,8 +75,10 @@ Cleopatra Butterfly,Gonepteryx cleopatra,Butterflies
 Clouded Yellow Butterfly,Colias croceus,Butterflies
 Clover,Trifolium,Flora
 Coal Tit,Periparus ater,Birds
+Coastal Screw Pine,Pandanus tectorius,Trees
 Coco De Mer,Lodoicea maldivica,Trees
 Coco De Mer Snail,Stylodonta studeriana,Molluscs
+Coconut Rhinoceros Beetle,Oryctes rhinoceros,Beetles
 Collared Dove,Streptopelia decaocto,Birds
 Colts Foot,Tussilago farfara,Flora
 Comma Butterfly,Polygonia c-album,Butterflies
@@ -95,6 +100,7 @@ Common Ground Hopper,Tetrix undulata,Insects
 Common Gull,Larus canus,Birds
 Common Hazel,Corylus avellana,Shrubs
 Common Heather,Calluna vulgaris,Shrubs
+Common House Gecko,Hemidactylus frenatus,Reptiles
 Common Impala,Aepyceros melampus,Ungulates
 Common Ivy,Hedera helix,Flora
 Common Kestrel,Falco tinnunculus,Birds
@@ -185,6 +191,7 @@ Fox,Vulpes vulpes,Dog Family
 Foxglove,Digitalis purpurea,Flora
 Frigatebird,Fregata spp.,Birds
 Frillfin Goby,Bathygobius Soporator,Fish
+Fringelip Mullet,Crenimugil crenilabi,Fish
 Gadwall,Mareca strepera,Birds
 Garden Warbler,Sylvia borin,Birds
 Garlic Mustard,Alliaria petiolata,Flora
@@ -243,6 +250,7 @@ Harnessed Bushbuck ,Tragelaphus scriptus,Ungulates
 Hartebeest,Alcelaphus buselaphus,Ungulates
 Hasarius Adansoni,Hasarius Adansoni,Arachnids
 Hawfinch,Coccothraustes coccothraustes,Birds
+Hawksbill Turtle,Eretmochelys imbricata,Reptiles
 Hawkweed,Hieracium,Flora
 Hawthorn,Crataegus monogyna,Trees
 Hawthorn Shieldbug,Acanthosoma haemorrhoidale,Insects
@@ -270,7 +278,6 @@ Horsetail,Equisetum arvense,Flora
 House Cricket,Acheta domesticus,Grasshoppers
 House Crow,Corvus splendens,Birds
 House Fly,Musca domestica,Flies
-House Gecko,Hemidactylus frenatus,Reptiles
 House Martin,Delichon urbicum,Birds
 House Sparrow,Passer domesticus,Birds
 Hoverfly,,Flies
@@ -278,6 +285,7 @@ Hummingbird Hawkmoth,Macroglossum stellatarum,Moths
 Iberian Ibex,Capra pyrenaica,Ungulates
 Ichneumon Wasp,Ichneumonoidea,Wasps
 Indian Almond,Terminalia catappa,Trees
+Indian Flying Fox,Pteropus giganteus,Bats
 Ivy,Hedera,Flora
 Jacaranda,Jacaranda mimosifolia,Trees
 Jackdaw,Coloeus monedula,Birds
@@ -291,6 +299,7 @@ Kori Bustard,Ardeotis kori,Birds
 Lady's Smock,Cardamine pratensis,Flora
 Ladybird,,Beetles
 Lady’s Bedstraw,Galium verum,Flora
+Land Hermit Crab,Coenobita spp,Marine Invertebrates
 Lappet-Faced Vulture,Torgos tracheliotos,Birds
 Lapwing,Vanellus vanellus,Birds
 Large White Butterfly,Pieris brassicae,Butterflies
@@ -334,6 +343,7 @@ Meadow Pipit,Anthus pratensis,Birds
 Merganser,Mergus merganser,Birds
 Merlin,Falco columbarius,Birds
 Michaelmas Daisy,Aster amellus,Flora
+Milkfish,Chanos chanos,Fish
 Mistle Thrush,Turdus viscivorus,Birds
 Mistletoe,Viscum album,Flora
 Mongoose,,Mammals
@@ -352,6 +362,7 @@ Nuthatch,Sitta europaea,Birds
 Oak Bush Cricket,Meconema thalassinum,Grasshoppers
 Orange-Tip Butterfly,Anthocharis cardamines,Butterflies
 Orange-Winged Dropwing Dragonfly,Trithemis kirbyi,Dragonflies
+Oriental Garden Lizard,Calotes versicolor,Reptiles
 Osprey,Pandion haliaetus,Birds
 Oxeye Daisy,Leucanthemum vulgare,Flora
 Oxford Ragwort,Senecio squalidus,Flora
@@ -404,6 +415,7 @@ Redpoll,Acanthis flammea,Birds
 Redwing,Turdus iliacus,Birds
 Reed Bunting,Emberiza schoeniclus,Birds
 Reed Warbler,Acrocephalus scirpaceus,Birds
+Reef Manta Ray,Mobula alfredi,Fish
 Ring-Necked Dove,Streptopelia capicola,Birds
 Ring-Necked Parakeet,Psittacula krameri,Birds
 Ringlet Butterfly,Aphantopus hyperantus,Butterflies
@@ -473,6 +485,7 @@ Speckled Bush Cricket,Leptophyes punctatissima,Grasshoppers
 Speckled Mousebird,Colius striatus,Birds
 Speckled Wood Butterfly,Pararge aegeria,Butterflies
 Speedwell,Veronica,Flora
+Spinner Dolphin,Stenella longirostris,Mammals
 Spotless Starling,Sturnus unicolor,Birds
 Spotted Flycatcher,Muscicapa striata,Birds
 Spotted Hyena ,Crocuta crocuta,Mammals
@@ -484,10 +497,12 @@ Striated Heron,Butorides striata,Birds
 Sun Spurge,Euphorbia helioscopia,Flora
 Sundbergs Day Gecko,Phelsuma sundbergi,Reptiles
 Superb Starling,Lamprotornis superbus,Birds
+Surgeonfish,Acanthurus spp,Fish
 Swallow,Hirundo rustica,Birds
 Swallowtail Butterfly,Papilio machaon,Butterflies
 Sweet Violet,Viola odorata,Flora
 Swift,Apus apus,Birds
+Swift-Footed Rock Crab,Grapsus albolineatus,Marine Invertebrates
 Sycamore,Acer pseudoplatanus,Trees
 Tailless Tenrec,Tenrec ecaudatus,Mammals
 Tall Coconut,Cocos nucifera,Trees
@@ -503,7 +518,9 @@ Thomson's Gazelle,Eudorcas thomsonii,Ungulates
 Thrift,Armeria maritima,Flora
 Thrip,,Insects
 Thrush,Turdus philomelos,Birds
+Thumbprint Emperor,Lethrinus harak,Fish
 Tipuana Tipu,Tipuana tipu,Trees
+Titan Triggerfish,Balistoides viridescens,Fish
 Tree Bumblebee,Bombus hypnorum,Bees
 Treecreeper,Certhia familiaris,Birds
 Tropical Shearwater,Puffinus bailloni,Birds
@@ -520,6 +537,7 @@ Viper's Bugloss,Echium vulgare,Flora
 Vole,,Rodents
 Von Der Decken's Hornbill,Tockus deckeni,Birds
 Vulture,,Birds
+Wandering Glider Dragonfly,Pantala flavescens,Dragonflies
 Water Forget-Me-Not,Myosotis scorpioides,Flora
 Water Lillies,Nymphaea,Flora
 Water Thick-Knee,Burhinus vermiculatus,Birds
@@ -536,11 +554,13 @@ White Water Lilly,Nymphaea alba,Flora
 White-Backed Vulture,Gyps africanus,Birds
 White-Bellied Bustard,Eupodotis senegalensis,Birds
 White-Bibbed Mallard,Anas platyrhynchos,Birds
+White-Breasted Waterhen,Amaurornis phoenicurus maldivus,Birds
 White-Faced Whistling Duck,Dendrocygna viduata,Birds
 White-Fronted Bee Eater,Merops bullockoides,Birds
 White-Headed Vulture,Trigonoceps occipitalis,Birds
 White-Tailed Bumblebee,Bombus Lucorum,Bees
 White-Thorned Acacia,Vachellia constricta,Trees
+Whitespotted Eagle Ray,Aetobatus ocellatus,Fish
 Whitethroat,Curruca communis,Birds
 Whitish Nassa,Nassarius albescens,Molluscs
 Wigeon,Mareca penelope,Birds
@@ -569,6 +589,7 @@ Yellow Water Lilly,Nuphar lutea,Flora
 Yellow-Barked Acacia,Vachellia xanthophloea,Trees
 Yellow-Billed Stork,Mycteria ibis,Birds
 Yellow-Collared Lovebirds,Agapornis personatus,Birds
+Yellowfin Parrotfish,Scarus flavipectoralis,Fish
 Yellowhammer,Emberiza citrinella,Birds
 Yew,Taxus baccata,Trees
 Zebra Dove,Geopelia striata,Birds
