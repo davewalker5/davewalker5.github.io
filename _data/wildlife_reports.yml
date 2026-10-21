@@ -96,6 +96,138 @@
   xlsx_path: /wildlife/reports/United-Kingdom/abundance/Thrupp Lake/Flora/abundance.xlsx
 - report_type: composition
   report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Bats
+  category_title: Bats
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Bats/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Bats/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Beetles
+  category_title: Beetles
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Beetles/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Beetles/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Birds
+  category_title: Birds
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Birds/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Birds/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Dragonflies
+  category_title: Dragonflies
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Dragonflies/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Dragonflies/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Fish
+  category_title: Fish
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Fish/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Fish/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Flora
+  category_title: Flora
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Flora/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Flora/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Mammals
+  category_title: Mammals
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Mammals/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Mammals/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Marine Invertebrates
+  category_title: Marine Invertebrates
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Marine Invertebrates/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Marine Invertebrates/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Reptiles
+  category_title: Reptiles
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Reptiles/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Reptiles/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Trees
+  category_title: Trees
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Trees/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Trees/composition.png
+- report_type: composition
+  report_type_title: Composition
+  country: Maldives
+  country_title: Maldives
+  location: Constance Moofushi
+  location_title: Constance Moofushi
+  category: Wasps
+  category_title: Wasps
+  base: composition
+  title: Composition
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Wasps/composition.xlsx
+  png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Wasps/composition.png
+- report_type: composition
+  report_type_title: Composition
   country: Mauritius
   country_title: Mauritius
   location: Grand Gaube
@@ -1908,6 +2040,15 @@
   title: Heatmap
   xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Flora/heatmap.xlsx
   png_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Flora/heatmap.png
+- report_type: richness
+  report_type_title: Richness
+  country: Maldives
+  country_title: Maldives
+  year: '2026'
+  base: richness
+  title: Richness
+  xlsx_path: /wildlife/reports/Maldives/richness/2026/richness.xlsx
+  html_path: /wildlife/reports/Maldives/richness/2026/richness.html
 - report_type: richness
   report_type_title: Richness
   country: Seychelles
