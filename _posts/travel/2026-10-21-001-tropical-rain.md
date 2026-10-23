@@ -8,10 +8,16 @@ excerpt: A tropical downpour, a pair of live weather maps, and the curious pleas
 series: maldives2026
 series_order: 3
 assets: "/images/maldives/"
-images:
+stormy_sky:
+  name: "stormy-sky.jpg"
+  alt: "Dark, swirling blue-grey storm clouds loom over the Indian Ocean at Constance Moofushi in the Maldives. A curtain of rain is visible on the horizon, beyond a narrow strip of turquoise sea and pale sandy beach"
+  caption: "A tropical storm gathers over the Indian Ocean at Constance Moofushi. An extraordinary spectacle of cloud, wind and approaching rain — and the promise of that wonderful sound of rain hammering on the roof"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-*Constance Moofushi, South Ari Atoll, Maldives — 21 October 2026*
+{% include fullwidth-image.html assets=page.assets img=page.stormy_sky %}
 
 It's raining. Not the tentative, apologetic sort of rain we so often get at home, but proper tropical rain. The sort that arrives with conviction, hammering on the roof, drumming on the decking and turning the lagoon into a thousand little splashes. And it's wonderful.
 
