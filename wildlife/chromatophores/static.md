@@ -56,13 +56,13 @@ The simplest way to create a pattern in the simulator is to give every chromatop
 
 The important point is that the population itself does not change.
 
-Cells do not move to new positions, exchange pigment, or become part of a different structure. The same 2,500 chromatophores remain in place throughout; only their visible sizes change.
+Cells do not move to new positions, exchange pigment, or become part of a different structure. The same 2,500 chromatophores remain in place throughout; only their visible sizes change. Their positions and maximum sizes are slightly irregular, but the underlying grid of pattern instructions stays the same.
 
 That means a transition from one pattern to another is not a replacement image. It is a reconfiguration of the same underlying system.
 
 A static pattern therefore works by assigning a target expansion to each cell and then allowing the normal expansion rate, contraction rate and response delay to determine how quickly the visible field reaches the new state. Once those targets have been reached, the pattern remains stable until another command is selected.
 
-The simulator currently provides seven fixed pattern types, described below.
+The simulator currently provides seven fixed pattern types, described below. Each one can also be explored with different pigment-group strengths, without changing the basic shape of its instructions.
 
 ## Uniform
 
@@ -76,7 +76,7 @@ All chromatophores therefore move towards half expansion.
 
 This does **not** mean that the field becomes a single colour. Yellow, red, brown and black pigment classes retain their identities throughout. What becomes uniform is the degree of expansion.
 
-In Chromatophore View the alternating pigment classes remain obvious; in Skin View their combined appearance becomes much more continuous. static
+In Chromatophore View the individual pigment classes remain obvious; in Skin View their combined appearance becomes much more continuous. The field is not perfectly identical from point to point, because the organs differ slightly in size and position.
 
 Fully expanded and fully contracted uniform fields can instead be produced using **Expand All** and **Contract All**.
 
@@ -204,6 +204,8 @@ This makes it possible to watch the same process at two scales:
 and
 
 > **a whole visual pattern reorganising itself**
+
+A further experiment is to leave a pattern in place and lower the Brown and Black pigment levels, then restore them. The geometry of the selected pattern remains the same, but the colours and coverage take on a different character. In Skin View, try changing the light angle as well: now even a completely settled pattern can look different.
 
 Re-selecting an unchanged fixed pattern does not restart the cells' response delays because their targets have not changed.
 

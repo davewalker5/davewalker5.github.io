@@ -25,7 +25,7 @@ Visible moving pattern
 
 This distinction is important. The simulator is not displaying a sequence of completed images. The cells themselves are expanding and contracting continuously while the instructions move, pulse or change around them.
 
-Both Chromatophore View and Skin View show the same underlying process from different perspectives.
+Both Chromatophore View and Skin View show the same underlying process from different perspectives. In the newer model, the cells are also slightly different in position, size and response timing, giving the passing patterns a less mechanically uniform appearance.
 
 ## Travelling Wave
 
@@ -87,7 +87,7 @@ and:
 what the simulated tissue is physically able to do
 ```
 
-At a slow response rate, a fully contracted cell may only have enough time to reach partial expansion before the signal reverses. Increasing the response rate allows the cells to approach each extreme much more closely, producing a sharper and more complete flash.
+At a slow response rate, a fully contracted cell may only have enough time to reach partial expansion before the signal reverses. Increasing the response rate allows the cells to approach each extreme much more closely, producing a sharper and more complete flash. With the newer, faster Natural timing defaults, the response is noticeably more immediate; select Uniform timing or lower the rates to compare the difference.
 
 ## Moving Bands
 
@@ -205,6 +205,22 @@ A slower display gives the chromatophores more time to approach each target befo
 
 This distinction is one of the more interesting features of the model because it introduces a simple form of **physical constraint**. The control signal can request anything it likes, but the visible system can only respond at the rate allowed by its simulated cells.
 
+## Playing with the Pigment Groups
+
+The moving instructions do not have to affect all four pigments to the same extent. Yellow, Red, Brown and Black now have separate target-strength controls, which can be adjusted while a display is running.
+
+Try **Changing Mottle** with all groups at full strength, then reduce Brown and Black. The sequence continues without starting again, but the same moving pattern acquires a different colour balance. Restore the darker groups and the appearance changes once more.
+
+This is an important distinction: the geometry and timing of the signal have not changed. We have altered which parts of the pigment population are allowed to contribute most strongly.
+
+## Natural and Uniform Responses
+
+Natural timing introduces a rapid, smooth response and small differences between nearby groups of organs. Uniform timing retains the original constant-speed movement. Both follow the same signals, but they do not necessarily produce the same visible transition.
+
+A travelling wave makes the difference easy to see. Switching modes does not reset the wave or move the cells to new starting positions. It changes how the existing organs follow their next instructions.
+
+The timing differences are stable, not random jitters added with every frame. They suggest a degree of local coordination without claiming to reproduce the actual neural organisation of cuttlefish skin.
+
 ## Response Delay During Dynamic Displays
 
 Response delay introduces another kind of lag. For a static target, delay means waiting before beginning to move but that approach would not work well for a continuously changing signal: if every small target change restarted the countdown, the chromatophore might remain permanently waiting.
@@ -272,6 +288,8 @@ fast display + slow cells
 and switch between Chromatophore View and Skin View while each combination is running.
 
 The underlying control signal may be identical, but the visible outcome can be very different.
+
+There is one more revealing comparison: switch to **Skin View**, hold the current display, and change the light or viewing angle. Now the pigment organs are not moving at all, yet the reflected surface can change. The moving pattern and the optics of the skin are two different sources of variation.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
