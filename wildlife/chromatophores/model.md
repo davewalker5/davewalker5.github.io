@@ -17,163 +17,109 @@ The model is intentionally simplified. It is not intended as a detailed reconstr
 
 ## The Field and its Cells
 
-The default field contains **2,500 chromatophores**, arranged in a 50 × 50 grid.
+The default field contains **2,500 chromatophores**, each belonging to one of four pigment groups: yellow, red, brown or very dark brown (labelled Black in the controls).
 
-Each cell has:
+A 50 × 50 grid still provides the underlying arrangement of instructions. But the visible organs are no longer identical circles lined up with mathematical precision. Their centres are slightly displaced, their maximum sizes differ, and their pigment identities are mixed throughout the field. There are still 625 organs of each pigment class.
 
-- A fixed position
-- A fixed pigment class
-- A current expansion value
-- A target expansion value
+This makes a surprising difference to the appearance. Even when every organ receives the same instruction, the field has some of the small irregularities we associate with a natural surface.
 
-Even when many cells receive the same instruction, they remain independent objects and continue to update their own state.
+The layout is fixed. An organ does not travel across the skin or change its pigment to help form a pattern; it stays where it is and changes its visible size. The same arrangement is used by both views and throughout every experiment.
 
-Four pigment classes repeat across the field:
-
-```text
-Yellow  Red    Yellow  Red    ...
-Brown   Black  Brown   Black  ...
-Yellow  Red    Yellow  Red    ...
-```
-
-There are 625 cells of each class.
-
-The colours occupy alternating positions rather than overlapping layers, and pigment identity does not change as the cell expands or contracts. The palette is chosen for visual clarity rather than exact biological accuracy.
-
-This arrangement is therefore best thought of as a computational abstraction: enough structure to make coordinated pattern changes visible without attempting to reproduce the full complexity of real cephalopod skin.
+It is a *cephalopod-inspired* arrangement, rather than a map taken from real cuttlefish tissue.
 
 ## Current and Target Expansion
 
 Each chromatophore has an expansion value between 0 and 1:
 
-| Expansion | Meaning                                    |
-| --------- | ------------------------------------------ |
-| 0.0       | Fully contracted                           |
-| 0.5       | Halfway through the available radius range |
-| 1.0       | Fully expanded                             |
+| Expansion | Meaning |
+| --- | --- |
+| 0.0 | Fully contracted |
+| 0.5 | Halfway through its available radius range |
+| 1.0 | Fully expanded |
 
-The distinction between **current expansion** and **target expansion** is important.
+The distinction between **current expansion** and **target expansion** remains central to the model.
 
-The current expansion is the cell's visible size now. The target expansion is the size it is moving towards.
+The current value describes the size of an organ now. The target describes the size it is being asked to reach. Selecting a new pattern changes the instructions, not the state of the whole skin in an instant.
 
-Changing a pattern therefore does not instantly redraw the field. Instead, it changes the target values and allows the existing cells to move gradually towards them.
+A growing chromatophore increases its visible radius, but its area changes more quickly: doubling the radius quadruples the area. A fully contracted organ remains as a tiny dot in Chromatophore View so its position can still be seen.
 
-That transition is a central part of the model: the interest lies not only in the final pattern, but in watching the field reorganise itself.
+This is why I find the transitions at least as interesting as the finished patterns. We are watching the same organs respond to different instructions, rather than looking at one image dissolve into another.
 
-The visible radius of each chromatophore grows steadily with expansion. Because the area of a circle increases with the square of its radius, visible pigment coverage grows more rapidly than the radius itself.
+## Four Pigments, Different Contributions
 
-A fully contracted cell remains visible as a tiny dot in Chromatophore View so that its position can still be inspected.
+The four pigment groups can now be controlled independently. Each has a target-strength setting from 0% to 100%.
 
-## Expansion and Contraction
+This does not recolour an organ or remove it from the field. It changes how far members of that pigment group are asked to expand. The original pattern still determines *where* expansion is requested; the pigment control determines *how strongly* that group responds to the request.
 
-Expansion and contraction are controlled independently.
+For instance, reducing the dark pigments while leaving yellow and red at full strength can turn a subdued pattern into a much warmer one. Restore the dark groups and the overall colour balance changes again, even though the basic pattern has not been redesigned.
 
-Both default to **0.25 expansion units per second**.
+The controls also work during moving displays. They offer a simple way to explore how changing the balance of pigment contributions can alter the whole surface.
 
-At that rate:
+## Expansion, Contraction and Timing
 
-```text
-0.0 → 1.0 = 4 seconds
-0.2 → 0.8 = 2.4 seconds
-```
+The first model moved every chromatophore at the same constant rate. That behaviour is still available as **Uniform timing**.
 
-The simulator updates each cell according to elapsed simulation time. If a movement would carry the cell beyond its target, it stops at the target rather than overshooting.
+The applications now start in **Natural timing**. Here, an organ approaches its target smoothly — rapidly at first, then increasingly gently as it gets closer. At the default setting, a typical organ completes about 99% of a target change in a quarter of a second.
 
-The interface allows expansion and contraction rates of:
+Neighbouring organs of the same pigment also share small, fixed differences in how quickly they expand and contract. This creates a little local coordination without making every organ move in perfect step. The variation is established when the field is created; it is not fresh randomness added on every frame.
 
-```text
-0.25
-0.5
-1
-2
-4
-```
+The two modes make an interesting comparison. Uniform timing is useful for seeing the underlying rule clearly. Natural timing gives the same instructions a less mechanical response.
 
-units per second.
-
-Changing these rates alters how quickly the field responds to new patterns and makes it possible to compare slow, gradual transitions with much more rapid displays.
+Expansion and contraction rates remain adjustable separately, so the field can be made to respond quickly or slowly. Neither mode allows a chromatophore to overshoot its requested size.
 
 ## Response Delay
 
-A separate response delay can be introduced between receiving a new target and beginning movement.
+A separate delay can be introduced between a new instruction and the response.
 
-For a fixed pattern, the cell holds its current size until the delay has expired.
+For a fixed pattern, this is straightforward: an organ holds its present size briefly before beginning to move towards the new target.
 
-If the target changes again, a new response countdown begins.
+Moving displays need a different approach. A travelling wave, for example, is continually changing its instructions. Restarting the wait each time would leave the cells perpetually behind. Instead, they follow an earlier point in the moving signal's history.
 
-The available delays are:
-
-```text
-0
-0.25
-0.5
-1
-2
-```
-
-seconds.
-
-This makes it possible to experiment with the effect of latency as well as speed.
-
-For continuously changing displays, delay is handled differently. Instead of repeatedly starting a new countdown, the cell follows an earlier point in the signal's history. This allows the display to remain dynamic while still showing the effect of lag.
+This makes it possible to distinguish the speed of the pattern, the speed of the cells, and the delay between instruction and response. Each can change what we see.
 
 ## Two Views of the Same State
 
-One of the most useful aspects of the simulator is that the same underlying state can be viewed in two different ways.
+The simulator provides two ways of looking at precisely the same population of chromatophores.
 
 ### Chromatophore View
 
-Chromatophore View draws the cells individually.
-
-It makes it possible to inspect:
-
-- pigment class;
-- current size;
-- transitions between states;
-- the behaviour of individual cells.
+Chromatophore View shows the individual pigment discs. It makes the fixed, slightly irregular arrangement clear and lets us follow particular organs as they expand or contract.
 
 This is the view of the mechanism.
 
 ### Skin View
 
-Skin View instead estimates the combined appearance of neighbouring cells.
+Skin View asks a different question: *what might this collection of organs look like as a patch of skin?*
 
-Pigment coverage is mixed with the pale background skin, neighbouring samples are averaged, and the result is enlarged and blended into a continuous surface.
+The model begins with a pale backing inspired by reflective structures in cuttlefish skin. Across it lies a gentle blue-green reflection, representing an underlying iridophore contribution. The chromatophores sit above this reflective layer.
 
-For the default 50 × 50 field, this produces a 25 × 25 set of colour samples that are expanded to fill the skin area.
+An expanded pigment organ does not simply replace whatever lies beneath with a solid colour. Some reflected light is filtered as it passes through the pigment. Yellow and red let through more of the warmer colours; the darker pigments obscure much more of the reflection. The mixture depends on how much of the surface the organs cover.
 
-A modest contrast boost is applied to make differences easier to see.
+The simulator combines the contributions of many neighbouring organs to give the impression of a continuous surface rather than thousands of separate discs.
 
-This is the view of the emergent result.
+> **Chromatophore View lets us watch the organs changing. Skin View lets us explore the appearance they create together.**
 
-The important point is that both views are showing the same simulation state:
+Crucially, switching views changes neither the organs nor their instructions. It only changes how we look at them.
 
-> **Chromatophore View shows what the individual cells are doing; Skin View shows what their combined behaviour looks like.**
+## When the Light Changes
 
-Switching between them does not alter the cells, their targets, their response settings or any movement already in progress.
+Real cephalopod skin is interesting partly because colour does not come from pigment alone. Reflective structures also contribute, and their appearance can depend on the direction of illumination and observation.
 
-The Skin View is an approximation of combined appearance, not a biological model of light passing through real cephalopod skin.
+Skin View now allows the **light direction** and **viewing direction** to be adjusted independently. Both are measured relative to looking straight at the flat skin patch.
+
+The simulated reflective layer extends across the skin, but different regions favour slightly different directions. Tilting the light or moving the viewpoint can therefore brighten some areas, quieten others, or shift their blue-green reflection towards blue or violet. The pigment layer continues to filter what comes back through it.
+
+An especially revealing experiment is to press **Hold** and then change the angles. Every chromatophore retains exactly the same expansion, yet the apparent skin colour can still change.
+
+This is not a three-dimensional rendering of a rotating animal, and the angle-dependent colours are illustrative rather than measured. It is a way of exploring an important distinction: **an animal's apparent colour can change even when its pigment organs do not**.
 
 ## Time and Simplifications
 
-Movement is based on simulation time rather than frame count.
+Movement is measured in simulation time, not simply in frames drawn on the screen. After a long interruption the application advances by a limited step rather than jumping abruptly through a transition.
 
-The amount of time that can advance in a single frame is limited, so returning to the application after a long interruption produces a small step rather than causing the simulation to jump directly to a later state.
+There is much the model deliberately leaves out. It does not simulate the muscles surrounding individual chromatophores, fatigue, tissue damage, a complete optical spectrum, polarisation or the raised skin structures known as papillae. Its irregular organ layout, coordinated timing and reflective properties are approximations inspired by biology, not measurements of an individual animal.
 
-The current model also deliberately omits many aspects of real chromatophore biology.
-
-Cells do not currently include:
-
-- Fatigue
-- Damage
-- Muscle mechanics
-- Individual response-rate differences
-
-The field shares one expansion rate and one contraction rate, although every cell still retains its own current size, target and response delay.
-
-These limitations are deliberate.
-
-The simulator is intended as an exploratory model of **coordination and pattern emergence**, not as a complete physiological reconstruction.
+Those omissions matter, but they are also part of the point. By keeping the system understandable, it becomes possible to ask which visible effects come from the instructions, which come from the organs' responses, and which come from the way light meets the surface.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}
