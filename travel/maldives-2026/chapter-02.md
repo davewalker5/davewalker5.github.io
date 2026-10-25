@@ -10,7 +10,16 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 2
 images:
+sand_villas:
+  name: "sand-villas.jpg"
+  alt: "A quiet stretch of white-sand beach where the turquoise waters of the Indian Ocean, that formerly lapped the supports for the villas, now gently lap against the shore in front of them"
+  caption: "A quiet stretch of white-sand beach where the turquoise waters of the Indian Ocean, that formerly lapped the supports for the villas, now gently lap against the shore in front of them"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
+
+{% include fullwidth-image.html assets=page.assets img=page.sand_villas %}
 
 One of the more curious things about returning to Moofushi after eight years is discovering that some of the water villas aren't quite water villas any more.
 
