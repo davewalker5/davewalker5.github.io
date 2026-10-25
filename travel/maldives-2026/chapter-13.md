@@ -10,9 +10,20 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 13
 images:
+  - name: "swift-footed-rock-crab-001.jpg"
+    alt: "A swift-footed rock crab (Grapsus albolineatus) clinging to the weathered rocks at Moofushi. Beautifully patterned, these agile little crustaceans are remarkably well adapted to life along tropical shorelines. And, as their name suggests, they're not inclined to hang around when they spot you approaching with a camera!"
+    caption: "A swift-footed rock crab (Grapsus albolineatus) clinging to the weathered rocks at Moofushi. Beautifully patterned, these agile little crustaceans are remarkably well adapted to life along tropical shorelines. And, as their name suggests, they're not inclined to hang around when they spot you approaching with a camera!"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "swift-footed-rock-crab-002.jpg"
+    alt: "A closer look at the wonderfully intricate markings of the swift-footed rock crab (Grapsus albolineatus). Its shell and legs are covered in an extraordinary maze of contrasting patterns, providing surprisingly effective camouflage against the rocks. A beautiful little example of nature's attention to detail — although the crab itself seemed rather less interested in being admired!"
+    caption: "A closer look at the wonderfully intricate markings of the swift-footed rock crab (Grapsus albolineatus). Its shell and legs are covered in an extraordinary maze of contrasting patterns, providing surprisingly effective camouflage against the rocks. A beautiful little example of nature's attention to detail — although the crab itself seemed rather less interested in being admired!"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# Small Lives on a Small Island
 
 Not all the wildlife at Moofushi is swimming over the reef. Some of the most enjoyable observations occurred within a few steps of the restaurants, villas and paths.
 
