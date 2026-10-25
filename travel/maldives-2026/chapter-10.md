@@ -10,15 +10,31 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 10
 images:
+  - name: "blacktip-social-001.jpg"
+    alt: "A gathering of blacktip reef sharks (Carcharhinus melanopterus) in the crystal-clear lagoon at Constance Moofushi, Maldives"
+    caption: "A gathering of blacktip reef sharks (Carcharhinus melanopterus) in the crystal-clear lagoon at Constance Moofushi, Maldives"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "blacktip-social-002.jpg"
+    alt: "We watched several individuals swimming closely together, pursuing one another and occasionally twisting and rolling in the water"
+    caption: "We watched several individuals swimming closely together, pursuing one another and occasionally twisting and rolling in the water"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "blacktip-social-003.jpg"
+    alt: "One intriguing possibility is that we were witnessing courtship behaviour as mating can involve males pursuing and biting females and we did observe that a specific individual was the target for the pursuit and there was biting behaviour, although we couldn't establish exactly what was happening here"
+    caption: "One intriguing possibility is that we were witnessing courtship behaviour as mating can involve males pursuing and biting females and we did observe that a specific individual was the target for the pursuit and there was biting behaviour, although we couldn't establish exactly what was happening here"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-# Blacktips in the Shallows
 
 We'd barely arrived at Moofushi before the sharks began appearing.
 
 On our first day, a blacktip reef shark passed the water villa. Soon there were further sightings: one beneath a walkway, juveniles patrolling the shallows, and occasional larger individuals moving through the lagoon.
 
-Then, on the morning of 14 October, we saw something much less familiar.
+Then, on the morning of 14th October, we saw something much less familiar.
 
 ## Something unusual on the way to breakfast
 
