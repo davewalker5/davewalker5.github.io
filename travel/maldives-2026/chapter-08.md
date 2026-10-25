@@ -5,7 +5,7 @@ breadcrumb: "An Audience with a Hawksbill Turtle"
 date: 2026-10-15
 categories: ["travel", "maldives", "field-notes"]
 tags: ["maldives", "moofushi", "south-ari-atoll", "hawksbill-turtle", "eretmochelys-imbricata", "feeding-behaviour", "snorkelling", "observation"]
-excerpt: "Watching a hawksbill turtle feed on the reef, apparently untroubled by a quiet observer"
+excerpt: "Two encounters with hawksbill turtles on the reef, including a remarkable opportunity to watch one feeding undisturbed"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 8
@@ -23,9 +23,9 @@ turtle:
 
 One of my favourite experiences at Moofushi involved doing remarkably little.
 
-On 15 October, while snorkelling the reef, I encountered a hawksbill turtle. Rather than rushing past for a brief glimpse, I was able to watch it for an extended period as it fed naturally.
+On 15th October, while snorkelling the reef, we encountered a hawksbill turtle and rather than rushing past for a brief glimpse, I was able to watch it for an extended period as it fed naturally.
 
-The turtle seemed entirely unconcerned by my presence.
+The turtle appeared unconcerned by my presence, and I was content to hang quietly in the water and let it get on with feeding.
 
 ## A creature going about its business
 
@@ -41,38 +41,36 @@ There is a difference between seeing an animal and watching one. The first can b
     </div>
     <figcaption>
       <span class="caption">
-        Hawksbill Turtle (Eretmochelys imbricata) feeding on a reef in the South Ari Atoll. Apparently unconcerned by my presence, the turtle continued foraging naturally as I watched and filmed.
+        Two encounters with hawksbill turtles (Eretmochelys imbricata) on the reef at Moofushi. In the first, I watched and filmed a turtle feeding without approaching it. In the second, filmed by a member of the dive crew, another turtle was not feeding and appeared attentive to the snorkellers and divers nearby.
       </span>
       <span class="credit">
-          David Walker, Field Notes Journal
-            (
-            
-              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
-                CC BY 4.0
-              </a>
-            )
-        </span>
+        Footage: David Walker and a member of the dive crew
+      </span>
     </figcaption>
   </figure>
 </div>
 
-The turtle moved around the reef, paying attention to whatever it was feeding upon. Its beak-like mouth and deliberate movements brought its surroundings into focus. The reef was no longer just scenery beneath us. It was an inhabited place where an animal was finding food.
+In the first part of the footage, the turtle moved around the reef, paying attention to whatever it was feeding upon. Its beak-like mouth and deliberate movements brought its surroundings into focus. The reef was no longer just scenery beneath us. It was an inhabited place where an animal was finding food.
 
 Hawksbill turtles, *Eretmochelys imbricata*, are especially associated with tropical reef habitats and feed on a range of organisms, including sponges. From my footage I can describe feeding behaviour with confidence; identifying every mouthful would require more evidence than I have.
 
-## The importance of giving space
+The second part of the video shows a different hawksbill, filmed by a member of the dive crew who approached it with the camera. This turtle wasn't feeding. Instead, it seemed to be paying attention to the snorkellers and divers nearby. That makes for a quite different encounter from the first.
 
-It's tempting to interpret an animal's apparent lack of concern as an invitation to approach. I think the better interpretation is simply that our presence, at that distance and at that moment, did not visibly interrupt its activity.
+## The privilege of observation
 
-The privilege was to observe without needing to interfere. The turtle wasn't performing for us. It was feeding, and it carried on doing so.
+One of the things I particularly enjoyed about the first encounter was the opportunity simply to watch. The turtle was busy feeding, and I was content to remain where I was, recording its movements and watching it explore the reef.
 
-That distinction matters a great deal to me. Wildlife watching is most rewarding when the animal remains free to behave naturally.
+The second encounter was rather different. This turtle wasn't feeding and appeared more aware of the people in the water around it. Both encounters offered fascinating opportunities to observe these magnificent animals, but they revealed different aspects of their behaviour.
+
+Wildlife encounters are inherently unpredictable. Every animal, every situation and every interaction is different, and it's important to remain sensitive to an animal's behaviour and give it the space it needs.
+
+For me, the particular pleasure of that first encounter lay in watching an animal engaged in something entirely ordinary and natural. The turtle wasn't performing for an audience. It was simply getting on with its life, and I was fortunate enough to witness a little of it.
 
 ## A record worth revisiting
 
-I filmed several minutes of the encounter with the GoPro. The result isn't merely a holiday souvenir. It preserves a behavioural sequence that I can review, investigate and perhaps understand better later.
+Together, the two sequences preserve more than a holiday memory. They show two hawksbills in different circumstances, and remind me how much there is to learn from watching carefully rather than assuming that every encounter means the same thing.
 
-The experience also changes the character of the camera. Rather than chasing the most dramatic single frame, I find myself valuing continuity — the ability to watch an animal doing something ordinary and important.
+I particularly value the continuity of the first sequence, filmed with my GoPro. Rather than chasing the most dramatic single frame, I was able to watch an animal doing something ordinary and important.
 
 There's an odd paradox here: a turtle feeding quietly may be less immediately spectacular than a manta emerging from the blue, but it offers a much more intimate insight into an animal's everyday life.
 
@@ -80,6 +78,6 @@ There's an odd paradox here: a turtle feeding quietly may be less immediately sp
 
 We also visited a turtle nesting site on the island, and another nest was made during our stay. That is a separate story about reproduction, protection and what might happen to the next generation.
 
-This one is about an adult turtle getting on with life in the reef that supports it.
+This one is about two adult turtles encountered on the reef, and especially the quiet pleasure of watching one of them get on with feeding.
 
 I came away with the usual photographs and video, but something more valuable as well: the memory of being allowed, briefly and without ceremony, to witness a wild animal behaving as though I wasn't there.

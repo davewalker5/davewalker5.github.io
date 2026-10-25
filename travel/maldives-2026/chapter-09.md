@@ -10,9 +10,43 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 9
 images:
+  - name: "nurse-shark-001.jpg"
+    alt: "Nurse sharks glide through clouds of tropical fish, sunlight dancing across their backs"
+    caption: "Nurse sharks glide through clouds of tropical fish, sunlight dancing across their backs"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "nurse-shark-002.jpg"
+    alt: "There's something quite remarkable about watching these magnificent creatures moving effortlessly through the water, seemingly untroubled by our presence"
+    caption: "There's something quite remarkable about watching these magnificent creatures moving effortlessly through the water, seemingly untroubled by our presence"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "nurse-shark-003.jpg"
+    alt: "A nurse shark catches the sunlight as it passes, surrounded by the smaller fish that share these extraordinary waters"
+    caption: "A nurse shark catches the sunlight as it passes, surrounded by the smaller fish that share these extraordinary waters"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "nurse-shark-004.jpg"
+    alt: "The rays move with an almost effortless grace, weaving between the sharks and shoals of brightly coloured fish"
+    caption: "The rays move with an almost effortless grace, weaving between the sharks and shoals of brightly coloured fish"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "nurse-shark-005.jpg"
+    alt: "A shark sweeps past and, beneath it, a little gathering of yellow and black sergeant majors adds a wonderful splash of colour"
+    caption: "A shark sweeps past and, beneath it, a little gathering of yellow and black sergeant majors adds a wonderful splash of colour"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "nurse-shark-006.jpg"
+    alt: "From this close, the sheer size and beautiful form of a nurse shark become wonderfully apparent"
+    caption: "From this close, the sheer size and beautiful form of a nurse shark become wonderfully apparent"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-# Sharks and Rays: Close Encounters
 
 On 19 October we swapped our familiar stretches of the Moofushi house reef for a different sort of marine encounter: snorkelling with nurse sharks and rays.
 
