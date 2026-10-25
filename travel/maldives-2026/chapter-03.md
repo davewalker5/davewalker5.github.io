@@ -10,9 +10,16 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 3
 images:
+reef_safe:
+  name: "reef-safe.jpg"
+  alt: "After spending so much time snorkelling among the extraordinary wildlife of the Maldives, reef-conscious sun protection seemed like a worthwhile thing to think about. Every holiday teaches you something!"
+  caption: "After spending so much time snorkelling among the extraordinary wildlife of the Maldives, reef-conscious sun protection seemed like a worthwhile thing to think about. Every holiday teaches you something!"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# Living Lightly on a Small Island
+{% include fullwidth-image.html assets=page.assets img=page.reef_safe %}
 
 A tiny island in the Indian Ocean might seem a natural place to forget about the practicalities of everyday life. At Moofushi, the sea is turquoise, the food and wine are excellent, and there is almost always somewhere inviting to sit and watch the world go by.
 
