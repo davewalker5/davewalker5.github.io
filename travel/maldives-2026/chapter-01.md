@@ -10,7 +10,16 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 1
 images:
+lagoon_and_beach:
+  name: "lagoon-and-beach.jpg"
+  alt: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
+  caption: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
+
+{% include fullwidth-image.html assets=page.assets img=page.lagoon_and_beach %}
 
 Some places leave such a lasting impression that, however many other places you visit, you find yourself wanting to return. For us, Constance Moofushi is one of those places.
 
