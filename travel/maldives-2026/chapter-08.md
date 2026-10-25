@@ -10,9 +10,16 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 8
 images:
+turtle:
+  name: "hawksbill-turtle.jpg"
+  alt: "An unforgettable encounter with a wild hawksbill sea turtle (Eretmochelys imbricata) on the reef"
+  caption: "An unforgettable encounter with a wild hawksbill sea turtle (Eretmochelys imbricata) on the reef. Hawksbills are classified as Critically Endangered, threatened by historical exploitation for their shells, accidental capture in fishing gear and the continuing degradation of their marine habitats, so watching this magnificent animal moving naturally through its underwater world was an extraordinary privilege."
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# An Audience with a Hawksbill Turtle
+{% include fullwidth-image.html assets=page.assets img=page.turtle %}
 
 One of my favourite experiences at Moofushi involved doing remarkably little.
 
@@ -23,6 +30,31 @@ The turtle seemed entirely unconcerned by my presence.
 ## A creature going about its business
 
 There is a difference between seeing an animal and watching one. The first can be memorable; the second offers a glimpse into a life that continues whether we are present or not.
+
+<div class="blog-image-grid blog-image-grid--1-col no-print">
+  <figure>
+    <div id="video-wrap" class="report-image-wrap">
+      <video id="recording-video" class="responsive" controls preload="metadata">
+        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-003.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <figcaption>
+      <span class="caption">
+        Hawksbill Turtle (Eretmochelys imbricata) feeding on a reef in the South Ari Atoll. Apparently unconcerned by my presence, the turtle continued foraging naturally as I watched and filmed.
+      </span>
+      <span class="credit">
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
+        </span>
+    </figcaption>
+  </figure>
+</div>
 
 The turtle moved around the reef, paying attention to whatever it was feeding upon. Its beak-like mouth and deliberate movements brought its surroundings into focus. The reef was no longer just scenery beneath us. It was an inhabited place where an animal was finding food.
 
