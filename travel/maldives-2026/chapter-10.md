@@ -30,7 +30,9 @@ images:
     license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-We'd barely arrived at Moofushi before the sharks began appearing.
+Blacktip reef sharks have become a bit of a feature of our visits to Constance Moofushi. Our previous visits had been earlier in the year, around March time, so we were fortunate enough to encounter the young sharks in the shallows. At little more than 12 inches long, we affectionately christened them "BBTs", "Baby Blacktips".
+
+This time, we were too late in the year to encounter the youngsters but nevertheless we'd barely arrived at Moofushi before the sharks began appearing.
 
 On our first day, a blacktip reef shark passed the water villa. Soon there were further sightings: one beneath a walkway, juveniles patrolling the shallows, and occasional larger individuals moving through the lagoon.
 

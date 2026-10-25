@@ -10,9 +10,25 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 12
 images:
+  - name: "kanbili-001.jpg"
+    alt: "The white-breasted waterhen (Amaurornis phoenicurus maldivus), known locally as the Kanbili and celebrated as the national bird of the Maldives. A wonderfully distinctive little character, with its white face and breast, dark plumage and improbably long yellow-green legs"
+    caption: "The white-breasted waterhen (Amaurornis phoenicurus maldivus), known locally as the Kanbili and celebrated as the national bird of the Maldives. A wonderfully distinctive little character, with its white face and breast, dark plumage and improbably long yellow-green legs"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "kanbili-002.jpg"
+    alt: "Another encounter with the Maldivian Kanbili — the white-breasted waterhen (Amaurornis phoenicurus maldivus). This one seemed rather more interested in modelling than getting anywhere in particular, pausing beside a little bowl in what looked suspiciously like a carefully rehearsed pose"
+    caption: "Another encounter with the Maldivian Kanbili — the white-breasted waterhen (Amaurornis phoenicurus maldivus). This one seemed rather more interested in modelling than getting anywhere in particular, pausing beside a little bowl in what looked suspiciously like a carefully rehearsed pose"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "house-crow.jpg"
+    alt: "A house crow (Corvus splendens) making its presence very loudly known in the trees outside the Manta restaurant. These intelligent, inquisitive birds are certainly not shy about expressing an opinion. This particular individual appeared to have quite a lot to say — and was determined that everyone should hear it!"
+    caption: "A house crow (Corvus splendens) making its presence very loudly known in the trees outside the Manta restaurant. These intelligent, inquisitive birds are certainly not shy about expressing an opinion. This particular individual appeared to have quite a lot to say — and was determined that everyone should hear it!"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-# The Birds of Moofushi
 
 One of the first differences we noticed on returning to Moofushi was the birds.
 
