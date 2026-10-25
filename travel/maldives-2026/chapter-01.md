@@ -10,16 +10,57 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 1
 images:
-lagoon_and_beach:
-  name: "lagoon-and-beach.jpg"
-  alt: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
-  caption: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
+  - name: "manta-bar-beach-and-deck.jpg"
+    alt: "The deck at the Manta Restaurant. Crystal-clear shallows, white sand, swaying palms and turquoise water — a wonderful setting for a leisurely meal"
+    caption: "The deck at the Manta Restaurant. Crystal-clear shallows, white sand, swaying palms and turquoise water — a wonderful setting for a leisurely meal"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "manta-bar.jpg"
+    alt: "Nestled beneath a magnificent thatched roof and surrounded by tropical greenery, the Manta Bar is a great gathering place. Cool drinks, warm evenings and, occasionally, considerably more energetic entertainment than you might expect from an idyllic island retreat!"
+    caption: "Nestled beneath a magnificent thatched roof and surrounded by tropical greenery, the Manta Bar is a great gathering place. Cool drinks, warm evenings and, occasionally, considerably more energetic entertainment than you might expect from an idyllic island retreat!"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "moofushi-spa.jpg"
+    alt: "The spa at Constance Moofushi, its thatched treatment villas standing above the beautiful blue waters of the lagoon. A wonderfully peaceful setting for a little pampering, with the gentle sounds of the sea providing the perfect accompaniment"
+    caption: "The spa at Constance Moofushi, its thatched treatment villas standing above the beautiful blue waters of the lagoon. A wonderfully peaceful setting for a little pampering, with the gentle sounds of the sea providing the perfect accompaniment"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "swing-on-the-beach.jpg"
+    alt: "A swing, a deserted stretch of white sand and the endless blue of the Indian Ocean - perfect place to still and watch the world go by!"
+    caption: "A swing, a deserted stretch of white sand and the endless blue of the Indian Ocean - perfect place to still and watch the world go by!"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "island-pathway.jpg"
+    alt: "Away from the brilliant sunshine and white-sand beaches, the paths winding through the heart of Constance Moofushi offer a wonderfully cool, shaded retreat beneath the coconut palms and lush tropical vegetation"
+    caption: "Away from the brilliant sunshine and white-sand beaches, the paths winding through the heart of Constance Moofushi offer a wonderfully cool, shaded retreat beneath the coconut palms and lush tropical vegetation"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "lagoon-and-beach.jpg"
+    alt: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
+    caption: "Crystal-clear shallows, a sweep of white sand and the island's palm-fringed shoreline beneath a wonderfully expansive tropical sky"
+    credit: "David Walker, Field Notes Journal"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+seaplane:
+  name: "seaplane.jpg"
+  alt: "The aircraft that brought us to the island. A de Havilland Canada DHC-6 Twin Otter, operated by Trans Maldivian Airlines, moored at the jetty at Constance Moofushi"
+  caption: "The aircraft that brought us to the island. A de Havilland Canada DHC-6 Twin Otter, operated by Trans Maldivian Airlines, moored at the jetty at Constance Moofushi"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
+villa_view:
+  name: "senior-water-villa-view.jpg"
+  alt: "Our little corner of paradise at Constance Moofushi. Two loungers, a wooden deck suspended above the lagoon and an uninterrupted view of the Indian Ocean"
+  caption: "Our little corner of paradise at Constance Moofushi. Two loungers, a wooden deck suspended above the lagoon and an uninterrupted view of the Indian Ocean"
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-{% include fullwidth-image.html assets=page.assets img=page.lagoon_and_beach %}
 
 Some places leave such a lasting impression that, however many other places you visit, you find yourself wanting to return. For us, Constance Moofushi is one of those places.
 
@@ -28,6 +69,8 @@ We first visited in 2015, returned in 2018, and now, in October 2026, we've come
 For someone with a lifelong fascination with wildlife and the natural world, it's a remarkable place to spend time.
 
 ## Across the Indian Ocean
+
+{% include fullwidth-image.html assets=page.assets img=page.seaplane %}
 
 Our journey to Moofushi began with our arrival in Malé on 11 October, followed by a transfer aboard one of Trans Maldivian Airways' Twin Otter seaplanes.
 
@@ -54,6 +97,8 @@ The island's wildlife also seems different. Almost immediately, we noticed more 
 Whether the bird populations have genuinely changed or we're simply noticing more this time is difficult to say. Either way, it gave us something interesting to investigate.
 
 ## Life Beside the Reef
+
+{% include fullwidth-image.html assets=page.assets img=page.villa_view %}
 
 Our accommodation was a water villa, with a deck overlooking the lagoon. It's a wonderful place to sit, watch the water and simply observe what's happening around you.
 
