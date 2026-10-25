@@ -10,9 +10,16 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 5
 images:
+reef_cliff:
+  name: "reef-cliff.jpg"
+  alt: "Underwater view along the steep coral reef slope at Moofushi, with fish swimming above the reef as it disappears into deep blue water"
+  caption: "The edge of the reef at Moofushi, where the coral-covered slope falls away into the blue"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# The Edge of the Known World
+{% include fullwidth-image.html assets=page.assets img=page.reef_cliff %}
 
 There's a point on the Totem Bar side of Moofushi where the experience of snorkelling changes rather dramatically.
 
