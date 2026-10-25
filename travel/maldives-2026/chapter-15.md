@@ -10,9 +10,22 @@ series: maldives2026
 assets: "/images/maldives/"
 chapter: 15
 images:
+  - name: "turtle-nest-site.jpg"
+    alt: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
+    caption: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "turtle-nest-site-002.jpg"
+    alt: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
+    caption: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "turtle-nest-site-003.jpg"
+    alt: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
+    caption: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
-
-# The Next Generation
 
 Among the photographs from Moofushi, one of the most meaningful to me is not a spectacular view of the turquoise ocean or a close encounter with a large marine animal.
 
