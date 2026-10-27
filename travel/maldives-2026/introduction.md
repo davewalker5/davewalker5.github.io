@@ -1,7 +1,7 @@
 ---
 layout: journal
-title: "Moofushi, Maldives, 2026"
-breadcrumb: "Moofushi, Maldives, 2026"
+title: "Constance Moofushi, Maldives, 2026"
+breadcrumb: "Constance Moofushi, Maldives, 2026"
 date: 2026-10-25
 categories: ["travel", "maldives", "field-notes"]
 tags: ["maldives", "moofushi", "south-ari-atoll", "indian-ocean", "snorkelling", "marine-life", "conservation", "travel-journal", "wildlife-travel"]
@@ -59,7 +59,7 @@ Even the island itself had changed since our previous visit. Sand had shifted, s
 
 ## What This Is
 
-Unlike my account of our Tanzanian safari, these chapters do not follow the holiday one day at a time. In Tanzania, we moved through very different landscapes, and the sequence of days was a natural way to tell the story. On Moofushi, we stayed in one place, returning repeatedly to the same reef, beaches and familiar corners of the island.
+Unlike my account of our Tanzanian safari, these chapters do not follow the holiday one day at a time. In Tanzania, we moved through very different landscapes, and the sequence of days was a natural way to tell the story. On Moofushi, we were based in one place, returning repeatedly to the same beaches and familiar corners of the island and to the reefs surrounding it and further afield within the South Ari Atoll.
 
 A thematic approach seemed more appropriate. The chapters follow the island itself, the reef, particular wildlife encounters, the smaller lives above the waterline, and the work being done to protect this remarkable environment.
 
@@ -75,15 +75,13 @@ But the diary also captures less dramatic moments: a waterhen wandering between 
 
 Those details matter. They give texture to the larger experiences, and they are often the starting points for the most interesting questions.
 
-The photographs and video provide another kind of record. They let me revisit encounters, sometimes noticing details I missed at the time. They also remind me of the limits of observation: seeing an animal behave in a particular way is not necessarily the same as knowing why it behaved that way.
-
-Where an identification or interpretation remains uncertain, I've tried to leave room for that uncertainty. Curiosity is more useful than false certainty.
+The photographs and video provide another kind of record. They let me revisit encounters and remind me of the limits of observation: seeing an animal behave in a particular way is not necessarily the same as knowing why it behaved that way.
 
 ## Field Notes Context
 
 This collection belongs naturally within the *Field Notes Journal*. It has the same starting point as my observations closer to home: paying attention to the natural world, recording what I see, and following the questions that emerge.
 
-Moofushi also brought conservation into sharper focus. Seeing animals in their own environment is a privilege, but it encourages questions about the health of those environments and the work required to protect them. During our stay we learned more about the resort's sustainability practices, coral restoration and the protection of nesting sea turtles.
+Moofushi also brought conservation into sharp focus. Seeing animals in their own environment is a privilege, but it encourages questions about the health of those environments and the work required to protect them. During our stay we learned more about the resort's sustainability practices, coral restoration and the protection of nesting sea turtles.
 
 The holiday offered abundant opportunities to do very little. We certainly took them. But it also proved impossible to sit still for long without noticing something worth investigating.
 

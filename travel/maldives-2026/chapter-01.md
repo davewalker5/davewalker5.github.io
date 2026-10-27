@@ -60,11 +60,18 @@ villa_view:
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
+totem_bar:
+  name: "totem-bar.jpg"
+  alt: "The Totem Bar at Constance Moofushi. Nestled beneath the coconut palms, with white sand underfoot and the turquoise Indian Ocean just beyond. An ideal spot for a little refreshment after the exhausting business of doing absolutely nothing!"
+  caption: "The Totem Bar at Constance Moofushi. Nestled beneath the coconut palms, with white sand underfoot and the turquoise Indian Ocean just beyond. An ideal spot for a little refreshment after the exhausting business of doing absolutely nothing!"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 Some places leave such a lasting impression that, however many other places you visit, you find yourself wanting to return. For us, Constance Moofushi is one of those places.
 
-We first visited in 2015, returned in 2018, and now, in October 2026, we've come back for a third time. It's a small island in South Ari Atoll, part of the Maldives, surrounded by the extraordinary turquoise waters of the Indian Ocean. Beautiful, certainly, but there's rather more to Moofushi than beautiful beaches and warm seas.
+We first visited in 2015, returned in 2018, and now, in October 2026, we've come back for a third time. It's a small island in th South Ari Atoll, part of the Maldives, surrounded by the extraordinary turquoise waters of the Indian Ocean. Beautiful, certainly, but there's rather more to Moofushi than beautiful beaches and warm seas.
 
 For someone with a lifelong fascination with wildlife and the natural world, it's a remarkable place to spend time.
 
@@ -72,19 +79,21 @@ For someone with a lifelong fascination with wildlife and the natural world, it'
 
 {% include fullwidth-image.html assets=page.assets img=page.seaplane %}
 
-Our journey to Moofushi began with our arrival in Malé on 11 October, followed by a transfer aboard one of Trans Maldivian Airways' Twin Otter seaplanes.
+Our journey to Moofushi began with our arrival in Malé on 11<sup>th</sup> October, followed by a transfer aboard one of Trans Maldivian Airways' de Havilland Canada DHC-6 Twin Otter seaplanes.
 
 There's something wonderfully appropriate about arriving at a tiny island by seaplane. The aircraft are an essential part of transport in the Maldives, connecting the capital with resorts scattered across the atolls. They're also a delight for anyone with an interest in aviation.
 
 And then there's the destination itself: a little island surrounded by a lagoon, with a coral reef separating the sheltered shallows from the open ocean beyond.
 
-Moofushi is small enough to walk around quite comfortably, yet there's an extraordinary amount packed into its limited area. The island itself is covered in tropical vegetation, with sandy beaches around its perimeter, while jetties lead out across the lagoon to the water villas.
+Moofushi is small enough to walk around quite comfortably yet there's an extraordinary amount packed into its limited area. The island itself is covered in tropical vegetation, with sandy beaches around its perimeter, while jetties lead out across the lagoon to the water villas.
 
 It's a landscape that seems almost impossibly idyllic, but one that is also constantly changing.
 
 ## Familiar, but Different
 
 Returning to somewhere after eight years is interesting. You remember particular places and experiences, and naturally wonder how much has changed.
+
+{% include fullwidth-image.html assets=page.assets img=page.totem_bar %}
 
 Some things at Moofushi are reassuringly familiar. The Manta Restaurant, the bars, the water villas, the lagoon and the reef are all part of the place we remember. So too is the wonderfully friendly, attentive hospitality that made our earlier visits so enjoyable.
 
@@ -100,17 +109,13 @@ Whether the bird populations have genuinely changed or we're simply noticing mor
 
 {% include fullwidth-image.html assets=page.assets img=page.villa_view %}
 
-Our accommodation was a water villa, with a deck overlooking the lagoon. It's a wonderful place to sit, watch the water and simply observe what's happening around you.
+Our accommodation was a senior water villa, with a deck overlooking the lagoon. It's a wonderful place to sit, watch the water and simply observe what's happening around you. There's the sound of waves breaking on the outer reef, beyond the comparatively sheltered water of the lagoon, and lapping gently round the supports for the platform the villa stands on. Fish pass beneath the villas, and the changing light transforms the colours of the sea throughout the day.
 
-There's the sound of waves breaking on the outer reef, beyond the comparatively sheltered water of the lagoon. Fish pass beneath the villas, and the changing light transforms the colours of the sea throughout the day.
-
-On our very first day, a blacktip reef shark swam past, visible from the decking.
-
-It was an immediate reminder that the extraordinary wildlife of Moofushi isn't confined to organised excursions or even to snorkelling. Sometimes it simply appears while you're sitting outside.
+On our very first day, a blacktip reef shark swam past, visible from the decking. It was an immediate reminder that the extraordinary wildlife of Moofushi isn't confined to organised excursions or even to snorkelling. Sometimes it simply appears while you're sitting outside.
 
 That, for me, is one of the great pleasures of the island. You don't necessarily have to go looking for wildlife. Much of it is simply there, going about its business, provided you take the time to watch.
 
-Of course, we intended to spend plenty of time in the water too. Moofushi's house reef is one of its greatest attractions, supporting a wonderful diversity of reef fish and other marine life. Beyond the reef, the deeper waters of South Ari Atoll are home to some of the Indian Ocean's most remarkable animals.
+Of course, we intended to spend plenty of time in the water too. The reefs around Moofushi are a great attraction, supporting a wonderful diversity of reef fish and other marine life. Beyond the reef, the deeper waters of South Ari Atoll are home to some of the Indian Ocean's most remarkable animals.
 
 We had plenty to look forward to.
 
@@ -118,13 +123,9 @@ We had plenty to look forward to.
 
 It's easy, when writing about somewhere like Moofushi, to concentrate on the beaches, the ocean and the wildlife. But the people who look after the island are just as important to the experience.
 
-From the welcome on arrival to the service in the restaurants and bars, there's a warmth and friendliness that makes the resort feel familiar surprisingly quickly.
+From the welcome on arrival to the service in the restaurants and bars, there's a warmth and friendliness that makes the resort feel familiar surprisingly quickly. Our first evening brought dinner at the Manta Restaurant, some excellent wine advice from Ko Ko, one of the sommeliers, and a return to the Manta Bar, where we enjoyed _Takamaka Koko_ — a familiar favourite from our visits to the Seychelles.
 
-Our first evening brought dinner at the Manta Restaurant, some excellent wine advice from Ko Ko, one of the sommeliers, and a return to the Manta Bar, where we enjoyed Takamaka Koko — a familiar favourite from our visits to the Seychelles.
-
-Over the coming days, we would renew our acquaintance with the island's restaurants, enjoy some exceptional food and wine, and meet people whose enthusiasm, knowledge and hospitality contributed enormously to our stay.
-
-We would also learn much more about the considerable work that goes on behind the scenes to keep a resort like this running, particularly its commitment to sustainability and environmental protection.
+Over the coming days, we would renew our acquaintance with the island's restaurants, enjoy some exceptional food and wine, and meet people whose enthusiasm, knowledge and hospitality contributed enormously to our stay. We would also learn much more about the considerable work that goes on behind the scenes to keep a resort like this running, particularly its commitment to sustainability and environmental protection.
 
 On a tiny island, surrounded by a marine ecosystem of such extraordinary richness, those responsibilities matter.
 
@@ -132,20 +133,10 @@ On a tiny island, surrounded by a marine ecosystem of such extraordinary richnes
 
 There's an obvious temptation to describe Moofushi simply as paradise. The setting certainly encourages it: turquoise water, white sand, palm trees, warm sunshine and the luxury of having very little that you actually *have* to do.
 
-And there is enormous pleasure in all of that.
+There is enormous pleasure in all of that, but what draws me back is something deeper. Moofushi offers the opportunity to spend time immersed in the natural world, not as an occasional excursion but as part of everyday life. From the smallest crabs on the beach to the sharks patrolling the lagoon, there's almost always something worth watching.
 
-But what draws me back is something deeper.
-
-Moofushi offers the opportunity to spend time immersed in the natural world, not as an occasional excursion but as part of everyday life. From the smallest crabs on the beach to the sharks patrolling the lagoon, there's almost always something worth watching.
-
-It's also a place where the connections between an island, its reef, its wildlife and the wider ocean are unusually apparent. The reef protects the island, the ocean sustains the reef, and the animals that inhabit these environments are all part of an extraordinarily interconnected system.
-
-For me, understanding a little more about those relationships adds immeasurably to the pleasure of being here.
+It's also a place where the connections between an island, its reef, its wildlife and the wider ocean are unusually apparent. The reef protects the island, the ocean sustains the reef, and the animals that inhabit these environments are all part of an extraordinarily interconnected system. For me, understanding a little more about those relationships adds immeasurably to the pleasure of being here.
 
 This visit would bring some remarkable encounters, new discoveries and more than a few surprises. It would also offer opportunities to learn about the conservation efforts helping to protect the reef and the wildlife that depends upon it.
 
-But on that first evening, none of those experiences lay behind us yet.
-
-We were simply back on Moofushi, enjoying the warmth, the ocean, the hospitality and the pleasure of being somewhere we love.
-
-And very glad indeed to have returned.
+But on that first evening, none of those experiences lay behind us yet. We were simply back on Moofushi, enjoying the warmth, the ocean, the hospitality and the pleasure of being somewhere we love and to which we were very glad indeed to have made a return.

@@ -25,13 +25,13 @@ A tiny island in the Indian Ocean might seem a natural place to forget about the
 
 But a resort is also a small and complicated community. Everything needed to keep it operating must be supplied, maintained, managed or disposed of, all within an unusually sensitive environment.
 
-On 17 October we had a chance to look behind the holiday experience.
+On 17<sup>th</sup> October we had a chance to look behind the holiday experience.
 
 ## Behind the scenes
 
 We attended a sustainability talk with Nadi, the assistant sustainability manager, followed by a Heart of House tour with Arien, the chief engineer. Those two perspectives made an interesting combination: the environmental aspirations of the resort and some of the practical work required to run it.
 
-I don't want to pretend I came away with a complete technical understanding of the island's systems. My diary records the tour rather than detailed specifications. Even so, the experience made me think about how much is normally invisible to a guest. A drink arrives cold, a meal is served, a villa is comfortable, and rubbish disappears. On an island, none of that happens by magic.
+I don't want to pretend I came away with a complete technical understanding of the island's systems. My diary records the tour rather than detailed specifications. Even so, the experience made me think about how much is normally invisible to a guest. A drink arrives cold, a meal is served, a villa is comfortable, and rubbish disappears. None of that happens by magic.
 
 There are decisions behind all of it, and those decisions have consequences for the surrounding ocean.
 
@@ -45,9 +45,7 @@ The coral reef presentation later that day, given by marine biologist Judy Wambu
 
 ## A small but lasting lesson
 
-One of my practical discoveries during the stay concerned reef-safe sunscreen. I had worn a rash vest for snorkelling, but I hadn't previously given much thought to the environmental implications of what I put on exposed skin.
-
-That changed during this visit. I bought AQUALAÏ sunscreen and made a mental note that it would accompany my rash vest on future trips.
+One of my practical discoveries during the stay concerned reef-safe sunscreen. I had worn a rash vest for snorkelling, but I hadn't previously given much thought to the environmental implications of what I put on exposed skin. That changed during this visit. I bought AQUALAÏ sunscreen and made a mental note that it would accompany my rash vest on future trips.
 
 The term *reef-safe* deserves a little care: it isn't a universal guarantee that a product has no environmental impact. Ingredients, how much is washed into the water, and the wider conditions all matter. Protective clothing remains an especially useful way to reduce the amount of sunscreen needed.
 
