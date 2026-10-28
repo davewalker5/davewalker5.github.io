@@ -93,6 +93,11 @@
   url: /downloads/booklets/computational-molecular-evolution.pdf
   category: Booklets
 
+- area: Travel
+  title: Constance Moofushi, Maldives, 2026 - Field Notes from an Island of Discovery
+  url: /downloads/booklets/maldives-2026.pdf
+  category: Booklets
+
 # --------------------------------------------------------------------------------
 # eBooks
 # --------------------------------------------------------------------------------
@@ -139,6 +144,11 @@
 - area: Wildlife
   title: Computational Molecular Evolution
   url: /downloads/ebooks/computational-molecular-evolution.epub
+  category: eBooks
+
+- area: Travel
+  title: Constance Moofushi, Maldives, 2026 - Field Notes from an Island of Discovery
+  url: /downloads/ebooks/maldives-2026.epub
   category: eBooks
 
 # --------------------------------------------------------------------------------
