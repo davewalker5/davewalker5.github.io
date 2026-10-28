@@ -93,21 +93,23 @@ Moofushi didn't disappoint. If anything, the third visit deepened our attachment
 
 What follows is not quite the holiday as it unfolded, day by day. It's the story of the things that made us stop, look, wonder and learn.
 
-## Contents
+<div class="no-print">
+  ## Contents
 
-<table class="data-table">
-    <thead>
-        <tr>
-            <th>Chapter</th>
-            <th>Title</th>
-        </tr>
-    </thead>
-    <tbody>
-        {% for chapter in site.data.maldives2026.chapters %}
-            <tr>
-                <td>{{ forloop.index }}</td>
-                <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
-            </tr>
-        {% endfor %}
-    </tbody>
-</table>
+  <table class="data-table">
+      <thead>
+          <tr>
+              <th>Chapter</th>
+              <th>Title</th>
+          </tr>
+      </thead>
+      <tbody>
+          {% for chapter in site.data.maldives2026.chapters %}
+              <tr>
+                  <td>{{ forloop.index }}</td>
+                  <td><a href="{{ chapter.url }}">{{ chapter.title }}</a></td>
+              </tr>
+          {% endfor %}
+      </tbody>
+  </table>
+</div>
