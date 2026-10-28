@@ -33,7 +33,7 @@ It's a photograph of a turtle nesting site on the beach.
 
 We visited a nest near the sand villas on 13 October. Then, on 18 October, a second nest was made while we were staying on the island. For me, those two small patches of sand came to represent something important about the place.
 
-## A Beach With Another Purpose
+## A Beach with Another Purpose
 
 To a holidaymaker, a sandy beach is somewhere to walk, sit, swim or admire the view. To a nesting sea turtle, it's an essential habitat. A female turtle must come ashore to lay her eggs, leaving the water in which she spends almost all the rest of her life. The eggs then develop beneath the sand, subject to environmental conditions and the many uncertainties faced by wild animals.
 

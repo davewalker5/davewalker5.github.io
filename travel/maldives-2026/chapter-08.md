@@ -109,7 +109,7 @@ That unexpected appearance also reinforced something which became increasingly a
 
 For us, the manta's appearance was an exceptional event. For the manta, it was presumably just another moment in its ordinary life.
 
-## Curiosity that Continues
+## Curiosity That Continues
 
 The encounter also strengthened my interest in manta conservation.
 

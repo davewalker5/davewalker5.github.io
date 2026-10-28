@@ -35,7 +35,7 @@ I don't want to pretend I came away with a complete technical understanding of t
 
 There are decisions behind all of it, and those decisions have consequences for the surrounding ocean.
 
-## A Reef is Not Just Scenery
+## A Reef Is Not Just Scenery
 
 It would be easy to treat the reef as one more attraction: something beautiful to visit with a mask and snorkel. But the reef is also part of the island's physical setting and a living system supporting an extraordinary variety of organisms.
 

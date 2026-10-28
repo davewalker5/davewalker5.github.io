@@ -59,7 +59,7 @@ The aircraft have become particularly closely associated with tourism, but their
 
 There is, of course, an environmental cost to aviation, and seaplane operations are no exception. Nevertheless, the ability to use existing waterways rather than construct conventional runways on small and environmentally sensitive islands is an interesting aspect of how the aircraft fit the geography of the Maldives.
 
-## The View From Above
+## The View from Above
 
 {% include fullwidth-image.html assets=page.assets img=page.maldives_from_the_air %}
 
@@ -112,7 +112,7 @@ The island can feel wonderfully remote. Its small size, surrounding ocean and ex
 
 There's a quiet contradiction in that - the very technology that allows us to escape the everyday world is also what keeps the island connected to it.
 
-## The Journey is Part of the Place
+## The Journey Is Part of the Place
 
 I suspect that if someone were asked to describe the Maldives, their first thoughts would be of palm trees, white sand, turquoise lagoons and coral reefs and quite reasonably so. But for me, the Twin Otter belongs among those defining images.
 

@@ -27,7 +27,7 @@ On 15th October we joined the _Snorkelling Extravaganza_, a snorkelling excursio
 
 We were fortunate enough to encounter a Hawksbill Turtle, _Eretmochelys imbricata_, and I was able to watch it for an extended period as it fed naturally amongst the coral below me. The turtle appeared unconcerned by my presence, and I was content to hang quietly in the water and let it get on with feeding.
 
-## A Creature Going About its Business
+## A Creature Going About Its Business
 
 There is a difference between seeing an animal and watching one. The first can be memorable but the second offers a glimpse into a life that continues whether we are present or not.
 

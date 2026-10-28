@@ -121,7 +121,7 @@ And the process of writing these Field Notes brings those different threads toge
 
 What began as a holiday is gradually becoming a small personal natural-history archive, albeit one with an unusually generous helping of cocktails, beautiful meals and spectacular sunsets.
 
-## More Than the Sum of its Parts
+## More Than the Sum of Its Parts
 
 Of course, there's a fundamental absurdity in trying to quantify a holiday like this.
 
