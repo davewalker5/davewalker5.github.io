@@ -46,7 +46,7 @@ Companionable and full of character, these wonderfully self-possessed birds appe
 
 There's a particular charm in a wild bird that gets on with its life in close proximity to people without becoming any less itself.
 
-## Crows, koels and an interesting relationship
+## Crows, Koels and an Interesting Relationship
 
 House crows were hard to miss. On one occasion a crow perched on the roof of our villa just after sunrise and announced its presence loudly, and at meal times others seemed very interested in the possibility of leftovers.
 
@@ -54,7 +54,7 @@ We also saw Asian koels, including a female moving through the undergrowth. Thei
 
 There's an intriguing relationship between the koels and the crows. The Asian koel is a brood parasite, laying its eggs in the nests of other birds, particularly crows, which then raise the young koels alongside, or sometimes instead of, their own chicks. It's a remarkable reproductive strategy, and one that adds another dimension to seeing these two species sharing the same small island. What appeared to be two quite separate observations were, in fact, glimpses of an ecological relationship that we might otherwise never have considered.
 
-## Familiar faces in unfamiliar places
+## Familiar Faces in Unfamiliar Places
 
 Striated herons, *Butorides striata*, made an appearance along the shoreline and on the breakwaters that protect the Totem Bar and Manta Restaurant side of the island.
 

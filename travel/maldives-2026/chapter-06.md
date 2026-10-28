@@ -25,7 +25,7 @@ There's a point on the Totem Bar side of Moofushi where the experience of snorke
 
 For a while, the world beneath you is familiar, filled with coral, fish, the textures and movement of the house reef. Then the bottom slopes away, the reef descends and the view opens into a depth of blue that seems to have no obvious limit.
 
-## Following the boundary
+## Following the Boundary
 
 The reef edge isn't a sharp line drawn on a map. It is a transition, but one that can feel startlingly abrupt when seen from the surface. Looking one way, there is an intricate landscape full of recognisable life. Looking the other, there is water, deep blue and distance — and a reminder of how little you can see.
 
@@ -43,7 +43,7 @@ The deep water calls to me.
 
 It's not that I particularly want to swim out into it. I know my limitations, and I respect them. It's something closer to a longing to explore, to see what lies beyond the familiar, to discover what's out there. Perhaps that's part of what makes the reef edge so compelling - it offers a glimpse of a world I know exists, but cannot fully enter and, somehow, knowing that I must remain at its edge doesn't diminish its attraction.
 
-## A landscape shaped by depth
+## A Landscape Shaped by Depth
 
 What appears from above to be a cliff is part of the *fore reef*, the seaward-facing slope that connects the shallow reef crest with deeper water. Its precise shape varies from place to place: some slopes descend gradually, others steepen sharply, and some form terraces or near-vertical walls.
 
@@ -55,7 +55,7 @@ Different organisms are suited to different combinations of these conditions. Th
 
 From the surface, though, these distinctions are largely invisible. The descending reef gradually loses colour and detail until it becomes difficult to distinguish its features at all. The blue beyond is not necessarily empty. It is simply beyond the range of what I can observe.
 
-## Two worlds, connected
+## Two Worlds, Connected
 
 It's tempting to imagine the cliff as the edge of everything familiar and the beginning of something entirely separate. In reality, the reef and the deeper ocean are intimately connected.
 
@@ -67,7 +67,7 @@ There's an interesting reversal here. To a snorkeller, the reef slope appears to
 
 The cliff is not merely an edge. It is also an interface.
 
-## The useful limits of observation
+## The Useful Limits of Observation
 
 One of the pleasures of keeping field notes is learning to distinguish three things:
 
@@ -83,7 +83,7 @@ Indeed, understanding something about the ecology of reef slopes only makes the 
 
 That uncertainty is not a disappointment. It's part of why the place is interesting.
 
-## Returning to the shallows
+## Returning to the Shallows
 
 Back towards the shore, the coral comes into view again and the bustling life of the reef resumes its familiar detail.
 

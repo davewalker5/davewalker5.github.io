@@ -66,7 +66,7 @@ Snorkelling the house reef offers a rather different perspective. Here, the unde
 
 It's an extraordinary reminder that the little island above the surface is only a small part of a much larger structure.
 
-## Living with Change
+## Living With Change
 
 For a resort built on a tiny island, this natural movement of sand presents some interesting practical challenges. A building that was originally positioned over water may eventually find itself beside a beach. The distance between a villa and the shoreline can change, and the character of a particular stretch of coast can change with it.
 

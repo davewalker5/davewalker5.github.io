@@ -53,7 +53,7 @@ Constance Moofushi, a small island in South Ari Atoll in the Maldives, is one of
 
 The attraction is easy enough to understand. There are the turquoise waters, white sand, beautiful food and wine, and the warm hospitality of the people who make the island such a pleasure to visit. But there is something else: the coral reef, the wildlife in and around the island, and the sense of being immersed in a living natural environment.
 
-Over the course of our stay we watched hawksbill turtles feeding, encountered reef manta rays in plankton-rich water, snorkelled with nurse sharks and rays, watched spinner dolphins at sea, and spent many hours exploring the house reef. There were quieter discoveries, too: birds among the restaurant tables, crabs excavating their burrows, dragonflies crossing the island, and blacktip reef sharks moving through the shallows.
+Over the course of our stay we watched hawksbill turtles feeding, encountered reef manta rays in plankton-rich water, snorkelled with nurse sharks and rays, watched spinner dolphins at sea, and spent many hours exploring the house reef. There were quieter discoveries, too: Birds among the restaurant tables, crabs excavating their burrows, dragonflies crossing the island, and blacktip reef sharks moving through the shallows.
 
 Even the island itself had changed since our previous visit. Sand had shifted, shorelines had altered, and some former water villas had effectively become sand villas. It was a reminder that this seemingly tranquil place is part of a much larger, dynamic system.
 
@@ -71,7 +71,7 @@ It isn't a travel guide or a comprehensive survey of the wildlife of the Maldive
 
 Some experiences announce themselves as remarkable at the time. Watching a manta ray emerge from murky, plankton-filled water is not something easily forgotten. Neither is spending time beside a hawksbill turtle apparently unconcerned by our presence as it continued feeding.
 
-But the diary also captures less dramatic moments: a waterhen wandering between the tables, a ghost crab shifting another load of sand, the sound of surf beyond the reef, a brief conversation with somebody who helped us understand how the island works.
+But the diary also captures less dramatic moments: A waterhen wandering between the tables, a ghost crab shifting another load of sand, the sound of surf beyond the reef, a brief conversation with somebody who helped us understand how the island works.
 
 Those details matter. They give texture to the larger experiences, and they are often the starting points for the most interesting questions.
 
@@ -79,7 +79,7 @@ The photographs and video provide another kind of record. They let me revisit en
 
 ## Field Notes Context
 
-This collection belongs naturally within the *Field Notes Journal*. It has the same starting point as my observations closer to home: paying attention to the natural world, recording what I see, and following the questions that emerge.
+This collection belongs naturally within the *Field Notes Journal*. It has the same starting point as my observations closer to home: Paying attention to the natural world, recording what I see, and following the questions that emerge.
 
 Moofushi also brought conservation into sharp focus. Seeing animals in their own environment is a privilege, but it encourages questions about the health of those environments and the work required to protect them. During our stay we learned more about the resort's sustainability practices, coral restoration and the protection of nesting sea turtles.
 
@@ -87,7 +87,7 @@ The holiday offered abundant opportunities to do very little. We certainly took 
 
 ## Looking Back
 
-Returning to a beloved place carries a small risk: that memory has made it more wonderful than it really was.
+Returning to a beloved place carries a small risk: That memory has made it more wonderful than it really was.
 
 Moofushi didn't disappoint. If anything, the third visit deepened our attachment to it. The familiar pleasures were still there, but we left with new observations, new questions and a stronger appreciation of the connections between island, reef, ocean and wildlife.
 

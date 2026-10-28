@@ -30,7 +30,7 @@ So I decided to count it.
 
 Or at least, to see what happened when I tried.
 
-## A rather unscientific inventory
+## A Rather Unscientific Inventory
 
 Throughout the holiday, I'd been maintaining a daily diary and a separate sightings log, recording the wildlife we'd encountered both on the reef and around the island. I also had a substantial collection of a little over 70 Gb of GoPro footage and other visual material to work through.
 
@@ -54,7 +54,7 @@ A few qualifications are necessary. These aren't precise scientific measurements
 
 Nevertheless, the figures offer an interesting picture of how we spent our time and one number in particular caught my attention.
 
-## The extraordinary in the ordinary
+## The Extraordinary in the Ordinary
 
 We undertook just four organised marine excursions - dolphin watching, a snorkelling extravaganza, snorkelling with nurse sharks and rays, and a sunset cruise.
 
@@ -78,7 +78,7 @@ A tiny piece of natural history, unfolding alongside lunch.
 
 These were precisely the sorts of observations that might easily have passed unnoticed.
 
-## Beyond the encounter
+## Beyond the Encounter
 
 There was something else that emerged from looking through the diary.
 
@@ -105,7 +105,7 @@ An encounter became an observation. An observation became a question. A question
 
 It's a process that feels very familiar to me, and one of the reasons I've always enjoyed keeping Field Notes.
 
-## Seventy gigabytes of memories
+## Seventy Gigabytes of Memories
 
 The visual record is another story altogether. Between the GoPro footage and photographs, we'd accumulated roughly 70 GB of material, much of it underwater.
 
@@ -121,7 +121,7 @@ And the process of writing these Field Notes brings those different threads toge
 
 What began as a holiday is gradually becoming a small personal natural-history archive, albeit one with an unusually generous helping of cocktails, beautiful meals and spectacular sunsets.
 
-## More than the sum of its parts
+## More Than the Sum of its Parts
 
 Of course, there's a fundamental absurdity in trying to quantify a holiday like this.
 

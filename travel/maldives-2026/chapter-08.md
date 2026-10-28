@@ -33,7 +33,7 @@ flying_through_the_water:
 
 The water was cloudy with plankton, hardly the ideal conditions for underwater photography. But to the manta rays it was exactly the attraction. On 15<sup>th</sup> October we had one of those snorkelling encounters that remains vivid long after getting out of the water: Reef mantas moving gracefully through the murk, feeding as they went.
 
-## A shape emerging from the blue
+## A Shape Emerging from the Blue
 
 A manta has a way of making even a sizeable stretch of ocean feel suddenly occupied. At first there is little more than a shadow in the water, an indistinct shape gradually resolving itself into something sizeable and unmistakable. Then the broad triangular fins become apparent, moving in a measured rhythm, and the shadow becomes an animal of wonderful precision and grace.
 
@@ -43,7 +43,7 @@ The contrast between its apparent effortlessness and my own clumsy efforts to ke
 
 Their appearance was spectacular, but the behaviour was at least as interesting as the sight itself.
 
-## Flying through water
+## Flying Through Water
 
 One of the most striking things about a manta ray is the way it swims. Most fish propel themselves primarily by moving their tails from side to side. Mantas do something quite different. Their greatly enlarged pectoral fins form broad, flexible wings, which they move up and down in a form of underwater flight. The movement is sometimes described as *mobuliform locomotion*, a specialised swimming style characteristic of manta and devil rays.
 
@@ -62,7 +62,7 @@ There is something almost birdlike about it, although the comparison only goes s
 
 Perhaps that's why the word *gliding* seems so appropriate.
 
-## The value of murky water
+## The Value of Murky Water
 
 Plankton can make the water look disappointingly cloudy through a camera. Suspended particles scatter the light, reducing detail and contrast. Much of my footage from the encounter was affected by precisely that problem. But the cloudiness wasn't just photographic bad luck. It was part of the story.
 
@@ -72,7 +72,7 @@ Where plankton becomes concentrated, feeding can be particularly rewarding. Curr
 
 The very thing that made the encounter difficult to record helped explain why it happened.
 
-## An animal worth watching
+## An Animal Worth Watching
 
 There is a temptation during a wildlife encounter to concentrate on obtaining the perfect photograph, particularly when the opportunity might not come again. But the mantas were a reminder of how much can be gained simply by watching. The movement of the fins, the subtle adjustments of the body, the way an animal changes direction without any apparent urgency — these are details that reveal themselves when attention shifts from capturing an image to observing behaviour.
 
@@ -99,7 +99,7 @@ The video captures something of that experience. The manta's movement is continu
 
 Afterwards I spent time reviewing and improving the GoPro clips. Some were simply too murky to rescue meaningfully. A few captured enough of the encounter to keep. I rather like that imbalance - the experience was far greater than the images I brought back.
 
-## A visitor at the villa
+## A Visitor at the Villa
 
 The mantas weren't confined to an organised outing.
 
@@ -109,7 +109,7 @@ That unexpected appearance also reinforced something which became increasingly a
 
 For us, the manta's appearance was an exceptional event. For the manta, it was presumably just another moment in its ordinary life.
 
-## Curiosity that continues
+## Curiosity that Continues
 
 The encounter also strengthened my interest in manta conservation.
 

@@ -14,7 +14,7 @@ images:
 
 Some wildlife encounters are unforgettable because they're spectacular. Others stay with you because of how they make you feel. Our dolphin-watching excursion from Moofushi on 13<sup>th</sup> October managed to be both.
 
-## Not quite unicorns
+## Not Quite Unicorns
 
 We were fortunate enough to encounter dolphins during our visit to Moofushi in 2015, and the possibility of seeing them again was one of the pleasures of returning to the island. But dolphins are wild animals, travelling freely through an enormous ocean, and there's no guarantee that they'll appear simply because we've come looking for them.
 
@@ -24,7 +24,7 @@ It was all good-natured fun, of course, but there was a grain of truth beneath t
 
 Having been lucky in 2015, we were hoping our good fortune might hold.
 
-## Out on the water
+## Out on the Water
 
 The trip took us away from the island and out into the surrounding ocean, where the scale of the atoll feels rather different. From the water villa, the reef and lagoon define a familiar little world. Beyond them is a much larger one.
 
@@ -34,7 +34,7 @@ We went hoping to see them, but with the understanding that there might be nothi
 
 On this occasion, however, we were fortunate.
 
-## A pod, and a youngster
+## A Pod, and a Youngster
 
 We encountered a pod of dolphins, including a youngster travelling with the group. Subsequent examination of a photograph supported their identification as spinner dolphins, *Stenella longirostris*.
 
@@ -46,7 +46,7 @@ Spinner dolphins are highly social animals, often travelling in groups that can 
 
 I can't claim to know what the dolphins were thinking or how they experienced our presence. What I can say is that watching them together was deeply affecting. My diary entry uses the word *emotional*, and it's the right word.
 
-## A life beneath the surface
+## A Life Beneath the Surface
 
 There's something particularly interesting about spinner dolphins in the tropical Indian Ocean.
 
@@ -62,7 +62,7 @@ It's tempting, when watching dolphins at the surface, to imagine that we're seei
 
 Perhaps that's part of their fascination.
 
-## What the moving image remembers
+## What the Moving Image Remembers
 
 Cameras are useful, and I wouldn't willingly have left mine behind. They help identify species and recover details that pass too quickly to register at the time. But photographs rarely reproduce the character of an encounter. They don't fully capture the anticipation, the movement of the boat, or the repeated excitement of dolphins appearing and disappearing around us.
 
@@ -91,7 +91,7 @@ And, of course, the recording preserves a little of the experience for a time wh
   </figure>
 </div>
 
-## The privilege of seeing them
+## The Privilege of Seeing Them
 
 There's a distinction between knowing that an animal exists and encountering it in the wild. We can read about dolphins, study their behaviour, watch documentaries and admire photographs. All of those things have value, and they can deepen our understanding of the animals enormously.
 
@@ -116,5 +116,5 @@ As for the unicorns? Well, we have the video to prove they exist!
 ## References
 
 1. Letessier et al. (2022). "Spinner dolphin residency in tropical atoll lagoons: Diurnal presence, seasonal variability and implications for nutrient dynamics", *Journal of Zoology*, https://zslpublications.onlinelibrary.wiley.com/doi/10.1111/jzo.13000
-2. Norris & Dohl (1980). "Behavior of the Hawaiian spinner dolphin, Stenella longirostris", *Fishery Bulletin*, *77(4)*, 821–850. https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/1979/774/norris.pdf?utm_source=chatgpt.com
+2. Norris & Dohl (1980). "Behavior of the Hawaiian spinner dolphin, Stenella longirostris", *Fishery Bulletin*, *77(4)*, 821–850. https://spo.nmfs.noaa.gov/sites/default/files/pdf-content/1979/774/norris.pdf
 3. Tyne et al. (2017). "Temporally and spatially partitioned behaviours of spinner dolphins: implications for resilience to human disturbance", *Royal Society Open Science*, *4*, 160626, https://royalsocietypublishing.org/rsos/article/4/1/160626/36785/Temporally-and-spatially-partitioned-behaviours-of

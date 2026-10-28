@@ -29,7 +29,7 @@ During our previous stay in 2018, we learned more about an effort to help the re
 
 The work is associated with _Reefscapers_, whose coral restoration programme at Constance Moofushi offers a practical example of marine conservation happening alongside tourism.
 
-## Frames beneath the water
+## Frames Beneath the Water
 
 The temptation is to see restoration as simply planting coral and waiting for a beautiful result. In reality, the process is more demanding and outcomes are uncertain.
 

@@ -27,7 +27,7 @@ But a resort is also a small and complicated community. Everything needed to kee
 
 On 17<sup>th</sup> October we had a chance to look behind the holiday experience.
 
-## Behind the scenes
+## Behind the Scenes
 
 We attended a sustainability talk with Nadi, the assistant sustainability manager, followed by a Heart of House tour with Arien, the chief engineer. Those two perspectives made an interesting combination: the environmental aspirations of the resort and some of the practical work required to run it.
 
@@ -35,7 +35,7 @@ I don't want to pretend I came away with a complete technical understanding of t
 
 There are decisions behind all of it, and those decisions have consequences for the surrounding ocean.
 
-## A reef is not just scenery
+## A Reef is Not Just Scenery
 
 It would be easy to treat the reef as one more attraction: something beautiful to visit with a mask and snorkel. But the reef is also part of the island's physical setting and a living system supporting an extraordinary variety of organisms.
 
@@ -43,7 +43,7 @@ That puts our own activities into perspective. We are visitors to that system, e
 
 The coral reef presentation later that day, given by marine biologist Judy Wambui, reinforced how valuable it is to understand something of the place rather than simply consume the experience of being there.
 
-## A small but lasting lesson
+## A Small but Lasting Lesson
 
 One of my practical discoveries during the stay concerned reef-safe sunscreen. I had worn a rash vest for snorkelling, but I hadn't previously given much thought to the environmental implications of what I put on exposed skin. That changed during this visit. I bought AQUALAÏ sunscreen and made a mental note that it would accompany my rash vest on future trips.
 
@@ -51,7 +51,7 @@ The term *reef-safe* deserves a little care: it isn't a universal guarantee that
 
 Nevertheless, it was a genuine learning moment for me. A holiday had changed something about how I intended to behave afterwards.
 
-## An island-sized perspective
+## An Island-Sized Perspective
 
 Later, back on our villa deck, the ocean looked exactly as it had before: bright, welcoming and full of life. What had changed was my awareness of the systems and people working behind the scenes.
 

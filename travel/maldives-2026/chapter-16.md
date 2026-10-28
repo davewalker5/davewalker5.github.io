@@ -33,7 +33,7 @@ It's a photograph of a turtle nesting site on the beach.
 
 We visited a nest near the sand villas on 13 October. Then, on 18 October, a second nest was made while we were staying on the island. For me, those two small patches of sand came to represent something important about the place.
 
-## A beach with another purpose
+## A Beach With Another Purpose
 
 To a holidaymaker, a sandy beach is somewhere to walk, sit, swim or admire the view. To a nesting sea turtle, it's an essential habitat. A female turtle must come ashore to lay her eggs, leaving the water in which she spends almost all the rest of her life. The eggs then develop beneath the sand, subject to environmental conditions and the many uncertainties faced by wild animals.
 
@@ -41,7 +41,7 @@ The nesting sites were a reminder that the beach isn't simply part of the resort
 
 Our notes don't identify the species responsible for either nest, and I wouldn't want to infer it from the hawksbill turtle we'd encountered while snorkelling. The identities of the nesting females, and the eventual outcomes of the nests, need separate evidence.
 
-## Waiting for a future none of us can see
+## Waiting for a Future None of Us Can See
 
 There is something affecting about a nest because almost everything important about it lies in the future. An adult turtle has already come ashore and laid eggs. What happens next depends on conditions in the sand, the absence of damaging disturbance and, eventually, the challenges faced by hatchlings making their way to the sea.
 
@@ -49,7 +49,7 @@ We weren't there to see hatchlings emerge, and it would be wrong to invent that 
 
 That seems enough.
 
-## Looking after the next generation
+## Looking After the Next Generation
 
 During the visit we learned more about the resort's environmental activities, including its attention to the marine ecosystem. Nesting sites make the practical value of care especially tangible.
 
@@ -57,7 +57,7 @@ Protecting an area of beach, limiting disturbance and respecting the needs of an
 
 There's a connection here to the coral restoration programme on the reef. Both are concerned with the future, and both require people to look beyond the immediate pleasure of the surroundings.
 
-## What remains
+## What Remains
 
 Moofushi gave us extraordinary encounters: Mantas moving through plankton-rich water, a hawksbill turtle feeding calmly, dolphins out on the ocean, sharks and rays, and a wonderful succession of smaller discoveries. But when I think about what the island means to me, I find myself returning to that nesting site.
 

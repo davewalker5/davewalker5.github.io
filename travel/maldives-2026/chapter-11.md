@@ -47,7 +47,7 @@ This time, visiting in October, we weren't treated to quite such tiny youngsters
 
 It became something of a familiar pleasure to look into the water and discover one passing by. Sometimes there would be a shark, sometimes several, and sometimes nothing at all. They were simply going about their lives, apparently indifferent to our fascination with them.
 
-## A shark perfectly at home
+## A Shark Perfectly at Home
 
 The blacktip reef shark (*Carcharhinus melanopterus*) is a characteristic inhabitant of tropical coral reef environments throughout the Indo-Pacific. Its distinctive dark-tipped fins, particularly the prominent black tip on the first dorsal fin, make it one of the more readily recognisable reef sharks.
 
@@ -61,7 +61,7 @@ Of course, the lagoon isn't merely a nursery. It forms part of a much wider livi
 
 Watching blacktips of different sizes moving through the waters around Moofushi gives a small glimpse into that wider life.
 
-## Grace in motion
+## Grace in Motion
 
 One of the things that has struck me most strongly about blacktip reef sharks is just how extraordinarily graceful they are in the water.
 
@@ -105,7 +105,7 @@ Without the distractions of a busy reef scene, the movement itself became the fo
 
 It is one of those occasions when video captures something that a still photograph cannot quite convey. The beauty lies not simply in the animal's appearance, but in the way it moves. And, of course, the shark's presence after dark was a reminder that the lagoon's inhabitants continue their lives long after we've finished our own day's activities.
 
-## Something unusual on the way to breakfast
+## Something Unusual on the Way to Breakfast
 
 {%- assign assets_url = site.assets_url | append: page.assets -%}
 {% include image-block.html images=page.blacktip_social assets=assets_url %}
@@ -126,7 +126,7 @@ I wrote in the diary that I felt privileged to witness it. I still do.
 
 We had happened upon a small episode in the lives of these animals, something that was clearly significant to them but whose meaning we could only begin to speculate about.
 
-## Familiar sharks, unfamiliar lives
+## Familiar Sharks, Unfamiliar Lives
 
 There's an interesting distinction between recognising an animal and understanding its behaviour.
 
@@ -144,7 +144,7 @@ The more closely we observe, the more questions emerge and that's one of the gre
 
 Sometimes the most valuable outcome is simply a better question.
 
-## Looking again
+## Looking Again
 
 One of the advantages of taking photographs and video is the opportunity to revisit an encounter after the initial excitement has passed. A fleeting observation can become something to examine more carefully. Movements that were difficult to follow in real time can be watched again, slowed down and compared with descriptions of known behaviour.
 
@@ -156,7 +156,7 @@ The challenge is to distinguish what we actually saw from what we think it might
 
 That distinction doesn't diminish the encounter. If anything, it makes it more interesting.
 
-## Wildlife on the doorstep
+## Wildlife on the Doorstep
 
 Perhaps the most remarkable thing about our encounters with blacktip reef sharks at Moofushi is how unremarkable the circumstances often are. We weren't on an organised wildlife excursion, or searching for something unusual. We might be walking to breakfast, standing on the steps of our villa, crossing one of the jetties or simply looking into the lagoon. And there, sometimes just a few metres away, would be a shark.
 

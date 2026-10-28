@@ -47,7 +47,7 @@ Not all the wildlife at Moofushi is swimming over the reef. Some of the most enj
 
 A tiny island can contain a surprising number of small lives, most of which are easy to overlook if you're always looking towards the sea.
 
-## The busy beach
+## The Busy Beach
 
 On 18<sup>th</sup> October, a ghost crab provided a delightful little demonstration of engineering.
 
@@ -65,7 +65,7 @@ Another curious detail was that they all seemed reluctant to venture into the wa
 
 I wouldn't want to read too much into what we were seeing. Whether the apparent pecking order reflected size, dominance, simple avoidance or something else entirely would require rather more systematic observation. But there was something fascinating about watching these little encounters unfold. What might easily have passed unnoticed as background activity became, once we started paying attention, a small and surprisingly intricate world of its own.
 
-## In the vegetation
+## In the Vegetation
 
 The trees and undergrowth held a different assortment of inhabitants. We saw house geckos, oriental garden lizards and the large Indian flying foxes (*Pteropus medius*).
 
@@ -79,7 +79,7 @@ Seen close up, flying foxes are extraordinary creatures. Their great leathery wi
 
 Together, these small inhabitants added another dimension to the island's wildlife. The lizards moving through the vegetation, the geckos appearing around the buildings and the flying foxes travelling overhead were reminders that Moofushi's natural world extends well beyond the reef and the shoreline. There was always something else going about its business, often quite independently of whether anyone happened to be watching.
 
-## The beetle and the palm
+## The Beetle and the Palm
 
 The island's insect life provided plenty of opportunities for observation, including coconut rhinoceros beetles, yellow oriental paper wasps, moths and dragonflies.
 
@@ -93,7 +93,7 @@ On one occasion, we watched a member of the resort staff drilling into the trunk
 
 It was another reminder that even creatures we find fascinating can have a complicated relationship with their surroundings, and that maintaining the island's lush vegetation may involve rather more active management than is immediately apparent.
 
-## Other small lives
+## Other Small Lives
 
 Other insects were less conspicuous but no less deserving of attention. Yellow oriental paper wasps appeared around the island, while moths and other small flying insects were encountered among the vegetation and around the resort lighting. These were the sorts of animals that could easily pass unnoticed against the more spectacular wildlife of the reef, yet each had its own place in the island's ecology.
 
@@ -101,7 +101,7 @@ The dragonflies were especially interesting. The wandering glider (*Pantala flav
 
 Not every encounter resulted in an immediate or certain identification. Some questions were resolved through repeated observations, others through photographs examined afterwards, and a few remain provisional. But that's part of the pleasure of keeping a sightings diary: an initial observation needn't be the end of the investigation. Sometimes it's only the beginning.
 
-## Making room for the ordinary
+## Making Room for the Ordinary
 
 Resort life and wildlife coexist in interesting ways. A heron may use a foot-wash jar, crabs may excavate near the restaurant, and insects appear beneath lights or among the plants. These small encounters brought us closer to the quieter, less conspicuous rhythms of island life.
 

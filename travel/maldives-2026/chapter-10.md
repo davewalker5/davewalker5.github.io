@@ -59,7 +59,7 @@ On 19<sup>th</sup> October we once again joined an organised excursion that swap
 
 It's one thing to glimpse a shark passing below a walkway or along the edge of a reef. It's quite another to enter the water where several large animals are moving around you.
 
-## Into the water
+## Into the Water
 
 The encounter was organised through Blue Tribe. Once in the water, the sharks' movements quickly became the centre of attention: large bodies passing with a calm, assured economy that is difficult to appreciate from photographs alone.
 
@@ -90,7 +90,7 @@ The encounter was organised through Blue Tribe. Once in the water, the sharks' m
 
 The animals were identified to us as nurse sharks, *Ginglymostoma cirratum*, and alongside them were large rays, identified from our observations and imagery as pink whiprays, *Pateobatis fai*.
 
-## Two very different designs
+## Two Very Different Designs
 
 Watching sharks and rays together is a striking reminder of how varied the shapes of cartilaginous fishes can be.
 
@@ -100,7 +100,7 @@ Neither design is better understood simply by calling the animals graceful. The 
 
 I was fortunate enough to take some GoPro footage, although being in the middle of an encounter inevitably changes what can be recorded. Sometimes there are simply too many things to look at.
 
-## A view from above
+## A View from Above
 
 Blue Tribe also provided drone footage of the excursion, photographed by Tiger. We purchased the footage and received permission to share it.
 
@@ -125,7 +125,7 @@ Blue Tribe also provided drone footage of the excursion, photographed by Tiger. 
 
 The aerial perspective is a revelation. The relationship between the swimmers, the sharks, the rays and the surrounding water becomes much clearer. Moments that felt close and immediate in the sea can be seen as part of a much larger scene.
 
-## After the encounter
+## After the Encounter
 
 The afternoon didn't end with the snorkelling. We returned to Moofushi and later joined a sunset cruise, the boat bobbing gently home as the sun set and the first stars appeared.
 

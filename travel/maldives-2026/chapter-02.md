@@ -33,7 +33,7 @@ For many visitors, a journey aboard one of these remarkable little aircraft is t
 
 But the Twin Otters don't disappear from the story once they've delivered their passengers. Throughout our stay, they remained a familiar presence, passing overhead, approaching the island and departing again across the Indian Ocean. They're so much a part of the character of the Maldives that it's difficult to imagine the islands without them.
 
-## An aircraft made for difficult places
+## An Aircraft Made for Difficult Places
 
 The Twin Otter has a rather longer history than its association with tropical islands might suggest.
 
@@ -45,7 +45,7 @@ The same basic aircraft that can serve isolated communities in the Canadian Arct
 
 In the Maldives, that versatility has helped make the Twin Otter an essential part of the transport network.
 
-## A country connected by water
+## A Country Connected by Water
 
 The geography of the Maldives presents some unusual challenges for transport.
 
@@ -59,7 +59,7 @@ The aircraft have become particularly closely associated with tourism, but their
 
 There is, of course, an environmental cost to aviation, and seaplane operations are no exception. Nevertheless, the ability to use existing waterways rather than construct conventional runways on small and environmentally sensitive islands is an interesting aspect of how the aircraft fit the geography of the Maldives.
 
-## The view from above
+## The View From Above
 
 {% include fullwidth-image.html assets=page.assets img=page.maldives_from_the_air %}
 
@@ -100,7 +100,7 @@ What makes the sequence so satisfying to watch is the transition from one enviro
 
 I managed to capture some good footage of these departures, and watching it afterwards has been a pleasure in itself. Still photographs capture the shape and character of the aircraft, but video conveys something different - the sound, movement and changing relationship between the aircraft and the water. It's one of those occasions when the moving image adds substantially to the observation.
 
-## Part of the rhythm of the island
+## Part of the Rhythm of the Island
 
 After a few days, the arrival and departure of the seaplanes becomes part of the familiar pattern of life at Moofushi.
 
@@ -112,7 +112,7 @@ The island can feel wonderfully remote. Its small size, surrounding ocean and ex
 
 There's a quiet contradiction in that - the very technology that allows us to escape the everyday world is also what keeps the island connected to it.
 
-## The journey is part of the place
+## The Journey is Part of the Place
 
 I suspect that if someone were asked to describe the Maldives, their first thoughts would be of palm trees, white sand, turquoise lagoons and coral reefs and quite reasonably so. But for me, the Twin Otter belongs among those defining images.
 

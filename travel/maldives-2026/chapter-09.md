@@ -27,7 +27,7 @@ On 15th October we joined the _Snorkelling Extravaganza_, a snorkelling excursio
 
 We were fortunate enough to encounter a Hawksbill Turtle, _Eretmochelys imbricata_, and I was able to watch it for an extended period as it fed naturally amongst the coral below me. The turtle appeared unconcerned by my presence, and I was content to hang quietly in the water and let it get on with feeding.
 
-## A creature going about its business
+## A Creature Going About its Business
 
 There is a difference between seeing an animal and watching one. The first can be memorable but the second offers a glimpse into a life that continues whether we are present or not.
 
@@ -56,7 +56,7 @@ Hawksbill turtles, *Eretmochelys imbricata*, are especially associated with trop
 
 The second part of the video shows a different hawksbill, filmed by a member of the dive crew who approached it with my camera. This turtle wasn't feeding. Instead, it seemed to be paying attention to the snorkellers and divers nearby. That makes for a quite different encounter from the first.
 
-## The privilege of observation
+## The Privilege of Observation
 
 One of the things I particularly enjoyed about the first encounter was the opportunity simply to watch. The turtle was busy feeding, and I was content to remain where I was, recording its movements and watching it explore the reef.
 
@@ -66,7 +66,7 @@ Wildlife encounters are inherently unpredictable. Every animal, every situation 
 
 For me, the particular pleasure of that first encounter lay in watching an animal engaged in something entirely ordinary and natural. The turtle wasn't performing for an audience. It was simply getting on with its life, and I was fortunate enough to witness a little of it.
 
-## A record worth revisiting
+## A Record Worth Revisiting
 
 Together, the two sequences preserve more than a holiday memory. They show two hawksbills in different circumstances, and remind me how much there is to learn from watching carefully rather than assuming that every encounter means the same thing.
 
@@ -74,7 +74,7 @@ I particularly value the continuity of the first sequence, filmed with my GoPro.
 
 There's an interesting contrast here - a turtle feeding quietly may be less immediately spectacular than a manta emerging from the blue, but it offers a much more intimate insight into an animal's everyday life.
 
-## Two different turtle stories
+## Two Different Turtle Stories
 
 There is also a turtle nesting site on Moofushi, and a second nest was made during our stay. That is a separate story about reproduction, protection and what might happen to the next generation. In contrast, this one is about two adult turtles encountered on the reef and the quiet pleasure of watching one of them get on with feeding.
 
