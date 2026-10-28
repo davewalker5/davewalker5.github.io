@@ -1,66 +1,57 @@
 ---
 layout: journal
-title: "The Next Generation"
-breadcrumb: "The Next Generation"
-date: 2026-10-18
+title: "The Dragonfly That Crosses Oceans"
+breadcrumb: "The Dragonfly That Crosses Oceans"
+date: 2026-10-20
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "sea-turtle-nesting", "turtle-conservation", "nesting-beach", "marine-life", "observation"]
-excerpt: "Two turtle nests on Moofushi’s beach offer a hopeful final perspective on the island’s wildlife and its future"
+tags: ["maldives", "moofushi", "south-ari-atoll", "wandering-glider", "pantala-flavescens", "dragonfly-migration", "indian-ocean", "natural-history"]
+excerpt: "Repeated sightings of wandering glider dragonflies open up a remarkable story about migration across the Indian Ocean"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 15
 images:
-  - name: "turtle-nest-site.jpg"
-    alt: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
-    caption: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "turtle-nest-site-002.jpg"
-    alt: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
-    caption: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "turtle-nest-site-003.jpg"
-    alt: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
-    caption: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-Among the photographs from Moofushi, one of the most meaningful to me is not a spectacular view of the turquoise ocean or a close encounter with a large marine animal.
+# The Dragonfly That Crosses Oceans
 
-It's a photograph of a turtle nesting site on the beach.
+There are some animals whose significance lies not in their size or appearance, but in the extraordinary journeys of which they may be capable.
 
-We visited a nest near the sand villas on 13 October. Then, on 18 October, a second nest was made while we were staying on the island. For me, those two small patches of sand came to represent something important about the place.
+During our stay at Moofushi, the wandering glider dragonfly kept appearing in my wildlife notes. It seemed an unremarkable enough island inhabitant at first glance: a dragonfly passing through the tropical air.
 
-## A beach with another purpose
+Then I began reading about the species.
 
-To a holidaymaker, a sandy beach is somewhere to walk, sit, swim or admire the view. To a nesting sea turtle, it's an essential habitat. A female turtle must come ashore to lay her eggs, leaving the water in which she spends almost all the rest of her life. The eggs then develop beneath the sand, subject to environmental conditions and the many uncertainties faced by wild animals.
+## An improbable traveller
 
-The nesting sites were a reminder that the beach isn't simply part of the resort. It has an ecological role of its own.
+The wandering glider, *Pantala flavescens*, is notable for its capacity for long-distance movement. Unlike dragonflies whose lives are closely associated with a particular pond or stream, wandering gliders can appear over enormous areas and exploit temporary freshwater habitats for breeding.
 
-Our notes don't identify the species responsible for either nest, and I wouldn't want to infer it from the hawksbill turtle we'd encountered while snorkelling. The identities of the nesting females, and the eventual outcomes of the nests, need separate evidence.
+Scientists have investigated the possibility that movements by these dragonflies span parts of the Indian Ocean, assisted by prevailing winds and seasonal weather systems.
 
-## Waiting for a future none of us can see
+It's a remarkable idea: a small insect travelling distances that would be substantial even for many birds.
 
-There is something affecting about a nest because almost everything important about it lies in the future. An adult turtle has already come ashore and laid eggs. What happens next depends on conditions in the sand, the absence of damaging disturbance and, eventually, the challenges faced by hatchlings making their way to the sea.
+## Why would a dragonfly be here?
 
-We weren't there to see hatchlings emerge, and it would be wrong to invent that as the ending of the story. The nests were simply present, with all their potential and uncertainty.
+Moofushi is a tiny island surrounded by salt water. Seeing wandering gliders here immediately prompts questions. Were the individuals we saw resident, recently arrived, or simply passing through? What winds or weather patterns might have carried them?
 
-That seems enough.
+The sightings diary records wandering gliders on multiple days, so their presence wasn't a one-off. But repetition alone doesn't establish an individual insect's origin or destination.
 
-## Looking after the next generation
+We can identify the species from its appearance and consider what is known of the species' migration. We cannot trace the route of a particular dragonfly from the fact that it was flying above our island.
 
-During the visit we learned more about the resort's environmental activities, including its attention to the marine ecosystem. Nesting sites make the practical value of care especially tangible.
+That distinction is important — and rather exciting. The observation is a starting point for investigation, not the end of it.
 
-Protecting an area of beach, limiting disturbance and respecting the needs of an animal that isn't even visible can seem like small actions. Yet conservation often consists of exactly that kind of work: choosing to make room for other lives.
+## Following the seasons
 
-There's a connection here to the coral restoration programme on the reef. Both are concerned with the future, and both require people to look beyond the immediate pleasure of the surroundings.
+Migration depends on timing as well as distance. In the Indian Ocean region, the monsoon system influences wind direction and rainfall, which in turn affect opportunities for movement and breeding.
 
-## What remains
+Our sightings came in October. That gives a useful date against which to compare published work on wandering glider movements and weather patterns, although I would want to check any precise claims about routes and timing against scientific sources before making them.
 
-Moofushi gave us extraordinary encounters: Mantas moving through plankton-rich water, a hawksbill turtle feeding calmly, dolphins out on the ocean, sharks and rays, and a wonderful succession of smaller discoveries. But when I think about what the island means to me, I find myself returning to that nesting site.
+It's the sort of question that makes a lovely follow-up project: begin with a field observation, identify what is known, and find out how far the evidence really goes.
 
-A photograph of a beach with a protected patch of sand may not look like the obvious image of a tropical paradise. Yet it speaks directly to why the place matters. This is a living environment, supporting creatures whose futures depend in part on what happens here.
+## A different sense of scale
 
-We have enjoyed two remarkable weeks of watching that life. The nests are a reminder that the story continues long after we've left, with the possibility of new life, waiting beneath the sand.
+The contrast is what appeals to me. From the water villa, Moofushi seems a very small world. The lagoon, reef and sandbank define a familiar patch of ocean.
+
+Yet a dragonfly above the path may connect that little place to weather systems and landscapes thousands of kilometres away.
+
+I went to the Maldives expecting to spend much of my time thinking about marine wildlife. I hadn't expected a dragonfly to make me look at the entire Indian Ocean differently.
+
+That's the joy of paying attention: you never quite know which small observation will lead to the largest question.

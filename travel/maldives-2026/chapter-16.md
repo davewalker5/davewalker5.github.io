@@ -1,144 +1,66 @@
 ---
 layout: journal
-title: "Counting the Uncountable"
-breadcrumb: "Counting the Uncountable"
-date: 2026-10-25
+title: "The Next Generation"
+breadcrumb: "The Next Generation"
+date: 2026-10-18
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "wildlife-observation", "marine-life", "natural-history", "biodiversity", "conservation", "snorkelling", "curiosity", "reflection"]
-excerpt: "Two weeks on a tiny island, a diary full of observations and a surprising wealth of experiences - an attempt to count the uncountable reveals the rewards of simply paying attention."
+tags: ["maldives", "moofushi", "south-ari-atoll", "sea-turtle-nesting", "turtle-conservation", "nesting-beach", "marine-life", "observation"]
+excerpt: "Two turtle nests on Moofushi’s beach offer a hopeful final perspective on the island’s wildlife and its future"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 16
-boat_house:
-  name: "boat-house.jpg"
-  alt: "The boat house at Constance Moofushi nestled among the palms beside the beach, with its cheerful pastel colours, traditional thatched roof and nautical decorations"
-  caption: "The boat house at Constance Moofushi nestled among the palms beside the beach, with its cheerful pastel colours, traditional thatched roof and nautical decorations"
-  credit: "David Walker, Field Notes Journal"
-  license: "CC BY 4.0"
-  license_link: "https://creativecommons.org/licenses/by/4.0"
+images:
+  - name: "turtle-nest-site.jpg"
+    alt: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
+    caption: "A wooden marker identifies the protected sea turtle nesting site at Constance Moofushi, with the eggs laid on 7 October 2026. A small but important reminder that the island's beaches are not simply places for visitors to enjoy, but essential habitat for wildlife"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "turtle-nest-site-002.jpg"
+    alt: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
+    caption: "A sea turtle nesting site on the beach at Constance Moofushi, protected by a simple rope enclosure. Beneath the white sand, developing eggs represent the next generation of sea turtles in the waters of the Maldives"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
+  - name: "turtle-nest-site-003.jpg"
+    alt: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
+    caption: "The protected nesting site viewed from the opposite side, showing the depression in the sand and its proximity to the lagoon. The enclosure helps prevent accidental disturbance while the eggs develop beneath the beach"
+    license: "CC BY 4.0"
+    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% include fullwidth-image.html assets=page.assets img=page.boat_house %}
+Among the photographs from Moofushi, one of the most meaningful to me is not a spectacular view of the turquoise ocean or a close encounter with a large marine animal.
 
-How much can happen in two weeks on a tiny island in the middle of the Indian Ocean?
+It's a photograph of a turtle nesting site on the beach.
 
-Towards the end of our stay at Constance Moofushi, I found myself wondering just how much we'd actually experienced. We'd spent our days snorkelling, watching wildlife, exploring the island, enjoying extraordinarily good food and wine, and generally doing precisely what appealed to us at the time. It felt like we'd experienced a great deal.
+We visited a nest near the sand villas on 13 October. Then, on 18 October, a second nest was made while we were staying on the island. For me, those two small patches of sand came to represent something important about the place.
 
-There had been no ambitious itinerary, no list of attractions to tick off, and certainly no pressure to *make the most of every minute*. Yet, looking back through my diary and wildlife sightings, it was immediately apparent that an extraordinary amount had happened.
+## A beach with another purpose
 
-So I decided to count it.
+To a holidaymaker, a sandy beach is somewhere to walk, sit, swim or admire the view. To a nesting sea turtle, it's an essential habitat. A female turtle must come ashore to lay her eggs, leaving the water in which she spends almost all the rest of her life. The eggs then develop beneath the sand, subject to environmental conditions and the many uncertainties faced by wild animals.
 
-Or at least, to see what happened when I tried.
+The nesting sites were a reminder that the beach isn't simply part of the resort. It has an ecological role of its own.
 
-## A rather unscientific inventory
+Our notes don't identify the species responsible for either nest, and I wouldn't want to infer it from the hawksbill turtle we'd encountered while snorkelling. The identities of the nesting females, and the eventual outcomes of the nests, need separate evidence.
 
-Throughout the holiday, I'd been maintaining a daily diary and a separate sightings log, recording the wildlife we'd encountered both on the reef and around the island. I also had a substantial collection of a little over 70 Gb of GoPro footage and other visual material to work through.
+## Waiting for a future none of us can see
 
-So, I grouped our experiences into categories and attempted to estimate their frequency and the results are rather entertaining:
+There is something affecting about a nest because almost everything important about it lies in the future. An adult turtle has already come ashore and laid eggs. What happens next depends on conditions in the sand, the absence of damaging disturbance and, eventually, the challenges faced by hatchlings making their way to the sea.
 
-| Type of experience                      |       Estimated number |
-| --------------------------------------- | ---------------------: |
-| Reef exploration and snorkelling        | 3+ documented sessions |
-| Significant marine wildlife encounters  |                  10–15 |
-| Terrestrial wildlife observations       |         80–100 records |
-| Organised marine excursions             |                      4 |
-| Conservation and environmental learning |                    5–7 |
-| Weather and natural phenomena           |                    5–8 |
-| Dining and social occasions             |                  55–70 |
-| Island exploration and discovery        |                    5–8 |
-| Relaxation and recreation               |                  20–30 |
-| Photography and videography projects    |                   8–12 |
-| Travel and aviation                     |     2 (long!) journeys |
+We weren't there to see hatchlings emerge, and it would be wrong to invent that as the ending of the story. The nests were simply present, with all their potential and uncertainty.
 
-A few qualifications are necessary. These aren't precise scientific measurements. Some categories count distinct activities, others repeated observations, and many overlap. The wildlife records also include repeated sightings of the same species, while identifying all the fish in the underwater footage remains very much a work in progress.
+That seems enough.
 
-Nevertheless, the figures offer an interesting picture of how we spent our time and one number in particular caught my attention.
+## Looking after the next generation
 
-## The extraordinary in the ordinary
+During the visit we learned more about the resort's environmental activities, including its attention to the marine ecosystem. Nesting sites make the practical value of care especially tangible.
 
-We undertook just four organised marine excursions - dolphin watching, a snorkelling extravaganza, snorkelling with nurse sharks and rays, and a sunset cruise.
+Protecting an area of beach, limiting disturbance and respecting the needs of an animal that isn't even visible can seem like small actions. Yet conservation often consists of exactly that kind of work: choosing to make room for other lives.
 
-Those excursions produced some wonderful experiences. Watching spinner dolphins, including a youngster travelling with the pod, was particularly moving. Snorkelling among nurse sharks and rays was unforgettable, and the sight of the ocean beneath a fading sunset, with the first stars appearing overhead, was magical.
+There's a connection here to the coral restoration programme on the reef. Both are concerned with the future, and both require people to look beyond the immediate pleasure of the surroundings.
 
-But alongside those relatively few excursions was a remarkable accumulation of everyday wildlife observations.
+## What remains
 
-There were the House Crows announcing their presence noisily from the trees, the White-breasted Waterhens wandering rather confidently around the restaurants, and the Asian Koels that made their homes in the island's vegetation.
+Moofushi gave us extraordinary encounters: Mantas moving through plankton-rich water, a hawksbill turtle feeding calmly, dolphins out on the ocean, sharks and rays, and a wonderful succession of smaller discoveries. But when I think about what the island means to me, I find myself returning to that nesting site.
 
-There were ghost crabs, hermit crabs, dragonflies, lizards, geckos and flying foxes and, of course, there were the Blacktip Reef Sharks.
+A photograph of a beach with a protected patch of sand may not look like the obvious image of a tropical paradise. Yet it speaks directly to why the place matters. This is a living environment, supporting creatures whose futures depend in part on what happens here.
 
-Sometimes the most interesting encounters required no more effort than walking to breakfast.
-
-One morning we watched several blacktips, each around a metre long, interacting in the shallows in behaviour that appeared possibly related to courtship. On another occasion, a shark cruised gracefully beneath the walkway. At night, the illuminated shallows occasionally revealed the unmistakable silhouette of a juvenile patrolling the water.
-
-None of these were organised experiences. We simply happened to be there, paying attention.
-
-I was particularly taken with a ghost crab excavating its burrow on the beach near the Manta Restaurant. It would disappear into its hole, emerge carrying sand, deposit the material onto a growing spoil heap, and return underground to repeat the process.
-
-A tiny piece of natural history, unfolding alongside lunch.
-
-These were precisely the sorts of observations that might easily have passed unnoticed.
-
-## Beyond the encounter
-
-There was something else that emerged from looking through the diary.
-
-> Many of our experiences didn't end when the activity itself was over
-
-An encounter with an unfamiliar fish might prompt a search through identification guides. Watching the sharks raised questions about their behaviour. The shifting beaches and sandbanks led to an interest in the processes that continually reshape the island. Snorkelling along the reef drop-off encouraged me to investigate its underwater geography.
-
-The conservation presentations, sustainability tour and discussions about reef restoration added another layer of understanding.
-
-Gradually, an interesting pattern emerged:
-
-| Depth of engagement                                                                   | Estimated experiences |
-| ------------------------------------------------------------------------------------- | --------------------: |
-| Experienced — something enjoyed or participated in                                    |                70–100 |
-| Observed and documented — something deliberately recorded                             |                 30–45 |
-| Investigated and learned — something explored in more detail                          |                 15–25 |
-| Interpreted and communicated — something developed into photographs, video or writing |                 10–15 |
-
-Again, these numbers are approximate and the categories overlap. An experience might pass through all four stages, or remain a perfectly enjoyable moment that needed no further attention.
-
-There is no suggestion that one level is somehow better than another - sometimes sitting on the decking with a drink, listening to the waves breaking on the outer reef, was quite sufficient - but I found the progression fascinating.
-
-An encounter became an observation. An observation became a question. A question led to learning. And sometimes that learning became a story.
-
-It's a process that feels very familiar to me, and one of the reasons I've always enjoyed keeping Field Notes.
-
-## Seventy gigabytes of memories
-
-The visual record is another story altogether. Between the GoPro footage and photographs, we'd accumulated roughly 70 GB of material, much of it underwater.
-
-There are close encounters with reef mantas, extended footage of a hawksbill turtle feeding, sharks moving through the shallows, dolphins, reef fish and the endlessly shifting colours and textures of the Indian Ocean.
-
-Reviewing that material has itself become part of the experience.
-
-Footage can reveal details that weren't apparent at the time. It can help identify a species, examine a behaviour more carefully, or simply allow us to enjoy an encounter again.
-
-The diary supplies the circumstances. The sightings log records what we saw. The photographs and video preserve something of the visual experience. Research helps us understand it.
-
-And the process of writing these Field Notes brings those different threads together.
-
-What began as a holiday is gradually becoming a small personal natural-history archive, albeit one with an unusually generous helping of cocktails, beautiful meals and spectacular sunsets.
-
-## More than the sum of its parts
-
-Of course, there's a fundamental absurdity in trying to quantify a holiday like this.
-
-A brief glimpse of a manta ray might be counted as one encounter. So might watching a crab excavate a burrow. Yet the two experiences are utterly different, and neither can be reduced to a number that captures its significance.
-
-Some moments last only seconds but stay with us for years. Others unfold slowly and quietly, becoming meaningful almost without our noticing.
-
-Nor does the quantity of experiences necessarily tell us anything about the quality of a holiday.
-
-Nevertheless, I enjoyed the exercise because it revealed something I hadn't fully appreciated while we were there. The richness of our time at Moofushi didn't come from trying to fit as much as possible into two weeks, it came from being somewhere that continually rewarded curiosity.
-
-The island's remarkable marine environment provided countless opportunities for discovery, but so did the birds in the vegetation, the crabs on the beach, the changing weather, the night sky and the ever-moving sand. There was always something to notice, something to learn, or simply something to enjoy.
-
-And perhaps that's the most satisfying result of my thoroughly unscientific investigation.
-
-We came to Moofushi for a holiday.
-
-We spent two weeks being curious.
-
-And we were very happy indeed.
+We have enjoyed two remarkable weeks of watching that life. The nests are a reminder that the story continues long after we've left, with the possibility of new life, waiting beneath the sand.

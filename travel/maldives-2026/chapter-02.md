@@ -1,95 +1,125 @@
 ---
 layout: journal
-title: "An Island That Never Stands Still"
-breadcrumb: "An Island That Never Stands Still"
+title: "Wings Over the Atolls"
+breadcrumb: "Wings Over the Atolls"
 date: 2026-10-12
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "coral-islands", "geomorphology", "coastal-erosion", "sandbanks", "coral-reefs", "indian-ocean", "observation", "travel-journal"]
-excerpt: "Returning to Moofushi reveals an island subtly reshaped by the Indian Ocean, where shifting sandbanks have transformed water villas into sand villas and the shoreline is never quite where it was before"
+tags: ["maldives", "moofushi", "south-ari-atoll", "twin-otter", "dhc-6", "seaplanes", "trans-maldivian-airways", "aviation", "island-transport", "indian-ocean", "observation", "travel-journal"]
+excerpt: "The distinctive Twin Otter seaplanes are more than a way of reaching the islands of the Maldives. From their spectacular flights over the atolls to their familiar presence above Moofushi, they are an unforgettable part of the experience"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 2
-sand_villas:
-  name: "sand-villas.jpg"
-  alt: "A quiet stretch of white-sand beach where the turquoise waters of the Indian Ocean, that formerly lapped the supports for the villas, now gently lap against the shore in front of them"
-  caption: "A quiet stretch of white-sand beach where the turquoise waters of the Indian Ocean, that formerly lapped the supports for the villas, now gently lap against the shore in front of them"
+seaplane:
+  name: "seaplane.jpg"
+  alt: "The aircraft that brought us to the island. A de Havilland Canada DHC-6 Twin Otter, operated by Trans Maldivian Airlines, moored at the jetty at Constance Moofushi"
+  caption: "The aircraft that brought us to the island. A de Havilland Canada DHC-6 Twin Otter, operated by Trans Maldivian Airlines, moored at the jetty at Constance Moofushi"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
+maldives_from_the_air:
+  name: "maldives-from-the-air.jpg"
+  alt: "A view from the Twin Otter during our transfer to Moofushi. The brilliant turquoise of the shallow lagoon contrasts with the deep blue of the surrounding Indian Ocean, revealing how each tiny island is part of a much larger reef system"
+  caption: "A view from the Twin Otter during our transfer to Moofushi. The brilliant turquoise of the shallow lagoon contrasts with the deep blue of the surrounding Indian Ocean, revealing how each tiny island is part of a much larger reef system"
   credit: "David Walker, Field Notes Journal"
   license: "CC BY 4.0"
   license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-{% include fullwidth-image.html assets=page.assets img=page.sand_villas %}
+{% include fullwidth-image.html assets=page.assets img=page.seaplane %}
 
-One of the more curious things about returning to Moofushi after eight years is discovering that some of the water villas aren't quite water villas any more. The process had started when we last visited with one or two of the villas nearest the island on one of the jetties offering steps onto the sand rather than into the ocean. In the interim, however, the shifting sands had moved somewhat further.
+There are certain sights and sounds that become inseparable from a place. In the Maldives, one of them is the distinctive silhouette and unmistakable sound of a de Havilland Canada DHC-6 Twin Otter seaplane.
 
-The buildings haven't moved. The sea has, or rather, the sand has moved beneath them. What were once villas standing over shallow turquoise water now have substantial areas of white sand around them as a new sandbank has formed. The resort has responded by introducing a new category of accommodation: *sand villas*.
+For many visitors, a journey aboard one of these remarkable little aircraft is their first introduction to the islands beyond Malé. For us, returning to Moofushi for the third time, the seaplane transfer has become a familiar and much-anticipated part of the experience.
 
-It's a wonderfully tangible illustration of something that's easy to forget when looking at a tropical island. These apparently permanent little pieces of land are anything but static.
+But the Twin Otters don't disappear from the story once they've delivered their passengers. Throughout our stay, they remained a familiar presence, passing overhead, approaching the island and departing again across the Indian Ocean. They're so much a part of the character of the Maldives that it's difficult to imagine the islands without them.
 
-## An Island Built by the Sea
+## An aircraft made for difficult places
 
-The islands of the Maldives are rather different from the rocky islands familiar from many other parts of the world.
+The Twin Otter has a rather longer history than its association with tropical islands might suggest.
 
-They're coral reef islands, formed from accumulations of sand and sediment derived from the surrounding marine environment. Much of that material consists of fragments of coral, shells and the remains of other organisms, broken down and redistributed by waves and currents. Over time, the sand accumulates on reef platforms, eventually forming land above sea level.
+Developed by de Havilland Canada during the 1960s, the DHC-6 first flew in May 1965. It was designed as a larger, twin-engined successor to the single-engined DHC-3 Otter, retaining the ruggedness and short-field performance that had made its predecessor so useful in remote and demanding environments.
 
-Some of this sand is produced by the everyday activities of the reef’s inhabitants, including parrotfish, which scrape and grind carbonate material as they feed. The fish we watch while snorkelling are, in a very literal sense, contributing to the material from which the island is made.
+Its design reflects that purpose. The high-mounted wing, substantial flaps and two turboprop engines give the aircraft excellent short takeoff and landing performance, usually abbreviated to *STOL*. Depending on the intended operating environment, Twin Otters can be equipped with conventional wheels, skis or floats.
 
-The result is an island built, quite literally, from the products of the ecosystem that surrounds it and that relationship between reef and island is fundamental.
+The same basic aircraft that can serve isolated communities in the Canadian Arctic can therefore operate between small tropical islands, using sheltered stretches of water in place of conventional runways. It's a pleasing example of engineering versatility - an aircraft developed for one of the coldest and most challenging environments on Earth proving equally well suited to one of its warmest.
 
-The reef isn't simply a beautiful place to go snorkelling. It influences the waves and currents reaching the shoreline and forms part of the system from which the island's sediments originate.
+In the Maldives, that versatility has helped make the Twin Otter an essential part of the transport network.
 
-At Moofushi, that relationship is particularly apparent. From our water villa, we can hear the waves breaking on the reef beyond the lagoon. Inside that partially sheltered boundary, the water is generally much calmer, although the wind, tides and weather can change conditions considerably. The reef dissipates much of the incoming wave energy without stopping the movement of water altogether. Currents can still carry sand across the shallows and along the shoreline.
+## A country connected by water
 
-And given enough time, that movement changes the shape of the island.
+The geography of the Maldives presents some unusual challenges for transport.
 
-## The Wandering Sandbanks
+The country consists of roughly 1,190 coral islands distributed across a vast area of the Indian Ocean. Many are extremely small, with neither the space nor the infrastructure required for a conventional airfield.
 
-The most conspicuous changes since our earlier visits are around the island's sandbanks and the villas built close to them. When the resort was developed, some of these villas stood over water. Now, sand has accumulated around parts of their supporting structures, creating what are effectively beachfront properties.
+Boats provide an important means of connecting the islands, but distances can be substantial, particularly when travelling between atolls so the seaplane offers another solution. Operating from the water, float-equipped Twin Otters can connect Malé with resort islands scattered across the archipelago without requiring the construction of an airport on each one.
 
-The change is sufficiently substantial that the resort has adapted its accommodation categories to reflect the new geography and there's something rather pleasing about that. The buildings remain where they were constructed, but the natural environment has changed the description of where they are.
+Trans Maldivian Airways, the operator of our transfers to and from Moofushi, operates the world's largest seaplane fleet, with the Twin Otter forming the backbone of its operations.
 
-Waves approaching an island don't simply stop when they reach the shore. They generate currents that transport sand along the coastline, sometimes removing it from one location and depositing it somewhere else.
+The aircraft have become particularly closely associated with tourism, but their significance extends beyond the pleasure of an unusual flight. They make many otherwise remote destinations accessible within a relatively short journey and can also support essential services, including emergency passenger evacuation.
 
-In the Maldives, the seasonal monsoons are an important influence. Changes in prevailing wind direction alter the waves and currents reaching an island, and consequently the direction and rate at which sand is transported. A beach that grows wider during one part of the year may become narrower during another, while a sandbank can change shape or position. Research on Maldivian reef islands has shown that these seasonal changes can be surprisingly substantial, even when the total area of an island changes relatively little.
+There is, of course, an environmental cost to aviation, and seaplane operations are no exception. Nevertheless, the ability to use existing waterways rather than construct conventional runways on small and environmentally sensitive islands is an interesting aspect of how the aircraft fit the geography of the Maldives.
 
-Of course, our observations of Moofushi are separated by years rather than seasons. We can't determine from those visits alone exactly when the sand moved, or how much of the change reflects seasonal movement rather than longer-term redistribution, but the result is unmistakable.
+## The view from above
 
-The island we remember is not quite the island we're walking around today.
+{% include fullwidth-image.html assets=page.assets img=page.maldives_from_the_air %}
 
-## The Shape of Things
+There can be few more spectacular introductions to a country than seeing the Maldives from the window of a Twin Otter.
 
-One of the fascinating aspects of a coral island is the relationship between its visible shoreline and the much larger submerged reef platform on which it rests. Looking out from Moofushi, it's tempting to think of the island as ending at the beach. In reality, the beach is simply where the land happens to meet the water. The shallow lagoon, the sandbanks, the reef flat and the deeper reef slopes are all parts of the same interconnected physical environment.
+From the air, the geography of the archipelago becomes wonderfully apparent. Tiny islands, often little more than patches of vegetation surrounded by white sand, sit within enormous expanses of blue water. Shallow lagoons appear in luminous shades of turquoise, while the deeper ocean beyond the reefs is a much darker blue. Atoll rims, reef formations and submerged sandbanks create intricate patterns that are difficult to appreciate from sea level.
 
-The shape of the reef influences how waves approach the island. Waves lose energy as they pass over shallow reef areas, while deeper channels can allow water to move differently. The resulting currents help determine where sediment is transported and where it accumulates. It's a complex system, and one that can be difficult to appreciate from the beach.
+The view reveals something important about the nature of these islands. They are not isolated pieces of land surrounded by water so much as the visible parts of much larger reef systems. It is a perspective that helps explain much of what becomes apparent when exploring Moofushi itself - the relationship between the island, its lagoon, the reef and the deeper water beyond.
 
-Snorkelling the house reef offers a rather different perspective. Here, the underwater landscape becomes visible: patches of sand, coral formations, shallow reef areas and the steep descent towards deeper water. The reef edge on the Totem Bar side is particularly striking. Swimming along it, there's a point where the familiar coral-covered landscape falls away into the blue.
+And unlike the experience of travelling aboard a large commercial airliner, the comparatively low altitude of a seaplane transfer keeps the landscape close enough to appreciate its details. The journey becomes part of the exploration rather than merely the means of reaching its destination.
 
-It's an extraordinary reminder that the little island above the surface is only a small part of a much larger structure.
+## Watching the Twin Otters
 
-## Living with Change
+<div class="blog-image-grid blog-image-grid--1-col no-print">
+  <figure>
+    <div id="video-wrap" class="report-image-wrap">
+      <video id="recording-video" class="responsive" controls preload="metadata">
+        <source id="recording-source" src="{{ site.assets_url }}/movies/maldives/moofushi-seaplane-takeoff-001.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+    <figcaption>
+      <span class="caption">
+        A Twin Otter accelerates across the water before lifting clear of the lagoon, watched from the beach at Moofushi. A familiar sight and sound, and an unmistakable part of island life in the Maldives
+      </span>
+      <span class="credit">
+        Footage: David Walker and a member of the dive crew
+      </span>
+    </figcaption>
+  </figure>
+</div>
 
-For a resort built on a tiny island, this natural movement of sand presents some interesting practical challenges. A building that was originally positioned over water may eventually find itself beside a beach. The distance between a villa and the shoreline can change, and the character of a particular stretch of coast can change with it.
+One of the pleasures of staying at Moofushi is the opportunity to watch these aircraft in operation. Their distinctive engine noise often announces their presence before the aircraft itself comes into view. Looking up, the familiar high-wing silhouette, with its two engines and long floats, is immediately recognisable.
 
-Moofushi's sand villas are an unusually visible example of how the resort has accommodated that process. But there is another, much less conspicuous intervention. Tucked discreetly out of sight is a sand pump, used to move sand from places where it has accumulated to places where it is needed. It is a fascinating little piece of practical management: while waves and currents continually redistribute the island's sand, people can lend the process a hand when that redistribution is inconvenient for the resort.
+Although our own transfers were memorable, I found the opportunity to observe other aircraft taking off particularly interesting. As the engines accelerate, the propellers produce their characteristic roar, and the aircraft begins to move. As speed increases, spray is thrown behind them, and the Twin Otter gathers speed across the lagoon and, eventually, the wings generate sufficient lift for the aircraft to leave the water altogether.
 
-I like the contrast. The sand villas are an adaptation to a changing shoreline; the pump is an attempt to manage some of that change. Neither makes the island static. They are simply two different ways of living with a landscape that refuses to stay quite where it was.
+What makes the sequence so satisfying to watch is the transition from one environment to another. An aircraft that only moments earlier was floating on the ocean is now climbing into the sky, the water falling away beneath it. The whole process is remarkably brief.
 
-Shoreline movement also raises much bigger questions about the relationship between people and the natural environment. The Maldives are famously low-lying, making them particularly exposed to rising sea levels, coastal erosion and changes in the marine environment.
+I managed to capture some good footage of these departures, and watching it afterwards has been a pleasure in itself. Still photographs capture the shape and character of the aircraft, but video conveys something different - the sound, movement and changing relationship between the aircraft and the water. It's one of those occasions when the moving image adds substantially to the observation.
 
-Yet it would be misleading to imagine every island as a fixed piece of land being gradually eaten away by the ocean. Coral reef islands are dynamic. Some shorelines erode while others accumulate sediment, and an island can alter its shape or position over time. That doesn't mean the islands are invulnerable. Their ability to adjust depends on the availability of sand and sediment, the condition of their reefs, the surrounding wave environment and the ways in which people have modified their coastlines.
+## Part of the rhythm of the island
 
-There is an important distinction between an island changing shape naturally and an island being able to adapt indefinitely to environmental change and understanding that distinction seems particularly important in a country where so much depends upon the relationship between land, reef and ocean.
+After a few days, the arrival and departure of the seaplanes becomes part of the familiar pattern of life at Moofushi.
 
-## A Different Way of Looking
+There is something reassuring about their regular appearance. Each aircraft represents another small chapter in the island's continuing story - guests arriving with the anticipation of a holiday ahead of them, others departing with memories of their stay. From the perspective of someone already enjoying the island, the aircraft are simply another feature of the surroundings.
 
-On our earlier visits, I certainly appreciated Moofushi's beautiful beaches, sandbanks and sheltered lagoon but I don't think I gave much thought to the processes responsible for creating and maintaining them. Returning after eight years has changed that.
+And yet they represent a curious connection between Moofushi and the wider world.
 
-The sand villas are an obvious starting point, but once you begin thinking about the island as something dynamic, other details become interesting too. The distribution of sand around the shoreline. The contrasting conditions inside and outside the reef. The effects of changing winds and tides. The way the beach meets the vegetation, and the relationship between the island and the submerged landscape surrounding it.
+The island can feel wonderfully remote. Its small size, surrounding ocean and extraordinary marine life create a sense of separation from everyday concerns but the regular arrival of a Twin Otter is a reminder that this apparent isolation is made possible, in part, by a carefully organised network of transport and services.
 
-Things that might once have been simply part of the scenery become subjects for observation and that, perhaps, is one of the particular pleasures of returning somewhere familiar. You begin by noticing what's changed, but sometimes that leads you towards a better understanding of what was there all along.
+There's a quiet contradiction in that - the very technology that allows us to escape the everyday world is also what keeps the island connected to it.
 
-Moofushi may appear to be a tiny, tranquil island resting in the middle of the Indian Ocean. In reality, it's part of a living, changing system, continually shaped by the reef, the waves, the currents and the organisms that help create the sediment from which it's built.
+## The journey is part of the place
 
-The villas may stand still.
+I suspect that if someone were asked to describe the Maldives, their first thoughts would be of palm trees, white sand, turquoise lagoons and coral reefs and quite reasonably so. But for me, the Twin Otter belongs among those defining images.
 
-The island never quite does.
+It is an aircraft whose appearance has changed remarkably little over more than sixty years, whose original design has proved extraordinarily adaptable, and whose particular capabilities make it exceptionally well suited to the geography of the Maldives. More importantly, it has become part of my own experience of these islands.
+
+The sight of a Twin Otter flying low over the ocean, the distinctive sound of its engines, and the extraordinary view of reefs and lagoons from its windows are memories inseparable from our visits to Moofushi. Long after the journey is over, those sights and sounds will still bring the Maldives immediately to mind.
+
+Some forms of transport simply take you somewhere. Others become part of what makes the destination special.
+
+The Twin Otter is very much one of the latter.

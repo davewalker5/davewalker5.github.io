@@ -1,51 +1,42 @@
 ---
 layout: journal
-title: "Dancing with Mantas"
-breadcrumb: "Dancing with Mantas"
-date: 2026-10-15
+title: "Rebuilding the Reef"
+breadcrumb: "Rebuilding the Reef"
+date: 2026-10-17
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "reef-manta-ray", "mobula-alfredi", "plankton", "snorkelling", "marine-life"]
-excerpt: "An encounter with reef manta rays in plankton-rich water becomes a lesson in watching wildlife on its own terms"
+tags: ["maldives", "moofushi", "south-ari-atoll", "coral-restoration", "reefscapers", "coral-frames", "marine-conservation", "house-reef"]
+excerpt: "Learning about coral restoration at Moofushi and the careful work involved in giving damaged reef communities a chance to recover"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 7
 images:
+reefscapers:
+  name: "reefscapers.jpg"
+  alt: "Underwater view of coral restoration frames amongst rocks and coral on the Moofushi house reef, with the seabed descending into deep blue water on the right"
+  caption: "Coral restoration frames on the house reef at Constance Moofushi, providing a foundation for new coral growth"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-# Dancing with Mantas
+A coral reef is easy to admire. It's much harder to appreciate just how long it takes to grow, and how much is at stake when it is damaged.
 
-The water was cloudy with plankton, hardly the ideal conditions for underwater photography. But to the manta rays it was exactly the attraction.
+On 17<sup>th</sup> October we attended a coral reef presentation by Judy Wambui, the resort's marine biologist. We'd already spent time snorkelling, surrounded by vivid fish and intricate coral structures. Learning about the reef's vulnerabilities gave those sights a different significance.
 
-On 15 October we had one of those snorkelling encounters that remains vivid long after getting out of the water: reef mantas moving gracefully through the murk, feeding as they went.
+Corals are animals, living in colonies, and reef-building coral depends upon a complicated relationship with microscopic algae. Growth is generally slow compared with the pace at which a damaging event can alter a reef.
 
-## A shape emerging from the blue
+During our previous stay in 2018, we learned more about an effort to help the reef recover - coral fragments are attached to purpose-built frames, providing a setting in which they may grow and, over time, contribute to the surrounding reef community.
 
-A manta has a way of making even a sizeable stretch of ocean feel suddenly occupied. Broad fins move in a measured rhythm; a dark shape becomes an animal of wonderful precision and grace.
+The work is associated with _Reefscapers_, whose coral restoration programme at Constance Moofushi offers a practical example of marine conservation happening alongside tourism.
 
-The contrast between its apparent effortlessness and my own clumsy efforts to keep position in the water was considerable. Watching from the surface, the important thing was to leave room, stay calm and let the animal carry on with what it was doing.
+## Frames beneath the water
 
-These were reef manta rays, *Mobula alfredi*. Their appearance was spectacular, but the behaviour was at least as interesting as the sight itself.
+The temptation is to see restoration as simply planting coral and waiting for a beautiful result. In reality, the process is more demanding and outcomes are uncertain.
 
-## The value of murky water
+{% include fullwidth-image.html assets=page.assets img=page.reefscapers %}
 
-Plankton can make the water look disappointingly cloudy through a camera. Suspended particles scatter the light, reducing detail and contrast. Much of my footage from the encounter was affected by precisely that problem.
+The idea behind coral frames is straightforward enough to explain. Fragments of living coral are secured to structures placed in suitable marine conditions. The fragments can then grow, although their survival depends on location, conditions, species and continued care.
 
-But the cloudiness wasn't just photographic bad luck. It was part of the story. Mantas feed on small organisms suspended in the water, and plankton-rich conditions can make an area worthwhile for them to visit.
+A frame is not an instant reef. Nor is it a substitute for addressing the pressures that threaten coral in the first place, including warming seas and local damage. What it can provide, though, is a way to support coral growth and involve visitors in understanding the work required.
 
-The very thing that made the encounter difficult to record helped explain why it happened.
-
-Afterwards I spent time reviewing and improving the GoPro clips. Some were simply too murky to rescue meaningfully. A few captured enough of the encounter to keep. I rather like that imbalance: the experience was far greater than the images I brought back.
-
-## A visitor at the villa
-
-The mantas weren't confined to an organised outing. On 16 October, a reef manta swam gracefully past the deck of our water villa — another reminder that Moofushi is part of the animals' home, not the other way round.
-
-It was a wonderful privilege to see such a creature without having to do anything more elaborate than look towards the water.
-
-## Curiosity that continues
-
-The encounter also strengthened my interest in manta conservation. I subsequently adopted a Maldivian manta named Cheeky Monkey, a small personal connection to a much larger story about monitoring and protecting these animals.
-
-I don't imagine that meeting a manta makes me an expert on mantas. It does something perhaps more useful: it makes me want to know more about where they travel, what they depend upon and how their future can be protected.
-
-And I'll remember, too, that wonderful lesson in perspective: the water that frustrated the photographer was perfect for the animal.
+For an account of the programme itself, Reefscapers maintains a page devoted to Moofushi: [https://reefscapers.com/constance-moofushi/](https://reefscapers.com/constance-moofushi/)

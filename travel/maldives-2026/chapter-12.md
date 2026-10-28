@@ -1,66 +1,57 @@
 ---
 layout: journal
-title: "The Birds of Moofushi"
-breadcrumb: "The Birds of Moofushi"
-date: 2026-10-12
+title: "Dolphins at Sunset"
+breadcrumb: "Dolphins at Sunset"
+date: 2026-10-13
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "birdlife", "white-breasted-waterhen", "kanbili", "asian-koel", "house-crow", "striated-heron"]
-excerpt: "A return visit brings noticeably more apparent birdlife, including Moofushi’s endlessly engaging white-breasted waterhens"
+tags: ["maldives", "moofushi", "south-ari-atoll", "spinner-dolphins", "stenella-longirostris", "dolphin-watching", "marine-life", "sunset-cruise"]
+excerpt: "A dolphin-watching trip brings a pod of spinner dolphins, a youngster and an unexpectedly emotional moment on the Indian Ocean"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 12
 images:
-  - name: "kanbili-001.jpg"
-    alt: "The white-breasted waterhen (Amaurornis phoenicurus maldivus), known locally as the Kanbili and celebrated as the national bird of the Maldives. A wonderfully distinctive little character, with its white face and breast, dark plumage and improbably long yellow-green legs"
-    caption: "The white-breasted waterhen (Amaurornis phoenicurus maldivus), known locally as the Kanbili and celebrated as the national bird of the Maldives. A wonderfully distinctive little character, with its white face and breast, dark plumage and improbably long yellow-green legs"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "kanbili-002.jpg"
-    alt: "Another encounter with the Maldivian Kanbili — the white-breasted waterhen (Amaurornis phoenicurus maldivus). This one seemed rather more interested in modelling than getting anywhere in particular, pausing beside a little bowl in what looked suspiciously like a carefully rehearsed pose"
-    caption: "Another encounter with the Maldivian Kanbili — the white-breasted waterhen (Amaurornis phoenicurus maldivus). This one seemed rather more interested in modelling than getting anywhere in particular, pausing beside a little bowl in what looked suspiciously like a carefully rehearsed pose"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
-  - name: "house-crow.jpg"
-    alt: "A house crow (Corvus splendens) making its presence very loudly known in the trees outside the Manta restaurant. These intelligent, inquisitive birds are certainly not shy about expressing an opinion. This particular individual appeared to have quite a lot to say — and was determined that everyone should hear it!"
-    caption: "A house crow (Corvus splendens) making its presence very loudly known in the trees outside the Manta restaurant. These intelligent, inquisitive birds are certainly not shy about expressing an opinion. This particular individual appeared to have quite a lot to say — and was determined that everyone should hear it!"
-    credit: "David Walker, Field Notes Journal"
-    license: "CC BY 4.0"
-    license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
-One of the first differences we noticed on returning to Moofushi was the birds.
+# Dolphins at Sunset
 
-On our way to our villa shortly after arriving, a house crow, *Corvus splendens*, noisily announced its presence from the undergrowth. It was an immediate surprise. Although I hadn't kept a sightings diary during our previous visit in 2018, it would have been difficult to remain oblivious to such a noisy neighbour, and neither of us recalled seeing or hearing one before. It seemed quite likely that house crows were relatively recent arrivals on the island.
+Some wildlife encounters are unforgettable because they're spectacular. Others stay with you because of how they make you feel.
 
-As the days passed, birdlife generally seemed more abundant and varied than we remembered. I can't say whether there had been a genuine increase in numbers, or to what extent we were simply paying closer attention, but the appearance of previously unrecorded species suggested that the island's bird community might indeed have changed since our last visit.
+Our dolphin-watching excursion from Moofushi on 13 October managed to be both.
 
-Whatever the explanation, observing its birds quickly became one of the pleasures of our stay.
+## Out on the water
 
-## The Kanbili
+The trip took us away from the island and out into the surrounding ocean, where the scale of the atoll feels rather different. From the water villa, the reef and lagoon define a familiar little world. Beyond them is a much larger one.
 
-The most engaging regular visitor was the white-breasted waterhen, *Amaurornis phoenicurus*, locally known as the *Kanbili* and recognised as the Maldivian national bird. The Maldivian form is referred to as *Amaurornis phoenicurus maldivus*.
+We went hoping to see dolphins. There's never a guarantee with wildlife, and I rather like that. The animals are not part of a timetable.
 
-Companionable and full of character, these wonderfully self-possessed birds appeared around the restaurant among - and sometimes on top of - the tables, moving in and out of the vegetation and making gentle calls that became part of the island's soundtrack. They turned up repeatedly in my sightings diary. By the end of the visit, seeing a waterhen hardly counted as a surprise, but it never ceased to be enjoyable.
+On this occasion we were fortunate.
 
-There's a particular charm in a wild bird that gets on with its life in close proximity to people without becoming any less itself.
+## A pod, and a youngster
 
-## Crows, koels and an interesting relationship
+We encountered a pod of dolphins, including a youngster travelling with the group. Subsequent examination of a photograph supported the identification as spinner dolphins, *Stenella longirostris*.
 
-House crows were hard to miss. On one occasion a crow perched on the roof of our villa just after sunrise and announced its presence loudly, and at meal times others seemed very interested in the possibility of leftovers.
+The sight of the younger animal somehow changed the encounter. Instead of dolphins as a spectacle, there was suddenly a sense of a social group, with different individuals moving through the same sea.
 
-We also saw Asian koels, including a female moving through the undergrowth. Their secretive behaviour contrasted nicely with the waterhens' confident appearances in more open areas.
+There was a manta ray nearby too — a wonderful extra sighting that made the outing even more memorable.
 
-There's an intriguing relationship between the koels and the crows. The Asian koel is a brood parasite, laying its eggs in the nests of other birds, particularly crows, which then raise the young koels alongside, or sometimes instead of, their own chicks. It's a remarkable reproductive strategy, and one that adds another dimension to seeing these two species sharing the same small island. What appeared to be two quite separate observations were, in fact, glimpses of an ecological relationship that we might otherwise never have considered.
+I can't claim to know what the dolphins were thinking or how they experienced our presence. What I can say is that watching them together was deeply affecting.
 
-## Familiar faces in unfamiliar places
+My diary entry uses the word *emotional*, and it's the right word.
 
-Striated herons, *Butorides striata*, made an appearance along the shoreline and on the breakwaters that protect the Totem Bar and Manta Restaurant side of the island.
+## The limits of a photograph
 
-The familiar grey heron, *Ardea cinerea*, was another regular sight, and one that had initially surprised me on our very first visit in 2015. It's a bird I associate with the rivers and waterways of Britain, particularly the Thames, where I've often watched one standing motionless in the reeds and rushes at the water's edge, waiting for a passing fish.
+Cameras are useful, and I wouldn't willingly have left mine behind. They help identify species and recover details that pass too quickly to register at the time.
 
-Encountering the same species on a tiny island in the middle of the Indian Ocean seemed wonderfully incongruous. Of course, grey herons have an extensive geographical range, but knowing that doesn't entirely diminish the pleasure of finding something so familiar in such an unfamiliar setting.
+But photographs rarely reproduce the emotional character of an encounter. They don't fully capture the anticipation, the movement of the boat, or the surprise of seeing a youngster among the adults.
 
-We'd seen them again in 2018, and they were still present on this visit. One provided a particularly memorable observation as we made our way to dinner one evening, stopping to drink from the foot-wash jars along the water villa jetty — a wonderfully opportunistic use of the resort's facilities.
+Nor can they explain why a particular moment affects us more than another. Perhaps the sense of seeing a family-like group played a part. Perhaps it was simply the privilege of being there.
 
+## Back at Moofushi
+
+We returned to the island and celebrated with Prosecco at the Manta Bar. It seems an entirely fitting way to mark a rather extraordinary outing.
+
+By evening the usual rhythms of the resort resumed: dinner, the lagoon, the familiar sounds of the island. But something had been added to the experience of being there.
+
+The ocean beyond Moofushi was no longer merely a vast, beautiful expanse. For a brief time, it had offered us a glimpse into the lives of the animals moving through it.
+
+And I suspect I'll remember the youngster for a very long time.
