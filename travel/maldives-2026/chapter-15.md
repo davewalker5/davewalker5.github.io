@@ -5,53 +5,77 @@ breadcrumb: "The Dragonfly That Crosses Oceans"
 date: 2026-10-20
 categories: ["travel", "maldives", "field-notes"]
 tags: ["maldives", "moofushi", "south-ari-atoll", "wandering-glider", "pantala-flavescens", "dragonfly-migration", "indian-ocean", "natural-history"]
-excerpt: "Repeated sightings of wandering glider dragonflies open up a remarkable story about migration across the Indian Ocean"
+excerpt: "Dragonflies grew increasingly abundant at Moofushi, then vanished overnight — an observation that opens onto the remarkable science of migration across the Indian Ocean"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 15
-images:
+migration_roue:
+  name: "dragonfly-migration.svg"
+  alt: "Schematic map of the western Indian Ocean showing a proposed autumn dragonfly migration from India via the Maldives and Seychelles towards East Africa, and a possible seasonal return route. Arrows represent hypotheses rather than tracked flights."
+  caption: "Proposed seasonal movements of the wandering glider across the western Indian Ocean. These are schematic pathways supported by observations and research, not tracks of individual dragonflies. Original illustration based on the studies listed below."
 ---
-
-# The Dragonfly That Crosses Oceans
 
 There are some animals whose significance lies not in their size or appearance, but in the extraordinary journeys of which they may be capable.
 
-During our stay at Moofushi, the wandering glider dragonfly kept appearing in my wildlife notes. It seemed an unremarkable enough island inhabitant at first glance: a dragonfly passing through the tropical air.
+During our stay at Moofushi, dragonflies became a familiar part of the island's wildlife. I didn't manage to photograph them, but I certainly noticed them. They appeared repeatedly in my sightings notes, and as October progressed they seemed to become increasingly abundant.
 
-Then I began reading about the species.
+Then something rather extraordinary happened.
+
+## Here one day, gone the next
+
+Up to and including **20<sup>th</sup> October**, the dragonflies had become an increasingly conspicuous presence. Then, apparently overnight, they vanished. We didn't notice a gradual thinning of their numbers. We simply stopped seeing them — not one more during the remainder of our stay.
+
+It's difficult to convey how striking that felt. An animal that had become part of the everyday experience of the island was suddenly absent.
+
+That is an observation, rather than a population survey. We weren't counting individuals systematically, and an absence of sightings isn't proof that every dragonfly had departed. A change in weather, flight altitude, local distribution or activity might also have affected what we could see. But the abruptness was sufficiently striking to make me wonder whether we had witnessed one phase of a much larger movement.
 
 ## An improbable traveller
 
-The wandering glider, *Pantala flavescens*, is notable for its capacity for long-distance movement. Unlike dragonflies whose lives are closely associated with a particular pond or stream, wandering gliders can appear over enormous areas and exploit temporary freshwater habitats for breeding.
+The wandering glider, *Pantala flavescens*, also known as the globe skimmer, is an extraordinary long-distance traveller. It can exploit temporary freshwater pools for breeding, and its movements are closely associated with seasonal rains and winds.
 
-Scientists have investigated the possibility that movements by these dragonflies span parts of the Indian Ocean, assisted by prevailing winds and seasonal weather systems.
+The Maldives make an especially interesting place to observe it. As R. Charles Anderson pointed out in a 2009 study, the islands lack the surface freshwater habitats needed to sustain the species' normal breeding cycle. Yet huge numbers of these dragonflies arrive seasonally, beginning around October [1]. Their presence is therefore difficult to explain as simply that of an established local breeding population.
 
-It's a remarkable idea: a small insect travelling distances that would be substantial even for many birds.
+Anderson compared arrival dates across the region and proposed that the dragonflies travel from India to the Maldives, then continue across the western Indian Ocean towards East Africa. The suggested route involves astonishing stretches of open water, with favourable winds playing a vital role [1].
 
-## Why would a dragonfly be here?
+## Following the monsoon
 
-Moofushi is a tiny island surrounded by salt water. Seeing wandering gliders here immediately prompts questions. Were the individuals we saw resident, recently arrived, or simply passing through? What winds or weather patterns might have carried them?
+The key is the seasonal movement of the **Intertropical Convergence Zone (ITCZ)**, a broad region where tropical air masses meet and rising air produces cloud and rainfall. Its seasonal displacement is associated with changing wind patterns across the Indian Ocean.
 
-The sightings diary records wandering gliders on multiple days, so their presence wasn't a one-off. But repetition alone doesn't establish an individual insect's origin or destination.
+Anderson found that the timing of dragonfly arrivals was consistent with the southward movement of this system, and suggested that the insects could take advantage of high-altitude winds [1]. In this account, a dragonfly seen above a Maldivian island might be pausing during a journey that began hundreds or thousands of kilometres away.
 
-We can identify the species from its appearance and consider what is known of the species' migration. We cannot trace the route of a particular dragonfly from the fact that it was flying above our island.
+Later studies have added evidence, while also revealing how much remains uncertain. In 2012, Hobson and colleagues examined **stable hydrogen isotopes** in the wings of dragonflies collected in the Maldives. The chemical signature of wing tissue can offer clues to the environmental conditions where an insect developed. Their results supported origins on the Indian subcontinent, potentially farther north than the southern Indian departure points initially envisaged [2].
 
-That distinction is important — and rather exciting. The observation is a starting point for investigation, not the end of it.
+Research into migration across the wider Afro-Asian region has suggested a multigenerational circuit that may exceed **14,000 kilometres** [3]. That does **not** mean that one dragonfly flies the entire circuit: successive generations may undertake different stages. More recent modelling has investigated how winds, flight behaviour and potential stopovers could make parts of the ocean crossing feasible [4].
 
-## Following the seasons
+## A route across the ocean
 
-Migration depends on timing as well as distance. In the Indian Ocean region, the monsoon system influences wind direction and rainfall, which in turn affect opportunities for movement and breeding.
+{% include fullwidth-image.html assets=page.assets img=page.migration_roue %}
 
-Our sightings came in October. That gives a useful date against which to compare published work on wandering glider movements and weather patterns, although I would want to check any precise claims about routes and timing against scientific sources before making them.
+There is something rather wonderful about the geography. India, the Maldives, the Seychelles and East Africa are places that, on an ordinary map, seem separated by immense expanses of water. For these insects, they may form stages in a seasonal movement shaped by weather on an oceanic scale.
 
-It's the sort of question that makes a lovely follow-up project: begin with a field observation, identify what is known, and find out how far the evidence really goes.
+But the map needs an important qualification. These are **inferred or modelled routes**, not the tracks of dragonflies fitted with transmitters. The evidence comes from arrival dates, geographical distributions, isotopic signatures and atmospheric or flight modelling. Different studies also propose different branches and timings. The picture is persuasive in broad outline, but it isn't a complete itinerary.
+
+## What happened on 20<sup>th</sup> October?
+
+Our experience fits the broad **season** of the documented arrivals in the Maldives. The sudden disappearance might be consistent with a transient concentration of migrating insects moving on when conditions changed.
+
+But that explanation remains a possibility, not a finding. Without systematic counts, contemporaneous wind measurements or observations of departure, I can't say whether the dragonflies left Moofushi together, dispersed locally, changed their flight behaviour, or simply became less visible. Nor can I identify the origin or destination of the individuals we saw.
+
+In some ways, that uncertainty is part of what makes the observation interesting. It is the point at which a travel diary becomes a field notebook: something noticed, a question raised, and a scientific literature that helps establish what can — and cannot — be concluded.
 
 ## A different sense of scale
 
-The contrast is what appeals to me. From the water villa, Moofushi seems a very small world. The lagoon, reef and sandbank define a familiar patch of ocean.
+From our water villa, Moofushi seemed a very small world. The lagoon, reef and sandbank defined a familiar patch of ocean, and most of my attention was naturally drawn towards the marine wildlife.
 
-Yet a dragonfly above the path may connect that little place to weather systems and landscapes thousands of kilometres away.
+Yet these unphotographed dragonflies may have connected that little island to landscapes and weather systems thousands of kilometres away. For days they were simply part of the background of island life. Then, after 20<sup>th</sup> October, there were none to be seen.
 
-I went to the Maldives expecting to spend much of my time thinking about marine wildlife. I hadn't expected a dragonfly to make me look at the entire Indian Ocean differently.
+I went to the Maldives expecting to spend much of my time thinking about the creatures beneath the surface. I hadn't expected a dragonfly to make me look at the entire Indian Ocean differently.
 
 That's the joy of paying attention: you never quite know which small observation will lead to the largest question.
+
+## References
+
+1. Anderson, R. C. (2009). “Do dragonflies migrate across the western Indian Ocean?” *Journal of Tropical Ecology*, **25**(4), 347–358. https://doi.org/10.1017/S0266467409006087
+2. Hobson, K. A., Anderson, R. C., Soto, D. X., & Wassenaar, L. I. (2012). “Isotopic evidence that dragonflies (*Pantala flavescens*) migrating through the Maldives come from the northern Indian subcontinent.” *PLOS ONE*, **7**(12), e52594. https://doi.org/10.1371/journal.pone.0052594
+3. Borisov, S. N., et al. (2020). “Seasonal migrations of *Pantala flavescens* (Odonata: Libellulidae) in Middle Asia and understanding of the migration model in the Afro-Asian region using stable isotopes of hydrogen.” *Insects*, **11**(12), 890. https://pmc.ncbi.nlm.nih.gov/articles/PMC7765977/
+4. “Transoceanic migration network of dragonfly *Pantala flavescens*: origin, dispersal and timing.” (2023). *Frontiers in Ecology and Evolution*. https://doi.org/10.3389/fevo.2023.1152384
