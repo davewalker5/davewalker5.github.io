@@ -148,7 +148,7 @@ Sometimes the most valuable outcome is simply a better question.
 
 One of the advantages of taking photographs and video is the opportunity to revisit an encounter after the initial excitement has passed. A fleeting observation can become something to examine more carefully. Movements that were difficult to follow in real time can be watched again, slowed down and compared with descriptions of known behaviour.
 
-The footage from our 14<sup>th</sup> October encounter is particularly interesting in this respect, since it allows us to examine the pursuit, the close interactions and the apparent biting more carefully.
+The photographs from our 14<sup>th</sup> October encounter is particularly interesting in this respect, since it allows us to examine the pursuit, the close interactions and the apparent biting more carefully.
 
 It also provides a useful reminder of the limitations of observation. A camera records what happens within its field of view, not everything happening around it. Important behaviour may have occurred before filming began or outside the frame. Nor can a photograph or video necessarily reveal the motivation behind an animal's actions.
 

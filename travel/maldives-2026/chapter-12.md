@@ -32,40 +32,35 @@ images:
 
 One of the first differences we noticed on returning to Moofushi was the birds.
 
-There seemed to be more of them than on our previous visit in 2018. I can't say whether there had been a genuine increase in numbers, a change in which species were present, or simply a change in how closely we were looking. But birdlife quickly became one of the pleasures of the stay.
+On our way to our villa shortly after arriving, a house crow, *Corvus splendens*, noisily announced its presence from the undergrowth. It was an immediate surprise. Although I hadn't kept a sightings diary during our previous visit in 2018, it would have been difficult to remain oblivious to such a noisy neighbour, and neither of us recalled seeing or hearing one before. It seemed quite likely that house crows were relatively recent arrivals on the island.
+
+As the days passed, birdlife generally seemed more abundant and varied than we remembered. I can't say whether there had been a genuine increase in numbers, or to what extent we were simply paying closer attention, but the appearance of previously unrecorded species suggested that the island's bird community might indeed have changed since our last visit.
+
+Whatever the explanation, observing its birds quickly became one of the pleasures of our stay.
 
 ## The Kanbili
 
-The most engaging regular visitor was the white-breasted waterhen, *Amaurornis phoenicurus*, locally known as the Kanbili and recognised as the Maldivian national bird.
+The most engaging regular visitor was the white-breasted waterhen, *Amaurornis phoenicurus*, locally known as the *Kanbili* and recognised as the Maldivian national bird. The Maldivian form is referred to as *Amaurornis phoenicurus maldivus*.
 
-The Maldivian form is often referred to as *A. p. maldivus*.
-
-These wonderfully self-possessed birds appeared around the restaurant and among the tables, moving in and out of the vegetation and making gentle calls that became part of the island's soundtrack.
-
-They turned up repeatedly in my sightings diary. By the end of the visit, seeing a waterhen hardly counted as a surprise, but it never ceased to be enjoyable.
+Companionable and full of character, these wonderfully self-possessed birds appeared around the restaurant among - and sometimes on top of - the tables, moving in and out of the vegetation and making gentle calls that became part of the island's soundtrack. They turned up repeatedly in my sightings diary. By the end of the visit, seeing a waterhen hardly counted as a surprise, but it never ceased to be enjoyable.
 
 There's a particular charm in a wild bird that gets on with its life in close proximity to people without becoming any less itself.
 
-## More than one kind of island resident
+## Crows, koels and an interesting relationship
 
-House crows were hard to miss. On one occasion a crow perched on the roof of our villa and announced its presence loudly; at meal times others seemed very interested in the possibility of leftovers.
+House crows were hard to miss. On one occasion a crow perched on the roof of our villa just after sunrise and announced its presence loudly, and at meal times others seemed very interested in the possibility of leftovers.
 
 We also saw Asian koels, including a female moving through the undergrowth. Their secretive behaviour contrasted nicely with the waterhens' confident appearances in more open areas.
 
-A small heron, identified in our notes as a striated heron, provided another kind of observation. One was seen drinking from the foot-wash jars along the water villa jetty — a wonderfully opportunistic use of the resort's facilities.
+There's an intriguing relationship between the koels and the crows. The Asian koel is a brood parasite, laying its eggs in the nests of other birds, particularly crows, which then raise the young koels alongside, or sometimes instead of, their own chicks. It's a remarkable reproductive strategy, and one that adds another dimension to seeing these two species sharing the same small island. What appeared to be two quite separate observations were, in fact, glimpses of an ecological relationship that we might otherwise never have considered.
 
-## An island is an ecosystem
+## Familiar faces in unfamiliar places
 
-It would be easy to regard the birds simply as decorative additions to a tropical resort. But they are part of the island's living community, interacting with its vegetation, insects, shorelines and human visitors.
+Striated herons, *Butorides striata*, made an appearance along the shoreline and on the breakwaters that protect the Totem Bar and Manta Restaurant side of the island.
 
-Their presence also raises questions. Does the landscaping provide useful cover? Are food sources different from when we last visited? Does our greater awareness explain some of the apparent increase?
+The familiar grey heron, *Ardea cinerea*, was another regular sight, and one that had initially surprised me on our very first visit in 2015. It's a bird I associate with the rivers and waterways of Britain, particularly the Thames, where I've often watched one standing motionless in the reeds and rushes at the water's edge, waiting for a passing fish.
 
-I don't have enough evidence to answer those questions, but they are worth keeping in mind.
+Encountering the same species on a tiny island in the middle of the Indian Ocean seemed wonderfully incongruous. Of course, grey herons have an extensive geographical range, but knowing that doesn't entirely diminish the pleasure of finding something so familiar in such an unfamiliar setting.
 
-## Learning to notice
+We'd seen them again in 2018, and they were still present on this visit. One provided a particularly memorable observation as we made our way to dinner one evening, stopping to drink from the foot-wash jars along the water villa jetty — a wonderfully opportunistic use of the resort's facilities.
 
-The waterhen eventually became one of the defining sights of the holiday — not as dramatic as a manta or a shark, but familiar, companionable and full of character.
-
-Perhaps that's why the birdlife feels important. The extraordinary marine animals drew us into the ocean; the birds gave us something to notice when we were walking to breakfast, sitting with a drink or wandering beneath the trees.
-
-An island is worth observing above the waterline as well as below it.

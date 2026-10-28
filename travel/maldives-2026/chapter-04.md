@@ -1,22 +1,22 @@
 ---
 layout: journal
-title: "The House Reef: A World Beneath the Water"
-breadcrumb: "The House Reef: A World Beneath the Water"
+title: "The Reef: A World Beneath the Water"
+breadcrumb: "The Reef: A World Beneath the Water"
 date: 2026-10-15
 categories: ["travel", "maldives", "field-notes"]
-tags: ["maldives", "moofushi", "south-ari-atoll", "snorkelling", "house-reef", "reef-fish", "marine-biodiversity", "underwater-photography"]
-excerpt: "Repeated explorations of the Moofushi house reef reveal an ever-changing underwater community, one observation at a time"
+tags: ["maldives", "moofushi", "south-ari-atoll", "snorkelling", "reef", "reef-fish", "marine-biodiversity", "underwater-photography"]
+excerpt: "Repeated explorations of the Moofushi reef reveal an ever-changing underwater community, one observation at a time"
 series: maldives2026
 assets: "/images/maldives/"
 chapter: 4
 images:
 ---
 
-# The House Reef: A World Beneath the Water
+# The Reef: A World Beneath the Water
 
 From the villa deck, the reef announces itself mainly through sound: the steady breaking of waves beyond the quieter lagoon. Slip into the water with a mask, however, and it becomes an entirely different world.
 
-We returned to the house reef repeatedly during our stay at Moofushi. That repetition was important. A single snorkel reveals plenty, but successive visits begin to expose patterns, differences and unfamiliar faces.
+We returned to the reef just off the beaches repeatedly during our stay at Moofushi. That repetition was important. A single snorkel reveals plenty, but successive visits begin to expose patterns, differences and unfamiliar faces.
 
 ## A landscape below the surface
 
@@ -48,6 +48,6 @@ The most memorable encounters — hawksbill turtles, mantas and sharks — deser
 
 By the end of the stay I had collected a substantial archive of photographs and video, along with the usual mixture of firm identifications, plausible guesses and unresolved mysteries.
 
-That seems a fitting result. The house reef isn't a checklist to finish. It is a living place to which one can return again and again, noticing something different each time.
+That seems a fitting result. The reef isn't a checklist to finish. It is a living place to which one can return again and again, noticing something different each time.
 
 And beyond the colourful shallows, there's another landscape waiting — where the reef suddenly falls away into deep blue water.
