@@ -4,7 +4,7 @@ title: A Tribute to Charles
 breadcrumb: A Tribute to Charles
 description: An affectionate tribute to an octopus who proved rather more interested in dismantling an experiment than cooperating with it
 series: octopus_controller
-chapter: 5
+chapter: 7
 ---
 
 # A Tribute to Charles
@@ -94,7 +94,7 @@ An octopus also possesses a remarkably distributed nervous system, with substant
 
 > How can relatively simple local control mechanisms contribute to complex, coordinated and environmentally responsive behaviour?
 
-Octopus Controller investigates aspects of that question through simulations of flexible arm movement, distributed control, local contact sensing, obstacle avoidance and grasping while Charles provides an especially memorable reminder of why these capabilities are interesting.
+Octopus Controller investigates aspects of that question through simulations of flexible arm movement, distributed control, local contact sensing, obstacle and hazard avoidance, and grasping while Charles provides an especially memorable reminder of why these capabilities are interesting.
 
 His behaviour was not confined to the specific action requested by the experimenter. He explored, manipulated and interacted with several aspects of his environment.
 

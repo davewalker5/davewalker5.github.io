@@ -2,9 +2,9 @@
 layout: default
 title: Demonstrations
 breadcrumb: Demonstrations
-description: Exploring the individual behaviours of an octopus-inspired controller, from flexible arm movement and local sensing to obstacle avoidance and grasping
+description: Exploring the original controller demonstrations, from flexible arm movement and local sensing to obstacle avoidance and grasping
 series: octopus_controller
-chapter: 3
+chapter: 5
 ---
 
 # Demonstrations
@@ -15,7 +15,7 @@ How does a collection of relatively simple movement rules become a system capabl
 
 One way to investigate this is to begin with a single flexible arm and progressively introduce additional capabilities.
 
-The five demonstrations below follow that approach. Each builds upon the preceding experiments, moving from basic arm movement to independent multi-arm control, local contact sensing, obstacle avoidance and grasping.
+The five demonstrations below follow that approach. Each builds upon the preceding experiments, moving from basic arm movement to independent multi-arm control, local contact sensing, obstacle avoidance and grasping. They document the original demonstration sequence; the later hazard-response work is treated separately in **Hazards and Local Avoidance**.
 
 The important question is not simply whether the controller can perform these tasks, but **how increasingly complex behaviour can arise from local control mechanisms without every movement being prescribed centrally**.
 
@@ -142,8 +142,6 @@ Grasping requires movement to be organised around an interaction with the enviro
 
 It also provides a foundation for future experiments involving contact feedback, adaptive gripping and cooperation between multiple arms.
 
----
-
 ## From Movement to Behaviour
 
 Considered together, the five demonstrations represent a progression in the capabilities of the control system:
@@ -162,21 +160,11 @@ Of particular interest is the relationship between central coordination and loca
 
 The simulation provides a simplified experimental framework for exploring aspects of this organisation.
 
-## Scope and Limitations
-
-Octopus Controller is a biologically inspired computational experiment, not a detailed neurophysiological model.
-
-The demonstrations should therefore be understood as examples of simulated control behaviours rather than evidence that the biological mechanisms employed by real octopuses have been reproduced.
-
-In particular, the simulation does not establish that its behaviours arise through the same neural processes observed in living animals.
-
-Nevertheless, it provides a useful foundation for investigating distributed control, sensory feedback and the relationship between local and coordinated behaviour.
-
 ## Investigating the Behaviours Yourself
 
 The [interactive Octopus Explorer](/wildlife/octopus/explorer/) allows you to experiment with these behaviours directly in your browser.
 
-You can assign movement targets, adjust individual arm parameters, reposition food and obstacles, and examine how the controller responds to different conditions.
+You can assign movement targets, adjust individual arm parameters, reposition environmental objects, and examine how the controller responds to different conditions.
 
 The explorer also supports predefined scenarios and allows you to upload your own experimental configurations as JSON files.
 
