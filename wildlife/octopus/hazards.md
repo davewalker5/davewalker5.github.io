@@ -43,23 +43,61 @@ Two trajectories may eventually curve around the same **area of the environment*
 
 ## Detection and Recoil
 
-The important addition is **recoil**. Without it, a hazard becomes little more than an obstacle with a different appearance. When a local part of an arm detects a hazard, the immediate response is instead to increase its separation from the stimulus.
+The important addition is **recoil**. Without it, a hazard becomes little more than an obstacle with a different appearance. When a local part of an arm detects a sufficiently strong hazard, the immediate response is instead to increase its separation from the stimulus. Milder hazards can still bias movement away from themselves without producing a distinct timed recoil.
+
+Detection and exposure are deliberately different. An arm can detect a hazard while still outside its hazardous region and begin avoiding it before actually entering. **Exposure** occurs only when part of the arm penetrates the hazardous region itself.
 
 Conceptually:
 
 ```text
-Arm pursuing target
+Ordinary reaching
         ↓
 Hazard detected locally
         ↓
-Recoil from hazard
+Avoid or recoil away
         ↓
 Increase separation
         ↓
-Reassess local movement
+Leave sensing range
+        ↓
+Briefly reassess
         ↓
 Resume pursuit if possible
 ```
+
+The brief reassessment is useful because leaving sensing range for a single update does not necessarily mean the encounter is over. The arm may have only just moved beyond the hazard's detection boundary, or a small change in its geometry on the next update may bring part of it back within range. Returning immediately to ordinary reaching could therefore produce an abrupt cycle of:
+
+```text
+avoid
+  ↓
+resume reaching
+  ↓
+detect hazard again
+  ↓
+avoid again
+```
+
+Instead, the controller retains the recent hazard response for a short period after detection has ceased. During this reassessment period, the arm is effectively asking:
+
+> Has the hazard genuinely been cleared, or have I only just moved beyond its sensing range?
+
+The arm therefore does not instantly treat the situation as normal. It briefly preserves the influence of the recent encounter, allowing its movement to settle away from the hazard before ordinary target-directed reaching fully resumes. Conceptually:
+
+```text
+hazard detected
+      ↓
+recoil / avoid
+      ↓
+hazard no longer detected
+      ↓
+brief reassessment
+      ↓
+remain clear?
+   ├─ No  → return to avoidance
+   └─ Yes → resume ordinary reaching
+```
+
+This introduces a small amount of persistence into the response without giving the arm any long-term memory of the hazard. It is simply a way of avoiding rapid switching between **avoidance** and **reaching** when the arm is moving close to the edge of the hazard's sensing range.
 
 The recoil may temporarily move the arm away from its assigned destination. The central objective has not necessarily changed but the local controller has simply encountered information that temporarily takes priority over direct progress towards it. This provides another example of the distinction at the heart of Octopus Controller:
 
@@ -87,7 +125,26 @@ Hazard detection is deliberately a local concern and the central controller does
 
 > How much environmental difficulty can an arm resolve for itself before the central controller needs to become involved?
 
-That question becomes particularly important as the project develops towards priority signalling and conflict resolution.
+The simulator answers this with a simple escalation scheme. Mild encounters remain entirely local. More significant encounters are reported to central control while the arm continues to respond locally. Serious encounters request withdrawal, and prolonged exposure can escalate an encounter that was initially less severe.
+
+| Encounter   | Response                                                 |
+| ----------- | -------------------------------------------------------- |
+| Mild        | Handled locally by avoidance or recoil                   |
+| Significant | Local response continues and central control is informed |
+| Serious     | The arm requests withdrawal                              |
+| Sustained   | Continued exposure can escalate the response             |
+
+Reports are not cancelled the instant conditions improve. Once a significant hazard has been escalated, it remains active until the arm has remained clear long enough to establish that the danger has genuinely passed. This prevents a response from flickering on and off around the edge of a hazardous region.
+
+This creates a progression from **local reaction** to **central awareness** without requiring every hazard encounter to become a whole-system problem.
+
+## When Escape Is Constrained
+
+Hazard response can itself run into a physical obstacle. An arm may want to move away from a hazard only to find that the complete withdrawal movement would cross a solid boundary.
+
+In that situation, the controller does not simply abandon every part of the proposed response. It can attempt more limited safe movements, allowing some joints — particularly towards the tip — to move away while other parts of the arm remain constrained.
+
+This remains local recovery rather than route planning. The arm is still obeying the same segment lengths, bend limits, turning speeds and obstacle checks; it is simply trying to make whatever safe progress away from danger remains available.
 
 ## A Simple Experiment
 

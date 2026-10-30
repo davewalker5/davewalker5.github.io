@@ -60,6 +60,8 @@ held food is released
 
 For critical danger, the response can escalate beyond one arm and trigger withdrawal across all arms, an important step beyond purely local avoidance since a local event can now affect the behaviour of the wider system.
 
+"Whole-animal withdrawal" is necessarily limited by the model - the central body remains fixed, so each arm interprets the broadcast as an instruction to draw back towards its own attachment point. As elsewhere in the simulation, this is an **intention rather than a guarantee** — an arm may still be blocked by geometry even though withdrawal has won the conflict.
+
 ## Competing Arms
 
 Another conflict arises when more than one arm attempts to claim the same food object. The central controller resolves this using a deterministic ordering:
@@ -68,7 +70,9 @@ Another conflict arises when more than one arm attempts to claim the same food o
 2. If there is no existing owner, the previous winner is preferred
 3. If that still does not resolve the conflict, arm number provides the final ordering
 
-The losing arm yields the resource but retains its task. This is a deliberately simple rule that answers the question:
+The losing arm yields the resource but retains its task. Yielding therefore means waiting rather than forgetting and the arm can become eligible again when the winning arm releases the resource, becomes idle or withdraws. Safety behaviour is not suppressed while an arm is yielding, so a hazard can still provoke avoidance or withdrawal.
+
+This is a deliberately simple rule that answers the question:
 
 > Who gets the object now?
 
@@ -80,7 +84,9 @@ An arm may encounter something potentially interesting while already carrying ou
 
 > Assigned food takes precedence over unassigned or incidental food encounters
 
-This prevents local contact from silently replacing an existing objective. The distinction mirrors a broader principle in the controller:
+This prevents local contact from silently replacing an existing objective. An explicit task aimed at a particular food object remains tied to that object, so encountering another item does not silently replace the assignment. A simple coordinate-only reach remains more opportunistic and may grasp suitable food encountered at that destination.
+
+The distinction mirrors a broader principle in the controller:
 
 > Sensing something is not the same as being assigned to pursue it
 
