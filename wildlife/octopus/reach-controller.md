@@ -169,11 +169,13 @@ For example, a circular object with radius 14 pixels is detected when its centre
 
 These readings report **what each segment is actually touching in its present position**. They describe immediate local contact with the environment, rather than detecting objects ahead of the arm or assigning any new significance to them. **Sensing does not mean detecting food from a distance**, and a contact reading does not automatically mean the arm has grasped something.
 
+Contact sensing is evaluated at each simulation update and describes the arm's pose at that moment rather than attempting to record every contact that might occur continuously between two poses; movement between poses is handled separately by the collision-safety checks described below.
+
 ## Finding a Way Around Obstacles
 
 An arm reaching for a target may encounter an obstacle. Rather than having the central controller calculate a complete route, each segment looks a short distance ahead along its current local request — at most three segment lengths. When an obstacle lies sufficiently close to this lookahead, the segment redirects its request towards a point around the obstacle's circular boundary. The controller follows a consistent clockwise preference in screen coordinates to avoid switching direction with tiny changes in geometry.
 
-The intended destination of the arm remains unchanged - only the local request has been adjusted - so this is **local steering, not global path planning**. It can produce useful detours, but it can also become trapped when obstacles are crowded together or joints have too little freedom to bend.
+The intended destination of the arm remains unchanged - only the local request has been adjusted - so this is **local steering, not global path planning**. If several obstacles are nearby, one may guide the immediate steering response, while the later safety check still considers the complete obstacle environment before accepting the movement. It can produce useful detours, but it can also become trapped when obstacles are crowded together or joints have too little freedom to bend.
 
 ## Why the Movement Between Positions Matters
 

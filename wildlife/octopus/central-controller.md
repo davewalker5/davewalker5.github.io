@@ -33,6 +33,7 @@ The responsibilities of the central controller and those of each arm are deliber
 | Reaching   | Supplies the destination                                  | Exchanges requests between neighbouring segments and turns them          |
 | Obstacles  | Makes the shared environment available                    | Steers around nearby boundaries and rejects unsafe movement              |
 | Hazards    | Makes hazardous regions available to local sensing        | Detects aversive regions locally, recoils and redirects movement         |
+| Conflicts  | Applies system-level arbitration when priorities clash     | Yields, withdraws or retains tasks according to the outcome              |
 | Sensing    | Schedules updates and allows their results to be observed | Determines which segments are touching which objects                     |
 | Grasping   | Receives capture reports and prevents duplicate ownership | Recognises sustained contact by adjacent segments and establishes a grip |
 | Carrying   | Supplies a new destination                                | Moves the attached object while respecting movement constraints          |
@@ -114,6 +115,8 @@ These labels describe the arm's most relevant *displayed* condition, not mutuall
 
 This distinction is useful when watching the simulation as the displayed status is a summary of what is happening, not an exhaustive account of every contact and constraint.
 
+The same caution applies to arbitration and event history. A selected action describes what the controller has decided should take priority; the arm's movement state describes what it is actually managing to do; and a recorded event describes something that happened previously. A withdrawal decision can therefore remain active while movement is blocked, and a previous capture report does not prove that the object is still being held.
+
 Hazard response adds another temporary local condition to this picture. An arm may still retain a **Reaching** or **Carrying** objective while part of its movement is being redirected away from a hazard. The objective describes what it is trying to achieve; the local response describes what it must deal with on the way.
 
 ## Sharing Time and Resolving Conflicts
@@ -130,7 +133,7 @@ They do **not** attempt to answer the more interesting behavioural question:
 
 > Which arm ought to have it?
 
-The current controller does not evaluate competing rewards, priorities or cooperative objectives. Those are possible subjects for later experiments.
+The controller includes a deliberately simple arbitration layer for several specific conflicts. Local hazard avoidance can override reaching, withdrawal can override holding, competing claims to the same resource are resolved deterministically, and assigned tasks take precedence over incidental discoveries. **Conflict Resolution** explores those rules in detail.
 
 ## Where Central Control Stops
 
