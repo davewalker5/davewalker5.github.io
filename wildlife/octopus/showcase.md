@@ -4,7 +4,7 @@ title: Behaviour Showcase
 breadcrumb: Behaviour Showcase
 description: Bringing independent arm control, local sensing, obstacle avoidance and grasping together in a single reproducible simulation scenario
 series: octopus_controller
-chapter: 4
+chapter: 6
 ---
 
 # Behaviour Showcase
@@ -39,11 +39,11 @@ One small but deliberate adjustment helps make the sequence readable. Arm 1 has 
 
 | Behaviour             | Where to look      | What the simulation shows                                                                    |
 | --------------------- | ------------------ | -------------------------------------------------------------------------------------------- |
-| Independent movement  | Arms 1, 3, 5 and 7 | Several arms pursue separate objectives at the same time.                                    |
-| Unobstructed reaching | Arms 5 and 7       | The arms reach their destinations while other arms continue working.                         |
-| Obstacle avoidance    | Arm 3              | Local movement is redirected around the circular obstacle before the arm reaches its target. |
-| Contact sensing       | Arm 1              | Contact readings appear when segments touch the food object above the body.                  |
-| Grasping              | Arm 1              | Sustained contact by two adjacent segments leads to capture, followed by a Holding state.    |
+| Independent movement  | Arms 1, 3, 5 and 7 | Several arms pursue separate objectives at the same time                                    |
+| Unobstructed reaching | Arms 5 and 7       | The arms reach their destinations while other arms continue working                         |
+| Obstacle avoidance    | Arm 3              | Local movement is redirected around the circular obstacle before the arm reaches its target |
+| Contact sensing       | Arm 1              | Contact readings appear when segments touch the food object above the body                 |
+| Grasping              | Arm 1              | Sustained contact by two adjacent segments leads to capture, followed by a Holding state    |
 
 There are two especially interesting aspects to this sequence.
 
@@ -55,7 +55,7 @@ The Contact and Grasping states may therefore be brief. The more readily visible
 
 ## Why the Behaviours Occur in This Order
 
-The order seen in the showcase is a consequence of the chosen starting conditions and movement parameters, **not a list of commands issued at particular times**.
+The order seen in the showcase is a consequence of the chosen starting conditions and movement parameters, not a list of commands issued at particular times.
 
 Arms 5 and 7 have unobstructed reaches. Arm 3 has to adjust its movement around an obstacle before arriving at its target. Arm 1 moves more slowly towards its food object, making contact and capture the final interaction.
 
@@ -65,7 +65,7 @@ A simulation check over 15 seconds confirmed the intended behaviours: all four a
 
 ## What the Showcase Demonstrates
 
-The showcase illustrates how **several relatively simple local mechanisms can operate together without the central controller prescribing every joint movement**.
+The showcase illustrates how several relatively simple local mechanisms can operate together without the central controller prescribing every joint movement.
 
 That does not make this a faithful biological simulation of an octopus. Movement is geometric, contact sensing is simplified, and the model does not reproduce muscles, suckers or the nervous system in physiological detail.
 
@@ -79,7 +79,7 @@ The [interactive Octopus Explorer](/wildlife/octopus/explorer/) allows you to in
 
 You can select the Behaviour Showcase from the available scenarios, start and pause the simulation, advance it one step at a time, and inspect the activity of individual arms. You can also change movement parameters, assign new targets, and reposition food or obstacles to investigate how the arms respond to different conditions.
 
-The explorer also supports **loading your own scenarios from JSON files**.
+The explorer also supports loading your own scenarios from JSON files.
 
 A scenario describes the starting conditions of an experiment, including the position of the octopus, food objects, obstacles, individual arm targets and movement parameters. Rather than specifying a sequence of movements, it establishes an environment in which the arm controllers operate according to their normal rules.
 
