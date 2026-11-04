@@ -104,8 +104,8 @@
   category_title: Bats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Bats/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Bats/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Bats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -116,8 +116,8 @@
   category_title: Beetles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Beetles/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Beetles/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Beetles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -128,8 +128,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Birds/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Birds/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -140,8 +140,8 @@
   category_title: Dragonflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Dragonflies/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Dragonflies/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Dragonflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -164,8 +164,8 @@
   category_title: Flora
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Flora/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Flora/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Flora/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -176,8 +176,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Mammals/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -200,8 +200,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -212,8 +212,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Trees/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Trees/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -224,8 +224,8 @@
   category_title: Wasps
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Wasps/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Wasps/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Wasps/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -236,8 +236,8 @@
   category_title: Ants
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Ants/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Ants/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Ants/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -248,8 +248,8 @@
   category_title: Arachnids
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Arachnids/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Arachnids/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Arachnids/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -260,8 +260,8 @@
   category_title: Bats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Bats/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Bats/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Bats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -272,8 +272,8 @@
   category_title: Beetles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Beetles/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Beetles/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Beetles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -284,8 +284,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Birds/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Birds/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -296,8 +296,8 @@
   category_title: Butterflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Butterflies/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Butterflies/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Butterflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -308,8 +308,8 @@
   category_title: Dragonflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Dragonflies/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Dragonflies/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Dragonflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -320,8 +320,8 @@
   category_title: Fish
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Fish/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Fish/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Fish/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -332,8 +332,8 @@
   category_title: Marine Invertebrates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Marine Invertebrates/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Marine Invertebrates/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Marine Invertebrates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -344,8 +344,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Mauritius
@@ -356,8 +356,8 @@
   category_title: Wasps
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Wasps/composition.xlsx
   png_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Wasps/composition.png
+  xlsx_path: /wildlife/reports/Mauritius/composition/Grand Gaube/Wasps/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -368,8 +368,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Birds/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/La Digue/Birds/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -380,8 +380,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/La Digue/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -392,8 +392,8 @@
   category_title: Wasps
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Wasps/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/La Digue/Wasps/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/La Digue/Wasps/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -404,8 +404,8 @@
   category_title: Arachnids
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Arachnids/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Arachnids/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Arachnids/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -416,8 +416,8 @@
   category_title: Bats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Bats/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Bats/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Bats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -428,8 +428,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Birds/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Birds/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -440,8 +440,8 @@
   category_title: Butterflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Butterflies/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Butterflies/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Butterflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -452,8 +452,8 @@
   category_title: Flora
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Flora/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Flora/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Flora/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -464,8 +464,8 @@
   category_title: Insects
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Insects/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Insects/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Insects/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -476,8 +476,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Mammals/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -488,8 +488,8 @@
   category_title: Marine Invertebrates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Marine Invertebrates/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Marine Invertebrates/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Marine Invertebrates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -500,8 +500,8 @@
   category_title: Molluscs
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Molluscs/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Molluscs/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Molluscs/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -512,8 +512,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -524,8 +524,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Trees/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Trees/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -536,8 +536,8 @@
   category_title: Wasps
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Wasps/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Port Launay/Wasps/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Port Launay/Wasps/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -548,8 +548,8 @@
   category_title: Arachnids
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Arachnids/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Praslin/Arachnids/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Arachnids/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -560,8 +560,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Birds/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Praslin/Birds/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -572,8 +572,8 @@
   category_title: Molluscs
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Molluscs/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Praslin/Molluscs/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Molluscs/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -584,8 +584,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Praslin/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Seychelles
@@ -596,8 +596,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Trees/composition.xlsx
   png_path: /wildlife/reports/Seychelles/composition/Praslin/Trees/composition.png
+  xlsx_path: /wildlife/reports/Seychelles/composition/Praslin/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -620,8 +620,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -632,8 +632,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -644,8 +644,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -656,8 +656,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Arusha National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -668,8 +668,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -680,8 +680,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -692,8 +692,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -704,8 +704,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -716,8 +716,8 @@
   category_title: Rodents
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Rodents/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Rodents/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Rodents/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -728,8 +728,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Trees/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Trees/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -740,8 +740,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Lake Manyara National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -752,8 +752,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -764,8 +764,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -776,8 +776,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -788,8 +788,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -800,8 +800,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Ngorongoro Crater/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -812,8 +812,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -824,8 +824,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -836,8 +836,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -848,8 +848,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -860,8 +860,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -872,8 +872,8 @@
   category_title: Reptiles
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Reptiles/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -884,8 +884,8 @@
   category_title: Trees
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Trees/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -896,8 +896,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -908,8 +908,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -946,8 +946,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -958,8 +958,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Serengeti National Park (Central)/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1092,8 +1092,8 @@
   category_title: Ants
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ants/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1104,8 +1104,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1116,8 +1116,8 @@
   category_title: Cats
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Cats/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1128,8 +1128,8 @@
   category_title: Dog Family
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Dog Family/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1140,8 +1140,8 @@
   category_title: Mammals
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Mammals/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1152,8 +1152,8 @@
   category_title: Primates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Primates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1164,8 +1164,8 @@
   category_title: Ungulates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Tarangire National Park/Ungulates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Tanzania
@@ -1176,8 +1176,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Tanzania/composition/Zanzibar/Birds/composition.xlsx
   png_path: /wildlife/reports/Tanzania/composition/Zanzibar/Birds/composition.png
+  xlsx_path: /wildlife/reports/Tanzania/composition/Zanzibar/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
