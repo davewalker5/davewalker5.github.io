@@ -22,6 +22,7 @@ Azure Damselfly,Coenagrion puella,Damselflies
 Baboon,Papio anubis,Primates
 Baglaflecht Weaver (Reichenowi),Ploceus baglafecht reichenowi,Birds
 Banded Demoiselle,Calopteryx splendens,Damselflies
+Banded Humbug,Dascyllus auranus,Fish
 Bank Vole,Myodes glareolus,Rodents
 Bat-Eared Fox,Otocyon megalotis,Dog Family
 Beach Cabbage,Scaevola taccada,Flora
@@ -43,9 +44,12 @@ Blackthorn,Prunus spinosa,Trees
 Blacktip Reef Shark,Carcharhinus melanopterus,Fish
 Blue Tit,Cyanistes caeruleus,Birds
 Bluebell,Hyacinthoides non-scripta,Flora
+Bluefin Trevally,Caranx melampygus,Fish
+Bluegreen Chromis,Chromis viridis,Fish
 Bluespotted Cornetfish,Fistularia commersonii,Fish
 Bojer's Skink,Gongylomorphus bojerii,Reptiles
 Bramble,Rubus fruticosus,Flora
+Bridled Parrotfish,Scarus frenatus,Fish
 Brimstone Butterfly,Gonepteryx rhamni,Butterflies
 Brimstone Moth,Opisthograptis luteolata,Moths
 Broad-Bodied Chaser,Libellula depressa,Dragonflies
@@ -69,6 +73,7 @@ Chaffinch,Fringilla coelebs,Birds
 Cheetah,Acinonyx jubatus,Cats
 Cherry Plum,Prunus cerasifera,Trees
 Chiffchaff,Phylloscopus collybita,Birds
+Chinstrapped Rabbitfish,Siganus puelloides,Fish
 Cicada,Cicadoidea,Insects
 Cinnabar Moth,Tyria jacobaeae,Moths
 Cleopatra Butterfly,Gonepteryx cleopatra,Butterflies
@@ -87,6 +92,7 @@ Common Bleak,Alburnus alburnus,Fish
 Common Blue Butterfly,Polyommatus icarus,Butterflies
 Common Bulbul,Pycnonotus barbatus,Birds
 Common Burdock,Arctium minus,Flora
+Common Cleaner Wrasse,Labroides dimidiatus,Fish
 Common Cleavers,Galium aparine,Flora
 Common Comfrey,Symphytum officinale,Flora
 Common Darter Dragonfly,Sympetrum striolatum,Dragonflies
@@ -150,6 +156,7 @@ Curlew,Numenius arquata,Birds
 Cypress-Leaved Plait-Moss,Hypnum cupressiforme,Mosses & Lichens
 Daisy,Bellis perennis,Flora
 Dandelion,Taraxacum officinale,Flora
+Dash Dotted Goatfish,Parupeneus barberinus,Fish
 Day Gecko,Phelsuma,Reptiles
 Deadly Nightshade,Atropa belladonna,Flora
 Dog Rose,Rosa canina,Flora
@@ -250,6 +257,7 @@ Harlequin Ladybird,Harmonia axyridis,Beetles
 Harnessed Bushbuck ,Tragelaphus scriptus,Ungulates
 Hartebeest,Alcelaphus buselaphus,Ungulates
 Hasarius Adansoni,Hasarius Adansoni,Arachnids
+Hawaiian Triggerfish,Rhinecanthus aculeatus,Fish
 Hawfinch,Coccothraustes coccothraustes,Birds
 Hawksbill Turtle,Eretmochelys imbricata,Reptiles
 Hawkweed,Hieracium,Flora
@@ -351,6 +359,7 @@ Mistletoe,Viscum album,Flora
 Mongoose,,Mammals
 Monk Parakeet,Myiopsitta monachus,Birds
 Moorhen,Gallinula chloropus,Birds
+Moorish Idol,Zanclus cornutus,Fish
 Mouse,,Rodents
 Muntjac,Muntiacus reevesi,Ungulates
 Musk Mallow,Malva moschata,Flora
@@ -360,12 +369,14 @@ Nettle,Urtica dioica,Flora
 Nile Crocodile,Crocodylus niloticus,Reptiles
 Nile Monitor Lizard,Varanus niloticus,Reptiles
 Nubian Vulture,Neophron percnopterus,Birds
-Nurse Shark,Ginglymostoma cirratum,Fish
+Nurse Shark,Nebrius ferrugineus,Fish
 Nuthatch,Sitta europaea,Birds
 Oak Bush Cricket,Meconema thalassinum,Grasshoppers
+Onespotted Snapper,Lutjanus monostigma,Fish
 Orange-Tip Butterfly,Anthocharis cardamines,Butterflies
 Orange-Winged Dropwing Dragonfly,Trithemis kirbyi,Dragonflies
 Oriental Garden Lizard,Calotes versicolor,Reptiles
+Oriental sweetlips,Plectorhincus vittatus,Fish
 Osprey,Pandion haliaetus,Birds
 Oxeye Daisy,Leucanthemum vulgare,Flora
 Oxford Ragwort,Senecio squalidus,Flora
@@ -378,6 +389,7 @@ Peacock Butterfly,Aglais io,Butterflies
 Peregrine Falcon,Falco peregrinus,Birds
 Periwinkle,Vinca major,Flora
 Pheasant,Phasianus colchicus,Birds
+Philippine Damselfish,Pomacentrus philippinus,Fish
 Pied Crow,Corvus albus,Birds
 Pied Wagtail,Motacilla alba,Birds
 Pink Whipray,Pateobatis fai,Fish
@@ -389,6 +401,7 @@ Pond Skater,Gerris lacustris,Insects
 Poplar,,Trees
 Porcupine Ray,Urogymnus asperrimus,Fish
 Potter Wasp,Delta alluaudi,Wasps
+Powderblue Surgeonfish,Acanthurus leucosternon,Fish
 Primrose,Primula vulgaris,Flora
 Purple Grenadier,Granatina ianthinogaster,Birds
 Purple Salsify,Tragopogon porrifolius,Flora
@@ -416,6 +429,7 @@ Red-Crested Pochard,Netta rufina,Birds
 Red-Legged Orb-Weaver,Trichonephila inaurata,Arachnids
 Red-Legged Partridge,Alectoris rufa,Birds
 Red-Tailed Bumblebee,Bombus Lapidarius,Bees
+Redfin Emperor,Monotaxis heterodon,Fish
 Redpoll,Acanthis flammea,Birds
 Redwing,Turdus iliacus,Birds
 Reed Bunting,Emberiza schoeniclus,Birds
@@ -467,6 +481,7 @@ Silver Birch,Betula pendula,Trees
 Silver Ragwort,Cineraria maritima,Flora
 Silver Y Moth,Autographa gamma,Moths
 Siskin,Spinus spinus,Birds
+Sixbarred Wrasse,Thalassoma hardwicke,Fish
 Skylark,Alauda arvensis,Birds
 Sloe,Prunus spinosa,Shrubs
 Small Copper Butterfly,Lycaena phlaeas,Butterflies
@@ -505,6 +520,7 @@ Superb Starling,Lamprotornis superbus,Birds
 Surgeonfish,Acanthurus spp,Fish
 Swallow,Hirundo rustica,Birds
 Swallowtail Butterfly,Papilio machaon,Butterflies
+Swarthy Parrotfish,Scarus niger,Fish
 Sweet Violet,Viola odorata,Flora
 Swift,Apus apus,Birds
 Swift-Footed Rock Crab,Grapsus albolineatus,Marine Invertebrates
@@ -520,6 +536,7 @@ Ten Spot Ladybird,Adalia decempunctata,Beetles
 Termite,Macrotermes,Ants
 Terrapin,,Reptiles
 Thomson's Gazelle,Eudorcas thomsonii,Ungulates
+Threadfinned Butterflyfish,Chaetodon auriga,Fish
 Thrift,Armeria maritima,Flora
 Thrip,,Insects
 Thrush,Turdus philomelos,Birds
