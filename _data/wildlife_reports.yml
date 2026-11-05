@@ -188,8 +188,8 @@
   category_title: Marine Invertebrates
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Marine Invertebrates/composition.xlsx
   png_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Marine Invertebrates/composition.png
+  xlsx_path: /wildlife/reports/Maldives/composition/Constance Moofushi/Marine Invertebrates/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: Maldives
@@ -1200,8 +1200,8 @@
   category_title: Butterflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Abingdon/Butterflies/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Abingdon/Butterflies/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Abingdon/Butterflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1224,8 +1224,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Birds/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Kennington/Birds/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1236,8 +1236,8 @@
   category_title: Butterflies
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Butterflies/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Kennington/Butterflies/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Butterflies/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1248,8 +1248,8 @@
   category_title: Rodents
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Rodents/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Kennington/Rodents/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Kennington/Rodents/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1260,8 +1260,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Oxford/Birds/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Oxford/Birds/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Oxford/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1272,8 +1272,8 @@
   category_title: Birds
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Birds/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Birds/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Birds/composition.xlsx
 - report_type: composition
   report_type_title: Composition
   country: United-Kingdom
@@ -1284,8 +1284,8 @@
   category_title: Flora
   base: composition
   title: Composition
-  xlsx_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Flora/composition.xlsx
   png_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Flora/composition.png
+  xlsx_path: /wildlife/reports/United-Kingdom/composition/Thrupp Lake/Flora/composition.xlsx
 - report_type: heatmap
   report_type_title: Heatmap
   country: United-Kingdom
@@ -1986,8 +1986,8 @@
   category_title: Butterflies
   base: heatmap
   title: Heatmap
-  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Abingdon/Butterflies/heatmap.xlsx
   png_path: /wildlife/reports/United-Kingdom/heatmap/2026/Abingdon/Butterflies/heatmap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Abingdon/Butterflies/heatmap.xlsx
 - report_type: heatmap
   report_type_title: Heatmap
   country: United-Kingdom
@@ -2012,8 +2012,8 @@
   category_title: Birds
   base: heatmap
   title: Heatmap
-  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Oxford/Birds/heatmap.xlsx
   png_path: /wildlife/reports/United-Kingdom/heatmap/2026/Oxford/Birds/heatmap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Oxford/Birds/heatmap.xlsx
 - report_type: heatmap
   report_type_title: Heatmap
   country: United-Kingdom
@@ -2025,8 +2025,8 @@
   category_title: Birds
   base: heatmap
   title: Heatmap
-  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Birds/heatmap.xlsx
   png_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Birds/heatmap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Birds/heatmap.xlsx
 - report_type: heatmap
   report_type_title: Heatmap
   country: United-Kingdom
@@ -2038,8 +2038,8 @@
   category_title: Flora
   base: heatmap
   title: Heatmap
-  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Flora/heatmap.xlsx
   png_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Flora/heatmap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/heatmap/2026/Thrupp-Lake/Flora/heatmap.xlsx
 - report_type: richness
   report_type_title: Richness
   country: Maldives
@@ -2142,8 +2142,8 @@
   species_title: Arctic Tern
   base: Arctic-Tern
   title: Arctic Tern
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Arctic-Tern.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Arctic-Tern.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Arctic-Tern.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2170,8 +2170,8 @@
   species_title: Blackcap
   base: Blackcap
   title: Blackcap
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Blackcap.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Blackcap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Blackcap.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2212,8 +2212,8 @@
   species_title: Bullfinch
   base: Bullfinch
   title: Bullfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Bullfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Bullfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Bullfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2240,8 +2240,8 @@
   species_title: Canada Goose
   base: Canada-Goose
   title: Canada Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Canada-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Canada-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Canada-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2254,8 +2254,8 @@
   species_title: Chaffinch
   base: Chaffinch
   title: Chaffinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Chaffinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Chaffinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Chaffinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2282,8 +2282,8 @@
   species_title: Coal Tit
   base: Coal-Tit
   title: Coal Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Coal-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Coal-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Coal-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2310,8 +2310,8 @@
   species_title: Common Gull
   base: Common-Gull
   title: Common Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2324,8 +2324,8 @@
   species_title: Common Kestrel
   base: Common-Kestrel
   title: Common Kestrel
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Kestrel.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Kestrel.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Common-Kestrel.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2422,8 +2422,8 @@
   species_title: Dunnock
   base: Dunnock
   title: Dunnock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Dunnock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Dunnock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Dunnock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2436,8 +2436,8 @@
   species_title: Egret
   base: Egret
   title: Egret
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Egret.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Egret.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Egret.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2478,8 +2478,8 @@
   species_title: Gadwall
   base: Gadwall
   title: Gadwall
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gadwall.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gadwall.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gadwall.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2492,8 +2492,8 @@
   species_title: Garden Warbler
   base: Garden-Warbler
   title: Garden Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Garden-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Garden-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Garden-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2506,8 +2506,8 @@
   species_title: Goldcrest
   base: Goldcrest
   title: Goldcrest
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldcrest.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldcrest.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldcrest.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2520,8 +2520,8 @@
   species_title: Goldfinch
   base: Goldfinch
   title: Goldfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Goldfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2590,8 +2590,8 @@
   species_title: Greater Blackbacked Gull
   base: Greater-BlackBacked-Gull
   title: Greater Blackbacked Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greater-BlackBacked-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greater-BlackBacked-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greater-BlackBacked-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2618,8 +2618,8 @@
   species_title: Green Woodpecker
   base: Green-Woodpecker
   title: Green Woodpecker
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Green-Woodpecker.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Green-Woodpecker.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Green-Woodpecker.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2646,8 +2646,8 @@
   species_title: Grey Heron
   base: Grey-Heron
   title: Grey Heron
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Heron.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Heron.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Heron.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2660,8 +2660,8 @@
   species_title: Grey Wagtail
   base: Grey-Wagtail
   title: Grey Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Grey-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2674,8 +2674,8 @@
   species_title: Greylag Goose
   base: Greylag-Goose
   title: Greylag Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greylag-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greylag-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Greylag-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2688,8 +2688,8 @@
   species_title: Gull
   base: Gull
   title: Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2716,8 +2716,8 @@
   species_title: House Martin
   base: House-Martin
   title: House Martin
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/House-Martin.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/House-Martin.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/House-Martin.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2758,8 +2758,8 @@
   species_title: Jay
   base: Jay
   title: Jay
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Jay.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Jay.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Jay.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2772,8 +2772,8 @@
   species_title: Kingfisher
   base: Kingfisher
   title: Kingfisher
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Kingfisher.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Kingfisher.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Kingfisher.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2800,8 +2800,8 @@
   species_title: Lesser Blackbacked Gull
   base: Lesser-BlackBacked-Gull
   title: Lesser Blackbacked Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-BlackBacked-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-BlackBacked-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-BlackBacked-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2814,8 +2814,8 @@
   species_title: Lesser Redpoll
   base: Lesser-Redpoll
   title: Lesser Redpoll
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-Redpoll.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-Redpoll.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Lesser-Redpoll.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2828,8 +2828,8 @@
   species_title: Little Egret
   base: Little-Egret
   title: Little Egret
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Little-Egret.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Little-Egret.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Little-Egret.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2856,8 +2856,8 @@
   species_title: Longtailed Tit
   base: LongTailed-Tit
   title: Longtailed Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/LongTailed-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/LongTailed-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/LongTailed-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2898,8 +2898,8 @@
   species_title: Mistle Thrush
   base: Mistle-Thrush
   title: Mistle Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Mistle-Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Mistle-Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Mistle-Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2954,8 +2954,8 @@
   species_title: Oystercatcher
   base: Oystercatcher
   title: Oystercatcher
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Oystercatcher.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Oystercatcher.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Oystercatcher.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2982,8 +2982,8 @@
   species_title: Pied Wagtail
   base: Pied-Wagtail
   title: Pied Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pied-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pied-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pied-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -2996,8 +2996,8 @@
   species_title: Pochard
   base: Pochard
   title: Pochard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pochard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pochard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Pochard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3024,8 +3024,8 @@
   species_title: Redlegged Partridge
   base: RedLegged-Partridge
   title: Redlegged Partridge
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/RedLegged-Partridge.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/RedLegged-Partridge.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/RedLegged-Partridge.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3052,8 +3052,8 @@
   species_title: Redwing
   base: Redwing
   title: Redwing
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Redwing.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Redwing.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Redwing.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3066,8 +3066,8 @@
   species_title: Reed Bunting
   base: Reed-Bunting
   title: Reed Bunting
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Bunting.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Bunting.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Bunting.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3080,8 +3080,8 @@
   species_title: Reed Warbler
   base: Reed-Warbler
   title: Reed Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Reed-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3108,8 +3108,8 @@
   species_title: Rook
   base: Rook
   title: Rook
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Rook.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Rook.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Rook.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3122,8 +3122,8 @@
   species_title: Sedge Warbler
   base: Sedge-Warbler
   title: Sedge Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sedge-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sedge-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sedge-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3136,8 +3136,8 @@
   species_title: Shoveler
   base: Shoveler
   title: Shoveler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Shoveler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Shoveler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Shoveler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3150,8 +3150,8 @@
   species_title: Siskin
   base: Siskin
   title: Siskin
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Siskin.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Siskin.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Siskin.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3178,8 +3178,8 @@
   species_title: Song Thrush
   base: Song-Thrush
   title: Song Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Song-Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Song-Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Song-Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3192,8 +3192,8 @@
   species_title: Sparrowhawk
   base: Sparrowhawk
   title: Sparrowhawk
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sparrowhawk.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sparrowhawk.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Sparrowhawk.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3220,8 +3220,8 @@
   species_title: Swallow
   base: Swallow
   title: Swallow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Swallow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Swallow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Swallow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3248,8 +3248,8 @@
   species_title: Tawny Owl
   base: Tawny-Owl
   title: Tawny Owl
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tawny-Owl.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tawny-Owl.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tawny-Owl.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3262,8 +3262,8 @@
   species_title: Thrush
   base: Thrush
   title: Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3290,8 +3290,8 @@
   species_title: Tufted Duck
   base: Tufted-Duck
   title: Tufted Duck
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tufted-Duck.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tufted-Duck.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Tufted-Duck.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3332,8 +3332,8 @@
   species_title: Willow Warbler
   base: Willow-Warbler
   title: Willow Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Willow-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Willow-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Willow-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3360,8 +3360,8 @@
   species_title: Wren
   base: Wren
   title: Wren
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Wren.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Wren.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Wren.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3388,8 +3388,8 @@
   species_title: Yellowhammer
   base: Yellowhammer
   title: Yellowhammer
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Yellowhammer.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Yellowhammer.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Birds/Yellowhammer.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3402,8 +3402,8 @@
   species_title: Brimstone Butterfly
   base: Brimstone-Butterfly
   title: Brimstone Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Brimstone-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Brimstone-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Brimstone-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3416,8 +3416,8 @@
   species_title: Clouded Yellow Butterfly
   base: Clouded-Yellow-Butterfly
   title: Clouded Yellow Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Clouded-Yellow-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Clouded-Yellow-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Clouded-Yellow-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3472,8 +3472,8 @@
   species_title: Greenveined White Butterfly
   base: GreenVeined-White-Butterfly
   title: Greenveined White Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/GreenVeined-White-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/GreenVeined-White-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/GreenVeined-White-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3486,8 +3486,8 @@
   species_title: Holly Blue Butterfly
   base: Holly-Blue-Butterfly
   title: Holly Blue Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Holly-Blue-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Holly-Blue-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Holly-Blue-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3500,8 +3500,8 @@
   species_title: Large White Butterfly
   base: Large-White-Butterfly
   title: Large White Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Large-White-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Large-White-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Large-White-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3528,8 +3528,8 @@
   species_title: Meadow Brown Butterfly
   base: Meadow-Brown-Butterfly
   title: Meadow Brown Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Meadow-Brown-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Meadow-Brown-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Meadow-Brown-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3556,8 +3556,8 @@
   species_title: Painted Lady Butterfly
   base: Painted-Lady-Butterfly
   title: Painted Lady Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Painted-Lady-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Painted-Lady-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Painted-Lady-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3598,8 +3598,8 @@
   species_title: Small Heath Butterfly
   base: Small-Heath-Butterfly
   title: Small Heath Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Heath-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Heath-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Heath-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3612,8 +3612,8 @@
   species_title: Small Tortoiseshell Butterfly
   base: Small-Tortoiseshell-Butterfly
   title: Small Tortoiseshell Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Tortoiseshell-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Tortoiseshell-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Butterflies/Small-Tortoiseshell-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3668,8 +3668,8 @@
   species_title: Bluebell
   base: Bluebell
   title: Bluebell
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bluebell.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bluebell.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bluebell.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3696,8 +3696,8 @@
   species_title: Bugle
   base: Bugle
   title: Bugle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bugle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bugle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bugle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3710,8 +3710,8 @@
   species_title: Bulrush
   base: Bulrush
   title: Bulrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bulrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bulrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Bulrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3724,8 +3724,8 @@
   species_title: Burdock
   base: Burdock
   title: Burdock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Burdock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Burdock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Burdock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3738,8 +3738,8 @@
   species_title: Buttercup
   base: Buttercup
   title: Buttercup
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Buttercup.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Buttercup.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Buttercup.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3794,8 +3794,8 @@
   species_title: Common Birdsfoot Trefoil
   base: Common-BirdsFoot-Trefoil
   title: Common Birdsfoot Trefoil
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-BirdsFoot-Trefoil.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-BirdsFoot-Trefoil.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-BirdsFoot-Trefoil.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3808,8 +3808,8 @@
   species_title: Common Burdock
   base: Common-Burdock
   title: Common Burdock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Burdock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Burdock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Burdock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3822,8 +3822,8 @@
   species_title: Common Cleavers
   base: Common-Cleavers
   title: Common Cleavers
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Cleavers.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Cleavers.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Cleavers.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3906,8 +3906,8 @@
   species_title: Common Mallow
   base: Common-Mallow
   title: Common Mallow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Mallow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Mallow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Mallow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3934,8 +3934,8 @@
   species_title: Common Spotted Orchid
   base: Common-Spotted-Orchid
   title: Common Spotted Orchid
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Spotted-Orchid.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Spotted-Orchid.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Common-Spotted-Orchid.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -3976,8 +3976,8 @@
   species_title: Corn Chamomile
   base: Corn-Chamomile
   title: Corn Chamomile
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Corn-Chamomile.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Corn-Chamomile.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Corn-Chamomile.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4018,8 +4018,8 @@
   species_title: Cowslip
   base: Cowslip
   title: Cowslip
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cowslip.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cowslip.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cowslip.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4032,8 +4032,8 @@
   species_title: Cranesbill
   base: Cranesbill
   title: Cranesbill
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cranesbill.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cranesbill.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Cranesbill.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4046,8 +4046,8 @@
   species_title: Creeping Thistle
   base: Creeping-Thistle
   title: Creeping Thistle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Creeping-Thistle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Creeping-Thistle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Creeping-Thistle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4060,8 +4060,8 @@
   species_title: Crimson Clover
   base: Crimson-Clover
   title: Crimson Clover
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Crimson-Clover.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Crimson-Clover.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Crimson-Clover.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4130,8 +4130,8 @@
   species_title: Dog Rose
   base: Dog-Rose
   title: Dog Rose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Dog-Rose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Dog-Rose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Dog-Rose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4144,8 +4144,8 @@
   species_title: Doves Foot Cranesbill
   base: Doves-Foot-Cranesbill
   title: Doves Foot Cranesbill
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Doves-Foot-Cranesbill.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Doves-Foot-Cranesbill.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Doves-Foot-Cranesbill.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4158,8 +4158,8 @@
   species_title: Duckweed
   base: Duckweed
   title: Duckweed
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Duckweed.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Duckweed.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Duckweed.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4186,8 +4186,8 @@
   species_title: Elecampane
   base: Elecampane
   title: Elecampane
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Elecampane.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Elecampane.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Elecampane.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4256,8 +4256,8 @@
   species_title: Germander Speedwell
   base: Germander-Speedwell
   title: Germander Speedwell
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Germander-Speedwell.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Germander-Speedwell.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Germander-Speedwell.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4270,8 +4270,8 @@
   species_title: Goats Beard
   base: Goats-Beard
   title: Goats Beard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Goats-Beard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Goats-Beard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Goats-Beard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4312,8 +4312,8 @@
   species_title: Greater Stitchwort
   base: Greater-Stitchwort
   title: Greater Stitchwort
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Greater-Stitchwort.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Greater-Stitchwort.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Greater-Stitchwort.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4326,8 +4326,8 @@
   species_title: Green Alkanet
   base: Green-Alkanet
   title: Green Alkanet
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Green-Alkanet.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Green-Alkanet.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Green-Alkanet.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4368,8 +4368,8 @@
   species_title: Herb Robert
   base: Herb-Robert
   title: Herb Robert
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Herb-Robert.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Herb-Robert.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Herb-Robert.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4396,8 +4396,8 @@
   species_title: Hoary Cress
   base: Hoary-Cress
   title: Hoary Cress
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Hoary-Cress.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Hoary-Cress.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Hoary-Cress.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4424,8 +4424,8 @@
   species_title: Honeysuckle
   base: Honeysuckle
   title: Honeysuckle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Honeysuckle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Honeysuckle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Honeysuckle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4452,8 +4452,8 @@
   species_title: Ivy
   base: Ivy
   title: Ivy
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Ivy.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Ivy.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Ivy.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4480,8 +4480,8 @@
   species_title: Lesser Celandine
   base: Lesser-Celandine
   title: Lesser Celandine
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Lesser-Celandine.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Lesser-Celandine.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Lesser-Celandine.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4494,8 +4494,8 @@
   species_title: Marsh Marigold
   base: Marsh-Marigold
   title: Marsh Marigold
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Marsh-Marigold.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Marsh-Marigold.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Marsh-Marigold.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4592,8 +4592,8 @@
   species_title: Oxeye Daisy
   base: Oxeye-Daisy
   title: Oxeye Daisy
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxeye-Daisy.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxeye-Daisy.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxeye-Daisy.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4606,8 +4606,8 @@
   species_title: Oxford Ragwort
   base: Oxford-Ragwort
   title: Oxford Ragwort
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxford-Ragwort.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxford-Ragwort.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Oxford-Ragwort.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4634,8 +4634,8 @@
   species_title: Primrose
   base: Primrose
   title: Primrose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Primrose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Primrose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Primrose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4662,8 +4662,8 @@
   species_title: Pyramidal Orchid
   base: Pyramidal-Orchid
   title: Pyramidal Orchid
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Pyramidal-Orchid.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Pyramidal-Orchid.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Pyramidal-Orchid.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4676,8 +4676,8 @@
   species_title: Queen Annes Lace
   base: Queen-Annes-Lace
   title: Queen Annes Lace
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Queen-Annes-Lace.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Queen-Annes-Lace.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Queen-Annes-Lace.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4718,8 +4718,8 @@
   species_title: Red Campion
   base: Red-Campion
   title: Red Campion
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-Campion.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-Campion.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-Campion.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4746,8 +4746,8 @@
   species_title: Red Deadnettle
   base: Red-DeadNettle
   title: Red Deadnettle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-DeadNettle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-DeadNettle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Red-DeadNettle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4844,8 +4844,8 @@
   species_title: Silver Ragwort
   base: Silver-Ragwort
   title: Silver Ragwort
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Silver-Ragwort.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Silver-Ragwort.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Silver-Ragwort.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4886,8 +4886,8 @@
   species_title: Star Of Bethlehem
   base: Star-Of-Bethlehem
   title: Star Of Bethlehem
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Star-Of-Bethlehem.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Star-Of-Bethlehem.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Star-Of-Bethlehem.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4928,8 +4928,8 @@
   species_title: Vipers Bugloss
   base: Vipers-Bugloss
   title: Vipers Bugloss
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Vipers-Bugloss.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Vipers-Bugloss.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Vipers-Bugloss.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4970,8 +4970,8 @@
   species_title: White Clover
   base: White-Clover
   title: White Clover
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Clover.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Clover.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Clover.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4984,8 +4984,8 @@
   species_title: White Water Lilly
   base: White-Water-Lilly
   title: White Water Lilly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Water-Lilly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Water-Lilly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/White-Water-Lilly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -4998,8 +4998,8 @@
   species_title: Wild Hop
   base: Wild-Hop
   title: Wild Hop
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Wild-Hop.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Wild-Hop.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Wild-Hop.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5012,8 +5012,8 @@
   species_title: Winter Aconite
   base: Winter-Aconite
   title: Winter Aconite
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Winter-Aconite.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Winter-Aconite.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Winter-Aconite.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5026,8 +5026,8 @@
   species_title: Woodland Anenome
   base: Woodland-Anenome
   title: Woodland Anenome
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Woodland-Anenome.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Woodland-Anenome.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Woodland-Anenome.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5040,8 +5040,8 @@
   species_title: Yellow Archangel
   base: Yellow-Archangel
   title: Yellow Archangel
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Archangel.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Archangel.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Archangel.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5054,8 +5054,8 @@
   species_title: Yellow Flag Iris
   base: Yellow-Flag-Iris
   title: Yellow Flag Iris
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Flag-Iris.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Flag-Iris.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Flag-Iris.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5068,8 +5068,8 @@
   species_title: Yellow Water Lilly
   base: Yellow-Water-Lilly
   title: Yellow Water Lilly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Water-Lilly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Water-Lilly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Abingdon/Flora/Yellow-Water-Lilly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5082,8 +5082,8 @@
   species_title: Common Frog
   base: Common-Frog
   title: Common Frog
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Amphibians/Common-Frog.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Amphibians/Common-Frog.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Amphibians/Common-Frog.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5096,8 +5096,8 @@
   species_title: Pipistrelle Bat
   base: Pipistrelle-Bat
   title: Pipistrelle Bat
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Bats/Pipistrelle-Bat.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Bats/Pipistrelle-Bat.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Bats/Pipistrelle-Bat.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5110,8 +5110,8 @@
   species_title: Blackbird
   base: Blackbird
   title: Blackbird
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackbird.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackbird.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackbird.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5124,8 +5124,8 @@
   species_title: Blackcap
   base: Blackcap
   title: Blackcap
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackcap.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackcap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blackcap.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5138,8 +5138,8 @@
   species_title: Blackheaded Gull
   base: BlackHeaded-Gull
   title: Blackheaded Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/BlackHeaded-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/BlackHeaded-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/BlackHeaded-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5152,8 +5152,8 @@
   species_title: Blue Tit
   base: Blue-Tit
   title: Blue Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blue-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blue-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Blue-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5166,8 +5166,8 @@
   species_title: Canada Goose
   base: Canada-Goose
   title: Canada Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Canada-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Canada-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Canada-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5180,8 +5180,8 @@
   species_title: Chaffinch
   base: Chaffinch
   title: Chaffinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Chaffinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Chaffinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Chaffinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5208,8 +5208,8 @@
   species_title: Coal Tit
   base: Coal-Tit
   title: Coal Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Coal-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Coal-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Coal-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5222,8 +5222,8 @@
   species_title: Collared Dove
   base: Collared-Dove
   title: Collared Dove
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Collared-Dove.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Collared-Dove.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Collared-Dove.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5250,8 +5250,8 @@
   species_title: Crossbill
   base: Crossbill
   title: Crossbill
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Crossbill.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Crossbill.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Crossbill.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5292,8 +5292,8 @@
   species_title: Dunnock
   base: Dunnock
   title: Dunnock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Dunnock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Dunnock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Dunnock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5320,8 +5320,8 @@
   species_title: Goldcrest
   base: Goldcrest
   title: Goldcrest
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldcrest.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldcrest.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldcrest.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5334,8 +5334,8 @@
   species_title: Goldfinch
   base: Goldfinch
   title: Goldfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Goldfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5376,8 +5376,8 @@
   species_title: Green Woodpecker
   base: Green-Woodpecker
   title: Green Woodpecker
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Green-Woodpecker.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Green-Woodpecker.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Green-Woodpecker.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5404,8 +5404,8 @@
   species_title: Grey Heron
   base: Grey-Heron
   title: Grey Heron
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Grey-Heron.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Grey-Heron.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Grey-Heron.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5418,8 +5418,8 @@
   species_title: Hobby
   base: Hobby
   title: Hobby
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Hobby.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Hobby.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Hobby.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5432,8 +5432,8 @@
   species_title: House Sparrow
   base: House-Sparrow
   title: House Sparrow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/House-Sparrow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/House-Sparrow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/House-Sparrow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5446,8 +5446,8 @@
   species_title: Jackdaw
   base: Jackdaw
   title: Jackdaw
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jackdaw.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jackdaw.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jackdaw.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5460,8 +5460,8 @@
   species_title: Jay
   base: Jay
   title: Jay
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jay.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jay.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Jay.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5474,8 +5474,8 @@
   species_title: Longtailed Tit
   base: LongTailed-Tit
   title: Longtailed Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/LongTailed-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/LongTailed-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/LongTailed-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5488,8 +5488,8 @@
   species_title: Magpie
   base: Magpie
   title: Magpie
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Magpie.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Magpie.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Magpie.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5502,8 +5502,8 @@
   species_title: Pied Wagtail
   base: Pied-Wagtail
   title: Pied Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Pied-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Pied-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Pied-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5516,8 +5516,8 @@
   species_title: Redwing
   base: Redwing
   title: Redwing
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Redwing.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Redwing.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Redwing.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5530,8 +5530,8 @@
   species_title: Reed Bunting
   base: Reed-Bunting
   title: Reed Bunting
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Reed-Bunting.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Reed-Bunting.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Reed-Bunting.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5558,8 +5558,8 @@
   species_title: Siskin
   base: Siskin
   title: Siskin
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Siskin.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Siskin.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Siskin.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5572,8 +5572,8 @@
   species_title: Sparrowhawk
   base: Sparrowhawk
   title: Sparrowhawk
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Sparrowhawk.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Sparrowhawk.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Sparrowhawk.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5600,8 +5600,8 @@
   species_title: Swallow
   base: Swallow
   title: Swallow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Swallow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Swallow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Swallow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5628,8 +5628,8 @@
   species_title: Tawny Owl
   base: Tawny-Owl
   title: Tawny Owl
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Tawny-Owl.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Tawny-Owl.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Tawny-Owl.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5642,8 +5642,8 @@
   species_title: Thrush
   base: Thrush
   title: Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5656,8 +5656,8 @@
   species_title: Woodpigeon
   base: Woodpigeon
   title: Woodpigeon
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Woodpigeon.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Woodpigeon.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Woodpigeon.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5670,8 +5670,8 @@
   species_title: Wren
   base: Wren
   title: Wren
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Wren.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Wren.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Birds/Wren.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5684,8 +5684,8 @@
   species_title: Brimstone Butterfly
   base: Brimstone-Butterfly
   title: Brimstone Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Brimstone-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Brimstone-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Brimstone-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5726,8 +5726,8 @@
   species_title: Greenveined White Butterfly
   base: GreenVeined-White-Butterfly
   title: Greenveined White Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/GreenVeined-White-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/GreenVeined-White-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/GreenVeined-White-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5740,8 +5740,8 @@
   species_title: Holly Blue Butterfly
   base: Holly-Blue-Butterfly
   title: Holly Blue Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Holly-Blue-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Holly-Blue-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Holly-Blue-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5754,8 +5754,8 @@
   species_title: Large White Butterfly
   base: Large-White-Butterfly
   title: Large White Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Large-White-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Large-White-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Large-White-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5768,8 +5768,8 @@
   species_title: Meadow Brown Butterfly
   base: Meadow-Brown-Butterfly
   title: Meadow Brown Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Meadow-Brown-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Meadow-Brown-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Meadow-Brown-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5796,8 +5796,8 @@
   species_title: Painted Lady Butterfly
   base: Painted-Lady-Butterfly
   title: Painted Lady Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Painted-Lady-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Painted-Lady-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Painted-Lady-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5852,8 +5852,8 @@
   species_title: Small Tortoiseshell Butterfly
   base: Small-Tortoiseshell-Butterfly
   title: Small Tortoiseshell Butterfly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Small-Tortoiseshell-Butterfly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Small-Tortoiseshell-Butterfly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Butterflies/Small-Tortoiseshell-Butterfly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5894,8 +5894,8 @@
   species_title: Hedgehog
   base: Hedgehog
   title: Hedgehog
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Mammals/Hedgehog.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Kennington/Mammals/Hedgehog.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Kennington/Mammals/Hedgehog.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5936,8 +5936,8 @@
   species_title: Blackbird
   base: Blackbird
   title: Blackbird
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackbird.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackbird.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackbird.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5950,8 +5950,8 @@
   species_title: Blackcap
   base: Blackcap
   title: Blackcap
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackcap.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackcap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blackcap.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5964,8 +5964,8 @@
   species_title: Blackheaded Gull
   base: BlackHeaded-Gull
   title: Blackheaded Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/BlackHeaded-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/BlackHeaded-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/BlackHeaded-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -5978,8 +5978,8 @@
   species_title: Blue Tit
   base: Blue-Tit
   title: Blue Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blue-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blue-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Blue-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6006,8 +6006,8 @@
   species_title: Canada Goose
   base: Canada-Goose
   title: Canada Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Canada-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Canada-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Canada-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6034,8 +6034,8 @@
   species_title: Collared Dove
   base: Collared-Dove
   title: Collared Dove
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Collared-Dove.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Collared-Dove.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Collared-Dove.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6104,8 +6104,8 @@
   species_title: Goldfinch
   base: Goldfinch
   title: Goldfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Goldfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Goldfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Goldfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6132,8 +6132,8 @@
   species_title: Green Woodpecker
   base: Green-Woodpecker
   title: Green Woodpecker
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Green-Woodpecker.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Green-Woodpecker.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Green-Woodpecker.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6146,8 +6146,8 @@
   species_title: Grey Heron
   base: Grey-Heron
   title: Grey Heron
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Grey-Heron.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Grey-Heron.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Grey-Heron.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6160,8 +6160,8 @@
   species_title: Greylag Goose
   base: Greylag-Goose
   title: Greylag Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Greylag-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Greylag-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Greylag-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6188,8 +6188,8 @@
   species_title: House Sparrow
   base: House-Sparrow
   title: House Sparrow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/House-Sparrow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/House-Sparrow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/House-Sparrow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6202,8 +6202,8 @@
   species_title: Jackdaw
   base: Jackdaw
   title: Jackdaw
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Jackdaw.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Jackdaw.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Jackdaw.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6216,8 +6216,8 @@
   species_title: Lesser Blackbacked Gull
   base: Lesser-BlackBacked-Gull
   title: Lesser Blackbacked Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Lesser-BlackBacked-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Lesser-BlackBacked-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Lesser-BlackBacked-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6230,8 +6230,8 @@
   species_title: Longtailed Tit
   base: LongTailed-Tit
   title: Longtailed Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/LongTailed-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/LongTailed-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/LongTailed-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6244,8 +6244,8 @@
   species_title: Magpie
   base: Magpie
   title: Magpie
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Magpie.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Magpie.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Magpie.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6258,8 +6258,8 @@
   species_title: Mallard
   base: Mallard
   title: Mallard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mallard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mallard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mallard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6272,8 +6272,8 @@
   species_title: Mistle Thrush
   base: Mistle-Thrush
   title: Mistle Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mistle-Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mistle-Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mistle-Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6286,8 +6286,8 @@
   species_title: Moorhen
   base: Moorhen
   title: Moorhen
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Moorhen.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Moorhen.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Moorhen.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6300,8 +6300,8 @@
   species_title: Mute Swan
   base: Mute-Swan
   title: Mute Swan
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mute-Swan.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mute-Swan.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Mute-Swan.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6342,8 +6342,8 @@
   species_title: Pied Wagtail
   base: Pied-Wagtail
   title: Pied Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Pied-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Pied-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Pied-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6356,8 +6356,8 @@
   species_title: Red Kite
   base: Red-Kite
   title: Red Kite
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Red-Kite.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Red-Kite.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Red-Kite.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6398,8 +6398,8 @@
   species_title: Rook
   base: Rook
   title: Rook
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Rook.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Rook.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Rook.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6412,8 +6412,8 @@
   species_title: Song Thrush
   base: Song-Thrush
   title: Song Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Song-Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Song-Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Song-Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6468,8 +6468,8 @@
   species_title: Woodpigeon
   base: Woodpigeon
   title: Woodpigeon
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Woodpigeon.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Woodpigeon.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Woodpigeon.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6482,8 +6482,8 @@
   species_title: Wren
   base: Wren
   title: Wren
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Wren.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Wren.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Oxford/Birds/Wren.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6496,8 +6496,8 @@
   species_title: Arctic Tern
   base: Arctic-Tern
   title: Arctic Tern
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Arctic-Tern.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Arctic-Tern.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Arctic-Tern.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6510,8 +6510,8 @@
   species_title: Blackbird
   base: Blackbird
   title: Blackbird
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackbird.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackbird.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackbird.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6524,8 +6524,8 @@
   species_title: Blackcap
   base: Blackcap
   title: Blackcap
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackcap.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackcap.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blackcap.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6538,8 +6538,8 @@
   species_title: Blackheaded Gull
   base: BlackHeaded-Gull
   title: Blackheaded Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/BlackHeaded-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/BlackHeaded-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/BlackHeaded-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6552,8 +6552,8 @@
   species_title: Blue Tit
   base: Blue-Tit
   title: Blue Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blue-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blue-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Blue-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6580,8 +6580,8 @@
   species_title: Canada Goose
   base: Canada-Goose
   title: Canada Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Canada-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Canada-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Canada-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6594,8 +6594,8 @@
   species_title: Chaffinch
   base: Chaffinch
   title: Chaffinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Chaffinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Chaffinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Chaffinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6622,8 +6622,8 @@
   species_title: Coal Tit
   base: Coal-Tit
   title: Coal Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Coal-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Coal-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Coal-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6636,8 +6636,8 @@
   species_title: Collared Dove
   base: Collared-Dove
   title: Collared Dove
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Collared-Dove.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Collared-Dove.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Collared-Dove.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6734,8 +6734,8 @@
   species_title: Dunnock
   base: Dunnock
   title: Dunnock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Dunnock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Dunnock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Dunnock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6748,8 +6748,8 @@
   species_title: Egret
   base: Egret
   title: Egret
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Egret.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Egret.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Egret.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6776,8 +6776,8 @@
   species_title: Gadwall
   base: Gadwall
   title: Gadwall
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Gadwall.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Gadwall.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Gadwall.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6790,8 +6790,8 @@
   species_title: Garden Warbler
   base: Garden-Warbler
   title: Garden Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Garden-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Garden-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Garden-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6804,8 +6804,8 @@
   species_title: Goldfinch
   base: Goldfinch
   title: Goldfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Goldfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Goldfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Goldfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6874,8 +6874,8 @@
   species_title: Green Woodpecker
   base: Green-Woodpecker
   title: Green Woodpecker
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Green-Woodpecker.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Green-Woodpecker.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Green-Woodpecker.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6902,8 +6902,8 @@
   species_title: Grey Heron
   base: Grey-Heron
   title: Grey Heron
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Heron.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Heron.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Heron.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6916,8 +6916,8 @@
   species_title: Grey Wagtail
   base: Grey-Wagtail
   title: Grey Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Grey-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6930,8 +6930,8 @@
   species_title: Greylag Goose
   base: Greylag-Goose
   title: Greylag Goose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Greylag-Goose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Greylag-Goose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Greylag-Goose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6944,8 +6944,8 @@
   species_title: Hawfinch
   base: Hawfinch
   title: Hawfinch
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Hawfinch.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Hawfinch.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Hawfinch.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6972,8 +6972,8 @@
   species_title: House Martin
   base: House-Martin
   title: House Martin
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Martin.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Martin.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Martin.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -6986,8 +6986,8 @@
   species_title: House Sparrow
   base: House-Sparrow
   title: House Sparrow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Sparrow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Sparrow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/House-Sparrow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7000,8 +7000,8 @@
   species_title: Jackdaw
   base: Jackdaw
   title: Jackdaw
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jackdaw.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jackdaw.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jackdaw.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7014,8 +7014,8 @@
   species_title: Jay
   base: Jay
   title: Jay
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jay.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jay.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Jay.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7042,8 +7042,8 @@
   species_title: Lesser Blackbacked Gull
   base: Lesser-BlackBacked-Gull
   title: Lesser Blackbacked Gull
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Lesser-BlackBacked-Gull.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Lesser-BlackBacked-Gull.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Lesser-BlackBacked-Gull.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7070,8 +7070,8 @@
   species_title: Longtailed Tit
   base: LongTailed-Tit
   title: Longtailed Tit
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/LongTailed-Tit.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/LongTailed-Tit.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/LongTailed-Tit.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7084,8 +7084,8 @@
   species_title: Magpie
   base: Magpie
   title: Magpie
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Magpie.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Magpie.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Magpie.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7098,8 +7098,8 @@
   species_title: Mallard
   base: Mallard
   title: Mallard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mallard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mallard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mallard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7112,8 +7112,8 @@
   species_title: Moorhen
   base: Moorhen
   title: Moorhen
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Moorhen.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Moorhen.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Moorhen.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7126,8 +7126,8 @@
   species_title: Mute Swan
   base: Mute-Swan
   title: Mute Swan
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mute-Swan.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mute-Swan.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Mute-Swan.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7140,8 +7140,8 @@
   species_title: Oystercatcher
   base: Oystercatcher
   title: Oystercatcher
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Oystercatcher.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Oystercatcher.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Oystercatcher.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7168,8 +7168,8 @@
   species_title: Pied Wagtail
   base: Pied-Wagtail
   title: Pied Wagtail
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pied-Wagtail.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pied-Wagtail.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pied-Wagtail.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7182,8 +7182,8 @@
   species_title: Pochard
   base: Pochard
   title: Pochard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pochard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pochard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Pochard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7196,8 +7196,8 @@
   species_title: Red Kite
   base: Red-Kite
   title: Red Kite
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Red-Kite.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Red-Kite.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Red-Kite.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7210,8 +7210,8 @@
   species_title: Redcrested Pochard
   base: RedCrested-Pochard
   title: Redcrested Pochard
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/RedCrested-Pochard.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/RedCrested-Pochard.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/RedCrested-Pochard.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7224,8 +7224,8 @@
   species_title: Redwing
   base: Redwing
   title: Redwing
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Redwing.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Redwing.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Redwing.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7238,8 +7238,8 @@
   species_title: Reed Warbler
   base: Reed-Warbler
   title: Reed Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Reed-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Reed-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Reed-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7266,8 +7266,8 @@
   species_title: Sedge Warbler
   base: Sedge-Warbler
   title: Sedge Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Sedge-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Sedge-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Sedge-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7294,8 +7294,8 @@
   species_title: Shoveler
   base: Shoveler
   title: Shoveler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Shoveler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Shoveler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Shoveler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7322,8 +7322,8 @@
   species_title: Song Thrush
   base: Song-Thrush
   title: Song Thrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Song-Thrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Song-Thrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Song-Thrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7336,8 +7336,8 @@
   species_title: Swallow
   base: Swallow
   title: Swallow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Swallow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Swallow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Swallow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7378,8 +7378,8 @@
   species_title: Tufted Duck
   base: Tufted-Duck
   title: Tufted Duck
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Tufted-Duck.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Tufted-Duck.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Tufted-Duck.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7406,8 +7406,8 @@
   species_title: Willow Warbler
   base: Willow-Warbler
   title: Willow Warbler
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Willow-Warbler.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Willow-Warbler.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Willow-Warbler.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7420,8 +7420,8 @@
   species_title: Woodpigeon
   base: Woodpigeon
   title: Woodpigeon
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Woodpigeon.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Woodpigeon.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Woodpigeon.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7434,8 +7434,8 @@
   species_title: Wren
   base: Wren
   title: Wren
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Wren.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Wren.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Birds/Wren.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7448,8 +7448,8 @@
   species_title: Bluebell
   base: Bluebell
   title: Bluebell
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bluebell.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bluebell.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bluebell.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7476,8 +7476,8 @@
   species_title: Bulrush
   base: Bulrush
   title: Bulrush
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bulrush.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bulrush.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Bulrush.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7490,8 +7490,8 @@
   species_title: Burdock
   base: Burdock
   title: Burdock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Burdock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Burdock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Burdock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7504,8 +7504,8 @@
   species_title: Buttercup
   base: Buttercup
   title: Buttercup
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Buttercup.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Buttercup.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Buttercup.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7560,8 +7560,8 @@
   species_title: Common Birdsfoot Trefoil
   base: Common-BirdsFoot-Trefoil
   title: Common Birdsfoot Trefoil
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-BirdsFoot-Trefoil.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-BirdsFoot-Trefoil.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-BirdsFoot-Trefoil.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7574,8 +7574,8 @@
   species_title: Common Burdock
   base: Common-Burdock
   title: Common Burdock
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Burdock.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Burdock.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Burdock.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7588,8 +7588,8 @@
   species_title: Common Cleavers
   base: Common-Cleavers
   title: Common Cleavers
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Cleavers.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Cleavers.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Cleavers.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7658,8 +7658,8 @@
   species_title: Common Yarrow
   base: Common-Yarrow
   title: Common Yarrow
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Yarrow.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Yarrow.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Common-Yarrow.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7700,8 +7700,8 @@
   species_title: Cowslip
   base: Cowslip
   title: Cowslip
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cowslip.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cowslip.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cowslip.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7714,8 +7714,8 @@
   species_title: Cranesbill
   base: Cranesbill
   title: Cranesbill
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cranesbill.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cranesbill.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Cranesbill.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7784,8 +7784,8 @@
   species_title: Dog Rose
   base: Dog-Rose
   title: Dog Rose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Dog-Rose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Dog-Rose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Dog-Rose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7798,8 +7798,8 @@
   species_title: Doves Foot Cranesbill
   base: Doves-Foot-Cranesbill
   title: Doves Foot Cranesbill
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Doves-Foot-Cranesbill.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Doves-Foot-Cranesbill.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Doves-Foot-Cranesbill.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7868,8 +7868,8 @@
   species_title: Germander Speedwell
   base: Germander-Speedwell
   title: Germander Speedwell
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Germander-Speedwell.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Germander-Speedwell.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Germander-Speedwell.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7896,8 +7896,8 @@
   species_title: Greater Stitchwort
   base: Greater-Stitchwort
   title: Greater Stitchwort
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Greater-Stitchwort.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Greater-Stitchwort.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Greater-Stitchwort.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7910,8 +7910,8 @@
   species_title: Green Alkanet
   base: Green-Alkanet
   title: Green Alkanet
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Green-Alkanet.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Green-Alkanet.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Green-Alkanet.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7924,8 +7924,8 @@
   species_title: Hawkweed
   base: Hawkweed
   title: Hawkweed
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Hawkweed.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Hawkweed.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Hawkweed.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7938,8 +7938,8 @@
   species_title: Herb Robert
   base: Herb-Robert
   title: Herb Robert
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Herb-Robert.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Herb-Robert.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Herb-Robert.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7966,8 +7966,8 @@
   species_title: Honeysuckle
   base: Honeysuckle
   title: Honeysuckle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Honeysuckle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Honeysuckle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Honeysuckle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7980,8 +7980,8 @@
   species_title: Lesser Celandine
   base: Lesser-Celandine
   title: Lesser Celandine
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Lesser-Celandine.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Lesser-Celandine.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Lesser-Celandine.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -7994,8 +7994,8 @@
   species_title: Marsh Marigold
   base: Marsh-Marigold
   title: Marsh Marigold
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Marsh-Marigold.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Marsh-Marigold.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Marsh-Marigold.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8036,8 +8036,8 @@
   species_title: Oxeye Daisy
   base: Oxeye-Daisy
   title: Oxeye Daisy
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Oxeye-Daisy.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Oxeye-Daisy.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Oxeye-Daisy.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8050,8 +8050,8 @@
   species_title: Primrose
   base: Primrose
   title: Primrose
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Primrose.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Primrose.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Primrose.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8064,8 +8064,8 @@
   species_title: Queen Annes Lace
   base: Queen-Annes-Lace
   title: Queen Annes Lace
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Queen-Annes-Lace.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Queen-Annes-Lace.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Queen-Annes-Lace.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8078,8 +8078,8 @@
   species_title: Ragwort
   base: Ragwort
   title: Ragwort
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Ragwort.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Ragwort.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Ragwort.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8092,8 +8092,8 @@
   species_title: Red Campion
   base: Red-Campion
   title: Red Campion
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Campion.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Campion.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Campion.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8120,8 +8120,8 @@
   species_title: Red Deadnettle
   base: Red-DeadNettle
   title: Red Deadnettle
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-DeadNettle.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-DeadNettle.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-DeadNettle.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8134,8 +8134,8 @@
   species_title: Red Water Lily
   base: Red-Water-Lily
   title: Red Water Lily
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Water-Lily.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Water-Lily.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Red-Water-Lily.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8162,8 +8162,8 @@
   species_title: Snakeshead Fritillary
   base: SnakesHead-Fritillary
   title: Snakeshead Fritillary
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/SnakesHead-Fritillary.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/SnakesHead-Fritillary.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/SnakesHead-Fritillary.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8190,8 +8190,8 @@
   species_title: Southern Marsh Orchid
   base: Southern-Marsh-Orchid
   title: Southern Marsh Orchid
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Southern-Marsh-Orchid.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Southern-Marsh-Orchid.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Southern-Marsh-Orchid.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8260,8 +8260,8 @@
   species_title: White Clover
   base: White-Clover
   title: White Clover
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Clover.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Clover.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Clover.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8274,8 +8274,8 @@
   species_title: White Water Lilly
   base: White-Water-Lilly
   title: White Water Lilly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Water-Lilly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Water-Lilly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/White-Water-Lilly.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8288,8 +8288,8 @@
   species_title: Yellow Flag Iris
   base: Yellow-Flag-Iris
   title: Yellow Flag Iris
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Flag-Iris.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Flag-Iris.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Flag-Iris.xlsx
 - report_type: trend
   report_type_title: Trend
   country: United-Kingdom
@@ -8302,5 +8302,5 @@
   species_title: Yellow Water Lilly
   base: Yellow-Water-Lilly
   title: Yellow Water Lilly
-  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Water-Lilly.xlsx
   png_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Water-Lilly.png
+  xlsx_path: /wildlife/reports/United-Kingdom/trend/Thrupp-Lake/Flora/Yellow-Water-Lilly.xlsx
