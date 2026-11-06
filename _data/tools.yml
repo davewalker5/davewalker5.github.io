@@ -83,3 +83,7 @@
   category: tools
   description: Detect, segment and track fish in underwater video using computer vision and AI
   link: https://github.com/davewalker5/FishTrack
+- title: ReefTag
+  category: tools
+  description: Identify, annotate and catalogue marine wildlife in underwater photographs
+  link: https://github.com/davewalker5/ReefTag
