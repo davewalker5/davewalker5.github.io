@@ -33,6 +33,7 @@ Big-eye Emperor,Monotaxis grandoculis,Fish
 Bindweed,,Flora
 Black Garden Ant,Lasius niger,Ants
 Black Grouse,Lyrurus tetrix,Birds
+Black Pyramid Butterflyfish,Hemitaurichthys zoster,Fish
 Black Tailed Skimmer Dragonfly,Orthetrum cancellatum,Dragonflies
 Black-And-White Colobus Monkey,Colobus guereza,Primates
 Black-Backed Jackal,Lupulella mesomelas,Dog Family
@@ -56,6 +57,7 @@ Broad-Bodied Chaser,Libellula depressa,Dragonflies
 Brown Hawker Dragonfly,Aeshna grandis,Dragonflies
 Brown Rat,Brown Rat,Rodents
 Buddleia,Buddleja ,Shrubs
+Buff Chromis,Chromis xutha,Fish
 Buff-Tailed Bumblebee,Bombus terrestris,Bees
 Bugle,Ajuga reptans,Flora
 Bullfinch,Pyrrhula pyrrhula,Birds
@@ -192,6 +194,7 @@ Fallow Deer,Dama dama,Ungulates
 Few-Leaved Hawkweed,Hieracium floribundum,Flora
 Field Grasshopper,Chorthippus brunneus,Grasshoppers
 Fieldfare,Turdus pilaris,Birds
+Fivesaddled Parrotfish,Scarus scaber,Fish
 Flesh Fly,Sarcophagidae,Flies
 Forget-Me-Not,Myosotis arvensis,Flora
 Fork-Tailed Drongo,Dicrurus adsimilis,Birds
@@ -250,6 +253,7 @@ Grey-Capped Social Weaver,Pseudonigrita arnaudi,Birds
 Grey-Headed Kingfisher,Halcyon leucocephala,Birds
 Greylag Goose,Anser anser,Birds
 Grouse,,Birds
+Grrenfinned Parrotfish,Chlorurus sordidus,Fish
 Gull,,Birds
 Hadada Ibis,Bostrychia hagedash,Birds
 Hamerkop,Scopus umbretta,Birds
@@ -296,6 +300,9 @@ Iberian Ibex,Capra pyrenaica,Ungulates
 Ichneumon Wasp,Ichneumonoidea,Wasps
 Indian Almond,Terminalia catappa,Trees
 Indian Flying Fox,Pteropus giganteus,Bats
+Indian Half and Half Chromis,Chromis dimidiata,Fish
+Indian Triggerfish,Melichthys indicus,Fish
+Indo Pacific Sergeant,Abudefduf vaigiensis,Fish
 Ivy,Hedera,Flora
 Jacaranda,Jacaranda mimosifolia,Trees
 Jackdaw,Coloeus monedula,Birds
@@ -305,6 +312,7 @@ Kentish Plover,Charadrius alexandrinus,Birds
 Kigelia Africana,Kigelia Africana,Trees
 Kingfisher,Alcedo atthis,Birds
 Kirk's Dik-dik ,Madoqua kirkii,Ungulates
+Kleins Butterflyfish,Chaetodon kleinii,Fish
 Kori Bustard,Ardeotis kori,Birds
 Lady's Smock,Cardamine pratensis,Flora
 Ladybird,,Beetles
@@ -334,6 +342,7 @@ Long-Tailed Tit,Aegithalos caudatus,Birds
 Madagascar Fody,Foudia madagascariensis,Birds
 Madagascar Turtle Dove,Nesoenas picturatus,Birds
 Magpie,Pica pica,Birds
+Maldives anemonefish,Amphriprion nigripes,Fish
 Mallard,Anas platyrhynchos,Birds
 Mandarin Duck,Aix galericulata,Birds
 Mangrove Crab,Cardisoma carnifex,Marine Invertebrates
@@ -388,6 +397,7 @@ Painted Lady Butterfly,Vanessa cardui,Butterflies
 Palm Moth,Paysandisia archon,Moths
 Palm-Nut Vulture,Gypohierax angolensis,Birds
 Peacock Butterfly,Aglais io,Butterflies
+Peacock Rockcod,Cephalopholis argus,Fish
 Peregrine Falcon,Falco peregrinus,Birds
 Periwinkle,Vinca major,Flora
 Pheasant,Phasianus colchicus,Birds
@@ -433,11 +443,13 @@ Red-Legged Orb-Weaver,Trichonephila inaurata,Arachnids
 Red-Legged Partridge,Alectoris rufa,Birds
 Red-Tailed Bumblebee,Bombus Lapidarius,Bees
 Redfin Emperor,Monotaxis heterodon,Fish
+Redfinned Butterflyfish,Chaetodon trifasciatus,Fish
 Redpoll,Acanthis flammea,Birds
 Redwing,Turdus iliacus,Birds
 Reed Bunting,Emberiza schoeniclus,Birds
 Reed Warbler,Acrocephalus scirpaceus,Birds
 Reef Manta Ray,Mobula alfredi,Fish
+Regal Angelfish,Pygoplites diacanthus,Fish
 Ring-Necked Dove,Streptopelia capicola,Birds
 Ring-Necked Parakeet,Psittacula krameri,Birds
 Ringlet Butterfly,Aphantopus hyperantus,Butterflies
@@ -447,12 +459,14 @@ Roe Deer,Capreolus capreolus,Ungulates
 Rook,Corvus frugilegus,Birds
 Rose-Ringed Parakeet,Psittacula krameri,Birds
 Rosebay Willowherb,Chamaenerion angustifolium,Flora
+Roundheaded Parrotfish,Chlorurus strongylocephalus,Fish
 Rowan,Sorbus aucuparia,Trees
 Ruby Tiger Moth,Ryszard Szczygieł,Moths
 Ruddy Duck,Oxyura jamaicensis,Birds
 Rüppell's Starling,Lamprotornis purpuroptera,Birds
 Rüppell's Vulture,Gyps rueppelli,Birds
 Sacred Ibis,Threskiornis aethiopicus,Birds
+Saddleback Butterflyfish,Chaetodon falcula,Fish
 Safari Ant,Vespa helvola,Ants
 Sanderling,Calidris alba,Birds
 Sandwich Tern,Thalasseus sandvicensis,Birds
@@ -486,8 +500,10 @@ Silver Y Moth,Autographa gamma,Moths
 Siskin,Spinus spinus,Birds
 Sixbarred Wrasse,Thalassoma hardwicke,Fish
 Skylark,Alauda arvensis,Birds
+Slender Fusilier,Gymnocaesio gymnoptera,Fish
 Sloe,Prunus spinosa,Shrubs
 Small Copper Butterfly,Lycaena phlaeas,Butterflies
+Small Giant Clam,Tridacna maxima,Molluscs
 Small Grass Yellow Butterfly,Eurema Floricola,Butterflies
 Small Heath Butterfly,Coenonympha pamphilus,Butterflies
 Small Red Damsel Fly,Ceriagrion tenellum,Damselflies
@@ -519,6 +535,7 @@ Star Of Bethlehem,Ornithogalum umbellatum,Flora
 Stonechat,Saxicola rubicola,Birds
 Street Pigeon,Columba livia,Birds
 Striated Heron,Butorides striata,Birds
+Striped Large-Eye Bream,Gnathodentex aureolineatus,Fish
 Sun Spurge,Euphorbia helioscopia,Flora
 Sundbergs Day Gecko,Phelsuma sundbergi,Reptiles
 Superb Starling,Lamprotornis superbus,Birds
@@ -542,6 +559,7 @@ Termite,Macrotermes,Ants
 Terrapin,,Reptiles
 Thomson's Gazelle,Eudorcas thomsonii,Ungulates
 Threadfinned Butterflyfish,Chaetodon auriga,Fish
+Threespotted Humbug,Dascyllus trimaculatus,Fish
 Thrift,Armeria maritima,Flora
 Thrip,,Insects
 Thrush,Turdus philomelos,Birds
@@ -587,6 +605,7 @@ White-Fronted Bee Eater,Merops bullockoides,Birds
 White-Headed Vulture,Trigonoceps occipitalis,Birds
 White-Tailed Bumblebee,Bombus Lucorum,Bees
 White-Thorned Acacia,Vachellia constricta,Trees
+Whitelined Rockcod,Anyperodon leucogrammicus,Fish
 Whitespotted Eagle Ray,Aetobatus ocellatus,Fish
 Whitethroat,Curruca communis,Birds
 Whitish Nassa,Nassarius albescens,Molluscs
