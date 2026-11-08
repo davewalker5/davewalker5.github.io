@@ -41,6 +41,7 @@ Black-Crowned Crane,Balearica pavonina,Birds
 Black-Headed Gull,Chroicocephalus ridibundus,Birds
 Black-Headed Heron,Ardea melanocephala,Birds
 Blackbird,Turdus merula,Birds
+Blackblotched Porcupinefish,Diodon liturosus,Fish
 Blackcap,Sylvia atricapilla,Birds
 Blackthorn,Prunus spinosa,Trees
 Blacktip Reef Shark,Carcharhinus melanopterus,Fish
@@ -48,6 +49,7 @@ Blue Tit,Cyanistes caeruleus,Birds
 Bluebell,Hyacinthoides non-scripta,Flora
 Bluefin Trevally,Caranx melampygus,Fish
 Bluegreen Chromis,Chromis viridis,Fish
+Bluelined Surgeonfish,Acanthurus lineatus,Fish
 Bojer's Skink,Gongylomorphus bojerii,Reptiles
 Bramble,Rubus fruticosus,Flora
 Bridled Parrotfish,Scarus frenatus,Fish
@@ -179,6 +181,7 @@ Eider,Somateria mollissima,Birds
 Eland,Taurotragus oryx,Ungulates
 Elder,Sambucus nigra,Trees
 Elecampane,Inula helenium,Flora
+Elegant Unicornfish,Naso elegans,Fish
 Eleonora's Falcon,Falco eleonorae,Birds
 Elephant Hawk Moth,Deilephila elpenor,Moths
 Emerald Damselfly,Lestes sponsa,Damselflies
@@ -188,6 +191,7 @@ European Badger,Meles meles,Mammals
 European Firebug,Pyrrhocoris apterus,Insects
 European Hornet,Vespa crabro,Wasps
 European Weasel,Mustela nivalis,Mammals
+Eyelined Surgeonfish,Acanthurus nigricauda,Fish
 Fairy Tern,Gygis alba,Birds
 Fairy-Ring Champignon,Marasmius oreades,Fungi
 Fallow Deer,Dama dama,Ungulates
@@ -243,7 +247,9 @@ Green Sandpiper,Tringa ochropus,Birds
 Green Shield Bug,Palomena prasina,Insects
 Green Woodpecker,Picus viridis,Birds
 Green-Veined White Butterfly,Pieris napi,Butterflies
+Greencheeked Parrotfish,Scarus prasiognathus,Fish
 Greenfinch,Chloris chloris,Birds
+Greenfinned Parrotfish,Chlorurus sordidus,Fish
 Grey Crowned Crane,Balearica regulorum,Birds
 Grey Heron,Ardea cinerea,Birds
 Grey Seal,Halichoerus grypus,Mammals
@@ -253,7 +259,6 @@ Grey-Capped Social Weaver,Pseudonigrita arnaudi,Birds
 Grey-Headed Kingfisher,Halcyon leucocephala,Birds
 Greylag Goose,Anser anser,Birds
 Grouse,,Birds
-Grrenfinned Parrotfish,Chlorurus sordidus,Fish
 Gull,,Birds
 Hadada Ibis,Bostrychia hagedash,Birds
 Hamerkop,Scopus umbretta,Birds
@@ -301,6 +306,8 @@ Ichneumon Wasp,Ichneumonoidea,Wasps
 Indian Almond,Terminalia catappa,Trees
 Indian Flying Fox,Pteropus giganteus,Bats
 Indian Half and Half Chromis,Chromis dimidiata,Fish
+Indian Ocean Mimic Surgeonfish,Acanthurus tristis,Fish
+Indian Sailfinned Tang,Zebrasoma desjardinii,Fish
 Indian Triggerfish,Melichthys indicus,Fish
 Indo Pacific Sergeant,Abudefduf vaigiensis,Fish
 Ivy,Hedera,Flora
@@ -363,6 +370,7 @@ Meadow Grasshopper,Pseudochorthippus parallelus,Grasshoppers
 Meadow Pipit,Anthus pratensis,Birds
 Merganser,Mergus merganser,Birds
 Merlin,Falco columbarius,Birds
+Meyers Butterflyfish,Chaetodon meyeri,Fish
 Michaelmas Daisy,Aster amellus,Flora
 Milkfish,Chanos chanos,Fish
 Mistle Thrush,Turdus viscivorus,Birds
@@ -380,7 +388,6 @@ Nettle,Urtica dioica,Flora
 Nile Crocodile,Crocodylus niloticus,Reptiles
 Nile Monitor Lizard,Varanus niloticus,Reptiles
 Nubian Vulture,Neophron percnopterus,Birds
-Nurse Shark,Nebrius ferrugineus,Fish
 Nuthatch,Sitta europaea,Birds
 Oak Bush Cricket,Meconema thalassinum,Grasshoppers
 Onespotted Snapper,Lutjanus monostigma,Fish
@@ -394,6 +401,7 @@ Oxford Ragwort,Senecio squalidus,Flora
 Oxpecker,Buphagus,Birds
 Oystercatcher,Haematopus ostralegus,Birds
 Painted Lady Butterfly,Vanessa cardui,Butterflies
+Palelipped Surgeonfish,Acanthurus leucocheilus,Fish
 Palm Moth,Paysandisia archon,Moths
 Palm-Nut Vulture,Gypohierax angolensis,Birds
 Peacock Butterfly,Aglais io,Butterflies
@@ -551,6 +559,7 @@ Tailless Tenrec,Tenrec ecaudatus,Mammals
 Tall Coconut,Cocos nucifera,Trees
 Tamarind,Tamarindus indica,Trees
 Tawny Eagle,Aquila rapax,Birds
+Tawny Nurse Shark,Nebrius ferrugineus,Fish
 Tawny Owl,Strix aluco,Birds
 Teal,Anas crecca,Birds
 Teasel,Dipsacus fullonum,Flora
