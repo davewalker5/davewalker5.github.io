@@ -91,9 +91,15 @@ The video captures something of that experience. The manta's movement is continu
         Flying through water — a reef manta ray moves gracefully through the plankton-rich waters off Moofushi, its  pectoral fins rising and falling in a fluid, seemingly effortless rhythm
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
-      </span>
-    </figcaption>
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
+        </span>
+      <figcaption>
   </figure>
 </div>
 

@@ -83,7 +83,7 @@ The encounter was organised through Blue Tribe. Once in the water, the sharks' m
                 CC BY 4.0
               </a>
             )
-        </span>
+      </span>
     </figcaption>
   </figure>
 </div>

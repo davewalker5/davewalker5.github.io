@@ -46,6 +46,13 @@ images:
     credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
+fish_composition_chart:
+  name: "fish-observational-composition.png"
+  alt: "Fish observational composition derived from identifications in the snorkelling footage. The chart describes the composition of the recorded observations rather than the relative abundance of fish living on the reef"
+  caption: "Fish observational composition derived from identifications in the snorkelling footage. The chart describes the composition of the recorded observations rather than the relative abundance of fish living on the reef"
+  credit: "David Walker, Field Notes Journal"
+  license: "CC BY 4.0"
+  license_link: "https://creativecommons.org/licenses/by/4.0"
 ---
 
 We returned to the reef just off the beaches repeatedly during our stay at Moofushi. That repetition was important. A single snorkel reveals plenty, but successive visits begin to expose patterns, differences and unfamiliar faces.
@@ -62,21 +69,21 @@ Much of the bottom is a complicated mixture of living coral, old coral skeletons
 
 At first glance, some areas can appear relatively unremarkable, particularly where pale coral rubble dominates the scene. But stay a little longer and the apparent emptiness begins to disappear. Small fish emerge from crevices, larger ones move across the bottom, and others seem to materialise from the background as they swim between coral heads.
 
-The complexity of the physical environment is part of what makes a reef such a productive habitat. Every overhang, crevice and change in surface creates opportunities for something to live, feed or shelter there. Even the conditions change from day to day. On 21<sup>st</sup> October the tide was high and the sea choppy, with visibility unsuitable for the snorkelling we'd intended. On 22<sup>nd</sup> October we were back exploring on the Totem Bar side.
+The complexity of the physical environment is part of what makes a reef such a productive habitat. Every overhang, crevice and change in surface creates opportunities for something to live, feed or shelter there. Even the conditions change from day to day - on 21<sup>st</sup> October the tide was high and the sea choppy, with visibility unsuitable for the snorkelling we'd intended but on 22<sup>nd</sup> October we were back exploring on the Totem Bar side.
 
 That's part of the experience - the ocean doesn't adjust itself to our timetable. You pay attention to conditions, choose where and when to enter, and accept that sometimes the best decision is to stay ashore.
 
 ## A Community of Remarkable Diversity
 
-My sightings diary accumulated names almost faster than I could organise them - titan triggerfish, longnose parrotfish, surgeonfish, convict surgeonfish, fringelip mullet, milkfish, bluespotted cornetfish and others. Some were immediately recognisable. Others needed photographs, video frames and considerably more patient identification work afterwards for which the GoPro footage has become an enormously useful field notebook in its own right.
+My sightings diary accumulated names almost faster than I could organise them - titan triggerfish, bridled parrotfish, surgeonfish, convict surgeonfish, fringelip mullet, smooth flutemouth and others. Some were immediately recognisable. Others needed photographs, video frames and considerably more patient identification work afterwards for which the GoPro footage was to become an enormously useful field notebook in its own right.
 
-One of the pleasures of the reef is the enormous variety of shapes and colours. Some fish are streamlined and built for sustained swimming; others are deep-bodied and manoeuvrable, apparently comfortable negotiating the complicated contours of the coral.
+One of the pleasures of the reef is the enormous variety of shapes and colours. Some fish are streamlined and built for sustained swimming while others are deep-bodied and manoeuvrable, apparently comfortable negotiating the complicated contours of the coral.
 
-Their colours are extraordinary. The intense blue and yellow of a powderblue surgeonfish seems almost improbable against the comparatively subdued colours of the reef, while the black, white and yellow patterning of a Moorish idol is unmistakable.
+Their colours are extraordinary - the intense blue and yellow of a powderblue surgeonfish seems almost improbable against the comparatively subdued colours of the reef, while the black, white and yellow patterning of a Moorish idol is unmistakable.
 
 Yet those colours and shapes are only part of the story. What becomes increasingly interesting is how differently these animals go about their lives.
 
-## The Grazers: Tending the Reef
+## The Grazers - Tending the Reef
 
 Among the most conspicuous inhabitants were the surgeonfish and parrotfish. The powderblue surgeonfish, *Acanthurus leucosternon*, is particularly striking. Its vivid blue body, yellow dorsal region and contrasting black-and-white markings make it one of the most instantly recognisable fish on the reef. We encountered them repeatedly, sometimes individually and sometimes in small groups, moving among the coral formations.
 
@@ -84,9 +91,7 @@ Surgeonfish are important members of the reef's grazing community. Many species 
 
 Parrotfish perform a related but rather different role. Their distinctive teeth are fused into beak-like structures, enabling many species to scrape or excavate food from hard reef surfaces. Some remove small quantities of the underlying calcium carbonate material along with their food. The consequences extend beyond the individual fish. Grazing can help prevent algae from dominating available surfaces, while the scraping and excavation carried out by some parrotfish contribute to the gradual production of fine carbonate sediment.
 
-It's a fascinating example of how an apparently ordinary activity — a fish feeding — can become part of the larger processes shaping a coral reef.
-
-And it changes the way I look at them. A parrotfish moving slowly over the bottom isn't simply another colourful resident. It is participating in the continual biological and physical activity of the reef itself.
+It's a fascinating example of how an apparently ordinary activity — a fish feeding — can become part of the larger processes shaping a coral reef. A parrotfish moving slowly over the bottom isn't simply another colourful resident but is participating in the continual biological and physical activity of the reef itself.
 
 ## The Unmistakable Moorish Idol
 
@@ -103,7 +108,13 @@ And it changes the way I look at them. A parrotfish moving slowly over the botto
         Moorish idols (Zanclus cornutus) weaving between coral heads on Moofushi's house reef. Their distinctive shape and trailing dorsal filaments are particularly elegant in motion
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>
@@ -111,11 +122,11 @@ And it changes the way I look at them. A parrotfish moving slowly over the botto
 
 Few reef fish are more distinctive than the Moorish idol, *Zanclus cornutus*. Its sharply contrasting bands of black, white and yellow, elongated snout and extraordinary trailing dorsal filament make it a remarkable sight. There's a certain elegance to its shape that distinguishes it immediately from the more conventional outlines of many other reef fish. We were fortunate enough to encounter several together, moving among the coral formations.
 
-Moorish idols feed on a variety of benthic organisms, including sponges and other attached invertebrates, and their relatively narrow snouts allow them to investigate food sources around the uneven surfaces of the reef.
+Moorish idols feed on algae and a variety of bottom-living organisms, including sponges and other attached invertebrates, and their relatively narrow snouts allow them to investigate food sources around the uneven surfaces of the reef.
 
 Watching them is a reminder that a coral reef is not just a place where fish happen to live. Its physical structure and the organisms growing upon it help determine how those fish feed and behave. The Moorish idol has become one of my favourite reef fish, partly because of its spectacular appearance, but also because its rather deliberate movements make it such a pleasure to watch.
 
-## The Character of the Triggerfish
+## The Formidable Triggerfish
 
 <div class="blog-image-grid blog-image-grid--1-col no-print">
   <figure>
@@ -130,17 +141,23 @@ Watching them is a reminder that a coral reef is not just a place where fish hap
        A titan triggerfish (Balistoides viridescens) moving over a sandy stretch of reef among other fish, using its dorsal and anal fins to manoeuvre with surprising precision
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>
 </div>
 
-Another memorable inhabitant was the titan triggerfish, *Balistoides viridescens*. This is a rather different proposition from the Moorish idol. Large, robust and powerfully built, the titan triggerfish has a distinctly purposeful appearance.
+Another memorable inhabitant was the titan triggerfish, *Balistoides viridescens*. This is a rather different proposition from the Moorish idol - large, robust and powerfully built, it has a distinctly purposeful appearance!
 
 Triggerfish are remarkable swimmers, using their dorsal and anal fins to manoeuvre with surprising precision. Unlike fish that rely primarily on their tails for propulsion, they can make quite subtle adjustments in position while investigating the reef.
 
-Titan triggerfish feed on a variety of bottom-dwelling invertebrates, including hard-shelled prey, and their powerful jaws and teeth are well suited to the task. They also have a reputation for vigorous territorial defence during nesting. An adult guarding its nest can be remarkably determined in discouraging potential intruders, including snorkellers and divers.
+Titan triggerfish feed on a variety of bottom-dwelling invertebrates, including hard-shelled prey, and their powerful jaws and teeth are well suited to the task. They also have a reputation for vigorous territorial defence during nesting and an adult guarding its nest can be remarkably determined in discouraging potential intruders, including snorkellers and divers.
 
 It's an interesting reminder that the reef is not simply an attractive underwater landscape provided for our enjoyment. It is the animals' home, and their behaviour is governed by needs and priorities that have nothing to do with our presence.
 
@@ -148,15 +165,21 @@ Watching a large triggerfish moving over the reef, you begin to appreciate just 
 
 ## Different Ways of Making a Living
 
-What strikes me most about these encounters is the diversity not merely of species, but of ecological roles. Some fish graze on algae. Others scrape food from hard surfaces, investigate crevices for invertebrates, sift through sediment or cruise above the reef in search of opportunities. Even species that appear superficially similar may exploit quite different food sources or behave in very different ways.
+One of the most striking things about these encounters is the diversity not merely of species, but of ecological roles. Some fish graze on algae. Others scrape food from hard surfaces, investigate crevices for invertebrates, sift through sediment or cruise above the reef in search of opportunities. Even species that appear superficially similar may exploit quite different food sources or behave in very different ways.
 
-The shape of a fish often provides clues. The beak of a parrotfish, the narrow snout of a Moorish idol and the powerful jaws of a triggerfish all reflect different ways of obtaining food. The reef supports this variety because it offers an extraordinary number of opportunities within a relatively small area. And the fish, in turn, influence the reef. Grazers affect algal growth, predators influence the populations of their prey, and feeding activities can move sediment or disturb the surfaces on which other organisms grow.
+The shape of a fish often provides clues. The beak of a parrotfish, the narrow snout of a Moorish idol and the powerful jaws of a triggerfish all reflect different ways of obtaining food. The reef supports this variety because it offers an extraordinary number of opportunities within a relatively small area. The fish, in turn, influence the reef with grazers affecting algal growth, predators influencing the populations of their prey, and feeding activities moving sediment or disturbing the surfaces on which other organisms grow.
 
-Rather than a collection of individual species occupying the same place, the reef begins to look like a community of organisms whose lives are connected in countless ways.
+Rather than a collection of individual species occupying the same place, the reef is a community of organisms whose lives are connected in countless ways. This is perhaps the greatest change that comes with repeated observation. The pleasure gradually shifts from *seeing lots of fish* to *recognising something about the lives of individual kinds of fish*.
 
-This is perhaps the greatest change that comes with repeated observation. The pleasure gradually shifts from *seeing lots of fish* to *recognising something about the lives of individual kinds of fish*.
+## More Than the Spectacular Encounters
 
-## Learning to Look
+It would be easy to remember Moofushi's underwater world primarily through its most spectacular inhabitants. The hawksbill turtles, reef mantas and sharks were extraordinary encounters each deserveing its own account but the reef is much more than its largest or most charismatic animals.
+
+The surgeonfish working over the reef, the Moorish idols weaving between coral heads, the parrotfish going about their feeding and the triggerfish investigating the bottom are all part of the community that makes the reef what it is. They are also far more accessible to repeated observation. One may spend an entire holiday hoping for an encounter with a manta ray, but a few minutes over the reef can reveal a dozen smaller stories worth paying attention to.
+
+Those smaller stories matter as the health and resilience of a coral reef depend upon a complicated web of interactions involving organisms of every size, from microscopic life to large predators. Watching the everyday residents makes that complexity a little easier to appreciate.
+
+## Revisiting the Experience
 
 <div class="blog-image-grid blog-image-grid--1-col no-print">
   <figure>
@@ -171,35 +194,54 @@ This is perhaps the greatest change that comes with repeated observation. The pl
        A powderblue surgeonfish (Acanthurus leucosternon) swimming over Moofushi's shallow reef, its brilliant blue and yellow colouring standing out against the pale coral and rubble
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>
 </div>
 
-Photography adds another layer to the experience, as well as a few frustrations. Movement, light and suspended particles complicate matters. Colours change with depth and illumination, and footage that looks vivid to the eye can appear rather different when reviewed on a computer.
+Photography adds another layer to the experience, as well as a few frustrations - movement, light and suspended particles complicate matters, colours change with depth and illumination, and footage that looks vivid to the eye can appear rather different when reviewed on a computer.
 
-An animal that seemed perfectly clear through a mask may turn out to be little more than a fleeting silhouette in the recording. Conversely, a fish barely noticed at the time may prove surprisingly interesting when the footage is examined more carefully and the camera also makes it possible to revisit encounters that would otherwise exist only as memories.
+An animal that seemed perfectly clear through a mask may turn out to be little more than a fleeting silhouette in the recording and, conversely, a fish barely noticed at the time may prove surprisingly interesting when the footage is examined more carefully.
 
-A particular marking might distinguish two similar species. A short sequence may reveal how a fish uses its fins to manoeuvre, how it approaches the reef, or how it interacts with other animals.
+The camera makes it possible to revisit encounters that would otherwise exist only as memories and, as it turned out, revisiting those encounters became an absorbing activity in its own right. Our snorkelling trips had accumulated a substantial archive - some 50 Gb - of GoPro recordings so after our return home I developed two applications to help make better use of it:
 
-There is, though, an important distinction between collecting images and actually observing. A photograph records an instant; watching an animal for a little longer can reveal a pattern of behaviour that the photograph alone cannot convey.
+- _ReefFrame_ provides tools for enhancing the footage and extracting still images at particular points
+- _ReefTag_ allows those images to be examined, individual animals identified and the resulting observations recorded in a structured form
 
-The videos have become particularly valuable in this respect. They preserve something of the movement, activity and relationships that make the reef such a fascinating place.
+Working through the footage to extract images for identification and then examining those stills in _ReefTag_ was rather like exploring the reef for a second time, but at a very different pace. Underwater, everything is moving - fish appear, disappear, turn away or vanish behind coral sometimes almost as soon as you notice them. There is only so much one can take in while swimming, keeping an eye on the surroundings and occasionally remembering to point the camera in the right direction!
 
-## More Than the Spectacular Encounters
+Back at the computer, the pace is entirely different. A single image might contain several recognisable species, sometimes including individuals I'd scarcely noticed during the original encounter. What initially appeared to be an unremarkable background could reveal small fish among the coral, animals occupying different parts of the reef, or subtle differences between individuals that had seemed much alike underwater.
 
-It would be easy to remember Moofushi's underwater world primarily through its most spectacular inhabitants. The hawksbill turtles, reef mantas and sharks were extraordinary encounters, and each deserves its own account but the reef is much more than its largest or most charismatic animals.
+Identification became an exercise in careful observation looking for particular clues that might distinguish two similar species - a particular marking, the shape of a fin, the position of a stripe or the proportions of a body. Sometimes identification was straightforward - it's hardly possible to mistake the vivid blue of the _Powderblue Surgeonfish (Acanthurus leucosternon)_, for example - but sometimes it required comparison with reference material and sometimes the evidence simply wasn't sufficient to reach a confident conclusion.
 
-The surgeonfish working over the reef, the Moorish idols weaving between coral heads, the parrotfish going about their feeding and the triggerfish investigating the bottom are all part of the community that makes the reef what it is. They are also far more accessible to repeated observation. One may spend an entire holiday hoping for an encounter with a manta ray, but a few minutes over the reef can reveal a dozen smaller stories worth paying attention to.
+There was considerable satisfaction in gradually resolving those uncertainties where the footage allowed, but perhaps the most interesting discovery was how much had been present in the recordings without having been registered consciously at the time. The reef was revealing more of itself long after we'd left the water.
 
-And those smaller stories matter. The health and resilience of a coral reef depend upon a complicated web of interactions involving organisms of every size, from microscopic life to large predators. Watching the everyday residents makes that complexity a little easier to appreciate.
+## The Larger Picture
 
-## The Privilege of Returning
+As I examined the images and identifications accumulated, a picture of the composition of the fish community represented in the recordings began to emerge as the observations were brought together and analysed, rather than remaining a collection of isolated photographs and remembered encounters. The resulting fish observational composition chart offers one way of looking at that accumulated evidence:
 
-By the end of our stay, I had accumulated a substantial archive of photographs and video, along with the usual mixture of firm identifications, plausible guesses and unresolved mysteries and with every visit, the underwater landscape became a little less anonymous. Particular kinds of fish became recognisable, familiar patterns of movement began to stand out, and places that had seemed relatively uninteresting revealed unexpected activity.
+{% include fullwidth-image.html assets=page.assets img=page.fish_composition_chart %}
 
-Of course, a fortnight is barely an introduction to such a complicated ecosystem. There is vastly more taking place than any casual observer can hope to recognise, let alone understand. But that's part of the attraction. The reef isn't a checklist to finish, nor a collection of photographs waiting to be taken. It is a living community to which one can return again and again, and still discover something new.
+An important qualification is that these are _observations_, not the results of a systematic population survey. We swam where we chose, the camera recorded what happened to pass before it, the images selected for examination influence what can be identified, and a large shoal of fish may contribute many more identifications than an encounter with a solitary individual.
+
+Nevertheless, the chart provides an interesting perspective on the diversity encountered during our visits as the succession of colourful, sometimes rather chaotic encounters from the videos had become a collection of identifiable observations from which broader patterns could be examined.
+
+The process also reinforced the point that the most conspicuous animals are not necessarily the whole story as a recording dominated by a large or particularly colourful fish may contain many smaller animals, each contributing another detail to the picture of life on the reef.
+
+## Only Scratching the Surface
+
+By the end of our stay, we'd developed a growing familiarity with some of the reef's inhabitants - particular kinds of fish had become recognisable, familiar patterns of movement began to stand out, and places that had initially seemed relatively uninteresting revealed unexpected activity. With every visit, the underwater landscape had become a little less anonymous.
+
+Subsequently examining the recordings, identifying species and bringing the observations together revealed details that had escaped my attention at the time and what I remembered as a succession of fascinating encounters gradually became a more detailed picture of the extraordinary community we'd been privileged to explore.
+
+Of course, a fortnight is barely an introduction to such a complicated ecosystem and there is vastly more taking place than a casual observer can hope to observe in that time, but the reef isn't a checklist to finish, or a collection of videos and photographs waiting to be taken. It is a living community, endlessly complicated and constantly changing, to which one can return again and again and still discover something new and, as I've learned, some of those discoveries can continue long after the visit itself.
 
 And beyond the colourful shallows, there's another landscape waiting — where the reef suddenly falls away into deep blue water.
 
