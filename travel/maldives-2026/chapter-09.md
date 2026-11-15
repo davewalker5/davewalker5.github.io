@@ -44,7 +44,13 @@ There is a difference between seeing an animal and watching one. The first can b
         Two encounters with hawksbill turtles (Eretmochelys imbricata) on the reef at Moofushi. In the first, I watched and filmed a turtle feeding without approaching it. In the second, filmed by a member of the dive crew, another turtle was not feeding and appeared attentive to the snorkellers and divers nearby.
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>

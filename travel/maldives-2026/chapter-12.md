@@ -85,7 +85,13 @@ And, of course, the recording preserves a little of the experience for a time wh
         Spinner dolphins surfacing and travelling together in the waters around South Ari Atoll. The footage captures the rhythm of an encounter that still photographs can only hint at
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>

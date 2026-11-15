@@ -86,7 +86,13 @@ And unlike the experience of travelling aboard a large commercial airliner, the 
         A Twin Otter accelerates across the water before lifting clear of the lagoon, watched from the beach at Moofushi. A familiar sight and sound, and an unmistakable part of island life in the Maldives
       </span>
       <span class="credit">
-        Footage: David Walker and a member of the dive crew
+          David Walker, Field Notes Journal
+            (
+            
+              <a href="https://creativecommons.org/licenses/by/4.0" rel="license noopener" target="_blank">
+                CC BY 4.0
+              </a>
+            )
       </span>
     </figcaption>
   </figure>
