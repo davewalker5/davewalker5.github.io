@@ -88,7 +88,7 @@ The encounter was organised through Blue Tribe. Once in the water, the sharks' m
   </figure>
 </div>
 
-The animals were identified to us as nurse sharks, *Ginglymostoma cirratum*, and alongside them were large rays, identified from our observations and imagery as pink whiprays, *Pateobatis fai*.
+The animals were identified to us as tawny nurse sharks, *Nebrius ferrugineus*, and alongside them were large rays, identified from our observations and imagery as pink whiprays, *Pateobatis fai*.
 
 ## Two Very Different Designs
 
