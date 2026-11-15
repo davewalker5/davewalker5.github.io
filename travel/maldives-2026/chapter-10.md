@@ -67,7 +67,7 @@ The encounter was organised through Blue Tribe. Once in the water, the sharks' m
   <figure>
     <div id="video-wrap" class="report-image-wrap">
       <video id="recording-video" class="responsive" controls preload="metadata">
-        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-002.mp4" type="video/mp4" />
+        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-016.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
