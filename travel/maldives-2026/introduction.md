@@ -57,7 +57,7 @@ Over the course of our stay we watched hawksbill turtles feeding, encountered re
 
 Even the island itself had changed since our previous visit. Sand had shifted, shorelines had altered, and some former water villas had effectively become sand villas. It was a reminder that this seemingly tranquil place is part of a much larger, dynamic system.
 
-## What This Is
+## About This Journal
 
 Unlike my account of our Tanzanian safari, these chapters do not follow the holiday one day at a time. In Tanzania, we moved through very different landscapes, and the sequence of days was a natural way to tell the story. On Moofushi, we were based in one place, returning repeatedly to the same beaches and familiar corners of the island and to the reefs surrounding it and further afield within the South Ari Atoll.
 
