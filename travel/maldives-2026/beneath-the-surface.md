@@ -14,7 +14,7 @@ _Beneath the Surface_ brings together selected sequences from those recordings i
 
 Rather than presenting a catalogue of individual species, the film attempts to convey something of the experience of exploring the reef - its extraordinary diversity, the movement of its inhabitants and the occasional privilege of encountering some of the ocean's larger animals at close quarters.
 
-The film combines our underwater GoPro recordings with aerial footage of the Tawny Nurse Sharks, __, accompanied by a gentle ambient soundtrack.
+The film combines our underwater GoPro recordings with aerial footage of the Tawny Nurse Sharks, _Nebrius ferrugineus_, accompanied by a gentle ambient soundtrack.
 
 ## About the Film
 
