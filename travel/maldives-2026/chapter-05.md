@@ -99,7 +99,7 @@ It's a fascinating example of how an apparently ordinary activity — a fish fee
   <figure>
     <div id="video-wrap" class="report-image-wrap">
       <video id="recording-video" class="responsive" controls preload="metadata">
-        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-009.mp4" type="video/mp4" />
+        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-019.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -132,7 +132,7 @@ Watching them is a reminder that a coral reef is not just a place where fish hap
   <figure>
     <div id="video-wrap" class="report-image-wrap">
       <video id="recording-video" class="responsive" controls preload="metadata">
-        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-007.mp4" type="video/mp4" />
+        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-020.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
@@ -185,7 +185,7 @@ Those smaller stories matter as the health and resilience of a coral reef depend
   <figure>
     <div id="video-wrap" class="report-image-wrap">
       <video id="recording-video" class="responsive" controls preload="metadata">
-        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-008.mp4" type="video/mp4" />
+        <source id="recording-source" src="{{ site.assets_url }}/recordings/movies/OC-V-26-032.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
     </div>
