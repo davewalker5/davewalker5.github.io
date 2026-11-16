@@ -8,25 +8,15 @@ series: "Maldives 2026"
 
 # Beneath the Surface
 
-During our October 2026 visit to Constance Moofushi in the Maldives, our snorkelling excursions gave us the opportunity to explore the extraordinary marine life of South Ari Atoll. We returned with 50 Gb of GoPro movies amounting to hours of underwater footage recording reefscapes, colourful shoals of fish, individual encounters with reef species and some particularly memorable moments with turtles, manta rays and tawny nurse sharks.
+The snorkelling excursions during our October 2026 visit to Constance Moofushi in the Maldives gave us the opportunity to explore the extraordinary marine life of South Ari Atoll and we returned with some 50 Gb of GoPro videos recording reefscapes, colourful shoals of fish, individual encounters with reef species and some particularly memorable moments with turtles, manta rays and tawny nurse sharks.
 
 _Beneath the Surface_ brings together selected sequences from those recordings into a short film.
 
-Rather than presenting a catalogue of individual species, the film attempts to convey something of the experience of exploring the reef - its extraordinary diversity, the movement of its inhabitants and the occasional privilege of encountering some of the ocean's larger animals at close quarters.
+Rather than presenting a catalogue of individual species, it attempts to convey something of the experience of exploring the reef - its extraordinary diversity, the movement of its inhabitants and the privilege of encountering some of the ocean's larger animals at close quarters. Our underwater footage is combined with aerial footage of the Tawny Nurse Sharks, _Nebrius ferrugineus_, and is accompanied by a gentle ambient soundtrack.
 
-The film combines our underwater GoPro recordings with aerial footage of the Tawny Nurse Sharks, _Nebrius ferrugineus_, accompanied by a gentle ambient soundtrack.
+The film follows five short sections, beginning with our arrival at Moofushi and a journey from the island into the underwater environment. _Life on the Reef_ explores the reefscapes and their smaller inhabitants, before _Encounters_ introduces turtles and manta rays. The following sequence focuses on tawny nurse sharks, combining aerial and underwater perspectives of these remarkable animals. Finally, the film returns to the reef for a quieter concluding look.
 
-## About the Film
-
-The film follows five short sections, beginning with our arrival at Moofushi and a journey from the island into the underwater environment.
-
-_Life on the Reef_ explores the reefscapes and their smaller inhabitants, before _Encounters_ introduces turtles and manta rays. The following sequence focuses on tawny nurse sharks, combining aerial and underwater perspectives of these remarkable animals. Finally, the film returns to the reef for a quieter concluding look.
-
-The footage was prepared and enhanced using _ReefFrame_ and assembled in _iMovie_. Species identifications draw on the natural-history recording work undertaken following the holiday.
-
-The aim was not to produce a comprehensive survey of the reef, but to preserve and share something of the experience of observing its wildlife.
-
-## The Film
+The aim was not to produce a comprehensive survey of the reef, but to share something of the experience of observing its wildlife.
 
 <div class="blog-image-grid blog-image-grid--1-col no-print">
   <figure>
@@ -53,7 +43,7 @@ The aim was not to produce a comprehensive survey of the reef, but to preserve a
   </figure>
 </div>
 
-## Footage and Music
+## Credits
 
 Underwater footage filmed by Dave and Ruth Walker in the South Ari Atoll, Maldives, October 2026. Licensed under [Creative Commons Attribution 4.0 International (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
 
