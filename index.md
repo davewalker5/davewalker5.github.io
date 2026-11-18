@@ -57,6 +57,8 @@ The emphasis throughout is on understanding rather than simply producing results
 
 If you are visiting for the first time, the [Start Here](/start-here) page provides a guided introduction to the main sections of the site.
 
+{% include a-place-to-return-to-invitation.html %}
+{% include beneath-the-surface-invitation.html %}
 {% include maldives-invitation.html %}
 {% include reef-suite-invitation.html %}
 {% include chromatophore-simulator-invitation.html %}
