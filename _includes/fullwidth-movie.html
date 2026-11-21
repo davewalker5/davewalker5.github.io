@@ -1,0 +1,54 @@
+{% assign movie_url = site.assets_url | append: include.assets | append: include.img.name | relative_url %}
+<div class="fullwidth-image fullwidth-movie no-print">
+  <figure>
+    <video class="responsive"
+           controls
+           preload="metadata"
+           playsinline
+           {% if include.img.poster %}poster="{{ site.assets_url | append: include.assets | append: include.img.poster | relative_url }}"{% endif %}>
+      <source src="{{ movie_url }}" type="{{ include.img.type | default: 'video/mp4' | escape }}">
+      Your browser does not support the video tag.
+      <a href="{{ movie_url }}">Open the movie directly</a>.
+    </video>
+
+    {% if include.img.caption or include.img.duration or include.img.credit %}
+    <figcaption>
+      {% if include.img.caption or include.img.duration %}
+        <span class="caption">
+          {{ include.img.caption }}
+          {% if include.img.duration %}
+            {% if include.img.caption %} Running time: {% else %}Running time: {% endif %}{{ include.img.duration }}
+          {% endif %}
+        </span>
+      {% endif %}
+
+      {% if include.img.credit %}
+        <span class="credit">
+          {{ include.img.credit }}
+          {% if include.img.license %}
+            (
+            {% if include.img.license_link %}
+              <a href="{{ include.img.license_link }}" rel="license noopener" target="_blank">
+                {{ include.img.license }}
+              </a>
+            {% else %}
+              {{ include.img.license }}
+            {% endif %}
+            )
+          {% endif %}
+        </span>
+
+        <span class="credit-meta">
+          {% if include.img.source and include.img.source != "" %}
+            <a href="{{ include.img.source }}" target="_blank" rel="noopener">Source</a> -
+          {% endif %}
+          {% assign credit_lc = include.img.credit | downcase %}
+          {% unless credit_lc contains "field notes journal" %}
+            No changes made
+          {% endunless %}
+        </span>
+      {% endif %}
+    </figcaption>
+    {% endif %}
+  </figure>
+</div>
