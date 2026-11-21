@@ -1,0 +1,13 @@
+series_name: "From Encounter to Evidence"
+chapters:
+  - title: "Introduction"
+    description: "Deriving structured natural-history evidence from recreational underwater footage"
+    url: /wildlife/encounter-to-evidence/introduction.html
+
+  - title: "Processing the Footage"
+    description: "From underwater GoPro footage to images suitable for species identification"
+    url: /wildlife/encounter-to-evidence/processing-the-footage.html
+
+  - title: "Following the Fish"
+    description: "Exploring the detection and tracking of marine animals in underwater footage"
+    url: /wildlife/encounter-to-evidence/following-the-fish.html
