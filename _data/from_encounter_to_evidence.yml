@@ -1,0 +1,25 @@
+series_name: "From Encounter to Evidence"
+chapters:
+  - title: "Introduction"
+    description: "Deriving structured natural-history evidence from recreational underwater footage"
+    url: /wildlife/encounter-to-evidence/introduction.html
+
+  - title: "Processing the Footage"
+    description: "From underwater GoPro footage to images suitable for species identification"
+    url: /wildlife/encounter-to-evidence/processing-the-footage.html
+
+  - title: "Following the Fish"
+    description: "Exploring the detection and tracking of marine animals in underwater footage"
+    url: /wildlife/encounter-to-evidence/following-the-fish.html
+
+  - title: "Building a Catalogue"
+    description: "ReefTag, human identification and the observation catalogue"
+    url: /wildlife/encounter-to-evidence/building-a-catalogue.html
+
+  - title: "Creating Natural History Records"
+    description: "Turning ReefTag identifications into consolidated Nature Recorder sightings"
+    url: /wildlife/encounter-to-evidence/natural-history-records.html
+
+  - title: "Beyond the Encounter"
+    description: "Reflections on the journey from recreational wildlife encounters to structured natural history observations"
+    url: /wildlife/encounter-to-evidence/beyond-the-encounter.html
