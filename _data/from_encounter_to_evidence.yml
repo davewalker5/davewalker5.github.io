@@ -19,3 +19,7 @@ chapters:
   - title: "Creating Natural History Records"
     description: "Turning ReefTag identifications into consolidated Nature Recorder sightings"
     url: /wildlife/encounter-to-evidence/natural-history-records.html
+
+  - title: "Beyond the Encounter"
+    description: "Reflections on the journey from recreational wildlife encounters to structured natural history observations"
+    url: /wildlife/encounter-to-evidence/beyond-the-encounter.html
