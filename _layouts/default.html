@@ -90,6 +90,11 @@
     {% endfor %}
   {% endif %}
 
+  {%- comment -%}
+    RSS/Atom Feed
+  {%- endcomment -%}
+  {% feed_meta %}
+
   <style>
     /*
       Layout fallbacks
