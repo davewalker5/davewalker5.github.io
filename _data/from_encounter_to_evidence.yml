@@ -15,3 +15,7 @@ chapters:
   - title: "Building a Catalogue"
     description: "ReefTag, human identification and the observation catalogue"
     url: /wildlife/encounter-to-evidence/building-a-catalogue.html
+
+  - title: "Creating Natural History Records"
+    description: "Turning ReefTag identifications into consolidated Nature Recorder sightings"
+    url: /wildlife/encounter-to-evidence/natural-history-records.html
