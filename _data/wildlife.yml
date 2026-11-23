@@ -79,6 +79,12 @@
   description: "Exploring how an octopus-inspired simulation uses distributed arm control to turn simple movement rules into coordinated behaviour"
   link: /wildlife/octopus/
 
+- title: "From Encounter to Evidence"
+  category: "projects"
+  type: "Natural history / Citizen science"
+  description: "Turning recreational Maldives wildlife footage into structured, traceable natural-history observations."
+  link: /wildlife/from-encounter-to-evidence/
+
 # --------------------------------------------------------------------------------
 # Reports
 # --------------------------------------------------------------------------------
