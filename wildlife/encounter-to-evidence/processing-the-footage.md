@@ -134,7 +134,7 @@ As a result, for _From Encounter to Evidence_, the purpose of processing is quit
 
 With _ReefFrame_ the footage could now be prepared using repeatable processing operations, and selected moments could be extracted as individual images that could be related back to their source recordings and be inspected closely for the purpose of species identification.
 
-However, an image is not yet a structured natural-history observation:
+However, an image is not yet a structured natural history observation:
 
 - A frame containing several reef fish still needs to be examined
 - Individual animals need to be located within it

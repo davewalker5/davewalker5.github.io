@@ -121,7 +121,7 @@ The same statistics can also be examined separately for each excursion, using th
 
 These figures describe the contents of the catalogue rather than the abundance or distribution of wildlife around Moofushi. In particular, an identification marker represents an annotation associated with an animal visible in an image, not necessarily a distinct individual organism as the same animal may appear in several extracted images, while a single image containing a mixed shoal may generate numerous identifications. Similarly, the species counts represent species identified within the selected photographic material, rather than comprehensive inventories of the locations visited.
 
-The figures are presented here primarily to document the outcome of the _ReefTag_ exercise and although differences between excursions are apparent their interpretation requires consideration of how the individual identifications are consolidated into natural-history observations.
+The figures are presented here primarily to document the outcome of the _ReefTag_ exercise and although differences between excursions are apparent their interpretation requires consideration of how the individual identifications are consolidated into natural history observations.
 
 That is the role of _Nature Recorder_, where the accumulated identifications can be organised into sightings associated with particular species, dates and locations, and examined through appropriate descriptive analysis. The distinction is between cataloguing what can be identified in the images and analysing what those identifications establish about the wildlife encountered.
 

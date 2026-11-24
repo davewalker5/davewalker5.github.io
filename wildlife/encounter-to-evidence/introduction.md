@@ -2,7 +2,7 @@
 layout: default
 title: From Encounter to Evidence
 breadcrumb: From Encounter to Evidence
-description: The story of how recreational underwater footage became structured natural-history evidence
+description: The story of how recreational underwater footage became structured natural history evidence
 series: from_encounter_to_evidence
 chapter: 1
 assets: "/images/encounter-to-evidence/"
@@ -17,7 +17,7 @@ pathway:
 
 # From Encounter to Evidence
 
-In October 2026, a holiday at Constance Moofushi in the Maldives produced something unexpected: Not just memorable encounters with marine wildlife, but the beginnings of a natural-history recording project.
+In October 2026, a holiday at Constance Moofushi in the Maldives produced something unexpected: Not just memorable encounters with marine wildlife, but the beginnings of a natural history recording project.
 
 Four occasions snorkelling with GoPro cameras resulted in approximately 50 Gb of underwater footage recording encounters with sharks, rays, reef fish and many extraordinary moments that deserved another look.
 
@@ -51,7 +51,7 @@ As an experiment in computer vision, _FishTrack_ is not involved in the process 
 
 ### The Nature and Limits of the Evidence
 
-The aim of this study is to examine how far opportunistic recreational recordings can become useful, traceable natural-history observations, while remaining clear about what those observations can - and cannot - establish. The essential principle is that the conclusions drawn from the structured observations derived from the recordings must remain within the bounds of what the original recording method can support.
+The aim of this study is to examine how far opportunistic recreational recordings can become useful, traceable natural history observations, while remaining clear about what those observations can - and cannot - establish. The essential principle is that the conclusions drawn from the structured observations derived from the recordings must remain within the bounds of what the original recording method can support.
 
 The original footage was not collected as part of a planned scientific study. The snorkelling excursions were recreational activities, with the GoPro cameras recording whatever happened to be encountered along the way, so there was no predetermined sampling strategy, no systematic coverage of habitats and no attempt to control the duration, location or frequency of observations to meet the requirements of an ecological survey.
 
@@ -59,7 +59,7 @@ This is fundamentally different from formal ecological survey techniques in whic
 
 Nevertheless, these limitations do not make the observations valueless.
 
-By preserving the connection between the original footage, identifiable images, species identifications and structured sighting records, the process creates a traceable body of evidence documenting which organisms were observed, where and when they were encountered, and how those identifications were made. The structured records can support species inventories, descriptions of _observed_ species composition, comparisons between recording occasions and the accumulation of natural-history observations over time.
+By preserving the connection between the original footage, identifiable images, species identifications and structured sighting records, the process creates a traceable body of evidence documenting which organisms were observed, where and when they were encountered, and how those identifications were made. The structured records can support species inventories, descriptions of _observed_ species composition, comparisons between recording occasions and the accumulation of natural history observations over time.
 
 <footer class="notebook-entry-footer">
   {% include journal-nav.html %}

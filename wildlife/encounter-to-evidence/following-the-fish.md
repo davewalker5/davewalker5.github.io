@@ -47,7 +47,7 @@ _ReefFrame_ addressed the practical problem of preparing underwater footage so t
 
 > Could software find an individual fish in a video recording and continue following it as it moved through the scene?
 
-Finding and tracking individual animals in the resulting footage was a more exploratory project, not necessary for identifying species or creating natural-history records, but offering an opportunity to investigate what computer vision might achieve with the recordings.
+Finding and tracking individual animals in the resulting footage was a more exploratory project, not necessary for identifying species or creating natural history records, but offering an opportunity to investigate what computer vision might achieve with the recordings.
 
 This was the starting point for _FishTrack_, an experimental Python application for detecting, outlining and tracking marine animals through video sequences.
 

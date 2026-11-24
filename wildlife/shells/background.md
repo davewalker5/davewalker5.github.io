@@ -39,7 +39,7 @@ Although this project does not attempt to reproduce Thompson’s analyses direct
 
 - Treating biological form as something structurally interpretable
 - Exploring morphology through geometry
-- Using mathematical systems as tools for natural-history understanding.
+- Using mathematical systems as tools for natural history understanding
 
 
 ## David Raup and Computational Morphospace
@@ -103,7 +103,7 @@ This approach aligns naturally with the broader goals of the Field Notes Journal
 - Direct observation
 - Modelling
 - Visualisation
-- Long-term exploratory natural-history practice
+- Long-term exploratory natural history practice
 
 
 ## Logarithmic Growth and Shell Geometry
@@ -144,14 +144,14 @@ The goal is not to reproduce any single historical shell model exactly, nor to c
 - Explore shell morphology computationally
 - Investigate generative biological form
 - Provide visually interpretable models
-- Support a broader natural-history practice grounded in curiosity, structure, and observation
+- Support a broader natural history practice grounded in curiosity, structure, and observation
 
 The project therefore occupies a space between:
 
 - Scientific modelling
 - Computational illustration
 - Educational exploration
-- Digital natural-history notebook
+- Digital natural history notebook
 
 Many generated forms are intentionally approximate or interpretive rather than taxonomically rigorous. Parameters are often chosen for:
 

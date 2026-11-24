@@ -119,7 +119,7 @@ The diary supplies the circumstances. The sightings log records what we saw. The
 
 And the process of writing these Field Notes brings those different threads together.
 
-What began as a holiday is gradually becoming a small personal natural-history archive, albeit one with an unusually generous helping of cocktails, beautiful meals and spectacular sunsets.
+What began as a holiday is gradually becoming a small personal natural history archive, albeit one with an unusually generous helping of cocktails, beautiful meals and spectacular sunsets.
 
 ## More Than the Sum of Its Parts
 

@@ -2,7 +2,7 @@
 layout: default
 title: "Beneath the Surface"
 breadcrumb: "Beneath the Surface"
-description: "A seven-minute natural-history film exploring the coral reefs and marine wildlife of South Ari Atoll, Maldives, featuring reef fish, turtles, manta rays and tawny nurse sharks."
+description: "A seven-minute natural history film exploring the coral reefs and marine wildlife of South Ari Atoll, Maldives, featuring reef fish, turtles, manta rays and tawny nurse sharks."
 series: "Maldives 2026"
 ---
 

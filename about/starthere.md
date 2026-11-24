@@ -97,7 +97,7 @@ The [Music section](/music/) explores listening, collecting and the discoveries 
 
 Some notes begin with a particular song, singer or record. Others explore the collection as a whole, including the stories carried by physical records and the relationships that become visible through the Music Catalogue.
 
-The [Catalogue Style Analysis](/music/catalogue-style-analysis/) uses my recorded descriptions of artists to explore stylistic similarities. It is not an automated verdict on the music, but another way of asking questions about a collection built through years of listening.
+The [Catalogue Style Analysis](/music/style/) uses my recorded descriptions of artists to explore stylistic similarities. It is not an automated verdict on the music, but another way of asking questions about a collection built through years of listening.
 
 ### Pocket Ecology
 

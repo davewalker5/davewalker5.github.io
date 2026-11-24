@@ -5,7 +5,7 @@ breadcrumb: "The Holiday That Refused to End"
 date: 2026-11-18
 categories: ["travel", "maldives", "field-notes"]
 tags: ["maldives", "moofushi", "marine-life", "natural-history", "wildlife-observation", "citizen-science", "conservation", "reef-frame", "fish-track", "reef-tag", "nature-recorder", "underwater-video", "software-development", "reflection"]
-excerpt: "The holiday ended, but the curiosity didn't. How two weeks in the Maldives inspired three software applications, thousands of wildlife identifications, a natural-history case study and two films."
+excerpt: "The holiday ended, but the curiosity didn't. How two weeks in the Maldives inspired three software applications, thousands of wildlife identifications, a natural history case study and two films."
 description: "A personal reflection on how an extraordinary Maldives holiday continued through underwater video, software development, wildlife recording, conservation and scientific curiosity."
 series: maldives2026
 series_order: 8
@@ -113,7 +113,7 @@ _FishTrack_ remains experimental and I certainly wouldn't claim to have solved t
 
 Then came the third application. As _ReefFrame_ produced more and more useful still images, I needed a way to examine them systematically and identify the animals they contained. There were simply too many images, and too many individual fish, to manage comfortably through informal notes so I developed [ReefTag](https://github.com/davewalker5/ReefTag).
 
-_ReefTag_ allows me to browse photographs, mark individual animals, record species identifications and maintain a catalogue of observed marine life. The original footage references and recording dates are preserved, allowing identifications to be traced back to their supporting evidence and animals that cannot be identified confidently can be marked as unknown and revisited later. Importantly, the resulting observations can be transferred into _Nature Recorder_, the natural-history recording application I developed, in its first incarnation at least, more years ago than I care to remember!
+_ReefTag_ allows me to browse photographs, mark individual animals, record species identifications and maintain a catalogue of observed marine life. The original footage references and recording dates are preserved, allowing identifications to be traced back to their supporting evidence and animals that cannot be identified confidently can be marked as unknown and revisited later. Importantly, the resulting observations can be transferred into _Nature Recorder_, the natural history recording application I developed, in its first incarnation at least, more years ago than I care to remember!
 
 {% include fullwidth-image.html assets=page.assets img=page.reef_tag_identification %}
 
@@ -150,7 +150,7 @@ _Nature Recorder_ can consolidate repeated identifications into unique species s
 
 The underlying evidence also remains traceable as the original GoPro recordings lead to processed footage, timestamped still images and _ReefTag_ identification records. Capture dates are preserved, and the original footage can be revisited when an identification needs checking. It's a simple arrangement, but one that works extremely well for my purposes and the outcome has been sufficiently interesting that I've developed a separate _Field Notes_ case study entitled *From Encounter to Evidence*, due to be published shortly.
 
-That project examines how recreational wildlife footage can become structured, traceable and analysable natural-history observations, while acknowledging the limitations of the original material - it seems a natural extension of my longstanding interest in natural history and my obsession with recording things!
+That project examines how recreational wildlife footage can become structured, traceable and analysable natural history observations, while acknowledging the limitations of the original material - it seems a natural extension of my longstanding interest in natural history and my obsession with recording things!
 
 ## Two Movies — And Counting!
 
@@ -209,7 +209,7 @@ There's something particularly satisfying about seeing the original recordings t
   </figure>
 </div>
 
-Unlike the structured natural-history records, the films don't need to answer a scientific question - they can simply celebrate what we saw, a useful reminder that not everything needs to become data. Some experiences deserve to be preserved simply because they were beautiful, exciting or moving.
+Unlike the structured natural history records, the films don't need to answer a scientific question - they can simply celebrate what we saw, a useful reminder that not everything needs to become data. Some experiences deserve to be preserved simply because they were beautiful, exciting or moving.
 
 There is still plenty of material to explore, so I doubt the film-making is finished.
 
@@ -219,7 +219,7 @@ Two movies, then ... and counting! 😉
 
 The work has also reinforced something that has been a driving principle throughout my adult life, and indeed since I was fourteen: My love of wildlife and the natural world, and my determination to do what I can to protect it.
 
-I can trace much of that back to David Attenborough's *Life on Earth*, which I watched when it was first broadcast in 1979. It was revolutionary television at the time and certainly, in my recollection, there hadn't been natural-history footage anything like it. It wasn't simply a television programme I enjoyed, though - it helped shape my interests, my curiosity and my values, and its influence has stayed with me ever since.
+I can trace much of that back to David Attenborough's *Life on Earth*, which I watched when it was first broadcast in 1979. It was revolutionary television at the time and certainly, in my recollection, there hadn't been natural history footage anything like it. It wasn't simply a television programme I enjoyed, though - it helped shape my interests, my curiosity and my values, and its influence has stayed with me ever since.
 
 Nearly five decades later, here I am developing software to investigate marine wildlife, recording species observations, supporting conservation organisations and still finding extraordinary pleasure in learning about the natural world. I think fourteen-year-old me would have approved! 😉
 
@@ -237,7 +237,7 @@ The scientific curiosity, the research, the recording and the analysis come afte
 
 > The wonder comes first, the science follows
 
-That doesn't diminish the importance of the scientific work. I believe that careful natural-history recording, preserving evidence, documenting uncertainty and making observations available for subsequent analysis are entirely consistent with the principles of citizen science. Perhaps, eventually, some of the records might be useful beyond my own collection, but even if they aren't, I think the work has value.
+That doesn't diminish the importance of the scientific work. I believe that careful natural history recording, preserving evidence, documenting uncertainty and making observations available for subsequent analysis are entirely consistent with the principles of citizen science. Perhaps, eventually, some of the records might be useful beyond my own collection, but even if they aren't, I think the work has value.
 
 I've learned a great deal about the animals we encountered, about the methods used to study them, and about the limitations of the evidence we can obtain from recreational footage and that learning has deepened my appreciation of the experience itself.
 
@@ -263,7 +263,7 @@ On 25 October, I tried to count the experiences we'd accumulated during two week
 - 1,703 identifications
 - 58 species in the ReefTag database
 - 83 species recorded across the wider Moofushi visit
-- A substantial natural-history case study
+- A substantial natural history case study
 - Two movies
 - An extraordinary amount of learning, experimentation, writing and enjoyment
 

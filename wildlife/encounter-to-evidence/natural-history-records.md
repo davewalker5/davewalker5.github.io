@@ -72,7 +72,7 @@ It does not, however, remove the underlying biases of recreational recording. Th
 
 > The transfer does not make the original observations more scientifically precise than they were - it makes their interpretation more disciplined
 
-By consolidating repeated identifications, avoiding unsupported individual counts and retaining the distinction between photographic evidence and natural-history sightings, the workflow produces a dataset whose analytical meaning is more clearly defined.
+By consolidating repeated identifications, avoiding unsupported individual counts and retaining the distinction between photographic evidence and natural history sightings, the workflow produces a dataset whose analytical meaning is more clearly defined.
 
 That is a substantial achievement in itself: A collection of recreational wildlife recordings has become an organised body of documented species occurrences, suitable for descriptive analysis within the limits of the evidence from which it was derived.
 

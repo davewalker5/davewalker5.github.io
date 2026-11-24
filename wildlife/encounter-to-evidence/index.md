@@ -2,7 +2,7 @@
 layout: journal
 title: From Encounter to Evidence
 breadcrumb: From Encounter to Evidence
-description: A natural-history case study exploring how recreational underwater footage from the Maldives became structured, traceable wildlife observations
+description: A natural history case study exploring how recreational underwater footage from the Maldives became structured, traceable wildlife observations
 permalink: /wildlife/from-encounter-to-evidence/
 assets: "/images/encounter-to-evidence/"
 images:
@@ -54,13 +54,13 @@ In October 2026, four snorkelling excursions around Constance Moofushi in the Ma
 
 Back home, however, the footage raised an interesting question:
 
-> How far could these recreational recordings be transformed into useful, traceable natural-history observations?
+> How far could these recreational recordings be transformed into useful, traceable natural history observations?
 
 _From Encounter to Evidence_ is the story of exploring that question.
 
 ## An Unexpected Project
 
-What began as an exercise in examining underwater footage developed into a much wider undertaking, combining wildlife observation, software development, species identification and natural-history recording.
+What began as an exercise in examining underwater footage developed into a much wider undertaking, combining wildlife observation, software development, species identification and natural history recording.
 
 Three new applications emerged along the way:
 
@@ -68,7 +68,7 @@ Three new applications emerged along the way:
 - _FishTrack_, for experimenting with the detection and tracking of individual animals
 - _ReefTag_, for identifying and cataloguing wildlife in still images
 
-These complemented _Nature Recorder_, an existing application for maintaining and analysing natural-history observations. Needless to say, none of this was planned when I boarded the seaplane for Moofushi!
+These complemented _Nature Recorder_, an existing application for maintaining and analysing natural history observations. Needless to say, none of this was planned when I boarded the seaplane for Moofushi!
 
 The applications developed in response to questions and practical problems encountered along the way and, together, they provided the means to examine the recordings systematically, preserve the relationship between observations and their supporting evidence, and build a structured record of the wildlife encountered.
 
