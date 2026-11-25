@@ -87,3 +87,7 @@
   category: tools
   description: Identify, annotate and catalogue marine wildlife in underwater photographs
   link: https://github.com/davewalker5/ReefTag
+- title: Hieroglyphics Transliterator
+  category: tools
+  description: Interactive transliteration from English to Egyptian hieroglyphs
+  link: https://github.com/davewalker5/Hieroglyphics
