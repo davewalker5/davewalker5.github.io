@@ -26,14 +26,14 @@ geological_timescale:
     name: "egypt-geological-timescale.svg"
     alt: "Timeline compressing 420 million years into a single year, showing the approximately 5,000 years since the emergence of dynastic Egypt occupying the final six minutes and fifteen seconds"
     caption: "If 420 million years were compressed into a single year, the time since the emergence of dynastic Egypt would occupy approximately 0.0012% of that interval"
-    credit: "David Walker, Field Notes Journal (created with ChatGPT)"
+    credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
 cleopatra_timescale:
     name: "pyramid-cleopatra-timeline.svg"
     alt: "Proportional timeline showing approximately 2,530 years between the construction of the Great Pyramid and Cleopatra's death, compared with 2,055 years between her death and 2026"
     caption: "Putting the longevity of ancient Egyptian civilisation into perspective - Cleopatra VII lived closer to our own time than to the construction of the Great Pyramid of Giza"
-    credit: "David Walker, Field Notes Journal (created with ChatGPT)"
+    credit: "David Walker, Field Notes Journal"
     license: "CC BY 4.0"
     license_link: "https://creativecommons.org/licenses/by/4.0"
 images:
