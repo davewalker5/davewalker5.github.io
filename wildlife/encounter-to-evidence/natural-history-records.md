@@ -81,3 +81,4 @@ That is a substantial achievement in itself: A collection of recreational wildli
 </footer>
 
 {% include reef-suite-invitation.html %}
+{% include nature-recorder-invitation.html %}
